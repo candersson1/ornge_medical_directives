@@ -7,19 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		131142A42285C5C400BD65C0 /* CoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 131142A22285C5C400BD65C0 /* CoreData.xcdatamodeld */; };
+		131142A62285ECA100BD65C0 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 131142A52285ECA100BD65C0 /* DataManager.swift */; };
+		135C05C32288938800F7B6CF /* MenuData.json in Resources */ = {isa = PBXBuildFile; fileRef = 135C05C22288938800F7B6CF /* MenuData.json */; };
 		139BF3DB22849C7400D25766 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139BF3DA22849C7400D25766 /* AppDelegate.swift */; };
-		139BF3DD22849C7400D25766 /* MainMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139BF3DC22849C7400D25766 /* MainMenuViewController.swift */; };
+		139BF3DD22849C7400D25766 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139BF3DC22849C7400D25766 /* MenuViewController.swift */; };
 		139BF3E022849C7400D25766 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 139BF3DE22849C7400D25766 /* Main.storyboard */; };
 		139BF3E222849C7500D25766 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 139BF3E122849C7500D25766 /* Assets.xcassets */; };
 		139BF3E522849C7500D25766 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 139BF3E322849C7500D25766 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		131142A32285C5C400BD65C0 /* CoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreData.xcdatamodel; sourceTree = "<group>"; };
+		131142A52285ECA100BD65C0 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		135C05C22288938800F7B6CF /* MenuData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = MenuData.json; sourceTree = "<group>"; };
+		135C05C6228A088600F7B6CF /* Codable.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Codable.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		139BF3D722849C7400D25766 /* MedicMind.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MedicMind.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		139BF3DA22849C7400D25766 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		139BF3DC22849C7400D25766 /* MainMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuViewController.swift; sourceTree = "<group>"; };
+		139BF3DC22849C7400D25766 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		139BF3DF22849C7400D25766 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		139BF3E122849C7500D25766 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		139BF3E422849C7500D25766 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -48,7 +51,7 @@
 		1311429D2285BD6300BD65C0 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				139BF3DC22849C7400D25766 /* MainMenuViewController.swift */,
+				139BF3DC22849C7400D25766 /* MenuViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -65,7 +68,8 @@
 		1311429F2285BD8600BD65C0 /* Data Model */ = {
 			isa = PBXGroup;
 			children = (
-				131142A22285C5C400BD65C0 /* CoreData.xcdatamodeld */,
+				131142A52285ECA100BD65C0 /* DataManager.swift */,
+				135C05C22288938800F7B6CF /* MenuData.json */,
 			);
 			path = "Data Model";
 			sourceTree = "<group>";
@@ -75,6 +79,7 @@
 			children = (
 				139BF3D922849C7400D25766 /* MedicMind */,
 				139BF3D822849C7400D25766 /* Products */,
+				135C05C6228A088600F7B6CF /* Codable.playground */,
 			);
 			sourceTree = "<group>";
 		};
@@ -157,6 +162,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				135C05C32288938800F7B6CF /* MenuData.json in Resources */,
 				139BF3E522849C7500D25766 /* LaunchScreen.storyboard in Resources */,
 				139BF3E222849C7500D25766 /* Assets.xcassets in Resources */,
 				139BF3E022849C7400D25766 /* Main.storyboard in Resources */,
@@ -170,8 +176,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				131142A42285C5C400BD65C0 /* CoreData.xcdatamodeld in Sources */,
-				139BF3DD22849C7400D25766 /* MainMenuViewController.swift in Sources */,
+				131142A62285ECA100BD65C0 /* DataManager.swift in Sources */,
+				139BF3DD22849C7400D25766 /* MenuViewController.swift in Sources */,
 				139BF3DB22849C7400D25766 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -372,19 +378,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		131142A22285C5C400BD65C0 /* CoreData.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				131142A32285C5C400BD65C0 /* CoreData.xcdatamodel */,
-			);
-			currentVersion = 131142A32285C5C400BD65C0 /* CoreData.xcdatamodel */;
-			path = CoreData.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 139BF3CF22849C7400D25766 /* Project object */;
 }
