@@ -1,0 +1,351 @@
+{
+  "pages" : [
+    {
+      "title" : "Main Menu",
+      "type" : "menu",
+      "color" : "",
+      "items" : [
+        {
+          "title" : "Adult Directives",
+          "type" : "menu",
+          "color" : "#5eafc1ff",
+          "items" : [
+            {
+              "title" : "Airway",
+              "type" : "menu",
+              "color" : "",
+              "items" : [
+                {
+                  "title" : "Supraglottic Airway",
+                  "type" : "medical_directive",
+                  "color" : "",
+                  "indications" : "• Height >= 122 cm (48 inches)\n• Need for ventilatory assistance OR airway control\n• Other airway management is inadequate OR ineffective OR unssuccesful",
+                  "contraindications" : "• Intact gag reflex\n• Caustic ingestion\n• Active vomiting",
+                  "clinical" : "• Endotracheal intubation is usually preffered for secure airway management for ACP(f), CCP\n• The supraglottic airway would be considered a rescue device if BLS airway/ventilation and other advanced airway maneuvers have failed\n• Confirm placement (i.e. auscultation/ETCO2)",
+                  "drug_cards" : [
+                    {
+                      "title" : "Supraglottic Airway",
+                      "levelOfCare" : "pcp",
+                      "patchPointType" : "after",
+                      "doseInformation" : "8 puffs\n(4 breaths or 45 seconds between each administration)\nmay repeat x 3 q 5-15 minutes prn",
+                      "notes" : ""
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title" : "Respiratory",
+              "type" : "menu",
+              "color" : "#fff82dff",
+              "items" : [
+                {
+                  "title" : "Bronchoconstriction",
+                  "type" : "medical_directive",
+                  "color" : "",
+                  "indications" : "• Respiratory distress \nAND \n• Suspected bronchoconstriction",
+                  "contraindications" : "• Allergy or sensitivity to the medication \n• Allergy to peanuts (i.e. Ipratropium Bromide (Atrovent)",
+                  "clinical" : "\n• MDI delivery systems require 30 seconds to 're-charge' between doses. Not waiting the recommended length of time between doses will result in significantly decreased amounts of medication being delivered\n\n• In the event of a respiratory outbreak as identified by originating facility / Ornge, the MDI must be used insead of nebulization\n\n• Side effects of Magnesium Sulfate included hypotension, monitor BP closely\n\n• Consider applying the bronchoconstriction medical directive in both invasive and non-invasive ventilated patients",
+                  "drug_cards" : [
+                    {
+                      "title" : "Salbutamol (Ventolin) MDI\n(100 mcg/puff)",
+                      "levelOfCare" : "pcp",
+                      "patchPointType" : "none",
+                      "doseInformation" : "8 puffs\n(4 breaths or 45 seconds between each administration)\nmay repeat x 3 q 5-15 minutes prn",
+                      "notes" : ""
+                    },
+                    {
+                      "title" : "Salbutamol (Ventolin) Solution\nVia Nebulized Aerosol (2.5 mg/2.5 ml",
+                      "levelOfCare" : "pcp",
+                      "patchPointType" : "none",
+                      "doseInformation" : "5 mg q 5-15 minutes x 3 prn",
+                      "notes" : "*Total volume of Salbutamol and Normal Saline should be 3 ml"
+                    },
+                    {
+                      "title" : "Ipratropium Bromide (Atrovent) MDI\n(20 mcg/puff)",
+                      "levelOfCare" : "acp",
+                      "patchPointType" : "none",
+                      "doseInformation" : "5 puffs\n(4 breaths or 45 seconds between each administration)\nmay repeat x 3 q 15 minutes prn\nMAX 3 doses",
+                      "notes" : ""
+                    },
+                    {
+                      "title" : "Ipratropium Bromide (Atrovent) Solution\nVia Nebulized Aerosol (250 mcg/ml)",
+                      "levelOfCare" : "acp",
+                      "patchPointType" : "none",
+                      "doseInformation" : "500 mcg q 15 minutes x 3 prn\nMAX 3 doses",
+                      "notes" : "*Total volume of Ipratropium Bromide (Atrovent) and Normal Saline should be 3 ml"
+                    },
+                    {
+                      "title" : "Epinephrine (Adrenalin)",
+                      "levelOfCare" : "pcp",
+                      "patchPointType" : "after",
+                      "doseInformation" : "0.01 mg/kg IM (1:1000)\nMAX 0.5 mg IM",
+                      "notes" : "Use with caution when comorbid history of CAD/Stroke"
+                    },
+                    {
+                      "title" : "Epinephrine (Adrenalin)",
+                      "levelOfCare" : "ccp",
+                      "patchPointType" : "first",
+                      "doseInformation" : "0.05-0.5 mcg/kg/min IV/IO",
+                      "notes" : ""
+                    },
+                    {
+                      "title" : "Steroids",
+                      "levelOfCare" : "acp",
+                      "patchPointType" : "first",
+                      "doseInformation" : "methylPREDNISolone 125 mg IV/IO\nOR\nDexamethasone 8 mg IM/IV/IO",
+                      "notes" : ""
+                    },
+                    {
+                      "title" : "Magnesium Sulfate",
+                      "levelOfCare" : "acp",
+                      "patchPointType" : "first",
+                      "doseInformation" : "MAX 2 g IV/IO over 15 minutes",
+                      "notes" : ""
+                    },
+                    {
+                      "title" : "Salbutamol (Ventolin) IV Infusion",
+                      "levelOfCare" : "ccp",
+                      "patchPointType" : "first",
+                      "doseInformation" : "5 mcg/min\nMAX recommended dose 50 mcg/min",
+                      "notes" : ""
+                    },
+                    {
+                      "title" : "Salbutamol (Ventolin) IV Push",
+                      "levelOfCare" : "ccp",
+                      "patchPointType" : "first",
+                      "doseInformation" : "4 mcg/kg IV/IO over 2-5 minutes q 15 minutes\nsingle MAX dose of 250 mcg\nTitrate to an airway pressure < 30 mmHg",
+                      "notes" : ""
+                    }
+                  ]
+                },
+                {
+                  "title" : "Tension Pneumothorax",
+                  "type" : "medical_directive",
+                  "color" : "",
+                  "indications" : "• Severe respiratory distress in the setting of chest trauma with hemodynamic compromise\nAND/OR\n• Traumatic VSAs\nAND/OR\n• Severe hemodynamic compromise during positive pressure ventilation particularly in trauma or asthma or COPD patients\nAND/OR\n• Chest trauma, Severe Asthma or COPD and one or more of the following\n   ◦ Decreased/absent breath sounds\n   ◦ Altered LOC\n   ◦ Cyanosis\n   ◦ JVD\n   ◦ Hyper resonance on affected side\n   ◦ Tracheal shift (late sign)",
+                  "contraindications" : "• Not applicable",
+                  "drug_cards" : [
+                    {
+                      "title" : "Needle Decompression",
+                      "levelOfCare" : "acp",
+                      "patchPointType" : "after",
+                      "doseInformation" : "Consider differential diagnosis and decompress if high probability of tension pneumothorax",
+                      "notes" : ""
+                    }
+                  ],
+                  "clinical" : "• The patient must be seen as soon as possible at an appropriate facility for the insertion of chest tube(s)\n• Consider differential diagnosis\n   ◦ Mainstem intubation\n   ◦ Pleural effusion\n   ◦ Hemothorax\n   ◦ Consolidated pneumonia\n   ◦ Autopeep\n   ◦ Dynamic hyperinflation"
+                },
+                {
+                  "title" : "Maintenance of Chest Tubes",
+                  "type" : "medical_directive",
+                  "color" : "",
+                  "indications" : "• Initiated by sending facility",
+                  "contraindications" : "• Not applicable",
+                  "drug_cards" : [
+                    {
+                      "title" : "Maintain chest drainage systems during call to keep the drainage system clear",
+                      "levelOfCare" : "acp",
+                      "patchPointType" : "none",
+                      "doseInformation" : "• If the patient's chest tube was maintained by suction at the sending facility, the Paramedic may maintain suction to no greater than -20 cmH20\n• If the patient's chest tube was maintained by gravity drainage, the Paramedic may maintain by gravity drainage to underwater seal or to suction as per patient presentation",
+                      "notes" : ""
+                    }
+                  ],
+                  "clinical" : "• A Heimlich flutter valve may be adequate if no drainage system has been implemented\n• Suction beyond -20 cmH20 requires patch authorization prior to transport"
+                },
+                {
+                  "title" : "Mechanical Ventilation",
+                  "type" : "menu",
+                  "color" : "",
+                  "items" : [
+                    {
+                      "title" : "Initiating or Maintaining Mechanical Ventilation",
+                      "type" : "menu",
+                      "color" : "",
+                      "items" : []
+                    },
+                    {
+                      "title" : "Mechanical Ventilation Guidelines",
+                      "type" : "menu",
+                      "color" : "",
+                      "items" : []
+                    },
+                    {
+                      "title" : "Recruitment Maneuver Criteria",
+                      "type" : "menu",
+                      "color" : "",
+                      "items" : []
+                    },
+                    {
+                      "title" : "Non-Invasive Positive Pressure Ventilation (NIPPV)",
+                      "type" : "menu",
+                      "color" : "",
+                      "items" : []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title" : "Analgosedation and Paralysis",
+              "type" : "menu",
+              "color" : "",
+              "items" : []
+            },
+            {
+              "title" : "Medical Cardiac Arrest and Post Resuscitation Care",
+              "type" : "menu",
+              "color" : "",
+              "items" : []
+            },
+            {
+              "title" : "Cardiac (Non-arrest)",
+              "type" : "menu",
+              "color" : "",
+              "items" : []
+            },
+            {
+              "title" : "Arrhythmias",
+              "type" : "menu",
+              "color" : "",
+              "items" : []
+            },
+            {
+              "title" : "IV/IO and Arterial Lines",
+              "type" : "menu",
+              "color" : "",
+              "items" : []
+            },
+            {
+              "title" : "Neurological",
+              "type" : "menu",
+              "color" : "",
+              "items" : []
+            },
+            {
+              "title" : "Trauma",
+              "type" : "menu",
+              "color" : "",
+              "items" : []
+            },
+            {
+              "title" : "Blood Product Administration",
+              "type" : "menu",
+              "color" : "",
+              "items" : []
+            },
+            {
+              "title" : "Shock States",
+              "type" : "menu",
+              "color" : "",
+              "items" : []
+            },
+            {
+              "title" : "Gastrointestinal / Genitourinary",
+              "type" : "menu",
+              "color" : "",
+              "items" : []
+            },
+            {
+              "title" : "Environmental and Metabolic",
+              "type" : "menu",
+              "color" : "",
+              "items" : []
+            },
+            {
+              "title" : "Toxicological",
+              "type" : "menu",
+              "color" : "",
+              "items" : []
+            },
+            {
+              "title" : "Obstetrics",
+              "type" : "menu",
+              "color" : "",
+              "items" : []
+            }
+          ]
+        },
+        {
+          "title" : "Pediatric Directives",
+          "type" : "menu",
+          "color" : "",
+          "items" : [
+            {
+              "title" : "Airway",
+              "type" : "menu",
+              "color" : "",
+              "items" : []
+            },
+            {
+              "title" : "Respiratory",
+              "type" : "menu",
+              "color" : "",
+              "items" : []
+            },
+            {
+              "title" : "Analgosedation and Paralysis",
+              "type" : "menu",
+              "color" : "",
+              "items" : []
+            },
+            {
+              "title" : "Medical Cardiac Arrest and Post Resuscitation Care",
+              "type" : "menu",
+              "color" : "",
+              "items" : []
+            },
+            {
+              "title" : "Arrhythmias",
+              "type" : "menu",
+              "color" : "",
+              "items" : []
+            },
+            {
+              "title" : "IV/IO and Arterial Lines",
+              "type" : "menu",
+              "color" : "",
+              "items" : []
+            },
+            {
+              "title" : "Neurological",
+              "type" : "menu",
+              "color" : "",
+              "items" : []
+            },
+            {
+              "title" : "Trauma",
+              "type" : "menu",
+              "color" : "",
+              "items" : []
+            },
+            {
+              "title" : "Shock States",
+              "type" : "menu",
+              "color" : "",
+              "items" : []
+            },
+            {
+              "title" : "Gastrointestinal / Genitourinary",
+              "type" : "menu",
+              "color" : "",
+              "items" : []
+            },
+            {
+              "title" : "Environmental and Metabolic",
+              "type" : "menu",
+              "color" : "",
+              "items" : []
+            },
+            {
+              "title" : "Toxicological",
+              "type" : "menu",
+              "color" : "",
+              "items" : []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
