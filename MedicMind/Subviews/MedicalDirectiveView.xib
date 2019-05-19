@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MedicalDirectiveView" customModule="MedicMind" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="iN0-l3-epB" id="fGZ-tQ-Sda"/>
+                <outlet property="drugButton" destination="a7i-sg-7ZW" id="wDH-RY-CIN"/>
+                <outlet property="levelOfCareLabel" destination="XfG-51-xRx" id="C7m-XW-qpE"/>
+                <outlet property="notesLabel" destination="Zju-hb-xlm" id="iq6-hH-lie"/>
+                <outlet property="patchLabel" destination="JuF-sP-WQd" id="BWD-7G-v3d"/>
+                <outlet property="treatmentDoseOutlet" destination="mJI-Is-MKt" id="zVT-aC-IWe"/>
+                <outlet property="treatmentNameOutlet" destination="fEu-lo-toF" id="hCA-73-m19"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleAspectFit" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="448" height="227"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="treatmentDoseLabel" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mJI-Is-MKt">
+                    <rect key="frame" x="100" y="64" width="348" height="100"/>
+                    <color key="backgroundColor" red="0.94426157994923854" green="0.94426157994923854" blue="0.94426157994923854" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="5bl-vM-qNP"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fEu-lo-toF">
+                    <rect key="frame" x="0.0" y="44" width="426" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="20" id="1fG-mc-dNo"/>
+                    </constraints>
+                    <attributedString key="attributedText">
+                        <fragment content="treatmentNameLabel">
+                            <attributes>
+                                <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <font key="NSFont" size="15" name="HelveticaNeue-Bold"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XfG-51-xRx" userLabel="Level of care">
+                    <rect key="frame" x="0.0" y="88" width="100" height="24"/>
+                    <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="24" id="H48-zF-oIJ"/>
+                        <constraint firstAttribute="width" constant="100" id="M6X-kn-mIv"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <state key="normal" title="PCP(f)">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" misplaced="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JuF-sP-WQd" customClass="RotateableButton" customModule="MedicMind" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="64" width="26" height="92"/>
+                    <color key="backgroundColor" red="0.45009386540000001" green="0.98132258650000004" blue="0.4743030667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="24" id="H1F-7p-yUO"/>
+                        <constraint firstAttribute="width" constant="100" id="ZBW-LM-5uP"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="dZc-BP-jsq"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <state key="normal" title="No Patch">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="rotation">
+                            <real key="value" value="90"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zju-hb-xlm">
+                    <rect key="frame" x="0.0" y="164" width="448" height="29"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="detailDisclosure" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a7i-sg-7ZW">
+                    <rect key="frame" x="426" y="42" width="22" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="22" id="iqA-GL-Hjc"/>
+                        <constraint firstAttribute="width" constant="22" id="qFd-7W-MbP"/>
+                    </constraints>
+                    <connections>
+                        <action selector="drugLinkButton:" destination="-1" eventType="touchUpInside" id="9BE-YE-LCp"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="JuF-sP-WQd" firstAttribute="top" secondItem="fEu-lo-toF" secondAttribute="bottom" id="2iv-TS-bSC"/>
+                <constraint firstItem="XfG-51-xRx" firstAttribute="top" secondItem="JuF-sP-WQd" secondAttribute="bottom" id="9OF-m9-p05"/>
+                <constraint firstItem="fEu-lo-toF" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="9Su-hq-eeD"/>
+                <constraint firstItem="mJI-Is-MKt" firstAttribute="top" secondItem="fEu-lo-toF" secondAttribute="bottom" id="F6K-Cr-764"/>
+                <constraint firstItem="mJI-Is-MKt" firstAttribute="top" secondItem="a7i-sg-7ZW" secondAttribute="bottom" id="HYr-ZY-oCa"/>
+                <constraint firstItem="mJI-Is-MKt" firstAttribute="leading" secondItem="XfG-51-xRx" secondAttribute="trailing" id="JkB-ye-6nN"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="mJI-Is-MKt" secondAttribute="trailing" id="Ojc-NC-asj"/>
+                <constraint firstItem="a7i-sg-7ZW" firstAttribute="leading" secondItem="fEu-lo-toF" secondAttribute="trailing" id="P5P-fH-aWn"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="a7i-sg-7ZW" secondAttribute="trailing" id="TQL-L6-esV"/>
+                <constraint firstItem="JuF-sP-WQd" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="YFc-c7-SOs"/>
+                <constraint firstItem="XfG-51-xRx" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="YbG-Q4-TtK"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Zju-hb-xlm" secondAttribute="bottom" id="YnG-8o-d8o"/>
+                <constraint firstItem="Zju-hb-xlm" firstAttribute="leading" secondItem="JuF-sP-WQd" secondAttribute="leading" id="ep8-re-C5o"/>
+                <constraint firstItem="fEu-lo-toF" firstAttribute="trailing" secondItem="a7i-sg-7ZW" secondAttribute="leading" id="jhJ-mJ-HSk"/>
+                <constraint firstItem="fEu-lo-toF" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="q1s-LR-Dz2"/>
+                <constraint firstItem="Zju-hb-xlm" firstAttribute="top" secondItem="mJI-Is-MKt" secondAttribute="bottom" id="sPf-Co-Y9e"/>
+                <constraint firstItem="Zju-hb-xlm" firstAttribute="width" secondItem="vUN-kp-3ea" secondAttribute="width" id="sSz-0V-eSj"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="175.36231884057972" y="232.70089285714283"/>
+        </view>
+    </objects>
+</document>
