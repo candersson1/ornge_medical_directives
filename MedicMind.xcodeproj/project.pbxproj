@@ -7,19 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1309D7BF228CC584005F8D40 /* DrugMonographViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1309D7BE228CC584005F8D40 /* DrugMonographViewController.swift */; };
+		1309D7C1228CC9F3005F8D40 /* DrugLibrary.json in Resources */ = {isa = PBXBuildFile; fileRef = 1309D7C0228CC9F3005F8D40 /* DrugLibrary.json */; };
 		131142A62285ECA100BD65C0 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 131142A52285ECA100BD65C0 /* DataManager.swift */; };
+		1344B2FE229100EC00E08C63 /* DirectiveFlowChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1344B2FD229100EC00E08C63 /* DirectiveFlowChartViewController.swift */; };
+		1344B302229627F400E08C63 /* MedicalDirectives.json in Resources */ = {isa = PBXBuildFile; fileRef = 1344B301229627F400E08C63 /* MedicalDirectives.json */; };
 		135C05C32288938800F7B6CF /* MenuData.json in Resources */ = {isa = PBXBuildFile; fileRef = 135C05C22288938800F7B6CF /* MenuData.json */; };
+		135C05C8228A1EA500F7B6CF /* MedicalDirectiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135C05C7228A1EA500F7B6CF /* MedicalDirectiveViewController.swift */; };
 		139BF3DB22849C7400D25766 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139BF3DA22849C7400D25766 /* AppDelegate.swift */; };
 		139BF3DD22849C7400D25766 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139BF3DC22849C7400D25766 /* MenuViewController.swift */; };
 		139BF3E022849C7400D25766 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 139BF3DE22849C7400D25766 /* Main.storyboard */; };
 		139BF3E222849C7500D25766 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 139BF3E122849C7500D25766 /* Assets.xcassets */; };
 		139BF3E522849C7500D25766 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 139BF3E322849C7500D25766 /* LaunchScreen.storyboard */; };
+		13C7BDDC228C36D900D33B76 /* MedicalDirectiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C7BDDA228C36D900D33B76 /* MedicalDirectiveView.swift */; };
+		13C7BDDD228C36D900D33B76 /* MedicalDirectiveView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13C7BDDB228C36D900D33B76 /* MedicalDirectiveView.xib */; };
+		13C7BDE0228C6C0400D33B76 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C7BDDF228C6C0400D33B76 /* UIColorExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1309D7BE228CC584005F8D40 /* DrugMonographViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrugMonographViewController.swift; sourceTree = "<group>"; };
+		1309D7C0228CC9F3005F8D40 /* DrugLibrary.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = DrugLibrary.json; sourceTree = "<group>"; };
 		131142A52285ECA100BD65C0 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		1344B2FD229100EC00E08C63 /* DirectiveFlowChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectiveFlowChartViewController.swift; sourceTree = "<group>"; };
+		1344B301229627F400E08C63 /* MedicalDirectives.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = MedicalDirectives.json; sourceTree = "<group>"; };
 		135C05C22288938800F7B6CF /* MenuData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = MenuData.json; sourceTree = "<group>"; };
-		135C05C6228A088600F7B6CF /* Codable.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Codable.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		135C05C7228A1EA500F7B6CF /* MedicalDirectiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicalDirectiveViewController.swift; sourceTree = "<group>"; };
 		139BF3D722849C7400D25766 /* MedicMind.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MedicMind.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		139BF3DA22849C7400D25766 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		139BF3DC22849C7400D25766 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
@@ -27,6 +39,9 @@
 		139BF3E122849C7500D25766 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		139BF3E422849C7500D25766 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		139BF3E622849C7500D25766 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		13C7BDDA228C36D900D33B76 /* MedicalDirectiveView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedicalDirectiveView.swift; sourceTree = "<group>"; };
+		13C7BDDB228C36D900D33B76 /* MedicalDirectiveView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MedicalDirectiveView.xib; sourceTree = "<group>"; };
+		13C7BDDF228C6C0400D33B76 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +67,9 @@
 			isa = PBXGroup;
 			children = (
 				139BF3DC22849C7400D25766 /* MenuViewController.swift */,
+				135C05C7228A1EA500F7B6CF /* MedicalDirectiveViewController.swift */,
+				1309D7BE228CC584005F8D40 /* DrugMonographViewController.swift */,
+				1344B2FD229100EC00E08C63 /* DirectiveFlowChartViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -70,6 +88,8 @@
 			children = (
 				131142A52285ECA100BD65C0 /* DataManager.swift */,
 				135C05C22288938800F7B6CF /* MenuData.json */,
+				1309D7C0228CC9F3005F8D40 /* DrugLibrary.json */,
+				1344B301229627F400E08C63 /* MedicalDirectives.json */,
 			);
 			path = "Data Model";
 			sourceTree = "<group>";
@@ -79,7 +99,6 @@
 			children = (
 				139BF3D922849C7400D25766 /* MedicMind */,
 				139BF3D822849C7400D25766 /* Products */,
-				135C05C6228A088600F7B6CF /* Codable.playground */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,8 +119,27 @@
 				1311429C2285BD5900BD65C0 /* Views */,
 				1311429E2285BD6A00BD65C0 /* Supporting Files */,
 				139BF3E622849C7500D25766 /* Info.plist */,
+				13C7BDDE228C36DE00D33B76 /* Subviews */,
+				13C7BDE1228C6C1800D33B76 /* Extensions */,
 			);
 			path = MedicMind;
+			sourceTree = "<group>";
+		};
+		13C7BDDE228C36DE00D33B76 /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				13C7BDDA228C36D900D33B76 /* MedicalDirectiveView.swift */,
+				13C7BDDB228C36D900D33B76 /* MedicalDirectiveView.xib */,
+			);
+			path = Subviews;
+			sourceTree = "<group>";
+		};
+		13C7BDE1228C6C1800D33B76 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				13C7BDDF228C6C0400D33B76 /* UIColorExtension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,8 +201,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				135C05C32288938800F7B6CF /* MenuData.json in Resources */,
+				1344B302229627F400E08C63 /* MedicalDirectives.json in Resources */,
+				1309D7C1228CC9F3005F8D40 /* DrugLibrary.json in Resources */,
 				139BF3E522849C7500D25766 /* LaunchScreen.storyboard in Resources */,
 				139BF3E222849C7500D25766 /* Assets.xcassets in Resources */,
+				13C7BDDD228C36D900D33B76 /* MedicalDirectiveView.xib in Resources */,
 				139BF3E022849C7400D25766 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -176,9 +217,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1309D7BF228CC584005F8D40 /* DrugMonographViewController.swift in Sources */,
+				1344B2FE229100EC00E08C63 /* DirectiveFlowChartViewController.swift in Sources */,
+				135C05C8228A1EA500F7B6CF /* MedicalDirectiveViewController.swift in Sources */,
+				13C7BDDC228C36D900D33B76 /* MedicalDirectiveView.swift in Sources */,
 				131142A62285ECA100BD65C0 /* DataManager.swift in Sources */,
 				139BF3DD22849C7400D25766 /* MenuViewController.swift in Sources */,
 				139BF3DB22849C7400D25766 /* AppDelegate.swift in Sources */,
+				13C7BDE0228C6C0400D33B76 /* UIColorExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
