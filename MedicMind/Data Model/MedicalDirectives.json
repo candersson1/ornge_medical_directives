@@ -1,0 +1,2090 @@
+{
+    "directives" :
+    [
+        {
+            "key" : "sga",
+            "title" : "Supraglottic Airway",
+            "type" : "medical_directive",
+            "treatment" : "",
+            "color" : "",
+            "indications" : "• Height >= 122 cm (48 inches)\n• Need for ventilatory assistance OR airway control\n• Other airway management is inadequate OR ineffective OR unssuccesful",
+            "contraindications" : "• Intact gag reflex\n• Caustic ingestion\n• Active vomiting",
+            "clinical" : "• Endotracheal intubation is usually preffered for secure airway management for ACP(f), CCP\n• The supraglottic airway would be considered a rescue device if BLS airway/ventilation and other advanced airway maneuvers have failed\n• Confirm placement (i.e. auscultation/ETCO2)",
+            "drug_cards" : [
+                {
+                    "title" : "Supraglottic Airway",
+                    "levelOfCare" : "pcp",
+                    "patchPointType" : "after",
+                    "doseInformation" : "Insert Airway\nMAX 2 attempts\n\nIf two (2) patient attempts at supraglottic airway have failed, then revert to BVM and oral/nasal pharyngeal airway management",
+                    "notes" : "",
+                    "targetDrug" : ""
+                }
+            ]
+        },
+        {
+            "key" : "rsi",
+            "title" : "Pre-Intubation and Intubation Medications",
+            "type" : "medical_directive",
+            "treatment" : "It is expected that in virually ALL circumstances the Paramedic will patch to the TMP prior to performing a Ketamine Dissociated Intubation (KDI) or Sedation Facilitated Intubation (SFI) but it is recognized that there may be rare circumstances in which a patient requires immediate intubation with sedation/dissociation and a timely patch cannot be completed. In this circumstance utilize the medication guidelines below to perform the intubation and patch as soon as possible.",
+            "color" : "",
+            "indications" : "• Intubation attemps",
+            "contraindications" : "• Allergy or sensitivity to the medication\n• See specific contraindications for medications below",
+            "clinical" : "• RSI Intubation falls under the CCP and PCCP/PCCN scope\n• If patient requires recurrent doses of phenylephrine to maintain adequate MAP consult the TMP",
+            "drug_cards" : [
+                {
+                    "title" : "Lidocaine (Xylocaine) Spray*",
+                    "levelOfCare" : "acp",
+                    "patchPointType" : "after",
+                    "doseInformation" : "10 mg/spray onto the pharynx, hypopharynx\nMAX cumulative dose of 5 mg/kg or 400 mg",
+                    "notes" : "*Consider Lidocaine for oro-tracheal facilitated and awake intubations",
+                    "targetDrug" : "lidocaine"
+                },
+                {
+                    "title" : "Ketamine (Ketalar)",
+                    "levelOfCare" : "acp",
+                    "patchPointType" : "first",
+                    "doseInformation" : "Induction dose: 1-2 mg/kg IV over 30 seconds\n\nReduced titration dose:\nPush escalating doses 10-30 mg IV q 60 seconds\nGoal 2 mg/kg within 5 minutes\n\nCrashing pre-arrest patient\nPoor cardiovascular reserve\nPotential difficult airway with awake intubation",
+                    "notes" : "",
+                    "targetDrug" : "ketamine"
+                },
+                {
+                    "title" : "Midazolam (Versed)",
+                    "levelOfCare" : "acp",
+                    "patchPointType" : "first",
+                    "doseInformation" : "0.1 mg/kg IV (to a MAX of 8 mg)\ncontraindicated if MAP < 80\nTitrating doses (up to the above doses) in potentially difficult airway for awake intubation (1-2 mg every 3-5 minutes)",
+                    "notes" : "",
+                    "targetDrug" : "midazolam"
+                },
+                {
+                    "title" : "Etomidate (Amidate)",
+                    "levelOfCare" : "ccp",
+                    "patchPointType" : "first",
+                    "doseInformation" : "0.2-0.3 mg/kg IV/IO",
+                    "notes" : "",
+                    "targetDrug" : "etomidate"
+                },
+                {
+                    "title" : "Propofol (Diprivan)",
+                    "levelOfCare" : "ccp",
+                    "patchPointType" : "first",
+                    "doseInformation" : "1.0-1.5 mg/kg IV/IO\nContraindicated if MAP < 100",
+                    "notes" : "CAUTION:\n• Respiratory apnea and hypotension may occur with rapid induction\n• Avoid in elderly or hypovolemia or poor cardiovascular reserve\n• Phenylephrine should be used to support BP if hypotension occurs\n• Should be avoided in hypotension with head injury",
+                    "targetDrug" : "propofol"
+                },
+                {
+                    "title" : "fentaNYL (Sublimaze)",
+                    "levelOfCare" : "acp",
+                    "patchPointType" : "first",
+                    "doseInformation" : "1-2 mcg/kg IV/IO if MAP > 80",
+                    "notes" : "Avoid or reduced titration dosage (25-50 mcg IV q 3-5 minutes) if elderly, decreased LOC, or maximally sympathetically stimulated and poor cardiovascular reserve",
+                    "targetDrug" : "fentanyl"
+                },
+                {
+                    "title" : "Succinylcholine (Anectine)",
+                    "levelOfCare" : "ccp",
+                    "patchPointType" : "first",
+                    "doseInformation" : "1.5 mg/kg IV/IO",
+                    "notes" : "Contraindicate with:\n• Malignant hyperthermia\n• Hyperkalemia (known or concern)\n• Myopathies/Muscular dystrophies\n• Amyotrophic Lateral Sclerosis, Multiple Sclerosis\n• Guillain-Barre Syndrome, botulism\n• Burns >= 2nd degree over 10% BSA > 24 hours until healed\n• Stroke with hemiparesis, spinal cord injury > 72 hours until 6 months post inury\n• Severe intra-abdominal sepsis > 72 hours until resolution",
+                    "targetDrug" : "succinylcholine"
+                },
+                {
+                    "title" : "Rocuronium (Zemuron)",
+                    "levelOfCare" : "ccp",
+                    "patchPointType" : "first",
+                    "doseInformation" : "1.2 mg/kg IV/IO",
+                    "notes" : "",
+                    "targetDrug" : "rocuronium"
+                },
+                {
+                    "title" : "Phenylephrine (Neosynephrine)",
+                    "levelOfCare" : "ccp",
+                    "patchPointType" : "none",
+                    "doseInformation" : "MAP < 65\nMAP < 80 (high ICP, ischemic stroke or spinal cord injury)\n\n100 mcg IV/IO q 3 minutes PRN\nMAX 3 doses (300 mcg)",
+                    "notes" : "",
+                    "targetDrug" : "phenylephrine"
+                }
+            ]
+        },
+        {
+            "key" : "pre_transfer_sedation",
+            "title" : "Pre-Transfer Sedation",
+            "type" : "medical_directive",
+            "treatment" : "1 mg PO/SL\nMAX dose 1 mg",
+            "color" : "",
+            "indications" : "For a patient demonstrating or verbalizing the symptoms of transfer anxiety and:\n\t• GCS of 15\n\t• MAP >= 70 mmHg\n\t• No concurrent sedation or parenteral analgesia being administered",
+            "contraindications" : "• Allergy or sensitivity to the medication",
+            "clinical" : "",
+            "drug_cards" : [
+                {
+                    "title" : "LORazepam (Ativan)",
+                    "levelOfCare" : "acp",
+                    "patchPointType" : "none",
+                    "doseInformation" : "1 mg PO/SL\nMAX dose 1 mg",
+                    "notes" : "",
+                    "targetDrug" : "lorazepam"
+                }
+            ]
+        },
+        {
+            "key" : "analgesia_awake",
+            "title" : "Analgesia: Moderate to Severe Pain",
+            "type" : "medical_directive",
+            "treatment" : "Patch when maximum amount given or for any other concerns",
+            "color" : "",
+            "indications" : "• All patients should be assessed for level of pain using a 10 point scale (0 = no pain while 10 = maximum pain)",
+            "contraindications" : "• Allergy or sensitivity to the medication",
+            "clinical" : "• Total acetaminophen dose is not to exceed the lesser of 75 mg/kg or 4 grams in 24 hours",
+            "drug_cards" : [
+                {
+                    "title" : "Toradol (Ketoralac)",
+                    "levelOfCare" : "pcp",
+                    "patchPointType" : "none",
+                    "doseInformation" : "30 mg IM",
+                    "notes" : "Contraindication: imparied renal function, active bleeding, NSAID in the past 4-6 hours",
+                    "targetDrug" : "toradol"
+                },
+                {
+                    "title" : "Toradol (Ketoralac)",
+                    "levelOfCare" : "acp",
+                    "patchPointType" : "none",
+                    "doseInformation" : "30 mg IV/IM",
+                    "notes" : "Contraindication: imparied renal function, active bleeding, NSAID in the past 4-6 hours",
+                    "targetDrug" : "toradol"
+                },
+                {
+                    "title" : "Acetaminophen (Tylenol)",
+                    "levelOfCare" : "acp",
+                    "patchPointType" : "none",
+                    "doseInformation" : "40 to 60 kg\n15 mg/kg PO q 4 hours PRN\n\n>= 60 kg\n975-1000 mg PO/PR q 4 hours prn\nMAX 75 mg/kg OR 4 grams in 24 hours",
+                    "notes" : "Contraindication: acetaminophen within the last 4 hours",
+                    "targetDrug" : "acetaminophen"
+                },
+                {
+                    "title" : "fentaNYL (Sublimaze)",
+                    "levelOfCare" : "acp",
+                    "patchPointType" : "none",
+                    "doseInformation" : "MAP > 70\nMAP > 80 (high ICP, ischemic stroke, or spinal cord injury)\n\n25-50 mcg IV/IO q 10 minutes prn\nMAX 300 mcg",
+                    "notes" : "",
+                    "targetDrug" : "fentanyl"
+                },
+                {
+                    "title" : "Morphine",
+                    "levelOfCare" : "acp",
+                    "patchPointType" : "none",
+                    "doseInformation" : "MAP > 70\nMAP > 80 (high ICP, ischemic stroke, or spinal cord injury)\n\n2-4 mg IV/IO q 20 minutes prn\nMAX 10 mg",
+                    "notes" : "",
+                    "targetDrug" : "morphine"
+                },
+                {
+                    "title" : "Ketamine (Ketalar)",
+                    "levelOfCare" : "acp",
+                    "patchPointType" : "first",
+                    "doseInformation" : "0.1 mg/kg IV/IO q 5 minutes prn\nMAX 0.5 mg/kg IV\nMAP > 60",
+                    "notes" : "Ketamine is not a first line agent for analgesia in normotensive patients but can be considered early for multiple trauma patients or those with concerning hemodynamic status",
+                    "targetDrug" : "ketamine"
+                }
+            ]
+        },
+        {
+            "key" : "analgesia_intubated",
+            "title" : "Sedation and Pain Management For Intubated and Ventilated Patients",
+            "type" : "medical_directive",
+            "treatment" : "Infusions are preferred to repeat bolus dosing for sedation and analgesia wherever possible. A bolus dose of sedation or analgesia should only be considered when infusion dosing is increased and rapid therapeutic effect is required. Caution should be used with bolus dosing as this may increase the risk of sedation induced hypotension. All mechanically ventilated patients should receive analgesia with either Ketamine or FentaNYL\n\nMay choose and give ONE analgesic along with ONE of the following sedative agents; patch when maximum amount given, or for any other concerns",
+            "color" : "",
+            "indications" : "• When a patient is clinically stable, intubated and mechanically or manually ventilated, the ACP(f), and CCP may administer the following for sedation and analgesia",
+            "contraindications" : "• Allergy or sensitivity to the medication",
+            "clinical" : "• All patients (intubated or non-intubated) receiving sedation must be constantly monitored using a continues ETCO2 gas-sampling device that displays both a value and waveform, and have sedation and pain score documented q 30 minutes throughout transport\n• For recurrent hypotension requiring intervention, TMP contact is recommended",
+            "drug_cards" : [
+                {
+                    "title" : "fentaNYL (Sublimaze) if MAP > 70\n(MAP > 80 if high ICP, ischemic stroke or spinal cord injury)",
+                    "levelOfCare" : "acp",
+                    "patchPointType" : "after",
+                    "doseInformation" : "50-100 mcg IV/IM prn q 5 minutes, maximum cumulative dose for boluses as above cannot exceed 3 mcg/kg/hr\nOR\nInitiate IV infusion 1-3 mcg/kg/hr",
+                    "notes" : "",
+                    "targetDrug" : "fentanyl"
+                },
+                {
+                    "title" : "fentaNYL (Sublimaze) if MAP > 70\n(MAP > 80 if high ICP, ischemic stroke or spinal cord injury)",
+                    "levelOfCare" : "acp",
+                    "patchPointType" : "after",
+                    "doseInformation" : "50-100 mcg IV/IM prn q 5 minutes, maximum cumulative dose for boluses as above cannot exceed 3 mcg/kg/hr\nOR\nInitiate IV infusion 1-3 mcg/kg/hr",
+                    "notes" : "",
+                    "targetDrug" : "fentanyl"
+                },
+                {
+                    "title" : "Midazolam (Versed) if MAP > 70\n(MAP > 80 if high ICP, ischemic stroke or spinal cord injury)",
+                    "levelOfCare" : "acp",
+                    "patchPointType" : "after",
+                    "doseInformation" : "1-2 mg IV prn q 5 minutes, MAX dose 0.15 mg/kg/hr\nOR\nInitiate IV infusion 0.05-0.15 mg/kg/hr",
+                    "notes" : "",
+                    "targetDrug" : "midazolam"
+                },
+                {
+                    "title" : "Midazolam (Versed) if MAP > 70\n(MAP > 80 if high ICP, ischemic stroke or spinal cord injury)",
+                    "levelOfCare" : "ccp",
+                    "patchPointType" : "none",
+                    "doseInformation" : "1-2 mg IV prn q 5 minutes, MAX dose 0.15 mg/kg/hr\nOR\nInitiate IV infusion 0.05-0.15 mg/kg/hr",
+                    "notes" : "",
+                    "targetDrug" : "midazolam"
+                },
+                {
+                    "title" : "Propofol (Diprivan) if MAP > 70\n** Caution in elderly patients **\n(MAP > 80 if high ICP, ischemic stroke or spinal cord injury)",
+                    "levelOfCare" : "ccp",
+                    "patchPointType" : "none",
+                    "doseInformation" : "Titration of the infusion is preferred:\nInfusion\n0-80 mcg/kg/min IV\nTitrate in increments of 5 mcg/kg/min q 5 minutes prn if MAP > 70\n\nBolus\n10-20 mg IV q 5 minutes prn if rapid effect is required, and as long as MAP > 70 mmHg\n",
+                    "notes" : "Excercise caution as bolus doses increase risk of hypotension",
+                    "targetDrug" : "propofol"
+                },
+                {
+                    "title" : "Ketamine (Ketalar) if MAP > 60\n(if MAP < 60 Mandatory patch*)\n(MAP > 80 if high ICP, ischemic stroke or spinal cord injury)",
+                    "levelOfCare" : "acp",
+                    "patchPointType" : "after",
+                    "doseInformation" : "Infusion\n0.3-2.0 mg/kg/hr\n\nBolus\n1-2 mg/kg IV over 1 minute x 1 dose followd by 0.5 mg/kg q 20 minutes",
+                    "notes" : "",
+                    "targetDrug" : "ketamine"
+                },
+                {
+                    "title" : "Ketamine (Ketalar) if MAP > 60\n(if MAP < 60 Mandatory patch*)\n(MAP > 80 if high ICP, ischemic stroke or spinal cord injury)",
+                    "levelOfCare" : "ccp",
+                    "patchPointType" : "none",
+                    "doseInformation" : "Infusion\n0.3-2.0 mg/kg/hr\n\nBolus\n1-2 mg/kg IV over 1 minute x 1 dose followd by 0.5 mg/kg q 20 minutes",
+                    "notes" : "*If MAP < 50 patch to consider other therapies",
+                    "targetDrug" : "ketamine"
+                },
+                {
+                    "title" : "Phenylephrine (Neosynephrine)\nTreatment of hypotension associated with sedation",
+                    "levelOfCare" : "ccp",
+                    "patchPointType" : "none",
+                    "doseInformation" : "MAP < 65\nMAP < 80 (high ICP, ischemic stroke or spinal cord injury)\n\n100 mcg IV/IO x 3 q 3 minutes prn\nMAX 300 mcg",
+                    "notes" : "*If MAP < 50 patch to consider other therapies",
+                    "targetDrug" : "ketamine"
+                }
+            ]
+        },
+        {
+            "key" : "bronchospasm",
+            "title" : "Adult - Bronchoconstriction",
+            "type" : "medical_directive",
+            "treatment" : "",
+            "color" : "",
+            "indications" : "• Respiratory distress \nAND \n• Suspected bronchoconstriction",
+            "contraindications" : "• Allergy or sensitivity to the medication \n• Allergy to peanuts (i.e. Ipratropium Bromide (Atrovent)",
+            "clinical" : "\n• MDI delivery systems require 30 seconds to 're-charge' between doses. Not waiting the recommended length of time between doses will result in significantly decreased amounts of medication being delivered\n\n• In the event of a respiratory outbreak as identified by originating facility / Ornge, the MDI must be used insead of nebulization\n\n• Side effects of Magnesium Sulfate included hypotension, monitor BP closely\n\n• Consider applying the bronchoconstriction medical directive in both invasive and non-invasive ventilated patients",
+            "drug_cards" : [
+                {
+                    "title" : "Salbutamol (Ventolin) MDI\n(100 mcg/puff)",
+                    "levelOfCare" : "pcp",
+                    "patchPointType" : "none",
+                    "doseInformation" : "8 puffs\n(4 breaths or 45 seconds between each administration)\nmay repeat x 3 q 5-15 minutes prn",
+                    "notes" : "",
+                    "targetDrug" : "salbutamol"
+                },
+                {
+                    "title" : "Salbutamol (Ventolin) Solution\nVia Nebulized Aerosol (2.5 mg/2.5 ml",
+                    "levelOfCare" : "pcp",
+                    "patchPointType" : "none",
+                    "doseInformation" : "5 mg q 5-15 minutes x 3 prn",
+                    "notes" : "*Total volume of Salbutamol and Normal Saline should be 3 ml",
+                    "targetDrug" : "salbutamol"
+                },
+                {
+                    "title" : "Ipratropium Bromide (Atrovent) MDI\n(20 mcg/puff)",
+                    "levelOfCare" : "acp",
+                    "patchPointType" : "none",
+                    "doseInformation" : "5 puffs\n(4 breaths or 45 seconds between each administration)\nmay repeat x 3 q 15 minutes prn\nMAX 3 doses",
+                    "notes" : "",
+                    "targetDrug" : ""
+                },
+                {
+                    "title" : "Ipratropium Bromide (Atrovent) Solution\nVia Nebulized Aerosol (250 mcg/ml)",
+                    "levelOfCare" : "acp",
+                    "patchPointType" : "none",
+                    "doseInformation" : "500 mcg q 15 minutes x 3 prn\nMAX 3 doses",
+                    "notes" : "*Total volume of Ipratropium Bromide (Atrovent) and Normal Saline should be 3 ml",
+                    "targetDrug" : ""
+                },
+                {
+                    "title" : "Epinephrine (Adrenalin)",
+                    "levelOfCare" : "pcp",
+                    "patchPointType" : "after",
+                    "doseInformation" : "0.01 mg/kg IM (1:1000)\nMAX 0.5 mg IM",
+                    "notes" : "Use with caution when comorbid history of CAD/Stroke",
+                    "targetDrug" : ""
+                },
+                {
+                    "title" : "Epinephrine (Adrenalin)",
+                    "levelOfCare" : "ccp",
+                    "patchPointType" : "first",
+                    "doseInformation" : "0.05-0.5 mcg/kg/min IV/IO",
+                    "notes" : "",
+                    "targetDrug" : ""
+                },
+                {
+                    "title" : "Steroids",
+                    "levelOfCare" : "acp",
+                    "patchPointType" : "first",
+                    "doseInformation" : "methylPREDNISolone 125 mg IV/IO\nOR\nDexamethasone 8 mg IM/IV/IO",
+                    "notes" : "",
+                    "targetDrug" : ""
+                },
+                {
+                    "title" : "Magnesium Sulfate",
+                    "levelOfCare" : "acp",
+                    "patchPointType" : "first",
+                    "doseInformation" : "MAX 2 g IV/IO over 15 minutes",
+                    "notes" : "",
+                    "targetDrug" : ""
+                },
+                {
+                    "title" : "Salbutamol (Ventolin) IV Infusion",
+                    "levelOfCare" : "ccp",
+                    "patchPointType" : "first",
+                    "doseInformation" : "5 mcg/min\nMAX recommended dose 50 mcg/min",
+                    "notes" : "",
+                    "targetDrug" : "salbutamol"
+                },
+                {
+                    "title" : "Salbutamol (Ventolin) IV Push",
+                    "levelOfCare" : "ccp",
+                    "patchPointType" : "first",
+                    "doseInformation" : "4 mcg/kg IV/IO over 2-5 minutes q 15 minutes\nsingle MAX dose of 250 mcg\nTitrate to an airway pressure < 30 mmHg",
+                    "notes" : "",
+                    "targetDrug" : "salbutamol"
+                }
+            ]
+        },
+        {
+            "key" : "pneumo",
+            "title" : "Tension Pneumothorax",
+            "type" : "medical_directive",
+            "treatment" : "",
+            "color" : "",
+            "indications" : "• Severe respiratory distress in the setting of chest trauma with hemodynamic compromise\nAND/OR\n• Traumatic VSAs\nAND/OR\n• Severe hemodynamic compromise during positive pressure ventilation particularly in trauma or asthma or COPD patients\nAND/OR\n• Chest trauma, Severe Asthma or COPD and one or more of the following\n   ◦ Decreased/absent breath sounds\n   ◦ Altered LOC\n   ◦ Cyanosis\n   ◦ JVD\n   ◦ Hyper resonance on affected side\n   ◦ Tracheal shift (late sign)",
+            "contraindications" : "• Not applicable",
+            "drug_cards" : [
+                {
+                    "title" : "Needle Decompression",
+                    "levelOfCare" : "acp",
+                    "patchPointType" : "after",
+                    "doseInformation" : "Consider differential diagnosis and decompress if high probability of tension pneumothorax",
+                    "notes" : "",
+                    "targetDrug" : ""
+                }
+            ],
+            "clinical" : "• The patient must be seen as soon as possible at an appropriate facility for the insertion of chest tube(s)\n• Consider differential diagnosis\n   ◦ Mainstem intubation\n   ◦ Pleural effusion\n   ◦ Hemothorax\n   ◦ Consolidated pneumonia\n   ◦ Autopeep\n   ◦ Dynamic hyperinflation"
+        },
+        {
+            "key" : "chest_tubes",
+            "title" : "Maintenance of Chest Tubes",
+            "type" : "medical_directive",
+            "treatment" : "",
+            "color" : "",
+            "indications" : "• Initiated by sending facility",
+            "contraindications" : "• Not applicable",
+            "drug_cards" : [
+                {
+                    "title" : "Maintain chest drainage systems during call to keep the drainage system clear",
+                    "levelOfCare" : "acp",
+                    "patchPointType" : "none",
+                    "doseInformation" : "• If the patient's chest tube was maintained by suction at the sending facility, the Paramedic may maintain suction to no greater than -20 cmH20\n• If the patient's chest tube was maintained by gravity drainage, the Paramedic may maintain by gravity drainage to underwater seal or to suction as per patient presentation",
+                    "notes" : "",
+                    "targetDrug" : ""
+                }
+            ],
+            "clinical" : "• A Heimlich flutter valve may be adequate if no drainage system has been implemented\n• Suction beyond -20 cmH20 requires patch authorization prior to transport"
+        },
+        {
+            "key" : "start_vent",
+            "title" : "Initiating or Maintaining Mechanical Ventilation",
+            "type" : "medical_directive",
+            "treatment" : "",
+            "color" : "",
+            "indications" : "• Need for mechanical ventilation\n\t• Hypoxemic respiratory failure\n\t• Hypercapnic respiratory failure\n\t• Mixed hypoxemic hypercapnic respiratory failure\n\t• ETI airway mangagement for transport",
+            "contraindications" : "• Not applicable",
+            "drug_cards" : [
+                {
+                    "title" : "Assessment and preparation of ventilated patient",
+                    "levelOfCare" : "acp",
+                    "patchPointType" : "none",
+                    "doseInformation" : "",
+                    "notes" : "* Predicted body weight and tidal volume charts have been provided in the drug monograph document",
+                    "targetDrug" : ""
+                },
+                {
+                    "title" : "Initiation/Maintenance of Ventilation-Normal lungs",
+                    "levelOfCare" : "acp",
+                    "patchPointType" : "first",
+                    "doseInformation" : "",
+                    "notes" : "",
+                    "targetDrug" : ""
+                },
+                {
+                    "title" : "",
+                    "levelOfCare" : "ccp",
+                    "patchPointType" : "none",
+                    "doseInformation" : "",
+                    "notes" : "",
+                    "targetDrug" : ""
+                }
+            ],
+            "clinical" : ""
+        },
+        {
+            "key" : "vent_guidelines",
+            "title" : "Mechanical Ventilation Guidelines",
+            "type" : "medical_directive",
+            "treatment" : "",
+            "color" : "",
+            "indications" : "",
+            "contraindications" : "",
+            "clinical" : "",
+            "drug_cards" : [
+                {
+                    "title" : "",
+                    "levelOfCare" : "pcp",
+                    "patchPointType" : "after",
+                    "doseInformation" : "",
+                    "notes" : "",
+                    "targetDrug" : ""
+                }
+            ]
+        },
+        {
+            "key" : "recruitment_maneuver",
+            "title" : "Recruitment Maneuver Criteria",
+            "type" : "medical_directive",
+            "treatment" : "",
+            "color" : "",
+            "indications" : "",
+            "contraindications" : "",
+            "clinical" : "",
+            "drug_cards" : [
+                {
+                    "title" : "",
+                    "levelOfCare" : "pcp",
+                    "patchPointType" : "after",
+                    "doseInformation" : "",
+                    "notes" : "",
+                    "targetDrug" : ""
+                }
+            ]
+        },
+        {
+            "key" : "nippv",
+            "title" : "Non-Invasive Positive Pressure Ventilation (NIPPV)",
+            "type" : "medical_directive",
+            "treatment" : "",
+            "color" : "",
+            "indications" : "• Conscious patient able to protect airway in respiratory distress",
+            "contraindications" : "• Active vomiting\n• Unable to manage secretions / Inability to protected airway\n• Decreased level of consciousness/severe agitation\n• Repeated hemoptysis\n• Cardiac arrest\n• Immediate need for endotracheal intubation\n• Apnea\n• Upper airway obstruction\n• Facial trauma\n• Recent esophagostomy\n\nRelative Contraindication:\n• Hemodynamic instability\n",
+            "clinical" : "",
+            "drug_cards" : [
+                {
+                    "title" : "CPAP/BiPAP",
+                    "levelOfCare" : "acp",
+                    "patchPointType" : "after",
+                    "doseInformation" : "Initial Setting\niPAP 10 cmH20/ePAP 5 cmH20\n\nMAX iPAP 20 cmH20/ePAP 10 cmH20",
+                    "notes" : "• Patch first if the patient has altered mentation or is lethargic\n• NPPV may be of benefit in hypercarbia from ventilatory failure even with altered mental status\n• For agitated patients consider TMP discussion for sedation",
+                    "targetDrug" : ""
+                }
+            ]
+        },
+        {
+            "key" : "paralysis",
+            "title" : "Post Intubation Paralysis",
+            "type" : "medical_directive",
+            "treatment" : "",
+            "color" : "",
+            "indications" : "• Patients with known difficult airways\n• Facilitate and optimize mechanical ventilation and oxygenation for transport\n• Sedation and analgesia must be administered in conjunction with muscle relaxation",
+            "contraindications" : "• Allergy or sensitivity to the medication\n• Inadequate sedation/analgesia",
+            "clinical" : "• In patient with known difficult airways, muscle relaxation is stronly recommended post intubation to ensure minimal risk for loss of ETT in transport\n• Complete history and physical examination (including baseline neurologic assessment) must be completed\n• Baseline assessment of vitals and level of paralysis should be obtained and documented to detect and record the patient’s subsequent response to paralysis\n• Muscle relaxans will hide the motor component of seizures. In cases of status epilepticus or risk of seizures, use paralysis as a last resort and in conjunction with anticonvulsant/sedative infusions. Monitor for autonomic manifestations of seizures\n• Proper securing of the ETT is paramount",
+            "drug_cards" : [
+                {
+                    "title" : "Rocuronium (Zemuron)",
+                    "levelOfCare" : "acp",
+                    "patchPointType" : "after",
+                    "doseInformation" : "0.6 mg/kg IV/IO\nthen\n0.3 mg/kg IV/IO q 20 minutes prn",
+                    "notes" : "",
+                    "targetDrug" : "rocuronium"
+                }
+            ]
+        },
+        {
+            "key" : "medical_arrest",
+            "title" : "Adult Non-Traumatic Cardiac Arrest",
+            "type" : "medical_directive",
+            "treatment" : "",
+            "color" : "",
+            "indications" : "• Adult patient is vital signs abset (VSA) due to non-traumatic cause",
+            "contraindications" : "• Not applicable",
+            "clinical" : "• PCP(f) may apply the Medical Directives for management of cardiac arrest with semi-automated defibrillation",
+            "drug_cards" : [
+                {
+                    "title" : "",
+                    "levelOfCare" : "pcp",
+                    "patchPointType" : "after",
+                    "doseInformation" : "Initiate the appropriate algorithm based on the presenting ECG rhythm (see flowchart)",
+                    "notes" : "",
+                    "targetDrug" : ""
+                },
+                {
+                    "title" : "",
+                    "levelOfCare" : "acp",
+                    "patchPointType" : "after",
+                    "doseInformation" : "Initiate the appropriate algorithm based on the presenting ECG rhythm (see flowchart)",
+                    "notes" : "",
+                    "targetDrug" : ""
+                }
+            ]
+        },
+        {
+            "key" : "hypothermic_arrest",
+            "title" : "Adult Severe Hypothermic Cardiac Arrest",
+            "type" : "medical_directive",
+            "treatment" : "",
+            "color" : "",
+            "indications" : "• Adult patient to be vital signs absent (VSA) and Hypothermic defined as temperature < 30 C, or presumed to be so based on environmental circumstances.",
+            "contraindications" : "• Not applicable",
+            "clinical" : "",
+            "drug_cards" : [
+                {
+                    "title" : "",
+                    "levelOfCare" : "pcp",
+                    "patchPointType" : "after",
+                    "doseInformation" : "",
+                    "notes" : "",
+                    "targetDrug" : ""
+                }
+            ]
+        },
+        {
+            "key" : "rosc",
+            "title" : "Adult Post Arrest Return of Spontaneous Circulation (ROSC)",
+            "type" : "medical_directive",
+            "treatment" : "",
+            "color" : "",
+            "indications" : "• ROSC",
+            "contraindications" : "• Not applicable",
+            "clinical" : "• ",
+            "drug_cards" : [
+                {
+                    "title" : "",
+                    "levelOfCare" : "acp",
+                    "patchPointType" : "after",
+                    "doseInformation" : "Initiate the appropriate treatment based on algorithm (see flowchart)",
+                    "notes" : "",
+                    "targetDrug" : ""
+                }
+            ]
+        },
+        {
+            "key" : "acs",
+            "title" : "Acute Coronary Syndrome",
+            "type" : "medical_directive",
+            "treatment" : "",
+            "color" : "",
+            "indications" : "• Suspected cardiac ischemia",
+            "contraindications" : "• Allergy or sensitivity to the medication\n• Patient has used any phosphodiesterase-5 inhibitors (Sildenagil [Viagra or Revatio], tadalafil [Cialis], or Vardemafil [Levitra]) in the last 48 hours (these agents are commonly used for erectile dysfunction and are also used in pulmonary hypertension)",
+            "clinical" : "• In the setting of acute coronary syndrome fentaNYL is the preferred analgesic",
+            "drug_cards" : [
+                {
+                    "title" : "Nitroglycerin SL *",
+                    "levelOfCare" : "pcp",
+                    "patchPointType" : "after",
+                    "doseInformation" : "MAP > 70\n0.4 mg SL spray q 5 minutes MAX of 6 doses",
+                    "notes" : "*Single PCP(f) initiate then patch\nConditions for Nitroglycerin\n• Patient is >= 40kg\n• MAP >= 70 mmHg\n• Heart rate is >= 60 and < 160 bpm\n• Patient is alert\n• Patients under the age of 18 require a TMP patch",
+                    "targetDrug" : "nitroglycerin"
+                },
+                {
+                    "title" : "Initiate Nitroglycerin IV\nMAP > 70",
+                    "levelOfCare" : "acp",
+                    "patchPointType" : "after",
+                    "doseInformation" : "10 mcg/min continuous IV infusion\nMAX 100 mcg/min\nTitrate q 5 minutes in 5 mcg/min increments for ischemic chest pain\nMaintain Nitroglycerin infusion during transport",
+                    "notes" : "",
+                    "targetDrug" : "nitroglycerin"
+                },
+                {
+                    "title" : "Maintain Nitroglycerin IV",
+                    "levelOfCare" : "acp",
+                    "patchPointType" : "after",
+                    "doseInformation" : "Maintain nitroglycerin infusion during transport under conditions listed below\n• >= 18 years old\n• The infusion was initiated by the sending facility\n• The infusion rate <= 100 mcg/min IV and >= 5 mcg/min IV\n• The patient has been chest pain free for at least 4 hours\n• No change in patient condition during transport",
+                    "notes" : "",
+                    "targetDrug" : "nitroglycerin"
+                },
+                {
+                    "title" : "",
+                    "levelOfCare" : "ccp",
+                    "patchPointType" : "none",
+                    "doseInformation" : "Maintain nitroglycerin infusion during transport under conditions listed below\n• >= 18 years old\n• The infusion was initiated by the sending facility\n• The infusion rate <= 100 mcg/min IV and >= 5 mcg/min IV\n• The patient has been chest pain free for at least 4 hours\n• No change in patient condition during transport",
+                    "notes" : "",
+                    "targetDrug" : "nitroglycerin"
+                },
+                {
+                    "title" : "ASA",
+                    "levelOfCare" : "pcp",
+                    "patchPointType" : "none",
+                    "doseInformation" : "160 mg PO, chewed and swallowed\n(two 80 mg chewable tablets)",
+                    "notes" : "Conditions\n• Patient weight is >= 40 kg\n• No allergy to ASA\n• No current active bleeding\n• No evidence of CVA or head injury within 24 hours prior to onset of chest pain\n• No history of asthma exacerbation from ASA ingestion",
+                    "targetDrug" : "asa"
+                },
+                {
+                    "title" : "Morphine Sulfate (MSO4)",
+                    "levelOfCare" : "acp",
+                    "patchPointType" : "none",
+                    "doseInformation" : "MAP >= 70\n2 mg IV/IO q 10 minutes\nMAX 6 mg",
+                    "notes" : "",
+                    "targetDrug" : "morphine"
+                },
+                {
+                    "title" : "fentaNYL (Sublimaze)",
+                    "levelOfCare" : "acp",
+                    "patchPointType" : "none",
+                    "doseInformation" : "MAP >= 70\n25-50 mcg IV/IO q 5 minutes prn\nMAX 300 mcg",
+                    "notes" : "",
+                    "targetDrug" : "fentanyl"
+                },
+                {
+                    "title" : "Plavix (Clopidogrel)",
+                    "levelOfCare" : "acp",
+                    "patchPointType" : "first",
+                    "doseInformation" : "300-600 mg PO",
+                    "notes" : "",
+                    "targetDrug" : "plavix"
+                },
+                {
+                    "title" : "Ticagrelor",
+                    "levelOfCare" : "acp",
+                    "patchPointType" : "first",
+                    "doseInformation" : "180 mg PO",
+                    "notes" : "",
+                    "targetDrug" : "ticagrelor"
+                },
+                {
+                    "title" : "Metoprolol",
+                    "levelOfCare" : "acp",
+                    "patchPointType" : "first",
+                    "doseInformation" : "5 mg IV/IO q 5 minutes\nMAX 15 mg\nIf the patient is hypertensive or tachycardic",
+                    "notes" : "",
+                    "targetDrug" : "metoprolol"
+                },
+                {
+                    "title" : "Maintain Heparin *",
+                    "levelOfCare" : "acp",
+                    "patchPointType" : "none",
+                    "doseInformation" : "Maintain Heparin infusion rate from sending if last PTT within therapeutic range of Ornge or sending hospital nomogram,\nOR\nIf infusion initiated and no post-initiation PTT available yet",
+                    "notes" : "",
+                    "targetDrug" : "heparin"
+                },
+                {
+                    "title" : "Initiate Heparin *",
+                    "levelOfCare" : "acp",
+                    "patchPointType" : "first",
+                    "doseInformation" : "80 units/kg IV bolus\nMAX 5,000 units\nthen\nINITIATE infusion 18 units/kg/hr IV\nMAX 1,300 units/hr\nTitrate dose relative to aPTT",
+                    "notes" : "*Contraindications to Heparin\n• Active bleeding\n• History of Heparin induced thrombocytopenia",
+                    "targetDrug" : "heparin"
+                }
+            ]
+        },
+        {
+            "key" : "stemi",
+            "title" : "ST Elevation MI (STEMI)",
+            "type" : "medical_directive",
+            "treatment" : "In patients being transported for acute cardiac intervention (emergent PCI) initiate Medical Directive and load and go. Initiate patch in pransport or pre-patch prior to arrival whenever possible.",
+            "color" : "",
+            "indications" : "• STEMI as defined by ECG changes",
+            "contraindications" : "Absolutate contraindications for thrombolytics\n\t• Suspected aortic dissection\n\t• Any prior intracranial hemorrhage, hemorrhagic stroke, or stroke of unknown origin\n\t• Known structural cerebral vascular lesion (i.e. arteriovenous malformation)\n\t• Known intracranial neoplasm (primary or metastatic)\n\t• Ischemic stroke > 3 hours or < 3 months\n\t• Suspected pericarditis\n\t• Active bleeding or bleeding diathesis (excluding menses)\n\t• Gastrointenstinal bleeding within the last month\n\t• Major trauma/surgury/head injury within three months\n\nRelative contraindications to thrombolytics\n\t• Patient within 90 minutes of PCI centre from scene, consider direct transport for PCI\n\tOR\n\t• 120 minutes from PCI centre if in a community hospital\n\t• History of chronic, severe, poorly controlled hypertension\n\t• Severe uncontrolled hypertension on presentation (SBP greater than 180 mmHg or DBP > 110 mmHg)\n\t• History of prior ischemic stroke or transient ischemic attack within six months, dementia, or known intracranial pathology not covered in contraindications\n\t• Traumatic or prolonged CPR (> than ten minutes) \n\t• Recent internal bleeding (within two to four weeks)\n\t• Noncompressible vascular punctures\n\t• Advanced liver disease\n\t• Pregnancy or within one week postpartum\n\t• Infective endocarditis\n\t• Active peptic ulcer\n\t• Current use of anticoagulants: the higher the INR, the higher the risk of bleeding",
+            "clinical" : "• No thrombolysis will be administered unless the TMP confirms diagnosis based on clinical and ECG findings and gives the order to proceed. It is preferred that the TMP review the ECG but if not possible and paramedic is confident of postivie ECG criteria then a verbal confirmation on patch with TMP is adequate\n• Obtain 12 lead ECG every 15 minutes or prn for duration of transport\n• Consider Plavix, Ticagrelor\n• Patch if PTT parameters fall outside of norm (greater than 120 or less than 50 x 2 consecutive blood samples)",
+            "drug_cards" : [
+                {
+                    "title" : "",
+                    "levelOfCare" : "acp",
+                    "patchPointType" : "after",
+                    "doseInformation" : "Initiate appropriate treament based on algorithm (see flowchart)",
+                    "notes" : "",
+                    "targetDrug" : ""
+                },
+                {
+                    "title" : "TNKase",
+                    "levelOfCare" : "acp",
+                    "patchPointType" : "first",
+                    "doseInformation" : "Patient weight (kg)\tTNK (mg)\tVolume (ml)\n< 60 kg\t\t\t\t30 mg\t\t6 ml\n>= 60 to < 70 kg\t\t35 mg\t\t7 ml\n>= 70 to < 80 kg\t\t40 mg\t\t8 ml\n>= 80 to < 90\t\t45 mg\t\t9 ml\n>= 90 kg\t\t\t\t50 mg\t\t10 ml",
+                    "notes" : "",
+                    "targetDrug" : "tenecteplase"
+                },
+                {
+                    "title" : "Initiate Heparin *",
+                    "levelOfCare" : "acp",
+                    "patchPointType" : "first",
+                    "doseInformation" : "60 units/kg IV bolus\nMAX 4,000 units\nthen\nINITIATE infusion 12 units/kg/hr IV\nMAX 1,000 units/hr\nTitrate dose relative to aPTT",
+                    "notes" : "*Contraindications to Heparin\n• Active bleeding\n• History of Heparin induced thrombocytopenia",
+                    "targetDrug" : "heparin"
+                }
+            ]
+        },
+        {
+            "key" : "chf",
+            "title" : "Cardiogenic Pulmonary Edema",
+            "type" : "medical_directive",
+            "treatment" : "",
+            "color" : "",
+            "indications" : "• Initial MAP >= 70 mmHg and SBP > 100\nAND\n• Heart rate is >= 60 but < 160 bpm",
+            "contraindications" : "• Allergy or sensitivity to the medication\n• No IV\n• Nitroglycerin",
+            "clinical" : "• If a patient presents with moderate to severe respiratory distress and the Paramedic suspects the patient is in acute pulmonary edema\n\t• Reassess and document vitals between doses\n\t• Discontinue Nitroglycerin if the BP or heart rate parameters for Nitroglycerin are no longer met\n\t• Check blood pressure before administering each subsequent dose of Nitroglycerin",
+            "drug_cards" : [
+                {
+                    "title" : "CPAP/BiPAP",
+                    "levelOfCare" : "acp",
+                    "patchPointType" : "after",
+                    "doseInformation" : "Initial Setting\niPAP 10 cmH20/ePAP 5 cmH20\n\nMAX iPAP 20 cmH20/ePAP 10 cmH20",
+                    "notes" : "",
+                    "targetDrug" : ""
+                },
+                {
+                    "title" : "Nitroglycerin*",
+                    "levelOfCare" : "pcp",
+                    "patchPointType" : "none",
+                    "doseInformation" : "0.4 mg SL spray\nq 5 minutes prn\nMAX of 6 doses",
+                    "notes" : "*Single PCP(f): Initiate then patch",
+                    "targetDrug" : ""
+                },
+                {
+                    "title" : "Nitroglycerin (Tridil)\nIV Infusion (for severe pulmonary edema)",
+                    "levelOfCare" : "acp",
+                    "patchPointType" : "first",
+                    "doseInformation" : "Initiate 10 mcg/min IV\ntitrate in 5 mcg/min incrememnts q 5 minutes\nMAX 200 mcg/min",
+                    "notes" : "",
+                    "targetDrug" : "nitroglycerin"
+                },
+                {
+                    "title" : "Furosemide (Lasix)",
+                    "levelOfCare" : "acp",
+                    "patchPointType" : "first",
+                    "doseInformation" : "40 mg IV or double patients usual total daily dose\nMAX of 160 mg",
+                    "notes" : "",
+                    "targetDrug" : "furosemide"
+                }
+            ]
+        },
+        {
+            "key" : "cardiogenic_shock",
+            "title" : "Cardiogenic Shock",
+            "type" : "medical_directive",
+            "treatment" : "",
+            "color" : "",
+            "indications" : "• Cardiogenic shock",
+            "contraindications" : "• Allergy or sensitivity to the medication",
+            "clinical" : "• In general, titration of Norepinephrine should be based upon MAP’s whereas respopnse to Dobutamine should be based on perfusion and clinical parameters such as urine output\n• MAP parameters in cardiogenic shock should be targeted to low normal levels, MAP 60-65",
+            "drug_cards" : [
+                {
+                    "title" : "Normal Saline or Ringers Lactate",
+                    "levelOfCare" : "acp",
+                    "patchPointType" : "none",
+                    "doseInformation" : "200-250 ml IV/IO bolus prn\nTarget MAP > 65",
+                    "notes" : "",
+                    "targetDrug" : ""
+                },
+                {
+                    "title" : "Norepinephrine (Levophed)",
+                    "levelOfCare" : "acp",
+                    "patchPointType" : "after",
+                    "doseInformation" : "0.05-0.5 mcg/kg/min IV/I\nTarget MAP > 65\n",
+                    "notes" : "",
+                    "targetDrug" : "norepinephrine"
+                },
+                {
+                    "title" : "doBUTamine (Dobutrex)",
+                    "levelOfCare" : "ccp",
+                    "patchPointType" : "first",
+                    "doseInformation" : "5-20 mcg/kg/min IV/IO\nInitiate at 5 mcg/kg/min\nTitrate based on perfusion and clinical parameters",
+                    "notes" : "",
+                    "targetDrug" : "dobutamine"
+                }
+            ]
+        },
+        {
+            "key" : "iabp",
+            "title" : "Intra-Aortic Ballon Pump (IABP)",
+            "type" : "medical_directive",
+            "treatment" : "• Paramedics are required to perform IABP specific assessments\n\t• Verify Balloon position and size\n\t• Identify balloon tip on x-ray\n\t• Assess for distal pulses in insertion limb\n\t• Assess for urine output\n\t• Identify if catheter is fiber optic\n\t• Identify trigger being used\n\t• Assess IABP waveform\n\t• Ensure catheter is sutured securely in place",
+            "color" : "",
+            "indications" : "• A CCP may provide the treatment prescribed in this auxiliary medical directive if certified and authorized\n• Patient > 18 years old\n• Patient > 40 kg\n• Patient must already be on Intra-Aortic Balloon Pump (IABP) at the sending hospital",
+            "contraindications" : "• Not applicable",
+            "clinical" : "• 1 IABP certified paramedic with >= ACP(f) partner\n• Paramedics are not permitted to advance or remove IABP catheters\n• Paramedics are required to ensure transport IABP is in ready state, fully charged, appropriate helium levels, paper role, and appropriate cables",
+            "drug_cards" : [
+                {
+                    "title" : "Paramedics are required to Patch to obtain orders when providing IABP care",
+                    "levelOfCare" : "ccp",
+                    "patchPointType" : "first",
+                    "doseInformation" : "Transition\n• Both paramedics at the bedside for transition to transport IABP\n• Put IABP in 1:2 ratio\n• Select trigger\n• Assess and adjust 3 rules of timing to achieve ideal waveform and augmentation\n• Run a recording strip\n• Maintain head of bed no higher than 30 degrees\n• Keep insertion limb straight\n• Ensure no blood is present in the catheter\n• Return IABP ratio to 1:1 or 1:2 matching setting from sending\n\nTransport\n• Excercise caution to protect IABP catheter from being pulled\n• Continuously monitor the patient and the performance of the IABP, make adjustment required to maintain good augmentation\n• Run a recorder strip at the start of transport and again at the end of transport\n• Plug IABP into vehicle power source to conserve IABP internal battery\n\nTransfer of Care\n• Paramedics to ensure sage transfer of IABP care with accepting hospital staff\n• Run final strip prior to transfer\n• Document as required on ACR among other care the specifics of the IABP",
+                    "notes" : "",
+                    "targetDrug" : ""
+                }
+            ]
+        },
+        {
+            "key" : "ecmo",
+            "title" : "Extracorporeal Membrane Oxygenation (ECMO)",
+            "type" : "medical_directive",
+            "treatment" : "",
+            "color" : "",
+            "indications" : "• ",
+            "contraindications" : "• ",
+            "clinical" : "• ",
+            "drug_cards" : [
+                {
+                    "title" : "",
+                    "levelOfCare" : "pcp",
+                    "patchPointType" : "after",
+                    "doseInformation" : "",
+                    "notes" : "",
+                    "targetDrug" : ""
+                }
+            ]
+        },
+        {
+            "key" : "ecmo_failure",
+            "title" : "Emergency ECMO/ECLS Failure",
+            "type" : "medical_directive",
+            "treatment" : "",
+            "color" : "",
+            "indications" : "• ",
+            "contraindications" : "• ",
+            "clinical" : "• ",
+            "drug_cards" : [
+                {
+                    "title" : "",
+                    "levelOfCare" : "pcp",
+                    "patchPointType" : "after",
+                    "doseInformation" : "",
+                    "notes" : "",
+                    "targetDrug" : ""
+                }
+            ]
+        },
+        {
+            "key" : "stroke",
+            "title" : "Stroke",
+            "type" : "medical_directive",
+            "treatment" : "",
+            "color" : "",
+            "indications" : "• Acute stroke",
+            "contraindications" : "• Allergy or sensitivity to the medication\n• Traumatic head injury\n• Blood glucose < 4 mmol",
+            "clinical" : "",
+            "drug_cards" : [
+                {
+                    "title" : "Labetalol",
+                    "levelOfCare" : "acp",
+                    "patchPointType" : "first",
+                    "doseInformation" : "• 10-20 mg slow IV push q 20 minutes prn until desired MAP achieved\n• Infusion 0.5 - 2 mg/min",
+                    "notes" : "Hold if HR < 60 bmp\nMAX dose 300 mg/day",
+                    "targetDrug" : "labetalol"
+                },
+                {
+                    "title" : "Hypertonic Saline",
+                    "levelOfCare" : "acp",
+                    "patchPointType" : "first",
+                    "doseInformation" : "3 ml/kg IV/IO\nMAX rate of 20 ml/min",
+                    "notes" : "",
+                    "targetDrug" : "3% saline"
+                },
+                {
+                    "title" : "Mannitol",
+                    "levelOfCare" : "acp",
+                    "patchPointType" : "first",
+                    "doseInformation" : "1 g/kg IV/IO bolus",
+                    "notes" : "",
+                    "targetDrug" : "mannitol"
+                }
+            ]
+        },
+        {
+            "key" : "seizure",
+            "title" : "Adult Seizures",
+            "type" : "medical_directive",
+            "treatment" : "",
+            "color" : "",
+            "indications" : "• Active seizure",
+            "contraindications" : "• Allergy or sensitivity to the medication\n• If blood glucose level <= 4 mmol/L, proceed with protocol for “Hypoglycemic Emergencies”",
+            "clinical" : "• 0.2 micron filter must be used when administering phenyTOIN",
+            "drug_cards" : [
+                {
+                    "title" : "Midazolam (Versed) for seizures",
+                    "levelOfCare" : "acp",
+                    "patchPointType" : "after",
+                    "doseInformation" : "5 mg IV/IO doses repeated every 5 minutes, until seizure termination or MAX dose 0.2 mg/kg IV/IO in total\nOR\n10 mg IM if no IV/IO access",
+                    "notes" : "",
+                    "targetDrug" : "midazolam"
+                },
+                {
+                    "title" : "phenyTOIN (Dilantin)",
+                    "levelOfCare" : "acp",
+                    "patchPointType" : "first",
+                    "doseInformation" : "20 mg/kg add to 250 ml NS IV/IO\nInfusion should be no faster than 25 mg/min\n\nUSE NORMAL SALINE ONLY\nphenyTOIN will precipitate in dextrose solutions",
+                    "notes" : "",
+                    "targetDrug" : "phenytoin"
+                },
+                {
+                    "title" : "Propofol",
+                    "levelOfCare" : "ccp",
+                    "patchPointType" : "first",
+                    "doseInformation" : "50 mg IV/IO q 5 minutes prn if MAP > 70\nPrepare to intubate",
+                    "notes" : "",
+                    "targetDrug" : "propofol"
+                }
+            ]
+        },
+        {
+            "key" : "combative_patient",
+            "title" : "Combative Patient",
+            "type" : "medical_directive",
+            "treatment" : "",
+            "color" : "",
+            "indications" : "• In the event that a patient becomes agitated or combative, thereby endangering themselves and/or others on board the vehicle, ALL Paramedics are expected to: Physically restrain the patient as per MOHLTC Basic Life Support - Patient Care Standards\n• Assess the patient for medical causes of agitation (i.e. hypoxemia, hypoglycemia, etc.)",
+            "contraindications" : "• Allergy or sensitivity to the medication",
+            "clinical" : "• In patients with a primary psychiatric diagnosis, if time permits, contact TMP for Haloperidol (Haldol)\n• Notify the Flight Crew immediately if in an aircraft",
+            "drug_cards" : [
+                {
+                    "title" : "Ketamine (Ketalar)\t",
+                    "levelOfCare" : "acp",
+                    "patchPointType" : "after",
+                    "doseInformation" : "1-2 mg/kg IV/IO* over 1-3 minutes\nOR\n3-5 mg/kg IM",
+                    "notes" : "High IV doses of Ketamine should be given slow push to reduce risk of apnea",
+                    "targetDrug" : "ketamine"
+                },
+                {
+                    "title" : "Midazolam (Versed)",
+                    "levelOfCare" : "acp",
+                    "patchPointType" : "after",
+                    "doseInformation" : "MAP > 70\n0.05 mg/kg IV/IO\nOR\n0.1 mg/kg IM q 5 minutes prn\nMAX dose 0.2 mg/kg",
+                    "notes" : "",
+                    "targetDrug" : "midazolam"
+                }
+            ]
+        },
+        {
+            "key" : "bradycardia",
+            "title" : "Adult Symptomatic Bradycardia",
+            "type" : "medical_directive",
+            "treatment" : "",
+            "color" : "",
+            "indications" : "• Symptomatic Bradycardia with a pulse",
+            "contraindications" : "• Allergy or sensitivity to the medication",
+            "clinical" : "",
+            "drug_cards" : [
+                {
+                    "title" : "Atropine",
+                    "levelOfCare" : "acp",
+                    "patchPointType" : "after",
+                    "doseInformation" : "0.5 mg IV/IO initial dose (repeat q 3-5 minutes to max total dose 3 mg)",
+                    "notes" : "",
+                    "targetDrug" : "atropine"
+                },
+                {
+                    "title" : "Dopamine",
+                    "levelOfCare" : "acp",
+                    "patchPointType" : "after",
+                    "doseInformation" : "5-20 mcg/kg/min IV\nTarget MAP > 65",
+                    "notes" : "Patients with bradycardia requiring transcutaneous (TC) pacing who are conscious and aware of their surroundings may require sedation and analgesia prior to TC pacing. Below are directives for sedation and analgesia for TC pacing. Patients that are peri-arrest can be immediately TC paced without sedation or analgesia.",
+                    "targetDrug" : "dopamine"
+                },
+                {
+                    "title" : "Transcutaneous Cardiac Pacing",
+                    "levelOfCare" : "acp",
+                    "patchPointType" : "after",
+                    "doseInformation" : "Set pacing rate at 70, start output at 10 milliamps (mA) and increase to achieve electrical capture with a pulse (mechanical capture)\nOnce mechanical capture has been confirmed increase mA by 10%\nConfirm the presence of a pulse and assess blood pressure and perfusion",
+                    "notes" : "",
+                    "targetDrug" : ""
+                },
+                {
+                    "title" : "Procedural Sedation",
+                    "levelOfCare" : "acp",
+                    "patchPointType" : "first",
+                    "doseInformation" : "MAP > 65\nKetamine 0.5 mg/kg\nOR\nVersed 0.05 mg/kg and/or\nFentanyl 1 mcg/kg\n\nMAP < 65\nKetamine 0.5 mg/kg",
+                    "notes" : "",
+                    "targetDrug" : ""
+                },
+                {
+                    "title" : "Procedural Sedation",
+                    "levelOfCare" : "ccp",
+                    "patchPointType" : "after",
+                    "doseInformation" : "MAP > 65\nKetamine 0.5 mg/kg\nOR\nVersed 0.05 mg/kg and/or\nFentanyl 1 mcg/kg\n\nMAP < 65\nKetamine 0.5 mg/kg",
+                    "notes" : "",
+                    "targetDrug" : ""
+                }
+            ]
+        },
+        {
+            "key" : "transvenous_pacing",
+            "title" : "Transvenous Cardiac Pacing",
+            "type" : "medical_directive",
+            "treatment" : "",
+            "color" : "",
+            "indications" : "• Transvenous pacing, if initiated at the sending facility",
+            "contraindications" : "• Not applicable",
+            "clinical" : "• Monitor the cardiac rhythm and ensure the catheter/cable is carefully secured to prevent inadvertent tension or traction on the line",
+            "drug_cards" : [
+                {
+                    "title" : "",
+                    "levelOfCare" : "ccp",
+                    "patchPointType" : "after",
+                    "doseInformation" : "Maintain transvenous pacing if initated at sending facility (initial pacing settings will reflect sending facility settings)",
+                    "notes" : "",
+                    "targetDrug" : ""
+                },
+                {
+                    "title" : "",
+                    "levelOfCare" : "ccp",
+                    "patchPointType" : "first",
+                    "doseInformation" : "Any alteration of settings to be discussed with TMP",
+                    "notes" : "",
+                    "targetDrug" : ""
+                }
+            ]
+        },
+        {
+            "key" : "atrial_fib_flutter",
+            "title" : "Adult Symptomatic Atrial Fibrillation \nFlutter",
+            "type" : "medical_directive",
+            "treatment" : "",
+            "color" : "",
+            "indications" : "• Symptomatic Atrial Flutter\n• Symptomatic Atrial Fibrillation",
+            "contraindications" : "• Allergy or sensitivity to the medication",
+            "clinical" : "",
+            "drug_cards" : [
+                {
+                    "title" : "",
+                    "levelOfCare" : "acp",
+                    "patchPointType" : "after",
+                    "doseInformation" : "Synchronized Cardioversion",
+                    "notes" : "",
+                    "targetDrug" : ""
+                },
+                {
+                    "title" : "Procedural Sedation",
+                    "levelOfCare" : "acp",
+                    "patchPointType" : "first",
+                    "doseInformation" : "MAP > 65\nKetamine 0.5 mg/kg\nOR\nVersed 0.05 mg/kg and/or\nFentanyl 1 mcg/kg\n\nMAP < 65\nKetamine 0.5 mg/kg",
+                    "notes" : "",
+                    "targetDrug" : ""
+                },
+                {
+                    "title" : "Procedural Sedation",
+                    "levelOfCare" : "ccp",
+                    "patchPointType" : "after",
+                    "doseInformation" : "MAP > 65\nKetamine 0.5 mg/kg\nOR\nVersed 0.05 mg/kg and/or\nFentanyl 1 mcg/kg\n\nMAP < 65\nKetamine 0.5 mg/kg",
+                    "notes" : "",
+                    "targetDrug" : ""
+                }
+            ]
+        },
+        {
+            "key" : "psvt",
+            "title" : "Adult Paroxysmal Supraventricular Tachycardia (PSVT)",
+            "type" : "medical_directive",
+            "treatment" : "",
+            "color" : "",
+            "indications" : "• Paroxysmal Supraventricular Tachycardia (PSVT)",
+            "contraindications" : "• Allergy or sensitivity to the medication",
+            "clinical" : "",
+            "drug_cards" : [
+                {
+                    "title" : "",
+                    "levelOfCare" : "acp",
+                    "patchPointType" : "after",
+                    "doseInformation" : "Synchronized Cardioversion",
+                    "notes" : "",
+                    "targetDrug" : ""
+                },
+                {
+                    "title" : "Procedural Sedation",
+                    "levelOfCare" : "acp",
+                    "patchPointType" : "first",
+                    "doseInformation" : "MAP > 65\nKetamine 0.5 mg/kg\nOR\nVersed 0.05 mg/kg and/or\nFentanyl 1 mcg/kg\n\nMAP < 65\nKetamine 0.5 mg/kg",
+                    "notes" : "",
+                    "targetDrug" : ""
+                },
+                {
+                    "title" : "Procedural Sedation",
+                    "levelOfCare" : "ccp",
+                    "patchPointType" : "after",
+                    "doseInformation" : "MAP > 65\nKetamine 0.5 mg/kg\nOR\nVersed 0.05 mg/kg and/or\nFentanyl 1 mcg/kg\n\nMAP < 65\nKetamine 0.5 mg/kg",
+                    "notes" : "",
+                    "targetDrug" : ""
+                },
+                {
+                    "title" : "Adenosine",
+                    "levelOfCare" : "acp",
+                    "patchPointType" : "after",
+                    "doseInformation" : "6 mg rapid IV/IO with 20 ml NS flush\nRepeat at 12 mg x 1 prn",
+                    "notes" : "",
+                    "targetDrug" : "adenosine"
+                }
+            ]
+        },
+        {
+            "key" : "v_tach",
+            "title" : "Adult Ventricular Tachycardia with Perfusion",
+            "type" : "medical_directive",
+            "treatment" : "",
+            "color" : "",
+            "indications" : "• Ventricular Tachycardia (VT) with a pulse",
+            "contraindications" : "• Allergy or sensitivity to the medication",
+            "clinical" : "",
+            "drug_cards" : [
+                {
+                    "title" : "",
+                    "levelOfCare" : "acp",
+                    "patchPointType" : "after",
+                    "doseInformation" : "Synchronized Cardioversion",
+                    "notes" : "Patients with VT with a pulse who are conscious and aware of their surroundings may require sedation and analgesia prior to cardioversion. Patients that are peri-arrest of hemodynamically unstable can be immediately cardioverted with synchronized cardioversion with sedation or analgesia.",
+                    "targetDrug" : ""
+                },
+                {
+                    "title" : "Procedural Sedation",
+                    "levelOfCare" : "acp",
+                    "patchPointType" : "first",
+                    "doseInformation" : "MAP > 65\nKetamine 0.5 mg/kg\nOR\nVersed 0.05 mg/kg and/or\nFentanyl 1 mcg/kg\n\nMAP < 65\nKetamine 0.5 mg/kg",
+                    "notes" : "",
+                    "targetDrug" : ""
+                },
+                {
+                    "title" : "Procedural Sedation",
+                    "levelOfCare" : "ccp",
+                    "patchPointType" : "after",
+                    "doseInformation" : "MAP > 65\nKetamine 0.5 mg/kg\nOR\nVersed 0.05 mg/kg and/or\nFentanyl 1 mcg/kg\n\nMAP < 65\nKetamine 0.5 mg/kg",
+                    "notes" : "",
+                    "targetDrug" : ""
+                },
+                {
+                    "title" : "Amiodarone (Cordarone)",
+                    "levelOfCare" : "acp",
+                    "patchPointType" : "none",
+                    "doseInformation" : "150 mg IV over 10 minutes\n(may repeat x 1 as adjunct to cardioversion)",
+                    "notes" : "",
+                    "targetDrug" : "amiodarone"
+                }
+            ]
+        },
+        {
+            "key" : "iv_start",
+            "title" : "Intravenous Line Initiation",
+            "type" : "medical_directive",
+            "treatment" : "",
+            "color" : "",
+            "indications" : "• Actual or potential need for intravenous or fluid therapy",
+            "contraindications" : "• Suspected fracture proximal to the IV site",
+            "clinical" : "• A PCP(f) may provide the treatment prescrubed in this auxiliary medical directive if certified and authorized",
+            "drug_cards" : [
+                {
+                    "title" : "Initiate IV",
+                    "levelOfCare" : "acp",
+                    "patchPointType" : "none",
+                    "doseInformation" : "MAX of 2 peripheral IV lines may be established",
+                    "notes" : "",
+                    "targetDrug" : ""
+                }
+            ]
+        },
+        {
+            "key" : "io",
+            "title" : "Intraosseous Initiation and Maintenance",
+            "type" : "medical_directive",
+            "treatment" : "",
+            "color" : "",
+            "indications" : "• ",
+            "contraindications" : "• ",
+            "clinical" : "• ",
+            "drug_cards" : [
+                {
+                    "title" : "",
+                    "levelOfCare" : "pcp",
+                    "patchPointType" : "after",
+                    "doseInformation" : "",
+                    "notes" : "",
+                    "targetDrug" : ""
+                }
+            ]
+        },
+        {
+            "key" : "iv_pcp",
+            "title" : "Intravenous Line Maintenance Standard PCP(f)",
+            "type" : "medical_directive",
+            "treatment" : "",
+            "color" : "",
+            "indications" : "• ",
+            "contraindications" : "• ",
+            "clinical" : "• ",
+            "drug_cards" : [
+                {
+                    "title" : "",
+                    "levelOfCare" : "pcp",
+                    "patchPointType" : "after",
+                    "doseInformation" : "",
+                    "notes" : "",
+                    "targetDrug" : ""
+                }
+            ]
+        },
+        {
+            "key" : "blood_sample",
+            "title" : "Blood Sampling and Lab Value Interpretation",
+            "type" : "medical_directive",
+            "treatment" : "",
+            "color" : "",
+            "indications" : "• ",
+            "contraindications" : "• ",
+            "clinical" : "• ",
+            "drug_cards" : [
+                {
+                    "title" : "",
+                    "levelOfCare" : "pcp",
+                    "patchPointType" : "after",
+                    "doseInformation" : "",
+                    "notes" : "",
+                    "targetDrug" : ""
+                }
+            ]
+        },
+        {
+            "key" : "central_lines",
+            "title" : "Maintaining and Accessing Central Venous Lines",
+            "type" : "medical_directive",
+            "treatment" : "",
+            "color" : "",
+            "indications" : "• ",
+            "contraindications" : "• ",
+            "clinical" : "• ",
+            "drug_cards" : [
+                {
+                    "title" : "",
+                    "levelOfCare" : "pcp",
+                    "patchPointType" : "after",
+                    "doseInformation" : "",
+                    "notes" : "",
+                    "targetDrug" : ""
+                }
+            ]
+        },
+        {
+            "key" : "art_lines",
+            "title" : "Arterial Line Maintenance and Monitoring",
+            "type" : "medical_directive",
+            "treatment" : "",
+            "color" : "",
+            "indications" : "• ",
+            "contraindications" : "• ",
+            "clinical" : "• ",
+            "drug_cards" : [
+                {
+                    "title" : "",
+                    "levelOfCare" : "pcp",
+                    "patchPointType" : "after",
+                    "doseInformation" : "",
+                    "notes" : "",
+                    "targetDrug" : ""
+                }
+            ]
+        },
+        {
+            "key" : "pulmonary_lines",
+            "title" : "Pulmonary Artery Catheters",
+            "type" : "medical_directive",
+            "treatment" : "",
+            "color" : "",
+            "indications" : "• ",
+            "contraindications" : "• ",
+            "clinical" : "• ",
+            "drug_cards" : [
+                {
+                    "title" : "",
+                    "levelOfCare" : "pcp",
+                    "patchPointType" : "after",
+                    "doseInformation" : "",
+                    "notes" : "",
+                    "targetDrug" : ""
+                }
+            ]
+        },
+        {
+            "key" : "traumatic_arrest",
+            "title" : "Adult Traumatic Cardiac Arrest",
+            "type" : "medical_directive",
+            "treatment" : "",
+            "color" : "",
+            "indications" : "• ",
+            "contraindications" : "• ",
+            "clinical" : "• ",
+            "drug_cards" : [
+                {
+                    "title" : "",
+                    "levelOfCare" : "pcp",
+                    "patchPointType" : "after",
+                    "doseInformation" : "",
+                    "notes" : "",
+                    "targetDrug" : ""
+                }
+            ]
+        },
+        {
+            "key" : "tbi",
+            "title" : "Traumatic Brain Injury",
+            "type" : "medical_directive",
+            "treatment" : "",
+            "color" : "",
+            "indications" : "• ",
+            "contraindications" : "• ",
+            "clinical" : "• ",
+            "drug_cards" : [
+                {
+                    "title" : "",
+                    "levelOfCare" : "pcp",
+                    "patchPointType" : "after",
+                    "doseInformation" : "",
+                    "notes" : "",
+                    "targetDrug" : ""
+                }
+            ]
+        },
+        {
+            "key" : "sci",
+            "title" : "Spinal Cord Injury",
+            "type" : "medical_directive",
+            "treatment" : "",
+            "color" : "",
+            "indications" : "• ",
+            "contraindications" : "• ",
+            "clinical" : "• ",
+            "drug_cards" : [
+                {
+                    "title" : "",
+                    "levelOfCare" : "pcp",
+                    "patchPointType" : "after",
+                    "doseInformation" : "",
+                    "notes" : "",
+                    "targetDrug" : ""
+                }
+            ]
+        },
+        {
+            "key" : "neurogenic_shock",
+            "title" : "Neurogenic Shock",
+            "type" : "medical_directive",
+            "treatment" : "",
+            "color" : "",
+            "indications" : "• ",
+            "contraindications" : "• ",
+            "clinical" : "• ",
+            "drug_cards" : [
+                {
+                    "title" : "",
+                    "levelOfCare" : "pcp",
+                    "patchPointType" : "after",
+                    "doseInformation" : "",
+                    "notes" : "",
+                    "targetDrug" : ""
+                }
+            ]
+        },
+        {
+            "key" : "hemorrhagic_shock",
+            "title" : "Traumatic Hemorrhagic Shock",
+            "type" : "medical_directive",
+            "treatment" : "",
+            "color" : "",
+            "indications" : "• ",
+            "contraindications" : "• ",
+            "clinical" : "• ",
+            "drug_cards" : [
+                {
+                    "title" : "",
+                    "levelOfCare" : "pcp",
+                    "patchPointType" : "after",
+                    "doseInformation" : "",
+                    "notes" : "",
+                    "targetDrug" : ""
+                }
+            ]
+        },
+        {
+            "key" : "blood_admin",
+            "title" : "Blood Product Administration",
+            "type" : "medical_directive",
+            "treatment" : "",
+            "color" : "",
+            "indications" : "• ",
+            "contraindications" : "• ",
+            "clinical" : "• ",
+            "drug_cards" : [
+                {
+                    "title" : "",
+                    "levelOfCare" : "pcp",
+                    "patchPointType" : "after",
+                    "doseInformation" : "",
+                    "notes" : "",
+                    "targetDrug" : ""
+                }
+            ]
+        },
+        {
+            "key" : "reversal_anticoag",
+            "title" : "Reversal of Anticoagulation",
+            "type" : "medical_directive",
+            "treatment" : "",
+            "color" : "",
+            "indications" : "• ",
+            "contraindications" : "• ",
+            "clinical" : "• ",
+            "drug_cards" : [
+                {
+                    "title" : "",
+                    "levelOfCare" : "pcp",
+                    "patchPointType" : "after",
+                    "doseInformation" : "",
+                    "notes" : "",
+                    "targetDrug" : ""
+                }
+            ]
+        },
+        {
+            "key" : "noac_reversal",
+            "title" : "Novel Oral Anticoagulants (NOAC) Reversal",
+            "type" : "medical_directive",
+            "treatment" : "",
+            "color" : "",
+            "indications" : "• ",
+            "contraindications" : "• ",
+            "clinical" : "• ",
+            "drug_cards" : [
+                {
+                    "title" : "",
+                    "levelOfCare" : "pcp",
+                    "patchPointType" : "after",
+                    "doseInformation" : "",
+                    "notes" : "",
+                    "targetDrug" : ""
+                }
+            ]
+        },
+        {
+            "key" : "txa",
+            "title" : "Tranexamic Acid (TXA) Administration",
+            "type" : "medical_directive",
+            "treatment" : "",
+            "color" : "",
+            "indications" : "• ",
+            "contraindications" : "• ",
+            "clinical" : "• ",
+            "drug_cards" : [
+                {
+                    "title" : "",
+                    "levelOfCare" : "pcp",
+                    "patchPointType" : "after",
+                    "doseInformation" : "",
+                    "notes" : "",
+                    "targetDrug" : ""
+                }
+            ]
+        },
+        {
+            "key" : "hypovolemic_shock",
+            "title" : "Hypovolemic Shock",
+            "type" : "medical_directive",
+            "treatment" : "",
+            "color" : "",
+            "indications" : "• ",
+            "contraindications" : "• ",
+            "clinical" : "• ",
+            "drug_cards" : [
+                {
+                    "title" : "",
+                    "levelOfCare" : "pcp",
+                    "patchPointType" : "after",
+                    "doseInformation" : "",
+                    "notes" : "",
+                    "targetDrug" : ""
+                }
+            ]
+        },
+        {
+            "key" : "septic_shock",
+            "title" : "Septic Shock",
+            "type" : "medical_directive",
+            "treatment" : "",
+            "color" : "",
+            "indications" : "• ",
+            "contraindications" : "• ",
+            "clinical" : "• ",
+            "drug_cards" : [
+                {
+                    "title" : "",
+                    "levelOfCare" : "pcp",
+                    "patchPointType" : "after",
+                    "doseInformation" : "",
+                    "notes" : "",
+                    "targetDrug" : ""
+                }
+            ]
+        },
+        {
+            "key" : "extravasation",
+            "title" : "Extravasation of Vasopressors from Peripheral IV Infusion",
+            "type" : "medical_directive",
+            "treatment" : "",
+            "color" : "",
+            "indications" : "• ",
+            "contraindications" : "• ",
+            "clinical" : "• ",
+            "drug_cards" : [
+                {
+                    "title" : "",
+                    "levelOfCare" : "pcp",
+                    "patchPointType" : "after",
+                    "doseInformation" : "",
+                    "notes" : "",
+                    "targetDrug" : ""
+                }
+            ]
+        },
+        {
+            "key" : "n/v",
+            "title" : "Nausea, Vomiting and Motion Sickness",
+            "type" : "medical_directive",
+            "treatment" : "",
+            "color" : "",
+            "indications" : "• ",
+            "contraindications" : "• ",
+            "clinical" : "• ",
+            "drug_cards" : [
+                {
+                    "title" : "",
+                    "levelOfCare" : "pcp",
+                    "patchPointType" : "after",
+                    "doseInformation" : "",
+                    "notes" : "",
+                    "targetDrug" : ""
+                }
+            ]
+        },
+        {
+            "key" : "g_tubes",
+            "title" : "Gastric (NG or OG) Tubes",
+            "type" : "medical_directive",
+            "treatment" : "",
+            "color" : "",
+            "indications" : "• ",
+            "contraindications" : "• ",
+            "clinical" : "• ",
+            "drug_cards" : [
+                {
+                    "title" : "",
+                    "levelOfCare" : "pcp",
+                    "patchPointType" : "after",
+                    "doseInformation" : "",
+                    "notes" : "",
+                    "targetDrug" : ""
+                }
+            ]
+        },
+        {
+            "key" : "gi_bleed",
+            "title" : "Gastrointestinal Bleed",
+            "type" : "medical_directive",
+            "treatment" : "",
+            "color" : "",
+            "indications" : "• ",
+            "contraindications" : "• ",
+            "clinical" : "• ",
+            "drug_cards" : [
+                {
+                    "title" : "",
+                    "levelOfCare" : "pcp",
+                    "patchPointType" : "after",
+                    "doseInformation" : "",
+                    "notes" : "",
+                    "targetDrug" : ""
+                }
+            ]
+        },
+        {
+            "key" : "blakemore_tube",
+            "title" : "Gastroesophageal Balloon Tamponade Devices (Blakemore Tube)",
+            "type" : "medical_directive",
+            "treatment" : "",
+            "color" : "",
+            "indications" : "• ",
+            "contraindications" : "• ",
+            "clinical" : "• ",
+            "drug_cards" : [
+                {
+                    "title" : "",
+                    "levelOfCare" : "pcp",
+                    "patchPointType" : "after",
+                    "doseInformation" : "",
+                    "notes" : "",
+                    "targetDrug" : ""
+                }
+            ]
+        },
+        {
+            "key" : "esophageal_probe",
+            "title" : "Esophageal Temperature Probes",
+            "type" : "medical_directive",
+            "treatment" : "",
+            "color" : "",
+            "indications" : "• ",
+            "contraindications" : "• ",
+            "clinical" : "• ",
+            "drug_cards" : [
+                {
+                    "title" : "",
+                    "levelOfCare" : "pcp",
+                    "patchPointType" : "after",
+                    "doseInformation" : "",
+                    "notes" : "",
+                    "targetDrug" : ""
+                }
+            ]
+        },
+        {
+            "key" : "urinary_catheter",
+            "title" : "Urinary Catheter Insertion and Maintenance",
+            "type" : "medical_directive",
+            "treatment" : "",
+            "color" : "",
+            "indications" : "• ",
+            "contraindications" : "• ",
+            "clinical" : "• ",
+            "drug_cards" : [
+                {
+                    "title" : "",
+                    "levelOfCare" : "pcp",
+                    "patchPointType" : "after",
+                    "doseInformation" : "",
+                    "notes" : "",
+                    "targetDrug" : ""
+                }
+            ]
+        },
+        {
+            "key" : "fever",
+            "title" : "Fever",
+            "type" : "medical_directive",
+            "treatment" : "",
+            "color" : "",
+            "indications" : "• ",
+            "contraindications" : "• ",
+            "clinical" : "• ",
+            "drug_cards" : [
+                {
+                    "title" : "",
+                    "levelOfCare" : "pcp",
+                    "patchPointType" : "after",
+                    "doseInformation" : "",
+                    "notes" : "",
+                    "targetDrug" : ""
+                }
+            ]
+        },
+        {
+            "key" : "anaphylaxis",
+            "title" : "Anaphylaxis",
+            "type" : "medical_directive",
+            "treatment" : "",
+            "color" : "",
+            "indications" : "• ",
+            "contraindications" : "• ",
+            "clinical" : "• ",
+            "drug_cards" : [
+                {
+                    "title" : "",
+                    "levelOfCare" : "pcp",
+                    "patchPointType" : "after",
+                    "doseInformation" : "",
+                    "notes" : "",
+                    "targetDrug" : ""
+                }
+            ]
+        },
+        {
+            "key" : "hypoglycemia",
+            "title" : "Hypoglycemic Emergencies",
+            "type" : "medical_directive",
+            "treatment" : "",
+            "color" : "",
+            "indications" : "• ",
+            "contraindications" : "• ",
+            "clinical" : "• ",
+            "drug_cards" : [
+                {
+                    "title" : "",
+                    "levelOfCare" : "pcp",
+                    "patchPointType" : "after",
+                    "doseInformation" : "",
+                    "notes" : "",
+                    "targetDrug" : ""
+                }
+            ]
+        },
+        {
+            "key" : "hyperkalemia",
+            "title" : "Hyperkalemia",
+            "type" : "medical_directive",
+            "treatment" : "",
+            "color" : "",
+            "indications" : "• ",
+            "contraindications" : "• ",
+            "clinical" : "• ",
+            "drug_cards" : [
+                {
+                    "title" : "",
+                    "levelOfCare" : "pcp",
+                    "patchPointType" : "after",
+                    "doseInformation" : "",
+                    "notes" : "",
+                    "targetDrug" : ""
+                }
+            ]
+        },
+        {
+            "key" : "tylenol_od",
+            "title" : "Suspected Acetaminophen Overdose",
+            "type" : "medical_directive",
+            "treatment" : "",
+            "color" : "",
+            "indications" : "• ",
+            "contraindications" : "• ",
+            "clinical" : "• ",
+            "drug_cards" : [
+                {
+                    "title" : "",
+                    "levelOfCare" : "pcp",
+                    "patchPointType" : "after",
+                    "doseInformation" : "",
+                    "notes" : "",
+                    "targetDrug" : ""
+                }
+            ]
+        },
+        {
+            "key" : "narc_od",
+            "title" : "Suspected Opioid Overdose",
+            "type" : "medical_directive",
+            "treatment" : "",
+            "color" : "",
+            "indications" : "• ",
+            "contraindications" : "• ",
+            "clinical" : "• ",
+            "drug_cards" : [
+                {
+                    "title" : "",
+                    "levelOfCare" : "pcp",
+                    "patchPointType" : "after",
+                    "doseInformation" : "",
+                    "notes" : "",
+                    "targetDrug" : ""
+                }
+            ]
+        },
+        {
+            "key" : "sedative_od",
+            "title" : "Sedative Overdose",
+            "type" : "medical_directive",
+            "treatment" : "",
+            "color" : "",
+            "indications" : "• ",
+            "contraindications" : "• ",
+            "clinical" : "• ",
+            "drug_cards" : [
+                {
+                    "title" : "",
+                    "levelOfCare" : "pcp",
+                    "patchPointType" : "after",
+                    "doseInformation" : "",
+                    "notes" : "",
+                    "targetDrug" : ""
+                }
+            ]
+        },
+        {
+            "key" : "beta_od",
+            "title" : "Beta Blocker Overdose",
+            "type" : "medical_directive",
+            "treatment" : "",
+            "color" : "",
+            "indications" : "• ",
+            "contraindications" : "• ",
+            "clinical" : "• ",
+            "drug_cards" : [
+                {
+                    "title" : "",
+                    "levelOfCare" : "pcp",
+                    "patchPointType" : "after",
+                    "doseInformation" : "",
+                    "notes" : "",
+                    "targetDrug" : ""
+                }
+            ]
+        },
+        {
+            "key" : "calcium_block_od",
+            "title" : "Calcium Channel Blocker Overdose",
+            "type" : "medical_directive",
+            "treatment" : "",
+            "color" : "",
+            "indications" : "• ",
+            "contraindications" : "• ",
+            "clinical" : "• ",
+            "drug_cards" : [
+                {
+                    "title" : "",
+                    "levelOfCare" : "pcp",
+                    "patchPointType" : "after",
+                    "doseInformation" : "",
+                    "notes" : "",
+                    "targetDrug" : ""
+                }
+            ]
+        },
+        {
+            "key" : "cholinesterase_od",
+            "title" : "Cholinesterase Inhibitor Overdose",
+            "type" : "medical_directive",
+            "treatment" : "",
+            "color" : "",
+            "indications" : "• ",
+            "contraindications" : "• ",
+            "clinical" : "• ",
+            "drug_cards" : [
+                {
+                    "title" : "",
+                    "levelOfCare" : "pcp",
+                    "patchPointType" : "after",
+                    "doseInformation" : "",
+                    "notes" : "",
+                    "targetDrug" : ""
+                }
+            ]
+        },
+        {
+            "key" : "tca_od",
+            "title" : "Cyclic Antidepressant Overdose",
+            "type" : "medical_directive",
+            "treatment" : "",
+            "color" : "",
+            "indications" : "• ",
+            "contraindications" : "• ",
+            "clinical" : "• ",
+            "drug_cards" : [
+                {
+                    "title" : "",
+                    "levelOfCare" : "pcp",
+                    "patchPointType" : "after",
+                    "doseInformation" : "",
+                    "notes" : "",
+                    "targetDrug" : ""
+                }
+            ]
+        },
+        {
+            "key" : "non_tca_od",
+            "title" : "Non-Cyclic Antidepressant Overdose",
+            "type" : "medical_directive",
+            "treatment" : "",
+            "color" : "",
+            "indications" : "• ",
+            "contraindications" : "• ",
+            "clinical" : "• ",
+            "drug_cards" : [
+                {
+                    "title" : "",
+                    "levelOfCare" : "pcp",
+                    "patchPointType" : "after",
+                    "doseInformation" : "",
+                    "notes" : "",
+                    "targetDrug" : ""
+                }
+            ]
+        },
+        {
+            "key" : "asa_od",
+            "title" : "Salicylate Overdose",
+            "type" : "medical_directive",
+            "treatment" : "",
+            "color" : "",
+            "indications" : "• ",
+            "contraindications" : "• ",
+            "clinical" : "• ",
+            "drug_cards" : [
+                {
+                    "title" : "",
+                    "levelOfCare" : "pcp",
+                    "patchPointType" : "after",
+                    "doseInformation" : "",
+                    "notes" : "",
+                    "targetDrug" : ""
+                }
+            ]
+        },
+        {
+            "key" : "stimulant_od",
+            "title" : "Stimulant Overdose",
+            "type" : "medical_directive",
+            "treatment" : "",
+            "color" : "",
+            "indications" : "• ",
+            "contraindications" : "• ",
+            "clinical" : "• ",
+            "drug_cards" : [
+                {
+                    "title" : "",
+                    "levelOfCare" : "pcp",
+                    "patchPointType" : "after",
+                    "doseInformation" : "",
+                    "notes" : "",
+                    "targetDrug" : ""
+                }
+            ]
+        },
+        {
+            "key" : "toxic_alc_od",
+            "title" : "Toxic Alcohol Overdose",
+            "type" : "medical_directive",
+            "treatment" : "",
+            "color" : "",
+            "indications" : "• ",
+            "contraindications" : "• ",
+            "clinical" : "• ",
+            "drug_cards" : [
+                {
+                    "title" : "",
+                    "levelOfCare" : "pcp",
+                    "patchPointType" : "after",
+                    "doseInformation" : "",
+                    "notes" : "",
+                    "targetDrug" : ""
+                }
+            ]
+        },
+        {
+            "key" : "pre_term_obs",
+            "title" : "Pre-Term Obstetrical Complications",
+            "type" : "medical_directive",
+            "treatment" : "",
+            "color" : "",
+            "indications" : "• ",
+            "contraindications" : "• ",
+            "clinical" : "• ",
+            "drug_cards" : [
+                {
+                    "title" : "",
+                    "levelOfCare" : "pcp",
+                    "patchPointType" : "after",
+                    "doseInformation" : "",
+                    "notes" : "",
+                    "targetDrug" : ""
+                }
+            ]
+        },
+        {
+            "key" : "eclampsia",
+            "title" : "Pre-eclampsia / Eclampsia",
+            "type" : "medical_directive",
+            "treatment" : "",
+            "color" : "",
+            "indications" : "• ",
+            "contraindications" : "• ",
+            "clinical" : "• ",
+            "drug_cards" : [
+                {
+                    "title" : "",
+                    "levelOfCare" : "pcp",
+                    "patchPointType" : "after",
+                    "doseInformation" : "",
+                    "notes" : "",
+                    "targetDrug" : ""
+                }
+            ]
+        },
+        {
+            "key" : "emergency_birth",
+            "title" : "Labour and Delivery - Emergency Birth",
+            "type" : "medical_directive",
+            "treatment" : "",
+            "color" : "",
+            "indications" : "• ",
+            "contraindications" : "• ",
+            "clinical" : "• ",
+            "drug_cards" : [
+                {
+                    "title" : "",
+                    "levelOfCare" : "pcp",
+                    "patchPointType" : "after",
+                    "doseInformation" : "",
+                    "notes" : "",
+                    "targetDrug" : ""
+                }
+            ]
+        },
+        {
+            "key" : "post_emerg_birth",
+            "title" : "Post Emergency Birth",
+            "type" : "medical_directive",
+            "treatment" : "",
+            "color" : "",
+            "indications" : "• ",
+            "contraindications" : "• ",
+            "clinical" : "• ",
+            "drug_cards" : [
+                {
+                    "title" : "",
+                    "levelOfCare" : "pcp",
+                    "patchPointType" : "after",
+                    "doseInformation" : "",
+                    "notes" : "",
+                    "targetDrug" : ""
+                }
+            ]
+        },
+        {
+            "key" : "pph",
+            "title" : "Post-Partum Hemorrhage",
+            "type" : "medical_directive",
+            "treatment" : "",
+            "color" : "",
+            "indications" : "• ",
+            "contraindications" : "• ",
+            "clinical" : "• ",
+            "drug_cards" : [
+                {
+                    "title" : "",
+                    "levelOfCare" : "pcp",
+                    "patchPointType" : "after",
+                    "doseInformation" : "",
+                    "notes" : "",
+                    "targetDrug" : ""
+                }
+            ]
+        },
+        {
+            "key" : "third_stage",
+            "title" : "Advanced Active Management of the Third Stage",
+            "type" : "medical_directive",
+            "treatment" : "",
+            "color" : "",
+            "indications" : "• ",
+            "contraindications" : "• ",
+            "clinical" : "• ",
+            "drug_cards" : [
+                {
+                    "title" : "",
+                    "levelOfCare" : "pcp",
+                    "patchPointType" : "after",
+                    "doseInformation" : "",
+                    "notes" : "",
+                    "targetDrug" : ""
+                }
+            ]
+        }
+    ]
+}
+

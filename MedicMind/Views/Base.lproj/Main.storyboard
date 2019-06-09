@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Dnr-AO-Rbp">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Medic Mind-->
+        <scene sceneID="0PW-Bl-9N0">
+            <objects>
+                <tableViewController storyboardIdentifier="MenuViewController" id="hx5-fK-1ki" customClass="MenuViewController" customModule="MedicMind" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="q93-ex-VXD">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MenuItemCell" id="bXf-La-gMi" customClass="MainMenuCell" customModule="MedicMind" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bXf-La-gMi" id="1o8-Gj-dCm">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="hx5-fK-1ki" id="9Cy-TG-PM8"/>
+                            <outlet property="delegate" destination="hx5-fK-1ki" id="JFg-VE-raa"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Medic Mind" id="WjV-Y9-acp"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fxe-Ef-s9y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1352.1739130434785" y="225"/>
+        </scene>
+        <!--Drug Monograph View Controller-->
+        <scene sceneID="LlI-qf-8Nk">
+            <objects>
+                <viewController storyboardIdentifier="DrugMonographViewController" id="7tM-5o-Dc7" customClass="DrugMonographViewController" customModule="MedicMind" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eg6-3D-SZG">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8vN-5C-eBX">
+                                <rect key="frame" x="10" y="54" width="394" height="798"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="8vN-5C-eBX" firstAttribute="top" secondItem="h40-4p-DcR" secondAttribute="top" constant="10" id="Fep-tf-Q31"/>
+                            <constraint firstItem="8vN-5C-eBX" firstAttribute="leading" secondItem="h40-4p-DcR" secondAttribute="leading" constant="10" id="aNx-da-oIP"/>
+                            <constraint firstItem="h40-4p-DcR" firstAttribute="bottom" secondItem="8vN-5C-eBX" secondAttribute="bottom" constant="10" id="hUp-zD-IRu"/>
+                            <constraint firstItem="h40-4p-DcR" firstAttribute="trailing" secondItem="8vN-5C-eBX" secondAttribute="trailing" constant="10" id="q9q-cU-4H8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="h40-4p-DcR"/>
+                    </view>
+                    <connections>
+                        <outlet property="scrollView" destination="8vN-5C-eBX" id="SSb-D1-6Tr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jbg-lE-WOF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2262" y="258"/>
+        </scene>
+        <!--Medical Directive View Controller-->
+        <scene sceneID="jxR-a5-xeb">
+            <objects>
+                <viewController storyboardIdentifier="MedicalDirectiveViewController" id="zEK-rp-LXM" customClass="MedicalDirectiveViewController" customModule="MedicMind" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4sk-rC-yFA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gWy-Ff-rNJ">
+                                <rect key="frame" x="10" y="54" width="394" height="798"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="aiM-85-Czr" firstAttribute="bottom" secondItem="gWy-Ff-rNJ" secondAttribute="bottom" constant="10" id="IVx-2f-exI"/>
+                            <constraint firstItem="gWy-Ff-rNJ" firstAttribute="top" secondItem="aiM-85-Czr" secondAttribute="top" constant="10" id="a7R-Ur-XLU"/>
+                            <constraint firstItem="aiM-85-Czr" firstAttribute="trailing" secondItem="gWy-Ff-rNJ" secondAttribute="trailing" constant="10" id="nzJ-of-oL0"/>
+                            <constraint firstItem="gWy-Ff-rNJ" firstAttribute="leading" secondItem="aiM-85-Czr" secondAttribute="leading" constant="10" id="sx8-Gc-7JX"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="aiM-85-Czr"/>
+                    </view>
+                    <connections>
+                        <outlet property="scrollView" destination="gWy-Ff-rNJ" id="NCH-9M-vHL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zcf-fD-hgB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2256.521739130435" y="-424.55357142857139"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="hUV-e8-mkM">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Dnr-AO-Rbp" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="8lG-xt-Nlt">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.36862745098039218" green="0.68627450980392157" blue="0.75686274509803919" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="hx5-fK-1ki" kind="relationship" relationship="rootViewController" id="wjr-N9-bn2"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aJ1-li-HPD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="440.57971014492756" y="225"/>
+        </scene>
+        <!--Directive Flow Chart View Controller-->
+        <scene sceneID="6kI-Wx-leD">
+            <objects>
+                <viewController storyboardIdentifier="DirectiveFlowChartViewController" id="KIP-Cl-m4c" customClass="DirectiveFlowChartViewController" customModule="MedicMind" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QXB-Yn-RyL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" maximumZoomScale="10" translatesAutoresizingMaskIntoConstraints="NO" id="3VY-XF-6fZ">
+                                <rect key="frame" x="10" y="49" width="394" height="798"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TL9-DS-hIY">
+                                        <rect key="frame" x="0.0" y="0.0" width="394" height="501"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="501" id="5cS-KG-wdF"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="TL9-DS-hIY" firstAttribute="centerX" secondItem="3VY-XF-6fZ" secondAttribute="centerX" id="YUQ-84-2Vc"/>
+                                    <constraint firstItem="TL9-DS-hIY" firstAttribute="trailing" secondItem="3VY-XF-6fZ" secondAttribute="trailingMargin" id="hYK-NE-Sa5"/>
+                                    <constraint firstItem="TL9-DS-hIY" firstAttribute="top" secondItem="3VY-XF-6fZ" secondAttribute="top" id="jkD-VN-lpl"/>
+                                    <constraint firstItem="TL9-DS-hIY" firstAttribute="leading" secondItem="3VY-XF-6fZ" secondAttribute="leading" id="km4-os-L9a"/>
+                                    <constraint firstAttribute="bottom" secondItem="TL9-DS-hIY" secondAttribute="bottom" constant="220" id="sFt-jX-0la"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="3VY-XF-6fZ" firstAttribute="top" secondItem="2H3-XA-7ie" secondAttribute="top" constant="5" id="29D-Vk-fdj"/>
+                            <constraint firstItem="3VY-XF-6fZ" firstAttribute="centerX" secondItem="QXB-Yn-RyL" secondAttribute="centerX" id="FWN-UH-kMs"/>
+                            <constraint firstItem="3VY-XF-6fZ" firstAttribute="leading" secondItem="2H3-XA-7ie" secondAttribute="leading" constant="10" id="HaK-vn-U2a"/>
+                            <constraint firstItem="3VY-XF-6fZ" firstAttribute="centerY" secondItem="QXB-Yn-RyL" secondAttribute="centerY" id="cYm-g8-VL6"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="2H3-XA-7ie"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="TL9-DS-hIY" id="u5U-Ow-LHw"/>
+                        <outlet property="scrollView" destination="3VY-XF-6fZ" id="vqC-Gz-PbR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zc4-CV-Za3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3115.9420289855075" y="-1013.1696428571428"/>
+        </scene>
+    </scenes>
+</document>

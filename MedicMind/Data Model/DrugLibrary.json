@@ -1,0 +1,109 @@
+{
+  "drugs" : [
+      {
+          "name" : "Template",
+          "key" : "template",
+          "other_names" : "",
+          "class" : "",
+          "onset" : "",
+          "peak" : "",
+          "half_life" : "",
+          "duration" : "",
+          "indications" : [
+          ],
+          "contraindications" : [
+          ],
+          "adult_dose" : "",
+          "pediatric_dose" : "",
+          "neonatal_dose" : "",
+          "special_con" : "",
+          "medical_directives" : [
+          ],
+          "reconst" : [
+          ],
+          "compatibility" : "",
+          "stability" : "",
+          "freezing" : "",
+          "patient_safety" : "",
+          "patient_monitoring" : [
+          ],
+          "adverse" : [
+
+          ],
+          "precautions" : [
+          ],
+          "interactions" : "",
+          "pregnancy" : "",
+          "lactation" : "",
+          "moa" : ""
+      },
+      {
+      "name" : "Salbutamol",
+      "key" : "salbutamol",
+      "other_names" : "Ventolin",
+      "class" : "Bronchodilator",
+      "onset" : "5-25 minutes",
+      "peak" : "0.5-2 hours",
+      "half_life" : "3-4 hours",
+      "duration" : "3-6 hours",
+      "indications" : [
+        "Treatment or prevention of bronchospasm in patients with reversible obstructive airway disease",
+        "Treatment of status asthmaticus",
+      ],
+      "contraindications" : [
+          "Hypersensitivity to salbutamol or any component of the formulation",
+          "Tachyarrhythmias",
+      ],
+      "adult_dose" : "Nebulizer solution: 0.01-0.03 mL/kg/dose in 3 mL NS every 30 minutes to 4 hours as needed\n\nMDI: 100-200 mcg/dose (1-2 puffs) as needed maximum every 4 hours\n\nUsual Dosing:\nContinuous IV infusion 5 mcg/min initially, increase if required to 10 mcg/min and 20 mcg/min at 15-30 minutes intervals; max recommended dose 50 mcg/min.",
+      "pediatric_dose" : "Nebulizer solution:\nChildren < 15 kg 0.5ml (2.5mg) in 3 mL NS every 30 minutes to 4 hours prn.\n\nChildren > 15 kg 1.0 mL (5.0mg) in 3 mL NS every 30 minutes to 4 hours prn.\n\nIn severe cases, may be repeated every 20 minutes.\nMDI: 100 mcg/dose (1 puff).\n\nIn acute asthma:\n\nChildren < 15 kg: 4 puffs every 15-20 minutes x 3 doses, then every 1-4 hours prn as tolerated.\n\nChildren > 15 kg: 8 puffs every 15-20 minutes x 3 doses, then every 1-4 hours prn as tolerated.\n\nUsual Dosing: Initiate bolus 5-10 mcg/kg/dose IV over 20 minutes then initiate continuous IV infusion at 1 mcg/kg/min. Adjust dose according to response, increase by 1 mcg/kg/min q 10-20 minutes prn up to 10 mcg/kg/min.",
+      "neonatal_dose" : "0.25 mL/dose every 4 hours when needed via nebulizer.",
+      "special_con" : "Use spacer for children <5 years of age and consider adding a face mask for infants and children <4 years of age.",
+      "medical_directives" : [
+          "bronchospasm",
+          "Adult – Guidelines – Mechanical Ventilation",
+          "Adult – Anaphylaxis",
+          "Adult – Hyperkalemia",
+          "Paediatric – Shortness of Breath/Wheeze/Asthma",
+          "Paediatric – Anaphylaxis",
+      ],
+      "reconst" : [
+          "Adult/Paediatric IV Direct: Administer loading dose undiluted over 5 or 10 minutes.\n",
+          "Adult Continuous IV Infusion: Dilute 5 mL of the IV infusion preparation (5 mg/5 mL) in 500 mL D5W or NS to make a 10 microgram/mL (0.01 mg/mL) concentration.\n",
+          "Paediatric Continuous IV Infusion: See end of Paediatric MD for the Paediatric Mixing and Administration Table for Continuous Infusion Summary.\n",
+          "Metered-Dose Inhaler (MDI): Shake well before use; prime prior to first use, and whenever inhaler has not been used for >2 weeks or when it has been dropped, by releasing 3 to 4 test sprays into the air (away from face); a spacer device or holding chamber is recommended for use.\n",
+          "Nebulization Solution: concentrated solution should be diluted prior to use. Use a mask device if patient unable to hold mouthpiece for administration. To prepare a 2.5 mg dose, dilute 0.5 mL of solution to a total of 3 mL with normal saline\n",
+      ],
+      "compatibility" : "Admixture: NS, D5W, RL; solution for nebulization is compatible with cromolyn sodium, budesonide inhalation suspension, ipratropium solution for nebulization.",
+      "stability" : "IV solution stable for 24 hours in compatible solution and protected from light at a concentration of 10 microgram/mL. Store solution for nebulization at 2°C to 25°C. Do not use if solution changes colour or becomes cloudy.",
+      "freezing" : "Avoid freezing",
+      "patient_safety" : "Sound-alike/Look-alike Issues: salbutamol may be confused with salmeterol; Ventolin may be confused with phentolamine, Benylin.",
+      "patient_monitoring" : [
+          "FEV1, peak flow, and/or other pulmonary function tests",
+          "Blood pressure and heart rate",
+          "CNS stimulation",
+          "Serum glucose and serum potassium",
+          "Asthma symptoms",
+      ],
+      "adverse" : [
+          "CV: tachycardia, hypertension, chest pain, edema, palpitations, chest discomfort, flushing\n",
+          "CNS: excitement, nervousness, shakiness, headache, dizziness, insomnia, anxiety, ataxia, depression, drowsiness, rigors\n",
+          "Dermatologic: diaphoresis, skin rash\n",
+          "Endocrine: Increased serum glucose\n",
+          "GI: nausea, vomiting, unpleasant taste, diarrhea, eructation, flatulence, xerostomia, dyspepsia\n",
+          "Neuromuscular & skeletal: tremor, muscle cramps, musculoskeletal pain, leg cramps\n",
+          "Respiratory: upper respiratory tract infection, rhinitis, bronchospasm, pharyngitis, exacerbation of asthma, throat irritation, cough\n",
+      ],
+      "precautions" : [
+          "Rarely, paradoxical bronchospasm may occur with use of inhaled bronchodilating agents",
+          "Use with caution in patients with cardiovascular disease (arrhythmia, coronary insufficiency, hypertension, heart failure); beta-agonists may produce ECG changes and/or cause elevation in blood pressure, heart rate and result in CNS stimulation/excitation",
+          "Beta2-agonists may increase serum glucose and may decrease serum potassium",
+          "May elevate intraocular pressure",
+          "Use with caution in patients with seizure disorders, may result in CNS stimulation/excitation",
+      ],
+      "interactions" : "Beta-Blockers (Nonselective): May diminish the bronchodilatory effect of Beta2-Agonists",
+      "pregnancy" : "Adverse events were observed in some animal reproduction studies. Uncontrolled asthma is associated with adverse events on pregnancy. Salbutamol is the preferred short acting beta agonist when treatment for asthma is needed. Use with caution.",
+      "lactation" : "The use of inhaled bronchodilators is acceptable during breastfeeding because of the low bioavailability and maternal serum levels after use.",
+      "moa" : "Relaxes bronchial smooth muscle by action on beta2-receptors with little effect on heart rate."
+    }
+  ]
+}
