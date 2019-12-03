@@ -46,38 +46,20 @@ class MenuViewController: UITableViewController
         }
         
         navController = UIApplication.shared.windows[0].rootViewController as? UINavigationController
-        
-        // Do any additional setup after loading the view.
     }
     
     override func viewDidAppear(_ animated : Bool) {
-        /*if(dataManager.currentPage?.color != "")
-        {
-            navController?.navigationBar.barTintColor = UIColor(hex: dataManager.currentPage!.color)
-        }*/
         super.viewDidAppear(true)
-        
     }
 
     //MARK - Tableview Data Source
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "MenuItemCell", for: indexPath)
+        cell.textLabel?.font = UIFont(name: DataManager.instance.boldFontName, size: CGFloat(DataManager.instance.fontSize))
         cell.textLabel?.text = itemArray[indexPath.row]
-        //let step = Float(0.05)
-        if(currentMenu?.items[indexPath.row].color != "")
-        {
-            cell.backgroundColor = UIColor(hex: (currentMenu?.items[indexPath.row].color)!)
-        }
-        else
-        {
-            if(currentMenu?.color != "")
-            {
-                let color = UIColor(hex: currentMenu!.color)
-                let hsba = color!.hsba
-                let step = (CGFloat((indexPath.row))) / (CGFloat(indexPath.count) * 4)
-                cell.backgroundColor = UIColor(hue: hsba.h, saturation: hsba.s - (hsba.s * step), brightness: hsba.b + (hsba.b * step), alpha: 1.0)
-            }
-        }
+        cell.textLabel?.lineBreakMode = .byWordWrapping
+        cell.textLabel?.numberOfLines = 0
+        
         return cell
     }
     
@@ -94,43 +76,22 @@ class MenuViewController: UITableViewController
             
             let viewController = storyboard!.instantiateViewController(withIdentifier: "MenuViewController") as! MenuViewController
             viewController.currentMenu = dataManager.currentPage as? Menu
-            viewController.title = dataManager.currentPage?.title
             
-            if(viewController.currentMenu != nil)
-            {
+            if(viewController.currentMenu != nil) {
                 navController!.pushViewController(viewController, animated: true)
             }
-            else
-            {
+            else {
                 print("Could not load the menu")
             }
-            
         }
-        else if(currentMenu!.items[indexPath.row] is MedicalDirective)
+        else
         {
             dataManager.currentPage = currentMenu!.items[indexPath.row]
             
-            let viewController = storyboard!.instantiateViewController(withIdentifier: "MedicalDirectiveViewController") as! MedicalDirectiveViewController
-            viewController.currentDirective = dataManager.currentPage as? MedicalDirective
-            viewController.title = dataManager.currentPage?.title
-            if(viewController.currentDirective != nil)
-            {
-                navController!.pushViewController(viewController, animated: true)
-            }
-            else
-            {
-                print("Could not load the medical directive")
-            }
-        }
-        else if(currentMenu!.items[indexPath.row] is PageLinkTarget)
-        {
-            dataManager.currentPage = currentMenu!.items[indexPath.row]
-            
-            if((dataManager.currentPage as! PageLinkTarget).target_type == .drug_monograph)
+            /*if((dataManager.currentPage as! PageLinkTarget).target_type == .drug_monograph)
             {
                 let viewController = storyboard!.instantiateViewController(withIdentifier: "DrugMonographViewController") as! DrugMonographViewController
                 viewController.drugData = DataManager.instance.drugByKey(key: (dataManager.currentPage as? PageLinkTarget)!.target)
-                viewController.title = dataManager.currentPage?.title
                 if(viewController.drugData != nil)
                 {
                     navController!.pushViewController(viewController, animated: true)
@@ -139,22 +100,80 @@ class MenuViewController: UITableViewController
                 {
                     print("Could not load the drug monograph")
                 }
-            } else if((dataManager.currentPage as! PageLinkTarget).target_type == .directive)
+            }
+            else if((dataManager.currentPage as! PageLinkTarget).target_type == .document)
             {
-                let viewController = storyboard!.instantiateViewController(withIdentifier: "MedicalDirectiveViewController") as! MedicalDirectiveViewController
-                viewController.currentDirective = DataManager.instance.directiveByKey(key: (dataManager.currentPage as? PageLinkTarget)!.target)
-                viewController.title = dataManager.currentPage?.title
-                if(viewController.currentDirective != nil)
+                let viewController = storyboard!.instantiateViewController(withIdentifier: "DrugMonographViewController") as! DrugMonographViewController
+                let pageData = DataManager.instance.pageByKey(key: (dataManager.currentPage as? PageLinkTarget)!.target)
+                if(pageData != nil)
                 {
-                    navController!.pushViewController(viewController, animated: true)
+                    print("Found page data")
+                    //navController!.pushViewController(viewController, animated: true)
                 }
                 else
                 {
-                    print("Could not load the medical directive")
+                    print("Could not load the document")
                 }
+            } else*/
+            if(dataManager.currentPage?.type == .tool)
+            {
+                let viewController = storyboard!.instantiateViewController(withIdentifier: dataManager.currentPage!.key)
+                
+                navController!.pushViewController(viewController, animated: true)
             }
         }
-        //viewController.currentMenu = itemArray[indexPath.row].target as? Menu
+    
+        dataManager.currentPage = currentMenu!.items[indexPath.row]
+        
+        if(dataManager.currentPage?.type == .document)
+        {
+            let viewController = storyboard!.instantiateViewController(withIdentifier: "WebViewController") as! WebViewController
+            viewController.target = dataManager.currentPage!.key
+            
+            navController!.pushViewController(viewController, animated: true)
+            
+        }
+        else if(dataManager.currentPage?.type == .directive)
+        {
+            let viewController = storyboard!.instantiateViewController(withIdentifier: "MedicalDirectiveViewController") as! MedicalDirectiveViewController
+            
+            viewController.currentDirective = DataManager.instance.pageByKey(key: dataManager.currentPage!.key) as? MedicalDirective
+            
+            if(viewController.currentDirective != nil)
+            {
+                if( viewController.currentDirective?.flowchartkeys.isEmpty == false )
+                {
+                    var viewControllersArray : [UIViewController] = []
+                    viewControllersArray.append(viewController)
+                    
+                    let tabController = storyboard!.instantiateViewController(withIdentifier: "ContentPageTabBarController") as! ContentPageTabBarController
+                    
+                    viewController.tabBarItem = UITabBarItem(title: "Directive", image: UIImage(systemName: "book.fill"), tag: 1)
+            
+            
+                    for flowchartKey in viewController.currentDirective!.flowchartkeys
+                    {
+                        
+                        let flowchartController = storyboard!.instantiateViewController(withIdentifier: "DirectiveFlowChartViewController") as! DirectiveFlowChartViewController
+                        flowchartController.imageName = flowchartKey[1]
+                        flowchartController.tabBarItem = UITabBarItem(title: flowchartKey[0], image: UIImage(systemName: "flowchart.fill"), tag: 1)
+                        
+                        viewControllersArray.append(flowchartController)
+                    }
+                    tabController.viewControllers = viewControllersArray
+                    navController!.pushViewController(tabController, animated: true)
+                }
+                else
+                {
+                    navController!.pushViewController(viewController, animated: true)
+                }
+                
+            }
+            else
+            {
+                print("Could not load the medical directive")
+            }
+        }
         tableView.deselectRow(at: indexPath, animated: true)
     }
 }

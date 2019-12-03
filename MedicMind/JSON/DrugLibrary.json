@@ -1,0 +1,439 @@
+{
+  "drugs" : [
+    {
+      "name" : "Acetaminophen",
+      "key" : "acetaminophen"
+    },
+    {
+      "name" : "Abciximab",
+      "key" : "abciximab",
+      "y_site" : {
+          "lactated_ringers" : false,
+          "acetylcysteine" : false,
+          "acyclovir" : false,
+          "ketamine" : false
+      }
+    },
+    {
+      "name" : "Acetylcysteine",
+      "key" : "acetylcysteine",
+      "y_site" : {
+          "lactated_ringers" : false,
+          "abciximab" : false,
+          "acetylcysteine" : false,
+          "acyclovir" : false,
+          "ketamine" : false
+      }
+    },
+    {
+      "name" : "Acetylsalicylic Acid",
+      "key" : "asa"
+    },
+    {
+      "name" : "Acyclovir",
+      "key" : "acyclovir",
+      "y_site" : {
+          "abciximab" : false,
+          "acetylcysteine" : false,
+          "ketamine" : false
+      }
+    },
+    {
+      "name" : "Adenosine",
+      "key" : "adenosine"
+    },
+    {
+      "name" : "Amiodarone",
+      "key" : "amiodarone"
+    },
+    {
+      "name" : "Ampicillin",
+      "key" : "ampicillin"
+    },
+    {
+      "name" : "Atropine Sulfate",
+      "key" : "atropine"
+    },
+    {
+      "name" : "Calcium Chloride",
+      "key" : "calcium_chloride"
+    },
+    {
+      "name" : "Calcium Gluconate",
+      "key" : "calcium_gluconate"
+    },
+    {
+      "name" : "Carboprost Tromethamine",
+      "key" : "carboprost_tromethamine"
+    },
+    {
+      "name" : "Cefazolin",
+      "key" : "cefazolin"
+    },
+    {
+      "name" : "Ceftriaxone Sodium",
+      "key" : "ceftriaxone"
+    },
+    {
+      "name" : "Cisatracurium",
+      "key" : "cisatracurium"
+    },
+    {
+      "name" : "Clopidogrel",
+      "key" : "clopidogrel"
+    },
+    {
+      "name" : "Cyproheptadine",
+      "key" : "cyproheptadine"
+    },
+    {
+      "name" : "Dexamethasone",
+      "key" : "dexamethasone"
+    },
+    {
+      "name" : "Dextrose in Water (50%)",
+      "key" : "d50w"
+    },
+    {
+      "name" : "Diazepam",
+      "key" : "diazepam"
+    },
+    {
+      "name" : "Digoxin",
+      "key" : "digoxin"
+    },
+    {
+      "name" : "diLTIazem Hydrochloride",
+      "key" : "diltiazem"
+    },
+    {
+      "name" : "dimenhyDRINATE",
+      "key" : "dimenhydrinate"
+    },
+    {
+      "name" : "diphenhyDRAMINE",
+      "key" : "diphenhydramine"
+    },
+    {
+      "name" : "DOBUtamine",
+      "key" : "dobutamine"
+    },
+    {
+      "name" : "DOPamine",
+      "key" : "dopamine"
+    },
+    {
+      "name" : "EPINEPHrine",
+      "key" : "epinephrine"
+    },
+    {
+      "name" : "Ergonovine Maleate",
+      "key" : "ergonovine"
+    },
+    {
+      "name" : "Etomidate",
+      "key" : "etomidate"
+    },
+    {
+      "name" : "Fat Emulsion (20%)",
+      "key" : "fat_emulsion"
+    },
+    {
+      "name" : "fentaNYL citrate",
+      "key" : "fentanyl"
+    },
+    {
+      "name" : "Flumazenil",
+      "key" : "flumazenil"
+    },
+    {
+      "name" : "Folic Acid",
+      "key" : "folic_acid"
+    },
+    {
+      "name" : "Fomepizole",
+      "key" : "fomepizole"
+    },
+    {
+      "name" : "FOSphenytoin",
+      "key" : "fosphenytoin"
+    },
+    {
+      "name" : "Furosemide",
+      "key" : "furosemide"
+    },
+    {
+      "name" : "Gentamicin",
+      "key" : "gentamicin"
+    },
+    {
+      "name" : "Glucagon HCl",
+      "key" : "glucagon"
+    },
+    {
+      "name" : "Haloperidol Lactate",
+      "key" : "haloperidol"
+    },
+    {
+      "name" : "Heparin",
+      "key" : "heparin"
+    },
+    {
+      "name" : "hydrALAZINE HCl",
+      "key" : "hydralazine"
+    },
+    {
+      "name" : "Hypertonic 3%, Sodium Chloride",
+      "key" : "3%_saline",
+      "incompatible" : {
+          "abciximab" : false,
+          "acetylcysteine" : false,
+          "acyclovir" : false,
+          "ketamine" : false
+      }
+    },
+    {
+      "name" : "Insulin Regular",
+      "key" : "insulin"
+    },
+    {
+      "name" : "Ipratropium Bromide",
+      "key" : "ipratropium"
+    },
+    {
+      "name" : "Isoproterenol",
+      "key" : "isoproterenol"
+    },
+    {
+      "name" : "Ketamine HCl",
+      "key" : "ketamine",
+      "medical_directives" : [
+        "adult_rsi",
+        "adult_sedation"
+      ],
+      "drug_tables" : [
+        {
+          "name" : "Ketamine",
+          "diluent_label" : "100 mL (D5W or NS)",
+          "amount_label" : "100 mg",
+          "concentration_label" : "1 mg/mL\nPeripheral IV",
+          "dosing_label" : "Adult Continues IV Infusion Dosing:\n   Anesthesia: 0.5-3.5 mg/kg/hr IV;\n   Analgesia: 0.03-0.06 mg/kg/hr as SubQ (preferred) or IV infusion; increase every 2-4 hours based on response (up to a maximum rate of 10 mg/hr for SubQ)",
+          "concentration" : 1,
+          "unit_weight" : "mg",
+          "unit_time" : "hr",
+          "minDose" : 0.25,
+          "maxDose" : 3.5,
+          "doseIncrement" : 0.25,
+          "weight_based" : true
+        }
+      ],
+      "treatment_data" : [
+          {
+              "key" : "ketamine_adult_induction",
+              "title" : "Anesthesia/Induction",
+              "dose_route" : [
+                  ["Induction dose", "0.5-2 mg/kg IV over 30 seconds<br>Use 0.5 mg/kg in patient exhibiting signs of shock"],
+                  ["Reduced titration dose", "Push escalating doses 10-30 mg IV q 60 seconds \nGoal 2 mg/kg within 5 minutes\nCrashing pre-arrest patient<br>Poor cardiovascular reserve\nPotential difficult airway for awake intubation"]
+              ],
+              "loc" : [["acp", "first"]]
+          },
+          {
+              "key" : "ketamine_adult_procedural_sedation",
+              "title" : "Procedural Sedation",
+              "dose_route" : [["0.5 mg/kg"]],
+              "loc" : [["acp", "first"], ["ccp", "after"]]
+          },
+          {
+              "key" : "ketamine_adult_analgesia",
+              "title" : "Analgesia",
+              "dose_route" : [["0.1 mg/kg"]],
+              "loc" : [["acp", "first"], ["ccp", "after"]]
+          }
+      ],
+      "y_site" : {
+          "lactated_ringers" : false,
+          "3%_saline" : false,
+          "abciximab" : false,
+          "acetylcysteine" : false,
+          "acyclovir" : false
+      },
+      "content" : [
+          [["Other Names:", "Ketalar"]],
+          [["Class", "Anesthetic, Analgesic"]],
+          [["Pharmicokinetics:", "Onset: 30 seconds", "Peak: 5-10 minutes", "Half-life: 10-15 minutes", "Duration: 5-10 minutes"]],
+          [["Indications:",
+        "As the sole anesthetic agent for recommended diagnostic and surgical procedures",
+        "Used as an induction agent prior to the administration of other general anesthesia agents",
+        "To provide pain control in patients who do not have adequate palliative care pain control",
+        "Postoperative pain management in conjuction with morphine"]],
+          [["Contraindications:",
+        "Hypersensitivity to the medication and/or its derivatices",
+        "Conditions in which an increase in blood pressure would be hazardous"]
+      ]]
+    },
+    {
+      "name" : "Ketorolac",
+      "key" : "ketorolac"
+    },
+    {
+      "name" : "Labetalol",
+      "key" : "labetalol"
+    },
+    {
+      "name" : "Lidocaine Hydrochloride",
+      "key" : "lidocaine"
+    },
+    {
+      "name" : "LORazepam",
+      "key" : "lorazepam"
+    },
+    {
+      "name" : "Magnesium Sulfate",
+      "key" : "magnesium"
+    },
+    {
+      "name" : "Mannitol (20%)",
+      "key" : "mannitol"
+    },
+    {
+      "name" : "methylPREDNISolone Sodium Succinate",
+      "key" : "methylprednisolone"
+    },
+    {
+      "name" : "Metoprolol Succinate",
+      "key" : "metoprolol"
+    },
+    {
+      "name" : "Midazolam Hydrochloride",
+      "key" : "midazolam"
+    },
+    {
+      "name" : "Milrinone Lactate",
+      "key" : "milrinone"
+    },
+    {
+      "name" : "Morphine Sulfate",
+      "key" : "morphine"
+    },
+    {
+      "name" : "Naloxone HCl",
+      "key" : "naloxone"
+    },
+    {
+      "name" : "niFEDIPine",
+      "key" : "nifedipine"
+    },
+    {
+      "name" : "Nitroglycerin",
+      "key" : "nitroglycerin"
+    },
+    {
+      "name" : "Norepinephrine Bitartrate",
+      "key" : "norepinephrine"
+    },
+    {
+      "name" : "Octreotide",
+      "key" : "octreotide"
+    },
+    {
+      "name" : "Ondansetron",
+      "key" : "ondansetron"
+    },
+    {
+      "name" : "Oxytocin",
+      "key" : "oxytocin"
+    },
+    {
+      "name" : "Pantoprazole Sodium",
+      "key" : "pantoprazole"
+    },
+    {
+      "name" : "PHENObarbital",
+      "key" : "phenobarbital"
+    },
+    {
+      "name" : "Phentolamine Mesylate",
+      "key" : "phentolamine"
+    },
+    {
+      "name" : "Phenylephrine Hydrochloride",
+      "key" : "phenylephrine"
+    },
+    {
+      "name" : "phenyTOIN",
+      "key" : "phenytoin"
+    },
+    {
+      "name" : "Potassium Chloride",
+      "key" : "potassium"
+    },
+    {
+      "name" : "Pralidoxime Chloride",
+      "key" : "pralidoxime"
+    },
+    {
+      "name" : "Procainamide Hydrochloride",
+      "key" : "procainamide"
+    },
+    {
+      "name" : "Propofol",
+      "key" : "propofol"
+    },
+    {
+      "name" : "Prothrombin Complex Concentrate, Human (PCC)",
+      "key" : "pcc"
+    },
+    {
+      "name" : "Pyridoxine",
+      "key" : "pyridoxine"
+    },
+    {
+      "name" : "Rocuronium Bromide",
+      "key" : "rocuronium"
+    },
+    {
+      "name" : "Salbutamol",
+      "key" : "salbutamol"
+    },
+    {
+      "name" : "Sodium Bicarbonate",
+      "key" : "sodium_bicarbonate"
+    },
+    {
+      "name" : "Sodium Polystyrene Sulfonate",
+      "key" : "kayexalate"
+    },
+    {
+      "name" : "Succinylcholine Chloride",
+      "key" : "succinylcholine"
+    },
+    {
+      "name" : "Tenecteplase",
+      "key" : "tenecteplase"
+    },
+    {
+      "name" : "Thiamine HCl",
+      "key" : "thiamine"
+    },
+    {
+      "name" : "Tranexamic Acid",
+      "key" : "txa"
+    },
+    {
+      "name" : "Vancomycin",
+      "key" : "vancomycin"
+    },
+    {
+      "name" : "Vasopressin",
+      "key" : "vasopressin"
+    },
+    {
+      "name" : "Vecuronium Bromide",
+      "key" : "vecuronium"
+    },
+    {
+      "name" : "Xylometazoline",
+      "key" : "xylometazoline"
+    }
+  ]
+}

@@ -1,0 +1,162 @@
+//
+//  MedicalDirective.swift
+//  MedicMind
+//
+//  Created by Charles Trickey on 2019-06-10.
+//  Copyright © 2019 Charles Trickey. All rights reserved.
+//
+
+import Foundation
+
+
+enum LevelOfCare : Int
+{
+    case PCP = 0
+    case ACP = 1
+    case CCP = 2
+    case PCCP = 3
+    case All = 4
+    
+    static func getTypeFromString(string : String) -> LevelOfCare
+    {
+        switch string
+        {
+        case "pcp":
+            return .PCP
+        case "acp":
+            return .ACP
+        case "ccp":
+            return .CCP
+        case "pccp":
+            return .PCCP
+        default:
+            return .All
+        }
+    }
+}
+
+struct TreatmentCard : Codable
+{
+    var section = ""
+    var title = ""
+    var dose_route : [[String]] = []
+    var notes = ""
+    var drugKey = ""
+    var treatmentKey = ""
+    var calculator : [DrugTable]
+    var loc = [["", ""]]
+
+    private enum CodingKeys: String, CodingKey {
+        case section
+        case title
+        case dose_route
+        case notes
+        case drugKey
+        case treatmentKey
+        case calculator
+        case loc
+    }
+    
+    init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        self.section = try container.decodeIfPresent(String.self, forKey: .section) ?? ""
+        self.title = try container.decodeIfPresent(String.self, forKey: .title) ?? ""
+        self.dose_route = try container.decodeIfPresent([[String]].self, forKey: .dose_route) ?? []
+        self.notes = try container.decodeIfPresent(String.self, forKey: .notes) ?? ""
+        self.drugKey = try container.decodeIfPresent(String.self, forKey: .drugKey) ?? ""
+        self.treatmentKey = try container.decodeIfPresent(String.self, forKey: .treatmentKey) ?? ""
+        self.calculator = try container.decodeIfPresent([DrugTable].self, forKey: .calculator) ?? []
+        self.loc = try container.decodeIfPresent([[String]].self, forKey: .loc) ?? [["nil","nil"]]
+
+    }
+}
+
+struct ContentPages : Codable {
+    let pages: [Page]
+    
+    enum DirectivesKey: CodingKey {
+        case pages
+    }
+    
+    enum DirectivesTypeKey: CodingKey {
+        case type
+    }
+    
+    enum DirectiveType: String, Decodable {
+        case directive = "medical_directive"
+        case document = "document"
+    }
+    
+    init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: DirectivesKey.self)
+        var pagesArrayForType = try container.nestedUnkeyedContainer(forKey: DirectivesKey.pages)
+        var pages = [Page]()
+        
+        var pagesArray = pagesArrayForType
+        while(!pagesArrayForType.isAtEnd) {
+            let page = try pagesArrayForType.nestedContainer(keyedBy: DirectivesTypeKey.self)
+            let type = try page.decode(DirectiveType.self, forKey: DirectivesTypeKey.type)
+            
+            switch type {
+            case .document:
+                pages.append(try pagesArray.decode(Document.self))
+            case .directive:
+                pages.append(try pagesArray.decode(MedicalDirective.self))
+            }
+        }
+        self.pages = pages
+    }
+}
+
+class MedicalDirective : Page {
+    var sectionLabel : String = ""
+    var indications: String = ""
+    var contraindications: String = ""
+    var drugCards: Array<TreatmentCard> = []
+    var clinical : String = ""
+    var treatment: String = ""
+    var flowchartkeys : [[String]] = []
+    
+    private enum CodingKeys: String, CodingKey {
+        case key
+        case section_label
+        case indications
+        case contraindications
+        case drug_cards
+        case clinical
+        case treatment
+        case flowchartkeys
+    }
+    
+    required init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        self.sectionLabel = try container.decodeIfPresent(String.self, forKey: .section_label) ?? ""
+        self.indications = try container.decodeIfPresent(String.self, forKey: .indications) ?? ""
+        self.treatment = try container.decodeIfPresent(String.self, forKey: .treatment) ?? ""
+        self.contraindications = try container.decodeIfPresent(String.self, forKey: .contraindications) ?? ""
+        self.drugCards = try container.decodeIfPresent([TreatmentCard].self, forKey: .drug_cards) ?? []
+        self.clinical = try container.decodeIfPresent(String.self, forKey: .clinical) ?? ""
+        self.treatment = try container.decodeIfPresent(String.self, forKey: .treatment) ?? ""
+        self.flowchartkeys = try container.decodeIfPresent([[String]].self, forKey: .flowchartkeys) ?? []
+        try super.init(from: decoder)
+    }
+}
+
+class Document : Page {
+    var text : String
+    var flowchartkeys : [String] = []
+    
+    private enum CodingKeys: String, CodingKey {
+        case text
+        case flowchartkeys
+    }
+    
+    required init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        self.text = try container.decodeIfPresent(String.self, forKey: .text) ?? ""
+        self.flowchartkeys = try container.decodeIfPresent([String].self, forKey: .flowchartkeys) ?? []
+        try super.init(from: decoder)
+    }
+}
+
+

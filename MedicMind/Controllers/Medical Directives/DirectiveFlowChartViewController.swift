@@ -14,13 +14,15 @@ class DirectiveFlowChartViewController : UIViewController, UIScrollViewDelegate 
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var imageView: UIImageView!
     
+    var imageName : String = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         scrollView.delegate = self
         scrollView.minimumZoomScale = 1.0
         scrollView.maximumZoomScale = 10.0
         
-        if let image = UIImage(named: "bronchoconstriction flow chart")
+        if let image = UIImage(named: imageName)
         {
             imageView.image = image
         }

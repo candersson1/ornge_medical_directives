@@ -1,0 +1,7 @@
+- Modification to the drug card view to provide lateral differentiation between collumns - DONE
+- Modification of either content or formatting in order to provide better readability for content such as ventilation parameters. - DONE
+- Compression of locPatchStack when it does not exist - DONE
+- Fix bug where some content is being cut off in the doseRoute stack - DONE
+- Images not being presented in WebView - DONE
+
+- Improve UI in notes View Controller

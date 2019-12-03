@@ -9,391 +9,108 @@
 import Foundation
 import CoreData
 import UIKit
+import SwiftRichString
 
-class Menu : Page {
-    var items: [Page]
-    
-    private enum MenuCodingKeys: CodingKey {
-        case items
-    }
-    
-    enum PagesKey: CodingKey {
-        case items
-    }
-    
-    enum PageTypeKey: CodingKey {
-        case type
-    }
-    
-    enum PageTypes: String, Decodable {
-        case menu = "menu"
-        case content = "content"
-        case medicalDirective = "medical_directive"
-        case drug_monograph = "drug_monograph"
-        case page_target = "page_target"
-    }
-    
-    required init(from decoder: Decoder) throws {
-        let container = try decoder.container(keyedBy: PagesKey.self)
-        var pagesArrayForType = try container.nestedUnkeyedContainer(forKey: PagesKey.items)
-        var pages = [Page]()
-        
-        var pagesArray = pagesArrayForType
-        while(!pagesArrayForType.isAtEnd) {
-            let page = try pagesArrayForType.nestedContainer(keyedBy: PageTypeKey.self)
-            let type = try page.decode(PageTypes.self, forKey: PageTypeKey.type)
-            switch type {
-            case .menu:
-                pages.append(try pagesArray.decode(Menu.self))
-            case .content:
-                pages.append(try pagesArray.decode(Content.self))
-            case .medicalDirective:
-                pages.append(try pagesArray.decode(MedicalDirective.self))
-            case .drug_monograph:
-                pages.append(try pagesArray.decode(PageLinkTarget.self))
-            case .page_target:
-                pages.append(try pagesArray.decode(PageLinkTarget.self))
 
-            }
-        }
-        self.items = pages
-        try super.init(from: decoder)
-    }
+let normalStyle = Style {
+    $0.font = SystemFonts.Helvetica.font(size: CGFloat(DataManager.instance.fontSize))
+    $0.paragraphSpacingAfter = 10
 }
 
-class Content : Page {
-    var bodyText: String = ""
-    
-    private enum CodingKeys: String, CodingKey {
-        case bodyText
-    }
+let titleStyle = Style {
+    $0.font = SystemFonts.Helvetica_Bold.font(size: CGFloat(DataManager.instance.fontSize + 3))
+}
+let boldStyle = Style {
+    $0.font = SystemFonts.Helvetica_Bold.font(size: CGFloat(DataManager.instance.fontSize))
 }
 
-struct DrugCard : Codable
-{
-    var levelOfCare = "pcp"
-    var patchPointType = "none"
-    var title = ""
-    var doseInformation = ""
-    var notes = ""
-    var targetDrug = ""
-    
-    private enum CodingKeys: String, CodingKey {
-        case levelOfCare
-        case patchPointType
-        case title
-        case doseInformation
-        case notes
-        case targetDrug
-    }
+let italicStyle = normalStyle.byAdding {
+    $0.traitVariants = .italic
 }
 
-struct MedicalDirectives : Codable {
-    let directives: [MedicalDirective]
-    
-    enum DirectivesKey: CodingKey {
-        case directives
-    }
-    
-    enum DirectivesTypeKey: CodingKey {
-        case directives
-    }
-    
-    init(from decoder: Decoder) throws {
-        let container = try decoder.container(keyedBy: DirectivesKey.self)
-        var pagesArrayForType = try container.nestedUnkeyedContainer(forKey: DirectivesKey.directives)
-        var directive = [MedicalDirective]()
-        
-        var pagesArray = pagesArrayForType
-        while(!pagesArrayForType.isAtEnd) {
-            let _ = try pagesArrayForType.nestedContainer(keyedBy: DirectivesTypeKey.self)
-            //switch type {
-            // case .drugs:
-            directive.append(try pagesArray.decode(MedicalDirective.self))
-            //}
-        }
-        self.directives = directive
-    }
+let underlineStyle = normalStyle.byAdding{
+    $0.underline = (.single, UIColor.black)
 }
 
-class MedicalDirective : Page {
-    var key : String = ""
-    var indications: String = ""
-    var contraindications: String = ""
-    var drugCards: Array<DrugCard> = []
-    var clinical : String = ""
-    var treatment: String = ""
-    
-    private enum CodingKeys: String, CodingKey {
-        case key
-        case indications
-        case contraindications
-        case drug_cards
-        case clinical
-        case treatment
-    }
-    
-    required init(from decoder: Decoder) throws {
-        let container = try decoder.container(keyedBy: CodingKeys.self)
-        self.key = try container.decode(String.self, forKey: .key)
-        self.indications = try container.decode(String.self, forKey: .indications)
-        self.contraindications = try container.decode(String.self, forKey: .contraindications)
-        self.drugCards = try container.decode([DrugCard].self, forKey: .drug_cards)
-        self.clinical = try container.decode(String.self, forKey: .clinical)
-        self.treatment = try container.decode(String.self, forKey: .treatment)
-        try super.init(from: decoder)
-    }
+let redStyle = Style {
+    $0.color = UIColor.red
 }
 
-
-class PageLinkTarget : Page {
-    var target : String = ""
-    var target_type : TargetType = .none
-    
-    private enum CodingKeys: String, CodingKey {
-        case target
-        case target_type
-    }
-    
-    enum TargetType
-    {
-        case none
-        case directive
-        case drug_monograph
-    }
-    
-    required init(from decoder: Decoder) throws {
-        let container = try decoder.container(keyedBy: CodingKeys.self)
-        self.target = try container.decode(String.self, forKey: .target)
-        
-        let str = try container.decode(String.self, forKey: .target_type)
-        if(str == "directive")
-        {
-            target_type = .directive
-        } else if str == "drug_monograph"
-        {
-            target_type = .drug_monograph
-        } else
-        {
-            target_type = .none
-        }
-        try super.init(from: decoder)
-    }
+let orangeBackgroundStyle = Style {
+    $0.backColor = UIColor.orange
 }
 
-class Page : Codable {
-    var title: String
-    var type: String
-    var color: String
-    
-    private enum CodingKeys: String, CodingKey {
-        case title
-        case type
-        case color
-    }
-    
-    required init(from decoder: Decoder) throws {
-        let container = try decoder.container(keyedBy: CodingKeys.self)
-        self.title = try container.decode(String.self, forKey: .title)
-        self.type = try container.decode(String.self, forKey: .type)
-        self.color = try container.decode(String.self, forKey: .color)
-    }
- 
-    func encode(to encoder: Encoder) throws {
-        var container = encoder.container(keyedBy: CodingKeys.self)
-        try container.encode(title, forKey: .title)
-        try container.encode(type, forKey: .type)
-        try container.encode(color, forKey: .color)
-    }
+let leftJustifiedStyle = normalStyle.byAdding {
+    $0.alignment = .left
 }
 
-struct Pages : Codable {
-    let pages: [Page]
-    
-    enum PagesKey: CodingKey {
-        case pages
-    }
-    
-    enum PageTypeKey: CodingKey {
-        case type
-    }
-    
-    enum PageTypes: String, Decodable {
-        case menu = "menu"
-        case content = "content"
-        case medicalDirective = "medical_directive"
-        case drug_monograph = "drug_monograph"
-        case page_target = "page_target"
-    }
-    
-    init(from decoder: Decoder) throws {
-        let container = try decoder.container(keyedBy: PagesKey.self)
-        var pagesArrayForType = try container.nestedUnkeyedContainer(forKey: PagesKey.pages)
-        var pages = [Page]()
-        
-        var pagesArray = pagesArrayForType
-        while(!pagesArrayForType.isAtEnd) {
-            let page = try pagesArrayForType.nestedContainer(keyedBy: PageTypeKey.self)
-            let type = try page.decode(PageTypes.self, forKey: PageTypeKey.type)
-            switch type {
-            case .menu:
-                pages.append(try pagesArray.decode(Menu.self))
-            case .content:
-                pages.append(try pagesArray.decode(Content.self))
-            case .medicalDirective:
-                pages.append(try pagesArray.decode(MedicalDirective.self))
-            case .drug_monograph:
-                pages.append(try pagesArray.decode(PageLinkTarget.self))
-            case .page_target:
-                pages.append(try pagesArray.decode(PageLinkTarget.self))
-            }
-        }
-        self.pages = pages
-    }
+let centerJustifiedStyle = Style {
+    $0.alignment = .center
+    $0.paragraphSpacingAfter = 10
 }
 
-struct Drug : Codable {
-    let name : String
-    let key : String
-    let other_names : String
-    let classification : String
-    let onset : String
-    let peak : String
-    let half_life : String
-    let duration : String
-    let indications : [String]
-    let contraindications : [String]
-    let medical_directives : [String]
-    let adult_dose : String
-    let pediatric_dose : String
-    let neonatal_dose : String
-    let special_con : String
-    let reconst : [String]
-    let compatibility : String
-    let stability : String
-    let freezing : String
-    let patient_safety : String
-    let patient_monitoring : [String]
-    let adverse : [String]
-    let precautions : [String]
-    let interactions : String
-    let pregnancy : String
-    let lactation : String
-    let moa : String
-    
-    enum CodingKeys: String, CodingKey {
-        case name = "name"
-        case key = "key"
-        case other_names = "other_names"
-        case classification = "class"
-        case onset = "onset"
-        case peak = "peak"
-        case half_life = "half_life"
-        case duration = "duration"
-        case indications = "indications"
-        case contraindications = "contraindications"
-        case medical_directives = "medical_directives"
-        case adult_dose = "adult_dose"
-        case pediatric_dose = "pediatric_dose"
-        case neonatal_dose = "neonatal_dose"
-        case special_con = "special_con"
-        case reconst = "reconst"
-        case compatibility = "compatibility"
-        case stability = "stability"
-        case freezing = "freezing"
-        case patient_safety = "patient_safety"
-        case patient_monitoring = "patient_monitoring"
-        case adverse = "adverse"
-        case precautions = "precautions"
-        case interactions = "interactions"
-        case pregnancy = "pregnancy"
-        case lactation = "lactation"
-        case moa = "moa"
-    }
-    
-    init(from decoder: Decoder) throws {
-        let container = try decoder.container(keyedBy: CodingKeys.self)
-        self.name = try container.decode(String.self, forKey: .name)
-        self.key = try container.decode(String.self, forKey: .key)
-        self.other_names = try container.decode(String.self, forKey: .other_names)
-        self.classification = try container.decode(String.self, forKey: .classification)
-        self.onset = try container.decode(String.self, forKey: .onset)
-        self.peak = try container.decode(String.self, forKey: .peak)
-        self.half_life = try container.decode(String.self, forKey: .half_life)
-        self.duration = try container.decode(String.self, forKey: .duration)
-        self.indications = try container.decode([String].self, forKey: .indications)
-        self.contraindications = try container.decode([String].self, forKey: .contraindications)
-        self.medical_directives = try container.decode([String].self, forKey: .medical_directives)
-        self.adult_dose = try container.decode(String.self, forKey: .adult_dose)
-        self.pediatric_dose = try container.decode(String.self, forKey: .pediatric_dose)
-        self.neonatal_dose = try container.decode(String.self, forKey: .neonatal_dose)
-        self.special_con = try container.decode(String.self, forKey: .special_con)
-        self.reconst = try container.decode([String].self, forKey: .reconst)
-        self.compatibility = try container.decode(String.self, forKey: .compatibility)
-        self.stability = try container.decode(String.self, forKey: .stability)
-        self.freezing = try container.decode(String.self, forKey: .freezing)
-        self.patient_safety = try container.decode(String.self, forKey: .patient_safety)
-        self.patient_monitoring = try container.decode([String].self, forKey: .patient_monitoring)
-        self.adverse = try container.decode([String].self, forKey: .adverse)
-        self.precautions = try container.decode([String].self, forKey: .precautions)
-        self.interactions = try container.decode(String.self, forKey: .interactions)
-        self.pregnancy = try container.decode(String.self, forKey: .pregnancy)
-        self.lactation = try container.decode(String.self, forKey: .lactation)
-        self.moa = try container.decode(String.self, forKey: .moa)
-    }    
+let tab1 = Style {
+    $0.alignment = .left
+    $0.firstLineHeadIndent = 10
+    $0.headIndent = 20
+    $0.paragraphSpacingAfter = 5
 }
 
-struct Drugs : Codable {
-    let drugs: [Drug]
-    
-    enum DrugsKey: CodingKey {
-        case drugs
-    }
-    
-    enum DrugTypeKey: CodingKey {
-        case drugs
-    }
-    
-    init(from decoder: Decoder) throws {
-        let container = try decoder.container(keyedBy: DrugsKey.self)
-        var pagesArrayForType = try container.nestedUnkeyedContainer(forKey: DrugsKey.drugs)
-        var drugs = [Drug]()
-        
-        var pagesArray = pagesArrayForType
-        while(!pagesArrayForType.isAtEnd) {
-            let _ = try pagesArrayForType.nestedContainer(keyedBy: DrugTypeKey.self)
-            //switch type {
-           // case .drugs:
-                drugs.append(try pagesArray.decode(Drug.self))
-            //}
-        }
-        self.drugs = drugs
-    }
+let tab2 = Style {
+    $0.alignment = .left
+    $0.firstLineHeadIndent = 30
+    $0.headIndent = 40
+    $0.paragraphSpacingAfter = 5
+
 }
+
+let tab3 = Style {
+    $0.alignment = .left
+    $0.firstLineHeadIndent = 50
+    $0.headIndent = 60
+    $0.paragraphSpacingAfter = 5
+}
+
+let styleGroup = StyleGroup(base: normalStyle, ["title" : titleStyle, "b" : boldStyle, "i" : italicStyle, "u" : underlineStyle, "red" : redStyle, "center" : centerJustifiedStyle, "left" : leftJustifiedStyle, "tab1" : tab1, "tab2" : tab2, "tab3" : tab3])
+
 
 class DataManager
 {
     static let instance = DataManager()
     var menuData : [Page] = []
+    var pageData : [Page] = []
     var drugData : [Drug] = []
-    var directivesData : [MedicalDirective] = []
+    var flowchartData : [FlowChart] = []
     var currentPage : Page?
     var loaded = false
     
+    var fontSize : Float
+    var fontName : String
+    var boldFontName : String
+    
+    var showLevelOfCare = LevelOfCare.All
     private init()
     {
-       
+        let defaults = UserDefaults.standard
+        fontSize = (defaults.float(forKey: "font_size") != 0) ? defaults.float(forKey: "font_size") : 13.0
+        fontName = (defaults.string(forKey: "font_name") != nil) ? defaults.string(forKey: "font_name")! :
+        "HelveticaNeue"
+        boldFontName = (defaults.string(forKey: "font_name_bold") != nil) ? defaults.string(forKey: "font_name_bold")! :
+        "HelveticaNeue-Bold"
+        
     }
     
     func load()
     {
-        guard let menus = DataManager.instance.loadMenuJson(filename: "MenuData") ?? nil else { print("could not load MenuData.json"); return }
+        guard let menus = DataManager.instance.loadMenuJson(filename: "MenuData_P") ?? nil else { print("loadMenuJson() failed for MenuData.json"); return }
         guard let drugs = DataManager.instance.loadDrugLibraryJson(filename: "DrugLibrary") ?? nil
-            else { print("could not load DrugLibrary.json"); return}
-        guard let directives = DataManager.instance.loadMedicalDirectiveLibraryJson(filename: "MedicalDirectives") ?? nil else {print("could not load MedicalDirectives.json"); return}
+            else { print("loadDrugLibraryJson() for DrugLibrary.json"); return}
+        guard let flowcharts = DataManager.instance.loadFlowChartsLibraryJson(filename: "FlowChartLibrary") ?? nil else {print("loadFlowChartsLibraryJson() failed for FlowChartLibrary.json"); return}
+        guard let pages = DataManager.instance.loadPagesLibraryJson(filename: "MedicalDirectives") ?? nil else {print("loadPagesLibraryJson() failed for MedicalDirectives.json"); return}
         menuData = menus
         drugData = drugs
-        directivesData = directives
+        flowchartData = flowcharts
+        pageData = pages
         currentPage = menuData[0] as! Menu
         loaded = true
     }
@@ -415,14 +132,36 @@ class DataManager
                     let jsonData = try decoder.decode(Pages.self, from: data)
                     for result in jsonData.pages
                     {
-                        if result is Content {
-                            print((result as! Content).bodyText)
-                        }
-                        else if result is Menu {
+                        if result is Menu {
                             print((result as! Menu).items)
                         }
                         return jsonData.pages
                     }
+                }
+                catch {
+                    print(error.localizedDescription)
+                }
+                
+                return nil
+            } catch {
+                print("error:\(error)")
+            }
+        }
+        return nil
+    }
+    
+    func loadPagesLibraryJson(filename fileName: String) ->[Page]?
+    {
+        if let url = Bundle.main.url(forResource: fileName, withExtension: "json")
+        {
+            do {
+                let data = try Data(contentsOf: url)
+                let decoder = JSONDecoder()
+                do
+                {
+                    let jsonData = try decoder.decode(ContentPages.self, from: data)
+                    return jsonData.pages
+                    
                 }
                 catch {
                     print(error.localizedDescription)
@@ -463,7 +202,7 @@ class DataManager
         return nil
     }
     
-    func loadMedicalDirectiveLibraryJson(filename fileName: String) ->[MedicalDirective]?
+    func loadFlowChartsLibraryJson(filename fileName: String) ->[FlowChart]?
     {
         if let url = Bundle.main.url(forResource: fileName, withExtension: "json")
         {
@@ -472,10 +211,10 @@ class DataManager
                 let decoder = JSONDecoder()
                 do
                 {
-                    let jsonData = try decoder.decode(MedicalDirectives.self, from: data)
-                    for _ in jsonData.directives
+                    let jsonData = try decoder.decode(FlowCharts.self, from: data)
+                    for _ in jsonData.flowcharts
                     {
-                        return jsonData.directives
+                        return jsonData.flowcharts
                     }
                 }
                 catch {
@@ -500,20 +239,47 @@ class DataManager
             }
         }
         
-        print("No drug found with key")
+        print("No drug found with key: \(key)")
         return nil
     }
     
-    func directiveByKey(key: String) -> MedicalDirective?
+    func treatmentDataByKey(in drug: Drug, key: String) -> TreatmentData?
     {
-        for directive in directivesData
+        for tx in drug.treatment_data
         {
-            if(directive.key == key)
+            if(tx.key == key)
             {
-                return directive
+                return tx
             }
         }
-        print("No medical directive found with key")
+        
+        print("No treatment for key found in \(drug.name)")
+        return nil
+    }
+
+    func pageByKey(key: String) -> Page?
+    {
+        for page in pageData
+        {
+            if(page.key == key)
+            {
+                return page
+            }
+        }
+        print("No page found with key")
+        return nil
+    }
+    
+    func flowchartByKey(key: String) -> FlowChart?
+    {
+        for flowchart in flowchartData
+        {
+            if(flowchart.key == key)
+            {
+                return flowchart
+            }
+        }
+        print("No flowchart found with key")
         return nil
     }
 }

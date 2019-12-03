@@ -23,7 +23,6 @@ extension UIColor {
                 }
             }
         }
-        
         return nil
     }
     var coreImageColor: CIColor {
