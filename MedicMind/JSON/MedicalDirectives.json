@@ -1,0 +1,1731 @@
+{
+    "pages" :
+    [
+        {
+            "key" : "adult_sga",
+            "title" :"Supraglottic Airway",
+            "type" : "medical_directive",
+            "indications" : "• Weight > 2 kg\n• Need for ventilatory assistance OR airway control AND\n• Other airway management is inadequate OR ineffective OR unsuccessful",
+            "contraindications" : "• Intact gag reflex\n• Caustic ingestion\n• Active vomiting",
+            "clinical" : "• Supraglottic airway should be the initial airway strategy in out of hospital cardiac arrest unless endotracheal intubation is deemed more appropriate by the paramedic\n• Endotracheal intubation is usually preferred for secure airway management in the non cardiac arrest patient. In this setting, SGA is considered a rescue device if BLS airway/ventilation and other advanced airway maneuvers have been unsuccessful\n• Confirm placement (EtCO2 waveform + chest rise)",
+            "drug_cards" : [
+            	{
+                "loc" : [["pcp", "after"]],
+                "title" : "<b>Supraglottic Airway</b>",
+                "dose_route" : [["<center>Insert Airway\nMAX 2 attempts\n\nIf two (2) attempts at supraglottic airway have failed, then revert to BVM and oral / nasal pharyngeal airway management</center>"]]
+            	}
+            ]
+        },
+        {
+            "key" : "adult_rsi",
+            "title" : "Pre-Intubation and Intubation Medications",
+            "type" : "medical_directive",
+            "indications" : "• Intubation attempts",
+            "contraindications" : "• Allergy or sensitivity to the medication\n• See specific contraindications for medications below",
+            "treatment" : "It is expected that in virtually ALL circumstances the Paramedic will patch to the TMP prior to performing a Rapid Sequence Intubation or Sedation Facilitated Intubation (SFI) (see mandatory patch points below) but it is recognized that there may be rare circumstances in which a patient requires immediate intubation with sedation/dissociation and a timely patch cannot be completed. In this circumstance utilize the medication guidelines below to perform the intubation and patch as soon as possible.",
+            "flowchartkeys" : [["Universal Airway Algorithm", "adult_airway_universal_algorithm" ], ["Universal Airway Continued", "adult_airway_flowchart"]],
+            "clinical" : "<tab1>• RSI intubation falls under the CCP and PCCP/PCCN scope\n• If patient requires recurrent doses of phenylephrine to maintain adequate MAP consult the TMP</tab1>",
+            "drug_cards" : [
+                {
+                    "loc" : [["acp", "after"]],
+                    "section" : "Topicalize the airway",
+                    "title" : "<b>Lidocaine (Xylocaine) Spray</b>",
+                    "dose_route" : [
+                        ["<center>10 mg/spray onto the pharynx, hypopharynx\nMAX cumulative dose of 5 mg/kg or 400 mg</center>"]
+                    ],
+                    "notes" : "*Consider Lidocaine for oro-tracheal facilitated and awake intubations"
+                },
+                {
+                    "section" : "<b>For Sedation</b>\nChoose only one sedative agent +/- analgesic\nKETAMINE IS THE PREFERRED AGENT IN THE MAJORITY OF PATIENTS",
+                    "drugKey" : "ketamine",
+                    "treatmentKey" : "ketamine_adult_induction",
+                    "title" : "<b>Ketamine</b>"
+                },
+                {
+                    "title" : "<b>Midazolam</b>",
+                    "loc" : [["acp", "first"]],
+                    "dose_route" : [
+                        ["<center>0.1 mg/kg IV (to a MAX of 8 mg\n<i>contraindicated</i> if MAP < 80\n<b>Titrating doses (up to the above doses) in potentially difficult airway for awake intubation (1-2 mg every 3-5 minutes)</center>"]
+                    ]
+                },
+                {
+                    "section" : "OR",
+                    "title" : "<b>Etomidate</b>",
+                    "loc" : [["ccp", "first"]],
+                    "dose_route" : [["<center>0.2-0.3 mg/kg IV/IO</center>"]]
+                },
+                {
+                    "section" : "OR",
+                    "title" : "<b>Propofol</b>",
+                    "loc" : [["ccp", "first"]],
+                    "dose_route" : [["<center>MAP > 100\n1.0-1.5 mg/kg IV/IO</center>"]],
+                    "notes" : "CAUTION:\n• Respiratory apnea and hypotension may occur with rapid induction \n• Avoid in elderly or hypovolemia or poor cardiovascular reserve\n• Phenylephrine should be used to support BP if hypotension occurs\n• Should be avoided in hypotension with head injury"
+                },
+                {
+                    "section" : "<b>For Analgesia</b>",
+                    "title" : "<b>Fentanyl (Sublimaze)</b>",
+                    "loc" : [["acp", "first"]],
+                    "dose_route" : [["<center>MAP > 80\n1-2 microgram/kg IV/IO</center>"]],
+                    "notes" : "Avoid or reduced titrated dosage (25-50 microgram IV every 3-5 minutes) if elderly, decreased level of consciousness, or maximally sympathetically stimulated and poor cardiovascular reserve"
+                },
+                {
+                    "section" : "<b>For Paralysis\nROCURONIUM IS THE PREFERRED PARALYTIC IN THE MAJORITY OF PATIENTS</b>",
+                    "title" : "<b>Rocuronium (Zemuron)</b>",
+                    "loc" : [["ccp", "first"]],
+                    "dose_route" : [["<center>1.2 mg/kg IV/IO</center>"]]
+                },
+                {
+                    "title" : "<b>Succinylcholine (Anectine)</b>",
+                    "loc" : [["ccp", "first"]],
+                    "dose_route" : [["<center>1.5 mg/kg IV/IO</center>"]],
+                    "notes" : "Contraindicated With:\n<tab1>• Malignant hyperthermia\n• Hyperkalemia (known or concern)\n• Myopathies/Muscular dystrophies\n• Amyotrophic Lateral Sclerosis, Multiple Sclerosis\n• Guillain-Barre Syndrome, botulism\n• Burns ≥ 2nd degree over 10% BSA > 24 hours until healed\n• Stroke with hemiparesis, spinal cord injury > 72 hours until 6 months post injury\n• Severe intra-abdominal sepsis > 72 hours until resolution</tab1>"
+                },
+                {
+                    "section" : "Treatment of Hypotension associated with Sedation",
+                    "title" : "<b>Phenylephrine (Neosynephrine)</b>",
+                    "loc" : [["ccp", "none"]],
+                    "dose_route" : [
+                        ["<center><b>MAP < 65</b>\nMAP < 80 (high ICP, ischemic stroke or spinal cord injury)\n100 micrograms IV/IO q 3 minutes prn\nMAX 3 doses (300 micrograms)</center>"]
+                    ]
+                }
+            ]
+        },
+        {
+            "key" : "adult_tracheostomy",
+            "title" : "Emergency Tracheostomy Tube Reinsertion",
+            "type" : "medical_directive",
+            "indications" : "<tab1>• Patient with existing tracheostomy where the inner and/or outer cannula(s) have been removed from the airway;\nAND\n• Respiratory distress\nAND\n• Inability to adequately ventilate</tab1>",
+            "contraindications" : "<tab1>• Inability to landmark or visualize</tab1>",
+            "flowchartkeys" : [["Tracheostomy Risk Matrix", "adult_trach_flowchart" ]],
+            "clinical" : "<tab1>• Risk is much higher on reinsertion of tube into tracheostomy, cricothyrotomy, or laryngectomy site when less than 7 days since creation. Reinsertion may create a false passage with subcutaneous emphysema and fatal hypoxia due to inability to secure the airway\n• Risk is higher if tube placed for airway obstruction, difficult airway, or laryngectomy (due to inability to manage airway from above)\n• At minimum always bring a spare inner cannula which is size and type (disposable or reusable) specific for patient’s tracheostomy tube\n• At minimum, a complete spare tracheostomy tube one size smaller should be available during transport\n• Ensure tracheostomy ties are snug (i.e. can only fit two fingers between the tie and the patient’s neck) prior to transport\n• A reinsertion attempt is defined as the insertion of the cannula into the tracheostomy replacing the inner and/or outer cannula with a new one is preferred over cleaning and reusing an existing one\nNOTE: Please refer to the matrix below on the next page.</tab1>",
+            "drug_cards" : [
+                {
+                    "title" : "<b>Consider Emergency Tracheostomy Tube Reinsertion</b>",
+                    "loc" : [["pcp", "after"]],
+                    "dose_route" : [
+                        ["<center>The Maximum number of attempts is 2\n\nIf unable to replace, initiate BVM from above\nRequires occlusion of the stoma with palm of hand, tegaderm or occlusive dressing</center>"]
+                    ]
+                },
+                {
+                    "title" : "",
+                    "loc" : [["acp", "after"]],
+                    "dose_route" : [["<center>If cannot re-insert existing tracheostomy tube or re-insert an alternate tracheostomy tube\nPlace cuffed ETT 6.0 or smaller over bougie through patient stoma site\nConfirm with ETC02 and clinical indicators</center>"]]
+                }
+            ]
+        },
+        {
+            "key" : "adult_bronchoconstriction",
+            "title" : "Bronchoconstriction",
+            "type" : "medical_directive",
+            "indications" : "<tab1>• Respiratory distress AND\n• Suspected bronchoconstriction</tab1>",
+            "contraindications" : "<tab1>• Allergy or sensitivity to the medication\n• Allergy to peanuts (i.e. Ipratropium Bromide (Atrovent))</tab1>",
+            "flowchartkeys" : [["Bronchoconstriction Flowchart", "adult_bronchoconstriction_flowchart" ]],
+            "clinical" : "<tab1>• MDI delivery systems require 45 seconds to “re-charge” between doses. Not waiting the recommended length of time between doses will result in significantly decreased amounts of medication being delivered/activation\n• In the event of a respiratory outbreak as identified by originating facility / Ornge, the MDI must be used instead of nebulization\n• Side effects of Magnesium Sulfate include hypotension; monitor BP closely</tab1>",
+            "drug_cards" : [
+                {
+                    "section" : "<b>Bronchoconstrion - All patients</b>",
+                    "title" : "<b>Salbutamol (Ventolin) MDI (100 microgram/puff)</b>",
+                    "loc" : [["pcp", "none"]],
+                    "dose_route" : [
+                        ["<center>8 puffs\n(45 seconds between each administration)\nmay repeat x 3 q 5-15 minutes prn</center>"]
+                    ]
+                },
+                {
+                    "title" : "<b>Salbutamol (Ventolin) Solution Via Nebulized Aerosol (2.5 mg/2.5 mL)</b>",
+                    "loc" : [["pcp", "none"]],
+                    "dose_route" : [
+                        ["<center>5 mg q 5-15 minutes x 3 prn</center>"]
+                    ],
+                    "notes" : "*Total volume of Salbutamol and Normal Saline should be 3 mL"
+                },
+                {
+                    "title" : "<b>Ipratropium Bromide (Atrovent) MDI (20 microgram/puff)</b>",
+                    "loc" : [["acp", "none"]],
+                    "dose_route" : [
+                        ["<center>5 puffs\n(45 seconds between each administration)\nmay repeat x 3 every 15 minutes prn\nMAX 3 doses</center>"]
+                    ]
+                },
+                {
+                    "title" : "<b>Ipratropium Bromide (Atrovent) Solution< Via Nebulized Aerosol (250 mg/mL)</b>",
+                    "loc" : [["acp", "none"]],
+                    "dose_route" : [
+                        ["<center>500 micrograms q 15 minutes x 3 prn\nMAX 3 doses</center>"]
+                    ],
+                    "notes" : "*Total volume of Ipratropium Bromide (Atrovent) and Normal Saline should be 3 mL"
+                },
+                {
+                    "section" : "<b>Severe Bronchoconstriction/Asthma Exacerbation</b>",
+                    "title" : "<b>EPINEPHrine (Adrenalin)</b>",
+                    "loc" : [["pcp", "after"]],
+                    "dose_route" : [
+                        ["<center>0.01 mg/kg IM (1:1000)\nMAX 0.5 mg IM</center>"]
+                    ],
+                    "notes" : "Use with caution when history of coronary artery disease or stroke"
+                },
+                {
+                    "title" : "<b>Steroids</b>",
+                    "loc" : [["acp", "first"]],
+                    "dose_route" : [
+                        ["<center>methylPREDNISolone 125 mg IV/IO\nOR\nDexamethasone 8 mg IM/IV/IO</center>"]
+                    ]
+                },
+                {
+                    "title" : "<b>Magnesium Sulfate</b>",
+                    "loc" : [["acp", "first"]],
+                    "dose_route" : [
+                        ["<center>2 g (4 mL)/100 mL\nAdminister over 15 minutes</center>"]
+                    ]
+                },
+                {
+                    "title" : "<b>EPINEPHrine (Adrenalin</b>",
+                    "loc" : [["ccp", "first"]],
+                    "dose_route" : [
+                        ["<center>0-0.5 microgram/kg/min IV/IO</center>"]
+                    ]
+                }
+            ]
+        },
+        {
+            "key" : "adult_pneumothorax",
+            "title" : "Tension Pneumothorax",
+            "type" : "medical_directive",
+            "indications" : "<tab1>• Severe respiratory distress in the setting of chest trauma with hemodynamic compromise\nAND/OR\n• Traumatic VSAs\nAND/OR\n• Severe hemodynamic compromise during positive pressure ventilation particularly in trauma or asthma or COPD patients\nAND/OR\n• Chest trauma, Severe Asthma or COPD, hemodynamic compromise <b>and</b> one or more of the following:\n</tab1><tab2>◦ Decreased/absent breath sounds on affected side\n◦ Cyanosis\n◦ JVD\n◦ Hyper resonance on affected side\n◦ Tracheal shift (late sign)</tab2>",
+            "contraindications" : "• Not applicable",
+            "clinical" : "<tab1>• The patient must be seen as soon as possible at an appropriate facility for the insertion of chest tube(s)\n• Consider differential diagnosis:\n</tab1><tab2>◦ Main stem intubation\n◦ Pleural effusion\n◦ Hemothorax\n◦ Consolidated pneumonia\n◦ Auto PEEP\n◦ Dynamic hyperinflation</tab2>",
+            "drug_cards" : [
+            {
+                "title" : "",
+                "loc" : [["acp", "after"]],
+                "dose_route" : [
+                    ["<center><b>Consider differential diagnosis and decompress if high probability of tension pneumothorax</b></center>"]
+                ]
+            }
+          ]
+        },
+        {
+            "key" : "adult_chest_tube",
+            "title" : "Maintenance of Chest Tubes",
+            "type" : "medical_directive",
+            "indications" : "• Initiated by sending facility",
+            "contraindications" : "• Not applicable",
+            "clinical" : "<tab1>• A Heimlich flutter valve may be adequate if no drainage system has been implemented\n• Suction beyond -20 cm H2O requires patch authorization prior to transport</tab1>",
+            "drug_cards" : [
+            {
+                "title" : "<b>Maintain chest drainage systems during call to keep the drainage system clear</b>",
+                "loc" : [["acp", "none"]],
+                "dose_route" : [
+                    ["If the patient’s chest tube was maintained by suction at the sending facility, the Paramedic may maintain suction to no greater than -20 cm H2O"],
+                    ["If the patient’s chest tube was maintained by gravity drainage, the Paramedic may maintain by gravity drainage to underwater seal or to suction as per patient presentation"]
+                ]
+            }
+           ]
+        },
+        {
+            "key" : "adult_ventilation",
+            "title" : "Initiating or Maintaining Mechanical Ventilation",
+            "type" : "medical_directive",
+            "indications" : "<tab1>• Need for mechanical ventilation\n• Hypoxemic respiratory failure\n• Hypercapnic respiratory failure\n• Mixed hypoxemic hypercapnic respiratory failure\n• ETI airway management for transport</tab1>",
+            "contraindications" : "<tab1>• Not applicable</tab1>",
+            "treatment" : "<left>All mechanically ventilated patients should be managed using standard settings with 'goal-directed ventilation orders'\n<tab1>• CCPs may initiate and maintain mechanical ventilation without patching for patients who are intubated/ventilated for airway protection/patency; or patients with mild-to-moderate respiratory failure that do not require high levels of mechanical ventilation support\n• CCPs are not required to patch if they can achieve the following:</tab1>\n<tab2>o Ventilation goals:</tab2>\n<tab3>• SpO2 94-98% (88-92% if known CO2 retainer and this is target SpO2 at sending facility)\n• ETCO2 35-45 (or 33-38 if increased ICP)</tab3>\n<tab2>o Using mechanical ventilation settings within the following safety parameters:</tab2>\n<tab3>• Vt 6-8 ml/kg IBW (target Vt must be calculated and documented in ePCR)\n• Frequency of 10-20 breaths per minute\n• FiO2 0.6 or less\n• PEEP range 5-10\n• Peak and plateau pressure less than or equal to 30 cm H20\n• I:E ratio range 1:1.5-3.0</tab3>\n<tab1>• Contraindications to CCP initiation and maintenance of mechanical ventilation without patch include:</tab1>\n<tab2>o Sending facility ventilation settings outside of safety parameters above</tab2>\n<tab3>• Exception: If FiO2 at sending facility higher than 0.6, CCP medics may attempt brief weaning trial prior to departing sending facility and if able to wean to 0.6 and achieve oxygen saturation 94-98% patch not required</tab3>\n<tab2>o Inability to maintain mechanical ventilation goals without exceeding safety parameters above\no Use of oxygenation adjuncts at sending facility such as inhaled heliox, nitric oxide, inhaled Flolan or prone positioning\no Serum bicarbonate (from ABG/VBG/electrolytes) < 15 or > 35 (need to clarify pH/ETCO2 target with TMP)</tab2>\n<tab1>• CCPs may use AC Pressure Control ventilation or Volume Control ventilation to achieve mechanical ventilation goals for patients requiring controlled ventilation with guaranteed rate/minute ventilation; for patients spontaneously breathing consider Pressure Support ventilation* (potential benefit of decreased need for sedation)\n• ACP(f)s MUST patch prior to initiating or maintaining ventilation in ALL patients.\n• All paramedics should plan to ventilate patients utilizing the treatment guidelines below.\n• When mechanical ventilation is initiated, all settings and patient’s response to treatment must be documented on the Call Report. The patient’s end tidal CO2, O2 saturation levels, RRtotal, Vt, FiO2, PEEP and PIPs must be continuously monitored and recorded</tab1>\n*<i>Pressure Support Ventilation (PSV) on the LTV 1200 is achieved by setting the ventilator to Pressure + SIMV/CPAP + Breath Rate to zero (--).</i>",
+            "clinical" : "<tab1>• Not applicable</tab1>",
+            "drug_cards" : [
+            {
+                "section" : "Assessment and Preparation of the Ventilated Patient",
+                "title" : "",
+                "loc" : [["acp", "none"]],
+                "dose_route" : [
+                    ["Confirm ETT placement (ETCO2 & Auscultation) and ETT depth at least 21 cm at the lips in females and 23 cm at the lips in males.\nCheck ETT cuff pressure 20-30 cm H2O.\nObtain baseline vital signs.\nChoose mode of ventilation for patient:\n<tab1>• PSV if awake & spontaneously breathing;\n• AC with either PCV or VC if inadequate respirations, heavily sedated or high ventilator settings required.</tab1>\nPerform leak test on ventilator circuit.\nCalculate and document on the call report the ideal body weight based on measured height/gender table*\n<tab1>• IBW in kg for females = 45.5 + 2.3 x [height in inches-60]\n• IBW in kg for males = 50 + 2.3 x [height in inches-60]</tab1>\nMay use measured height from sending facility to calculate if available."],
+                    ["<left>Review most recent chest film and arterial blood gas if available, and confirm ETT in good position as per sending facility CXR or sending MD or radiology report; document confirmation:\n<tab1>• If unable to confirm ETT position with CXR as above consider delay time to obtain CXR versus clinical impact to patient in delayed transport</tab1>\rDocument ETT size and depth at the lips.\rConfirm serum bicarbonate level from electrolytes, ABG or VBG (require ETCO2 target adjustment if HCO3 < 15 or > 35).\rDetermine if patient has the following:\n<tab1>• Normal lung physiology\n• COPD/Asthma\n• Lung Injury/ARDS\n• Severe Metabolic Acidosis</tab1></left>"]
+                ]
+            },
+            {
+                "section" : "Initiaition/Maintenance of Ventilation-Normal Lungs",
+                "title" : "",
+                "loc" : [["acp", "first"], ["ccp", "none"]],
+                "dose_route" : [
+                    ["<left>Start Assist Control\nAdjust pressurecontrol or set volume to achieve Vt 6-8 ml/kg.\nFrequency 10-20/min to achieve ETCO2 of 35-45 mm Hg unless increased ICP= ETC02 33-38.\nInitiate FiO2 at 1.0 or match FiO2 from sending facility if available, wean FiO2 to keep SpO2 94-98%.\nMinimum PEEP of 5 for all patients, may increase up to 10 if required to match sending facility ventilator setting or to achieve O2 saturation target.\nTitrate FiO2 and PEEP to achieve O2 sat 94-98% target (88-92% if known CO2 retainer and matches target at sending facility).\nAdjust inspiratory time to achieve I:E ratio between 1:1.5 and 1:3.0 (may use longer I time to improve mean airway pressure and subsequently oxygenation, shorter I time if obstructive airway disease).\nAdjust sensitivity to trigger with respiratory effort (default is 3 lpm).\nPIP < 30 cm H20.\nPlateau < 30 cm H20.\nDeltaP (PPlat - PEEP) < 15 cm H2O</left>"],
+                    ["<left>If already well ventilated, consider maintaining current setting.\nEnsure BVM with external PEEP valve and manometer available for duration of transport.\nTarget ETCO2 35-45 unless increased ICP + ETCO2 33-38\nTarget Vt to 6-8 mL/kg IBW.\nAdjust PSV/PCV (or set Vt in VC) to obtain Vt target. Adjust RR 10-20 to achieve target ETCO2 once target Vt obtained. NOTE: minimum PSV 8 cm H2O. Chronically ventilated patients may have PSV as low as 5/5 provided tidal volume according to IBW is maintained.\nMust maintain plateau/peak airway pressure < 30 cm H20 with adjustments.\n<left><center><b>Alarm Guidelines</b></center>\n<left>Set High pressure 5-10 cm H20 above the PIP.\nSet Low pressure alarm 5-10 cm H20 below PIP.\nSet minute ventilation alarm at 75% of actual VE."]
+                ]
+            },
+            {
+                "section" : "Monitoring",
+                "title" : "",
+                "loc" : [["acp", "blank"]],
+                "dose_route" : [
+                    ["<left>Record and monitor the following ventilator parameters:\n<tab1>• Target Vt/IBW\n• Pressure or Volume control\n• AC/SIMV/PSV\n• Sensitivity\n• Frequency\n• Tidal volume\n• Minute ventilation\n• PEEP\n• Pressure support\n• Inspiratory time\n• I:E ratio\n• ETCO2\n• FiO2\n• Peak Inspiratory Pressure\n• Mean Airway Pressure</tab1></left>"],
+                    ["<left>Monitor ETCO2 and capnographic waveforms throughout transport.\nMonitor mean arterial pressure changes related to potential ventilator changes during transport.\nConsider checking plateau pressure and/or auto PEEP if concerned about lung compliance or air trapping. NOTE: to perform either maneuver requires an apneic patient"]
+                ]
+            },
+            {
+                "section" : "Cuff Pressures",
+                "title" : "",
+                "loc" : [["acp", "none"]],
+                "dose_route" : [
+                    ["<left>Maximum cuff pressure = 20-30 cm H2O\nOR\nMinimum Occluding Volume (MOV) -inflate until you hear no leak at PIP</left>"],
+                    ["<left>Tracheal perfusion pressure =\n30mmHg (arterial)/18mmHg (venous)\nRecommended cuff pressure is just enough to seal the trachea at PIP/MOV.\nCheck cuff pressure using a manometer. Palpating the pilot balloon is not an acceptable determination of cuff pressure.</left>"]
+                ]
+            },
+            {
+                "section" : "COPD/Asthma Ventilation Strategies",
+                "title" : "",
+                "dose_route" : [
+                    ["<left><b>To prevent or treat autoPEEP</b>\nUse low to normal frequency (8-12 breaths/min). Titrate frequency to maximize I:E ratio > 1:4 – 1:5 allowing for long expiratory time.\nUse low tidal volume 4-6 mL/kg of ideal body weight.\nPEEP 5 cm H2O \nAdjust inspiratory time < 1.0 second (0.7-1.0).\nKeep Plateau Pressure < 30 cm H20.\nTitrate parameters to achieve Sp02 91%-94% or in keeping with patient’s baseline status.</left>"],
+                    ["<left>Severe airway obstruction may not allow complete expiration prior to the next delivered breath. Severe airway obstruction may result in PIPs > 30 cm H2O to achieve target Vt 4-6 ml/kg IBW\nIntrinsic or autoPEEP develops, leading to worsening hypoxia, hypercapnea and hypotension.\nMonitor capnographic waveform for sloped expiratory rise indicating airflow obstruction.\nConsider Salbutamol & Ipratropium Bromide via MDI.</left>"]
+                ]
+            },
+            {
+                "section" : "",
+                "title" : "",
+                "dose_route" : [
+                    ["<left><b>If Difficult to ventilate or oxygenate consider:</b>\nPermissive hypercapnia\nConsider matching auto-PEEP; i.e. set PEEP to 2-3 cm H2O < then measured autoPEEP</left>"],
+                    ["<left>• Consider use of Magnesium Sulfate IV infusion\n• Consider Ketamine IV infusion\n• Consider paralysis\n• Optimize analgosedation and paralysis in combination with above therapies</left>"]
+                ]
+            },
+            {
+                "section" : "Acute Lung Injury/ARDS Ventilation Strategies",
+                "title" : "",
+                "dose_route" : [
+                    ["<left>Initial frequency 20-26/min. Adjust to maintain target ETCO2.\nInitial Vt 6 mL/kg. Adjust Vt based on plateau pressures:\n<tab1>• If plateau > 30 cmH20 then decrease Vt to 4-5 ml/kg\n• If plateau < 30 cmH20 then Vt may be increased to maximum 8 ml/kg</tab1>\nStart with FIO2 of 1.0 and PEEP of 5-8 cm H20<tab1>• If SpO2 >98% then decrease FIO2;\n• If SpO2 < 90% then increase PEEP to 10 and then incrementally by 2 cm H20 to maximum of 20.Refer to the ARDSnet PEEP/FiO2 table</tab1>\nCheck tidal volume with every adjustmentmadeto pressure control and PEEPsettings. Watch for drop in Vt indicating potential excessive PEEP).\nVC: Check peak/ plateau pressure with every change in PEEP and tidal volume.\nKeep plateau pressure < 30 cm H20.\nKeep Driving Pressure (DeltaP, Plat-PEEP) < 15 cm H2O\nMinimize FIO2 ideally < 0.60.\nAdjust PEEP ideally above lower inflection point and/or to achieve SpO2 > 92%.\nAllow for permissive hypercapnia.\nETCO2 45-80 mm Hg (based on ABG target pH 7.20-7.25).</left>"],
+                    ["<left>Inflamed lungs with decreased compliance and increased dead space are prone to atelectasis, barotrauma and volutrauma.\n<b>Do not decrease tidal volumes below 4 mL/kg</b>\nIncreased I:E ratio can improve oxygenation by increasing mean airway pressure and helping to maintain PEEP.\nI:E ratio’s < 1:2 should be considered. For example:<tab1>\n• 1:1.8\n• 1:1.6\n• 1:1.4\n• 1:1.2\n• 1:1.0</tab1></left>"]
+                ]
+            },
+            {
+                "section" : "PEEP/FIO2 Table for patients with ARDS",
+                "title" : "<b>Simplified table (minimum target PEEP for increased FiO2)</b>",
+                "dose_route" : [
+                    ["FiO2", "PEEP"],
+                    ["0.3", "5"],
+                    ["0.4", "5"],
+                    ["0.5", "6"],
+                    ["0.6", "8"],
+                    ["0.7", "10"],
+                    ["0.8", "12"],
+                    ["0.9", "14"],
+                    ["1.0", "16"]
+                ],
+                "notes" : "Use this table for guidance when addressing ongoing hypoxia and increasing oxygenation support, <b>do not use</b> for initial ventilator settings"
+            }
+           ]
+        },
+        {
+            "key" : "adult_lvr",
+            "title" : "<b>Lung Volume Recruitment (LVR)</b>",
+            "type" : "medical_directive",
+            "flowchartkeys" : [["Lung Volume Recruitment Flowchart", "adult_lvr_flowchart"]],
+            "drug_cards" : [
+                {
+                    "title" : "",
+                    "loc" : [["ccp", "first"]],
+                    "dose_route" : [
+                        ["<center><b>Lung Volume Recruitment (LVR)</b></center>"]
+                    ]
+                }
+            ]
+        },
+        {
+            "key" : "adult_nippv",
+            "title" : "Non-Invasive Positive Pressure Ventilation (NPPV)",
+            "type" : "medical_directive",
+            "indications" : "<tab1>• Conscious patient able to protect airway in respiratory distress</tab1>",
+            "contraindications" : "<tab1>• NPPV is contraindicated in patients with active vomiting and in those that are unable to manage airway secretions\n• Decreased level of consciousness/severe agitation\n• Inability to protect airway\n• Repeated hemoptysis\n• Cardiac arrest or respiratory arrest\n• Immediate need for endotracheal intubation\n• Upper airway obstruction\n• Facial trauma\n• Recent esophagostomy</tab1>\n<title>Relative Contraindications</title>\n<tab1>• Hemodynamic instability</tab1>",
+            "clinical" : "<tab1>• <b>Patch first if</b> the patient has altered mentation or is lethargic\n• NIPPV may be of benefit in hypercarbia from ventilatory failure even with altered mental status\n• For agitated patients consider TMP discussion for sedation</tab1>\n<title>Understanding the numbers</title>\n<tab1>• <b>iPAP</b> = Inspiratory Positive Airway Pressure (Peak inspiratory pressure - PIP). iPAP is the sum of PEEP and PS; e.g. if the PEEP = 5 and you set a PS of 10, the resultant iPAP = 15\n• <b>ePAP</b> = Expiratory Positive Airway Pressure (PEEP)\n• <b>Pressure Support</b> = the difference between iPAP & ePAP\n• <b>CPAP</b> = when iPAP equals ePAP (example: CPAP 5=PS 0/PEEP 5)</tab1>",
+            "drug_cards" : [
+                {
+                    "title" : "<b>Initiation of CPAP/NPPV</b>",
+                    "loc" : [["acp", "after"]],
+                    "dose_route" : [
+                        ["<center><b>Initial Settings</b> \n iPAP 10 cmH2O/ePAP 5 cm H2O\nMAX iPAP 20 cmH2O/ePAP 10 cmH2O</center>"]
+                    ]
+                },
+                {
+                    "title" : "<b>Maintenance of NIPPV Initiated By Sending Facility</b>",
+                    "loc" : [["acp", "after"], ["ccp", "none"]],
+                    "dose_route" : [
+                        ["<center>Patient's hemodynamics and ventilation status stable on current settings</center>"]
+                    ]
+                }
+            ]
+        },
+        {
+            "key" : "adult_hfnc",
+            "title" : "High Flow Nasal Cannula Therapy (HFNC)",
+            "type" : "medical_directive",
+            "indications" : "<tab1>• Refractory hypoxemia despite optimized conventional nasal cannula and/or non-rebreather mask O2 therapy in individuals with an intact, acceptable respiratory drive\n</tab1><tab2>o Adults: SpO2 <90%</tab2><tab1>\n• COPD/CHF exacerbation requiring a minimal amount of PEEP\n• Palliative respiratory support with no endotracheal intubation or non-invasive ventilation (NIV) support in the care plan</tab1>",
+            "contraindications" : "<tab1>• A definitive airway is required for airway protection and/or respiratory support characterized by acute respiratory acidosis\n• Complete nasal airway obstruction\n• Use with caution if there is a history of facial trauma, acute sinusitis or otitis\n</tab1><title>Complications</title><tab1>\n• Unmeasured PEEP may result in pneumothorax or lung hyperinflation</tab1>",
+            "clinical" : "Prior to transport perform a 10 minute trial period off HFNC, using a NRB + conventional NC to determine patient tolerance when AC power is not available for HFNC; e.g. transfer between ambulance and hospital. A successful trial is confirmed by patient SpO2 > 88%. If battery power is not a concern, there is no requirement to conduct this trial.",
+            "drug_cards" : [
+                {
+                    "title" : "",
+                    "loc" : [["acp", "after"]],
+                    "dose_route" : [
+                        ["<center>Initiate treatment at 30 lpm and titrate flow and FiO2 to achieve SpO2 > 94%</center>"]
+                    ]
+                }
+            ]
+        },
+        {
+            "key" : "adult_flolan",
+            "title" : "Inhaled Epoprostenol (Flolan®)",
+            "type" : "medical_directive",
+            "indications" : "<tab1>• Severe ARDS with refractory hypoxemia\n• Pulmonary hypertension\n• Right heart failure</tab1>",
+            "contraindications" : "<tab1>• Severe left ventricular systolic dysfunction\n• Pulmonary hemorrhage\n</tab1><title>Relative Contraindications:</title><tab1>\n• Thrombocytopenia (platelets <50 x 109/L )\n• Active hemorrhage\n• Pulmonary edema\n• Hypotension</tab1>",
+            "drug_cards" : [
+                {
+                    "title" : "<b>Inhaled Epoprostenol (Flolan®)</b>",
+                    "loc" : [["ccp", "first"]],
+                    "dose_route" : [
+                        ["<center>0-50 nanograms (ng)/kg/min nebulized*\n(*FIXED RATE - SHOULD NOT be titrated during transport)</center>"]
+                    ]
+                }
+            ]
+        },
+        {
+            "key" : "adult_anxiety",
+            "title" : "Pre-Transfer Anxiolysis",
+            "type" : "medical_directive",
+            "indications" : "For a patient demonstrating or verbalizing the symptoms of transfer anxiety and:\n<tab1>• GCS of 15\n• MAP ≥ 70 mmHg\n• No concurrent sedation or parenteral analgesia being administered</tab1>",
+            "contraindications" : "<tab1>• Allergy or sensitivity to the medication</tab1>",
+            "clinical" : "<tab1>• Not applicable</tab1>",
+            "drug_cards" : [
+                {
+                    "title" : "<b>LORazepam (Ativan)</b>",
+                    "loc" : [["acp", "none"]],
+                    "dose_route" : [
+                        ["<center>1 mg PO/SL\nMAX dose 1 mg</center>"]
+                    ]
+                }
+            ]
+        },
+        {
+            "key" : "adult_combative",
+            "title" : "Agitated/Combative Patient",
+            "type" : "medical_directive",
+            "indications" : "<tab1>• In the event that a patient becomes agitated or combative, thereby endangering themselves or crew, ALL Paramedics are expected to: <u>Physically restrain the patient as per MOHLTC Basic Life Support - Patient Care Standards</u>\n• Assess the patient for medical causes of agitation (i.e. hypoxemia, hypoglycemia, etc.)</tab1>",
+            "contraindications" : "<tab1>• Allergy or sensitivity to the medication</tab1>",
+            "clinical" : "<tab1>• In patients with a primary psychiatric diagnosis, if time permits, contact TMP for Haloperidol (Haldol TM)\n• Notify the Flight Crew immediately if in an aircraft</tab1>",
+            "drug_cards" : [
+                {
+                    "section" : "<b>Mild-Moderate Agitation</b>",
+                    "title" : "<b>Midazolam (Versed)</b>",
+                    "loc" : [["acp", "after"]],
+                    "dose_route" : [
+                        ["<center>MAP > 70\n0.05 mg/kg IV/IO\n<b>OR</b>\n0.1 mg/kg IM q 5 minutes prn\nMAX dose 0.2 mg/kg IV/IM/IO</center>"]
+                    ]
+                },
+                {
+                    "section" : "<b>Severe Agitation/Combativeness</b>",
+                    "title" : "<b>Ketamine</b>",
+                    "drugKey" : "ketamine",
+                    "loc" : [["acp", "after"]],
+                    "dose_route" : [
+                        ["<center>1-2 mg/kg IV/IO*over 1-3 minutes\n<b>OR<\b>\n3-5 mg/kg IM</center>"]
+                    ],
+                    "notes" : "*High IV doses of Ketamine should be given slow push (over > 1 minute) to reduce risk of apnea\n<b>*Consider administering using a 50 ml NS bag over 5-10 minutes</b>"
+                },
+                {
+                    "section" : "<b>Primary psychiatric diagnosis</b>",
+                    "title" : "<b>Haloperidol (Haldol)</b>",
+                    "loc" : [["acp", "first"]],
+                    "dose_route" : [
+                        ["<center>2.5 mg - 5.0 mg IV every 5-10 minutes\nto a Maximum of 30 mg\n or\n10 mg of Haloperidol IM\n(repeat, if required, x1 and patch with TMP)</center>"]
+                    ],
+                    "notes" : "NOTE: In patients > 65 years of age, start with 2.5 mg"
+                }
+            ]
+        },
+        {
+            "key" : "adult_awake_analgesia",
+            "title" : "Analgesia: Moderate to Severe Pain",
+            "type" : "medical_directive",
+            "indications" : "All patients should be assessed fro level of pain using a 10 point scale\n(0 = no pain while 10 = maximum pain)\n\n<i>At least two scores should be documented on all patients and a score must be documented before and after analgesia is provided to the patient</i>",
+            "contraindications" : "Allergy or sensitivity to the medication",
+            "treatment" : "Patch when maximum amount given or for any other concerns",
+            "clinical" : "<tab1>• Total acetaminophen dose is not to exceed the lesser of a total of 75 mg/kg or 4 grams in 24 hours\n• Ketamine for analgesia should be administered slowly using a mini bag or slow IVP if necessary. Adverse events are reduced substantially (46% vs 17%) if given slowly vs IVP.<tab1>",
+            "drug_cards" : [
+                {
+                    "title" : "<b>Ibuprofen (Advil)</b>",
+                    "loc" : [["pcp", "none"]],
+                    "dose_route" : [
+                        ["<center>Contraindication: Impaired renal function, active bleeding, NSAID in the past 4-6 hours</center>", "<center><b>≥ 12 years</b>\n400 mg PO</center>"]
+                    ]
+                },
+                {
+                    "title" : "<b>Acetaminophen (Tylenol)</b>",
+                    "loc" : [["pcp", "none"]],
+                    "dose_route" : [
+                        ["<center>Contraindication: Acetaminophen within the last 4 hours</center>", "<center><b>40 to 60 kg</b>\n15 mg/kg PO/PR q 4 hours prn\n\n<b>≥ 60 kg</b>\n975-1000 mg PO/PR q 4 hours prn\nMAX 75 mg/kg OR 4 grams in 24 hours</center>"]
+                    ]
+                },
+                {
+                    "title" : "<b>Toradol (Ketorolac)</b>",
+                    "loc" : [["pcp", "none"]],
+                    "dose_route" : [
+                        ["<center>Contraindication: Impaired renal function, active bleeding, NSAID in the past 4-6 hours</center>", "<center><b>≥ 12 years</b>\n15 mg IM</center>"]
+                    ]
+                },
+                {
+                    "title" : "<b>Toradol (Ketorolac)</b>",
+                    "loc" : [["acp", "none"]],
+                    "dose_route" : [
+                        ["<center>Contraindication: Impaired renal function, active bleeding, NSAID in the past 4-6 hours</center>", "<center><b>≥ 12 years</b>\n15 mg IV/IM</center>"]
+                    ]
+                },
+                {
+                    "section" : "fentaNYL or Morphine or Ketamine",
+                    "title" : "<b>fentaNYL (Sublimaze)</b>",
+                    "loc" : [["acp", "none"]],
+                    "dose_route" : [
+                        ["<center><b>MAP > 70</b>\nMAP > 80 (high ICP, ischemic stroke or spinal cord injury)\n\n25-50 microgram IV/IO q 10 minutes prn\nMAX 300 microgram</center>"]
+                    ]
+                },
+                {
+                    "section" : "OR",
+                    "title" : "<b>Morphine</b>",
+                    "loc" : [["acp", "none"]],
+                    "dose_route" : [
+                        [ "<center><b>MAP > 70</b>\nMAP > 80 (high ICP, ischemic stroke or spinal cord injury)\n\n2-4 mg IV/IO q 20 minutes prn\nMAX 10 mg</center>" ]
+                    ]
+                },
+                {
+                    "section" : "OR",
+                    "title" : "<b>Ketamine</b>",
+                    "drugKey" : "ketamine",
+                    "loc" : [["acp", "after"]],
+                    "dose_route" : [
+                        ["<center>Ketamine is <u>not</u> a first line agent for analgesia in normotensive patients but can be considered early for multiple trauma patients or those with concerning hemodynamic status</center>", "<center>0.1 mg/kg IV/IO q 5 minutes PRN\nMAX total dose 0.5 mg/kg\nMAP > 60</center>"]
+                    ]
+                }
+            ]
+        },
+        {
+            "key" : "adult_intubated_analgesia",
+            "title" : "Sedation and Pain Management for Intubated and Ventilated Patients",
+            "type" : "medical_directive",
+            "flowchartkeys" : [["Pain Score", "adult_pain_score_chart"],["Sedation Score", "adult_sedation_score"]],
+            "indications" : "<tab1>• When a patient is clinically stable, intubated and mechanically or manually ventilated, the ACP(f), and CCP may administer the following for sedation and analgesia</tab1>",
+            "contraindications" : "<tab1>• Allergy or sensitivity to the medication</tab1>",
+            "treatment" : "Infusions are preferred to repeat bolus dosing for sedation and analgesia wherever possible. A bolus dose of sedation or analgesia should only be considered when infusion dosing is increased and rapid therapeutic effect is required. Caution should be used with bolus dosing as this may increase the risk of sedation induced hypotension. All mechanically ventilated patients should receive analgesia with either Ketamine or FentaNYL.<b>ACP(f), CCP, PCCP and PCCN may choose and give ONE analgesic along with ONE of the following sedative agents;</b> patch when maximum amount given, or for any other concerns",
+            "clinical" : "<tab1>• <u>All patients</u> (intubated or non-Intubated) receiving analgosedation must be constantly monitored using a continuous ETCO2 gas-sampling device that displays both a value and waveform, and have sedation and pain score documented q 30 minutes throughout transport\n• For recurrent hypotension requiring intervention TMP contact is recommended</tab1>",
+            "drug_cards" : [
+	            {
+	                "section" : "<b>For Analgesia</b>",
+	                "title" : "<b>fentaNYL (Sublimaze) if MAP > 70</b>\n(MAP > 80 if high ICP, ischemic stroke or spinal cord injury)",
+	                "loc" : [["acp", "after"], ["ccp", "none"]],
+	                "dose_route" : [
+	                    ["<center>50-100 microgram IV/IM prn q 5 minutes\nMaximum cumulative dose for the boluses as above cannot exceed 3 microgram/kg/hr</center>"],
+	                    ["<center>Initiate IV infusion 1-3 microgram/kg/hr</center>"]
+	                ]
+	            },
+                {
+                    "section" : "<b>For Sedation</b>",
+                    "title" : "<b>Midazolam (Versed) if MAP > 70</b>\n(MAP > 80 if high ICP, ischemic stroke or spinal cord injury)",
+                    "loc" : [["acp", "after"], ["ccp", "none"]],
+                    "dose_route" : [
+                        ["<center>1-2 mg IV prn q 5 minutes\nMAX dose 0.15 mg/kg/hr</center>"],
+                        ["<center>Initiate IV infusion\n0.05-0.15 mg/kg/hr</center>"]
+                    ]
+                },
+                {
+                    "section" : "OR",
+                    "title" : "<b>Propofol (Diprivan) if MAP > 70\n**Caution in elderly patients **</b>\n(MAP > 80 if high ICP, ischemic stroke or spinal cord injury)",
+                    "loc" : [["ccp", "none"]],
+                    "dose_route" : [
+                        ["<b><center>Bolus</center></b>", "<center>Titration of the infusion is preferred however, may give additional boluses of\n10-20 mg IV q 5 minutes prn if rapid effect is required, and as long as\nMAP > 70 mmHg\n<red>Exercise caution as bolus doses increase risk of hypotension</red></center>"],
+                        ["<b><center>Infusion</center></b>", "<center><b>Titration of the infusion is preferred</b>\n1-5 mg/kg/hr\nTitrate in increments of 0.3 mg/kg/hr q 5 minutes\nprn if MAP > 70</center>"]
+                    ]
+                },
+                {
+                    "section" : "OR",
+                    "title" : "<b>Ketamine if MAP > 60\n(if MAP < 60 Mandatory patch*)</b>\n(MAP > 80 if high ICP, ischemic stroke or spinal cord injury)",
+                    "drugKey" : "ketamine",
+                    "loc" : [["acp", "after"], ["ccp", "none"]],
+                    "dose_route" : [
+                        ["<center>1-2 mg/kg IV over 1 minute x 1 dose\nfollowed by 0.5 mg/kg q 20 minutes prn</center>"],
+                        ["<center>Continuous IV infusion of 0.3 to 2.0 mg/kg/hr</center>"]
+                    ],
+                    "notes" : "*If MAP < 50 patch to consider other therapies"
+                },
+                {
+                    "section" : "<b>Treatment of Hypotension associated with Sedation</b>",
+                    "title" : "<b>Phenylephrine (Neosynephrine)</b>",
+                    "loc" : [["ccp", "none"]],
+                    "dose_route" : [
+                        ["<center><b>MAP < 65</b>\nMAP < 80 (high ICP, ischemic stroke or\n spinal cord injury)\n100 microgram IV/IO X 3 q 3 minutes prn\nMAX 300 microgram</center>"]
+                    ]
+                },
+                {
+                    "title" : "<b>Norepinephrine (Levophed)</b>",
+                    "loc" : [["acp", "after"], ["ccp", "none"]],
+                    "dose_route" : [
+                        ["<center>0-0.5 microgram/kg/min IV/IO\nTarget MAP > 65</center>"]
+                    ]
+                }
+            ]
+        },
+        {
+            "key" : "adult_paralysis",
+            "title" : "Post Intubation Paralysis",
+            "type" : "medical_directive",
+            "indications" : "<tab1>• Patients with known difficult airways\n• Facilitate and optimize mechanical ventilation and oxygenation for transport\n• <b>Sedation and Analgesia must be administered in conjunction with muscle relaxation</b></tab1>",
+            "contraindications" : "<tab1>• Allergy or sensitivity to the medication\n• Inadequate sedation/analgesia</tab1>",
+            "clinical" : "<tab1>• In patients with known difficult airways, muscle relaxation is strongly recommended post intubation to ensure minimal risk for loss of ETT in transport\n• Complete history and physical examination (including baseline neurologic assessment) must be completed\n• Baseline assessment of vital signs and level of paralysis should be obtained and documented to detect and record the patient’s subsequent response to paralysis\n• Muscle relaxants will hide the motor component of seizures. In cases of status epilepticus or risk of seizures, use paralysis as a last resort and in conjunction with anticonvulsant/sedative infusions. Monitor for autonomic manifestations of seizures\n• Proper securing of the ETT is paramount</tab1>",
+            "drug_cards" : [
+                {
+                    "title" : "<b>Rocuronium (Zemuron)</b>",
+                    "loc" : [["acp", "after"]],
+                    "dose_route" : [["0.6 mg/kg IV/IO\nthen\n0.3 mg/kg IV/IO q 20 minutes prn"]]
+                }
+            ]
+        },
+        {
+            "key" : "adult_medical_arrest",
+            "title" : "Adult Non-Traumatic Cardiac Arrest",
+            "type" : "medical_directive",
+            "flowchartkeys" : [["Non-Traumatic Arrest Flowchart", "adult_non_traumatic_arrest_flowchart"]],
+            "indications" : "<tab1>• Adult patient is vital signs absent (VSA) due to non-traumatic cause</tab1>",
+            "contraindications" : "<tab1>• Not applicable</tab1>",
+            "clinical" : "<tab1>• PCP(f) may apply the Medical Directives for the management of cardiac arrest with semi-automated defibrillation\n• TMP patch prior to initiating transport of patient in cardiac arrest for consideration of TOR</tab1>",
+            "drug_cards" : [
+                {
+                    "title" : "",
+                    "loc" : [["pcp", "after"]],
+                    "dose_route" : [["<center><b>Initiate the appropriate algorithm based upon the presenting ECG rhythm</b></center>"]]
+                },
+                {
+                    "title" : "",
+                    "loc" : [["acp", "after"]],
+                    "dose_route" : [["<center><b>Initiate the appropriate algorithm based upon the presenting ECG rhythm</b></center>"]]
+                },
+                {
+                    "title" : "",
+                    "loc" : [["nil", "nil"]],
+                    "dose_route" : [
+                        ["<center><b>Shock</b></center>", "Shock #1", "Shock #2", "Shock #3 and all subsequent shocks"],
+                        ["<center><b>Zoll X-Adult manual & SAED settings</b></center>", "<center>120J</center>", "<center>150J</center>", "<center>200J</center>"]
+                    ]
+                }
+            ]
+        },
+        {
+            "key" : "adult_hypothermic_arrest",
+            "title" : "Adult Severe Hypothermic Arrest",
+            "type" : "medical_directive",
+            "flowchartkeys" : [["Hypothermic Arrest Flowchart", "adult_hypothermic_arrest_flowchart"]],
+            "indications" : "<tab1>Adult patient to be vital signs absent (VSA) and Hypothermic defined as temperature < 30°C, or presumed to be so based on environmental circumstances.</tab1>",
+            "contraindications" : "<tab1>• Not applicable</tab1>",
+            "clinical" : "<tab1>• Not applicable</tab1>",
+            "drug_cards" : [
+                {
+                    "title" : "",
+                    "loc" : [["pcp", "after"]],
+                    "dose_route" : [["<center><b>Initiate the appropriate algorithm based upon the presenting ECG rhythm</b></center>"]]
+                }
+            ]
+        },
+        {
+            "key" : "adult_rosc",
+            "title" : "Adult Post Arrest Return of Spontaneous Circulation (ROSC)",
+            "type" : "medical_directive",
+            "flowchartkeys" : [["ROSC Flowchart", "adult_rosc"]],
+            "indications" : "<tab1>• ROSC</tab1>",
+            "contraindications" : "<tab1>• Not applicable</tab1>",
+            "clinical" : "<tab1>• Reminder that Targeted Temperature Management (TTM) is Mandatory. Temperatures should be maintained between 34°C and 36°C during TTM\n• Document attempts to control temperature\n• Maintain temperature 34-36°C, ETC02 35-40 mmHg, SpO2 94-98%</tab1>",
+            "drug_cards" : [
+                {
+                    "title" : "",
+                    "loc" : [["acp", "after"]],
+                    "dose_route" : [["<center><b>Initiate the appropriate algorithm based upon the presenting ECG rhythm</b></center>"]]
+                }
+            ]
+        },
+        {
+            "key" : "adult_acs",
+            "title" : "Acute Coronary Syndrome",
+            "type" : "medical_directive",
+            "flowchartkeys" : [["ACS Flowchart", "adult_acs_flowchart"]],
+            "indications" : "<tab1>• Suspected cardiac ischemia</tab1>\n<title>Conditions for Nitroglycerin Administration</title>\n<tab1>• Patient is ≥ 40 kg\n• MAP ≥ 70 mmHg\n• Heart rate is > 60 beats and < 160 bpm\n• Patient is alert\n• Patients under the age of 18 requires a TMP patch</tab1>\n<title>Contraindications for Nitroglycerin Administration</title>\n<tab1>• Allergy or sensitivity to nitrates\n• Patient has used any phosphodiesterase-5 inhibitors (Sildenafil [Viagra or Revatio], tadalafil [Cialis], or Vardenafil [Levitra]) in the last 48 hours (these agents are commonly used for erectile dysfunction and are also used in pulmonary hypertension)\n• 12 lead ECG compatible with Right Ventricular MI</tab1>",
+            "clinical" : "<tab1>• In the setting of acute coronary syndrome fentaNYL is the preferred analgesic\n• Consider Plavix in NSTEMI patients\n• Patch if PTT parameters (above) fall outside norm</tab1>",
+            "drug_cards" : [
+                {
+                    "title" : "<b>Nitroglycerin SL *</b>",
+                    "loc" : [["pcp", "none"]],
+                    "dose_route" : [["<center><b>MAP >70</b>\n0.4 mg SL spray q 5 minutes MAX of 6 doses</center>"]],
+                    "notes" : "*Single PCP(f): Initiate then patch"
+                },
+                {
+                    "title" : "<b>Initiate Nitroglycerin IV\nMAP > 70</b>",
+                    "loc" : [["acp", "after"]],
+                    "dose_route" : [["<center>10 microgram/min\nMAX 100 microgram/min\nTitrate q 5 minutes in 5 microgram/min increments for ischemic chest pain\nMaintain Nitroglycerin infusion during transport</center>"]]
+                },
+                {
+                    "title" : "<b>Maintain Nitroglycerin IV</b>",
+                    "loc" : [["acp", "after"], ["ccp", "none"]],
+                    "dose_route" : [["<center>Maintain nitroglycerin infusion during transport under conditions listed below\n• The infusion was initiated by the sending facility\n• The infusion rate is ≤ 100 microgram/min IV\n• No change in patient condition during transport</center>"]]
+                },
+                {
+                    "title" : "<b>Acetylsalicylic Acid (ASA)</b>",
+                    "loc" : [["pcp", "none"]],
+                    "dose_route" : [
+                        ["<center>160 mg PO, chewed and swallowed (two 80 mg chewable tablets)</center>"],
+                        ["<tab1>• No allergy to ASA\n• No current active bleeding\n• No evidence of CVA or head injury within 24 hours prior to onset of chest pain\n• No history of asthma exacerbation from ASA ingestion</tab1>"]
+                    ]
+                },
+                {
+                    "section" : "Fentanyl is the preferred analgesic for ischemic chest pain.",
+                    "title" : "<b>fentaNYL (Sublimaze)</b>",
+                    "loc" : [["acp", "none"]],
+                    "dose_route" : [
+                        ["<center><b>MAP ≥ 70</b>\n25-50 microgram IV/IO q 5 minutes prn\nMAX 300 microgram</center>"]
+                    ]
+                },
+                {
+                    "title" : "<b>Plavix (Clopidogrel)</b>",
+                    "loc" : [["acp", "first"]],
+                    "dose_route" : [
+                        ["<center>300-600 mg PO</center>"]
+                    ]
+                },
+                {
+                    "section" : "OR",
+                    "title" : "<b>Ticagrelor</b>",
+                    "loc" : [["acp", "first"]],
+                    "dose_route" : [
+                        ["<center>180 mg PO</center>"]
+                    ]
+                },
+                {
+                    "title" : "<b>Metoprolol</b>",
+                    "loc" : [["acp", "first"]],
+                    "dose_route" : [
+                        ["<center>5 mg IV/IO q 5 minutes\nMAX 15 mg\nIf the patient is hypertensive or tachycardic</center>"]
+                    ]
+                },
+                {
+                    "title" : "<b>Maintain Heparin*</b>",
+                    "loc" : [["acp", "none"]],
+                    "dose_route" : [
+                        ["<center>Maintain Heparin infusion rate from sending if last PTT within therapeutic range of Ornge or sending hospital nomogram,\nOR\nif infusion initiated and no post-initiation PTT available yet</center>"]
+                    ]
+                },
+                {
+                    "title" : "<b>Initiate Heparin*</b>",
+                    "loc" : [["acp", "first"]],
+                    "dose_route" : [
+                        ["<center>60 units/kg IV bolus\nMAX 5,000 units\nthen\nINITIATE Infusion 12 units/kg/hr IV\nTitrate dose relative to aPTT</center>"]
+                    ]
+                },
+                {
+                    "title" : "<b>Heparin Nomogram for Patients NOT Receiving Thrombolytics or Glycoprotein IIb/IIIa Inhibitors</b>",
+                    "loc" : [["nil", "nil"]],
+                    "dose_route" : [
+                        ["<center>aPTT\n(seconds)</center>", "<center>Less than 50</center>", "<center>50-59</center>", "<center>60-85</center>","<center>86-95</center>", "<center>96-120</center>", "<center>Greater than 120</center>"],
+                        ["<center>Heparin Bolus\n(units)</center>", "<center>3,000</center>", "<center>0</center>", "<center>0</center>", "<center>0</center>", "<center>0</center>", "<center>0</center>"],
+                        ["<center>Hold infusion\n(Minutes)</center>", "<center>0</center>", "<center>0</center>", "<center>0</center>", "<center>0</center>", "<center>30</center>", "<center>60</center>"],
+                        ["<center><b>Rate Change (units/hr)</b>\n*** using 50 units/mL concentration***</center>", "<center>↑ 2.4 mL/120 units/ hr</center>", "<center>↑ 2.4 mL/120 units/ hr</center>", "<center>0</center>", "<center>↓1.6 mL/80 units/hr</center>", "<center>↓1.6 mL/80 units/hr</center>", "<center>↓3.2 mL/160 units/hr</center>"],
+                        ["<center>Next aPTT\n(from the time rate was changed)</center>", "<center>4 hours later (STAT)</center>", "<center>6 hours later</center>", "<center>Next AM</center>", "<center>Next AM</center>", "<center>6 hours after restarting</center>", "<center>4 hours after restarting (STAT)</center>"]
+                    ],
+                    "notes" : "If aPTT is greater than 120 OR less than 50 x 2 consecutive blood samples, patch TMP\n<b>*Contraindications to Heparin:</b>\n<tab1>• Active bleeding\n• History of Heparin induced thrombocytopenia</tab1>"
+                }
+            ]
+        },
+        {
+        "key" : "adult_stemi",
+        "title" : "ST Elevation MI (STEMI)",
+        "type" : "medical_directive",
+        "flowchartkeys" : [["STEMI Flowchart", "adult_stemi_flowchart"], ["TNK Checklist", "adult_tnk_checklist"]],
+        "indications" : "<tab1>• STEMI as defined by ECG changes</tab1>",
+        "contraindications" : "<tab1>• See TNK Checklist</tab1>",
+        "treatment" : "In patients being transported for acute cardiac intervention (emergent PCI) initiate Medical Directive and load and go. Initiate patch in transport or pre-patch prior to arrival whenever possible.",
+        "clinical" : "<tab1>• No thrombolysis will be administered unless the TMP confirms diagnosis based on clinical and ECG findings and gives the order to proceed. It is preferred that the TMP reviews the ECG but if not possible and paramedic is confident of positive ECG criteria then a verbal confirmation on patch with TMP is adequate\n• Obtain 12 Lead ECG every 15 minutes or prn for duration of transport\n• Consider Plavix, Ticagrelor\n• Patch if PTT parameters (above) fall outside norm</tab1>",
+        "drug_cards" : [
+                {
+                    "title" : "",
+                    "loc" : [["acp", "none"]],
+                    "dose_route" : [["<center><b>Initiate appropriate treatment based on algorithm below</b></center>"]]
+                },
+                {
+                    "section" : "<b>Thrombolytics (TNKase and Heparinization)</b>",
+                    "title" : "<b>TNKase</b>",
+                    "loc" : [["acp", "first"]],
+                    "dose_route" : [["<center><b>Patient’s Weight (kg)</b>\n< 60 kg\n≥ 60 to < 70 kg\n≥ 70 to < 80 kg\n≥ 80 to < 90 kg\n> 90 kg</b></center>"],
+                        ["<center><b>Tenecteplase (mg)</b>\n30\n35\n40\n45\n50</center>"],
+                        ["<center><b>Volume (mL)</b>\n6 ml\n7 ml\n8 ml\n9 ml\n10 ml</center>"]
+                    ]
+                },
+                {
+                    "title" : "<b>Initiate Heparin*</b>\nConcurrent Use When Thrombolytics Given:",
+                    "loc" : [["acp", "first"]],
+                    "dose_route" : [
+                        ["<center>60 units/kg IV bolus\nMAX 4,000 units\nthen\nINITIATE Infusion 12 units/kg/hr IV\nMAX 1,000 units/hr\nTitrate infusion using Heparin Nomogram</center>"]
+                    ]
+                },
+                {
+                    "title" : "<b>Heparin Nomogram for Patients NOT Receiving Thrombolytics or Glycoprotein IIb/IIIa Inhibitors</b>",
+                    "loc" : [["nil", "nil"]],
+                    "dose_route" : [
+                        ["<center>aPTT\n(seconds)</center>", "<center>Less than 40</center>", "<center>40-49</center>", "<center>50-70</center>","<center>71-85</center>", "<center>86-100</center>", "<center>101-150</center>", "<center>Greater than 150</center>"],
+                        ["<center>Heparin Bolus\n(units)</center>", "<center>3,000</center>", "<center>0</center>", "<center>0</center>", "<center>0</center>", "<center>0</center>", "<center>0</center>", "<center>0</center>"],
+                        ["<center>Hold infusion\n(Minutes)</center>", "<center>0</center>", "<center>0</center>", "<center>0</center>", "<center>0</center>", "<center>30</center>", "<center>60</center>", "<center>60</center>"],
+                        ["<center><b>Rate Change (units/hr)</b>\n*** using 50 units/mL concentration***</center>", "<center>↑ 2.4 mL/120 units/ hr</center>", "<center>↑ 0.8 mL/40 units/ hr</center>", "<center>0</center>", "<center>0</center>", "<center>↓2.4 mL/120 units/hr</center>", "<center>↓3.2 mL/160 units/hr</center>", "<center>↓6.4 mL/320 units/hr</center>"],
+                        ["<center>Next aPTT\n(from the time rate was changed)</center>", "<center>4 hours later (STAT)</center>", "<center>6 hours later</center>", "<center>Next AM</center>", "<center>Next AM</center>", "<center>6 hours after restarting</center>", "<center>6 hours after restarting</center>", "<center>4 hours after restarting (STAT)</center>"]
+                    ],
+                    "notes" : "If aPTT is greater than 120 OR less than 50 x 2 consecutive blood samples, patch TMP\n<b>*Contraindications to Heparin:</b>\n<tab1>• Active bleeding\n• History of Heparin induced thrombocytopenia</tab1>"
+                }
+            ]
+        },
+        {
+            "key" : "adult_chf",
+            "title" : "Cardiogenic Pulmonary Edema",
+            "type" : "medical_directive",
+            "flowchartkeys" : [["Cardiogenic Pulmonary Edema Flowchart", "adult_chf_flowchart"]],
+            "indications" : "<tab1>• Initial MAP ≥ 70 mmHg and SBP > 100\nAND\n• Heart Rate is ≥ 60 but < 160 bpm</tab1>",
+            "contraindications" : "<tab1>• Allergy or sensitivity to the medication\n• No IV\n• Nitroglycerin: Any phosphodiesterase-5 inhibitors use (Sildeafil [Viagra or Revatio], Tadalafil [Cialis], or Vardenafil [Levitra]) in the last 48 hours (these agents are commonly used for erectile dysfunction and are also used in pulmonary hypertension)</tab1>",
+            "clinical" : "<tab1>• If a patient presents with moderate to severe respiratory distress and the Paramedic suspects the patient is in acute pulmonary edema\n• Reassess & document vitals between doses\n• Discontinue Nitroglycerin if the BP or heart rate parameters for Nitroglycerin are no longer met\n• Check blood pressure before administering each subsequent dose of Nitroglycerin</tab1>",
+            "drug_cards" : [
+                {
+                    "title" : "<b>CPAP/NPPV</b>",
+                    "loc" : [["acp", "after"]],
+                    "dose_route" : [["<center><b>Initial Setting</b>\niPAP 10 cmH2O/ePAP 5 cmH2O\nMAX iPAP 20 cmH2O/ePAP 10 cmH2O</center>"]]
+                },
+                {
+                    "title" : "<b>Nitroglycerin*</b>",
+                    "loc" : [["pcp", "none"]],
+                    "dose_route" : [["<center>0.4 mg SL spray\nq 5 minutes prn\nMAX of 6 doses</center>"]],
+                    "notes" : "*Single PCP(f): Initiate then patch"
+                },
+                {
+                    "title" : "<b>Nitroglycerin (Tridil)\nIV Infusion (for severe pulmonary edema)</b>",
+                    "loc" : [["acp", "first"]],
+                    "dose_route" : [["<center>Initiate 10 microgram/min IV\ntitrate in 5 microgram/min increments q 5 minutes\nMAX 200 microgram/min</center>"]]
+                },
+                {
+                    "title" : "<b>Furosemide (Lasix)</b>",
+                    "loc" : [["acp", "first"]],
+                    "dose_route" : [["<center>40 mg IV or double patients usual total daily dose\nMAX of 160 mg</center>"]]
+                }
+            ]
+        },
+        {
+            "key" : "adult_cardiogenic_shock",
+            "title" : "Cardiogenic Shock",
+            "type" : "medical_directive",
+            "flowchartkeys" : [["Cardiogenic Shock Flowchart", "adult_cardiogenic_shock_flowchart"]],
+            "indications" : "<tab1>• Cardiogenic shock</tab1>",
+            "contraindications" : "<tab1>• Allergy or sensitivity to the medication</tab1>",
+            "clinical" : "<tab1>• In general, titration of Norepinephrine should be based upon MAPs whereas response to DOBUTamine should be based on perfusion and clinical parameters such as urine output\n• MAP parameters in cardiogenic shock should be targeted to low normal levels, MAP 60-65 and less than 80 provided there are signs of adequate perfusion</tab1>",
+            "drug_cards" : [
+                {
+                    "title" : "<b>Normal Saline or Ringers Lactate</b>",
+                    "loc" : [["acp", "none"]],
+                    "dose_route" : [["<center>250 mL IV/IO bolus PRN, MAX 10 ml/kg\nTarget MAP > 65</center>"]]
+                },
+                {
+                    "title" : "<b>Norepinephrine (Levophed)</b>",
+                    "loc" : [["acp", "after"]],
+                    "dose_route" : [["<center>0-0.5 microgram/kg/min IV/IO\nTarget MAP > 65</center>"]]
+                },
+                {
+                    "title" : "<b>DOBUTamine (Dobutrex)</b>",
+                    "loc" : [["ccp", "first"]],
+                    "dose_route" : [["<center>5-20 microgram/kg/min IV/IO\nInitiate at 5 microgram/kg/min\nMinimum MAP 60 prior to initiating</center>"]]
+                }
+            ]
+        },
+        {
+            "key" : "adult_iabp",
+            "title" : "Intra-Aortic Balloon Pump (IABP) Auxiliary Medical Directive",
+            "type" : "medical_directive",
+            "indications" : "<tab1>• A CCP may provide the treatment prescribed in this auxiliary medical directive if certified and authorized\n• Patient > 18 years old\n• Patient > 40 kg\n• Patient must already be on Intra-Aortic Balloon Pump (IABP) at the sending hospital</tab1>",
+            "contraindications" : "<tab1>• Not applicable</tab1>",
+            "treatment" : "<tab1>• Paramedics are required to perform IABP specific assessments\n</tab1><tab2>o Verify balloon position and size\no Identify balloon tip on x-ray\no Assess for distal pulses in insertion limb\no Assess for urine output\no Identify if catheter is fiber optic\no Identify trigger being used\no Assess IABP waveform\no Ensure catheter is sutured securely in place</tab2>\nParamedics are required to Patch to obtain orders when providing IABP care.",
+            "clinical" : "<tab1>• 1 IABP certified paramedic with CCP partner\n• Paramedics are not permitted to advance or remove IABP catheters\n• Paramedics are required to ensure transport IABP is in ready state, fully charged, appropriate helium levels, paper role, and appropriate cables\n• Document sending facility IABP parameters</tab1>",
+            "drug_cards" : [
+                {
+                    "title" : "",
+                    "loc" : [["ccp", "first"]],
+                    "dose_route" : [["<center><b>Transition</b></center>","<tab1>• Both paramedics at the bedside for transition to transport IABP\n• Put IABP in 1:2 ratio\n• Select trigger\n• Assess and adjust 3 rules of timing to achieve ideal waveform and augmentation\n• Run a recording strip\n• Maintain head of bed no higher than 30 degrees\n• Keep insertion limb straight\n• Ensure no blood is present in the catheter\n• Return IABP ratio to 1:1 or 1:2 matching setting from sending</tab1>", "<center><b>Transport</b></center>", "<tab1>• Exercise caution to protect IABP catheter from being pulled.\n• Continuously monitor the patient and the performance of the IABP, make adjustments as required to maintain good augmentation\n• Run a recorder strip at the start of transport and again at the end of transport\n• Plug IABP into vehicle power source to conserve IABP internal battery</tab1>", "<center><b>Transfer of Care</b></center>", "<tab1>• Paramedics to ensure safe transfer of IABP care with accepting hospital staff\n• Run final strip prior to transfer\n• Document as required on ACR among other care the specifics of the IABP</tab1>"]]
+                }
+            ]
+        },
+        {
+            "key" : "adult_ecmo",
+            "title" : "Extracorporeal Membrane Oxygenation (ECMO) Auxiliary Medical Directive",
+            "type" : "medical_directive",
+            "indications" : "<tab1>• Veno-venous (VV) or Veno-arterial (VA) Extracorporeal Membrane Oxygenation (ECMO)/Extracorporeal Life Support (ECLS)\n• Accompanied by ECMO team including ECMO physician\n• A CCP may provide the treatment prescribed in this auxiliary medical directive if certified and authorized\n• Age > 16\n• Successful cannula placement and ECMO initiation</tab1>",
+            "contraindications" : "<tab1>• Not applicable</tab1>",
+            "clinical" : "<tab1>• The CCP must patch with the TMP if medications are required beyond those provided for in these Medical Directives; if medication doses are required beyond those provided for in these medical directives; or in the case of ECMO failure requiring use of emergency medical directives (as soon as practical and safe to do so taking into account workload to stabilize patient)\n• The CCP may also provide all additional care covered by routine CCP level medical directives</tab1>",
+            "drug_cards" : [
+                {
+                    "title" : "<b>Mechanical ventilation*</b>",
+                    "loc" : [["ccp", "none"]],
+                    "dose_route" : [["<tab1>• Pressure Control Ventilation\n• RR 10 breaths/min**\n• Pressure control 10 cmH20**\n• PEEP 10 cmH20**\n• FiO2 0.3\n• Protective lung strategy Vt 4-5 ml/kg IBW, RR 10/min, Ti 1.0 sec</tab1>\n\n** or to an initial maximum of 20-20-20 (RR-PC-PEEP) as requested by the ECMO physician"], ["Keep plateau pressures less than 30 cm H20 with adjustments unless ECMO failure (see ECMO failure emergency medical directives)\nMay titrate FiO2 up to 1.0 and PEEP up to 20 if requested by ECMO physician\n Given that PaCO2 and PaO2 determined by ECMO rather than mechanical ventilation, there is no need to titrate mechanical ventilation during transport (please refer to the Emergency Medical Directive for ECMO/ECLS Failure portion at the end of the Medical Directive for orders in the event of ECMO failure)"]],
+                    "notes" : "*Confirm ETT placement on chest X-ray from sending facility"
+                },
+                {
+                    "section" : "<b>Circulation and Fluids</b>\nContinue any of the following medications being administered at the time of initiation of ECMO and/or add/titrate at the request of the ECMO physician within the prescribed ranges below. Match dose from sending facility as starting dose.",
+                    "title" : "<b>Norepinephrine (Levophed)</b>",
+                    "loc" : [["ccp", "none"]],
+                    "dose_route" : [["<center>0-0.5 microgram/kg/min IV\nMatch sending facility for starting dose\nTarget MAP > 65</center>"]]
+                },
+                {
+                    "title" : "<b>Vasopressin</b>",
+                    "loc" : [["ccp", "none"]],
+                    "dose_route" : [["<center>0.02-0.1 units/min IV\nMatch sending facility for starting dose\nTarget MAP > 65</center>"]]
+                },
+                {
+                    "title" : "<b>EPINEPHrine</b>\nTarget MAP > 65",
+                    "loc" : [["ccp", "none"]],
+                    "dose_route" : [
+                        ["<center>Bolus</center>", "<center>5-20 mcg\n* q 3 minutes prn IV</center>"],
+                        ["<center>and/or</center>", "nil"],
+                        ["<center>Maintenance Infusion</center>", "<center>0-0.5 microgram/kg/min\nMatch sending facility for starting dose</center>"]
+                    ],
+                    "notes" : "*to prepare push-dose EPINEPHrine (i.e., 10 microgram/mL concentration)\n<tab1>1. Draw 100 microgram (i.e. 1 mL of 1:10,000) EPINEPHrine and dilute in 9 mL of Normal Saline</tab1>"
+                },
+                {
+                    "title" : "<b>Phenylephrine</b>\nTarget MAP > 65",
+                    "loc" : [["ccp", "none"]],
+                    "dose_route" : [
+                        ["<center>Bolus</center>", "<center>100-200 micrograms q 3 minutes prn IV</center>"],
+                        ["<center>and/or</center>", "nil"],
+                        ["<center>Maintenance Infusion</center>", "<center>0-500 microgram/min\nMatch sending facility for starting dose</center>"]
+                    ]
+                },
+                {
+                    "title" : "<b>Fluids</b>",
+                    "loc" : [["ccp", "none"]],
+                    "dose_route" : [
+                        ["<center>Bolus</center>", "<center>Bolus 20 mL/kg RL or NS q 15 minutes prn to keep MAP > 65 and/or if rising vasopressor requirements\nAssess for signs of fluid overload between each bolus and hold further fluid boluses if signs fluid overload\nMay substitute sodium bicarbonate (3 amps in 850 cc D5W) instead of NS/RL as bolus fluid 20 ml/kg at request of ECMO physician for metabolic acidosis</center>"],
+                        ["<center>and/or</center>", "nil"],
+                        ["<center>Maintenance Infusion</center>", "<center>Maintenance infusion RL or NS at 0-150 cc/hr (choice as per ECMO physician and/or to match sending facility, RL preferred)\nMay switch to sodium bicarbonate infusion (3 amps in 850 mL D5W) at 0-150 cc/hr</center>"]
+                    ]
+                },
+                {
+                    "title" : "<b>Packed Red Blood Cells (PRBC)</b>",
+                    "loc" : [["ccp", "none"]],
+                    "dose_route" : [
+                        ["<center>Transfuse PRBC at request of ECMO physician if Hb < 70 g/L or if active bleeding; medics may bring PRBC from sending facility to have on standby if available and requested by ECMO physician</center>"]
+                        
+                    ]
+                },
+                {
+                    "section" : "For Sedation",
+                    "title" : "<b>fentaNYL (Sublimaze)</b>",
+                    "loc" : [["ccp", "none"]],
+                    "dose_route" : [
+                        ["<center>Bolus</center>", "<center>50-100 micrograms IV q 10 minutes prn</center>"],
+                        ["<center>and/or</center>", "nil"],
+                        ["<center>Maintenance Infusion</center>", "<center>0-500 microgram/hr IV\nTarget MAP > 65</center>"]
+                    ]
+                },
+                {
+                    "section" : "AND",
+                    "title" : "<b>Propofol (Diprivan</b>",
+                    "loc" : [["ccp", "none"]],
+                    "dose_route" : [
+                        ["<center>0-5 mg/kg/hr\nTarget MAP > 65</center>"]
+                    ]
+                },
+                {
+                    "section" : "OR",
+                    "title" : "<b>Midazolam (Versed)</b>",
+                    "loc" : [["ccp", "none"]],
+                    "dose_route" : [
+                        ["<center>Bolus</center>", "<center>2-4 mg IV q 10 minutes prn</center>"],
+                        ["<center>and/or</center>", "nil"],
+                        ["<center>Maintenance Infusion</center>", "<center>0-0.25 mg/kg/hr IV\nTarget MAP > 65</center>"]
+                    ]
+                },
+                {
+                    "section" : "OR",
+                    "title" : "<b>Ketamine</b>",
+                    "drugKey" : "ketamine",
+                    "loc" : [["ccp", "none"]],
+                    "dose_route" : [
+                        ["<center>Bolus</center>", "<center>10-20 mg IV q 5 minutes prn</center>"],
+                        ["<center>and/or</center>", "nil"],
+                        ["<center>Maintenance Infusion</center>", "<center>0-4.5 mg/kg/hr IV\nTarget MAP > 50</center>"]
+                    ]
+                },
+                {
+                    "section" : "<b>For Paralysis*</b>",
+                    "title" : "<b>Cisatracurium</b>",
+                    "loc" : [["ccp", "none"]],
+                    "dose_route" : [
+                        ["<center>Bolus</center>", "<center>0.1-0.2 mg/kg IV to initiate paralysis\n0.03 mg/kg IV q 30 minutes prn</center>"],
+                        ["<center>and/or</center>", "nil"],
+                        ["<center>Maintenance Infusion</center>", "<center>1-10 microgram/kg/min\n(usual starting dose 3 microgram/kg/min\nafter initiating paralysis)</center>"]
+                    ]
+                },
+                {
+                    "section" : "OR",
+                    "title" : "<b>Rocuronium (Zemuron)</b>",
+                    "loc" : [["ccp", "none"]],
+                    "dose_route" : [
+                        ["<center>Bolus</center>", "<center>0.6 mg/kg IV to initiate paralysis\n0.3 mg/kg IV q 20 minutes</center>"],
+                        ["<center>and/or</center>", "nil"],
+                        ["<center>Maintenance Infusion</center>", "<center>10-15 microgram/kg/min\nto maintain paralysis</center>"]
+                    ],
+                    "notes" : "*Must have analgesia (fentaNYL) plus sedation (propofol, midazolam or ketamine) running at all times while paralyzed"
+                },
+                {
+                    "section" : "<b>Additional Medications</b>\nAt request of ECMO physician",
+                    "title" : "<b>Unfractionated Heparin</b>",
+                    "loc" : [["ccp", "none"]],
+                    "dose_route" : [
+                        ["<center>Bolus</center>", "<center>May give 5000 units IV bolus upon cannulation;\nrepeat as requested by ECMO physician/perfusionist</center>"],
+                        ["<center>and/or</center>", "nil"],
+                        ["<center>Maintenance Infusion</center>", "<center>0-3000 units/hr IV, continue dose from sending;\nadjust as requested by ECMO physician based on\nPTT/ACT as directed by ECMO physician/perfusionist\n(target ACT 160-180 sec)</center>"]
+                    ]
+                },
+                {
+                    "title" : "<b>Furosemide (Lasix)</b>",
+                    "loc" : [["ccp", "none"]],
+                    "dose_route" : [
+                        ["<center>Bolus</center>", "<center>20-160 mg IV x 1 prn</center>"],
+                        ["<center>and/or</center>", "nil"],
+                        ["<center>Maintenance Infusion</center>", "<center>0-20 mg/hr IV</center>"]
+                    ]
+                },
+                {
+                    "title" : "<b>Tranexamic Acid (TXA)</b>",
+                    "loc" : [["ccp", "none"]],
+                    "dose_route" : [
+                        ["<center>1 g IV bolus for bleeding</center>"]
+                    ]
+                },
+                {
+                    "title" : "<b>Pantoloc (Pantoprazole)</b>",
+                    "loc" : [["ccp", "none"]],
+                    "dose_route" : [
+                        ["<center>Bolus</center>", "<center>40-80 mg bolus IV</center>"],
+                        ["<center>and/or</center>", "nil"],
+                        ["<center>Maintenance Infusion</center>", "<center>8 mg/hr IV infusion</center>"]
+                    ]
+                }
+            ]
+        },
+        {
+            "key" : "adult_ecmo_failure",
+            "title" : "Emergency Medical Directive for ECMO/ECLS Failure",
+            "type" : "medical_directive",
+            "indications" : "<tab1>• Cardiac Arrest\n• ECMO/ECLS equipment failure\n• Failure to Oxygenate\n• Uncontrolled bleeding/Volume loss/Exsanguination</tab1>",
+            "drug_cards" : [
+                {
+                    "section" : "May use all above ECMO medical directives, standard CCP Medical Directives, <b>and in addition:</b>",
+                    "title" : "<b>Mechanical ventilation</b>",
+                    "loc" : [["ccp", "after"]],
+                    "dose_route" : [["<tab1>• FiO2 1.0 and titrate down for O2 saturation > 95%\n• PEEP 5-20, may increase settings to aim for Vt 6-8 ml/kg\n• PIP < 30 (may increase to 40 if unable to achieve targets with settings otherwise)\n• Titrate RR to achieve EtCO2 50-60 target/n• I:E 1:1 if possible for oxygenation failure</tab1>"]],
+                    "notes" : "**Mandatory TMP patch if ECMO failure as soon as possible after initiation of ECMO failure orders taking into account immediate patient care needs"
+                },
+                {
+                    "title" : "<b>ECMO Failure</b>",
+                    "loc" : [["ccp", "first"]],
+                    "dose_route" : [["<tab1>• Cardiac arrest\n• ECMO/ECLS equipment failure\n• Failure to oxygenate\n• Uncontrolled bleeding/volume loss/exsanguination</tab1>"]]
+                }
+            ]
+        },
+        {
+            "key" : "adult_bradycardia",
+            "title" : "Adult Symptomatic Bradycardia",
+            "type" : "medical_directive",
+            "flowchartkeys" : [["Flowchart", "adult_bradycardia_flowchart"]],
+            "indications" : "<tab1>• Symptomatic Bradycardia with a pulse</tab1>",
+            "contraindications" : "<tab1>• Allergy or sensitivity to the medication</tab1>",
+            "drug_cards" : [
+                {
+                    "title" : "<b>Atropine</b>",
+                    "loc" : [["acp","after"]],
+                    "dose_route" : [["<center>0.5 mg IV/IO initial dose (repeat q 3-5 minutes to max total dose 3 mg)</center>"]]
+                },
+                {
+                    "title" : "<b>Dopamine</b>",
+                    "loc" : [["acp","after"]],
+                    "dose_route" : [["<center>5-20 microgram/kg/min IV\nTarget MAP > 65\nHR > 50</center>"]],
+                    "notes" : "Patients with bradycardia requiring transcutaneous (TC) pacing who are conscious and aware of their surroundings may require sedation and analgesia prior to TC pacing."
+                },
+                {
+                    "title" : "<b>Transcutaneous Cardiac Pacing</b>",
+                    "loc" : [["acp","after"]],
+                    "dose_route" : [["<center>Set pacing rate at 70\nStart output at 10 milliamps (mA) and increase to achieve electrical capture with a pulse (mechanical capture)\nOnce mechanical capture has been confirmed increase mA by 10%\nConfirm the presence of a pulse and assess blood pressure and perfusion</center>"]]
+                },
+                {
+                    "section" : "<b>Procedural Sedation</b>",
+                    "title" : "<b>Ketamine</b>",
+                    "drugKey" : "ketamine",
+                    "loc" : [["acp","first"], ["ccp", "after"]],
+                    "dose_route" : [["<center>0.1 mg/kg, MAX 0.5 mg/kg</center>"]]
+                },
+                {
+                    "title" : "<b>Midazolam (Versed)</b>",
+                    "loc" : [["acp","first"], ["ccp", "after"]],
+                    "dose_route" : [["<center><b>MAP > 65</b>\nVersed 0.05 mg/kg</center>"]]
+                },
+                {
+                    "section" : "AND/OR",
+                    "title" : "<b>fentaNYL</b>",
+                    "loc" : [["acp","first"], ["ccp", "after"]],
+                    "dose_route" : [["<center><b>MAP > 65</b>\n1 microgram/kg</center>"]]
+                }
+            ]
+        },
+        {
+            "key" : "adult_tvp",
+            "title" : "Transvenous Cardiac Pacing",
+            "type" : "medical_directive",
+            "indications" : "<tab1>• Transvenous pacing, if initiated at the sending facility</tab1>",
+            "contraindications" : "<tab1>• Not applicable</tab1>",
+            "clinical" : "<tab1>• Monitor the cardiac rhythm and ensure the catheter/cable is carefully secured to prevent inadvertent tension or traction on the line\n• Ideal capture threshold is < 1. High outputs are an indication of misplaced wires or more serious pathology that can be more prone to capture failure and need for TCP vs other interventions</tab1>",
+            "drug_cards" : [
+                {
+                    "title" : "",
+                    "loc" : [["ccp","after"]],
+                    "dose_route" : [["<center><b>Maintain transvenous pacing if initiated at sending facility\n(Initial pacing settings will reflect sending facility settings)</b></center>"
+                    ]]
+                },
+                {
+                    "title" : "",
+                    "loc" : [["ccp","first"]],
+                    "dose_route" : [["<center><b>Any alteration of settings to be discussed with TMP</b></center>"
+                    ]]
+                }
+            ]
+        },
+        {
+            "key" : "adult_afib",
+            "title" : "Adult Symptomatic Atrial Fibrillation/Flutter",
+            "type" : "medical_directive",
+            "flowchartkeys" : [["Flowchart", "adult_atrial_fib_flowchart"]],
+            "indications" : "<tab1>• Symptomatic Atrial Flutter\n• Symptomatic Atrial Fibrillation</tab1>",
+            "contraindications" : "<tab1>• Allergy or sensitivity to the medication</tab1>",
+            "treatment" : "Patients with Atrial Fibrillation/Flutter where emergency synchronized cardioversion is indicated who are conscious and aware of their surroundings may require sedation and analgesia first. Below are medical directives for sedation and analgesia for cardioversion. Patients that are peri-arrest or hemodynamically unstable can be immediately managed with synchronized cardioversion without sedation or analgesia",
+            "drug_cards" : [
+                {
+                    "loc" : [["acp","after"]],
+                    "dose_route" : [["<center><b>Synchronized Cardioversion</b></center>"]]
+                },
+                {
+                    "section" : "<b>Procedural Sedation</b>",
+                    "title" : "<b>Ketamine</b>",
+                    "drugKey" : "ketamine",
+                    "loc" : [["acp","first"], ["ccp", "after"]],
+                    "dose_route" : [["<center>0.1 mg/kg, MAX 0.5 mg/kg</center>"]]
+                },
+                {
+                    "title" : "<b>Midazolam (Versed)</b>",
+                    "loc" : [["acp","first"], ["ccp", "after"]],
+                    "dose_route" : [["<center><b>MAP > 65</b>\nVersed 0.05 mg/kg</center>"]]
+                },
+                {
+                    "section" : "AND/OR",
+                    "title" : "<b>fentaNYL</b>",
+                    "loc" : [["acp","first"], ["ccp", "after"]],
+                    "dose_route" : [["<center><b>MAP > 65</b>\n1 microgram/kg</center>"]]
+                }
+            ]
+        },
+        {
+            "key" : "adult_svt",
+            "title" : "Adult Paroxysmal Supraventricular Tachycardia (PSVT)",
+            "type" : "medical_directive",
+            "flowchartkeys" : [["Flowchart", "adult_svt_flowchart"]],
+            "indications" : "<tab1>• Paroxysmal Supraventricular Tachycardia (PSVT)</tab1>",
+            "contraindications" : "<tab1>• Allergy or sensitivity to the medication</tab1>",
+            "treatment" : "Patients with PSVT with a pulse who are conscious and aware of their surroundings may require sedation and analgesia prior to cardioversion. Below are directives for sedation and analgesia for cardioversion. Patients that are peri-arrest or hemodynamically unstable can be immediately cardioverted with synchronized cardioversion (without sedation or analgesia).",
+            "clinical" : "<tab1>• Adenosine dose should be decreased if patient taking dipyridamole or carbamazepine, dose should be decreased if given by central line; caution in asthma</tab1>",
+            "drug_cards" : [
+                {
+                    "loc" : [["acp","after"]],
+                    "dose_route" : [["<center><b>Synchronized Cardioversion</b></center>"]]
+                },
+                {
+                    "section" : "<b>Procedural Sedation</b>",
+                    "title" : "<b>Ketamine</b>",
+                    "drugKey" : "ketamine",
+                    "loc" : [["acp","first"], ["ccp", "after"]],
+                    "dose_route" : [["<center>0.1 mg/kg, MAX 0.5 mg/kg</center>"]]
+                },
+                {
+                    "title" : "<b>Midazolam (Versed)</b>",
+                    "loc" : [["acp","first"], ["ccp", "after"]],
+                    "dose_route" : [["<center><b>MAP > 65</b>\nVersed 0.05 mg/kg</center>"]]
+                },
+                {
+                    "section" : "AND/OR",
+                    "title" : "<b>fentaNYL</b>",
+                    "loc" : [["acp","first"], ["ccp", "after"]],
+                    "dose_route" : [["<center><b>MAP > 65</b>\n1 microgram/kg</center>"]]
+                },
+                {
+                    "title" : "<b>Adenosine</b>",
+                    "loc" : [["acp","after"]],
+                    "dose_route" : [["<center>6 mg rapid IV/IO with 20 mL NS flush\nRepeat at 12 mg x 1 prn</center>"]]
+                }
+            ]
+        },
+        {
+            "key" : "adult_vtach",
+            "title" : "Adult Ventricular Tachycardia with Perfusion",
+            "type" : "medical_directive",
+            "flowchartkeys" : [["Flowchart", "adult_vtach_pulse_flowchart"]],
+            "indications" : "<tab1>• Ventricular Tachycardia (VT) with a pulse</tab1>",
+            "contraindications" : "<tab1>• Allergy or sensitivity to the medication</tab1>",
+            "treatment" : "Patients with VT with a pulse who are conscious and aware of their surroundings may require sedation and analgesia prior to cardioversion. Below are directives for sedation and analgesia for cardioversion. Patients that are peri-arrest or hemodynamically unstable can be immediately cardioverted with synchronized cardioversion without sedation or analgesia.",
+            "clinical" : "<tab1>• Consider early Magnesium IV for polymorphic VT\n• Polymorphic VT should prompt consideration if clinically appropriate for toxicologic exposure which have specific antidote therapies (Ex: Beta blockers in hydrocarbon toxicity). Emergent TMP consultation is indicated\n• Consider hyperkalemia medical directive (167) for wide complex tachycardia/lethal arrythmias</tab1>",
+            "drug_cards" : [
+                {
+                    "loc" : [["acp","after"]],
+                    "dose_route" : [["<center><b>Synchronized Cardioversion</b></center>"]]
+                },
+                {
+                    "section" : "<b>Procedural Sedation</b>",
+                    "title" : "<b>Ketamine</b>",
+                    "drugKey" : "ketamine",
+                    "loc" : [["acp","first"], ["ccp", "after"]],
+                    "dose_route" : [["<center>0.1 mg/kg, MAX 0.5 mg/kg</center>"]]
+                },
+                {
+                    "title" : "<b>Midazolam (Versed)</b>",
+                    "loc" : [["acp","first"], ["ccp", "after"]],
+                    "dose_route" : [["<center><b>MAP > 65</b>\nVersed 0.05 mg/kg</center>"]]
+                },
+                {
+                    "section" : "AND/OR",
+                    "title" : "<b>fentaNYL</b>",
+                    "loc" : [["acp","first"], ["ccp", "after"]],
+                    "dose_route" : [["<center><b>MAP > 65</b>\n1 microgram/kg</center>"]]
+                },
+                {
+                    "title" : "<b>Amiodarone (Cordarone)</b>",
+                    "loc" : [["acp","none"]],
+                    "dose_route" : [["<center>150 mg IV over 10 minutes\n(may repeat x1 as adjunct to cardioversion)</center>"]]
+                }
+            ]
+        },
+        {
+            "key" : "adult_iv_start",
+            "title" : "Intravenous Line Initiation",
+            "type" : "medical_directive",
+            "indications" : "<tab1>• Actual or potential need for intravenous or fluid therapy</tab1>",
+            "contraindications" : "<tab1>• Suspected fracture proximal to the IV site</tab1>",
+            "clinical" : "<tab1>• *A PCP(f) may provide the treatment prescribed in this auxiliary medical directive if certified and authorized</tab1>",
+            "drug_cards" : [
+                {
+                    "title" : "<b>Initiate IV</b>",
+                    "loc" : [["acp","none"]],
+                    "dose_route" : [["<center>MAX of 2 peripheral IV lines may be established</center>"]]
+                }
+            ]
+        },
+        {
+            "key" : "adult_io_start",
+            "title" : "Intraosseous Initiation and Maintenance",
+            "type" : "medical_directive",
+            "indications" : "<tab1>• Inadequate intravenous access for <b>resuscitation</b>\n• Unable to obtain intravenous access after two (2) attempts or 90 seconds</tab1>",
+            "contraindications" : "<tab1>• Known or suspected fracture, injury, deformity, or infection overlying the proposed insertion site\n• Absence of adequate anatomic landmarks\n• Previous IO insertion in the bone in the past 48 hours\n• Known or suspected fracture of affected limb</tab1>",
+            "clinical" : "<tab1>• Resuscitation indicates the process of correcting physiological disorders in the acutely unwell patient. The patient need not be in cardiac arrest to qualify for IO insertion</tab1>",
+            "drug_cards" : [
+                {
+                    "loc" : [["acp","after"]],
+                    "dose_route" : [["<center><b>Initiate the appropriate intervention based upon the presenting condition</b></center>"]]
+                }
+            ]
+        },
+        {
+            "key" : "adult_io_analgesia",
+            "title" : "Intraosseous Vascular Access Analgesia",
+            "type" : "medical_directive",
+            "indications" : "<tab1>• Patient requiring intraosseous (IO) needle access and responsive to pain</tab1>",
+            "contraindications" : "<tab1>• Sino-atrial disorders\n• All grades of AV block, Stokes-Adams syndrome, Wolff-Parkinson-White syndrome\n• Acute porphyria\n• Hypersensitivity to another local anesthetic of the amide type</tab1>",
+            "clinical" : "<tab1>• After the second lidocaine dose is given, medication or fluids may be administered under pressure as required\n• Can consider administering again in 45 minutes later at the lower of the two previous doses given if discomfort re-occurs\n• If extravasation occurs insert a new IO needle\n• Cimetidine or beta-blockers (e.g. propranolol) may interact and cause lidocaine toxicity</tab1>",
+            "drug_cards" : [
+                {
+                    "title" : "<b>Lidocaine 2% without epinephrine</b>",
+                    "loc" : [["acp","after"]],
+                    "dose_route" : [
+                        ["", "40 - 60 kg", "61-70 kg", "71 kg+"],
+                        ["<center><b>1st Dose</b></center>", "<center>30 mg (1.5 mL)</center>", "<center>35 mg (1.75 mL)</center>", "<center>40 mg (2 mL)</center>"],
+                        ["<center><b>2nd Dose</b></center>", "<center>15 mg (0.75 mL)</center>", "<center>17.5 mg (0.9 mL)</center>", "<center>20 mg (1 mL)</center>"]
+                    ],
+                    "notes" : "*Administer <b>first dose</b> over 2 minutes then allow lidocaine to dwell for 1 minute in IO space and flush with 5-10 mL 0.9% saline\nFollowed by <b>second dose</b> of lidocaine over 1 minute"
+                }
+            ]
+        },
+        {
+            "key" : "adult_iv_pcp",
+            "title" : "Intravenous Line Maintenance Standard: PCP(f)",
+            "type" : "medical_directive",
+            "indications" : "<tab1>• Initiated by sending facility</tab1>",
+            "contraindications" : "<tab1>• Not applicable</tab1>",
+            "clinical" : "<tab1>• To keep the vein open (TKVO)</tab1><tab2>\no The minimum flow rate to maintain IV patency for a patient ≥12 years of age is 30 mL/hr of any isotonic fluid (Normal saline or ringers lactate); or\n</tab2><tab1>\n• For fluid replacement\n</tab1><tab2>o A maximum flow rate infused of up to 2 mL/kg/hr to a MAX of 200 mL/hr,\no Thiamine, multivitamin preparations,\no Drugs within his/her level of certification, or\no Potassium chloride (KCl) for patients ≥18 years of age, to a MAX of 10 mEq in a 250 mL or 40 mEq in a 1000 mL bag</tab2>",
+            "drug_cards" : [
+                {
+                    "title" : "<b>Maintain IV</b>",
+                    "loc" : [["pcp","none"]],
+                    "dose_route" : [["<center>May transport a patient with a saline IV infusion containing thiamine, multivitamin preparations and KCl to a MAX of <b>40 mEq</b>/Litre as initiated by the sending hospital and maintain at the rate set by the sending facility up to a MAX of 200 mL/hr</center>"]]
+                }
+            ]
+        },
+        {
+            "key" : "adult_blood_sampling",
+            "title" : "Blood Sampling and Lab Value Interpretation",
+            "type" : "medical_directive",
+            "indications" : "<tab1>• To establish baseline respiratory, cardiovascular, hematological status prior to or during transport\n• To monitor changes and/or deterioration in clinical status</tab1>",
+            "contraindications" : "<tab1>• Not applicable</tab1>",
+            "clinical" : "<tab1>• Management based on these results will be via patch with the TMP\n• These tests should only be completed if absolutely essential to patient management en route and will not cause unnecessary delays in transport</tab1>",
+            "drug_cards" : [
+                {
+                    "loc" : [["acp","after"]],
+                    "dose_route" : [["<center><b>Perform venipuncture, venous blood sampling and utilize iSTAT if available\nPerform arterial blood sampling and utilize iSTAT if available</b></center>"]]
+                }
+            ]
+        },
+        {
+            "key" : "adult_central_venous_lines",
+            "title" : "Maintaining and Accessing Central Venous Lines",
+            "type" : "medical_directive",
+            "indications" : "<tab1>• Actual or potential need for intravenous medication / fluid therapy\nAND\n• Central venous access is available</tab1>\nYou may access the following types of devices:\n<tab1>• Hickman\n• PICC (Peripherally Inserted Central Catheter)\n• Central Venous Line</tab1>",
+            "contraindications" : "<tab1>• Not applicable</tab1>",
+            "clinical" : "<tab1>• Every lumen of a capped central line must be flushed prior to transport to ensure that they are patent and functional as per the Ornge Medical Procedure Manual\n• Venous devices that are located subcutaneously, i.e. PortaCath or similar devices MAY NOT to be accessed</tab1>",
+            "drug_cards" : [
+                {
+                    "loc" : [["pcp","none"]],
+                    "dose_route" : [["<center><b>Must be capped for transport</b>\nDevices <b>must not</b> be accessed by the PCP(f)</center>"]]
+                },
+                {
+                    "loc" : [["acp","none"]],
+                    "dose_route" : [["<center><b>Access established CVAD for utilization</b></center>"]]
+                }
+            ]
+        },
+        {
+            "key" : "adult_arterial_lines",
+            "title" : "Arterial Line Maintenance and Monitoring",
+            "type" : "medical_directive",
+            "indications" : "<tab1>• Established arterial line</tab1>",
+            "contraindications" : "<tab1>• Not applicable</tab1>",
+            "clinical" : "<tab1>• NS is the preferred solution for arterial lines with flush / pressure bag / transducer system unless sending facility has it heparinized in which case, one should continue as per sending\n• Arterial lines are not to be capped or locked due to the risk of thrombosis. Instead, it must be removed if not transduced\n• Arterial lines are calibrated (zeroed) with any changes in level of bed &/or position of head of bed to transducer, if waveform changes and with IV tubing changes\n• Ensure all connections are tight , line is secured (ie arm board) and limb properly restrained as required\n• Blood backing up the transducer tubing from the patient may indicate a leak, crack or loose connections</tab1>",
+            "drug_cards" : [
+                {
+                    "loc" : [["acp","after"]],
+                    "dose_route" : [["<center><b>Perform blood sampling and utilize iSTAT if available</b></center>"]]
+                },
+                {
+                    "loc" : [["acp","none"]],
+                    "dose_route" : [["<center><b>Monitor and transduce an established arterial line</b></center>"]]
+                }
+            ]
+        },
+        {
+            "key" : "adult_pulmonary_artery_catheters",
+            "title" : "Pulmonary Artery Catheters Auxiliary Medical Directive",
+            "type" : "medical_directive",
+            "indications" : "<tab1>• A CCP may provide the treatment prescribed in this auxiliary medical directive if certified and authorized</tab1>",
+            "contraindications" : "<tab1>• Not applicable</tab1>",
+            "clinical" : "<tab1>• If the arterial line and PA catheter cannot be simultaneously monitored then the arterial line will be monitored and the PA line will be removed. Authorized CCPs may remove the PA catheters prior to transport if required. The catheter must be completely removed, not just pulled back into the right atrium or SVC. The introducer (cordis) should be left in-situ and a plug inserted so that a new PA line may be inserted at the receiving facility\n• If the patient must be transported with a PA catheter in place, and no authorized CCP is available, the sending facility must send an appropriate escort with the responsibility for care and monitoring of the PA catheter under the sending facility staff</tab1>",
+            "drug_cards" : [
+                {
+                    "loc" : [["ccp","first"]],
+                    "dose_route" : [["<center><b>Transport and monitor PA Catheters</b></center>"]]
+                }
+            ]
+        },
+        {
+            "key" : "adult_stroke",
+            "title" : "Stroke",
+            "type" : "medical_directive",
+            "indications" : "<tab1>• Acute stroke</tab1>",
+            "contraindications" : "<tab1>• Allergy or sensitivity to the medication\n• Traumatic head injury\n• Blood glucose < 4 mmol</tab1>",
+            "flowchartkeys" : [["Flowchart", "adult_stroke_flowchart"]],
+            "clinical" : "<tab1>• Not applicable</tab1>",
+            "drug_cards" : [
+                {
+                    "title" : "<b>Labetalol</b>\nHold if HR < 60 bpm\nMAX dose 300 mg/day",
+                    "loc" : [["acp","first"]],
+                    "dose_route" : [["<center>10-20 mg slow IV push q 20 minutes prn\nuntil desired MAP achieved</center>"], ["<center>Infusion 0.5-2 mg/min</center>"]]
+                },
+                {
+                    "title" : "<b>Hypertonic Saline (3%)</b>",
+                    "loc" : [["acp","first"]],
+                    "dose_route" : [["<center>3 mL/kg IV/IO\nMAX rate of 20 mL/min\nConsider if MAP < 80 mmHg</center>"]]
+                },
+                {
+                    "title" : "<b>Mannitol</b>",
+                    "loc" : [["acp","first"]],
+                    "dose_route" : [["<center>1 g/kg IV/IO bolus\nMAP >80 mmHg</center>"]]
+                }
+            ]
+        },
+        {
+            "key" : "adult_seizure",
+            "title" : "Seizures - Adult",
+            "type" : "medical_directive",
+            "indications" : "<tab1>• Active Seizure</tab1>",
+            "contraindications" : "<tab1>• Allergy or sensitivity to the medication\n• If blood glucose level ≤ 4 mmol/L, proceed with protocol for “Hypoglycemic Emergencies”.</tab1>",
+            "treatment" : "If, on assessment, a patient is determined to be having a seizure, management of airway, breathing and circulation remain the first priority: adequate oxygenation and ventilation must be ensured.",
+            "flowchartkeys" : [["Flowchart", "adult_seizure_flowchart"]],
+            "clinical" : "<tab1>• 0.2 micron filter must be used when administering phenyTOIN</tab1>",
+            "drug_cards" : [
+                {
+                    "title" : "<b>Midazolam (Versed) for Seizures</b>",
+                    "loc" : [["acp","after"]],
+                    "dose_route" : [["<center>5 mg IV/IO doses repeated every 5 minutes, until seizure termination or MAX dose of 0.2 mg/kg IV/IO in total\n<b>OR</b>\n10 mg IM if no IV/IO access</center>"]]
+                },
+                {
+                    "title" : "<b>phenyTOIN (Dilantin)</b>",
+                    "loc" : [["acp","first"]],
+                    "dose_route" : [["<center>20 mg/kg add to 250 mL NS IV/IO\nInfusion should be no faster than 25 mg/min\n\n<b>USE NORMAL SALINE ONLY</b>\nphenyTOIN will precipitate in dextrose solutions</center>"]]
+                },
+                {
+                    "title" : "<b>Propofol</b>",
+                    "loc" : [["ccp","first"]],
+                    "dose_route" : [["<center>50 mg IV/IO q 5 minutes prn if MAP > 70\nPrepare to intubate\nFollowed by infusion at 0-5 mg/kg/hr</center>"]]
+                }
+            ]
+        },
+        {
+            "key" : "adult_traumatic_arrest",
+            "title" : "Adult Traumatic Cardiac Arrest",
+            "type" : "medical_directive",
+            "indications" : "<tab1>• Adult patient is vital signs absent (VSA) due to trauma</tab1>",
+            "contraindications" : "<tab1>• Not applicable.</tab1>",
+            "flowchartkeys" : [["Flowchart", "adult_trauma_arrest_flowchart"]],
+            "clinical" : "<tab1>• If this is inter-facility then a STAT patch to the TMP is indicated for further management decision making\n• Routinely bind pelvis if MOI suggests potential for pelvic injury\n• Perform bilateral needle thoracostomy in acute traumatic arrest</tab1>",
+            "drug_cards" : [
+                {
+                    "loc" : [["pcp","after"]],
+                    "dose_route" : [["<center><b>Initiate the Traumatic Cardiac arrest algorithm</b></center>"]]
+                }
+            ]
+        },
+        {
+            "key" : "adult_tbi",
+            "title" : "Traumatic Brain Injury",
+            "type" : "medical_directive",
+            "indications" : "<tab1>• Traumatic brain injury</tab1>",
+            "contraindications" : "<tab1>• Allergy or sensitivity to the medication</tab1>",
+            "flowchartkeys" : [["Flowchart", "adult_tbi_flowchart"]],
+            "clinical" : "<tab1>• Trauma patients should be kept warm with temperature > 35 degrees</tab1>",
+            "drug_cards" : [
+                {
+                    "title" : "<b>Norepinephrine (Levophed)</b>",
+                    "loc" : [["acp","after"]],
+                    "dose_route" : [["<center>0-0.5 microgram/kg/min IV/IO\nTarget MAP > 80</center>"]]
+                },
+                {
+                    "title" : "<b>Hypertonic Saline (3%)</b>",
+                    "loc" : [["acp","first"]],
+                    "dose_route" : [["<center>3 mL/kg IV/IO\nMAX rate of 20 mL/min\n\nConsider if MAP < 80 mmHg</center>"]]
+                },
+                {
+                    "section" : "OR",
+                    "title" : "<b>Mannitol</b>",
+                    "loc" : [["acp","first"]],
+                    "dose_route" : [["<center>1 g/kg IV/IO bolus\n\nMAP > 80 mmHg</center>"]]
+                }
+            ]
+        },
+        {
+            "key" : "adult_sci",
+            "title" : "Spinal Cord Injury",
+            "type" : "medical_directive",
+            "indications" : "<tab1>• Spinal cord injury</tab1>",
+            "contraindications" : "<tab1>• Not applicable</tab1>",
+            "flowchartkeys" : [["Flowchart", "adult_sci_flowchart"]],
+            "clinical" : "<tab1>• Not applicable</tab1>",
+            "treatment" : "See flowchart",
+            "drug_cards" : [
+            ]
+        },
+        {
+            "key" : "adult_neurogenic_shock",
+            "title" : "Neurogenic Shock",
+            "type" : "medical_directive",
+            "indications" : "<tab1>• Neurogenic shock</tab1>",
+            "contraindications" : "<tab1>• Allergy or sensitivity to the medication</tab1>",
+            "flowchartkeys" : [["Flowchart", "adult_neurogenic_shock_flowchart"]],
+            "clinical" : "<tab1>• In neurogenic shock (if not also hypovolemic) there is sufficient alpha activity at low doses of levophed that significant reflex bradycardia may arise due to unopposed vasoconstriction and carotid body stimulation/vagal tone. In this situation, dopamine may be considered</tab1>",
+            "drug_cards" : [
+                {
+                    "title" : "<b>Normal Saline or Ringers Lactate</b>",
+                    "loc" : [["acp","none"]],
+                    "dose_route" : [["<center>20-40 mL/kg IV/IO bolus\nTarget MAP > 80</center>"]]
+                },
+                {
+                    "title" : "<b>Norepinephrine (Levophed)</b>",
+                    "loc" : [["acp","after"]],
+                    "dose_route" : [["<center>0-0.5 microgram/kg/min IV/IO\nTarget MAP > 80</center>"]]
+                },
+                {
+                    "title" : "<b>Atropine Sulfate (Atropine)</b>",
+                    "loc" : [["acp","after"]],
+                    "dose_route" : [["<center>0.5 mg IV/IO q 3-5 minutes prn\nTotal MAX dose 3 mg (whichever is less)</center>"]]
+                },
+                {
+                    "title" : "<b>DOPamine</b>",
+                    "loc" : [["acp","after"]],
+                    "dose_route" : [["<center>5-20 microgram/kg/min IV\nTarget MAP > 80</center>"]]
+                },
+                {
+                    "title" : "<b>EPINEPHrine (Adrenalin)</b>",
+                    "loc" : [["ccp","first"]],
+                    "dose_route" : [["<center>0-0.5 microgram/kg/min IV/IO\nTarget MAP > 80</center>"]]
+                }
+            ]
+        },
+        {
+            "key" : "adult_hemorrhagic_shock",
+            "title" : "Traumatic Hemorrhagic Shock",
+            "type" : "medical_directive",
+            "indications" : "<tab1>• Hemorrhagic shock MAP < 65 mmHg with active, ongoing and significant bleeding</tab1>",
+            "contraindications" : "<tab1>• Allergy or sensitivity to the medication</tab1>",
+            "flowchartkeys" : [["Flowchart", "adult_hemorrhagic_shock_flowchart"]],
+            "clinical" : "<tab1>• Avoid hypothermia. Keep patient’s temperature above 35ºC</tab1>",
+            "drug_cards" : [
+                {
+                    "title" : "<b>Normal Saline or Ringers Lactate</b>",
+                    "loc" : [["acp","none"]],
+                    "dose_route" : [["<center>20-40 mL/kg IV/IO bolus\nTarget MAP > 65</center>"]]
+                },
+                {
+                    "title" : "<b>Consider PRBCs and TXA</b>",
+                    "loc" : [["acp","after"]],
+                    "dose_route" : [["<center><b>See Blood Product Administration Medical Directive\nand TXA Medical Directive</b></center>"]]
+                }
+            ]
+        },
+        {
+            "key" : "adult_blood_product",
+            "title" : "Blood Product Administration",
+            "type" : "medical_directive",
+            "indications" : "<tab1>• Hemorrhagic shock MAP < 65 mmHg with active, ongoing and significant bleeding\n• Hemoglobin < 70 grams/litre with evidence of circulatory compromise\n• TMP judgement</tab1>",
+            "contraindications" : "<tab1>• Allergy or sensitivity to the medication</tab1>",
+            "clinical" : "<tab1>• Contact the TMP to request Packed Red Blood Cells (PRBCs) at the scene. This would only be indicated in very rare individual circumstances i.e. uncontrolled hemorrhagic shock despite adequate crystalloid resuscitation, prolonged out-of-hospital time (i.e. prolonged extrication) and no significant delay to arrival to patient caused by waiting to retrieve the blood\n• Ensure all available identifiers (i.e. name, blood type, patient number, etc) are checked to ensure correct blood product transfusion\n• Once any of the above products are administered, the blood product form must be completed and submitted to the receiving institution, so that they are aware\n• Informed consent for blood product administration must be obtained if Ornge initiates the blood product (please refer to the consent form in the Clinical Affairs P&P manual) except in life threatening circumstances\n• Please note, if immediate PRBCs are required for an unstable patient request Type O blood if available (O Negative for women of child bearing age)</tab1>",
+            "drug_cards" : [
+                {
+                    "loc" : [["acp","first"], ["ccp", "after"]],
+                    "dose_route" : [
+                        ["<center><b>Packed Red Blood Cells (PRBC)</b></center>", "<center>1-2 PRBC to maintain\nMAP > 65 mm Hg or Hgb > 70 as directed</center>"],
+                        ["<center><b>Fresh Frozen Plasma (FFP)</b></center>", "<center>2 U for every 2 U PRBC delivered</center>"],
+                    ]
+                }
+            ]
+        },
+        {
+            "key" : "adult_warfarin_reversal",
+            "title" : "Reversal of Warfin/Coumadin",
+            "type" : "medical_directive",
+            "indications" : "<tab1>• Prothrombin Complex Concentrate (PCC) if emergency reversal of Warfarin therapy (intracranial bleed, emergency surgery, life threatening bleed) AND INR >1.5\n• Life-threatening hemorrhage (i.e., ICH, major trauma, GI bleed requiring RBC transfusion)\n• Emergency surgery</tab1>",
+            "contraindications" : "<tab1>• Allergy or sensitivity to the medication</tab1>",
+            "clinical" : "<tab1>• Contact the TMP to request Packed Red Blood Cells (PRBCs) at the scene. This would only be indicated in very rare individual circumstances i.e. uncontrolled hemorrhagic shock despite adequate crystalloid resuscitation, prolonged out-of-hospital time (i.e. prolonged extrication) and no significant delay to arrival to patient caused by waiting to retrieve the blood\n• Ensure all available identifiers (i.e. name, blood type, patient number, etc) are checked to ensure correct blood product transfusion\n• Once any of the above products are administered, the blood product form must be completed and submitted to the receiving institution, so that they are aware\n• Informed consent for blood product administration must be obtained if Ornge initiates the blood product (please refer to the consent form in the Clinical Affairs P&P manual) except in life threatening circumstances\n• Please note, if immediate PRBCs are required for an unstable patient request Type O blood if available (O Negative for women of child bearing age)</tab1>",
+            "drug_cards" : [
+                {
+                    "loc" : [["acp","first"], ["ccp", "after"]],
+                    "dose_route" : [
+                        ["<center><b>Packed Red Blood Cells (PRBC)</b></center>", "<center>1-2 PRBC to maintain\nMAP > 65 mm Hg or Hgb > 70 as directed</center>"],
+                        ["<center><b>Fresh Frozen Plasma (FFP)</b></center>", "<center>2 U for every 2 U PRBC delivered</center>"],
+                    ]
+                }
+            ]
+        },
+        {
+            "key" : "adult_tylenol_od",
+            "title" : "Suspected Acetaminophen Overdose",
+            "type" : "medical_directive",
+            "indications" : "Suspected Acetaminophen toxicity",
+            "contraindications" : "Allergy or sensitivity to the medication",
+            "drug_cards" : [
+                {
+                    "title" : "3% Mucomyst (Acetylcysteine)*\nDosage Guide and Preparation for IV Administration (reference CPS)",
+                    "loc" : [["acp", "none"]],
+                    "dose_route" : [
+                        ["", "Body Weight (kg)", "40", "50" ,"60", "70", "80", "90", "100", "110", "120"],
+                        ["Initial Infusion\n60 mg/kg/hr x 4 hrs", "Dose\n(ml/hr)", "80", "100", "120", "140", "160", "180", "200", "220", "240"],
+                        ["Maintenance Infusion\n6 mg/kg/hr", "Dose\n(ml/hr)", "8", "10", "12", "14", "16", "18", "20", "22", "24"],
+                        ["*High Risk*\nMaintenance Infusion\n12 mg/kg/hr", "Dose\n(ml/hr)", "16", "20", "24", "28", "32", "36", "40", "44", "48"]
+                    ],
+                    "notes" : "*Please refer to MucomystTM (acetylcysteine) Drug Monographs profile"
+                }
+            ],
+            "clinical" : "<tab1>• *If local reaction or rash occurs: Stop the infusion temporarily, treat with antihistamines, ventolin prn, then restart infusion at ½ the rate\n• <b>Mandatory Patch</b> required to initiate an acetylcysteine infusion\n• The ACP(f), CCP and PCCP/PCCN may maintain the administration of a MucomystTM (acetylcysteine) infusion as per the above table for an Acetaminophen overdose <b>in the following circumstances:</b>\n</tab1><tab2>◦ The infusion was initiated by the sending facility\n◦ Ingested or suspected ingestion of Acetaminophen dose is greater or equal to:\n</tab2><tab3>• 10 g TOTAL\n <b> OR </b> \n• 200 mg/kg ideal body weight\n</tab3><tab2>◦ The rate of infusion is in accordance with the accompanying dosage table and preparation guide\n◦ The rate of infusion cannot be altered by the Paramedic unless ordered by the Transport Medicine Physician</tab2>\n\n<title>Guidelines to Prepare a 3% Intravenous N-Acetylcysteine Bag</title>\nAs part of the Poison Centre’s treatment recommendations for the acetaminophen-poisoned patient, a 3 % nacetylcysteine solution will need to be prepared. The following are instructions on how to prepare this solution in <b>D5W.</b>\nPatient is > 40 kg\n<tab1>• Remove 150 ml from a 1000 ml bag of D5W\n• Add 150 ml of 20% IV N-Acetylcysteine to the remaining 850 ml in the D5W bag\n</tab1><tab2>◦ 150 ml X 200 mg/ml = 30 000 mg of N-Acetylcysteine\n◦ 30 000 mg in 1000 ml yields a final solution with 30 mg/ml or 3%\n</tab2>NOTES:<tab1>\n 1. 20% IV N-Acetylcysteine is equivalent to 200 mg/ml\n 2. The 3% solution is slightly hyperosmolar but still within the safety margin for administration via a peripheral vein\n 3. It is recognized that any particular bag of IV fluid could have excessive fluid more than advertised. It is of little consequence when making this 3% solution. Assume a finished volume as advertised on the bag\n</tab1>Mixing is important to ensure uniform distribution of N-Acetylcysteine in infusion solution"
+        },
+        {
+            "key" : "adult_opioid_od",
+            "title" : "Suspected Opioid Overdose",
+            "type" : "medical_directive",
+            "indications" : "GCS of < 12\nAND\nRespiratory rate < 10\nAND\nSuspected acute opioid overdose",
+            "contraindications" : "Allergy or sensitivity to the medication",
+            "drug_cards" : [
+                {
+                    "title" : "Normal Saline or Ringers Lactate",
+                    "loc" : [["acp", "none"]],
+                    "dose_route" : [["10-20 ml/kg IV/IO bolus\nTarget MAP > 65"]]
+                },
+                {
+                    "title" : "Naloxone (Narcan)",
+                    "loc" : [["pcp", "after"]],
+                    "dose_route" : [["0.5-1 mg IM\nrepeat q 5 minutes prn\nMAX 10 mg"]]
+                },
+                {
+                    "title" : "Naloxone (Narcan)",
+                    "loc" : [["acp", "after"]],
+                    "dose_route" : [["0.5-1 mg slow IV, repeat q 3 minutes prn\nMAX 10mg\nIf increased LOC consider continuous IV infusion initially at 1/2 total waking dose per hour, titrate according to patient response"]]
+                }
+            ],
+            "clinical" :
+                "Should be cautious when dealing with a suspected opioid overdose patient as naloxone (Narcan) can have dramatic effect on a chronic opioid user, causing withdrawals and possible violent behaviors"
+        },
+        {
+            "key" : "adult_sedative_od",
+            "title" : "Sedative Overdose",
+            "type" : "medical_directive",
+            "indications" : "Known sedative overdose",
+            "contraindications" : "Allergy or sensitivity to the medication",
+            "drug_cards" : [
+                {
+                    "title" : "Normal Saline or Ringers Lactate",
+                    "loc" : [["acp", "none"]],
+                    "dose_route" : [["10-20 ml/kg IV/IO bolus\nTarget MAP > 65"]]
+                },
+                {
+                    "title" : "Norepinephrine (Levophed)",
+                    "loc" : [["acp", "after"]],
+                    "dose_route" : [["0.05-0.5 microgram/kg/min IV/IO\nTarget MAP > 65"]]
+                }
+            ],
+            "clinical" :
+                "Not applicable"
+        },
+        {
+            "key" : "ped_tachycardia",
+            "title" : "Paediatric Tachycardia",
+            "type" : "medical_directive",
+            "indications" : "Tachycardia",
+            "contraindications" : "Allergy or sensitivity to the medication",
+            "drug_cards" : [
+                {
+                    "title" : "",
+                    "loc" : [["acp", "after"]],
+                    "dose_route" : [["Initiate the appropriate algorithm based upon the presenting ECG rhythm"]]
+                },
+                {
+                    "title" : "Adenosine",
+                    "loc" : [["acp", "after"]],
+                    "dose_route" : [["Adenosine 0.1 mg/kg rapid IV/IO bolus (MAX 6 mg)\nfollowed by rapid Normal Saline flush 5-10 ml\nRepeat Adenosine at 0.2 mg/kg q 2 min if no change"]]
+                },
+                {
+                    "title" : "",
+                    "loc" : [["acp", "first"]],
+                    "dose_route" : [["<b>Synchronized Cardioversion</b>"]]
+                },
+                {
+                    "title" : "Procedural Sedation",
+                    "loc" : [["acp", "first"]],
+                    "dose_route" : [
+                        [ "SBP > 70 + (2 x age in years)", "SBP < 70 + (2 x age in years"],
+                        [ "Ketamine 0.5 mg/kg\n<b>OR</b>\nMidazolam 0.05 mg/kg and/or\nFentaNYL 1 microgram/kg", "Ketamine 0.5 mg/kg"]
+                    ]
+                }
+            ],
+            "clinical" :
+            "Adenosine should be administered in peripheral IV site close to patient's heat. Two syringes (one with Adenosine dose and one with NS flush) connected to a T-connector or stopcock is recommended for rapid administration of both medication and flush"
+        },
+        {
+            "key" : "ped_nrp",
+            "title" : "Neonatal Resuscitation (NRP)",
+            "type" : "medical_directive",
+            "indications" : "• Neonatal vital signs absent",
+            "flowchartkeys" : [["Neonatal Resuscitation", "ped_nrp_0"], ["Pediatric Post Arrest ROSC", "ped_nrp_1"]],
+            "contraindications" : "• Allergy or sensitivity to the medication",
+            "drug_cards" : [
+                {
+                    "title" : "",
+                    "loc" : [["acp", "after"]],
+                    "dose_route" : [["<b>Initiate Neonatal Resuscitation Algorithm"]]
+                },
+                {
+                    "section" : "<b>Neonatal Resuscitation Drug Dosages 0-28 days",
+                    "title" : "",
+                    "loc" : [["acp", "after"]],
+                    "dose_route" : [
+                        ["<b>Drug", "EPINEPHrine", "EPINEPHrine", "Dextrose"],
+                        ["<b>Concentration", "1:10,000", "1:10,000", "D₁₀W"],
+                        ["<b>Preparation", "1 ml Syringe", "3 mL Syringe", "D₁₀W"],
+                        ["<b>Dose", "0.1 mL/kg\n(0.01 mg/kg)", "1 mL/kg\n(0.1 mg/kg)", "2 mL/kg\n(0.2 mg/kg)"],
+                        ["<b>Route", "UVC/IV/IO", "ETT*", "UVC/IV/IO"]
+                    ],
+                    "notes" : "*IV or UVC route is preferred"
+                },
+                {
+                    "title" : "",
+                    "loc" : [["acp", "first"]],
+                    "dose_route" : [
+                        ["<b>Drug", "Volume: Normal Saline and/or Blood as indicated"],
+                        ["<b>Dose", "10 mL/kg IV over 5 to 10 minutes"],
+                        ["<b>Route", "UVC/IV/IO"]
+                    ]
+                }
+            ],
+            "clinical" :
+            "• Administration of Narcan is not recommended in the initial steps of resuscitation\n• *UVC/IV/IO route preferred. May consider giving one dose of EPINEPHrine via the tracheal tube (ET) while obtaining vascular access. If EPINEPHrine given by ET route and no response, as soon as UVC or IO access obtained do not wait 3-5 minutes after ET dose to administer IV dose\n• Preparation for Transport:\n&nbsp&nbsp&nbspo Anticipate need for thermoregulation during initial steps of resuscitation, especially in premature infants < 32 weeks GA; all neonates require continuous temperature monitoring during initial resuscitation, stabilization and transport. Target normal temperatures 36.5 to 37.5 ̊C\n&nbsp&nbsp&nbspo Following initial steps of resuscitation, target preductal oxygen saturations 90 to 95%; In neonates with suspected congenital heart disease requiring Alprostadil infusion, review preductal oxygen saturation target with TMP\n&nbsp&nbsp&nbspo In neonates with suspected persistent pulmonary hypertension of the newborn, target preductal oxygen saturations 92% to 95%"
+        },
+        {
+            "key" : "ped_seizure",
+            "title" : "Seizures",
+            "type" : "medical_directive",
+            "indications" : "Active seizure",
+            "flowchartkeys" : [["Neonatal Seizure", "ped_seizure_0"], ["Pediatric Seizure", "ped_seizure_1"]],
+            "contraindications" : "• If blood glucose < 3 mmol/L, proceed with “Hypoglycemic Emergencies”. Concurrently, medicate with a benzodiazepine (as stated below) for treatment of seizure\n• Allergy or sensitivity to the medication",
+            "drug_cards" : [
+                {
+                    "title" : "Midazolam (Versed)",
+                    "loc" : [["acp", "after"]],
+                    "dose_route" : [["0.1 mg/kg IV/IO (MAX 4 mg)","0.2 mg/kg IM (MAX 5 mg)"]]
+                },
+                {
+                    "title" : "Midazolam (Versed)",
+                    "loc" : [["acp", "first"], ["pccp", "after"]],
+                    "dose_route" : [["For <b>Status Epilepticus</b>",
+                    "Midazolam bolus: 0.15 mg/kg/dose IV/IO", "Midazolam infusion: initiate at 50 microgram/kg/hour q 5 min to a MAX of 1400 microgram/kg/hour\nBolus with 0.15 mg/kg/dose to MAX of 4 mg/dose IV/IO prior to each titration"]]
+                },
+                {
+                    "title" : "LORazepam (Ativan)",
+                    "loc" : [["acp", "after"]],
+                    "dose_route" : [
+                        [ "< 40 kg"],
+                        [ "0.1 mg/kg IV/IO\nTo a MAX of 4 mg\nMay repeat q 5 minutes\nTo a MAX of 8 mg"]
+                    ]
+                },
+                {
+                    "title" : "Fosphenytoin",
+                    "loc" : [["acp", "first"]],
+                    "dose_route" : [
+                        [ "< 40 kg"],
+                        [ "20 mg PE*/kg IV/IM Infuse over 5 to 10 mins\nMAX dose 3 mL/site IM\nIf > 30 kg, requires multiple sites"]
+                    ],
+                    "notes" : "*PE (phenyTOIN equivalents)"
+                },
+                {
+                    "title" : "phenyTOIN (Dilantin)",
+                    "loc" : [["acp", "first"]],
+                    "dose_route" : [
+                        [ "Infants (Age > 1 month) and Older Children"],
+                        [ "20 mg mg/kg IV/IM Infuse over 20 mins\nNote: <b>USE NORMAL SALINE ONLY</b> as phenyTOIN will precipitate in dextrose solutions"]
+                    ]
+                },
+                {
+                    "title" : "PHENObarbital (Phenobarbitone)",
+                    "loc" : [["ccp", "first"]],
+                    "dose_route" : [
+                        [ "< 40 kg"],
+                        [ "20 mg mg/kg IV/IM over 20 minutes"]
+                    ]
+                }
+            ],
+            "clinical" :
+            "• If the seizure is not terminated within five 5 minutes of administration of Midazolam, <b>AND</b> the ACP(f), CCP and the PCCP/PCCN is unable to establish contact with the TMP, a repeat dose of Midazolam (0.1 mg/kg IV) may be administered\n• Fosphenytoin is the preferred drug over phenyTOIN due to its’ enhanced safety profile, should be given in preference <u>if available</u>\n• Following benzodiazepine administration in the seizure algorithm, Fosphenytoin and/or phenyTOIN are the preferred seizure medications in Paediatrics > 1 month\n• 0.2 micron filter must be used when administering phenyTOIN\n• No micron filter is required to administer Fosphenytoin\n• Fosphenytoin/ phenyTOIN should not be used with a diagnosis of toxic ingestion or in the setting of a cardiac conduction system disturbance\n• Consider reducing the rate of phenyTOIN administration to 25 mg/min in children with cardiac conditions"
+        }
+    ]
+}
+
+

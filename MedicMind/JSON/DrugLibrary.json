@@ -2,7 +2,91 @@
   "drugs" : [
     {
       "name" : "Acetaminophen",
-      "key" : "acetaminophen"
+      "key" : "acetaminophen",
+      "content" : [
+          [
+              ["Route", "", "PO", "PR"],
+              ["Scope of Practice", "", "PCP(f)", "≥ACP(f)"]
+          ],
+          [
+              ["<b>Formulary Dosage Forms</b>", "325 and 500 mg tablets; 120, 325, 650 mg suppositories; Oral liquid (multiple conc)"],
+              ["<b>Other Names</b>", "Tylenol, Novo-Gesic, Paracetamol"],
+              ["<b>Classification</b>", "Antipyretic, Analgesic"]
+          ],
+          [
+              ["<b>Indications</b>"],
+              ["<tab1>• For the treatment of patients found to be febrile: Temperature exceeding 38°C via axilla or 38.5°C via tympanic, oral, or rectal route following a complete physical assessment\n• For the treatment of minor aches and pains or headaches</tab1>"]
+          ],
+          [
+              ["<b>Dosing</b>"],
+              ["<b>Adult:</b>", "Usual Dosing: For patients weighing 40 to 60 kg give 15 mg/kg PO/PR q 4 hours prn.\n For patients weighing ≥ 60 kg give 975-1000 mg PO/PR q 4 hours prn (MAX 75 mg/kg OR 4 grams in 24 hours)"],
+              ["<b>Paediatric:</b>", "< 12 Years:\nOral : 10-15 mg/kg/dose PO q 4-6 hours prn (Maximum daily dose 75 mg/kg/day or 4 g/day)\nRectal: 10-20 mg/kg/dose PR q 4-6 hours prn (Maximum daily dose 80 mg/kg/day or 4 g/day)"],
+              ["<b>Neonatal:</b>", "Do not use if gestational age less than 30 weeks.\nOral: 10-15 mg/kg/dose PO q 4-6 hours prn (Maximum daily dose 75 mg/kg/day or 4 g/day)\nRectal: 10-20 mg/kg/dose PR q 4-6 hours prn (Maximum daily dose 80 mg/kg/day or 4 g/day)\nFor doses <80 mg the oral drops, not suspension, may be administered rectally"],
+              ["<b>Special\nConsiderations:</b>", "<tab1>• Acetaminophen may cause false-positive urinary 5-hydroxyindoleacetic acid\n• Rate of absorption may be decreased when given with food. Management: Administer without regard to food\n• Antidote for acute toxicity is acetylcysteine (see Medical Directive listed below)\n• In ASA-induced asthma patient, max 1000 mg dose is recommended followed by 3 hours of monitoring to ensure there is no cross-sensitivity</tab1>"]
+          ],
+          [
+              ["#medical_directives"],
+              ["adult_awake_analgesia", "ped_fever"],
+              ["adult_fever", "ped_tylenol_od"],
+              ["adult_tylenol_od"]
+          ],
+          [
+              ["<b>Reconstitution and Administration</b>"],
+              ["May administer without regards to food; may administer with food to decrease possible GI upset; shake drops and suspension well before use; do not crush or chew extended release products."]
+          ],
+          [
+              ["<b>Compatibility/Stability/Storage</b>"],
+              ["<b>Compatibility:</b>", "n/a"],
+              ["<b>Stability and Storage:</b>", "Store in a place protected from excessive heat or humidity."],
+              ["<b>Freezing:</b>", "<b>Do not use if frozen.</b>"]
+          ],
+          [
+              ["<b>Patient Safety</b>"],
+              ["Limit acetaminophen dose from all sources (prescription, OTC, combination products) and all routes of administration (oral, rectal) to <4 g/day (adults)."]
+          ],
+          [
+              ["<b>Patient Monitoring</b>"],
+              ["Consider serum acetaminophen levels where acute overdose suspected or with long-term use or combination product use in patients with hepatic disease. Hepatotoxicity may occur after ingestion of a single dose of more than 7.5 g (adults) or 150 mg/kg (children); a dose of 10 g or more is potentially fatal. Early symptoms (nausea, vomiting, weakness, diaphoresis) usually occur after acute ingestion or overdose large enough to cause hepatic toxicity. A latent period of 24–36 hours exists between ingestion and the onset of symptoms of hepatic injury. Laboratory evidence usually appears within 24–48 hours if severe hepatotoxicity is to occur. Therefore, liver function tests (AST or ALT) should be monitored for up to 48 hours after an acute ingestion. Following the latent period, vomiting, pain in the upper right quadrant and manifestations of hepatic failure including the onset of coma, may ensue. Maximum hepatic necrosis appears 2–5 days following overdose. Signs include gross elevation of ALT, AST, increased bilirubin, hypoglycemia and increased prothrombin time. Acute overdose includes supportive measures, gut decontamination with activated charcoal, and prompt administration of acetylcysteine as an antidote. Laboratory determinations include plasma acetaminophen levels, AST, ALT, prothrombin time, bilirubin, creatinine, urea, blood glucose and electrolyte concentrations.\nProperly timed plasma acetaminophen levels are key, the first level should be drawn at least 4-24 hours post-ingestion as peak concentrations may not be reached before this time and to determine the probability of hepatotoxicity and need for acetylcysteine therapy. Even in the absence of serum level determinations, therapy with acetylcysteine should be promptly instituted if a massive acetaminophen overdose is suspected (i.e., >7.5 g in adults or >150 mg/kg in children) and 24 hours or less have elapsed since ingestion."
+              ]
+          ],
+          [
+              ["<b>Complications and Adverse Effects</b>"],
+              ["Skin: Rash/urticaria (rare)\nHepatic: Mild increase in hepatic enzymes may occur and is reversible when the drug is withdrawn\nGI: Nausea, bloating, vomiting"]
+          ],
+          [
+              ["<b>Contraindications</b>"],
+              ["• When used for self-medication, do not use with other drug products containing acetaminophen or if allergic to acetaminophen or any of the inactive ingredients\n• If acetaminophen has been given within the last 4 hours"]
+          ],
+          [
+              ["<b>Precautions</b>"],
+              ["• Hepatotoxicity: Acetaminophen has been associated with acute liver failure, at times resulting in liver transplant and death. Hepatotoxicity is usually associated with excessive acetaminophen intake and often involves more than one product that contains acetaminophen. In addition, chronic daily dosing may also result in liver damage in some patients\n• Skin reactions: Serious and potentially fatal skin reactions, including acute generalized exanthematous pustulosis (AGEP), Stevens-Johnson syndrome (SJS), and toxic epidermal necrolysis (TEN) have occurred rarely with acetaminophen use. Discontinue therapy at the first appearance of skin rash\n• Ethanol use: Use with caution in patients with alcoholic liver disease; consuming ≥3 alcoholic drinks/day may increase the risk of liver damage\n• Malnutrition: Use with caution in patients with chronic malnutrition"]
+          ],
+          [
+              ["<b>Drug Interactions</b>"],
+              ["Acetaminophen may enhance the anticoagulant effect of Vitamin K Antagonists. This appears most likely with daily acetaminophen doses exceeding 1.3 or 2 g/day for multiple consecutive days.\nAlcohol may enhance the hepatotoxic effect of Acetaminophen."]
+          ],
+          [
+              ["<b>Onset:</b>", "30-60 minutes", "<b>Peak:</b>", "n/a"], ["<b>T1/2:</b>", "n/a", "<b>Duration:</b>", "4-6 hours"]
+          ],
+          [
+              ["<b>Pregnancy and Lactation</b>"],
+              ["<b>Pregnancy:</b>", "(C) The use of acetaminophen in normal doses during pregnancy is not associated with an increased risk of miscarriage or still birth; however, an increase in fetal death or spontaneous abortion may be seen following maternal overdose if treatment is delayed."],
+              ["<b>Lactation:</b>", "Manufacturer recommends using with caution when indicated."]
+          ],
+          [
+              ["<b>Pharmacologic Mechanism</b>"],
+              ["Analgesic and antipyretic effects are believed to be related to the inhibition of prostaglandin synthetase (a mechanism shared by ASA and related drugs), with antipyretic effects produced through action on the hypothalamic heat-regulating centre."]
+          ],
+          [
+              ["<b>References</b>"],
+              ["• CHEO Pediatric and Neonatal Manual. 2014. www.outreach.cheo.on.ca\n• AHFS: Drug Information. Bethesda, MD: American Society of. Health-System Pharmacists, 2012\n• Lexicomp Online, Pediatric and Neonatal Lexi-Drugs Online\n• Lexicomp Online, Lexi-Drugs Online\n• Sick Kids Drug Handbook and Formulary. 2014 Version\n• LactMed. http://toxnet.nlm.nih.gov/cgi-bin/sis/htmlgen?LACT. Accessed Oct 13th, 2014"]
+          ],
+          [
+              [""],
+              ["<i>Note: The information contained herein does not supersede or negate the MoHLTC Provincial Advanced Life Support Patient Care Standards or ORNGE MD and should only serve as general information for the medication itself</i>"],
+              ["<b>Infusion Table (not included)</b>"]
+          ]
+        ]
     },
     {
       "name" : "Abciximab",
@@ -214,15 +298,15 @@
       "drug_tables" : [
         {
           "name" : "Ketamine",
-          "diluent_label" : "100 mL (D5W or NS)",
-          "amount_label" : "100 mg",
-          "concentration_label" : "1 mg/mL\nPeripheral IV",
-          "dosing_label" : "Adult Continues IV Infusion Dosing:\n   Anesthesia: 0.5-3.5 mg/kg/hr IV;\n   Analgesia: 0.03-0.06 mg/kg/hr as SubQ (preferred) or IV infusion; increase every 2-4 hours based on response (up to a maximum rate of 10 mg/hr for SubQ)",
-          "concentration" : 1,
+          "diluent_label" : "40 mL",
+          "amount_label" : "500 mg/10 mL vial",
+          "concentration_label" : "10 mg/mL\nPeripheral IV",
+          "dosing_label" : "Adult Continues IV Infusion Dosing: Sedation and Pain Management for Intubated and Ventilated Patients 0.3-2 mg/kg/hr IV",
+          "concentration" : 10,
           "unit_weight" : "mg",
           "unit_time" : "hr",
           "minDose" : 0.25,
-          "maxDose" : 3.5,
+          "maxDose" : 2,
           "doseIncrement" : 0.25,
           "weight_based" : true
         }
@@ -258,18 +342,95 @@
           "acyclovir" : false
       },
       "content" : [
-          [["Other Names:", "Ketalar"]],
-          [["Class", "Anesthetic, Analgesic"]],
-          [["Pharmicokinetics:", "Onset: 30 seconds", "Peak: 5-10 minutes", "Half-life: 10-15 minutes", "Duration: 5-10 minutes"]],
-          [["Indications:",
-        "As the sole anesthetic agent for recommended diagnostic and surgical procedures",
-        "Used as an induction agent prior to the administration of other general anesthesia agents",
-        "To provide pain control in patients who do not have adequate palliative care pain control",
-        "Postoperative pain management in conjuction with morphine"]],
-          [["Contraindications:",
-        "Hypersensitivity to the medication and/or its derivatices",
-        "Conditions in which an increase in blood pressure would be hazardous"]
-      ]]
+          [
+              ["Route", "IV/IO", "Intermittent IV\nInfusion", "Continuous IV\nInfusion", "IM"],
+              ["Scope of Practice", "≥ACP(f)", "≥ACP(f)", "≥ACP(f)", "≥ACP(f)"]
+          ],
+          [
+              ["<b>Formulary Dosasge Forms</b>", "500 mg / 50 mL vial (10 mg/mL), 100 mg / 2 mL vial (50 mg /mL)"],
+              ["<b>Other Names</b>", "Ketalar"],
+              ["<b>Classification</b>", "Anesthetic, Analgesic"]
+          ],
+          [
+              ["<b>Indication(s)</b>"],
+              ["<tab1>• As the sole anesthetic agent for recommended diagnostic and surgical procedures\n• Used as an induction agent prior to the administration of other general anesthesia agents\n• To provide pain control in patients who do not have adequate palliative care pain control\n• Postoperative pain management in conjunction with morphine</tab1>"]
+          ],
+          [
+              ["<b>Dosing</b>"],
+              ["<b>Adult:</b>", "<i>Sedation and Pain Management for Intubated and Ventilated Patients:</i> 1-2 mg/kg IV over 1 minute x 1 dose followed by 0.5 mg/kg q 20 minutes prn or continuous infusion at Continuous IV infusion of 0.3 to 2mg/kg/hr\n<i>Analgesia:</i> 0.1-0.5 mg/kg IV Q 5 minutes prn\n<i>ECMO/ECLS:</i> 10-20 mg IV q 5 mins prn or continuous infusion at 0-4.5 mg/kg/hr IV\n<i>Combative Patient:</i> 1-2 mg/kg IV/IO*over 1-3 minutes <b>OR</b> 3-5 mg/kg IM\n<i>Pre-intubation:</i> Induction dose of 1-2 mg/kg IV over 30 seconds; reduced titration dose of 10-30 mg IV q 60 seconds with the goal 2 mg/kg within 5 minutes"],
+              ["<b>Paediatric:</b>", "<i>Anesthesia/Induction:</i> 0.5-2 mg/kg IV direct, use smaller doses (0.5-1 mg/kg) for sedation for minor procedures.\n<i>Continuous IV Infusion (sedation):</i> 300-1200 mcg/kg/hour; start low and titrate to effect.\nIM: 3-7 mg/kg followed by maintenance dosing as needed (50% induction dose).\n<i>Analgesia:</i> 60-240 microgram/kg/hour continuous IV infusion\nKetamine should not be used in infants < 3 months of age"],
+              ["<b>Neonatal:</b>", "n/a"],
+              ["<b>Special Considerations:</b>", "• Intermittent boluses of ketaMINE for breakthrough pain are not recommended\n• Antidote: accidental overdoses of 10 times the recommended doses have been treated symptomatically with airway and ventilatory support\n• With hypersalivation, consider Atropine 0.02 mg/kg IV"]
+          ],
+          [
+              ["#medical_directives"],
+              ["adult_rsi", "ped_rsi"],
+              ["adult_ventilation", "ped_awake_sedation"],
+              ["adult_awake_analgesia", "ped_tachycardias"],
+              ["adult_intubated_analgesia"],
+              ["adult_ecmo"],
+              ["adult_bradycardia"],
+              ["adult_afib"],
+              ["adult_svt"],
+              ["adult_vtach"],
+              ["adult_combative"]
+          ],
+          [
+              ["<b>Reconstitution and Administration</b>"],
+              ["<b>Adult Direct IV:</b> Administer undiluted over 1 minute, more rapid administration may result in respiratory depression and enhanced pressor response. Some experts suggest administration over 2 to 3 minutes.\n<b>Adult IV/SC Continuous Infusion:</b> Administer 10 mg/mL in a 50 mL syringe via infusion pump.\n<b>Paediatric Direct IV:</b> Maximum concentration of 50 mg/mL, do not exceed administration rates greater than 30 mg/kg/hr or 120 mg/hour.\n<b>Paediatric IV Continuous Infusion:</b> See end of Paediatric MD for the Paediatric Mixing and Administration Table for Continuous Infusion Summary\nCan be administered <b>intraosseous (IO).</b>"]
+          ],
+          [
+              ["<b>Compatibility/Stability/Storage</b>"],
+              ["<b>Compatibility:</b>", "<b>Admixture:</b> Compatible with NS and D5W.\n<b>Y-site Compatible:</b> cefepime, cetazidime, propofol.\nY-site <b>Incompatibilities:</b> Incompatible with nalbuphine, haloperidol, meperidine, diazepam."],
+              ["<b>Stability and\nStorage:</b>", "Stable at room temp. Protect from light. Infusion solutions should be used within 24 hours on mixing. Stable for 182 days at room temp in SWFI, at a concentration of 10 mg/mL stored in glass vials. Darkening of solution upon exposure to light does not affect potency."],
+              ["<b>Freezing:</b>", "Protect from freezing."]
+          ],
+          [
+              ["<b>Patient Safety</b>"],
+              ["<b>Sound-alike/Look-alike issues:</b> Ketalar may be confused with Kenalog, or Ketorolac\n<b>High-Alert Medication:</b> Heightened risk of causing significant patient harm when used in error."]
+          ],
+          [
+              ["<b>Patient Monitoring</b>"],
+              ["Monitor cardio/respiratory status and CNS status (when used for procedures monitor sedation score); cardiac monitor and blood pressure monitor required. Monitor for emergence reactions."]
+          ],
+          [
+              ["<b>Complications and Adverse Effects</b>"],
+              ["Respiratory depression with rapid administration of high doses.\nCV: hypertension, tachycardia; rarely hypotension and bradycardia.\nCNS: hallucinations, vivid dreams, confusion excitement (Antidote: haloperidol 2-4 mg/day PO/IM/SC or midazolam 2-4 mg/day SC), sedation, increased ICP, seizures.\nMusculoskeletal: myoclonus, random movement of the extremities, fasciculations.\nGI: nausea and vomiting (minimal), increased salivation.\nInjection site reactions."]
+          ],
+          [
+              ["<b>Contraindications</b>"],
+              ["• Hypersensitivity to the medication and/or its derivatives\n• Conditions in which an increase in blood pressure would be hazardous"]
+          ],
+          [
+              ["<b>Precautions</b>"],
+              ["• Use caution with impaired liver function\n• KetaMINE should be used with extreme caution in patients with seizure disorder or increased intracranial pressure\n• KetaMINE should be used cautiously in patients with hypertension, CHF, CVA, thyrotoxicosis"]
+          ],
+          [
+              ["<b>Drug Interactions</b>"],
+              ["• Inhaled anesthetics may result in prolonged ketaMINE effects\n• Orphenadrine and thalidomine may enhance the CNS depression"]
+          ],
+          [
+              ["<b>Onset:</b>", "30 seconds", "<b>Peak:</b>", "5-10 minutes"],
+              ["<b>T1/2:</b>", "10-15 minutes", "<b>Duration:</b>", "5-10 minutes"]
+          ],
+          [
+              ["<b>Pregnancy and Lactation</b>"],
+              ["<b>Pregnancy:</b>", "(B) Since the safe use in pregnancy and delivery has not been established, the manufacturer recommends that ketaMINE be considered contraindicated in pregnant women"],
+              ["<b>Lactation:</b>", "Breast milk levels of ketaMINE have not been measured after administration to humans. Minimal data indicated that ketaMINE use in nursing mothers may not affect the breastfed infant or lactation. Until more data are available, ketamine should only be used with careful monitoring during breastfeeding"]
+          ],
+          [
+              ["<b>Pharmacologic Mechanism</b>"],
+              ["Produces a cataleptic-like state in which the patient is dissociated from the surrounding environment by direct action on the cortex and limbic system. KetaMINE is a noncompetitive NMDA receptor antagonist that blocks glutamate. Low (subanesthetic) doses produce analgesia, and modulate central sensitization, hyperalgesia and opioid tolerance. Reduces polysynaptic spinal reflexes."]
+          ],
+          [
+              ["References"],
+              ["• The Ottawa Hospital Parenteral Drug Therapy Manual. 2014. Mario Bédard, Pharm.D., Nathalie Grégoire, B.Pharm, Anne Massicotte, Bpharm. M.Sc.\n• AHFS: Drug Information. Bethesda, MD: American Society of. Health-System Pharmacists, 2012\n• Lexicomp Online, Pediatric and Neonatal Lexi-Drugs Online, Hudson, Ohio: Lexi-Comp, Inc.; 2013; Accessed Oct 6, 2014\n• Lexicomp Online, Lexi-Drugs Online, Hudson, Ohio: Lexi-Comp Inc.; 2013; Accessed Oct 6, 2014\n• CHEO Pediatric and Neonatal Manual. 2014 Version. www.outreach.cheo.on.ca\n• Critical Care Medicine Drip Infusions and Tables. 4th Edition 2008. Medical Information Systems, Inc\n• Sick Kids IV Monograph. 2014 Version\n• LactMed Drug and Lactation. The National Library of Medicines accessed via http://toxnet.nlm.nih.gov/cgibin/sis/htmlgen?LACT"]
+          ],
+          [
+              [""],
+              ["Note: The information contained herein does not supersede or negate the MoHLTC Provincial Advanced Life Support Patient Care Standards or ORNGE MD and should only serve as general information for the medication itself"]
+          ]
+      ]
     },
     {
       "name" : "Ketorolac",
