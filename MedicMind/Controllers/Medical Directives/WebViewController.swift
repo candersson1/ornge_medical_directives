@@ -64,9 +64,9 @@ extension WebViewController : WKNavigationDelegate {
     
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
         
-        colour = "#FF0000"
+        colour = "#ff0000"
         
-        let css = "body { background-color : \(colour!) }"
+        let css = "ol ol {list-style-type: lower-alpha;}"
         
         let js = "var style = document.createElement('style'); style.innerHTML = '\(css)'; document.head.appendChild(style);"
         

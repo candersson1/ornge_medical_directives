@@ -50,20 +50,20 @@ class FlowChartViewController: UIViewController {
                 grid.addElementToGrid(element)
              }
              else if( element.type == "square") {
-                let attString = element.text.htmlAttributed(family: DataManager.instance.fontName, size: textSize)
-                let boxSize = getTextBoxSizeByString(str: attString!)
+                let attString = NSAttributedString(string: element.text)
+                let boxSize = getTextBoxSizeByString(str: attString)
                 element.contentSize = CGSize(width: boxSize.width + 10, height: boxSize.height + 10)
                 grid.addElementToGrid(element)
             }
             else if( element.type == "exit") {
-                let attString = element.text.htmlAttributed(family: DataManager.instance.fontName, size: textSize)
-                let boxSize = getTextBoxSizeByString(str: attString!)
+                let attString = NSAttributedString(string: element.text)
+                let boxSize = getTextBoxSizeByString(str: attString)
                 element.contentSize = CGSize(width: boxSize.width + 10, height: boxSize.height + 40)
                 grid.addElementToGrid(element)
             }
             else if( element.type == "rounded") {
-                let attString = element.text.htmlAttributed(family: DataManager.instance.fontName, size: textSize)
-                let boxSize = getTextBoxSizeByString(str: attString!)
+                let attString = NSAttributedString(string: element.text)
+                let boxSize = getTextBoxSizeByString(str: attString)
                 element.contentSize = CGSize(width: boxSize.width + 30, height: boxSize.height + 10)
                 grid.addElementToGrid(element)
             }
@@ -549,8 +549,8 @@ class Grid
     
     func drawTextElement(to layer : CALayer, at : CGPoint, str : String)
     {
-        let attString = str.htmlAttributed(family: DataManager.instance.fontName, size : textSize)?.trailingNewlineChopped
-        let textBoxSize = getTextBoxSizeByString(str: attString!)
+        let attString = NSAttributedString(string: str)
+        let textBoxSize = getTextBoxSizeByString(str: attString)
         
         let adjustedOrigin = CGPoint(x: at.x - textBoxSize.width/2, y: at.y - textBoxSize.height/2)
         let textframe = CGRect(origin: adjustedOrigin, size: textBoxSize)

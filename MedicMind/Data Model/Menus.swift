@@ -30,6 +30,7 @@ class Menu : Page {
         case directive = "directive"
         case tool = "tool"
         case document = "document"
+        case webview = "webview"
     }
     
     required init(from decoder: Decoder) throws {
@@ -49,6 +50,8 @@ class Menu : Page {
             case .tool:
                 pages.append(try pagesArray.decode(Page.self))
             case .document:
+                pages.append(try pagesArray.decode(Document.self))
+            case .webview:
                 pages.append(try pagesArray.decode(Document.self))
             }
         }

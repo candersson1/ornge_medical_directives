@@ -36,35 +36,15 @@ struct Drug : Codable {
         self.treatment_data = try container.decodeIfPresent([TreatmentData].self, forKey: .treatment_data) ?? []
         self.medical_directives = try container.decodeIfPresent([String].self, forKey: .medical_directives) ?? []
         self.y_site = try container.decodeIfPresent([String:Bool].self, forKey: .y_site) ?? [:]
-        self.content = try container.decodeIfPresent([[[String]]].self, forKey: .content) ?? [[[""]]]
+        self.content = try container.decodeIfPresent([[[String]]].self, forKey: .content) ?? [[[]]]
         self.drug_tables = try container.decodeIfPresent([DrugTable].self, forKey: .drug_tables) ?? []
-    }
-}
-
-struct TreatmentData : Codable
-{
-    var key = ""
-    var dose_route : [[String]] = []
-    var loc = [["", ""]]
-
-    private enum CodingKeys: String, CodingKey {
-        case key
-        case dose_route
-        case loc
-    }
-    
-    init(from decoder: Decoder) throws {
-        let container = try decoder.container(keyedBy: CodingKeys.self)
-        self.key = try container.decode(String.self, forKey: .key)
-        self.dose_route = try container.decodeIfPresent([[String]].self, forKey: .dose_route) ?? []
-        self.loc = try container.decodeIfPresent([[String]].self, forKey: .loc) ?? [["pcp","none"]]
-
     }
 }
 
 struct DrugTable : Codable
 {
     var name = ""
+    var static_tables : [[String]]
     var diluent_label = ""
     var amount_label = ""
     var concentration_label = ""
@@ -72,29 +52,29 @@ struct DrugTable : Codable
     var dosing_label = ""
     var unit_weight = ""
     var unit_time = ""
-    var minDose = 0.0
-    var maxDose = 1.0
-    var doseIncrement = 0.1
+    var dose_titles : [String] = []
+    var dose_array : [Double] = []
     var weight_based = false
     
     private enum CodingKeys: CodingKey {
         case name
+        case static_tables
         case diluent_label
         case amount_label
         case concentration
         case concentration_label
         case dosing_label
+        case dose_titles
         case unit_weight
         case unit_time
-        case minDose
-        case maxDose
-        case doseIncrement
+        case dose_array
         case weight_based
     }
     
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         self.name = try container.decodeIfPresent(String.self, forKey: .name) ?? ""
+        self.static_tables = try container.decodeIfPresent([[String]].self, forKey: .static_tables) ?? [[]]
         self.diluent_label = try container.decodeIfPresent(String.self, forKey: .diluent_label) ?? ""
         self.amount_label = try container.decodeIfPresent(String.self, forKey: .amount_label) ?? ""
         self.concentration = try container.decodeIfPresent(Double.self, forKey: .concentration) ?? 1.0
@@ -102,9 +82,8 @@ struct DrugTable : Codable
         self.dosing_label = try container.decodeIfPresent(String.self, forKey: .dosing_label) ?? ""
         self.unit_weight = try container.decodeIfPresent(String.self, forKey: .unit_weight) ?? "mg"
         self.unit_time = try container.decodeIfPresent(String.self, forKey: .unit_time) ?? "hr"
-        self.minDose = try container.decodeIfPresent(Double.self, forKey: .minDose) ?? 0.0
-        self.maxDose = try container.decodeIfPresent(Double.self, forKey: .maxDose) ?? 1.0
-        self.doseIncrement = try container.decodeIfPresent(Double.self, forKey: .doseIncrement) ?? 1.0
+        self.dose_array = try container.decodeIfPresent([Double].self, forKey: .dose_array) ?? []
+        self.dose_titles = try container.decodeIfPresent([String].self, forKey: .dose_titles) ?? []
         self.weight_based = try container.decodeIfPresent(Bool.self, forKey: .weight_based) ?? false
     }
 }

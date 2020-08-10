@@ -14,17 +14,31 @@ import SwiftRichString
 
 let normalStyle = Style {
     $0.font = SystemFonts.Helvetica.font(size: CGFloat(DataManager.instance.fontSize))
-    $0.paragraphSpacingAfter = 10
+    $0.paragraphSpacingAfter = 15
+    $0.alignment = .left
+    $0.color = UIColor.label
+}
+
+let linkStyle = Style {
+    $0.font = SystemFonts.Helvetica_Bold.font(size: CGFloat(DataManager.instance.fontSize))
+    $0.color = UIColor.link
 }
 
 let titleStyle = Style {
     $0.font = SystemFonts.Helvetica_Bold.font(size: CGFloat(DataManager.instance.fontSize + 3))
+    $0.color = UIColor.label
 }
 let boldStyle = Style {
     $0.font = SystemFonts.Helvetica_Bold.font(size: CGFloat(DataManager.instance.fontSize))
+    $0.color = UIColor.label
 }
 
-let italicStyle = normalStyle.byAdding {
+let italicStyle = Style {
+    $0.traitVariants = .italic
+}
+
+let boldItalicStyle = Style {
+    $0.font = SystemFonts.Helvetica_Bold.font(size: CGFloat(DataManager.instance.fontSize))
     $0.traitVariants = .italic
 }
 
@@ -37,16 +51,17 @@ let redStyle = Style {
 }
 
 let orangeBackgroundStyle = Style {
-    $0.backColor = UIColor.orange
+    $0.backColor = "#ffc001"
 }
 
-let leftJustifiedStyle = normalStyle.byAdding {
+let leftJustifiedStyle = Style {
     $0.alignment = .left
+    $0.paragraphSpacingAfter = 15
 }
 
 let centerJustifiedStyle = Style {
     $0.alignment = .center
-    $0.paragraphSpacingAfter = 10
+    $0.paragraphSpacingAfter = 15
 }
 
 let tab1 = Style {
@@ -71,7 +86,12 @@ let tab3 = Style {
     $0.paragraphSpacingAfter = 5
 }
 
-let styleGroup = StyleGroup(base: normalStyle, ["title" : titleStyle, "b" : boldStyle, "i" : italicStyle, "u" : underlineStyle, "red" : redStyle, "center" : centerJustifiedStyle, "left" : leftJustifiedStyle, "tab1" : tab1, "tab2" : tab2, "tab3" : tab3])
+let link = Style {
+    $0.color = UIColor.blue
+    $0.linkURL = URLRepresentable.tagAttribute("href")
+}
+
+let styleGroup = StyleGroup(base: normalStyle, ["title" : titleStyle, "b" : boldStyle, "i" : italicStyle, "u" : underlineStyle, "red" : redStyle, "center" : centerJustifiedStyle, "left" : leftJustifiedStyle, "tab1" : tab1, "tab2" : tab2, "tab3" : tab3, "a" : link, "orange" : orangeBackgroundStyle, "bi" : boldItalicStyle])
 
 
 class DataManager
@@ -89,6 +109,9 @@ class DataManager
     var boldFontName : String
     
     var showLevelOfCare = LevelOfCare.All
+    
+    var waiverComplete = false
+    
     private init()
     {
         let defaults = UserDefaults.standard
@@ -238,8 +261,6 @@ class DataManager
                 return drug
             }
         }
-        
-        print("No drug found with key: \(key)")
         return nil
     }
     
@@ -252,8 +273,6 @@ class DataManager
                 return tx
             }
         }
-        
-        print("No treatment for key found in \(drug.name)")
         return nil
     }
 
@@ -266,7 +285,6 @@ class DataManager
                 return page
             }
         }
-        print("No page found with key")
         return nil
     }
     
@@ -279,7 +297,6 @@ class DataManager
                 return flowchart
             }
         }
-        print("No flowchart found with key")
         return nil
     }
 }

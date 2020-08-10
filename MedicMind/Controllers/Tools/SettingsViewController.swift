@@ -21,6 +21,10 @@ class SettingsViewController : UIViewController
         normalStyle.font = UIFont(name: DataManager.instance.fontName, size: CGFloat(DataManager.instance.fontSize))
         titleStyle.font = UIFont(name: DataManager.instance.boldFontName, size: CGFloat(DataManager.instance.fontSize + 3))
         boldStyle.font = UIFont(name: DataManager.instance.boldFontName, size: CGFloat(DataManager.instance.fontSize))
+        italicStyle.font = UIFont(name: DataManager.instance.fontName, size: CGFloat(DataManager.instance.fontSize))
+        linkStyle.font = UIFont(name: DataManager.instance.fontName, size: CGFloat(DataManager.instance.fontSize))
+        boldItalicStyle.font = UIFont(name: DataManager.instance.boldFontName, size: CGFloat(DataManager.instance.fontSize))
+        
         updateFont()
         UserDefaults.standard.set(fontSizeSlider.value, forKey: "font_size")
         

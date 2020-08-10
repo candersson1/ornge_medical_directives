@@ -20,7 +20,7 @@ class DrugMonographViewController : UIViewController
     let stackView = UIStackView()
     @IBOutlet weak var scrollView: UIScrollView!
     
-    @objc func buttonAction(sender : PageTargetButton)
+    @objc func directiveButtonAction(sender : PageTargetButton)
     {
         if(DataManager.instance.pageByKey(key: sender.key) == nil)
         {
@@ -30,27 +30,51 @@ class DrugMonographViewController : UIViewController
         let navController = UIApplication.shared.windows[0].rootViewController as? UINavigationController
         let storyboard = navController?.storyboard
         
-        let viewController = storyboard!.instantiateViewController(withIdentifier: "MedicalDirectiveViewController") as! MedicalDirectiveViewController
+        let viewController = storyboard!.instantiateViewController(withIdentifier: "MedicalDirectiveTabViewController") as! MedicalDirectiveTabViewController
+        viewController.directive = DataManager.instance.pageByKey(key: sender.key) as? MedicalDirective
+        viewController.loadSubviews()
+        navController!.pushViewController(viewController, animated: true)
         
-        viewController.currentDirective = DataManager.instance.pageByKey(key: sender.key) as? MedicalDirective
+    }
+    
+    @objc func CPGButtonAction(sender : PageTargetButton)
+    {
+        let navController = UIApplication.shared.windows[0].rootViewController as? UINavigationController
+        let storyboard = navController?.storyboard
+        
+        let viewController = storyboard!.instantiateViewController(withIdentifier: "WebViewController") as! WebViewController
+        viewController.target = sender.key//dataManager.currentPage!.key
+        
+        navController!.pushViewController(viewController, animated: true)
+    }
+    
+    static func loadViewControllerWithKey(key : String)
+    {
+        let navController = UIApplication.shared.windows[0].rootViewController as? UINavigationController
+        let storyboard = navController?.storyboard
+
+        let drugData = DataManager.instance.drugByKey(key: key)
+        if(drugData == nil)
+        {
+            return
+        }
+        let viewController = storyboard!.instantiateViewController(withIdentifier: "DrugTabViewController") as! DrugTabViewController
+        viewController.drugData = drugData
+        viewController.loadSubviews()
         navController!.pushViewController(viewController, animated: true)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        if(drugData == nil)
-        {
+        if(drugData == nil) {
             return
         }
-        
-        //let font = UIFont(name: DataManager.instance.fontName, size: CGFloat(DataManager.instance.fontSize))
-        //let boldfont = UIFont(name: DataManager.instance.boldFontName, size: CGFloat(DataManager.instance.fontSize))
         
         stackView.axis = .vertical
         stackView.alignment = .fill
         stackView.distribution = .fill
-        stackView.spacing = 10
+        stackView.spacing = 0
         scrollView.addSubview(stackView)
         stackView.translatesAutoresizingMaskIntoConstraints = false
         
@@ -58,58 +82,23 @@ class DrugMonographViewController : UIViewController
             // Attaching the content's edges to the scroll view's edges
             stackView.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor),
             stackView.trailingAnchor.constraint(equalTo: scrollView.trailingAnchor),
-            stackView.topAnchor.constraint(equalTo: scrollView.topAnchor),
+            stackView.topAnchor.constraint(equalTo: scrollView.topAnchor, constant: 10),
             stackView.bottomAnchor.constraint(equalTo: scrollView.bottomAnchor),
             
             // Satisfying size constraints
             stackView.widthAnchor.constraint(equalTo: scrollView.widthAnchor)
-            ])
+        ])
+        
+        //stackView.addBackground(color: .systemBackground)
         
         let titleLabel = UILabel()
-        titleLabel.font = UIFont(name: DataManager.instance.boldFontName, size: CGFloat(20.0))
+        titleLabel.font = UIFont(name: DataManager.instance.boldFontName, size: CGFloat(17.0))
         titleLabel.numberOfLines = 0
         titleLabel.lineBreakMode = .byWordWrapping
         titleLabel.textAlignment = .center
         titleLabel.text = drugData?.name
         titleLabel.translatesAutoresizingMaskIntoConstraints = false
-        //titleLabel.textColor = accentColor
         stackView.addArrangedSubview(titleLabel)
-        
-        //let titleLabel = headingLabelWithString(string: drugData!.name)
-        //stackView.addArrangedSubview(titleLabel)
-        
-        if(drugData!.drug_tables.count > 0)
-        {
-            for drugTable in drugData!.drug_tables
-            {
-                let mixingTable = MixingCalculatorView()
-                mixingTable.parentView = scrollView
-                mixingTable.setTapGestureRecognizer()
-                
-                mixingTable.min = drugTable.minDose
-                mixingTable.max = drugTable.maxDose
-                mixingTable.concentration = drugTable.concentration
-                mixingTable.inc = drugTable.doseIncrement
-                mixingTable.doseTimeUnit = drugTable.unit_time
-                mixingTable.weightBased = drugTable.weight_based
-                if(drugTable.weight_based == true)
-                {
-                    mixingTable.unitsLabel.text = drugTable.unit_weight + "/kg/" + drugTable.unit_time
-                } else {
-                    mixingTable.unitsLabel.text = drugTable.unit_weight + "/" + drugTable.unit_time
-                    mixingTable.weightTextField.isEnabled = false
-                    mixingTable.weightTextField.text = "n/a"
-                }
-                mixingTable.drugNameLabel.text = "Drug: " + drugTable.name
-                mixingTable.drugDiluentLabel.text = "Diluent: \(drugTable.diluent_label)"
-                mixingTable.drugAmountLabel.text = "Drug Amount: \(drugTable.amount_label)"
-                mixingTable.drugConcentrationLabel.text = "Concentration:\n" + drugTable.concentration_label
-                mixingTable.drugDosingLabel.text = drugTable.dosing_label
-                stackView.addArrangedSubview(mixingTable)
-                mixingTable.updateDoseFields()
-            }
-        }
-        
         
         let horizonalstackView = UIStackView()
         horizonalstackView.axis = .horizontal
@@ -120,176 +109,220 @@ class DrugMonographViewController : UIViewController
         stackView.addArrangedSubview(horizonalstackView)
         horizonalstackView.translatesAutoresizingMaskIntoConstraints = false
         
-       /* NSLayoutConstraint.activate([
-            // Attaching the content's edges to the scroll view's edges
-            horizonalstackView.leadingAnchor.constraint(equalTo: label.leadingAnchor),
-            horizonalstackView.trailingAnchor.constraint(equalTo: label.trailingAnchor),
-            horizonalstackView.topAnchor.constraint(equalTo: label.bottomAnchor, constant: 10),
-            //horizonalstackView.bottomAnchor.constraint(equalTo: label.bottomAnchor),
-            
-            // Satisfying size constraints
-            horizonalstackView.widthAnchor.constraint(equalTo: scrollView.widthAnchor)
-           // horizonalstackView.heightAnchor.constraint(equalTo: 50)
-            ])
- 
-        label = OutlinedLabel()
-        label.font = font
-        label.text = " Onset:\n " + drugData!.onset
-        label.translatesAutoresizingMaskIntoConstraints = false
-        label.numberOfLines = 0
-        label.lineBreakMode = .byWordWrapping
-        horizonalstackView.addArrangedSubview(label)
-        
-        label = OutlinedLabel()
-        label.font = font
-        label.text = " Peak:\n " + drugData!.peak
-        label.translatesAutoresizingMaskIntoConstraints = false
-        label.numberOfLines = 0
-        label.lineBreakMode = .byWordWrapping
-        horizonalstackView.addArrangedSubview(label)
-        
-        label = OutlinedLabel()
-        label.font = font
-        label.text = " Half Life:\n " + drugData!.half_life
-        label.translatesAutoresizingMaskIntoConstraints = false
-        label.numberOfLines = 0
-        label.lineBreakMode = .byWordWrapping
-        horizonalstackView.addArrangedSubview(label)
-        
-        label = OutlinedLabel()
-        label.font = font
-        label.text = " Duration:\n " + drugData!.duration
-        label.translatesAutoresizingMaskIntoConstraints = false
-        label.numberOfLines = 0
-        label.lineBreakMode = .byWordWrapping
-        horizonalstackView.addArrangedSubview(label)
-        */
-        //for i in 0 ..< drugData!.content.content.size
-        
-        var label = UILabel()
-        
+        let font = UIFont(name: DataManager.instance.fontName, size: CGFloat(DataManager.instance.fontSize))
+
         //MARK: DoseRoute
         if(drugData!.content.count > 0)
         {
             var stackCollection : [UIStackView] = []
         
-            for i in 0 ..< drugData!.content[0].count
+            for i in 0 ..< drugData!.content.count
             {
-                let doseHStack = UIStackView()
-                doseHStack.axis = .horizontal
-                doseHStack.alignment = .fill
-                doseHStack.distribution = .fillEqually
-                doseHStack.spacing = 0
-                doseHStack.translatesAutoresizingMaskIntoConstraints = false
+                let contentVStack = UIStackView()
+                contentVStack.axis = .vertical
+                contentVStack.alignment = .fill
+                contentVStack.distribution = .fill
+                contentVStack.spacing = 0
+                contentVStack.translatesAutoresizingMaskIntoConstraints = false
                 
-                if( i % 2 == 1)
+                let contentArray = drugData!.content[i]
+                
+                var startingIndex = 0
+                if(contentArray[0].count == 1)
                 {
-                    doseHStack.addBackground(color: UIColor.tertiarySystemBackground)
+                    let labelView = UIView()
+                    labelView.layer.borderWidth = 0.5
+                    labelView.layer.borderColor = UIColor.label.cgColor
+                    
+                    let titleLabel = UILabel()
+                    titleLabel.font = font
+                    titleLabel.lineBreakMode = .byWordWrapping
+                    titleLabel.numberOfLines = 0
+                    if(contentArray[0][0] == "#medical_directives") {
+                        titleLabel.attributedText = "Ornge Medical Directives".set(style: boldStyle)
+                    } else {
+                        titleLabel.attributedText = contentArray[0][0].set(style: styleGroup)
+                    }
+                    titleLabel.translatesAutoresizingMaskIntoConstraints = false
+                    labelView.addSubview(titleLabel)
+                    stackView.addArrangedSubview(labelView)
+                    
+                    NSLayoutConstraint.activate([
+                        titleLabel.leadingAnchor.constraint(equalTo: labelView.leadingAnchor, constant: 5),
+                        titleLabel.trailingAnchor.constraint(equalTo: labelView.trailingAnchor, constant: -5),
+                        titleLabel.topAnchor.constraint(equalTo: labelView.topAnchor, constant: 5),
+                        titleLabel.bottomAnchor.constraint(equalTo: labelView.bottomAnchor, constant: -5),
+                    ])
+                    startingIndex = 1
                 }
-                //treatmentStack.addArrangedSubview(doseHStack)
-                stackCollection.append(doseHStack)
-            }
-        }
-            
-            /*for i in 0 ..< drugData!.content.count
-            {
-                let doseArray = doseRoute[i]
-                var labelArray : [UILabel] = []
                 
-                if( doseArray[0] != "nil" )
-                {
-                    for j in 0 ..< doseArray.count
-                    {
-                        if( j >= stackCollection.count )
+                stackView.addArrangedSubview(contentVStack)
+                stackCollection.append(contentVStack)
+                var viewArray : [[UIView]] = []
+                
+                for y in startingIndex ..< contentArray.count {
+                    let contentHStack = UIStackView()
+                    contentHStack.axis = .horizontal
+                    contentHStack.alignment = .fill
+                    if(contentArray[y].count > 2) {
+                        contentHStack.distribution = .fillEqually
+                    } else {
+                        contentHStack.distribution = .fill
+                    }
+                    contentHStack.spacing = 0
+                    contentHStack.translatesAutoresizingMaskIntoConstraints = false
+                    
+                    if( y % 2 == 1 ) {
+                        contentHStack.addBackground(color: .systemGray6)
+                    }
+                    contentVStack.addArrangedSubview(contentHStack)
+                    viewArray.append([])
+                    
+                    for x in 0 ..< contentArray[y].count {
+                        if(contentArray[y][x] != "nil")
                         {
-                            print("Missmatch between doseArray and stackCollection, ensure that all dose_route arrays have equal number of values")
-                            break
-                        }
-                        if(doseArray[j] != "nil")
-                        {
-                        let labelView = UIView()
-                        labelView.layer.borderWidth = 0.5
-                        labelView.layer.borderColor = UIColor.systemGray3.cgColor
-                        
-                        let doseLabel = UILabel()
-                        doseLabel.font = font
-                        doseLabel.lineBreakMode = .byWordWrapping
-                        doseLabel.numberOfLines = 0
-                        doseLabel.attributedText = doseArray[j].set(style: styleGroup)
-                        doseLabel.translatesAutoresizingMaskIntoConstraints = false
-                        
-                        labelArray.append(doseLabel)
-                        labelView.addSubview(doseLabel)
-                        
-                        NSLayoutConstraint.activate([
-                            doseLabel.leadingAnchor.constraint(equalTo: labelView.leadingAnchor, constant: 5),
-                            doseLabel.trailingAnchor.constraint(equalTo: labelView.trailingAnchor, constant: -5),
-                            doseLabel.topAnchor.constraint(equalTo: labelView.topAnchor, constant: 5),
-                            doseLabel.bottomAnchor.constraint(equalTo: labelView.bottomAnchor, constant: -5)
-                        ])
-                        
-                        stackCollection[j].addArrangedSubview(labelView)
+                            let labelView = UIView()
+                            labelView.layer.borderWidth = 0.5
+                            labelView.layer.borderColor = UIColor.label.cgColor
+                            
+                            if(contentArray[0][0] == "#medical_directives")
+                            {
+                                let directive = DataManager.instance.pageByKey(key: contentArray[y][x])
+                                contentHStack.distribution = .fillEqually
+                                if(directive != nil)
+                                {
+                                    let button = PageTargetButton(type: .custom)
+                                    button.translatesAutoresizingMaskIntoConstraints = false
+                                    button.key = contentArray[y][x]
+                                    button.addTarget(self, action: #selector(directiveButtonAction), for: .touchUpInside)
+                                    button.contentHorizontalAlignment = .left
+                                    
+                                    let label = UILabel()
+                                    
+                                    let attributeString = (" \(directive!.title)").set(style: linkStyle)
+                                    label.attributedText = attributeString
+                                    label.numberOfLines = 0
+                                    label.lineBreakMode = .byWordWrapping
+                                    label.translatesAutoresizingMaskIntoConstraints = false
+                                    
+                                    labelView.addSubview(button)
+                                    labelView.addSubview(label)
+                                    contentHStack.addArrangedSubview(labelView)
+
+                                     NSLayoutConstraint.activate([
+                                         button.leadingAnchor.constraint(equalTo: labelView.leadingAnchor, constant: 5),
+                                         button.trailingAnchor.constraint(equalTo: labelView.trailingAnchor, constant: -5),
+                                         button.topAnchor.constraint(equalTo: labelView.topAnchor, constant: 5),
+                                         button.bottomAnchor.constraint(equalTo: labelView.bottomAnchor, constant: -5),
+                                         
+                                     ])
+                                    NSLayoutConstraint.activate([
+                                        label.leadingAnchor.constraint(equalTo: labelView.leadingAnchor, constant: 5),
+                                        label.trailingAnchor.constraint(equalTo: labelView.trailingAnchor, constant: -5),
+                                        label.topAnchor.constraint(equalTo: labelView.topAnchor, constant: 5),
+                                        label.bottomAnchor.constraint(equalTo: labelView.bottomAnchor, constant: -5),
+                                        
+                                    ])
+                                    
+                                }
+                                else if let _ = Bundle.main.url(forResource: contentArray[y][x], withExtension: "html")
+                                {
+                                    let button = PageTargetButton(type: .custom)
+                                    button.translatesAutoresizingMaskIntoConstraints = false
+
+                                    button.key = contentArray[y][x]
+                                    button.addTarget(self, action: #selector(CPGButtonAction), for: .touchUpInside)
+                                    button.contentHorizontalAlignment = .left
+                                    
+                                    let attributeString = (" \(contentArray[y][x])").set(style: linkStyle)
+                                    
+                                    let label = UILabel()
+                                    label.attributedText = attributeString
+                                    label.numberOfLines = 0
+                                    label.lineBreakMode = .byWordWrapping
+                                    label.translatesAutoresizingMaskIntoConstraints = false
+                                    
+                                    labelView.addSubview(button)
+                                    labelView.addSubview(label)
+                                    contentHStack.addArrangedSubview(labelView)
+
+                                     NSLayoutConstraint.activate([
+                                         button.leadingAnchor.constraint(equalTo: labelView.leadingAnchor, constant: 5),
+                                         button.trailingAnchor.constraint(equalTo: labelView.trailingAnchor, constant: -5),
+                                         button.topAnchor.constraint(equalTo: labelView.topAnchor, constant: 5),
+                                         button.bottomAnchor.constraint(equalTo: labelView.bottomAnchor, constant: -5),
+                                     ])
+                                    NSLayoutConstraint.activate([
+                                        label.leadingAnchor.constraint(equalTo: labelView.leadingAnchor, constant: 5),
+                                        label.trailingAnchor.constraint(equalTo: labelView.trailingAnchor, constant: -5),
+                                        label.topAnchor.constraint(equalTo: labelView.topAnchor, constant: 5),
+                                        label.bottomAnchor.constraint(equalTo: labelView.bottomAnchor, constant: -5),
+                                    ])
+                                    
+                                } else {
+                                    let attributeString = ("n/a").set(style: normalStyle)
+                                    let label = UILabel()
+                                    label.attributedText = attributeString
+                                    label.numberOfLines = 0
+                                    label.lineBreakMode = .byWordWrapping
+                                    label.translatesAutoresizingMaskIntoConstraints = false
+                                    
+                                    labelView.addSubview(label)
+                                    NSLayoutConstraint.activate([
+                                        label.leadingAnchor.constraint(equalTo: labelView.leadingAnchor, constant: 5),
+                                        label.trailingAnchor.constraint(equalTo: labelView.trailingAnchor, constant: -5),
+                                        label.topAnchor.constraint(equalTo: labelView.topAnchor, constant: 5),
+                                        label.bottomAnchor.constraint(equalTo: labelView.bottomAnchor, constant: -5),
+                                    ])
+                                    contentHStack.addArrangedSubview(labelView)
+                                }
+                                
+                            } else {
+                                let contentLabel = UILabel()
+                                contentLabel.font = font
+                                contentLabel.lineBreakMode = .byWordWrapping
+                                if( x == 0 && contentArray[y].count > 1) {
+                                    contentLabel.widthAnchor.constraint(equalToConstant: 100).isActive = true
+                                }
+                                
+                                contentLabel.numberOfLines = 0
+                                contentLabel.attributedText = contentArray[y][x].set(style: styleGroup)
+                                contentLabel.translatesAutoresizingMaskIntoConstraints = false
+                                
+                                if(contentArray[y][x] == "PCP(f)" || contentArray[y][x] == "≥PCP(f)") {
+                                    labelView.backgroundColor = pcpColor
+                                }
+                                else if(contentArray[y][x] == "ACP(f)" || contentArray[y][x] == "≥ACP(f)") {
+                                    labelView.backgroundColor = acpColor
+                                }
+                                else if(contentArray[y][x] == "CCP(f)" || contentArray[y][x] == "≥CCP(f)" || contentArray[y][x] == "CCP\nPCCP/PCCN*" || contentArray[y][x] == "CCP\nPCCP/PCCN") {
+                                    labelView.backgroundColor = ccpColor
+                                }
+                                else if(contentArray[y][x] == "PCCP(f)") {
+                                    labelView.backgroundColor = pccpColor
+                                }
+                                                            
+                                labelView.addSubview(contentLabel)
+                                contentHStack.addArrangedSubview(labelView)
+
+                                NSLayoutConstraint.activate([
+                                    contentLabel.leadingAnchor.constraint(equalTo: labelView.leadingAnchor, constant: 5),
+                                    contentLabel.trailingAnchor.constraint(equalTo: labelView.trailingAnchor, constant: -5),
+                                    contentLabel.topAnchor.constraint(equalTo: labelView.topAnchor, constant: 5),
+                                    contentLabel.bottomAnchor.constraint(equalTo: labelView.bottomAnchor, constant: -5),
+                                    //labelView.widthAnchor.constraint(greaterThanOrEqualToConstant: 70)
+                                ])
+                                if(viewArray.count > 1) {
+                                    NSLayoutConstraint.activate([
+                                        labelView.leadingAnchor.constraint(equalTo: viewArray[viewArray.count-2][x].leadingAnchor),
+                                        labelView.trailingAnchor.constraint(equalTo: viewArray[viewArray.count-2][x].trailingAnchor)
+                                    ])
+                                }
+                                viewArray[viewArray.count-1].append(labelView)
+                            }
                         }
                     }
                 }
-            }
-        }*/
-        
-        /*for content in drugData!.content
-        {
-            label = headingLabelWithString(string: content[0])
-            stackView.addArrangedSubview(label)
-
-            for i in 1 ..< content.count {
-                label = bodyLabelWithString(string: "• " + content[i], indent: 16)
-                stackView.addArrangedSubview(label)
-            }
-            
-        }*/
-        
-        if( drugData!.medical_directives.count > 0)
-        {
-            var hStackView = UIStackView()
-            hStackView.axis = .horizontal
-            label = headingLabelWithString(string: "Ornge Medical Directives:")
-            stackView.addArrangedSubview(label)
-            
-            var previousView : UIView = label
-            for str in drugData!.medical_directives
-            {
-                hStackView = horizontalStackViewWithConstraints(parentView: stackView, belowView: previousView)
-                hStackView.distribution = .fillProportionally
-                stackView.addArrangedSubview(hStackView)
-                
-                let directive = DataManager.instance.pageByKey(key: str)
-
-                if(directive != nil)
-                {
-                    let button = PageTargetButton(type: .custom)
-                    button.key = str
-                    button.addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
-                    button.contentHorizontalAlignment = .left
-                    
-                    let attributeString = ("• " + directive!.title).htmlAttributed(family: DataManager.instance.fontName, size: CGFloat(DataManager.instance.fontSize-3))
-                    let mutableBodyString = NSMutableAttributedString()
-                    mutableBodyString.append(attributeString!)
-                    let style = NSMutableParagraphStyle()
-                    style.headIndent = 30.0
-                    style.firstLineHeadIndent = 16.0
-                    mutableBodyString.addAttributes([NSAttributedString.Key.paragraphStyle : style], range: NSMakeRange(0, mutableBodyString.length))
-                    mutableBodyString.addAttribute(NSAttributedString.Key.foregroundColor , value: UIColor.link, range: NSMakeRange(0, mutableBodyString.length))
-                    
-                    button.setAttributedTitle(mutableBodyString, for: .normal)
-                    button.setTitleColor(UIColor.link, for: .normal)
-                    button.titleLabel?.numberOfLines = 0
-                    button.titleLabel?.lineBreakMode = .byWordWrapping
-                    
-                    hStackView.addArrangedSubview(button)
-                    
-                    NSLayoutConstraint.activate([
-                     button.widthAnchor.constraint(equalTo: scrollView.widthAnchor)])
-                }
-                previousView = hStackView
             }
         }
     }

@@ -8,37 +8,38 @@
 
 /* Begin PBXBuildFile section */
 		130534192364210D00E4F016 /* MedicalDirectives.json in Resources */ = {isa = PBXBuildFile; fileRef = 130534182364210D00E4F016 /* MedicalDirectives.json */; };
-		1305341B2364302A00E4F016 /* DocumentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1305341A2364302A00E4F016 /* DocumentViewController.swift */; };
 		13069D3E22EB48FA00AA8F24 /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 13069D3C22EB48FA00AA8F24 /* DataModel.xcdatamodeld */; };
 		13069D4022EB52AA00AA8F24 /* TreatmentCardButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13069D3F22EB52AA00AA8F24 /* TreatmentCardButton.swift */; };
 		1309D7BF228CC584005F8D40 /* DrugMonographViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1309D7BE228CC584005F8D40 /* DrugMonographViewController.swift */; };
 		1309D7C1228CC9F3005F8D40 /* DrugLibrary.json in Resources */ = {isa = PBXBuildFile; fileRef = 1309D7C0228CC9F3005F8D40 /* DrugLibrary.json */; };
 		131142A62285ECA100BD65C0 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 131142A52285ECA100BD65C0 /* DataManager.swift */; };
-		131894CD234E0BCB00DC307D /* MixingCalculatorView_Old.swift in Sources */ = {isa = PBXBuildFile; fileRef = 131894CB234E0BCB00DC307D /* MixingCalculatorView_Old.swift */; };
+		131812CD242FB1B500767AEE /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 131812CC242FB1B500767AEE /* WebKit.framework */; };
 		131894CE234E0BCB00DC307D /* MixingCalculatorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 131894CC234E0BCB00DC307D /* MixingCalculatorView.xib */; };
 		131B96B322D8B4AB00D9A64F /* UIStackViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 131B96B222D8B4AB00D9A64F /* UIStackViewExtension.swift */; };
 		131B96C122E0FD2700D9A64F /* ClosedRangeExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 131B96C022E0FD2700D9A64F /* ClosedRangeExtension.swift */; };
 		132F1BE2230D953E0071ADFF /* TODO List in Resources */ = {isa = PBXBuildFile; fileRef = 132F1BE1230D953E0071ADFF /* TODO List */; };
 		1344B2FE229100EC00E08C63 /* DirectiveFlowChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1344B2FD229100EC00E08C63 /* DirectiveFlowChartViewController.swift */; };
+		1346EAE323AE7D9200992D6A /* preamble_signatures.png in Resources */ = {isa = PBXBuildFile; fileRef = 1346EAE223AE7D9200992D6A /* preamble_signatures.png */; };
 		134789FC23257AA20081E865 /* FlowChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134789FB23257AA20081E865 /* FlowChart.swift */; };
 		134789FE23257B990081E865 /* FlowChartLibrary.json in Resources */ = {isa = PBXBuildFile; fileRef = 134789FD23257B990081E865 /* FlowChartLibrary.json */; };
 		13478A02232747F80081E865 /* String+HTML.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13478A01232747F80081E865 /* String+HTML.swift */; };
+		1354E91E23DB297A00897B61 /* DisclaimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1354E91D23DB297A00897B61 /* DisclaimerViewController.swift */; };
 		135C05C8228A1EA500F7B6CF /* MedicalDirectiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135C05C7228A1EA500F7B6CF /* MedicalDirectiveViewController.swift */; };
 		135D4A9F23156673006C660C /* MenuData_P.json in Resources */ = {isa = PBXBuildFile; fileRef = 135D4A9D23156673006C660C /* MenuData_P.json */; };
 		1368DA6B238332FC003A7144 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1368DA6A238332FC003A7144 /* WebViewController.swift */; };
 		1368DA6E23833455003A7144 /* Executive Airway Summary.html in Resources */ = {isa = PBXBuildFile; fileRef = 1368DA6D23833455003A7144 /* Executive Airway Summary.html */; };
-		1368DA822385609C003A7144 /* Clinical Practice - Asthma.html in Resources */ = {isa = PBXBuildFile; fileRef = 1368DA812385609C003A7144 /* Clinical Practice - Asthma.html */; };
-		1368DA842388CD42003A7144 /* Clinical Practice Guidelines - Mechanical Ventilation.html in Resources */ = {isa = PBXBuildFile; fileRef = 1368DA832388CD42003A7144 /* Clinical Practice Guidelines - Mechanical Ventilation.html */; };
+		1368DA822385609C003A7144 /* Adult - Clinical Practice - Asthma.html in Resources */ = {isa = PBXBuildFile; fileRef = 1368DA812385609C003A7144 /* Adult - Clinical Practice - Asthma.html */; };
 		1368DA86238C2F13003A7144 /* PaddingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1368DA85238C2F13003A7144 /* PaddingLabel.swift */; };
+		1380D49C2421234D00E88644 /* DocumentTableLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1380D49B2421234D00E88644 /* DocumentTableLayout.swift */; };
 		139BF3DB22849C7400D25766 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139BF3DA22849C7400D25766 /* AppDelegate.swift */; };
 		139BF3DD22849C7400D25766 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139BF3DC22849C7400D25766 /* MenuViewController.swift */; };
 		139BF3E022849C7400D25766 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 139BF3DE22849C7400D25766 /* Main.storyboard */; };
 		139BF3E522849C7500D25766 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 139BF3E322849C7500D25766 /* LaunchScreen.storyboard */; };
+		139FF61B23C8F7BC00B57A68 /* Adult - Clinical Practice Guidelines - Mechanical Ventilation.html in Resources */ = {isa = PBXBuildFile; fileRef = 139FF61A23C8F7BC00B57A68 /* Adult - Clinical Practice Guidelines - Mechanical Ventilation.html */; };
 		13B6817323155FC3003EA3D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B6817223155FC3003EA3D7 /* Assets.xcassets */; };
 		13BF742F22B6647B00145035 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 13BF742E22B6647B00145035 /* Podfile */; };
 		13C3C30722ECAADE002F5344 /* EditNotesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C3C30622ECAADE002F5344 /* EditNotesTableViewController.swift */; };
 		13C3C30922EF355E002F5344 /* DrugCalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C3C30822EF355E002F5344 /* DrugCalculatorViewController.swift */; };
-		13C3C30F230D777F002F5344 /* terms_and_conditions.html in Resources */ = {isa = PBXBuildFile; fileRef = 13C3C30E230D777F002F5344 /* terms_and_conditions.html */; };
 		13C662EA22AD4EA200FB9A63 /* Drugs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C662E922AD4EA200FB9A63 /* Drugs.swift */; };
 		13C662EC22AD4F0300FB9A63 /* Pages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C662EB22AD4F0300FB9A63 /* Pages.swift */; };
 		13C662EE22AEB09800FB9A63 /* MedicalDirective.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C662ED22AEB09800FB9A63 /* MedicalDirective.swift */; };
@@ -46,7 +47,6 @@
 		13C7BDDC228C36D900D33B76 /* MedicalDirectiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C7BDDA228C36D900D33B76 /* MedicalDirectiveView.swift */; };
 		13C7BDDD228C36D900D33B76 /* MedicalDirectiveView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13C7BDDB228C36D900D33B76 /* MedicalDirectiveView.xib */; };
 		13C7BDE0228C6C0400D33B76 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C7BDDF228C6C0400D33B76 /* UIColorExtension.swift */; };
-		13DBB9BD22B6723800E4CE11 /* MixingCalculatorView_Old.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13DBB9BC22B6723800E4CE11 /* MixingCalculatorView_Old.xib */; };
 		13DBB9BF22B674C400E4CE11 /* MixingCalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13DBB9BE22B674C400E4CE11 /* MixingCalculatorView.swift */; };
 		13DBB9C122B8029A00E4CE11 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13DBB9C022B8029A00E4CE11 /* SettingsViewController.swift */; };
 		13DBB9C322B802B300E4CE11 /* Menus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13DBB9C222B802B300E4CE11 /* Menus.swift */; };
@@ -56,57 +56,82 @@
 		13E3C48B2392B815001C3F08 /* adult_airway_post_checklist.png in Resources */ = {isa = PBXBuildFile; fileRef = 13E3C4872392B815001C3F08 /* adult_airway_post_checklist.png */; };
 		13E3C48C2392B815001C3F08 /* adult_airway_team_positioning.png in Resources */ = {isa = PBXBuildFile; fileRef = 13E3C4882392B815001C3F08 /* adult_airway_team_positioning.png */; };
 		13E3C48D2392B815001C3F08 /* adult_airway_checklist.png in Resources */ = {isa = PBXBuildFile; fileRef = 13E3C4892392B815001C3F08 /* adult_airway_checklist.png */; };
-		13E3C48F2392BD0D001C3F08 /* Clinical Practice - Epoprostenol.html in Resources */ = {isa = PBXBuildFile; fileRef = 13E3C48E2392BD0D001C3F08 /* Clinical Practice - Epoprostenol.html */; };
-		13E3C49323932A96001C3F08 /* Clinical Practice - Sedation Intubated.html in Resources */ = {isa = PBXBuildFile; fileRef = 13E3C49023932A95001C3F08 /* Clinical Practice - Sedation Intubated.html */; };
+		13E3C48F2392BD0D001C3F08 /* Adult - Clinical Practice - Epoprostenol.html in Resources */ = {isa = PBXBuildFile; fileRef = 13E3C48E2392BD0D001C3F08 /* Adult - Clinical Practice - Epoprostenol.html */; };
+		13E3C49323932A96001C3F08 /* Adult - Clinical Practice - Sedation Intubated.html in Resources */ = {isa = PBXBuildFile; fileRef = 13E3C49023932A95001C3F08 /* Adult - Clinical Practice - Sedation Intubated.html */; };
 		13E3C49423932A96001C3F08 /* adult_pain_score_chart.png in Resources */ = {isa = PBXBuildFile; fileRef = 13E3C49123932A95001C3F08 /* adult_pain_score_chart.png */; };
 		13E3C49523932A96001C3F08 /* adult_sedation_score.png in Resources */ = {isa = PBXBuildFile; fileRef = 13E3C49223932A96001C3F08 /* adult_sedation_score.png */; };
-		13E3C49723949A41001C3F08 /* Clinical Practice - ROSC.html in Resources */ = {isa = PBXBuildFile; fileRef = 13E3C49623949A41001C3F08 /* Clinical Practice - ROSC.html */; };
-		13E3C4992396B50C001C3F08 /* Clinical Practice - NSTEMI.html in Resources */ = {isa = PBXBuildFile; fileRef = 13E3C4982396B50C001C3F08 /* Clinical Practice - NSTEMI.html */; };
-		13E3C49B2396C49B001C3F08 /* Clinical Practice - STEMI.html in Resources */ = {isa = PBXBuildFile; fileRef = 13E3C49A2396C49B001C3F08 /* Clinical Practice - STEMI.html */; };
-		13E3C49D2396C6BD001C3F08 /* Clinical Practice - Cardiogenic Shock.html in Resources */ = {isa = PBXBuildFile; fileRef = 13E3C49C2396C6BD001C3F08 /* Clinical Practice - Cardiogenic Shock.html */; };
+		13E3C49723949A41001C3F08 /* Adult - Clinical Practice - ROSC.html in Resources */ = {isa = PBXBuildFile; fileRef = 13E3C49623949A41001C3F08 /* Adult - Clinical Practice - ROSC.html */; };
+		13E3C4992396B50C001C3F08 /* Adult - Clinical Practice - NSTEMI.html in Resources */ = {isa = PBXBuildFile; fileRef = 13E3C4982396B50C001C3F08 /* Adult - Clinical Practice - NSTEMI.html */; };
+		13E3C49B2396C49B001C3F08 /* Adult - Clinical Practice - STEMI.html in Resources */ = {isa = PBXBuildFile; fileRef = 13E3C49A2396C49B001C3F08 /* Adult - Clinical Practice - STEMI.html */; };
+		13E3C49D2396C6BD001C3F08 /* Adult - Clinical Practice - Cardiogenic Shock.html in Resources */ = {isa = PBXBuildFile; fileRef = 13E3C49C2396C6BD001C3F08 /* Adult - Clinical Practice - Cardiogenic Shock.html */; };
+		13E3C49F23974691001C3F08 /* DrugTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E3C49E23974691001C3F08 /* DrugTableViewController.swift */; };
+		13E3C4A12397F743001C3F08 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E3C4A02397F743001C3F08 /* UIView.swift */; };
+		13E3C4A32398B5D4001C3F08 /* Adult - Clinical Practice - Stroke.html in Resources */ = {isa = PBXBuildFile; fileRef = 13E3C4A22398B5D4001C3F08 /* Adult - Clinical Practice - Stroke.html */; };
+		13E3C4A5239964F8001C3F08 /* Adult - Clinical Practice - SCI.html in Resources */ = {isa = PBXBuildFile; fileRef = 13E3C4A4239964F8001C3F08 /* Adult - Clinical Practice - SCI.html */; };
+		13E3C4A7239964FF001C3F08 /* Adult - Clinical Practice - Trauma.html in Resources */ = {isa = PBXBuildFile; fileRef = 13E3C4A6239964FF001C3F08 /* Adult - Clinical Practice - Trauma.html */; };
+		13E3C4A92399FAAF001C3F08 /* Adult - Clinical Practice - Sepsis.html in Resources */ = {isa = PBXBuildFile; fileRef = 13E3C4A82399FAAE001C3F08 /* Adult - Clinical Practice - Sepsis.html */; };
+		13E3C4AB239C03F6001C3F08 /* Adult - Clinical Practice - Obstetrics.html in Resources */ = {isa = PBXBuildFile; fileRef = 13E3C4AA239C03F6001C3F08 /* Adult - Clinical Practice - Obstetrics.html */; };
 		13EE697A232154C100A5131A /* ContentPageTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13EE6979232154C000A5131A /* ContentPageTabBarController.swift */; };
 		13EE697C2321554200A5131A /* FlowChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13EE697B2321554200A5131A /* FlowChartViewController.swift */; };
 		13EE697E232159C900A5131A /* UIBezierPathExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13EE697D232159C900A5131A /* UIBezierPathExtension.swift */; };
 		13F4447C235D4168004F87E0 /* YSiteCompatibilityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F4447B235D4168004F87E0 /* YSiteCompatibilityViewController.swift */; };
 		13F4447E235DEA1E004F87E0 /* DrugMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F4447D235DEA1E004F87E0 /* DrugMenuTableViewController.swift */; };
+		13F4A421239ECED4004F6D38 /* preamble_patch_point.png in Resources */ = {isa = PBXBuildFile; fileRef = 13F4A41D239ECED4004F6D38 /* preamble_patch_point.png */; };
+		13F4A423239ECED4004F6D38 /* preamble_loc.png in Resources */ = {isa = PBXBuildFile; fileRef = 13F4A41F239ECED4004F6D38 /* preamble_loc.png */; };
+		13F4A42C239ED370004F6D38 /* Authorization.html in Resources */ = {isa = PBXBuildFile; fileRef = 13F4A429239ED36F004F6D38 /* Authorization.html */; };
+		13F4A42D239ED370004F6D38 /* Preamble.html in Resources */ = {isa = PBXBuildFile; fileRef = 13F4A42A239ED36F004F6D38 /* Preamble.html */; };
+		13F4A42E239ED370004F6D38 /* Structure of Medical Directive.html in Resources */ = {isa = PBXBuildFile; fileRef = 13F4A42B239ED370004F6D38 /* Structure of Medical Directive.html */; };
+		13F4A430239F44E9004F6D38 /* preamble_sbarr.png in Resources */ = {isa = PBXBuildFile; fileRef = 13F4A42F239F44E8004F6D38 /* preamble_sbarr.png */; };
+		13F4A45723A1726F004F6D38 /* UITapGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F4A45623A1726F004F6D38 /* UITapGestureRecognizer.swift */; };
+		13F4A47C23A35923004F6D38 /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F4A47B23A35923004F6D38 /* Double.swift */; };
+		13F4A47E23A5CD30004F6D38 /* ped_flacc_score.png in Resources */ = {isa = PBXBuildFile; fileRef = 13F4A47D23A5CD30004F6D38 /* ped_flacc_score.png */; };
+		13F4A48023A5CE0C004F6D38 /* Ped - Clinical Practice - Pain.html in Resources */ = {isa = PBXBuildFile; fileRef = 13F4A47F23A5CE0C004F6D38 /* Ped - Clinical Practice - Pain.html */; };
+		13FBD4332416CBEB002AD350 /* DrugTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13FBD4322416CBEB002AD350 /* DrugTabViewController.swift */; };
+		13FBD4352416D15A002AD350 /* MedicalDirectiveTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13FBD4342416D15A002AD350 /* MedicalDirectiveTabViewController.swift */; };
+		13FBD437241D08B2002AD350 /* DocumentTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13FBD436241D08B2002AD350 /* DocumentTableViewController.swift */; };
+		13FBD439241D0D95002AD350 /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13FBD438241D0D95002AD350 /* Document.swift */; };
+		13FBD43B241E78B6002AD350 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13FBD43A241E78B6002AD350 /* String.swift */; };
+		13FBD441241EA821002AD350 /* CheckBoxButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13FBD440241EA821002AD350 /* CheckBoxButton.swift */; };
+		13FBD463241FB079002AD350 /* PopoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13FBD462241FB079002AD350 /* PopoverViewController.swift */; };
 		9944CB92116F96C0571DEC02 /* Pods_Ornge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3A989A3A46AAA340CACD7F1 /* Pods_Ornge.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		130534182364210D00E4F016 /* MedicalDirectives.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MedicalDirectives.json; sourceTree = "<group>"; };
-		1305341A2364302A00E4F016 /* DocumentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentViewController.swift; sourceTree = "<group>"; };
 		13069D3D22EB48FA00AA8F24 /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
 		13069D3F22EB52AA00AA8F24 /* TreatmentCardButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreatmentCardButton.swift; sourceTree = "<group>"; };
 		1309D7BE228CC584005F8D40 /* DrugMonographViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrugMonographViewController.swift; sourceTree = "<group>"; };
 		1309D7C0228CC9F3005F8D40 /* DrugLibrary.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = DrugLibrary.json; sourceTree = "<group>"; };
 		131142A52285ECA100BD65C0 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
-		131894CB234E0BCB00DC307D /* MixingCalculatorView_Old.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MixingCalculatorView_Old.swift; sourceTree = "<group>"; };
+		131812CC242FB1B500767AEE /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		131894CC234E0BCB00DC307D /* MixingCalculatorView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MixingCalculatorView.xib; sourceTree = "<group>"; };
 		131B96B222D8B4AB00D9A64F /* UIStackViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStackViewExtension.swift; sourceTree = "<group>"; };
 		131B96C022E0FD2700D9A64F /* ClosedRangeExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosedRangeExtension.swift; sourceTree = "<group>"; };
 		132F1BE1230D953E0071ADFF /* TODO List */ = {isa = PBXFileReference; lastKnownFileType = text; path = "TODO List"; sourceTree = "<group>"; };
 		1344B2FD229100EC00E08C63 /* DirectiveFlowChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectiveFlowChartViewController.swift; sourceTree = "<group>"; };
+		1346EAE223AE7D9200992D6A /* preamble_signatures.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = preamble_signatures.png; sourceTree = "<group>"; };
 		134789FB23257AA20081E865 /* FlowChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowChart.swift; sourceTree = "<group>"; };
 		134789FD23257B990081E865 /* FlowChartLibrary.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = FlowChartLibrary.json; sourceTree = "<group>"; };
 		13478A01232747F80081E865 /* String+HTML.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+HTML.swift"; sourceTree = "<group>"; };
+		1354E91D23DB297A00897B61 /* DisclaimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisclaimerViewController.swift; sourceTree = "<group>"; };
 		135C05C7228A1EA500F7B6CF /* MedicalDirectiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicalDirectiveViewController.swift; sourceTree = "<group>"; };
 		135D4A9D23156673006C660C /* MenuData_P.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MenuData_P.json; sourceTree = "<group>"; };
 		1368DA6A238332FC003A7144 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		1368DA6D23833455003A7144 /* Executive Airway Summary.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "Executive Airway Summary.html"; sourceTree = "<group>"; };
-		1368DA812385609C003A7144 /* Clinical Practice - Asthma.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "Clinical Practice - Asthma.html"; sourceTree = "<group>"; };
-		1368DA832388CD42003A7144 /* Clinical Practice Guidelines - Mechanical Ventilation.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "Clinical Practice Guidelines - Mechanical Ventilation.html"; sourceTree = "<group>"; };
+		1368DA812385609C003A7144 /* Adult - Clinical Practice - Asthma.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "Adult - Clinical Practice - Asthma.html"; sourceTree = "<group>"; };
 		1368DA85238C2F13003A7144 /* PaddingLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddingLabel.swift; sourceTree = "<group>"; };
+		1380D49B2421234D00E88644 /* DocumentTableLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentTableLayout.swift; sourceTree = "<group>"; };
 		139BF3D722849C7400D25766 /* Ornge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ornge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		139BF3DA22849C7400D25766 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		139BF3DC22849C7400D25766 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		139BF3DF22849C7400D25766 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		139BF3E422849C7500D25766 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		139BF3E622849C7500D25766 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		139FF61A23C8F7BC00B57A68 /* Adult - Clinical Practice Guidelines - Mechanical Ventilation.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "Adult - Clinical Practice Guidelines - Mechanical Ventilation.html"; sourceTree = "<group>"; };
 		13B6817223155FC3003EA3D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		13BF742E22B6647B00145035 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		13C3C30622ECAADE002F5344 /* EditNotesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditNotesTableViewController.swift; sourceTree = "<group>"; };
 		13C3C30822EF355E002F5344 /* DrugCalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrugCalculatorViewController.swift; sourceTree = "<group>"; };
-		13C3C30E230D777F002F5344 /* terms_and_conditions.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = terms_and_conditions.html; sourceTree = "<group>"; };
 		13C662E922AD4EA200FB9A63 /* Drugs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drugs.swift; sourceTree = "<group>"; };
 		13C662EB22AD4F0300FB9A63 /* Pages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pages.swift; sourceTree = "<group>"; };
 		13C662ED22AEB09800FB9A63 /* MedicalDirective.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicalDirective.swift; sourceTree = "<group>"; };
@@ -114,7 +139,6 @@
 		13C7BDDA228C36D900D33B76 /* MedicalDirectiveView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedicalDirectiveView.swift; sourceTree = "<group>"; };
 		13C7BDDB228C36D900D33B76 /* MedicalDirectiveView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MedicalDirectiveView.xib; sourceTree = "<group>"; };
 		13C7BDDF228C6C0400D33B76 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
-		13DBB9BC22B6723800E4CE11 /* MixingCalculatorView_Old.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MixingCalculatorView_Old.xib; sourceTree = "<group>"; };
 		13DBB9BE22B674C400E4CE11 /* MixingCalculatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MixingCalculatorView.swift; sourceTree = "<group>"; };
 		13DBB9C022B8029A00E4CE11 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		13DBB9C222B802B300E4CE11 /* Menus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menus.swift; sourceTree = "<group>"; };
@@ -124,19 +148,43 @@
 		13E3C4872392B815001C3F08 /* adult_airway_post_checklist.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = adult_airway_post_checklist.png; sourceTree = "<group>"; };
 		13E3C4882392B815001C3F08 /* adult_airway_team_positioning.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = adult_airway_team_positioning.png; sourceTree = "<group>"; };
 		13E3C4892392B815001C3F08 /* adult_airway_checklist.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = adult_airway_checklist.png; sourceTree = "<group>"; };
-		13E3C48E2392BD0D001C3F08 /* Clinical Practice - Epoprostenol.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "Clinical Practice - Epoprostenol.html"; sourceTree = "<group>"; };
-		13E3C49023932A95001C3F08 /* Clinical Practice - Sedation Intubated.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "Clinical Practice - Sedation Intubated.html"; sourceTree = "<group>"; };
+		13E3C48E2392BD0D001C3F08 /* Adult - Clinical Practice - Epoprostenol.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "Adult - Clinical Practice - Epoprostenol.html"; sourceTree = "<group>"; };
+		13E3C49023932A95001C3F08 /* Adult - Clinical Practice - Sedation Intubated.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "Adult - Clinical Practice - Sedation Intubated.html"; sourceTree = "<group>"; };
 		13E3C49123932A95001C3F08 /* adult_pain_score_chart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = adult_pain_score_chart.png; sourceTree = "<group>"; };
 		13E3C49223932A96001C3F08 /* adult_sedation_score.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = adult_sedation_score.png; sourceTree = "<group>"; };
-		13E3C49623949A41001C3F08 /* Clinical Practice - ROSC.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "Clinical Practice - ROSC.html"; sourceTree = "<group>"; };
-		13E3C4982396B50C001C3F08 /* Clinical Practice - NSTEMI.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "Clinical Practice - NSTEMI.html"; sourceTree = "<group>"; };
-		13E3C49A2396C49B001C3F08 /* Clinical Practice - STEMI.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "Clinical Practice - STEMI.html"; sourceTree = "<group>"; };
-		13E3C49C2396C6BD001C3F08 /* Clinical Practice - Cardiogenic Shock.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "Clinical Practice - Cardiogenic Shock.html"; sourceTree = "<group>"; };
+		13E3C49623949A41001C3F08 /* Adult - Clinical Practice - ROSC.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "Adult - Clinical Practice - ROSC.html"; sourceTree = "<group>"; };
+		13E3C4982396B50C001C3F08 /* Adult - Clinical Practice - NSTEMI.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "Adult - Clinical Practice - NSTEMI.html"; sourceTree = "<group>"; };
+		13E3C49A2396C49B001C3F08 /* Adult - Clinical Practice - STEMI.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "Adult - Clinical Practice - STEMI.html"; sourceTree = "<group>"; };
+		13E3C49C2396C6BD001C3F08 /* Adult - Clinical Practice - Cardiogenic Shock.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "Adult - Clinical Practice - Cardiogenic Shock.html"; sourceTree = "<group>"; };
+		13E3C49E23974691001C3F08 /* DrugTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrugTableViewController.swift; sourceTree = "<group>"; };
+		13E3C4A02397F743001C3F08 /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		13E3C4A22398B5D4001C3F08 /* Adult - Clinical Practice - Stroke.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "Adult - Clinical Practice - Stroke.html"; sourceTree = "<group>"; };
+		13E3C4A4239964F8001C3F08 /* Adult - Clinical Practice - SCI.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "Adult - Clinical Practice - SCI.html"; sourceTree = "<group>"; };
+		13E3C4A6239964FF001C3F08 /* Adult - Clinical Practice - Trauma.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "Adult - Clinical Practice - Trauma.html"; sourceTree = "<group>"; };
+		13E3C4A82399FAAE001C3F08 /* Adult - Clinical Practice - Sepsis.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "Adult - Clinical Practice - Sepsis.html"; sourceTree = "<group>"; };
+		13E3C4AA239C03F6001C3F08 /* Adult - Clinical Practice - Obstetrics.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "Adult - Clinical Practice - Obstetrics.html"; sourceTree = "<group>"; };
 		13EE6979232154C000A5131A /* ContentPageTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentPageTabBarController.swift; sourceTree = "<group>"; };
 		13EE697B2321554200A5131A /* FlowChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowChartViewController.swift; sourceTree = "<group>"; };
 		13EE697D232159C900A5131A /* UIBezierPathExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIBezierPathExtension.swift; sourceTree = "<group>"; };
 		13F4447B235D4168004F87E0 /* YSiteCompatibilityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YSiteCompatibilityViewController.swift; sourceTree = "<group>"; };
 		13F4447D235DEA1E004F87E0 /* DrugMenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrugMenuTableViewController.swift; sourceTree = "<group>"; };
+		13F4A41D239ECED4004F6D38 /* preamble_patch_point.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = preamble_patch_point.png; sourceTree = "<group>"; };
+		13F4A41F239ECED4004F6D38 /* preamble_loc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = preamble_loc.png; sourceTree = "<group>"; };
+		13F4A429239ED36F004F6D38 /* Authorization.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Authorization.html; sourceTree = "<group>"; };
+		13F4A42A239ED36F004F6D38 /* Preamble.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Preamble.html; sourceTree = "<group>"; };
+		13F4A42B239ED370004F6D38 /* Structure of Medical Directive.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "Structure of Medical Directive.html"; sourceTree = "<group>"; };
+		13F4A42F239F44E8004F6D38 /* preamble_sbarr.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = preamble_sbarr.png; sourceTree = "<group>"; };
+		13F4A45623A1726F004F6D38 /* UITapGestureRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITapGestureRecognizer.swift; sourceTree = "<group>"; };
+		13F4A47B23A35923004F6D38 /* Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
+		13F4A47D23A5CD30004F6D38 /* ped_flacc_score.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ped_flacc_score.png; sourceTree = "<group>"; };
+		13F4A47F23A5CE0C004F6D38 /* Ped - Clinical Practice - Pain.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "Ped - Clinical Practice - Pain.html"; sourceTree = "<group>"; };
+		13FBD4322416CBEB002AD350 /* DrugTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrugTabViewController.swift; sourceTree = "<group>"; };
+		13FBD4342416D15A002AD350 /* MedicalDirectiveTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicalDirectiveTabViewController.swift; sourceTree = "<group>"; };
+		13FBD436241D08B2002AD350 /* DocumentTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentTableViewController.swift; sourceTree = "<group>"; };
+		13FBD438241D0D95002AD350 /* Document.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Document.swift; sourceTree = "<group>"; };
+		13FBD43A241E78B6002AD350 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		13FBD440241EA821002AD350 /* CheckBoxButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckBoxButton.swift; sourceTree = "<group>"; };
+		13FBD462241FB079002AD350 /* PopoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopoverViewController.swift; sourceTree = "<group>"; };
 		9167FC5984E504BE25C11D5A /* Pods-Ornge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ornge.debug.xcconfig"; path = "Target Support Files/Pods-Ornge/Pods-Ornge.debug.xcconfig"; sourceTree = "<group>"; };
 		9B8BDF348D4CA2FF0B894A29 /* Pods-Ornge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ornge.release.xcconfig"; path = "Target Support Files/Pods-Ornge/Pods-Ornge.release.xcconfig"; sourceTree = "<group>"; };
 		E3A989A3A46AAA340CACD7F1 /* Pods_Ornge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ornge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -147,6 +195,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				131812CD242FB1B500767AEE /* WebKit.framework in Frameworks */,
 				9944CB92116F96C0571DEC02 /* Pods_Ornge.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -166,10 +215,14 @@
 			isa = PBXGroup;
 			children = (
 				139BF3DC22849C7400D25766 /* MenuViewController.swift */,
-				1305341A2364302A00E4F016 /* DocumentViewController.swift */,
+				13FBD436241D08B2002AD350 /* DocumentTableViewController.swift */,
+				1380D49B2421234D00E88644 /* DocumentTableLayout.swift */,
+				1354E91D23DB297A00897B61 /* DisclaimerViewController.swift */,
+				13C7BDDE228C36DE00D33B76 /* Subviews */,
 				13F44480235DF24E004F87E0 /* Medical Directives */,
 				13F4447F235DF241004F87E0 /* Drugs */,
 				13C662F422B3FD5500FB9A63 /* Tools */,
+				13FBD462241FB079002AD350 /* PopoverViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -190,9 +243,10 @@
 				131142A52285ECA100BD65C0 /* DataManager.swift */,
 				13C662E922AD4EA200FB9A63 /* Drugs.swift */,
 				13C662EB22AD4F0300FB9A63 /* Pages.swift */,
-				13C662ED22AEB09800FB9A63 /* MedicalDirective.swift */,
 				13DBB9C222B802B300E4CE11 /* Menus.swift */,
 				134789FB23257AA20081E865 /* FlowChart.swift */,
+				13C662ED22AEB09800FB9A63 /* MedicalDirective.swift */,
+				13FBD438241D0D95002AD350 /* Document.swift */,
 			);
 			path = "Data Model";
 			sourceTree = "<group>";
@@ -211,23 +265,37 @@
 		1368DA6C23833391003A7144 /* HTML */ = {
 			isa = PBXGroup;
 			children = (
-				13E3C49C2396C6BD001C3F08 /* Clinical Practice - Cardiogenic Shock.html */,
-				13E3C49A2396C49B001C3F08 /* Clinical Practice - STEMI.html */,
-				13E3C4982396B50C001C3F08 /* Clinical Practice - NSTEMI.html */,
-				13E3C49623949A41001C3F08 /* Clinical Practice - ROSC.html */,
+				139FF61A23C8F7BC00B57A68 /* Adult - Clinical Practice Guidelines - Mechanical Ventilation.html */,
+				1346EAE223AE7D9200992D6A /* preamble_signatures.png */,
+				13F4A47F23A5CE0C004F6D38 /* Ped - Clinical Practice - Pain.html */,
+				13F4A47D23A5CD30004F6D38 /* ped_flacc_score.png */,
+				13F4A429239ED36F004F6D38 /* Authorization.html */,
+				13F4A42A239ED36F004F6D38 /* Preamble.html */,
+				13F4A42B239ED370004F6D38 /* Structure of Medical Directive.html */,
+				13E3C4AA239C03F6001C3F08 /* Adult - Clinical Practice - Obstetrics.html */,
+				13E3C4A82399FAAE001C3F08 /* Adult - Clinical Practice - Sepsis.html */,
+				13E3C4A6239964FF001C3F08 /* Adult - Clinical Practice - Trauma.html */,
+				13E3C4A4239964F8001C3F08 /* Adult - Clinical Practice - SCI.html */,
+				13E3C4A22398B5D4001C3F08 /* Adult - Clinical Practice - Stroke.html */,
+				13E3C49C2396C6BD001C3F08 /* Adult - Clinical Practice - Cardiogenic Shock.html */,
+				13E3C49A2396C49B001C3F08 /* Adult - Clinical Practice - STEMI.html */,
+				13E3C4982396B50C001C3F08 /* Adult - Clinical Practice - NSTEMI.html */,
+				13E3C49623949A41001C3F08 /* Adult - Clinical Practice - ROSC.html */,
+				13E3C49023932A95001C3F08 /* Adult - Clinical Practice - Sedation Intubated.html */,
+				13E3C48E2392BD0D001C3F08 /* Adult - Clinical Practice - Epoprostenol.html */,
+				13E3C48423917829001C3F08 /* Ornge Airway Manual Executive Summary.html */,
+				13E3C48223917306001C3F08 /* Controlled Intubation Checklist.html */,
+				1368DA812385609C003A7144 /* Adult - Clinical Practice - Asthma.html */,
+				1368DA6D23833455003A7144 /* Executive Airway Summary.html */,
+				13F4A41F239ECED4004F6D38 /* preamble_loc.png */,
+				13F4A42F239F44E8004F6D38 /* preamble_sbarr.png */,
+				13F4A41D239ECED4004F6D38 /* preamble_patch_point.png */,
 				13E3C49123932A95001C3F08 /* adult_pain_score_chart.png */,
 				13E3C49223932A96001C3F08 /* adult_sedation_score.png */,
-				13E3C49023932A95001C3F08 /* Clinical Practice - Sedation Intubated.html */,
-				13E3C48E2392BD0D001C3F08 /* Clinical Practice - Epoprostenol.html */,
 				13E3C4892392B815001C3F08 /* adult_airway_checklist.png */,
 				13E3C4862392B815001C3F08 /* adult_airway_patient_positioning.png */,
 				13E3C4872392B815001C3F08 /* adult_airway_post_checklist.png */,
 				13E3C4882392B815001C3F08 /* adult_airway_team_positioning.png */,
-				13E3C48423917829001C3F08 /* Ornge Airway Manual Executive Summary.html */,
-				13E3C48223917306001C3F08 /* Controlled Intubation Checklist.html */,
-				1368DA832388CD42003A7144 /* Clinical Practice Guidelines - Mechanical Ventilation.html */,
-				1368DA812385609C003A7144 /* Clinical Practice - Asthma.html */,
-				1368DA6D23833455003A7144 /* Executive Airway Summary.html */,
 			);
 			path = HTML;
 			sourceTree = "<group>";
@@ -235,6 +303,7 @@
 		1368DA87238C2F1B003A7144 /* Subclasses */ = {
 			isa = PBXGroup;
 			children = (
+				13FBD440241EA821002AD350 /* CheckBoxButton.swift */,
 				1368DA85238C2F13003A7144 /* PaddingLabel.swift */,
 			);
 			path = Subclasses;
@@ -262,17 +331,15 @@
 		139BF3D922849C7400D25766 /* MedicMind */ = {
 			isa = PBXGroup;
 			children = (
+				139BF3E622849C7500D25766 /* Info.plist */,
 				132F1BE1230D953E0071ADFF /* TODO List */,
 				139BF3DA22849C7400D25766 /* AppDelegate.swift */,
-				13C3C30E230D777F002F5344 /* terms_and_conditions.html */,
-				1311429D2285BD6300BD65C0 /* Controllers */,
-				1311429F2285BD8600BD65C0 /* Data Model */,
 				1368DA6C23833391003A7144 /* HTML */,
 				131B96A922D628B500D9A64F /* JSON */,
 				1311429C2285BD5900BD65C0 /* Views */,
+				1311429F2285BD8600BD65C0 /* Data Model */,
+				1311429D2285BD6300BD65C0 /* Controllers */,
 				1311429E2285BD6A00BD65C0 /* Supporting Files */,
-				139BF3E622849C7500D25766 /* Info.plist */,
-				13C7BDDE228C36DE00D33B76 /* Subviews */,
 				13C7BDE1228C6C1800D33B76 /* Extensions */,
 				1368DA87238C2F1B003A7144 /* Subclasses */,
 			);
@@ -296,8 +363,6 @@
 				131894CC234E0BCB00DC307D /* MixingCalculatorView.xib */,
 				13C7BDDA228C36D900D33B76 /* MedicalDirectiveView.swift */,
 				13C7BDDB228C36D900D33B76 /* MedicalDirectiveView.xib */,
-				131894CB234E0BCB00DC307D /* MixingCalculatorView_Old.swift */,
-				13DBB9BC22B6723800E4CE11 /* MixingCalculatorView_Old.xib */,
 			);
 			path = Subviews;
 			sourceTree = "<group>";
@@ -305,12 +370,16 @@
 		13C7BDE1228C6C1800D33B76 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				13E3C4A02397F743001C3F08 /* UIView.swift */,
 				13C7BDDF228C6C0400D33B76 /* UIColorExtension.swift */,
 				131B96B222D8B4AB00D9A64F /* UIStackViewExtension.swift */,
 				131B96C022E0FD2700D9A64F /* ClosedRangeExtension.swift */,
 				13069D3F22EB52AA00AA8F24 /* TreatmentCardButton.swift */,
 				13EE697D232159C900A5131A /* UIBezierPathExtension.swift */,
 				13478A01232747F80081E865 /* String+HTML.swift */,
+				13F4A45623A1726F004F6D38 /* UITapGestureRecognizer.swift */,
+				13F4A47B23A35923004F6D38 /* Double.swift */,
+				13FBD43A241E78B6002AD350 /* String.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -321,6 +390,8 @@
 				13F4447D235DEA1E004F87E0 /* DrugMenuTableViewController.swift */,
 				1309D7BE228CC584005F8D40 /* DrugMonographViewController.swift */,
 				13F4447B235D4168004F87E0 /* YSiteCompatibilityViewController.swift */,
+				13E3C49E23974691001C3F08 /* DrugTableViewController.swift */,
+				13FBD4322416CBEB002AD350 /* DrugTabViewController.swift */,
 			);
 			path = Drugs;
 			sourceTree = "<group>";
@@ -334,6 +405,7 @@
 				1368DA6A238332FC003A7144 /* WebViewController.swift */,
 				1344B2FD229100EC00E08C63 /* DirectiveFlowChartViewController.swift */,
 				13C3C30622ECAADE002F5344 /* EditNotesTableViewController.swift */,
+				13FBD4342416D15A002AD350 /* MedicalDirectiveTabViewController.swift */,
 			);
 			path = "Medical Directives";
 			sourceTree = "<group>";
@@ -341,6 +413,7 @@
 		605AFDD7D181846F9D083506 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				131812CC242FB1B500767AEE /* WebKit.framework */,
 				E3A989A3A46AAA340CACD7F1 /* Pods_Ornge.framework */,
 			);
 			name = Frameworks;
@@ -415,36 +488,48 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				13C3C30F230D777F002F5344 /* terms_and_conditions.html in Resources */,
 				13E3C48523917829001C3F08 /* Ornge Airway Manual Executive Summary.html in Resources */,
 				134789FE23257B990081E865 /* FlowChartLibrary.json in Resources */,
 				130534192364210D00E4F016 /* MedicalDirectives.json in Resources */,
-				13E3C49323932A96001C3F08 /* Clinical Practice - Sedation Intubated.html in Resources */,
+				13E3C49323932A96001C3F08 /* Adult - Clinical Practice - Sedation Intubated.html in Resources */,
 				135D4A9F23156673006C660C /* MenuData_P.json in Resources */,
-				13E3C49723949A41001C3F08 /* Clinical Practice - ROSC.html in Resources */,
+				13F4A47E23A5CD30004F6D38 /* ped_flacc_score.png in Resources */,
+				13E3C49723949A41001C3F08 /* Adult - Clinical Practice - ROSC.html in Resources */,
 				13E3C48323917306001C3F08 /* Controlled Intubation Checklist.html in Resources */,
 				13B6817323155FC3003EA3D7 /* Assets.xcassets in Resources */,
-				13E3C4992396B50C001C3F08 /* Clinical Practice - NSTEMI.html in Resources */,
-				13E3C49D2396C6BD001C3F08 /* Clinical Practice - Cardiogenic Shock.html in Resources */,
+				13E3C4992396B50C001C3F08 /* Adult - Clinical Practice - NSTEMI.html in Resources */,
+				139FF61B23C8F7BC00B57A68 /* Adult - Clinical Practice Guidelines - Mechanical Ventilation.html in Resources */,
+				13E3C49D2396C6BD001C3F08 /* Adult - Clinical Practice - Cardiogenic Shock.html in Resources */,
 				13BF742F22B6647B00145035 /* Podfile in Resources */,
-				1368DA822385609C003A7144 /* Clinical Practice - Asthma.html in Resources */,
-				13DBB9BD22B6723800E4CE11 /* MixingCalculatorView_Old.xib in Resources */,
+				13E3C4A92399FAAF001C3F08 /* Adult - Clinical Practice - Sepsis.html in Resources */,
+				1368DA822385609C003A7144 /* Adult - Clinical Practice - Asthma.html in Resources */,
+				13F4A423239ECED4004F6D38 /* preamble_loc.png in Resources */,
 				13E3C48B2392B815001C3F08 /* adult_airway_post_checklist.png in Resources */,
+				13E3C4A7239964FF001C3F08 /* Adult - Clinical Practice - Trauma.html in Resources */,
 				1309D7C1228CC9F3005F8D40 /* DrugLibrary.json in Resources */,
 				139BF3E522849C7500D25766 /* LaunchScreen.storyboard in Resources */,
+				13E3C4A32398B5D4001C3F08 /* Adult - Clinical Practice - Stroke.html in Resources */,
 				1368DA6E23833455003A7144 /* Executive Airway Summary.html in Resources */,
 				132F1BE2230D953E0071ADFF /* TODO List in Resources */,
-				13E3C49B2396C49B001C3F08 /* Clinical Practice - STEMI.html in Resources */,
-				13E3C48F2392BD0D001C3F08 /* Clinical Practice - Epoprostenol.html in Resources */,
+				13F4A42E239ED370004F6D38 /* Structure of Medical Directive.html in Resources */,
+				13E3C4AB239C03F6001C3F08 /* Adult - Clinical Practice - Obstetrics.html in Resources */,
+				13E3C49B2396C49B001C3F08 /* Adult - Clinical Practice - STEMI.html in Resources */,
+				13E3C4A5239964F8001C3F08 /* Adult - Clinical Practice - SCI.html in Resources */,
+				13F4A42D239ED370004F6D38 /* Preamble.html in Resources */,
+				13E3C48F2392BD0D001C3F08 /* Adult - Clinical Practice - Epoprostenol.html in Resources */,
 				13C7BDDD228C36D900D33B76 /* MedicalDirectiveView.xib in Resources */,
 				13E3C49523932A96001C3F08 /* adult_sedation_score.png in Resources */,
+				13F4A42C239ED370004F6D38 /* Authorization.html in Resources */,
 				13E3C48D2392B815001C3F08 /* adult_airway_checklist.png in Resources */,
+				13F4A430239F44E9004F6D38 /* preamble_sbarr.png in Resources */,
+				1346EAE323AE7D9200992D6A /* preamble_signatures.png in Resources */,
 				13E3C49423932A96001C3F08 /* adult_pain_score_chart.png in Resources */,
 				13E3C48A2392B815001C3F08 /* adult_airway_patient_positioning.png in Resources */,
+				13F4A48023A5CE0C004F6D38 /* Ped - Clinical Practice - Pain.html in Resources */,
 				131894CE234E0BCB00DC307D /* MixingCalculatorView.xib in Resources */,
 				139BF3E022849C7400D25766 /* Main.storyboard in Resources */,
-				1368DA842388CD42003A7144 /* Clinical Practice Guidelines - Mechanical Ventilation.html in Resources */,
 				13E3C48C2392B815001C3F08 /* adult_airway_team_positioning.png in Resources */,
+				13F4A421239ECED4004F6D38 /* preamble_patch_point.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -499,24 +584,31 @@
 			files = (
 				13EE697E232159C900A5131A /* UIBezierPathExtension.swift in Sources */,
 				1309D7BF228CC584005F8D40 /* DrugMonographViewController.swift in Sources */,
+				13FBD463241FB079002AD350 /* PopoverViewController.swift in Sources */,
+				13FBD43B241E78B6002AD350 /* String.swift in Sources */,
 				1344B2FE229100EC00E08C63 /* DirectiveFlowChartViewController.swift in Sources */,
-				1305341B2364302A00E4F016 /* DocumentViewController.swift in Sources */,
+				13FBD441241EA821002AD350 /* CheckBoxButton.swift in Sources */,
 				1368DA86238C2F13003A7144 /* PaddingLabel.swift in Sources */,
 				134789FC23257AA20081E865 /* FlowChart.swift in Sources */,
+				13E3C49F23974691001C3F08 /* DrugTableViewController.swift in Sources */,
 				13DBB9C322B802B300E4CE11 /* Menus.swift in Sources */,
 				13C662EC22AD4F0300FB9A63 /* Pages.swift in Sources */,
-				131894CD234E0BCB00DC307D /* MixingCalculatorView_Old.swift in Sources */,
 				135C05C8228A1EA500F7B6CF /* MedicalDirectiveViewController.swift in Sources */,
 				13EE697C2321554200A5131A /* FlowChartViewController.swift in Sources */,
 				13DBB9BF22B674C400E4CE11 /* MixingCalculatorView.swift in Sources */,
+				13FBD437241D08B2002AD350 /* DocumentTableViewController.swift in Sources */,
+				13FBD4352416D15A002AD350 /* MedicalDirectiveTabViewController.swift in Sources */,
 				13C3C30722ECAADE002F5344 /* EditNotesTableViewController.swift in Sources */,
+				13F4A47C23A35923004F6D38 /* Double.swift in Sources */,
 				13069D4022EB52AA00AA8F24 /* TreatmentCardButton.swift in Sources */,
+				13FBD4332416CBEB002AD350 /* DrugTabViewController.swift in Sources */,
 				13C7BDDC228C36D900D33B76 /* MedicalDirectiveView.swift in Sources */,
 				1368DA6B238332FC003A7144 /* WebViewController.swift in Sources */,
 				131B96B322D8B4AB00D9A64F /* UIStackViewExtension.swift in Sources */,
 				13069D3E22EB48FA00AA8F24 /* DataModel.xcdatamodeld in Sources */,
 				13C3C30922EF355E002F5344 /* DrugCalculatorViewController.swift in Sources */,
 				13C662EE22AEB09800FB9A63 /* MedicalDirective.swift in Sources */,
+				13FBD439241D0D95002AD350 /* Document.swift in Sources */,
 				131142A62285ECA100BD65C0 /* DataManager.swift in Sources */,
 				13C662F622B3FD6400FB9A63 /* VentToolViewController.swift in Sources */,
 				13F4447E235DEA1E004F87E0 /* DrugMenuTableViewController.swift in Sources */,
@@ -525,9 +617,13 @@
 				13C662EA22AD4EA200FB9A63 /* Drugs.swift in Sources */,
 				131B96C122E0FD2700D9A64F /* ClosedRangeExtension.swift in Sources */,
 				139BF3DD22849C7400D25766 /* MenuViewController.swift in Sources */,
+				1354E91E23DB297A00897B61 /* DisclaimerViewController.swift in Sources */,
+				1380D49C2421234D00E88644 /* DocumentTableLayout.swift in Sources */,
 				139BF3DB22849C7400D25766 /* AppDelegate.swift in Sources */,
+				13E3C4A12397F743001C3F08 /* UIView.swift in Sources */,
 				13EE697A232154C100A5131A /* ContentPageTabBarController.swift in Sources */,
 				13F4447C235D4168004F87E0 /* YSiteCompatibilityViewController.swift in Sources */,
+				13F4A45723A1726F004F6D38 /* UITapGestureRecognizer.swift in Sources */,
 				13C7BDE0228C6C0400D33B76 /* UIColorExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -676,19 +772,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
-				DEVELOPMENT_TEAM = CZQT565P8U;
+				CURRENT_PROJECT_VERSION = 0;
+				DEVELOPMENT_TEAM = 72B3P2ME3P;
 				INFOPLIST_FILE = MedicMind/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
-				PRODUCT_BUNDLE_IDENTIFIER = com.sunstorm.MedicMind;
+				MARKETING_VERSION = 1.2;
+				PRODUCT_BUNDLE_IDENTIFIER = ca.ornge.medicaldirectives;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -698,19 +794,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
-				DEVELOPMENT_TEAM = CZQT565P8U;
+				CURRENT_PROJECT_VERSION = 0;
+				DEVELOPMENT_TEAM = 72B3P2ME3P;
 				INFOPLIST_FILE = MedicMind/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
-				PRODUCT_BUNDLE_IDENTIFIER = com.sunstorm.MedicMind;
+				MARKETING_VERSION = 1.2;
+				PRODUCT_BUNDLE_IDENTIFIER = ca.ornge.medicaldirectives;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

@@ -10,6 +10,16 @@ import UIKit
 
 class YSiteCompatibilityViewController: UIViewController {
     
+    var initialField : Drug {
+        set {
+            drug0 = newValue
+            //checkTextFields()
+        }
+        get {
+            return drug0!
+        }
+    }
+    
     @IBOutlet weak var textField0: UITextField!
     @IBOutlet weak var textField1: UITextField!
     @IBOutlet weak var textField2: UITextField!
@@ -28,6 +38,13 @@ class YSiteCompatibilityViewController: UIViewController {
     var drugArray : [Drug] = []
 
     @IBOutlet weak var resultsLabel: UILabel!
+    
+    @objc func tappedViewAction()
+    {
+        if let firstResponder = view.window?.firstResponder {
+            firstResponder.resignFirstResponder()
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -65,7 +82,13 @@ class YSiteCompatibilityViewController: UIViewController {
         textPicker3.dataSource = self
         textPicker3.delegate = self
         
+        let gesture = UITapGestureRecognizer(target: self, action: #selector(tappedViewAction))
+        view.addGestureRecognizer(gesture)
         // Do any additional setup after loading the view.
+        
+        if(drug0 != nil) {
+            textField0.text = drug0?.name
+        }
     }
     
     func checkTextFields()
@@ -75,7 +98,7 @@ class YSiteCompatibilityViewController: UIViewController {
         {
             if(drug1 != nil)
             {
-                if(drug0?.y_site[drug1!.key] == false)
+                if(drug0?.y_site[drug1!.key] == false || drug1?.y_site[drug0!.key] == false)
                 {
                     resultsLabel.text = resultsLabel.text! + "\(drug0!.name) is incompatible with \(drug1!.name)\n"
                     resultsLabel.textColor = UIColor.red
@@ -83,7 +106,7 @@ class YSiteCompatibilityViewController: UIViewController {
             }
             if(drug2 != nil)
             {
-                if(drug0?.y_site[drug2!.key] == false)
+                if(drug0?.y_site[drug2!.key] == false || drug2?.y_site[drug0!.key] == false)
                 {
                     resultsLabel.text = resultsLabel.text! + "\(drug0!.name) is incompatible with \(drug2!.name)\n"
                     resultsLabel.textColor = UIColor.red
@@ -91,7 +114,7 @@ class YSiteCompatibilityViewController: UIViewController {
             }
             if(drug3 != nil)
             {
-                if(drug0?.y_site[drug3!.key] == false)
+                if(drug0?.y_site[drug3!.key] == false || drug3?.y_site[drug0!.key] == false)
                 {
                     resultsLabel.text = resultsLabel.text! + "\(drug0!.name) is incompatible with \(drug3!.name)\n"
                     resultsLabel.textColor = UIColor.red
@@ -100,9 +123,10 @@ class YSiteCompatibilityViewController: UIViewController {
         }
         if( drug1 != nil)
         {
+            
             if(drug2 != nil)
             {
-                if(drug1?.y_site[drug2!.key] == false)
+                if(drug1?.y_site[drug2!.key] == false || drug2?.y_site[drug1!.key] == false)
                 {
                     resultsLabel.text = resultsLabel.text! + "\(drug1!.name) is incompatible with \(drug2!.name)\n"
                     resultsLabel.textColor = UIColor.red
@@ -110,7 +134,7 @@ class YSiteCompatibilityViewController: UIViewController {
             }
             if(drug3 != nil)
             {
-                if(drug1?.y_site[drug3!.key] == false)
+                if(drug1?.y_site[drug3!.key] == false || drug3?.y_site[drug1!.key] == false)
                 {
                     resultsLabel.text = resultsLabel.text! + "\(drug1!.name) is incompatible with \(drug3!.name)\n"
                     resultsLabel.textColor = UIColor.red
@@ -119,9 +143,10 @@ class YSiteCompatibilityViewController: UIViewController {
         }
         if( drug2 != nil)
         {
+            
             if(drug3 != nil)
             {
-                if(drug2?.y_site[drug3!.key] == false)
+                if(drug2?.y_site[drug3!.key] == false || drug3?.y_site[drug2!.key] == false)
                 {
                     resultsLabel.text = resultsLabel.text! + "\(drug2!.name) is incompatible with \(drug3!.name)\n"
                     resultsLabel.textColor = UIColor.red

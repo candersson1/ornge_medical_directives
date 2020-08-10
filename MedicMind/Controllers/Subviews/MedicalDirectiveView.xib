@@ -54,7 +54,7 @@
                             <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="detailDisclosure" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a7i-sg-7ZW">
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="detailDisclosure" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a7i-sg-7ZW" customClass="TreatmentCardButton" customModule="Ornge" customModuleProvider="target">
                             <rect key="frame" x="440" y="8" width="24" height="24"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="24" id="iqA-GL-Hjc"/>
@@ -79,7 +79,7 @@
                         </button>
                     </subviews>
                     <constraints>
-                        <constraint firstAttribute="height" secondItem="fEu-lo-toF" secondAttribute="height" multiplier="2" id="FBQ-hc-XIP"/>
+                        <constraint firstAttribute="height" secondItem="fEu-lo-toF" secondAttribute="height" constant="20" id="FBQ-hc-XIP"/>
                     </constraints>
                     <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
                 </stackView>

@@ -12,10 +12,11 @@ import Foundation
 enum LevelOfCare : Int
 {
     case PCP = 0
-    case ACP = 1
-    case CCP = 2
-    case PCCP = 3
-    case All = 4
+    case ACPL = 1
+    case ACP = 2
+    case CCP = 3
+    case PCCP = 4
+    case All = 5
     
     static func getTypeFromString(string : String) -> LevelOfCare
     {
@@ -23,6 +24,8 @@ enum LevelOfCare : Int
         {
         case "pcp":
             return .PCP
+        case "acpl":
+            return .ACPL
         case "acp":
             return .ACP
         case "ccp":
@@ -98,10 +101,10 @@ struct ContentPages : Codable {
             let type = try page.decode(DirectiveType.self, forKey: DirectivesTypeKey.type)
             
             switch type {
-            case .document:
-                pages.append(try pagesArray.decode(Document.self))
-            case .directive:
-                pages.append(try pagesArray.decode(MedicalDirective.self))
+                case .document:
+                    pages.append(try pagesArray.decode(Document.self))
+                case .directive:
+                    pages.append(try pagesArray.decode(MedicalDirective.self))
             }
         }
         self.pages = pages
@@ -142,20 +145,24 @@ class MedicalDirective : Page {
     }
 }
 
-class Document : Page {
-    var text : String
-    var flowchartkeys : [String] = []
-    
+struct TreatmentData : Codable
+{
+    var key = ""
+    var dose_route : [[String]] = []
+    var loc = [["", ""]]
+
     private enum CodingKeys: String, CodingKey {
-        case text
-        case flowchartkeys
+        case key
+        case dose_route
+        case loc
     }
     
-    required init(from decoder: Decoder) throws {
+    init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
-        self.text = try container.decodeIfPresent(String.self, forKey: .text) ?? ""
-        self.flowchartkeys = try container.decodeIfPresent([String].self, forKey: .flowchartkeys) ?? []
-        try super.init(from: decoder)
+        self.key = try container.decode(String.self, forKey: .key)
+        self.dose_route = try container.decodeIfPresent([[String]].self, forKey: .dose_route) ?? []
+        self.loc = try container.decodeIfPresent([[String]].self, forKey: .loc) ?? [["pcp","none"]]
+
     }
 }
 

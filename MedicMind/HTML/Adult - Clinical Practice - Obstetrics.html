@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Clinical Practice - Obstetrics</title>
+
+
+<style type="text/css">
+body {
+  font-family: Helvetica, arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: white;
+  padding: 30px; }
+
+body > *:first-child {
+  margin-top: 0 !important; }
+body > *:last-child {
+  margin-bottom: 0 !important; }
+
+a {
+  color: #4183C4; }
+a.absent {
+  color: #cc0000; }
+a.anchor {
+  display: block;
+  padding-left: 30px;
+  margin-left: -30px;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+  cursor: text;
+  position: relative; }
+
+h1:hover a.anchor, h2:hover a.anchor, h3:hover a.anchor, h4:hover a.anchor, h5:hover a.anchor, h6:hover a.anchor {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA09pVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoMTMuMCAyMDEyMDMwNS5tLjQxNSAyMDEyLzAzLzA1OjIxOjAwOjAwKSAgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OUM2NjlDQjI4ODBGMTFFMTg1ODlEODNERDJBRjUwQTQiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OUM2NjlDQjM4ODBGMTFFMTg1ODlEODNERDJBRjUwQTQiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo5QzY2OUNCMDg4MEYxMUUxODU4OUQ4M0REMkFGNTBBNCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo5QzY2OUNCMTg4MEYxMUUxODU4OUQ4M0REMkFGNTBBNCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PsQhXeAAAABfSURBVHjaYvz//z8DJYCRUgMYQAbAMBQIAvEqkBQWXI6sHqwHiwG70TTBxGaiWwjCTGgOUgJiF1J8wMRAIUA34B4Q76HUBelAfJYSA0CuMIEaRP8wGIkGMA54bgQIMACAmkXJi0hKJQAAAABJRU5ErkJggg==) no-repeat 10px center;
+  text-decoration: none; }
+
+h1 tt, h1 code {
+  font-size: inherit; }
+
+h2 tt, h2 code {
+  font-size: inherit; }
+
+h3 tt, h3 code {
+  font-size: inherit; }
+
+h4 tt, h4 code {
+  font-size: inherit; }
+
+h5 tt, h5 code {
+  font-size: inherit; }
+
+h6 tt, h6 code {
+  font-size: inherit; }
+
+h1 {
+  font-size: 28px;
+  color: black; }
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #cccccc;
+  color: black; }
+
+h3 {
+  font-size: 18px; }
+
+h4 {
+  font-size: 16px; }
+
+h5 {
+  font-size: 14px; }
+
+h6 {
+  color: #777777;
+  font-size: 14px; }
+
+p, blockquote, ul, ol, dl, li, table, pre {
+  margin: 15px 0; }
+
+hr {
+  background: transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAECAYAAACtBE5DAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OENDRjNBN0E2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OENDRjNBN0I2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo4Q0NGM0E3ODY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo4Q0NGM0E3OTY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PqqezsUAAAAfSURBVHjaYmRABcYwBiM2QSA4y4hNEKYDQxAEAAIMAHNGAzhkPOlYAAAAAElFTkSuQmCC) repeat-x 0 0;
+  border: 0 none;
+  color: #cccccc;
+  height: 4px;
+  padding: 0;
+}
+
+body > h2:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+body > h1:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+  body > h1:first-child + h2 {
+    margin-top: 0;
+    padding-top: 0; }
+body > h3:first-child, body > h4:first-child, body > h5:first-child, body > h6:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0; }
+
+h1 p, h2 p, h3 p, h4 p, h5 p, h6 p {
+  margin-top: 0; }
+
+li p.first {
+  display: inline-block; }
+li {
+  margin: 0; }
+ul, ol {
+  padding-left: 30px; }
+
+ul :first-child, ol :first-child {
+  margin-top: 0; }
+
+dl {
+  padding: 0; }
+  dl dt {
+    font-size: 14px;
+    font-weight: bold;
+    font-style: italic;
+    padding: 0;
+    margin: 15px 0 5px; }
+    dl dt:first-child {
+      padding: 0; }
+    dl dt > :first-child {
+      margin-top: 0; }
+    dl dt > :last-child {
+      margin-bottom: 0; }
+  dl dd {
+    margin: 0 0 15px;
+    padding: 0 15px; }
+    dl dd > :first-child {
+      margin-top: 0; }
+    dl dd > :last-child {
+      margin-bottom: 0; }
+
+blockquote {
+  border-left: 4px solid #dddddd;
+  padding: 0 15px;
+  color: #777777; }
+  blockquote > :first-child {
+    margin-top: 0; }
+  blockquote > :last-child {
+    margin-bottom: 0; }
+
+table {
+  padding: 0;border-collapse: collapse; }
+  table tr {
+    border-top: 1px solid #cccccc;
+    background-color: white;
+    margin: 0;
+    padding: 0; }
+    table tr:nth-child(2n) {
+      background-color: #f8f8f8; }
+    table tr th {
+      font-weight: bold;
+      border: 1px solid #cccccc;
+      margin: 0;
+      padding: 6px 13px; }
+    table tr td {
+      border: 1px solid #cccccc;
+      margin: 0;
+      padding: 6px 13px; }
+    table tr th :first-child, table tr td :first-child {
+      margin-top: 0; }
+    table tr th :last-child, table tr td :last-child {
+      margin-bottom: 0; }
+
+img {
+  max-width: 100%; }
+
+span.frame {
+  display: block;
+  overflow: hidden; }
+  span.frame > span {
+    border: 1px solid #dddddd;
+    display: block;
+    float: left;
+    overflow: hidden;
+    margin: 13px 0 0;
+    padding: 7px;
+    width: auto; }
+  span.frame span img {
+    display: block;
+    float: left; }
+  span.frame span span {
+    clear: both;
+    color: #333333;
+    display: block;
+    padding: 5px 0 0; }
+span.align-center {
+  display: block;
+  overflow: hidden;
+  clear: both; }
+  span.align-center > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px auto 0;
+    text-align: center; }
+  span.align-center span img {
+    margin: 0 auto;
+    text-align: center; }
+span.align-right {
+  display: block;
+  overflow: hidden;
+  clear: both; }
+  span.align-right > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px 0 0;
+    text-align: right; }
+  span.align-right span img {
+    margin: 0;
+    text-align: right; }
+span.float-left {
+  display: block;
+  margin-right: 13px;
+  overflow: hidden;
+  float: left; }
+  span.float-left span {
+    margin: 13px 0 0; }
+span.float-right {
+  display: block;
+  margin-left: 13px;
+  overflow: hidden;
+  float: right; }
+  span.float-right > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px auto 0;
+    text-align: right; }
+
+code, tt {
+  margin: 0 2px;
+  padding: 0 5px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px; }
+
+pre code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent; }
+
+.highlight pre {
+  background-color: #f8f8f8;
+  border: 1px solid #cccccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px; }
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #cccccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px; }
+  pre code, pre tt {
+    background-color: transparent;
+    border: none; }
+
+sup {
+    font-size: 0.83em;
+    vertical-align: super;
+    line-height: 0;
+}
+
+kbd {
+  display: inline-block;
+  padding: 3px 5px;
+  font-size: 11px;
+  line-height: 10px;
+  color: #555;
+  vertical-align: middle;
+  background-color: #fcfcfc;
+  border: solid 1px #ccc;
+  border-bottom-color: #bbb;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #bbb
+}
+
+* {
+	-webkit-print-color-adjust: exact;
+}
+@media screen and (min-width: 914px) {
+    body {
+        width: 854px;
+        margin:0 auto;
+    }
+}
+@media print {
+	table, pre {
+		page-break-inside: avoid;
+	}
+	pre {
+		word-wrap: break-word;
+	}
+}
+</style>
+
+
+</head>
+
+<body>
+
+<h2 id="toc_0">Ornge Clinical Practice Guideline: Obstetrics Evidence</h2>
+
+<p><i>Please refer to the Drug Monographs and References document for references listed in the CPGs</i></p>
+
+<p>Obstetrical history and pertinent maternal information should be routinely documented in all pregnant patients.
+The history should include the following: Gravida, Para, Abortus, Estimated Gestational Age, estimated date of
+birth (EDB), previous deliveries/complications, Group B strep (GBS) status, if known and antibiotic treatment
+initiated by sending facility. If available a copy of the Ontario Perinatal Record should be included in the patient
+documentation for receiving facility. The FHR should be auscultated and Paramedic assessment documented and
+reviewed with sending staff to confirm FHR pattern with previous assessments and any changes also recorded. The
+receiving facility should be updated with changes in baseline FHR or any abnormal findings to ensure fetal wellbeing
+and appropriate interventions are initiated as indicated. Patients should be placed in a left lateral position
+by tilting or wedging the pelvis to achieve left lateral displacement of the uterus to prevent hypotension
+secondary to compression of the IVC.Repositioning the patient will also assist in an increase uteroplacental
+perfusion and alleviate cord compression. SpO2 should be monitored in all pregnant patients and supplemental
+oxygen should be provided to achieve SpO2 94-98%.</p>
+
+<p><strong>Premature Rupture of Membranes:</strong></p>
+
+<ul>
+<li>A woman is described as having Preterm PROM or PPROM if she has ruptured membranes before 37 weeks
+of pregnancy but is not in established labour. Gestational age, fetal presentation, and fetal well-being
+should be determined in all patients with PROM</li>
+<li>In patients with preterm PROM, an initial period of fetal heart rate monitoring and uterine
+activity monitoring may help to identify abnormal fetal heart tracing and to evaluate for contractions</li>
+<li>Abnormal fetal heart rate tracing, clinical chorioamnionitis and abruptio placentae are clear indications for
+delivery emergently</li>
+<li>Antibiotics should be given for all patients positive for Group B Streptococcus (GBS) and considered for all
+patients with Premature rupture of membranes<sup>7,8</sup></li>
+<li>Ampicillin 2 g IV q 6 hours and Erythromycin 250 mg IV q 6 hours for 48 hours should be given and followed
+by oral Amoxicillin 250 mg Q8H and Erythromycin 333 mg q 8 hours for 5 days for all PPROM patients less
+than 34 weeks gestation with no allergies to these medications. The use of Ampicillin-clavulanic acid is
+NOT recommended due to increased rates of necrotizing enterocolitis<sup>4</sup></li>
+<li>For patients between 24 and less then 35 weeks gestation antenatal corticosteroids (either
+Betamethasone 12 mg IM every 24 hours for a total of two doses or dexamethasone 6 mg IM every 12
+hours for a total of 4 doses) should be administered in women with PPROM. Repeat steroids should be
+given for patients &lt; 33 weeks gestation who have not received steroids 14 days earlier and expected to
+deliver in the next 7 days</li>
+<li>Steroids should not be used to treat in the presence of diagnosed intrauterine infection. <sup>43</sup></li>
+<li>Prophylactic tocolysis is not recommended for patients with PPROM with no signs of labor.</li>
+<li>Women with PPROM before 32 weeks who are thought to be at risk for imminent delivery should be
+treated antenatally with IV Magnesium Sulfate 4 grams followed by a Magnesium Sulfate infusion, 1 gram/
+hr for 24 hours, to provide neuroprotection in preterm infantsDigital cervical examination generally should
+be avoided unless the patient appears to be in active labor or delivery seems imminent</li>
+</ul>
+
+<p><strong>Preterm Labour:</strong></p>
+
+<ul>
+<li>Patients with pain or possible labour should have documentation of duration and severity of contractions,
+frequency of contractions, progress, cervical dilatation, and fetal fibronectin testing results if available.<sup>9</sup></li>
+<li>Tocolytics: For patients in preterm labour, the goal is to avoid delivery during transport. Tocolytics should
+be strongly considered in order to minimize risk of delivery outside the hospital environment.
+Indomethacin 100 mg suppository followed by 25-50 mg every 6 hours for 48 hours total or niFEDIPine 10
+mg orally every 4-6 hours for 48 hours or until a total of 120 mg is reached can be considered for the
+tocolytic.<sup>10,11</sup></li>
+</ul>
+
+<p>Magnesium Sulfate: has not been shown to be an effective tocolytic, but is advised by many high risk obstetricians
+for neuroprotection in preterm labour, at gestational ages less than 32 weeks. This should be discussed with the
+receiving obstetrician or may be continued in transport for this indication.<sup>12-16</sup></p>
+
+<p>Steroids: For all patients 24+0 - 34+6 weeks, documentation should include Dexamethasone/ B-Methasone given
+for fetal lung maturation in case of possible preterm delivery. 
+Glucorticoids should be considered for all obstetrical
+patients in premature labour <35 weeks gestation.<sup>17-19</sup></p>
+
+<p><strong>Patient Pre-eclampsia:</strong>
+Blood pressure should be monitored every 10 minutes for all patients with pre-eclampsia or eclampsia as per BLS/
+ALS provincial standards.<sup>1</sup> Magnesium Sulfate 4 g IV followed by 1 g IV/hr should be given for eclampsia or preeclampsia
+with severe features including Proteinuria, Platelets <100,000, a doubling of the serum creatinine,
+abnormal liver function tests (twice the normal limit), pulmonary edema, and cerebral or visual signs & symptoms.
+A recurrent seizure may require a second 2-4g bolus over 20-30 minutes. In mild cases, management should be
+reviewed on a case by case basis, as there is no universally accepted standard for a precise indication for starting
+treatment.<sup>20-26</sup> Benzodiazepine medications should be used for patients with ongoing seizures.<sup>27</sup> Antihypertensive
+medications such as labetalol should be given as an initial dose of 20 mg IV and repeated 20-80 mg every 30
+minutes to a maximum of 300 mg. It is contraindicated in women with asthma or heart failure. NiFEDIPine 10 mg
+and then 10-20 mg every 45 minutes to a maximum of 50 mg. It should be swallowed and NOT chewed.
+HydrALAZINE 5 mg IV and repeat 5-10 mg every 30 minutes to a max of 20 mg should be considered for all ongoing
+hypertension.<sup>28,29</sup></p>
+
+<p>Hypertensive women may not tolerate large fluid volume shifts. Iatrogenic pulmonary edema is a concern because
+of the large amounts of intravenous fluids that may be inadvertently administered intrapartum. Intravenous and
+oral fluid intake should be limited in women with pre-eclampsia to avoid pulmonary edema. <strong>The standard
+intravenous fluid bolus routinely administered before regional anesthesia should not be given.</strong> The type of fluid is
+not as critical as the volume of fluid. Hypotension and shock may develop with lesser degrees of hemorrhage
+because of vascular space contraction.</p>
+
+<p>Urine output is best monitored by an indwelling Foley catheter. A urine output &lt;15 ml/hour is not unusual in preeclampsia,
+particularly postpartum. In the absence of pre-existing renal disease of a rising creatinine level, Oliguria
+should be tolerated at least for a few hours. The UK Confidential Enquiry into Maternal Deaths found that excess
+maternal mortality is associated with aggressive fluid use and not with transient renal compromise. In the presence
+of Oliguria, a careful assessment of volume status and renal function is indicated. When a patient is undergoing
+medication induction of labor and is receiving Magnesium Sulfate with oxytocin, it is prudent to limit IV fluid intake
+by concentrating the solutions of oxytocin and Magnesium Sulfate. Hourly total intake and urine output must be
+monitored closely in this situation to prevent pulmonary edema.</p>
+
+<p>Fluid Mangement Recommendations in the presence of Oliguria (&lt;15 ml/hour):</p>
+
+<ul>
+<li>Clinically assess volume status</li>
+<li>Measure renal function (creatinine)</li>
+<li>Beware of magnesium toxicity</li>
+<li>Consider a small fluid bolus (500 ml normal saline)</li>
+<li>Monitor O2 saturation (keep 94-98%)</li>
+<li>Beware of pulmonary edema</li>
+<li>Consider consultation, of Oliguria persists and creatinine is rising
+Dopamine or furosemide should be administered in the presence of persistent Oliguria occuring before delivery</li>
+</ul>
+
+<p><strong>Patient Post-Partum Hemorrhage:</strong></p>
+
+<p>Uterine massage should be attempted for patients with persistent postpartum hemorrhage.<sup>30</sup> Use of oxytocin
+should be systematic in cases of postpartum hemorrhage.<sup>31-33</sup> Ergonovine is contraindicated in hypertension. The
+dose is 0.2-0.25 mg IV/IM every 2 hours and carboprost/hemabate should be given 250 mcg IM in
+intramyometrially every 15 minutes to a max of 8 doses for refractory postpartum hemorrhage.<sup>34-37</sup></p>
+
+<p><strong>Patient with Birth / Delivery:</strong>
+Oxytocin should be given routinely as per current guidelines for delivery.38,31 APGAR scores should be documented
+for all births.<sup>39</sup></p>
+
+<h2 id="toc_1">Obstetrical Transfer Preparation</h2>
+
+<ol>
+<li>The Paramedic ensures the patient is gowned appropriately for transport. An incontinence pad is used in
+preparation for imminent delivery</li>
+<li>If the patient is in active labour (contractions 5 minutes apart), the patient should have one initial visual
+perineal examination completed and the findings documented. No digital vaginal or rectal examination is
+to be done to determine cervical dilatation or for any other concerns. The sending MD or RN should be
+asked to perform a cervical exam if not done within 1 hour of departure</li>
+<li>The following should be obtained:
+
+<ul>
+<li>Fetal heart rate (intermittent assessment throughout transport must be completed)</li>
+<li>Expected date of birth (EDB)</li>
+<li>Duration of contractions (from beginning to end of one contraction)</li>
+<li>Frequency of contractions (from beginning of one contraction to the beginning of the next
+contraction)</li>
+<li>Para and gravida status</li>
+<li>A complete set of mother’s vital signs, repeated q 15 minutes</li>
+<li>Cervical dilatation</li>
+</ul></li>
+<li>Medical escorts are determined by the sending physician, TMP and paramedics</li>
+<li>Maintain SpO2 94-98%</li>
+<li>The mother is encouraged to lie on her left side or have a pillow placed under her right buttock to prevent
+supine hypotension syndrome</li>
+<li>The ACP(f), CCP and PCCP/PCCN must ensure that all obstetrical patients in active labour have peripheral
+intravenous access (normal saline TKVO or saline lock)</li>
+<li>Contraindications to transport include: inability to stabilize mother, suspected acute fetal compromise,
+delivery is imminent, weather conditions are too hazardous for travel.</li>
+</ol>
+
+
+
+
+</body>
+
+</html>
