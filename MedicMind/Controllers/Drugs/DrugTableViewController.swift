@@ -61,8 +61,8 @@ class DrugTableViewController : UIViewController
             stackView.widthAnchor.constraint(equalTo: scrollView.widthAnchor)
         ])
         
-        let titleFont = UIFont(name: DataManager.instance.boldFontName, size: CGFloat(DataManager.instance.fontSize + 3))
-        let font = UIFont(name: DataManager.instance.fontName, size: CGFloat(DataManager.instance.fontSize))
+        let titleFont = UIFont.systemFont(ofSize: CGFloat(DataManager.instance.fontSize + 3))
+        let font = UIFont.systemFont(ofSize: CGFloat(DataManager.instance.fontSize))
         
         let titleLabel = UILabel()
         titleLabel.font = titleFont
@@ -184,7 +184,6 @@ class DrugTableViewController : UIViewController
                                 ])
                             }
                             viewArray[viewArray.count-1].append(labelView)
-                        
                         }
                     }
                 }

@@ -40,6 +40,7 @@ class DrugMenuTableViewController: UITableViewController {
         cell.textLabel!.text = drugArray[indexPath.row].name
         cell.textLabel!.numberOfLines = 0
         cell.textLabel!.lineBreakMode = .byWordWrapping
+        cell.textLabel!.font = .systemFont(ofSize: 15)
         return cell
     }
 

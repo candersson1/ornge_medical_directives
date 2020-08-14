@@ -1005,11 +1005,6 @@
                     "title" : "Y Site Compatibility",
                     "type" : "tool",
                     "key" : "y_site"
-                },
-                {
-                    "title" : "Controlled Intubation Checklist",
-                    "type" : "webview",
-                    "key" : "Controlled Intubation Checklist"
                 }
             ]
         },

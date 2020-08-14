@@ -519,7 +519,6 @@ class DocumentTableViewController: UITableViewController {
             cell.collectionView.sectionInfo = tableCellData[section]
             cell.collectionView.cells = tableCellData[section]._sectionCellInfo
             cell.collectionView.isSectionHeader = true
-            cell.collectionView.backgroundColor = .systemGray5
             tableCellData[section].headerCell = cell
             if let layout = cell.collectionView?.collectionViewLayout as? DocumentTableLayout {
                 layout.invalidateLayout()
@@ -538,6 +537,7 @@ class DocumentTableViewController: UITableViewController {
         cell.collectionView.dataSource = self
         cell.collectionView.sectionInfo = tableCellData[indexPath.section]
         cell.collectionView.cells = tableCellData[indexPath.section].cellsInfo
+        
         tableCellData[indexPath.section].sectionCell = cell
         if let layout = cell.collectionView?.collectionViewLayout as? DocumentTableLayout {
             layout.invalidateLayout()
@@ -580,7 +580,7 @@ extension DocumentTableViewController : UICollectionViewDataSource, UICollection
                     let cellStringInfo = cellInfo.data as! CellContentAttributedString
                     let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "padded_label", for: indexPath) as! CollectionCellPaddedLabel
                     cell.textView.attributedText = (cellInfo.data as! CellContentAttributedString).attributedString
-
+                    
                     if(indexedCollectionView.sectionInfo.sectionCellInfo != nil)
                     {
                         if(indexedCollectionView.sectionInfo.sectionCellInfo!.count > indexPath.row) {
@@ -598,6 +598,7 @@ extension DocumentTableViewController : UICollectionViewDataSource, UICollection
                     }
                     cell.textView.textContainerInset = UIEdgeInsets(top: cellContentInsetTop, left: cellContentInsetLeft, bottom: 0, right: 0)
                     cell.textView.delegate = self
+                    cell.backgroundColor = UIColor(named: "Tertiary_background")
                     cell.layer.borderColor = UIColor.systemGray5.cgColor
                     cell.layer.borderWidth = 0.5
                     return cell
@@ -607,6 +608,7 @@ extension DocumentTableViewController : UICollectionViewDataSource, UICollection
                     cell.button.selectionIndex = cellButtonInfo.checkBoxStatus
                     cell.button.delegate = cellButtonInfo
                     cell.layer.borderColor = UIColor.systemGray5.cgColor
+                    cell.backgroundColor = UIColor(named: "Tertiary_background")
                     cell.layer.borderWidth = 0.5
                     return cell
                 default:

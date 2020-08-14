@@ -31,6 +31,76 @@
 		1368DA822385609C003A7144 /* Adult - Clinical Practice - Asthma.html in Resources */ = {isa = PBXBuildFile; fileRef = 1368DA812385609C003A7144 /* Adult - Clinical Practice - Asthma.html */; };
 		1368DA86238C2F13003A7144 /* PaddingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1368DA85238C2F13003A7144 /* PaddingLabel.swift */; };
 		1380D49C2421234D00E88644 /* DocumentTableLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1380D49B2421234D00E88644 /* DocumentTableLayout.swift */; };
+		138F077524E413C700410D0D /* UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138F077424E413C700410D0D /* UIFont.swift */; };
+		138F07BB24E44A9D00410D0D /* MinionPro-BoldCnSubh.otf in Resources */ = {isa = PBXBuildFile; fileRef = 138F077A24E44A9D00410D0D /* MinionPro-BoldCnSubh.otf */; };
+		138F07BC24E44A9D00410D0D /* MinionPro-MediumSubh.otf in Resources */ = {isa = PBXBuildFile; fileRef = 138F077B24E44A9D00410D0D /* MinionPro-MediumSubh.otf */; };
+		138F07BD24E44A9D00410D0D /* MinionPro-SemiboldDisp.otf in Resources */ = {isa = PBXBuildFile; fileRef = 138F077C24E44A9D00410D0D /* MinionPro-SemiboldDisp.otf */; };
+		138F07BE24E44A9D00410D0D /* MinionPro-BoldItDisp.otf in Resources */ = {isa = PBXBuildFile; fileRef = 138F077D24E44A9D00410D0D /* MinionPro-BoldItDisp.otf */; };
+		138F07BF24E44A9D00410D0D /* MinionPro-MediumCnSubh.otf in Resources */ = {isa = PBXBuildFile; fileRef = 138F077E24E44A9D00410D0D /* MinionPro-MediumCnSubh.otf */; };
+		138F07C024E44A9D00410D0D /* MinionPro-BoldCnIt.otf in Resources */ = {isa = PBXBuildFile; fileRef = 138F077F24E44A9D00410D0D /* MinionPro-BoldCnIt.otf */; };
+		138F07C124E44A9D00410D0D /* MinionPro-CnItSubh.otf in Resources */ = {isa = PBXBuildFile; fileRef = 138F078024E44A9D00410D0D /* MinionPro-CnItSubh.otf */; };
+		138F07C224E44A9D00410D0D /* MinionPro-MediumItDisp.otf in Resources */ = {isa = PBXBuildFile; fileRef = 138F078124E44A9D00410D0D /* MinionPro-MediumItDisp.otf */; };
+		138F07C324E44A9D00410D0D /* MinionPro-SemiboldCnCapt.otf in Resources */ = {isa = PBXBuildFile; fileRef = 138F078224E44A9D00410D0D /* MinionPro-SemiboldCnCapt.otf */; };
+		138F07C424E44A9D00410D0D /* MinionPro-It.otf in Resources */ = {isa = PBXBuildFile; fileRef = 138F078324E44A9D00410D0D /* MinionPro-It.otf */; };
+		138F07C524E44A9D00410D0D /* MinionPro-SemiboldCnItDisp.otf in Resources */ = {isa = PBXBuildFile; fileRef = 138F078424E44A9D00410D0D /* MinionPro-SemiboldCnItDisp.otf */; };
+		138F07C624E44A9D00410D0D /* MinionPro-CnIt.otf in Resources */ = {isa = PBXBuildFile; fileRef = 138F078524E44A9D00410D0D /* MinionPro-CnIt.otf */; };
+		138F07C724E44A9D00410D0D /* MinionPro-MediumIt.otf in Resources */ = {isa = PBXBuildFile; fileRef = 138F078624E44A9D00410D0D /* MinionPro-MediumIt.otf */; };
+		138F07C824E44A9D00410D0D /* MinionPro-BoldCnItSubh.otf in Resources */ = {isa = PBXBuildFile; fileRef = 138F078724E44A9D00410D0D /* MinionPro-BoldCnItSubh.otf */; };
+		138F07C924E44A9D00410D0D /* MinionPro-SemiboldCn.otf in Resources */ = {isa = PBXBuildFile; fileRef = 138F078824E44A9D00410D0D /* MinionPro-SemiboldCn.otf */; };
+		138F07CA24E44A9D00410D0D /* MinionPro-CnSubh.otf in Resources */ = {isa = PBXBuildFile; fileRef = 138F078924E44A9D00410D0D /* MinionPro-CnSubh.otf */; };
+		138F07CB24E44A9D00410D0D /* MinionPro-SemiboldCnSubh.otf in Resources */ = {isa = PBXBuildFile; fileRef = 138F078A24E44A9D00410D0D /* MinionPro-SemiboldCnSubh.otf */; };
+		138F07CC24E44A9D00410D0D /* MinionPro-SemiboldItDisp.otf in Resources */ = {isa = PBXBuildFile; fileRef = 138F078B24E44A9D00410D0D /* MinionPro-SemiboldItDisp.otf */; };
+		138F07CD24E44A9D00410D0D /* MinionPro-ItDisp.otf in Resources */ = {isa = PBXBuildFile; fileRef = 138F078C24E44A9D00410D0D /* MinionPro-ItDisp.otf */; };
+		138F07CE24E44A9D00410D0D /* MinionPro-MediumCnItDisp.otf in Resources */ = {isa = PBXBuildFile; fileRef = 138F078D24E44A9D00410D0D /* MinionPro-MediumCnItDisp.otf */; };
+		138F07CF24E44A9D00410D0D /* MinionPro-BoldCnItCapt.otf in Resources */ = {isa = PBXBuildFile; fileRef = 138F078E24E44A9D00410D0D /* MinionPro-BoldCnItCapt.otf */; };
+		138F07D024E44A9D00410D0D /* MinionPro-Disp.otf in Resources */ = {isa = PBXBuildFile; fileRef = 138F078F24E44A9D00410D0D /* MinionPro-Disp.otf */; };
+		138F07D124E44A9D00410D0D /* MinionPro-MediumCapt.otf in Resources */ = {isa = PBXBuildFile; fileRef = 138F079024E44A9D00410D0D /* MinionPro-MediumCapt.otf */; };
+		138F07D224E44A9D00410D0D /* MinionPro-SemiboldCnIt.otf in Resources */ = {isa = PBXBuildFile; fileRef = 138F079124E44A9D00410D0D /* MinionPro-SemiboldCnIt.otf */; };
+		138F07D324E44A9D00410D0D /* MinionPro-BoldCnCapt.otf in Resources */ = {isa = PBXBuildFile; fileRef = 138F079224E44A9D00410D0D /* MinionPro-BoldCnCapt.otf */; };
+		138F07D424E44A9D00410D0D /* MinionPro-CnItCapt.otf in Resources */ = {isa = PBXBuildFile; fileRef = 138F079324E44A9D00410D0D /* MinionPro-CnItCapt.otf */; };
+		138F07D524E44A9D00410D0D /* MinionPro-BoldDisp.otf in Resources */ = {isa = PBXBuildFile; fileRef = 138F079424E44A9D00410D0D /* MinionPro-BoldDisp.otf */; };
+		138F07D624E44A9D00410D0D /* MinionPro-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 138F079524E44A9D00410D0D /* MinionPro-Bold.otf */; };
+		138F07D724E44A9D00410D0D /* MinionPro-BoldCn.otf in Resources */ = {isa = PBXBuildFile; fileRef = 138F079624E44A9D00410D0D /* MinionPro-BoldCn.otf */; };
+		138F07D824E44A9D00410D0D /* MinionPro-MediumCnCapt.otf in Resources */ = {isa = PBXBuildFile; fileRef = 138F079724E44A9D00410D0D /* MinionPro-MediumCnCapt.otf */; };
+		138F07D924E44A9D00410D0D /* MinionPro-SemiboldItCapt.otf in Resources */ = {isa = PBXBuildFile; fileRef = 138F079824E44A9D00410D0D /* MinionPro-SemiboldItCapt.otf */; };
+		138F07DA24E44A9D00410D0D /* MinionPro-ItCapt.otf in Resources */ = {isa = PBXBuildFile; fileRef = 138F079924E44A9D00410D0D /* MinionPro-ItCapt.otf */; };
+		138F07DB24E44A9D00410D0D /* MinionPro-MediumCnItCapt.otf in Resources */ = {isa = PBXBuildFile; fileRef = 138F079A24E44A9D00410D0D /* MinionPro-MediumCnItCapt.otf */; };
+		138F07DC24E44A9D00410D0D /* MinionPro-MediumCn.otf in Resources */ = {isa = PBXBuildFile; fileRef = 138F079B24E44A9D00410D0D /* MinionPro-MediumCn.otf */; };
+		138F07DD24E44A9D00410D0D /* MinionPro-Cn.otf in Resources */ = {isa = PBXBuildFile; fileRef = 138F079C24E44A9D00410D0D /* MinionPro-Cn.otf */; };
+		138F07DE24E44A9D00410D0D /* MinionPro-SemiboldCnItSubh.otf in Resources */ = {isa = PBXBuildFile; fileRef = 138F079D24E44A9D00410D0D /* MinionPro-SemiboldCnItSubh.otf */; };
+		138F07DF24E44A9D00410D0D /* MinionPro-BoldCnItDisp.otf in Resources */ = {isa = PBXBuildFile; fileRef = 138F079E24E44A9D00410D0D /* MinionPro-BoldCnItDisp.otf */; };
+		138F07E024E44A9D00410D0D /* MinionPro-Capt.otf in Resources */ = {isa = PBXBuildFile; fileRef = 138F079F24E44A9D00410D0D /* MinionPro-Capt.otf */; };
+		138F07E124E44A9D00410D0D /* MinionPro-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 138F07A024E44A9D00410D0D /* MinionPro-Regular.otf */; };
+		138F07E224E44A9D00410D0D /* MinionPro-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 138F07A124E44A9D00410D0D /* MinionPro-Semibold.otf */; };
+		138F07E324E44A9D00410D0D /* MinionPro-BoldCnDisp.otf in Resources */ = {isa = PBXBuildFile; fileRef = 138F07A224E44A9D00410D0D /* MinionPro-BoldCnDisp.otf */; };
+		138F07E424E44A9D00410D0D /* MinionPro-SemiboldSubh.otf in Resources */ = {isa = PBXBuildFile; fileRef = 138F07A324E44A9D00410D0D /* MinionPro-SemiboldSubh.otf */; };
+		138F07E524E44A9D00410D0D /* MinionPro-BoldItSubh.otf in Resources */ = {isa = PBXBuildFile; fileRef = 138F07A424E44A9D00410D0D /* MinionPro-BoldItSubh.otf */; };
+		138F07E624E44A9D00410D0D /* MinionPro-MediumDisp.otf in Resources */ = {isa = PBXBuildFile; fileRef = 138F07A524E44A9D00410D0D /* MinionPro-MediumDisp.otf */; };
+		138F07E724E44A9D00410D0D /* MinionPro-MediumCnDisp.otf in Resources */ = {isa = PBXBuildFile; fileRef = 138F07A624E44A9D00410D0D /* MinionPro-MediumCnDisp.otf */; };
+		138F07E824E44A9D00410D0D /* MinionPro-MediumItSubh.otf in Resources */ = {isa = PBXBuildFile; fileRef = 138F07A724E44A9D00410D0D /* MinionPro-MediumItSubh.otf */; };
+		138F07E924E44A9D00410D0D /* MinionPro-CnItDisp.otf in Resources */ = {isa = PBXBuildFile; fileRef = 138F07A824E44A9D00410D0D /* MinionPro-CnItDisp.otf */; };
+		138F07EA24E44A9D00410D0D /* MinionPro-BoldCapt.otf in Resources */ = {isa = PBXBuildFile; fileRef = 138F07A924E44A9D00410D0D /* MinionPro-BoldCapt.otf */; };
+		138F07EB24E44A9D00410D0D /* MinionPro-BoldIt.otf in Resources */ = {isa = PBXBuildFile; fileRef = 138F07AA24E44A9D00410D0D /* MinionPro-BoldIt.otf */; };
+		138F07EC24E44A9D00410D0D /* MinionPro-BoldItCapt.otf in Resources */ = {isa = PBXBuildFile; fileRef = 138F07AB24E44A9D00410D0D /* MinionPro-BoldItCapt.otf */; };
+		138F07ED24E44A9D00410D0D /* MinionPro-SemiboldCapt.otf in Resources */ = {isa = PBXBuildFile; fileRef = 138F07AC24E44A9D00410D0D /* MinionPro-SemiboldCapt.otf */; };
+		138F07EE24E44A9D00410D0D /* minionproboldcndisp.png in Resources */ = {isa = PBXBuildFile; fileRef = 138F07AD24E44A9D00410D0D /* minionproboldcndisp.png */; };
+		138F07EF24E44A9D00410D0D /* MinionPro-MediumCnIt.otf in Resources */ = {isa = PBXBuildFile; fileRef = 138F07AE24E44A9D00410D0D /* MinionPro-MediumCnIt.otf */; };
+		138F07F024E44A9D00410D0D /* MinionPro-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 138F07AF24E44A9D00410D0D /* MinionPro-Medium.otf */; };
+		138F07F124E44A9D00410D0D /* MinionPro-BoldSubh.otf in Resources */ = {isa = PBXBuildFile; fileRef = 138F07B024E44A9D00410D0D /* MinionPro-BoldSubh.otf */; };
+		138F07F224E44A9D00410D0D /* MinionPro-MediumItCapt.otf in Resources */ = {isa = PBXBuildFile; fileRef = 138F07B124E44A9D00410D0D /* MinionPro-MediumItCapt.otf */; };
+		138F07F424E44A9D00410D0D /* MinionPro-SemiboldCnDisp.otf in Resources */ = {isa = PBXBuildFile; fileRef = 138F07B324E44A9D00410D0D /* MinionPro-SemiboldCnDisp.otf */; };
+		138F07F524E44A9D00410D0D /* MinionPro-CnDisp.otf in Resources */ = {isa = PBXBuildFile; fileRef = 138F07B424E44A9D00410D0D /* MinionPro-CnDisp.otf */; };
+		138F07F624E44A9D00410D0D /* MinionPro-ItSubh.otf in Resources */ = {isa = PBXBuildFile; fileRef = 138F07B524E44A9D00410D0D /* MinionPro-ItSubh.otf */; };
+		138F07F724E44A9D00410D0D /* MinionPro-MediumCnItSubh.otf in Resources */ = {isa = PBXBuildFile; fileRef = 138F07B624E44A9D00410D0D /* MinionPro-MediumCnItSubh.otf */; };
+		138F07F824E44A9D00410D0D /* MinionPro-SemiboldItSubh.otf in Resources */ = {isa = PBXBuildFile; fileRef = 138F07B724E44A9D00410D0D /* MinionPro-SemiboldItSubh.otf */; };
+		138F07F924E44A9D00410D0D /* MinionPro-Subh.otf in Resources */ = {isa = PBXBuildFile; fileRef = 138F07B824E44A9D00410D0D /* MinionPro-Subh.otf */; };
+		138F07FA24E44A9D00410D0D /* MinionPro-SemiboldCnItCapt.otf in Resources */ = {isa = PBXBuildFile; fileRef = 138F07B924E44A9D00410D0D /* MinionPro-SemiboldCnItCapt.otf */; };
+		138F07FB24E44A9D00410D0D /* MinionPro-SemiboldIt.otf in Resources */ = {isa = PBXBuildFile; fileRef = 138F07BA24E44A9D00410D0D /* MinionPro-SemiboldIt.otf */; };
+		138F080324E44BDF00410D0D /* FrutigerLTStd-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 138F07FE24E44BDF00410D0D /* FrutigerLTStd-Black.otf */; };
+		138F080524E44BDF00410D0D /* FrutigerLTStd-Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 138F080024E44BDF00410D0D /* FrutigerLTStd-Italic.otf */; };
+		138F080624E44BDF00410D0D /* FrutigerLTStd-Roman.otf in Resources */ = {isa = PBXBuildFile; fileRef = 138F080124E44BDF00410D0D /* FrutigerLTStd-Roman.otf */; };
+		138F080A24E44FE400410D0D /* FrutigerLTStd-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 138F080924E44FC000410D0D /* FrutigerLTStd-Bold.otf */; };
+		138F080B24E44FE400410D0D /* FrutigerLTStd-CnBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 138F080824E44FC000410D0D /* FrutigerLTStd-CnBold.otf */; };
 		139BF3DB22849C7400D25766 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139BF3DA22849C7400D25766 /* AppDelegate.swift */; };
 		139BF3DD22849C7400D25766 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139BF3DC22849C7400D25766 /* MenuViewController.swift */; };
 		139BF3E022849C7400D25766 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 139BF3DE22849C7400D25766 /* Main.storyboard */; };
@@ -121,6 +191,76 @@
 		1368DA812385609C003A7144 /* Adult - Clinical Practice - Asthma.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "Adult - Clinical Practice - Asthma.html"; sourceTree = "<group>"; };
 		1368DA85238C2F13003A7144 /* PaddingLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddingLabel.swift; sourceTree = "<group>"; };
 		1380D49B2421234D00E88644 /* DocumentTableLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentTableLayout.swift; sourceTree = "<group>"; };
+		138F077424E413C700410D0D /* UIFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFont.swift; sourceTree = "<group>"; };
+		138F077A24E44A9D00410D0D /* MinionPro-BoldCnSubh.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MinionPro-BoldCnSubh.otf"; sourceTree = "<group>"; };
+		138F077B24E44A9D00410D0D /* MinionPro-MediumSubh.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MinionPro-MediumSubh.otf"; sourceTree = "<group>"; };
+		138F077C24E44A9D00410D0D /* MinionPro-SemiboldDisp.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MinionPro-SemiboldDisp.otf"; sourceTree = "<group>"; };
+		138F077D24E44A9D00410D0D /* MinionPro-BoldItDisp.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MinionPro-BoldItDisp.otf"; sourceTree = "<group>"; };
+		138F077E24E44A9D00410D0D /* MinionPro-MediumCnSubh.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MinionPro-MediumCnSubh.otf"; sourceTree = "<group>"; };
+		138F077F24E44A9D00410D0D /* MinionPro-BoldCnIt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MinionPro-BoldCnIt.otf"; sourceTree = "<group>"; };
+		138F078024E44A9D00410D0D /* MinionPro-CnItSubh.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MinionPro-CnItSubh.otf"; sourceTree = "<group>"; };
+		138F078124E44A9D00410D0D /* MinionPro-MediumItDisp.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MinionPro-MediumItDisp.otf"; sourceTree = "<group>"; };
+		138F078224E44A9D00410D0D /* MinionPro-SemiboldCnCapt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MinionPro-SemiboldCnCapt.otf"; sourceTree = "<group>"; };
+		138F078324E44A9D00410D0D /* MinionPro-It.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MinionPro-It.otf"; sourceTree = "<group>"; };
+		138F078424E44A9D00410D0D /* MinionPro-SemiboldCnItDisp.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MinionPro-SemiboldCnItDisp.otf"; sourceTree = "<group>"; };
+		138F078524E44A9D00410D0D /* MinionPro-CnIt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MinionPro-CnIt.otf"; sourceTree = "<group>"; };
+		138F078624E44A9D00410D0D /* MinionPro-MediumIt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MinionPro-MediumIt.otf"; sourceTree = "<group>"; };
+		138F078724E44A9D00410D0D /* MinionPro-BoldCnItSubh.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MinionPro-BoldCnItSubh.otf"; sourceTree = "<group>"; };
+		138F078824E44A9D00410D0D /* MinionPro-SemiboldCn.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MinionPro-SemiboldCn.otf"; sourceTree = "<group>"; };
+		138F078924E44A9D00410D0D /* MinionPro-CnSubh.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MinionPro-CnSubh.otf"; sourceTree = "<group>"; };
+		138F078A24E44A9D00410D0D /* MinionPro-SemiboldCnSubh.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MinionPro-SemiboldCnSubh.otf"; sourceTree = "<group>"; };
+		138F078B24E44A9D00410D0D /* MinionPro-SemiboldItDisp.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MinionPro-SemiboldItDisp.otf"; sourceTree = "<group>"; };
+		138F078C24E44A9D00410D0D /* MinionPro-ItDisp.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MinionPro-ItDisp.otf"; sourceTree = "<group>"; };
+		138F078D24E44A9D00410D0D /* MinionPro-MediumCnItDisp.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MinionPro-MediumCnItDisp.otf"; sourceTree = "<group>"; };
+		138F078E24E44A9D00410D0D /* MinionPro-BoldCnItCapt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MinionPro-BoldCnItCapt.otf"; sourceTree = "<group>"; };
+		138F078F24E44A9D00410D0D /* MinionPro-Disp.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MinionPro-Disp.otf"; sourceTree = "<group>"; };
+		138F079024E44A9D00410D0D /* MinionPro-MediumCapt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MinionPro-MediumCapt.otf"; sourceTree = "<group>"; };
+		138F079124E44A9D00410D0D /* MinionPro-SemiboldCnIt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MinionPro-SemiboldCnIt.otf"; sourceTree = "<group>"; };
+		138F079224E44A9D00410D0D /* MinionPro-BoldCnCapt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MinionPro-BoldCnCapt.otf"; sourceTree = "<group>"; };
+		138F079324E44A9D00410D0D /* MinionPro-CnItCapt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MinionPro-CnItCapt.otf"; sourceTree = "<group>"; };
+		138F079424E44A9D00410D0D /* MinionPro-BoldDisp.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MinionPro-BoldDisp.otf"; sourceTree = "<group>"; };
+		138F079524E44A9D00410D0D /* MinionPro-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MinionPro-Bold.otf"; sourceTree = "<group>"; };
+		138F079624E44A9D00410D0D /* MinionPro-BoldCn.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MinionPro-BoldCn.otf"; sourceTree = "<group>"; };
+		138F079724E44A9D00410D0D /* MinionPro-MediumCnCapt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MinionPro-MediumCnCapt.otf"; sourceTree = "<group>"; };
+		138F079824E44A9D00410D0D /* MinionPro-SemiboldItCapt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MinionPro-SemiboldItCapt.otf"; sourceTree = "<group>"; };
+		138F079924E44A9D00410D0D /* MinionPro-ItCapt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MinionPro-ItCapt.otf"; sourceTree = "<group>"; };
+		138F079A24E44A9D00410D0D /* MinionPro-MediumCnItCapt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MinionPro-MediumCnItCapt.otf"; sourceTree = "<group>"; };
+		138F079B24E44A9D00410D0D /* MinionPro-MediumCn.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MinionPro-MediumCn.otf"; sourceTree = "<group>"; };
+		138F079C24E44A9D00410D0D /* MinionPro-Cn.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MinionPro-Cn.otf"; sourceTree = "<group>"; };
+		138F079D24E44A9D00410D0D /* MinionPro-SemiboldCnItSubh.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MinionPro-SemiboldCnItSubh.otf"; sourceTree = "<group>"; };
+		138F079E24E44A9D00410D0D /* MinionPro-BoldCnItDisp.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MinionPro-BoldCnItDisp.otf"; sourceTree = "<group>"; };
+		138F079F24E44A9D00410D0D /* MinionPro-Capt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MinionPro-Capt.otf"; sourceTree = "<group>"; };
+		138F07A024E44A9D00410D0D /* MinionPro-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MinionPro-Regular.otf"; sourceTree = "<group>"; };
+		138F07A124E44A9D00410D0D /* MinionPro-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MinionPro-Semibold.otf"; sourceTree = "<group>"; };
+		138F07A224E44A9D00410D0D /* MinionPro-BoldCnDisp.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MinionPro-BoldCnDisp.otf"; sourceTree = "<group>"; };
+		138F07A324E44A9D00410D0D /* MinionPro-SemiboldSubh.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MinionPro-SemiboldSubh.otf"; sourceTree = "<group>"; };
+		138F07A424E44A9D00410D0D /* MinionPro-BoldItSubh.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MinionPro-BoldItSubh.otf"; sourceTree = "<group>"; };
+		138F07A524E44A9D00410D0D /* MinionPro-MediumDisp.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MinionPro-MediumDisp.otf"; sourceTree = "<group>"; };
+		138F07A624E44A9D00410D0D /* MinionPro-MediumCnDisp.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MinionPro-MediumCnDisp.otf"; sourceTree = "<group>"; };
+		138F07A724E44A9D00410D0D /* MinionPro-MediumItSubh.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MinionPro-MediumItSubh.otf"; sourceTree = "<group>"; };
+		138F07A824E44A9D00410D0D /* MinionPro-CnItDisp.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MinionPro-CnItDisp.otf"; sourceTree = "<group>"; };
+		138F07A924E44A9D00410D0D /* MinionPro-BoldCapt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MinionPro-BoldCapt.otf"; sourceTree = "<group>"; };
+		138F07AA24E44A9D00410D0D /* MinionPro-BoldIt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MinionPro-BoldIt.otf"; sourceTree = "<group>"; };
+		138F07AB24E44A9D00410D0D /* MinionPro-BoldItCapt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MinionPro-BoldItCapt.otf"; sourceTree = "<group>"; };
+		138F07AC24E44A9D00410D0D /* MinionPro-SemiboldCapt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MinionPro-SemiboldCapt.otf"; sourceTree = "<group>"; };
+		138F07AD24E44A9D00410D0D /* minionproboldcndisp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = minionproboldcndisp.png; sourceTree = "<group>"; };
+		138F07AE24E44A9D00410D0D /* MinionPro-MediumCnIt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MinionPro-MediumCnIt.otf"; sourceTree = "<group>"; };
+		138F07AF24E44A9D00410D0D /* MinionPro-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MinionPro-Medium.otf"; sourceTree = "<group>"; };
+		138F07B024E44A9D00410D0D /* MinionPro-BoldSubh.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MinionPro-BoldSubh.otf"; sourceTree = "<group>"; };
+		138F07B124E44A9D00410D0D /* MinionPro-MediumItCapt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MinionPro-MediumItCapt.otf"; sourceTree = "<group>"; };
+		138F07B324E44A9D00410D0D /* MinionPro-SemiboldCnDisp.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MinionPro-SemiboldCnDisp.otf"; sourceTree = "<group>"; };
+		138F07B424E44A9D00410D0D /* MinionPro-CnDisp.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MinionPro-CnDisp.otf"; sourceTree = "<group>"; };
+		138F07B524E44A9D00410D0D /* MinionPro-ItSubh.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MinionPro-ItSubh.otf"; sourceTree = "<group>"; };
+		138F07B624E44A9D00410D0D /* MinionPro-MediumCnItSubh.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MinionPro-MediumCnItSubh.otf"; sourceTree = "<group>"; };
+		138F07B724E44A9D00410D0D /* MinionPro-SemiboldItSubh.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MinionPro-SemiboldItSubh.otf"; sourceTree = "<group>"; };
+		138F07B824E44A9D00410D0D /* MinionPro-Subh.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MinionPro-Subh.otf"; sourceTree = "<group>"; };
+		138F07B924E44A9D00410D0D /* MinionPro-SemiboldCnItCapt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MinionPro-SemiboldCnItCapt.otf"; sourceTree = "<group>"; };
+		138F07BA24E44A9D00410D0D /* MinionPro-SemiboldIt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MinionPro-SemiboldIt.otf"; sourceTree = "<group>"; };
+		138F07FE24E44BDF00410D0D /* FrutigerLTStd-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FrutigerLTStd-Black.otf"; sourceTree = "<group>"; };
+		138F080024E44BDF00410D0D /* FrutigerLTStd-Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FrutigerLTStd-Italic.otf"; sourceTree = "<group>"; };
+		138F080124E44BDF00410D0D /* FrutigerLTStd-Roman.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FrutigerLTStd-Roman.otf"; sourceTree = "<group>"; };
+		138F080824E44FC000410D0D /* FrutigerLTStd-CnBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FrutigerLTStd-CnBold.otf"; sourceTree = "<group>"; };
+		138F080924E44FC000410D0D /* FrutigerLTStd-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FrutigerLTStd-Bold.otf"; sourceTree = "<group>"; };
 		139BF3D722849C7400D25766 /* Ornge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ornge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		139BF3DA22849C7400D25766 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		139BF3DC22849C7400D25766 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
@@ -206,6 +346,7 @@
 		1311429C2285BD5900BD65C0 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				139BF3E322849C7500D25766 /* LaunchScreen.storyboard */,
 				139BF3DE22849C7400D25766 /* Main.storyboard */,
 			);
 			path = Views;
@@ -230,7 +371,6 @@
 		1311429E2285BD6A00BD65C0 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				139BF3E322849C7500D25766 /* LaunchScreen.storyboard */,
 				13B6817223155FC3003EA3D7 /* Assets.xcassets */,
 			);
 			path = "Supporting Files";
@@ -309,6 +449,98 @@
 			path = Subclasses;
 			sourceTree = "<group>";
 		};
+		138F077624E44A7000410D0D /* Custom Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				138F07FC24E44BDF00410D0D /* frutiger_ssv */,
+				138F077924E44A9D00410D0D /* minion-pro */,
+			);
+			path = "Custom Fonts";
+			sourceTree = "<group>";
+		};
+		138F077924E44A9D00410D0D /* minion-pro */ = {
+			isa = PBXGroup;
+			children = (
+				138F077A24E44A9D00410D0D /* MinionPro-BoldCnSubh.otf */,
+				138F077B24E44A9D00410D0D /* MinionPro-MediumSubh.otf */,
+				138F077C24E44A9D00410D0D /* MinionPro-SemiboldDisp.otf */,
+				138F077D24E44A9D00410D0D /* MinionPro-BoldItDisp.otf */,
+				138F077E24E44A9D00410D0D /* MinionPro-MediumCnSubh.otf */,
+				138F077F24E44A9D00410D0D /* MinionPro-BoldCnIt.otf */,
+				138F078024E44A9D00410D0D /* MinionPro-CnItSubh.otf */,
+				138F078124E44A9D00410D0D /* MinionPro-MediumItDisp.otf */,
+				138F078224E44A9D00410D0D /* MinionPro-SemiboldCnCapt.otf */,
+				138F078324E44A9D00410D0D /* MinionPro-It.otf */,
+				138F078424E44A9D00410D0D /* MinionPro-SemiboldCnItDisp.otf */,
+				138F078524E44A9D00410D0D /* MinionPro-CnIt.otf */,
+				138F078624E44A9D00410D0D /* MinionPro-MediumIt.otf */,
+				138F078724E44A9D00410D0D /* MinionPro-BoldCnItSubh.otf */,
+				138F078824E44A9D00410D0D /* MinionPro-SemiboldCn.otf */,
+				138F078924E44A9D00410D0D /* MinionPro-CnSubh.otf */,
+				138F078A24E44A9D00410D0D /* MinionPro-SemiboldCnSubh.otf */,
+				138F078B24E44A9D00410D0D /* MinionPro-SemiboldItDisp.otf */,
+				138F078C24E44A9D00410D0D /* MinionPro-ItDisp.otf */,
+				138F078D24E44A9D00410D0D /* MinionPro-MediumCnItDisp.otf */,
+				138F078E24E44A9D00410D0D /* MinionPro-BoldCnItCapt.otf */,
+				138F078F24E44A9D00410D0D /* MinionPro-Disp.otf */,
+				138F079024E44A9D00410D0D /* MinionPro-MediumCapt.otf */,
+				138F079124E44A9D00410D0D /* MinionPro-SemiboldCnIt.otf */,
+				138F079224E44A9D00410D0D /* MinionPro-BoldCnCapt.otf */,
+				138F079324E44A9D00410D0D /* MinionPro-CnItCapt.otf */,
+				138F079424E44A9D00410D0D /* MinionPro-BoldDisp.otf */,
+				138F079524E44A9D00410D0D /* MinionPro-Bold.otf */,
+				138F079624E44A9D00410D0D /* MinionPro-BoldCn.otf */,
+				138F079724E44A9D00410D0D /* MinionPro-MediumCnCapt.otf */,
+				138F079824E44A9D00410D0D /* MinionPro-SemiboldItCapt.otf */,
+				138F079924E44A9D00410D0D /* MinionPro-ItCapt.otf */,
+				138F079A24E44A9D00410D0D /* MinionPro-MediumCnItCapt.otf */,
+				138F079B24E44A9D00410D0D /* MinionPro-MediumCn.otf */,
+				138F079C24E44A9D00410D0D /* MinionPro-Cn.otf */,
+				138F079D24E44A9D00410D0D /* MinionPro-SemiboldCnItSubh.otf */,
+				138F079E24E44A9D00410D0D /* MinionPro-BoldCnItDisp.otf */,
+				138F079F24E44A9D00410D0D /* MinionPro-Capt.otf */,
+				138F07A024E44A9D00410D0D /* MinionPro-Regular.otf */,
+				138F07A124E44A9D00410D0D /* MinionPro-Semibold.otf */,
+				138F07A224E44A9D00410D0D /* MinionPro-BoldCnDisp.otf */,
+				138F07A324E44A9D00410D0D /* MinionPro-SemiboldSubh.otf */,
+				138F07A424E44A9D00410D0D /* MinionPro-BoldItSubh.otf */,
+				138F07A524E44A9D00410D0D /* MinionPro-MediumDisp.otf */,
+				138F07A624E44A9D00410D0D /* MinionPro-MediumCnDisp.otf */,
+				138F07A724E44A9D00410D0D /* MinionPro-MediumItSubh.otf */,
+				138F07A824E44A9D00410D0D /* MinionPro-CnItDisp.otf */,
+				138F07A924E44A9D00410D0D /* MinionPro-BoldCapt.otf */,
+				138F07AA24E44A9D00410D0D /* MinionPro-BoldIt.otf */,
+				138F07AB24E44A9D00410D0D /* MinionPro-BoldItCapt.otf */,
+				138F07AC24E44A9D00410D0D /* MinionPro-SemiboldCapt.otf */,
+				138F07AD24E44A9D00410D0D /* minionproboldcndisp.png */,
+				138F07AE24E44A9D00410D0D /* MinionPro-MediumCnIt.otf */,
+				138F07AF24E44A9D00410D0D /* MinionPro-Medium.otf */,
+				138F07B024E44A9D00410D0D /* MinionPro-BoldSubh.otf */,
+				138F07B124E44A9D00410D0D /* MinionPro-MediumItCapt.otf */,
+				138F07B324E44A9D00410D0D /* MinionPro-SemiboldCnDisp.otf */,
+				138F07B424E44A9D00410D0D /* MinionPro-CnDisp.otf */,
+				138F07B524E44A9D00410D0D /* MinionPro-ItSubh.otf */,
+				138F07B624E44A9D00410D0D /* MinionPro-MediumCnItSubh.otf */,
+				138F07B724E44A9D00410D0D /* MinionPro-SemiboldItSubh.otf */,
+				138F07B824E44A9D00410D0D /* MinionPro-Subh.otf */,
+				138F07B924E44A9D00410D0D /* MinionPro-SemiboldCnItCapt.otf */,
+				138F07BA24E44A9D00410D0D /* MinionPro-SemiboldIt.otf */,
+			);
+			path = "minion-pro";
+			sourceTree = "<group>";
+		};
+		138F07FC24E44BDF00410D0D /* frutiger_ssv */ = {
+			isa = PBXGroup;
+			children = (
+				138F080924E44FC000410D0D /* FrutigerLTStd-Bold.otf */,
+				138F080824E44FC000410D0D /* FrutigerLTStd-CnBold.otf */,
+				138F07FE24E44BDF00410D0D /* FrutigerLTStd-Black.otf */,
+				138F080024E44BDF00410D0D /* FrutigerLTStd-Italic.otf */,
+				138F080124E44BDF00410D0D /* FrutigerLTStd-Roman.otf */,
+			);
+			path = frutiger_ssv;
+			sourceTree = "<group>";
+		};
 		139BF3CE22849C7400D25766 = {
 			isa = PBXGroup;
 			children = (
@@ -331,6 +563,8 @@
 		139BF3D922849C7400D25766 /* MedicMind */ = {
 			isa = PBXGroup;
 			children = (
+				1311429E2285BD6A00BD65C0 /* Supporting Files */,
+				138F077624E44A7000410D0D /* Custom Fonts */,
 				139BF3E622849C7500D25766 /* Info.plist */,
 				132F1BE1230D953E0071ADFF /* TODO List */,
 				139BF3DA22849C7400D25766 /* AppDelegate.swift */,
@@ -339,7 +573,6 @@
 				1311429C2285BD5900BD65C0 /* Views */,
 				1311429F2285BD8600BD65C0 /* Data Model */,
 				1311429D2285BD6300BD65C0 /* Controllers */,
-				1311429E2285BD6A00BD65C0 /* Supporting Files */,
 				13C7BDE1228C6C1800D33B76 /* Extensions */,
 				1368DA87238C2F1B003A7144 /* Subclasses */,
 			);
@@ -380,6 +613,7 @@
 				13F4A45623A1726F004F6D38 /* UITapGestureRecognizer.swift */,
 				13F4A47B23A35923004F6D38 /* Double.swift */,
 				13FBD43A241E78B6002AD350 /* String.swift */,
+				138F077424E413C700410D0D /* UIFont.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -488,48 +722,117 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				138F080A24E44FE400410D0D /* FrutigerLTStd-Bold.otf in Resources */,
 				13E3C48523917829001C3F08 /* Ornge Airway Manual Executive Summary.html in Resources */,
 				134789FE23257B990081E865 /* FlowChartLibrary.json in Resources */,
 				130534192364210D00E4F016 /* MedicalDirectives.json in Resources */,
+				138F07BD24E44A9D00410D0D /* MinionPro-SemiboldDisp.otf in Resources */,
+				138F07DB24E44A9D00410D0D /* MinionPro-MediumCnItCapt.otf in Resources */,
+				138F07F124E44A9D00410D0D /* MinionPro-BoldSubh.otf in Resources */,
 				13E3C49323932A96001C3F08 /* Adult - Clinical Practice - Sedation Intubated.html in Resources */,
 				135D4A9F23156673006C660C /* MenuData_P.json in Resources */,
 				13F4A47E23A5CD30004F6D38 /* ped_flacc_score.png in Resources */,
+				138F07C224E44A9D00410D0D /* MinionPro-MediumItDisp.otf in Resources */,
 				13E3C49723949A41001C3F08 /* Adult - Clinical Practice - ROSC.html in Resources */,
 				13E3C48323917306001C3F08 /* Controlled Intubation Checklist.html in Resources */,
 				13B6817323155FC3003EA3D7 /* Assets.xcassets in Resources */,
 				13E3C4992396B50C001C3F08 /* Adult - Clinical Practice - NSTEMI.html in Resources */,
+				138F07EE24E44A9D00410D0D /* minionproboldcndisp.png in Resources */,
 				139FF61B23C8F7BC00B57A68 /* Adult - Clinical Practice Guidelines - Mechanical Ventilation.html in Resources */,
 				13E3C49D2396C6BD001C3F08 /* Adult - Clinical Practice - Cardiogenic Shock.html in Resources */,
 				13BF742F22B6647B00145035 /* Podfile in Resources */,
+				138F07D324E44A9D00410D0D /* MinionPro-BoldCnCapt.otf in Resources */,
+				138F080524E44BDF00410D0D /* FrutigerLTStd-Italic.otf in Resources */,
+				138F07BF24E44A9D00410D0D /* MinionPro-MediumCnSubh.otf in Resources */,
+				138F07F524E44A9D00410D0D /* MinionPro-CnDisp.otf in Resources */,
+				138F07D224E44A9D00410D0D /* MinionPro-SemiboldCnIt.otf in Resources */,
 				13E3C4A92399FAAF001C3F08 /* Adult - Clinical Practice - Sepsis.html in Resources */,
+				138F07BC24E44A9D00410D0D /* MinionPro-MediumSubh.otf in Resources */,
 				1368DA822385609C003A7144 /* Adult - Clinical Practice - Asthma.html in Resources */,
 				13F4A423239ECED4004F6D38 /* preamble_loc.png in Resources */,
 				13E3C48B2392B815001C3F08 /* adult_airway_post_checklist.png in Resources */,
+				138F07D424E44A9D00410D0D /* MinionPro-CnItCapt.otf in Resources */,
+				138F07CB24E44A9D00410D0D /* MinionPro-SemiboldCnSubh.otf in Resources */,
+				138F07DF24E44A9D00410D0D /* MinionPro-BoldCnItDisp.otf in Resources */,
 				13E3C4A7239964FF001C3F08 /* Adult - Clinical Practice - Trauma.html in Resources */,
+				138F07D524E44A9D00410D0D /* MinionPro-BoldDisp.otf in Resources */,
+				138F07D724E44A9D00410D0D /* MinionPro-BoldCn.otf in Resources */,
 				1309D7C1228CC9F3005F8D40 /* DrugLibrary.json in Resources */,
+				138F07F224E44A9D00410D0D /* MinionPro-MediumItCapt.otf in Resources */,
+				138F07DE24E44A9D00410D0D /* MinionPro-SemiboldCnItSubh.otf in Resources */,
+				138F080B24E44FE400410D0D /* FrutigerLTStd-CnBold.otf in Resources */,
 				139BF3E522849C7500D25766 /* LaunchScreen.storyboard in Resources */,
 				13E3C4A32398B5D4001C3F08 /* Adult - Clinical Practice - Stroke.html in Resources */,
+				138F07BB24E44A9D00410D0D /* MinionPro-BoldCnSubh.otf in Resources */,
 				1368DA6E23833455003A7144 /* Executive Airway Summary.html in Resources */,
 				132F1BE2230D953E0071ADFF /* TODO List in Resources */,
+				138F07DC24E44A9D00410D0D /* MinionPro-MediumCn.otf in Resources */,
 				13F4A42E239ED370004F6D38 /* Structure of Medical Directive.html in Resources */,
+				138F07D124E44A9D00410D0D /* MinionPro-MediumCapt.otf in Resources */,
 				13E3C4AB239C03F6001C3F08 /* Adult - Clinical Practice - Obstetrics.html in Resources */,
+				138F07CA24E44A9D00410D0D /* MinionPro-CnSubh.otf in Resources */,
 				13E3C49B2396C49B001C3F08 /* Adult - Clinical Practice - STEMI.html in Resources */,
+				138F07D024E44A9D00410D0D /* MinionPro-Disp.otf in Resources */,
+				138F07CD24E44A9D00410D0D /* MinionPro-ItDisp.otf in Resources */,
+				138F07C324E44A9D00410D0D /* MinionPro-SemiboldCnCapt.otf in Resources */,
+				138F07FA24E44A9D00410D0D /* MinionPro-SemiboldCnItCapt.otf in Resources */,
 				13E3C4A5239964F8001C3F08 /* Adult - Clinical Practice - SCI.html in Resources */,
+				138F07F924E44A9D00410D0D /* MinionPro-Subh.otf in Resources */,
+				138F07ED24E44A9D00410D0D /* MinionPro-SemiboldCapt.otf in Resources */,
+				138F07D924E44A9D00410D0D /* MinionPro-SemiboldItCapt.otf in Resources */,
+				138F07CE24E44A9D00410D0D /* MinionPro-MediumCnItDisp.otf in Resources */,
 				13F4A42D239ED370004F6D38 /* Preamble.html in Resources */,
+				138F07C824E44A9D00410D0D /* MinionPro-BoldCnItSubh.otf in Resources */,
 				13E3C48F2392BD0D001C3F08 /* Adult - Clinical Practice - Epoprostenol.html in Resources */,
 				13C7BDDD228C36D900D33B76 /* MedicalDirectiveView.xib in Resources */,
+				138F07E324E44A9D00410D0D /* MinionPro-BoldCnDisp.otf in Resources */,
 				13E3C49523932A96001C3F08 /* adult_sedation_score.png in Resources */,
+				138F080324E44BDF00410D0D /* FrutigerLTStd-Black.otf in Resources */,
+				138F07FB24E44A9D00410D0D /* MinionPro-SemiboldIt.otf in Resources */,
+				138F07E124E44A9D00410D0D /* MinionPro-Regular.otf in Resources */,
+				138F07DD24E44A9D00410D0D /* MinionPro-Cn.otf in Resources */,
 				13F4A42C239ED370004F6D38 /* Authorization.html in Resources */,
+				138F07E924E44A9D00410D0D /* MinionPro-CnItDisp.otf in Resources */,
+				138F07E524E44A9D00410D0D /* MinionPro-BoldItSubh.otf in Resources */,
+				138F080624E44BDF00410D0D /* FrutigerLTStd-Roman.otf in Resources */,
+				138F07F824E44A9D00410D0D /* MinionPro-SemiboldItSubh.otf in Resources */,
+				138F07C024E44A9D00410D0D /* MinionPro-BoldCnIt.otf in Resources */,
+				138F07E024E44A9D00410D0D /* MinionPro-Capt.otf in Resources */,
+				138F07D824E44A9D00410D0D /* MinionPro-MediumCnCapt.otf in Resources */,
+				138F07C124E44A9D00410D0D /* MinionPro-CnItSubh.otf in Resources */,
+				138F07C924E44A9D00410D0D /* MinionPro-SemiboldCn.otf in Resources */,
+				138F07F624E44A9D00410D0D /* MinionPro-ItSubh.otf in Resources */,
+				138F07F724E44A9D00410D0D /* MinionPro-MediumCnItSubh.otf in Resources */,
 				13E3C48D2392B815001C3F08 /* adult_airway_checklist.png in Resources */,
 				13F4A430239F44E9004F6D38 /* preamble_sbarr.png in Resources */,
+				138F07E224E44A9D00410D0D /* MinionPro-Semibold.otf in Resources */,
 				1346EAE323AE7D9200992D6A /* preamble_signatures.png in Resources */,
+				138F07E624E44A9D00410D0D /* MinionPro-MediumDisp.otf in Resources */,
+				138F07DA24E44A9D00410D0D /* MinionPro-ItCapt.otf in Resources */,
 				13E3C49423932A96001C3F08 /* adult_pain_score_chart.png in Resources */,
 				13E3C48A2392B815001C3F08 /* adult_airway_patient_positioning.png in Resources */,
+				138F07C524E44A9D00410D0D /* MinionPro-SemiboldCnItDisp.otf in Resources */,
+				138F07C724E44A9D00410D0D /* MinionPro-MediumIt.otf in Resources */,
+				138F07CC24E44A9D00410D0D /* MinionPro-SemiboldItDisp.otf in Resources */,
+				138F07EF24E44A9D00410D0D /* MinionPro-MediumCnIt.otf in Resources */,
 				13F4A48023A5CE0C004F6D38 /* Ped - Clinical Practice - Pain.html in Resources */,
+				138F07E424E44A9D00410D0D /* MinionPro-SemiboldSubh.otf in Resources */,
+				138F07F424E44A9D00410D0D /* MinionPro-SemiboldCnDisp.otf in Resources */,
+				138F07EA24E44A9D00410D0D /* MinionPro-BoldCapt.otf in Resources */,
+				138F07BE24E44A9D00410D0D /* MinionPro-BoldItDisp.otf in Resources */,
 				131894CE234E0BCB00DC307D /* MixingCalculatorView.xib in Resources */,
+				138F07F024E44A9D00410D0D /* MinionPro-Medium.otf in Resources */,
+				138F07EC24E44A9D00410D0D /* MinionPro-BoldItCapt.otf in Resources */,
+				138F07C424E44A9D00410D0D /* MinionPro-It.otf in Resources */,
 				139BF3E022849C7400D25766 /* Main.storyboard in Resources */,
+				138F07E824E44A9D00410D0D /* MinionPro-MediumItSubh.otf in Resources */,
 				13E3C48C2392B815001C3F08 /* adult_airway_team_positioning.png in Resources */,
 				13F4A421239ECED4004F6D38 /* preamble_patch_point.png in Resources */,
+				138F07EB24E44A9D00410D0D /* MinionPro-BoldIt.otf in Resources */,
+				138F07E724E44A9D00410D0D /* MinionPro-MediumCnDisp.otf in Resources */,
+				138F07CF24E44A9D00410D0D /* MinionPro-BoldCnItCapt.otf in Resources */,
+				138F07D624E44A9D00410D0D /* MinionPro-Bold.otf in Resources */,
+				138F07C624E44A9D00410D0D /* MinionPro-CnIt.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -610,6 +913,7 @@
 				13C662EE22AEB09800FB9A63 /* MedicalDirective.swift in Sources */,
 				13FBD439241D0D95002AD350 /* Document.swift in Sources */,
 				131142A62285ECA100BD65C0 /* DataManager.swift in Sources */,
+				138F077524E413C700410D0D /* UIFont.swift in Sources */,
 				13C662F622B3FD6400FB9A63 /* VentToolViewController.swift in Sources */,
 				13F4447E235DEA1E004F87E0 /* DrugMenuTableViewController.swift in Sources */,
 				13478A02232747F80081E865 /* String+HTML.swift in Sources */,
@@ -772,7 +1076,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 0;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 72B3P2ME3P;
 				INFOPLIST_FILE = MedicMind/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -794,7 +1098,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 0;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 72B3P2ME3P;
 				INFOPLIST_FILE = MedicMind/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;

@@ -10,6 +10,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MixingCalculatorView" customModule="Ornge" customModuleProvider="target">
             <connections>
                 <outlet property="contentView" destination="iN0-l3-epB" id="fGE-U3-tG5"/>
+                <outlet property="doseTitleLabel" destination="ems-ze-l64" id="DQu-wW-ll5"/>
                 <outlet property="drugAmountLabel" destination="uyS-IF-wFt" id="SF0-tA-bU7"/>
                 <outlet property="drugConcentrationLabel" destination="Wo9-1K-hFf" id="cDg-YE-SIQ"/>
                 <outlet property="drugDiluentLabel" destination="9RL-1K-WXb" id="hL1-39-uKp"/>
@@ -39,19 +40,25 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q6F-tY-g66">
-                            <rect key="frame" x="0.0" y="20.5" width="756" height="50"/>
+                            <rect key="frame" x="0.0" y="20.5" width="756" height="53.5"/>
                             <subviews>
                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="kf3-YH-PdQ" userLabel="Title Stackview">
-                                    <rect key="frame" x="0.0" y="0.0" width="606" height="50"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="606" height="53.5"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="752" verticalCompressionResistancePriority="751" text="Diluent" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9RL-1K-WXb">
-                                            <rect key="frame" x="0.0" y="0.0" width="606" height="30.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="606" height="14.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Drug Amount" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uyS-IF-wFt">
-                                            <rect key="frame" x="0.0" y="35.5" width="606" height="14.5"/>
+                                            <rect key="frame" x="0.0" y="19.5" width="606" height="14.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Dosing Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dJk-S4-JCh">
+                                            <rect key="frame" x="0.0" y="39" width="73.5" height="14.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -62,12 +69,14 @@
                                         <constraint firstAttribute="trailing" secondItem="uyS-IF-wFt" secondAttribute="trailing" id="hMf-jG-8aa"/>
                                     </constraints>
                                 </stackView>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Concentration" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wo9-1K-hFf">
-                                    <rect key="frame" x="606" y="0.0" width="150" height="50"/>
-                                    <color key="backgroundColor" red="1" green="0.75294117647058822" blue="0.0039215686274509803" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" preservesSuperviewLayoutMargins="YES" text="Concentration" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wo9-1K-hFf">
+                                    <rect key="frame" x="606" y="0.0" width="150" height="53.5"/>
+                                    <color key="backgroundColor" red="1" green="0.75294117650000003" blue="0.0039215686269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <constraints>
+                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="k6H-Ev-TyN"/>
                                         <constraint firstAttribute="width" constant="150" id="sdx-2W-h5B"/>
                                     </constraints>
+                                    <directionalEdgeInsets key="directionalLayoutMargins" top="8" leading="8" bottom="8" trailing="8"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
@@ -85,40 +94,37 @@
                                 <constraint firstAttribute="trailing" secondItem="Wo9-1K-hFf" secondAttribute="trailing" id="liA-mE-gB9"/>
                             </constraints>
                         </view>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Dosing Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dJk-S4-JCh">
-                            <rect key="frame" x="0.0" y="75.5" width="73.5" height="14.5"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                            <nil key="textColor"/>
-                            <nil key="highlightedColor"/>
-                        </label>
                         <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Jqa-mp-LbW">
-                            <rect key="frame" x="0.0" y="95" width="756" height="64.5"/>
+                            <rect key="frame" x="0.0" y="79" width="756" height="80.5"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Patient Weight (Kg)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uqg-4D-mcG">
-                                    <rect key="frame" x="0.0" y="25" width="110" height="14.5"/>
+                                    <rect key="frame" x="0.0" y="33" width="110" height="14.5"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3pc-fB-RTw">
-                                    <rect key="frame" x="115" y="4.5" width="641" height="56"/>
+                                    <rect key="frame" x="115" y="25.5" width="641" height="30"/>
                                     <subviews>
                                         <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="BKQ-Bj-DnW">
-                                            <rect key="frame" x="0.0" y="0.0" width="641" height="56"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="641" height="30"/>
                                             <subviews>
                                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" text="80" textAlignment="right" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="M8s-jj-PKq">
-                                                    <rect key="frame" x="0.0" y="0.0" width="622" height="56"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="622" height="30"/>
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                                 </textField>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="kg" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iOp-A9-bWd">
-                                                    <rect key="frame" x="627" y="0.0" width="14" height="56"/>
+                                                    <rect key="frame" x="627" y="0.0" width="14" height="30"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="30" id="lXa-a2-UWo"/>
+                                            </constraints>
                                         </stackView>
                                     </subviews>
                                     <color key="backgroundColor" red="1" green="0.97940924438233357" blue="0.602690885261014" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

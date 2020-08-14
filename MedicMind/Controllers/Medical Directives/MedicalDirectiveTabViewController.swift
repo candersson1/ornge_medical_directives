@@ -53,6 +53,7 @@ class MedicalDirectiveTabViewController : ContentPageTabBarController {
         if let directive = data as? MedicalDirective
         {
             let viewController = storyboard!.instantiateViewController(withIdentifier: "MedicalDirectiveTabViewController") as! MedicalDirectiveTabViewController
+            viewController.navigationItem.title = directive.title
             viewController.directive = directive
             viewController.loadSubviews()
             navController!.pushViewController(viewController, animated: true)

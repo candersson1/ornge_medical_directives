@@ -28,11 +28,12 @@ class MixingCalculatorView : UIView, UITextFieldDelegate
     @IBOutlet weak var patientWeightTitleLabel: UILabel!
     @IBOutlet weak var patientWeightUnitsLabel: UILabel!
     
+    @IBOutlet weak var doseTitleLabel: UILabel!
     
     
     @IBOutlet weak var outputStackView: UIStackView!
     
-    var weight : Double = 80
+    var weight : Double = DataManager.instance.lastSetWeight
     var numElements = 2
     var concentration = 1.0
     var dose_titles : [String] = []
@@ -46,8 +47,8 @@ class MixingCalculatorView : UIView, UITextFieldDelegate
     var doseFieldsArray : [UILabel] = []
     var volumeFieldsArray : [UILabel] = []
     
-    var font = UIFont()
-    var boldFont = UIFont()
+    var font = UIFont.systemFont(ofSize: CGFloat(DataManager.instance.fontSize))
+    var boldFont = UIFont.boldSystemFont(ofSize: CGFloat(DataManager.instance.fontSize))
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
@@ -72,7 +73,7 @@ class MixingCalculatorView : UIView, UITextFieldDelegate
     convenience init(data : DrugTable) {
         self.init(frame: CGRect.zero)
         
-        titleLabel.attributedText = ("\(data.name)").set(style: styleGroup)
+        titleLabel.attributedText = ("<b>\(data.name)</b>").set(style: styleGroup)
         drugDosingLabel.attributedText = data.dosing_label.set(style: styleGroup)
         drugAmountLabel.attributedText = ("<b>Drug Amount:</b> \(data.amount_label)").set(style: styleGroup)
         drugDiluentLabel.attributedText = ("<b>Diluent:</b> \(data.diluent_label)").set(style: styleGroup)
@@ -90,6 +91,8 @@ class MixingCalculatorView : UIView, UITextFieldDelegate
         concentration = data.concentration
         numElements = dose_array.count
         
+        weightTextField.text = "\(weight)"
+        
         if(weightBased) {
             buildWeightBasedStacks()
         } else {
@@ -101,14 +104,14 @@ class MixingCalculatorView : UIView, UITextFieldDelegate
     }
     
     func initFonts() {
-        boldFont = UIFont(name:DataManager.instance.boldFontName, size: CGFloat(DataManager.instance.fontSize))!
-        font = UIFont(name: DataManager.instance.fontName, size: CGFloat(DataManager.instance.fontSize))!
-        titleLabel.font = font
+        
+        titleLabel.font = boldFont
         drugDiluentLabel.font = font
         drugAmountLabel.font = font
         drugDosingLabel.font = font
         
         weightTextField.font = font
+        doseTitleLabel.font = boldFont
         drugConcentrationLabel.layer.borderWidth = 0.5
     }
     
@@ -125,6 +128,7 @@ class MixingCalculatorView : UIView, UITextFieldDelegate
         let value = Double(textField.text!)
         if(value != nil) {
             weight = value!
+            DataManager.instance.lastSetWeight = weight
             updateVolumeFields()
         }
     }
@@ -141,12 +145,13 @@ class MixingCalculatorView : UIView, UITextFieldDelegate
     }
     
     func buildWeightBasedStacks() {
-        
-        let numElementsPerRow = 8
-        var numRows : Int = (numElements / numElementsPerRow)
-        if(numRows == 0) {
-            numRows = 1
+        var numElementsPerRow = 8
+        if DataManager.instance.fontSize >= 14 && DataManager.instance.fontSize < 16 {
+            numElementsPerRow = 6
+        } else if DataManager.instance.fontSize >= 16 {
+            numElementsPerRow = 5
         }
+        let numRows : Int = (numElements / numElementsPerRow) + 1
         
         var elementCounter = 0
         

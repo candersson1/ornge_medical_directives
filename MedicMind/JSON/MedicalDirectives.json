@@ -200,7 +200,7 @@
             "clinical" : "<tab1>• MDI delivery systems require 45 seconds to “re-charge” between doses. Not waiting the recommended length of time between doses will result in significantly decreased amounts of medication being delivered/activation\n• In the event of a respiratory outbreak as identified by originating facility / Ornge, the MDI must be used instead of nebulization\n• Side effects of Magnesium Sulfate include hypotension; monitor BP closely</tab1>",
             "drug_cards" : [
                 {
-                    "section" : "<b>Bronchoconstrion - All patients</b>",
+                    "section" : "<b>Bronchoconstriction - All patients</b>",
                     "drugKey" : "salbutamol",
                     "title" : "<b>Salbutamol (Ventolin) MDI (100 microgram/puff)</b>",
                     "loc" : [["pcp", "none"]],

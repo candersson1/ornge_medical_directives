@@ -95,7 +95,7 @@ class MedicalDirectiveView : UIView
     
     func initFonts()
     {
-        font = UIFont(name: DataManager.instance.fontName, size: CGFloat(DataManager.instance.fontSize))
+        font = UIFont.systemFont(ofSize: CGFloat(DataManager.instance.fontSize))
 
         sectionLabel.font = font
         notesLabel.font = font
@@ -114,7 +114,7 @@ class MedicalDirectiveView : UIView
         addSubview(contentView)
         personalNotesLabel.useLabelSize = true
         
-        contentView.backgroundColor = UIColor.systemBackground
+        contentView.backgroundColor = UIColor.clear
         
         treatmentView.layer.borderColor = UIColor.systemGray3.cgColor
         treatmentView.layer.borderWidth = 1
@@ -146,7 +146,7 @@ class MedicalDirectiveView : UIView
         sectionLabel.lineBreakMode = .byWordWrapping
 
         var titleString = directive.title
-        var backgroundColor = UIColor.secondarySystemBackground
+        var backgroundColor = UIColor(named: "Secondary_background")!
         if(titleString.hasPrefix("<bg=") && titleString.count > 12)
         {
            titleString.removeFirst(4)
@@ -228,14 +228,14 @@ class MedicalDirectiveView : UIView
                 //MARK: Patch and LOC buttons
                 let locLabel = UILabel(frame: CGRect(x: -41.5, y: 41.5, width: 110, height: 25))
                 locLabel.translatesAutoresizingMaskIntoConstraints = false
-                locLabel.font = UIFont(name: DataManager.instance.boldFontName, size: 11)
+                locLabel.font = .boldSystemFont(ofSize: CGFloat(11.0))
                 locLabel.textAlignment = .center
                 locLabel.transform = CGAffineTransform(rotationAngle: CGFloat(-Double.pi / 2));
                 locLabel.textColor = .black
                 
                 let patchLabel = UILabel(frame: CGRect(x: -41.5, y: 41.5, width: 110, height: 25))
                 patchLabel.translatesAutoresizingMaskIntoConstraints = false
-                patchLabel.font = UIFont(name: DataManager.instance.boldFontName, size: 11)
+                patchLabel.font = .boldSystemFont(ofSize: CGFloat(11.0))
                 patchLabel.textAlignment = .center
                 patchLabel.transform = CGAffineTransform(rotationAngle: CGFloat(-Double.pi / 2));
                 patchLabel.textColor = .black
@@ -315,7 +315,7 @@ class MedicalDirectiveView : UIView
             for x in 0 ..< doseRoute[y].count {
 
                 var labelString = doseRoute[y][x]
-                var backgroundColor = UIColor.clear
+                var backgroundColor = UIColor(named: "Tertiary_background")
                 if(labelString.hasPrefix("<bg=") && labelString.count > 12)
                 {
                     labelString.removeFirst(4)
@@ -362,7 +362,6 @@ class MedicalDirectiveView : UIView
 extension MedicalDirectiveView : UITextViewDelegate
 {
     func textView(_ textView: UITextView, shouldInteractWith URL: URL, in characterRange: NSRange, interaction: UITextItemInteraction) -> Bool {
-        print("found a link")
         var targetString = URL.absoluteString
         if(targetString.hasPrefix("drugKey=")) {
             targetString = String(targetString.dropFirst(8))

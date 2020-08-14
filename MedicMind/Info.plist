@@ -22,6 +22,16 @@
 	<string>$(CURRENT_PROJECT_VERSION)</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>UIAppFonts</key>
+	<array>
+		<string>MinionPro-Regular.otf</string>
+		<string>MinionPro-Bold.otf</string>
+		<string>FrutigerLTStd-Roman.otf</string>
+		<string>FrutigerLTStd-Black.otf</string>
+		<string>FrutigerLTStd-Italic.otf</string>
+		<string>MinionPro-SemiboldCapt.otf</string>
+		<string>MinionPro-Capt.otf</string>
+	</array>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>

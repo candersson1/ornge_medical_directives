@@ -90,7 +90,7 @@ class FlowChartViewController: UIViewController {
         let textLayer = CATextLayer()
         textLayer.frame = textframe
         textLayer.string = flowchartData!.title
-        textLayer.font = CTFontCreateWithName(DataManager.instance.fontName as CFString, CGFloat(8.0), nil)
+        //textLayer.font = CTFontCreateWithName(DataManager.instance.fontName as CFString, CGFloat(8.0), nil)
         textLayer.fontSize = titleTextSize
         textLayer.foregroundColor = UIColor.black.cgColor
         textLayer.isWrapped = true
@@ -136,8 +136,8 @@ class FlowChartViewController: UIViewController {
     
     
     func getTextBoxSizeByString(str : String, size : CGFloat) -> CGSize {
-        let font = UIFont(name: DataManager.instance.fontName, size: size)
-        let textBoxSize : CGSize = str.size(withAttributes: [.font: font!])
+        let font = UIFont.systemFont(ofSize: CGFloat(DataManager.instance.fontSize))
+        let textBoxSize : CGSize = str.size(withAttributes: [.font: font])
         return textBoxSize
     }
     
@@ -584,8 +584,8 @@ class Grid
     }
     
     func getTextBoxSizeByString(str : String, size : CGFloat) -> CGSize {
-        let font = UIFont(name: DataManager.instance.fontName, size: size)
-        let textBoxSize : CGSize = str.size(withAttributes: [.font: font!])
+        let font = UIFont.systemFont(ofSize: CGFloat(DataManager.instance.fontSize))
+        let textBoxSize : CGSize = str.size(withAttributes: [.font: font])
         return textBoxSize
     }
     

@@ -13,32 +13,32 @@ import SwiftRichString
 
 
 let normalStyle = Style {
-    $0.font = SystemFonts.Helvetica.font(size: CGFloat(DataManager.instance.fontSize))
+    $0.font = UIFont.systemFont(ofSize: CGFloat(DataManager.instance.fontSize))
     $0.paragraphSpacingAfter = 15
     $0.alignment = .left
     $0.color = UIColor.label
 }
 
 let linkStyle = Style {
-    $0.font = SystemFonts.Helvetica_Bold.font(size: CGFloat(DataManager.instance.fontSize))
+    $0.font = UIFont.boldSystemFont(ofSize: CGFloat(DataManager.instance.fontSize))
     $0.color = UIColor.link
 }
 
 let titleStyle = Style {
-    $0.font = SystemFonts.Helvetica_Bold.font(size: CGFloat(DataManager.instance.fontSize + 3))
+    $0.font = UIFont.boldSystemFont(ofSize: CGFloat(DataManager.instance.fontSize) + 3)
     $0.color = UIColor.label
 }
 let boldStyle = Style {
-    $0.font = SystemFonts.Helvetica_Bold.font(size: CGFloat(DataManager.instance.fontSize))
+    $0.font = UIFont.boldSystemFont(ofSize: CGFloat(DataManager.instance.fontSize))
     $0.color = UIColor.label
 }
 
 let italicStyle = Style {
-    $0.traitVariants = .italic
+    $0.font = UIFont.italicSystemFont(ofSize: CGFloat(DataManager.instance.fontSize))
 }
 
 let boldItalicStyle = Style {
-    $0.font = SystemFonts.Helvetica_Bold.font(size: CGFloat(DataManager.instance.fontSize))
+    $0.font = UIFont.boldSystemFont(ofSize: CGFloat(DataManager.instance.fontSize))
     $0.traitVariants = .italic
 }
 
@@ -87,7 +87,7 @@ let tab3 = Style {
 }
 
 let link = Style {
-    $0.color = UIColor.blue
+    $0.color = UIColor.systemBlue
     $0.linkURL = URLRepresentable.tagAttribute("href")
 }
 
@@ -105,22 +105,18 @@ class DataManager
     var loaded = false
     
     var fontSize : Float
-    var fontName : String
-    var boldFontName : String
+    
     
     var showLevelOfCare = LevelOfCare.All
     
     var waiverComplete = false
     
+    var lastSetWeight : Double = 80.0
+    
     private init()
     {
         let defaults = UserDefaults.standard
         fontSize = (defaults.float(forKey: "font_size") != 0) ? defaults.float(forKey: "font_size") : 13.0
-        fontName = (defaults.string(forKey: "font_name") != nil) ? defaults.string(forKey: "font_name")! :
-        "HelveticaNeue"
-        boldFontName = (defaults.string(forKey: "font_name_bold") != nil) ? defaults.string(forKey: "font_name_bold")! :
-        "HelveticaNeue-Bold"
-        
     }
     
     func load()

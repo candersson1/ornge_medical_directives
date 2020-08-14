@@ -524,7 +524,7 @@
               ["Scope of Practice", "≥ACP(f)", "≥ACP(f)"]
           ],
           [
-              ["<b>Formulary Dosasge Forms</b>", "6 g / 30 mL (20%) vial"],
+              ["<b>Formulary Dosage Forms</b>", "6 g / 30 mL (20%) vial"],
               ["<b>Other Names</b>", "Parvolex, Mucomyst"],
               ["<b>Classification</b>", "Mucolytic"]
           ],
@@ -613,7 +613,7 @@
               ["Scope of Practice", "≥PCP(f)"]
           ],
           [
-              ["<b>Formulary Dosasge Forms</b>", "80 mg Tablets"],
+              ["<b>Formulary Dosage Forms</b>", "80 mg Tablets"],
               ["<b>Other Names</b>", "Aspirin"],
               ["<b>Classification</b>", "Non-Steroidal Anti-Inflammatory, Analgesic, Antipyretic, Anticoagulant"]
           ],
@@ -778,7 +778,7 @@
                 ["Scope of Practice", "≥ACP(f)"]
             ],
             [
-                ["<b>Formulary Dosasge Forms</b>", "6 mg / 2 mL pre-filled syringe\n12 mg / 4 mL pre-filled syringe"],
+                ["<b>Formulary Dosage Forms</b>", "6 mg / 2 mL pre-filled syringe\n12 mg / 4 mL pre-filled syringe"],
                 ["<b>Other Names</b>", "Adenocard"],
                 ["<b>Classification</b>", "Antiarrhythmic"]
             ],
@@ -839,7 +839,7 @@
             [
                 ["<b>Pregnancy and Lactation</b>"],
                 ["<b>Pregnancy:</b>", "Studies are lacking. Not recommended for use in pregnancy."],
-                ["<b>Lactation:</b>", "Unknown is enters breast milk. Not recommended."]
+                ["<b>Lactation:</b>", "Unknown if enters breast milk. Not recommended."]
             ],
             [
                 ["<b>Pharmacologic Mechanism</b>"],
@@ -940,11 +940,11 @@
               ]
           },
           {
-            "name" : "<center><b>Amiodarone - Pediatric Infusion Table</b></center>",
+            "name" : "<b>Amiodarone</b>",
             "diluent_label" : "50 mL D5W",
             "amount_label" : "90 mg",
             "concentration_label" : "1.8 mg/mL\nCentral/Peripheral IV",
-            "dosing_label" : "Paediatric Continuous IV Infusion Dosing: 5 - 15 mcg/kg/min",
+            "dosing_label" : "<b>Paediatric Continuous IV Infusion Dosing:</b> 5 - 15 mcg/kg/min",
             "concentration" : 1800,
             "unit_weight" : "mcg",
             "unit_time" : "min",
@@ -958,7 +958,7 @@
                 ["Scope of Practice", "≥ACP(f)", "≥ACP(f)", "≥ACP(f)"]
             ],
             [
-                ["<b>Formulary Dosasge Forms</b>", "150 mg / 3 mL vial"],
+                ["<b>Formulary Dosage Forms</b>", "150 mg / 3 mL vial"],
                 ["<b>Other Names</b>", "Cordarone"],
                 ["<b>Classification</b>", "Antiarrhythmic"]
             ],
@@ -1116,7 +1116,7 @@
               ["Scope of Practice", "≥ACP(f)", "≥ACP(f)", "≥ACP(f)"]
           ],
           [
-              ["<b>Formulary Dosasge Forms</b>", "2 g, 1 g, 500 mg, 250 mg (powder)"],
+              ["<b>Formulary Dosage Forms</b>", "2 g, 1 g, 500 mg, 250 mg (powder)"],
               ["<b>Other Names</b>", "Penbritin, Ampicin"],
               ["<b>Classification</b>", "Antibiotic"]
           ],
@@ -1220,7 +1220,7 @@
               ["Scope of Practice", "≥ACP(f)", "≥ACP(f)", "≥ACP(f)"]
           ],
           [
-              ["<b>Formulary Dosasge Forms</b>", "1 mg / 10 mL prefilled syringe"],
+              ["<b>Formulary Dosage Forms</b>", "1 mg / 10 mL prefilled syringe"],
               ["<b>Other Names</b>", "Atropine"],
               ["<b>Classification</b>", "Anticholinergic"]
           ],
@@ -1384,7 +1384,7 @@
               ["Scope of Practice", "≥ACP(f)", "≥ACP(f)"]
           ],
           [
-              ["<b>Formulary Dosasge Forms</b>", "1 g in 10 mL preloaded syringe (100 mg/mL) 10%"],
+              ["<b>Formulary Dosage Forms</b>", "1 g in 10 mL preloaded syringe (100 mg/mL) 10%"],
               ["<b>Other Names</b>", "Calciject"],
               ["<b>Classification</b>", "Electrolyte"]
           ],
@@ -1550,7 +1550,7 @@
               ["Scope of Practice", "≥ACP(f)", "≥ACP(f)"]
           ],
           [
-              ["<b>Formulary Dosasge Forms</b>", "100 mg / 1 mL, 10 mL vial"],
+              ["<b>Formulary Dosage Forms</b>", "100 mg / 1 mL, 10 mL vial"],
               ["<b>Other Names</b>", ""],
               ["<b>Classification</b>", "Electrolyte"]
           ],
@@ -1637,7 +1637,7 @@
               ["Scope of Practice", "CCP\nPCCP/PCCN*"]
           ],
           [
-              ["<b>Formulary Dosasge Forms</b>", "250 micrograms / 1 mL vial"],
+              ["<b>Formulary Dosage Forms</b>", "250 micrograms / 1 mL vial"],
               ["<b>Other Names</b>", "Hemabate"],
               ["<b>Classification</b>", "Oxytocic"]
           ],
@@ -1796,7 +1796,7 @@
               ["Scope of Practice", "≥ACP(f)", "≥ACP(f)", "≥ACP(f)"]
           ],
           [
-              ["<b>Formulary Dosasge Forms</b>", "1000 mg, 500 mg vials (powder)"],
+              ["<b>Formulary Dosage Forms</b>", "1000 mg, 500 mg vials (powder)"],
               ["<b>Other Names</b>", "Ancef, Kefzol, Zolicet"],
               ["<b>Classification</b>", "Antibiotic"]
           ],
@@ -1960,7 +1960,7 @@
                 ["Scope of Practice", "≥ACP(f)", "≥ACP(f)", "≥ACP(f)"]
             ],
             [
-                ["<b>Formulary Dosasge Forms</b>", "1 g vial (powder)"],
+                ["<b>Formulary Dosage Forms</b>", "1 g vial (powder)"],
                 ["<b>Other Names</b>", "Rocephin"],
                 ["<b>Classification</b>", "Antibiotic"]
             ],
@@ -2131,7 +2131,7 @@
               ["Scope of Practice", "CCP\nPCCP/PCCN", "CCP\nPCCP/PCCN", "CCP\nPCCP/PCCN"]
           ],
           [
-              ["<b>Formulary Dosasge Forms</b>", "2 mg / 1 mL, 10 mL Vial"],
+              ["<b>Formulary Dosage Forms</b>", "2 mg / 1 mL, 10 mL Vial"],
               ["<b>Other Names</b>", "Nimbex"],
               ["<b>Classification</b>", "Non-depolarizing neuromuscular-blocking agent"]
           ],
@@ -2216,7 +2216,7 @@
               ["Scope of Practice", "≥ACP(f)"]
           ],
           [
-              ["<b>Formulary Dosasge Forms</b>", "75 mg, 300 mg oral tablet"],
+              ["<b>Formulary Dosage Forms</b>", "75 mg, 300 mg oral tablet"],
               ["<b>Other Names</b>", "Plavix"],
               ["<b>Classification</b>", "Antiplatelet"]
           ],
@@ -2304,7 +2304,7 @@
               ["Scope of Practice", "CCP\nPCCP/PCCN"]
           ],
           [
-              ["<b>Formulary Dosasge Forms</b>", "4 mg oral tablet"],
+              ["<b>Formulary Dosage Forms</b>", "4 mg oral tablet"],
               ["<b>Other Names</b>", "Periactin, Peritol"],
               ["<b>Classification</b>", "First generation Anti-histamine"]
           ],
@@ -2462,7 +2462,7 @@
               ["Scope of Practice", "≥ACP(f)", "≥ACP(f)", ""]
           ],
           [
-              ["<b>Formulary Dosasge Forms</b>", "100 mg in 10 mL vial"],
+              ["<b>Formulary Dosage Forms</b>", "100 mg in 10 mL vial"],
               ["<b>Other Names</b>", "Decadron"],
               ["<b>Classification</b>", "Corticosteroid"]
           ],
@@ -2549,7 +2549,7 @@
               ["Scope of Practice", "≥ACP(f)", "≥ACP(f)"]
           ],
           [
-              ["<b>Formulary Dosasge Forms</b>", "25 g / 50 mL preload syringe"],
+              ["<b>Formulary Dosage Forms</b>", "25 g / 50 mL preload syringe"],
               ["<b>Other Names</b>", "D50W"],
               ["<b>Classification</b>", "Caloric Agent"]
           ],
@@ -2705,7 +2705,7 @@
               ["Scope of Practice", "≥ACP(f)", "≥ACP(f)"]
           ],
           [
-              ["<b>Formulary Dosasge Forms</b>", "5 mg / 1 mL and 2 mL ampoules"],
+              ["<b>Formulary Dosage Forms</b>", "5 mg / 1 mL and 2 mL ampoules"],
               ["<b>Other Names</b>", "Valium, Vivol, Diazumul"],
               ["<b>Classification</b>", "Anxyolytic, Sedative"]
           ],
@@ -2860,7 +2860,7 @@
               ["Scope of Practice", "CCP\nPCCP/PCCN", "CCP\nPCCP/PCCN"]
           ],
           [
-              ["<b>Formulary Dosasge Forms</b>", "0.25 mg / 1 mL in 2 mL ampoule\n(Paediatric) 0.05 mg / 1 mL ampoule"],
+              ["<b>Formulary Dosage Forms</b>", "0.25 mg / 1 mL in 2 mL ampoule\n(Paediatric) 0.05 mg / 1 mL ampoule"],
               ["<b>Other Names</b>", "Lanoxin, Digitalis"],
               ["<b>Classification</b>", "Cardiac Glycoside"]
           ],
@@ -3029,7 +3029,7 @@
               ["Scope of Practice", "CCP\nPCCP/PCCN", "CCP\nPCCP/PCCN"]
           ],
           [
-              ["<b>Formulary Dosasge Forms</b>", "5 mg / 1 mL in 5 mL vial"],
+              ["<b>Formulary Dosage Forms</b>", "5 mg / 1 mL in 5 mL vial"],
               ["<b>Other Names</b>", "Cardizem"],
               ["<b>Classification</b>", "Antiarrythmic"]
           ],
@@ -3184,7 +3184,7 @@
               ["Scope of Practice", "≥ACP(f)", "≥ACP(f)", "≥PCP(f)", "≥PCP(f)"]
           ],
           [
-              ["<b>Formulary Dosasge Forms</b>", "50 mg / 1 mL vial, 50 mg tablets"],
+              ["<b>Formulary Dosage Forms</b>", "50 mg / 1 mL vial, 50 mg tablets"],
               ["<b>Other Names</b>", "Gravol"],
               ["<b>Classification</b>", "Antihistamine, Anti-emetic"]
           ],
@@ -3339,7 +3339,7 @@
               ["Scope of Practice", "≥ACP(f)", "≥ACP(f)", "≥PCP(f)", "≥PCP(f)"]
           ],
           [
-              ["<b>Formulary Dosasge Forms</b>", "50 mg / 1 mL Vial"],
+              ["<b>Formulary Dosage Forms</b>", "50 mg / 1 mL Vial"],
               ["<b>Other Names</b>", "Benadryl"],
               ["<b>Classification</b>", "Antihistamine"]
           ],
@@ -3508,7 +3508,7 @@
               ["Scope of Practice", "CCP\nPCCP/PCCN"]
           ],
           [
-              ["<b>Formulary Dosasge Forms</b>", "250 mg / 20 mL vial (powder)"],
+              ["<b>Formulary Dosage Forms</b>", "250 mg / 20 mL vial (powder)"],
               ["<b>Other Names</b>", "Dobutrex"],
               ["<b>Classification</b>", "Sympathomimetic"]
           ],
@@ -3703,7 +3703,7 @@
               ["Scope of Practice", "≥ACP(f)"]
           ],
           [
-              ["<b>Formulary Dosasge Forms</b>", "Premixed 200 mg / 250 mL Dextrose (800 microgram/mL)\nPremixed 400 mg / 250 mL Dextrose (1600 micrograms/mL)\nPremixed 800 mg / 250 mL Dextrose (3200 microgram/mL)"],
+              ["<b>Formulary Dosage Forms</b>", "Premixed 200 mg / 250 mL Dextrose (800 microgram/mL)\nPremixed 400 mg / 250 mL Dextrose (1600 micrograms/mL)\nPremixed 800 mg / 250 mL Dextrose (3200 microgram/mL)"],
               ["<b>Other Names</b>", "Intropin"],
               ["<b>Classification</b>", "Sympathomimetic"]
           ],
@@ -3875,7 +3875,7 @@
               ["Scope of Practice", "≥ACP(f)", "CCP\nPCCP/PCCN", "≥PCP(f)"]
           ],
           [
-              ["<b>Formulary Dosasge Forms</b>", "1:1000 – 1 mg in 1 mL ampule (IM/IV)\n1:1000 – 30 mg in 30 mL vial (IM/IV)\n1:10,000 - 1 mg in 10 mL preload syringe (IV/IO/ETT)"],
+              ["<b>Formulary Dosage Forms</b>", "1:1000 – 1 mg in 1 mL ampule (IM/IV)\n1:1000 – 30 mg in 30 mL vial (IM/IV)\n1:10,000 - 1 mg in 10 mL preload syringe (IV/IO/ETT)"],
               ["<b>Other Names</b>", "Adrenaline"],
               ["<b>Classification</b>", "Sympathomimetic"]
           ],
@@ -4055,7 +4055,7 @@
                 ["Scope of Practice", "≥ACP(f)"]
             ],
             [
-                ["<b>Formulary Dosasge Forms</b>", "0.5 or 1.5 mg per vial"],
+                ["<b>Formulary Dosage Forms</b>", "0.5 or 1.5 mg per vial"],
                 ["<b>Other Names</b>", "Flolan"],
                 ["<b>Classification</b>", "Vasodilator"]
             ],
@@ -4211,7 +4211,7 @@
               ["Scope of Practice", "CCP\nPCCP/PCCN*", "CCP\nPCCP/PCCN*"]
           ],
           [
-              ["<b>Formulary Dosasge Forms</b>", "0.25 mg / 1 mL vial"],
+              ["<b>Formulary Dosage Forms</b>", "0.25 mg / 1 mL vial"],
               ["<b>Other Names</b>", "Ergometrine"],
               ["<b>Classification</b>", "Oxytocic"],
               ["*Only select PCCNs", ""]
@@ -4372,7 +4372,7 @@
               ["Scope of Practice", "CCP\nPCCP/PCCN"]
           ],
           [
-              ["<b>Formulary Dosasge Forms</b>", "20 mg / 10 mL vial"],
+              ["<b>Formulary Dosage Forms</b>", "20 mg / 10 mL vial"],
               ["<b>Other Names</b>", "Amidate"],
               ["<b>Classification</b>", "Anesthetic"]
           ],
@@ -4457,7 +4457,7 @@
               ["Scope of Practice", "CCP\nPCCP/PCCN", "CCP\nPCCP/PCCN"]
           ],
           [
-              ["<b>Formulary Dosasge Forms</b>", "20% fat emulsion 500 mL premixed bag"],
+              ["<b>Formulary Dosage Forms</b>", "20% fat emulsion 500 mL premixed bag"],
               ["<b>Other Names</b>", "Intralipid, Liposyn, ClinOleic, SMOF"],
               ["<b>Classification</b>", "Nutritional supplement"]
           ],
@@ -4640,7 +4640,7 @@
               ["Scope of Practice", "≥ACP(f)", "≥ACP(f)", "≥ACP(f)", "≥ACP(f)"]
           ],
           [
-              ["<b>Formulary Dosasge Forms</b>", "100 mcg in 2 mL Vial"],
+              ["<b>Formulary Dosage Forms</b>", "100 mcg in 2 mL Vial"],
               ["<b>Other Names</b>", "Sublimaze"],
               ["<b>Classification</b>", "Opioid Analgesic"]
           ],
@@ -4734,7 +4734,7 @@
               ["Scope of Practice", "≥ACP(f)", "≥ACP(f)"]
           ],
           [
-              ["<b>Formulary Dosasge Forms</b>", "0.1 mg / 1 mL vial"],
+              ["<b>Formulary Dosage Forms</b>", "0.1 mg / 1 mL vial"],
               ["<b>Other Names</b>", "Anexate"],
               ["<b>Classification</b>", "Benzodiazepine Antagonist"]
           ],
@@ -4819,7 +4819,7 @@
               ["Scope of Practice", "≥ACP(f)", "≥ACP(f)"]
           ],
           [
-              ["<b>Formulary Dosasge Forms</b>", "5 mg / 1 mL 10 mL Vial, 1 mg tablets, 5 mg tablets"],
+              ["<b>Formulary Dosage Forms</b>", "5 mg / 1 mL 10 mL Vial, 1 mg tablets, 5 mg tablets"],
               ["<b>Other Names</b>", "Folacin, Folate"],
               ["<b>Classification</b>", "Vitamin"]
           ],
@@ -4975,7 +4975,7 @@
               ["Scope of Practice", "≥ACP(f)"]
           ],
           [
-              ["<b>Formulary Dosasge Forms</b>", "1.5 g / 1.5 mL vial"],
+              ["<b>Formulary Dosage Forms</b>", "1.5 g / 1.5 mL vial"],
               ["<b>Other Names</b>", "Antizol"],
               ["<b>Classification</b>", "Alcohol Dehydrogenase Inhibitor"]
           ],
@@ -5130,7 +5130,7 @@
               ["Scope of Practice", "≥ACP(f)", "≥ACP(f)", "≥ACP(f)"]
           ],
           [
-              ["<b>Formulary Dosasge Forms</b>", "2 mL (150 mg FOSphenytoin sodium = to 100 mg phenytoin)\n10 mL (750 mg FOSphenytoin sodium = to 500 mg phenytoin)"],
+              ["<b>Formulary Dosage Forms</b>", "2 mL (150 mg FOSphenytoin sodium = to 100 mg phenytoin)\n10 mL (750 mg FOSphenytoin sodium = to 500 mg phenytoin)"],
               ["<b>Other Names</b>", "Cerebyx"],
               ["<b>Classification</b>", "Anticonvulsant"]
           ],
@@ -5285,7 +5285,7 @@
               ["Scope of Practice", "≥ACP(f)", "≥ACP(f)", "≥ACP(f)"]
           ],
           [
-              ["<b>Formulary Dosasge Forms</b>", "40 mg per 4 mL vial (10 mg / 1 mL)"],
+              ["<b>Formulary Dosage Forms</b>", "40 mg per 4 mL vial (10 mg / 1 mL)"],
               ["<b>Other Names</b>", "Lasix"],
               ["<b>Classification</b>", "Diuretic"]
           ],
@@ -5441,7 +5441,7 @@
               ["Scope of Practice", "≥ACP(f)", "≥ACP(f)"]
           ],
           [
-              ["<b>Formulary Dosasge Forms</b>", "10 mg and 40 mg in 1 mL vials"],
+              ["<b>Formulary Dosage Forms</b>", "10 mg and 40 mg in 1 mL vials"],
               ["<b>Other Names</b>", "Gentamicin Sulphate, Garamycin, Cidomycin"],
               ["<b>Classification</b>", "Antibiotic, Aminoglycoside"]
           ],
@@ -5627,7 +5627,7 @@
               ["Scope of Practice", "≥ACP(f)", "≥ACP(f)", "≥PCP(f)"]
           ],
           [
-              ["<b>Formulary Dosasge Forms</b>", "1 mg/ 1 mL vial"],
+              ["<b>Formulary Dosage Forms</b>", "1 mg/ 1 mL vial"],
               ["<b>Other Names</b>", "n/a"],
               ["<b>Classification</b>", "Hyperglycemic Agent"]
           ],
@@ -5782,7 +5782,7 @@
               ["Scope of Practice", "≥ACP(f)", "≥ACP(f)", "≥ACP(f)", "≥ACP(f)"]
           ],
           [
-              ["<b>Formulary Dosasge Forms</b>", "5 mg / 1 mL vial"],
+              ["<b>Formulary Dosage Forms</b>", "5 mg / 1 mL vial"],
               ["<b>Other Names</b>", "Haldol, Peridol, Dozic, Serenance"],
               ["<b>Classification</b>", "Antipsychotic"]
           ],
@@ -5951,7 +5951,7 @@
               ["Scope of Practice", "≥ACP(f)", "≥ACP(f)", "≥ACP(f)", "≥ACP(f)"]
           ],
           [
-              ["<b>Formulary Dosasge Forms</b>", "50,000 units per 5 mL vial (10,000 units/mL)"],
+              ["<b>Formulary Dosage Forms</b>", "50,000 units per 5 mL vial (10,000 units/mL)"],
               ["<b>Other Names</b>", "Unfractionated heparin"],
               ["<b>Classification</b>", "Anticoagulant"]
           ],
@@ -6128,7 +6128,7 @@
               ["Scope of Practice", "CCP\nPCCP/PCCN", "CCP\nPCCP/PCCN", "CCP\nPCCP/PCCN", "CCP\nPCCP/PCCN"]
           ],
           [
-              ["<b>Formulary Dosasge Forms</b>", "20 mg vial"],
+              ["<b>Formulary Dosage Forms</b>", "20 mg vial"],
               ["<b>Other Names</b>", "Apresoline, Novo-Hylazin"],
               ["<b>Classification</b>", "Antihypertensive"]
           ],
@@ -6285,7 +6285,7 @@
               ["Scope of Practice", "≥ACP(f)", "≥ACP(f)", "≥ACP(f)"]
           ],
           [
-              ["<b>Formulary Dosasge Forms</b>", "3% Solution (250 mL)"],
+              ["<b>Formulary Dosage Forms</b>", "3% Solution (250 mL)"],
               ["<b>Other Names</b>", "Hypertonic Saline"],
               ["<b>Classification</b>", "Electrolyte"]
           ],
@@ -6448,7 +6448,7 @@
           "diluent_label" : "100 mL NS",
           "amount_label" : "100 Units/1 mL",
           "concentration_label" : "1 unit/mL\nCentral/Peripheral IV\n<b>Peripheral/Central</b>",
-          "dosing_label" : "Adult Continues IV Infusion Dosing: 0.1-1 unit/kg/hr",
+          "dosing_label" : "<b>Adult Continuous IV Infusion Dosing:</b> 0.1-1 unit/kg/hr",
           "concentration" : 1,
           "unit_weight" : "Units",
           "unit_time" : "hr",
@@ -6462,7 +6462,7 @@
               ["Scope of Practice", "≥ACP(f)", "≥ACP(f)", "≥ACP(f)", "≥ACP(f)"]
           ],
           [
-              ["<b>Formulary Dosasge Forms</b>", "100 units / 1 mL, 10 mL vial"],
+              ["<b>Formulary Dosage Forms</b>", "100 units / 1 mL, 10 mL vial"],
               ["<b>Other Names</b>", "Novolin GE Toronto ®, Humulin-R"],
               ["<b>Classification</b>", "Antidiabetic"]
           ],
@@ -6549,7 +6549,7 @@
               ["Scope of Practice", "≥ACP(f)"]
           ],
           [
-              ["<b>Formulary Dosasge Forms</b>", "Nebules: 250 micrograms diluted with beta-2 agonist and NS to 3 mL solution\nMetered Dose Inhaler: 20 micrograms per dose"],
+              ["<b>Formulary Dosage Forms</b>", "Nebules: 250 micrograms diluted with beta-2 agonist and NS to 3 mL solution\nMetered Dose Inhaler: 20 micrograms per dose"],
               ["<b>Other Names</b>", "Atrovent"],
               ["<b>Classification</b>", "Anticholinergic"]
           ],
@@ -6704,7 +6704,7 @@
           "diluent_label" : "250 mL (D5W or NS)",
           "amount_label" : "1000 mcg/5 mL",
           "concentration_label" : "4 mcg/mL\n<b>Central/Peripheral IV</b>",
-          "dosing_label" : "Adult Continues IV Infusion Dosing: Initiate at 2 mcg/min, increase by 1 - 2 mcg/min PRN to a maximum of 10 mcg/min.",
+          "dosing_label" : "<b>Adult Continuous IV Infusion Dosing:</b> Initiate at 2 mcg/min, increase by 1 - 2 mcg/min PRN to a maximum of 10 mcg/min.",
           "concentration" : 4,
           "unit_weight" : "mcg",
           "unit_time" : "min",
@@ -6718,7 +6718,7 @@
               ["Scope of Practice", "CCP\nPCCP/PCCN", "CCP\nPCCP/PCCN"]
           ],
           [
-              ["<b>Formulary Dosasge Forms</b>", "1 mg in 5 mL vial (0.2 mg/ml)\n2 mg in 10 mL vial (0.2 mg/ml)"],
+              ["<b>Formulary Dosage Forms</b>", "1 mg in 5 mL vial (0.2 mg/ml)\n2 mg in 10 mL vial (0.2 mg/ml)"],
               ["<b>Other Names</b>", "Isuprel, Isopropylnoradrenaline, Isoprenaline, Isopropylarterenol"],
               ["<b>Classification</b>", "Beta Agonist, Antiarrhythmic"]
           ],
@@ -6873,7 +6873,7 @@
           "diluent_label" : "40 mL",
           "amount_label" : "500 mg/10 mL vial",
           "concentration_label" : "10 mg/mL\nPeripheral IV",
-          "dosing_label" : "Adult Continues IV Infusion Dosing: Sedation and Pain Management for Intubated and Ventilated Patients 0.3-2 mg/kg/hr IV",
+          "dosing_label" : "<b>Adult Continuous IV Infusion Dosing:</b> Sedation and Pain Management for Intubated and Ventilated Patients 0.3-2 mg/kg/hr IV",
           "concentration" : 10,
           "unit_weight" : "mg",
           "unit_time" : "hr",
@@ -6885,7 +6885,7 @@
           "diluent_label" : "40 mL",
           "amount_label" : "500 mg/10 mL vial",
           "concentration_label" : "10 mg/mL\nPeripheral IV",
-          "dosing_label" : "Adult IV BOLUS Dosing: Sedation and Pain Management for Intubated and Ventilated Patients 1-2 mg/kg over 1 minute x 1 dose followed by 0.5 mg/kg q 20 minutes prn",
+          "dosing_label" : "<b>Adult IV BOLUS Dosing:</b> Sedation and Pain Management for Intubated and Ventilated Patients 1-2 mg/kg over 1 minute x 1 dose followed by 0.5 mg/kg q 20 minutes prn",
           "concentration" : 10,
           "unit_weight" : "mg",
           "unit_time" : "",
@@ -6922,7 +6922,7 @@
               ["Scope of Practice", "≥ACP(f)", "≥ACP(f)", "≥ACP(f)", "≥ACP(f)"]
           ],
           [
-              ["<b>Formulary Dosasge Forms</b>", "500 mg / 50 mL vial (10 mg/mL), 100 mg / 2 mL vial (50 mg /mL)"],
+              ["<b>Formulary Dosage Forms</b>", "500 mg / 50 mL vial (10 mg/mL), 100 mg / 2 mL vial (50 mg /mL)"],
               ["<b>Other Names</b>", "Ketalar"],
               ["<b>Classification</b>", "Anesthetic, Analgesic"]
           ],
@@ -7016,7 +7016,7 @@
               ["Scope of Practice", "≥ACP(f)", "≥ACP(f)", "≥PCP(f)"]
           ],
           [
-              ["<b>Formulary Dosasge Forms</b>", "30 mg / 1 mL vial"],
+              ["<b>Formulary Dosage Forms</b>", "30 mg / 1 mL vial"],
               ["<b>Other Names</b>", "Toradol"],
               ["<b>Classification</b>", "Analgesic, Anti-inflamatory"]
           ],
@@ -7185,7 +7185,7 @@
               ["Scope of Practice", "≥ACP(f)", "≥ACP(f)", "≥ACP(f)"]
           ],
           [
-              ["<b>Formulary Dosasge Forms</b>", "100 mg / 20 mL vial"],
+              ["<b>Formulary Dosage Forms</b>", "100 mg / 20 mL vial"],
               ["<b>Other Names</b>", "Trandate"],
               ["<b>Classification</b>", "Antihypertensive"]
           ],
@@ -7356,7 +7356,7 @@
               ["Scope of Practice", "≥ACP(f)", "≥ACP(f)"]
           ],
           [
-              ["<b>Formulary Dosasge Forms</b>", "100 mg / 5 mL"],
+              ["<b>Formulary Dosage Forms</b>", "100 mg / 5 mL"],
               ["<b>Other Names</b>", "Xylocaine, Xylocard"],
               ["<b>Classification</b>", "Antiarrhythmic Local Anesthetic"]
           ],
@@ -7514,7 +7514,7 @@
               ["Scope of Practice", "≥ACP(f)", "≥ACP(f)", ""]
           ],
           [
-              ["<b>Formulary Dosasge Forms</b>", "4 mg / 1 mL vial\n1 mg Sublingual Tablets"],
+              ["<b>Formulary Dosage Forms</b>", "4 mg / 1 mL vial\n1 mg Sublingual Tablets"],
               ["<b>Other Names</b>", "Ativan"],
               ["<b>Classification</b>", "Benzodiazepine"]
           ],
@@ -7669,7 +7669,7 @@
               ["Scope of Practice", "≥ACP(f)", "≥ACP(f)", "≥ACP(f)", "≥ACP(f)"]
           ],
           [
-              ["<b>Formulary Dosasge Forms</b>", "5 g / 10 mL (50% solution)"],
+              ["<b>Formulary Dosage Forms</b>", "5 g / 10 mL (50% solution)"],
               ["<b>Other Names</b>", "MgSO4"],
               ["<b>Classification</b>", "Anticonvulsant, Antidysrhythmic, Bronchodilator, Tocolytic"]
           ],
@@ -7827,7 +7827,7 @@
               ["Scope of Practice", "≥ACP(f)", "≥ACP(f)"]
           ],
           [
-              ["<b>Formulary Dosasge Forms</b>", "100 g / 500 mL in premix bag (20% = 200 mg / 1 mL)"],
+              ["<b>Formulary Dosage Forms</b>", "100 g / 500 mL in premix bag (20% = 200 mg / 1 mL)"],
               ["<b>Other Names</b>", "Osmitrol"],
               ["<b>Classification</b>", "Osmotic Diuretic"]
           ],
@@ -7984,7 +7984,7 @@
               ["Scope of Practice", "≥ACP(f)", "≥ACP(f)", "≥ACP(f)"]
           ],
           [
-              ["<b>Formulary Dosasge Forms</b>", "125 mg, 40 mg, 500 mg, 1 g vial (powder)"],
+              ["<b>Formulary Dosage Forms</b>", "125 mg, 40 mg, 500 mg, 1 g vial (powder)"],
               ["<b>Other Names</b>", "Solu-Medrol"],
               ["<b>Classification</b>", "Glucocorticoid"]
           ],
@@ -8141,7 +8141,7 @@
               ["Scope of Practice", "≥ACP(f)", "≥ACP(f)", "≥ACP(f)"]
           ],
           [
-              ["<b>Formulary Dosasge Forms</b>", "5 mg / 5 mL Ampoule"],
+              ["<b>Formulary Dosage Forms</b>", "5 mg / 5 mL Ampoule"],
               ["<b>Other Names</b>", "Lopresor"],
               ["<b>Classification</b>", "Beta-blocker"]
           ],
@@ -8386,7 +8386,7 @@
               ["Scope of Practice", "≥ACP(f)", "≥ACP(f)", ""]
           ],
           [
-              ["<b>Formulary Dosasge Forms</b>", "5 mg / 1 mL vial\n50 mg / 10 mL vial"],
+              ["<b>Formulary Dosage Forms</b>", "5 mg / 1 mL vial\n50 mg / 10 mL vial"],
               ["<b>Other Names</b>", "Versed"],
               ["<b>Classification</b>", "Benzodiazepine"]
           ],
@@ -8578,7 +8578,7 @@
               ["Scope of Practice", "CCP\nPCCP/PCCN"]
           ],
           [
-              ["<b>Formulary Dosasge Forms</b>", "10 mg / 10 mL vial"],
+              ["<b>Formulary Dosage Forms</b>", "10 mg / 10 mL vial"],
               ["<b>Other Names</b>", "Primacor"],
               ["<b>Classification</b>", "Inotrope/Vasodilator"]
           ],
@@ -8747,7 +8747,7 @@
               ["Scope of Practice", "≥ACP(f)", "≥ACP(f)", "≥ACP(f)", "≥ACP(f)"]
           ],
           [
-              ["<b>Formulary Dosasge Forms</b>", "10 mg in 1 mL vial"],
+              ["<b>Formulary Dosage Forms</b>", "10 mg in 1 mL vial"],
               ["<b>Other Names</b>", "Statex"],
               ["<b>Classification</b>", "Opioid Analgesic"]
           ],
@@ -8919,7 +8919,7 @@
               ["Scope of Practice", "≥ACP(f)", "≥ACP(f)", "≥ACP(f)"]
           ],
           [
-              ["<b>Formulary Dosasge Forms</b>", "0.4 mg in 1 mL vial\n1 mg in 1 mL vial\n2 mg in 2 mL vial"],
+              ["<b>Formulary Dosage Forms</b>", "0.4 mg in 1 mL vial\n1 mg in 1 mL vial\n2 mg in 2 mL vial"],
               ["<b>Other Names</b>", "Narcan"],
               ["<b>Classification</b>", "Narcotic Antagonist"]
           ],
@@ -9003,7 +9003,7 @@
               ["Scope of Practice", "≥ACP(f)"]
           ],
           [
-              ["<b>Formulary Dosasge Forms</b>", "20 mg Tablet"],
+              ["<b>Formulary Dosage Forms</b>", "20 mg Tablet"],
               ["<b>Other Names</b>", "Adalat, Procardia, Nimodipine"],
               ["<b>Classification</b>", "Antihypertensive/CCB"]
           ],
@@ -9173,7 +9173,7 @@
               ["Scope of Practice", "≥ACP(f)", "≥PCP(f)"]
           ],
           [
-              ["<b>Formulary Dosasge Forms</b>", "50 mg in 10 mL vial\nSL Spray 0.4 micrograms\nSL Tabs: 0.3 micrograms, 0.4 micrograms, 0.6 micrograms"],
+              ["<b>Formulary Dosage Forms</b>", "50 mg in 10 mL vial\nSL Spray 0.4 micrograms\nSL Tabs: 0.3 micrograms, 0.4 micrograms, 0.6 micrograms"],
               ["<b>Other Names</b>", "Tridil"],
               ["<b>Classification</b>", "Vasodilator"]
           ],
@@ -9276,7 +9276,7 @@
               ["Scope of Practice", "≥CCP(f)"]
           ],
           [
-              ["<b>Formulary Dosasge Forms</b>", "25 mg/mL, 2 mL vial"],
+              ["<b>Formulary Dosage Forms</b>", "25 mg/mL, 2 mL vial"],
               ["<b>Other Names</b>", "Nipride"],
               ["<b>Classification</b>", "Antihypertensive, Vasodilator"]
           ],
@@ -9445,7 +9445,7 @@
               ["Scope of Practice", "≥ACP(f)"]
           ],
           [
-              ["<b>Formulary Dosasge Forms</b>", "4 mg / 4 mL vial (norepinephrine base)"],
+              ["<b>Formulary Dosage Forms</b>", "4 mg / 4 mL vial (norepinephrine base)"],
               ["<b>Other Names</b>", "Levophed"],
               ["<b>Classification</b>", "Sympathomimetic"]
           ],
@@ -9609,7 +9609,7 @@
               ["Scope of Practice", "≥ACP(f)", "≥ACP(f)", "≥ACP(f)"]
           ],
           [
-              ["<b>Formulary Dosasge Forms</b>", "50, 100, or 500 microgram/mL, 1 mL ampoules"],
+              ["<b>Formulary Dosage Forms</b>", "50, 100, or 500 microgram/mL, 1 mL ampoules"],
               ["<b>Other Names</b>", "Sandostatin"],
               ["<b>Classification</b>", "Somastatin Analog; Decreases Growth Hormone Secretion"]
           ],
@@ -9694,7 +9694,7 @@
               ["Scope of Practice", "≥ACP(f)", "≥ACP(f)", "≥ACP(f)", "≥ACP(f)"]
           ],
           [
-              ["<b>Formulary Dosasge Forms</b>", "4 mg / 2 mL ampoule"],
+              ["<b>Formulary Dosage Forms</b>", "4 mg / 2 mL ampoule"],
               ["<b>Other Names</b>", "Zofran"],
               ["<b>Classification</b>", "Antiemetic"]
           ],
@@ -9849,7 +9849,7 @@
               ["Scope of Practice", "≥ACP(f)", "≥ACP(f)", "≥ACP(f)"]
           ],
           [
-              ["<b>Formulary Dosasge Forms</b>", "10 units / 1 mL, 20 units / 2 mL vial"],
+              ["<b>Formulary Dosage Forms</b>", "10 units / 1 mL, 20 units / 2 mL vial"],
               ["<b>Other Names</b>", "Syntocinon, Pitocin"],
               ["<b>Classification</b>", "Oxytocic"]
           ],
@@ -10007,7 +10007,7 @@
               ["Scope of Practice", "≥ACP(f)", "≥ACP(f)", "≥ACP(f)"]
           ],
           [
-              ["<b>Formulary Dosasge Forms</b>", "40 mg vial (powder)"],
+              ["<b>Formulary Dosage Forms</b>", "40 mg vial (powder)"],
               ["<b>Other Names</b>", "Pantoloc, Panto IV"],
               ["<b>Classification</b>", "Proton-Pump Inhibitor"]
           ],
@@ -10163,7 +10163,7 @@
               ["Scope of Practice", "CCP\nPCCP/PCCN", "CCP\nPCCP/PCCN", "CCP\nPCCP/PCCN"]
           ],
           [
-              ["<b>Formulary Dosasge Forms</b>", "120 mg per 1 mL vial"],
+              ["<b>Formulary Dosage Forms</b>", "120 mg per 1 mL vial"],
               ["<b>Other Names</b>", "Phenobarbitone Sodium"],
               ["<b>Classification</b>", "Barbiturate, Anticonvulsant"]
           ],
@@ -10318,7 +10318,7 @@
               ["Scope of Practice", "≥ACP(f)", "≥ACP(f)", "≥ACP(f)", "≥ACP(f)"]
           ],
           [
-              ["<b>Formulary Dosasge Forms</b>", "10 mg / 1 mL, 1 mL ampoule"],
+              ["<b>Formulary Dosage Forms</b>", "10 mg / 1 mL, 1 mL ampoule"],
               ["<b>Other Names</b>", "Rogitine, Regitine"],
               ["<b>Classification</b>", "Alpha antagonist; Vasodilator"]
           ],
@@ -10488,7 +10488,7 @@
               ["Scope of Practice", "CCP\nPCCP/PCCN", "CCP\nPCCP/PCCN"]
           ],
           [
-              ["<b>Formulary Dosasge Forms</b>", "10 mg / 1 mL vial"],
+              ["<b>Formulary Dosage Forms</b>", "10 mg / 1 mL vial"],
               ["<b>Other Names</b>", "Neosynephrine, Mydfrin"],
               ["<b>Classification</b>", "Inotrope"]
           ],
@@ -10646,7 +10646,7 @@
               ["Scope of Practice", "≥ACP(f)", "≥ACP(f)"]
           ],
           [
-              ["<b>Formulary Dosasge Forms</b>", "250 mg / 5 mL vial"],
+              ["<b>Formulary Dosage Forms</b>", "250 mg / 5 mL vial"],
               ["<b>Other Names</b>", "Dilantin"],
               ["<b>Classification</b>", "Anticonvulsant Antiarrhythmic"]
           ],
@@ -10801,7 +10801,7 @@
               ["Scope of Practice", "≥ACP(f)", "≥PCP(f)"]
           ],
           [
-              ["<b>Formulary Dosasge Forms</b>", "20 mEq / 10 mL vials\n20 or 40 mEq/L large volume IV solution"],
+              ["<b>Formulary Dosage Forms</b>", "20 mEq / 10 mL vials\n20 or 40 mEq/L large volume IV solution"],
               ["<b>Other Names</b>", "KCl"],
               ["<b>Classification</b>", "Electrolyte"]
           ],
@@ -10956,7 +10956,7 @@
               ["Scope of Practice", "≥ACP(f)", "≥ACP(f)", "≥ACP(f)"]
           ],
           [
-              ["<b>Formulary Dosasge Forms</b>", "1 g vial (powder)"],
+              ["<b>Formulary Dosage Forms</b>", "1 g vial (powder)"],
               ["<b>Other Names</b>", "Protopam"],
               ["<b>Classification</b>", "Antidote"]
           ],
@@ -11124,7 +11124,7 @@
               ["Scope of Practice", "CCP\nPCCP/PCCN", "CCP\nPCCP/PCCN", "CCP\nPCCP/PCCN"]
           ],
           [
-              ["<b>Formulary Dosasge Forms</b>", "100 mg / 1 mL in 10 mL vial"],
+              ["<b>Formulary Dosage Forms</b>", "100 mg / 1 mL in 10 mL vial"],
               ["<b>Other Names</b>", "Pronestyl"],
               ["<b>Classification</b>", "Antiarrhythmic"]
           ],
@@ -11302,7 +11302,7 @@
               ["Scope of Practice", "CCP\nPCCP/PCCN", "CCP\nPCCP/PCCN", "CCP\nPCCP/PCCN"]
           ],
           [
-              ["<b>Formulary Dosasge Forms</b>", "500 mg / 5 mL vial"],
+              ["<b>Formulary Dosage Forms</b>", "500 mg / 5 mL vial"],
               ["<b>Other Names</b>", "Diprivan"],
               ["<b>Classification</b>", "Anesthetic"]
           ],
@@ -11391,7 +11391,7 @@
               ["Scope of Practice", "≥ACP(f)", "≥ACP(f)"]
           ],
           [
-              ["<b>Formulary Dosasge Forms</b>", "20 mL vial (powder) with diluent"],
+              ["<b>Formulary Dosage Forms</b>", "20 mL vial (powder) with diluent"],
               ["<b>Other Names</b>", "Octaplex, Beriplex"],
               ["<b>Classification</b>", "Coagulation Factor"]
           ],
@@ -11401,7 +11401,16 @@
           ],
           [
               ["<b>Dosing</b>"],
-              ["<b>Adult:</b>", "Usual Dosing:\n<b>INR</b>          1.5-2.9                 3.0-5.0                     >5\n<b>Dose</b>  1000 IU/40 mL     2000 IU/80 mL     3000 IU/120 mL\n<b>Weight</b>     50-90 kg            50-90 kg           Greater than 90 kg\nAdminister dose with an initial infusion rate of 1 mL/min for first 10 minutes, followed by a maximum rate of 2-3 mL/minute or 120-180 mL/h until full dose has been administered. Vitamin K1 10 mg IV co-administration strongly recommended if reversal is required for longer than 6 hours.If time permits reassessment of INR at 10-30 minutes post dose is recommended, with additional PCC provided if the INR remains greater than 1.5 and bleeding continues. Maximum total cumulative dose of 120 mL (3000 IU)"]
+              ["<b>Adult:</b>"],
+          ],
+          [
+              ["<b>Usual Dosing:</b>"],
+              ["<b>INR</b>", "1.5-2.9", "3.0-5.0", "> 5"],
+              ["<b>Dose</b>", "1000 IU/40 mL", "2000 IU/80 mL", "3000 IU/120 mL"],
+              ["<b>Weight</b>", "50-90 kg", "50-90 kg", "Greater than 90 kg"],
+          ],
+          [
+              ["Administer dose with an initial infusion rate of 1 mL/min for first 10 minutes, followed by a maximum rate of 2-3 mL/minute or 120-180 mL/h until full dose has been administered. Vitamin K1 10 mg IV co-administration strongly recommended if reversal is required for longer than 6 hours.If time permits reassessment of INR at 10-30 minutes post dose is recommended, with additional PCC provided if the INR remains greater than 1.5 and bleeding continues. Maximum total cumulative dose of 120 mL (3000 IU)"]
           ],
           [
               ["<b>Paediatric:</b>", "n/a"],
@@ -11477,7 +11486,7 @@
               ["Scope of Practice", "≥ACP(f)", "≥ACP(f)"]
           ],
           [
-              ["<b>Formulary Dosasge Forms</b>", "100 mg / 1 mL 30 mL vial, 100 mg oral tablet"],
+              ["<b>Formulary Dosage Forms</b>", "100 mg / 1 mL 30 mL vial, 100 mg oral tablet"],
               ["<b>Other Names</b>", "Vitamin B6"],
               ["<b>Classification</b>", "Vitamin"]
           ],
@@ -11645,7 +11654,7 @@
               ["Scope of Practice", "≥ACP(f)", "≥ACP(f)"]
           ],
           [
-              ["<b>Formulary Dosasge Forms</b>", "50 mg / 5 mL vial"],
+              ["<b>Formulary Dosage Forms</b>", "50 mg / 5 mL vial"],
               ["<b>Other Names</b>", "Zemuron, Organon"],
               ["<b>Classification</b>", "Non-Depolarizing Neuromuscular Blocking Agent"]
           ],
@@ -11745,7 +11754,7 @@
               ["Scope of Practice", "CCP\nPCCP/PCCN", "≥PCP(f)"]
           ],
           [
-              ["<b>Formulary Dosasge Forms</b>", "5 mg in 5 mL vial injectable\n100 micrograms per puff - Metered Dose Inhaler:\n2.5 mg/mL Nebule"],
+              ["<b>Formulary Dosage Forms</b>", "5 mg in 5 mL vial injectable\n100 micrograms per puff - Metered Dose Inhaler:\n2.5 mg/mL Nebule"],
               ["<b>Other Names</b>", "Ventolin"],
               ["<b>Classification</b>", "Bronchodilator"]
           ],
@@ -11903,7 +11912,7 @@
               ["Scope of Practice", "≥ACP(f)", "≥ACP(f)", "≥ACP(f)"]
           ],
           [
-              ["<b>Formulary Dosasge Forms</b>", "50 mEq per 50 mL"],
+              ["<b>Formulary Dosage Forms</b>", "50 mEq per 50 mL"],
               ["<b>Other Names</b>", "NaHCO3"],
               ["<b>Classification</b>", "Electrolyte"]
           ],
@@ -11993,7 +12002,7 @@
               ["Scope of Practice", "≥ACP(f)"]
           ],
           [
-              ["<b>Formulary Dosasge Forms</b>", "15-30 g powder for suspension"],
+              ["<b>Formulary Dosage Forms</b>", "15-30 g powder for suspension"],
               ["<b>Other Names</b>", "Kayexalate"],
               ["<b>Classification</b>", "Anti Hyperkalemic"]
           ],
@@ -12078,7 +12087,7 @@
               ["Scope of Practice", "CCP\nPCCP/PCCN", "CCP\nPCCP/PCCN"]
           ],
           [
-              ["<b>Formulary Dosasge Forms</b>", "200 mg / 10 mL vial"],
+              ["<b>Formulary Dosage Forms</b>", "200 mg / 10 mL vial"],
               ["<b>Other Names</b>", "Quelicin, Anectine"],
               ["<b>Classification</b>", "Depolorizing Neuromuscular Blocking Agent"]
           ],
@@ -12163,7 +12172,7 @@
               ["Scope of Practice", "≥ACP(f)"]
           ],
           [
-              ["<b>Formulary Dosasge Forms</b>", "50 mg vial (powder)"],
+              ["<b>Formulary Dosage Forms</b>", "50 mg vial (powder)"],
               ["<b>Other Names</b>", "TNKase"],
               ["<b>Classification</b>", "Fibrinolytic"]
           ],
@@ -12176,12 +12185,12 @@
               ["<b>Adult:</b>"]
           ],
           [
-              ["", "<b>Patient's Weight(kg)</b>", "<b>Tenecteplase (mg)</b>", "<b>Volume (mL)</b>"],
-              ["","< 60 kg", "30", "6 mL"],
-              ["","≥ 60 to < 70 kg", "35", "7 mL"],
-              ["","≥ 70 to < 80 kg", "40", "8 mL"],
-              ["","≥ 80 to < 90 kg", "45", "9 mL"],
-              ["","≥ 90 kg", "50", "10 mL"]
+              ["<b>Patient's Weight(kg)</b>", "<b>Tenecteplase (mg)</b>", "<b>Volume (mL)</b>"],
+              ["< 60 kg", "30", "6 mL"],
+              ["≥ 60 to < 70 kg", "35", "7 mL"],
+              ["≥ 70 to < 80 kg", "40", "8 mL"],
+              ["≥ 80 to < 90 kg", "45", "9 mL"],
+              ["≥ 90 kg", "50", "10 mL"]
           ],
           [
               ["<b>Paediatric:</b>", "n/a"],
@@ -12328,7 +12337,7 @@
               ["Scope of Practice", "≥ACP(f)", "≥ACP(f)", "≥ACP(f)"]
           ],
           [
-              ["<b>Formulary Dosasge Forms</b>", "100 mg / 1 mL vial"],
+              ["<b>Formulary Dosage Forms</b>", "100 mg / 1 mL vial"],
               ["<b>Other Names</b>", "Vitamin B1"],
               ["<b>Classification</b>", "Vitamin"]
           ],
@@ -12485,7 +12494,7 @@
               ["Scope of Practice", "≥ACP(f)", "≥ACP(f)", "≥ACP(f)"]
           ],
           [
-              ["<b>Formulary Dosasge Forms</b>", "500 mg / 5 mL vial, 1000 mg / 10 mL vial"],
+              ["<b>Formulary Dosage Forms</b>", "500 mg / 5 mL vial, 1000 mg / 10 mL vial"],
               ["<b>Other Names</b>", "CyckloKAPRON"],
               ["<b>Classification</b>", "Hemostatic Agent"]
           ],
@@ -12498,17 +12507,17 @@
               ["<b>Adult:</b>", "Traumatic Hemorrhage and Novel Oral Anticoagulant Reversal: 1 g IV loading dose over 10 minutes followed by a continuous IV infusion of 1 g over 8 hours and optimally given within 8 hours of bleeding secondary to trauma.\nECMO/ECLS: 1 g IV bolus for bleeding\nUsual Dosage: 25-50 mg/kg/day IV divided q 8 hours or 500-1000 mg IV q 8 hours."]
           ],
           [
-              ["<i>Adult Dosage in Renal Impairement:</i>"],
-              ["", "<b>Serum Creatinine</b>", "120-250 mcmol/L", "250-500 mcmol/L", "> 500 mcmol/L"],
-              ["", "<b>Dosing Interval</b>", "10 mg/kg twice daily", "10 mg/kg q 24 hours", "10 mg/kg q 48 hours\nor 5 mg/kg q 24 hours"]
+              ["<b>Adult Dosage in Renal Impairement:</b>"],
+              ["<b>Serum Creatinine</b>", "120-250 mcmol/L", "250-500 mcmol/L", "> 500 mcmol/L"],
+              ["<b>Dosing Interval</b>", "10 mg/kg twice daily", "10 mg/kg q 24 hours", "10 mg/kg q 48 hours\nor 5 mg/kg q 24 hours"]
           ],
           [
               ["<b>Paediatric:</b>", "Massive Bleeding: Initially 15 mg/kg IV direct undiluted or dilute in 50-250 mL of compatible solution, followed by 1.5 mg/kg/hr x 7 hours."]
           ],
           [
-              ["<i>Paediatric Dosage in Renal Impairement:</i>"],
-              ["", "Mild Impairment", "Moderate Impairment", "Severe Impairment"],
-              ["", "reduce by 50%", "reduce by 75%", "reduce by 90%"]
+              ["<b>Paediatric Dosage in Renal Impairement:</b>"],
+              ["Mild Impairment", "Moderate Impairment", "Severe Impairment"],
+              ["reduce by 50%", "reduce by 75%", "reduce by 90%"]
           ],
           [
               ["<b>Neonatal:</b>", "n/a"],
@@ -12656,7 +12665,7 @@
               ["Scope of Practice", "≥ACP(f)", "≥ACP(f)"]
           ],
           [
-              ["<b>Formulary Dosasge Forms</b>", "500 mg / 1 mL vial (powder)"],
+              ["<b>Formulary Dosage Forms</b>", "500 mg / 1 mL vial (powder)"],
               ["<b>Other Names</b>", "Vancocin"],
               ["<b>Classification</b>", "Antibiotic"]
           ],
@@ -12685,8 +12694,8 @@
           ],
           [
               ["<b>Dosage in Renal Impairment:</b>"],
-              ["", "<b>Creatinine Clearance</b>", "> 60", "60-40", "40-30", "30-15", "<15"],
-              ["", "<b>Interval</b>", "8-12", "12-24", "24-36", "48", "72"]
+              ["<b>Creatinine Clearance</b>", "> 60", "60-40", "40-30", "30-15", "<15"],
+              ["<b>Interval</b>", "8-12", "12-24", "24-36", "48", "72"]
           ],
           [
               ["#medical_directives"],
@@ -12772,7 +12781,7 @@
               ["Scope of Practice", "CCP\nPCCP/PCCN", "CCP\nPCCP/PCCN", "CCP\nPCCP/PCCN"]
           ],
           [
-              ["<b>Formulary Dosasge Forms</b>", "20 units/mL, 1 mL vial"],
+              ["<b>Formulary Dosage Forms</b>", "20 units/mL, 1 mL vial"],
               ["<b>Other Names</b>", "Pressyn AR, Pitressin"],
               ["<b>Classification</b>", "Antidiuretic Hormone"]
           ],
@@ -12942,7 +12951,7 @@
               ["Scope of Practice", "≥ACP(f)", "≥ACP(f)"]
           ],
           [
-              ["<b>Formulary Dosasge Forms</b>", "10 mg vial (powder)"],
+              ["<b>Formulary Dosage Forms</b>", "10 mg vial (powder)"],
               ["<b>Other Names</b>", "Norcuran"],
               ["<b>Classification</b>", "Neuromuscular blocker"]
           ],
@@ -13027,7 +13036,7 @@
               ["Scope of Practice", "≥ACP(f)"]
           ],
           [
-              ["<b>Formulary Dosasge Forms</b>", "0.1% Nasal Spray"],
+              ["<b>Formulary Dosage Forms</b>", "0.1% Nasal Spray"],
               ["<b>Other Names</b>", "Otrivin"],
               ["<b>Classification</b>", "Topical Vasoconstrictor"]
           ],

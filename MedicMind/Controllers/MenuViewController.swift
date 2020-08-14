@@ -30,12 +30,10 @@ class MenuViewController: UITableViewController
             }
         }
         
-        if(!dataManager.loaded)
-        {
+        if(!dataManager.loaded) {
             dataManager.load()
         }
-        if let menu = dataManager.currentPage
-        {
+        if let menu = dataManager.currentPage {
             if menu is Menu
             {
                 currentMenu = (menu as! Menu)
@@ -46,8 +44,7 @@ class MenuViewController: UITableViewController
                 }
             }
         }
-        else
-        {
+        else {
             print("Could not load page, not a valid menu")
         }
         
@@ -64,7 +61,7 @@ class MenuViewController: UITableViewController
         cell.textLabel?.text = itemArray[indexPath.row]
         cell.textLabel?.lineBreakMode = .byWordWrapping
         cell.textLabel?.numberOfLines = 0
-        
+        cell.textLabel?.font = .systemFont(ofSize: 15)
         return cell
     }
     

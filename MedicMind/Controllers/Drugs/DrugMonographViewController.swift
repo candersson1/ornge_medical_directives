@@ -88,18 +88,7 @@ class DrugMonographViewController : UIViewController
             // Satisfying size constraints
             stackView.widthAnchor.constraint(equalTo: scrollView.widthAnchor)
         ])
-        
-        //stackView.addBackground(color: .systemBackground)
-        
-        let titleLabel = UILabel()
-        titleLabel.font = UIFont(name: DataManager.instance.boldFontName, size: CGFloat(17.0))
-        titleLabel.numberOfLines = 0
-        titleLabel.lineBreakMode = .byWordWrapping
-        titleLabel.textAlignment = .center
-        titleLabel.text = drugData?.name
-        titleLabel.translatesAutoresizingMaskIntoConstraints = false
-        stackView.addArrangedSubview(titleLabel)
-        
+                
         let horizonalstackView = UIStackView()
         horizonalstackView.axis = .horizontal
         horizonalstackView.alignment = .fill
@@ -109,7 +98,7 @@ class DrugMonographViewController : UIViewController
         stackView.addArrangedSubview(horizonalstackView)
         horizonalstackView.translatesAutoresizingMaskIntoConstraints = false
         
-        let font = UIFont(name: DataManager.instance.fontName, size: CGFloat(DataManager.instance.fontSize))
+        let font = UIFont.systemFont(ofSize: CGFloat(DataManager.instance.fontSize))
 
         //MARK: DoseRoute
         if(drugData!.content.count > 0)
@@ -173,7 +162,7 @@ class DrugMonographViewController : UIViewController
                     contentHStack.translatesAutoresizingMaskIntoConstraints = false
                     
                     if( y % 2 == 1 ) {
-                        contentHStack.addBackground(color: .systemGray6)
+                        contentHStack.addBackground(color: UIColor(named: "Tertiary_background")!)
                     }
                     contentVStack.addArrangedSubview(contentHStack)
                     viewArray.append([])
@@ -291,15 +280,19 @@ class DrugMonographViewController : UIViewController
                                 
                                 if(contentArray[y][x] == "PCP(f)" || contentArray[y][x] == "≥PCP(f)") {
                                     labelView.backgroundColor = pcpColor
+                                    contentLabel.textColor = .black
                                 }
                                 else if(contentArray[y][x] == "ACP(f)" || contentArray[y][x] == "≥ACP(f)") {
                                     labelView.backgroundColor = acpColor
+                                    contentLabel.textColor = .black
                                 }
                                 else if(contentArray[y][x] == "CCP(f)" || contentArray[y][x] == "≥CCP(f)" || contentArray[y][x] == "CCP\nPCCP/PCCN*" || contentArray[y][x] == "CCP\nPCCP/PCCN") {
                                     labelView.backgroundColor = ccpColor
+                                    contentLabel.textColor = .black
                                 }
                                 else if(contentArray[y][x] == "PCCP(f)") {
                                     labelView.backgroundColor = pccpColor
+                                    contentLabel.textColor = .black
                                 }
                                                             
                                 labelView.addSubview(contentLabel)
@@ -345,7 +338,7 @@ class DrugMonographViewController : UIViewController
             label = OutlinedLabel()
         }
         
-        label.font = UIFont(name: DataManager.instance.boldFontName, size: CGFloat(DataManager.instance.fontSize))
+        label.font = .boldSystemFont(ofSize: CGFloat(DataManager.instance.fontSize))
         label.text = string
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
@@ -359,7 +352,7 @@ class DrugMonographViewController : UIViewController
         {
             label = OutlinedLabel()
         }
-        label.font = UIFont(name: DataManager.instance.fontName, size: CGFloat(DataManager.instance.fontSize))
+        label.font = .systemFont(ofSize: CGFloat(DataManager.instance.fontSize))
         
         label.textColor = UIColor.label
         label.lineBreakMode = .byWordWrapping

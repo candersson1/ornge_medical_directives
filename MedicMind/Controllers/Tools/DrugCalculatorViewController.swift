@@ -29,11 +29,8 @@ class DrugCalculatorViewController: UIViewController
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let font = UIFont(name: DataManager.instance.fontName, size: CGFloat(DataManager.instance.fontSize))
-        let boldFont = UIFont(name: DataManager.instance.boldFontName, size: CGFloat(DataManager.instance.fontSize))
-        
-        disclaimerLabel.font = boldFont
-        titleLabel.font = font
+        disclaimerLabel.font = .systemFont(ofSize: CGFloat(DataManager.instance.fontSize))
+        titleLabel.font = .systemFont(ofSize: CGFloat(DataManager.instance.fontSize))
         
         /*for drugTable in drugTables
         {

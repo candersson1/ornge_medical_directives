@@ -24,6 +24,7 @@ class DrugTabViewController : ContentPageTabBarController
 
             var viewControllersArray : [UIViewController] = []
             viewControllersArray.append(viewController)
+            self.navigationItem.title = drugData?.name
             
             if(viewController.drugData!.y_site.count > 0) {
                 let ySiteViewController = storyboard!.instantiateViewController(identifier: "y_site") as! YSiteCompatibilityViewController

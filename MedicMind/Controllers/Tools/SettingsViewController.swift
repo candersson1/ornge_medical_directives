@@ -18,12 +18,12 @@ class SettingsViewController : UIViewController
         let value = fontSizeSlider.value
         fontSizeSlider.value = roundf(((value + 0.5) / 0.5) * 0.5)
         DataManager.instance.fontSize = fontSizeSlider.value
-        normalStyle.font = UIFont(name: DataManager.instance.fontName, size: CGFloat(DataManager.instance.fontSize))
-        titleStyle.font = UIFont(name: DataManager.instance.boldFontName, size: CGFloat(DataManager.instance.fontSize + 3))
-        boldStyle.font = UIFont(name: DataManager.instance.boldFontName, size: CGFloat(DataManager.instance.fontSize))
-        italicStyle.font = UIFont(name: DataManager.instance.fontName, size: CGFloat(DataManager.instance.fontSize))
-        linkStyle.font = UIFont(name: DataManager.instance.fontName, size: CGFloat(DataManager.instance.fontSize))
-        boldItalicStyle.font = UIFont(name: DataManager.instance.boldFontName, size: CGFloat(DataManager.instance.fontSize))
+        normalStyle.font = UIFont.systemFont(ofSize: CGFloat(DataManager.instance.fontSize))
+        titleStyle.font = UIFont.boldSystemFont(ofSize: CGFloat(DataManager.instance.fontSize + 3))
+        boldStyle.font = UIFont.boldSystemFont(ofSize: CGFloat(DataManager.instance.fontSize))
+        italicStyle.font = UIFont.italicSystemFont(ofSize: CGFloat(DataManager.instance.fontSize))
+        linkStyle.font = UIFont.systemFont(ofSize: CGFloat(DataManager.instance.fontSize))
+        boldItalicStyle.font = UIFont.boldSystemFont(ofSize: CGFloat(DataManager.instance.fontSize))
         
         updateFont()
         UserDefaults.standard.set(fontSizeSlider.value, forKey: "font_size")
@@ -39,7 +39,7 @@ class SettingsViewController : UIViewController
     
     func updateFont()
     {
-        fontSizeLabel.font = UIFont(name: DataManager.instance.fontName, size: CGFloat(DataManager.instance.fontSize))
+        fontSizeLabel.font = .systemFont(ofSize: CGFloat(DataManager.instance.fontSize))
         fontSizeLabel.text = "Font Size: \(fontSizeSlider.value)"
     }
 }

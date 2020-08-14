@@ -11,12 +11,13 @@ import UIKit
 import CoreData
 import SwiftRichString
 
-class MedicalDirectiveViewController : UIViewController
-{
+class MedicalDirectiveViewController : UIViewController {
     
     @IBOutlet weak var scrollView: UIScrollView!
+    @IBOutlet weak var rootStackView: UIStackView!
+    
     var currentDirective : MedicalDirective?
-     let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+    let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     
     var treatmentCards : [MedicalDirectiveView] = []
     
@@ -28,78 +29,52 @@ class MedicalDirectiveViewController : UIViewController
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        view.backgroundColor = UIColor.systemBackground
-        
+        self.navigationItem.title = "ViewController"
         let stackView = UIStackView()
         stackView.axis = .vertical
         stackView.alignment = .fill
         stackView.distribution = .fill
         stackView.spacing = 10
-        scrollView.addSubview(stackView)
         stackView.translatesAutoresizingMaskIntoConstraints = false
         
-        NSLayoutConstraint.activate([
-            // Attaching the content's edges to the scroll view's edges
-            stackView.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor),
-            stackView.trailingAnchor.constraint(equalTo: scrollView.trailingAnchor),
-            stackView.topAnchor.constraint(equalTo: scrollView.topAnchor),
-            stackView.bottomAnchor.constraint(equalTo: scrollView.bottomAnchor),
-            
-            // Satisfying size constraints
-            stackView.widthAnchor.constraint(equalTo: scrollView.widthAnchor)
-            ])
-        
-        let titleLabel = UILabel()
-        titleLabel.font = UIFont(name: DataManager.instance.boldFontName, size: CGFloat(20.0))
-        titleLabel.numberOfLines = 0
-        titleLabel.lineBreakMode = .byWordWrapping
-        titleLabel.textAlignment = .center
-        titleLabel.text = currentDirective?.title
-        titleLabel.translatesAutoresizingMaskIntoConstraints = false
-        titleLabel.textColor = UIColor.label//accentColor
-        stackView.addArrangedSubview(titleLabel)
-        
-        
+        //TODO: These should be condensed into a single field of attributed text
         if(currentDirective!.indications != "") {
             let indicationsLabel = makeBodyLabelWithHeader("Indications", bodyText: currentDirective!.indications)
-            stackView.addArrangedSubview(indicationsLabel)
+            rootStackView.addArrangedSubview(indicationsLabel)
         }
         
         if(currentDirective!.contraindications != "") {
             let contraLabel = makeBodyLabelWithHeader("Contraindications", bodyText: currentDirective!.contraindications)
-            stackView.addArrangedSubview(contraLabel)
+            rootStackView.addArrangedSubview(contraLabel)
         }
         
         if(currentDirective!.treatment != "") {
             let treatmentLabel = makeBodyLabelWithHeader("Treatment", bodyText: currentDirective!.treatment)
-            stackView.addArrangedSubview(treatmentLabel)
+            rootStackView.addArrangedSubview(treatmentLabel)
         }
         //MARK: Drug cards
-        for drugCard in currentDirective!.drugCards
-        {
+        for drugCard in currentDirective!.drugCards {
             let directiveView = MedicalDirectiveView(drugCard)
-            stackView.addArrangedSubview(directiveView)
+            rootStackView.addArrangedSubview(directiveView)
             treatmentCards.append(directiveView)
             
             directiveView.notesButton.addTarget(self, action: #selector(noteButtonAction), for: .touchUpInside)
-            
         }
             
         //MARK: Clinical considerations
-        if(currentDirective?.clinical != "")
-        {
+        if(currentDirective?.clinical != "") {
             let clinicalLabel = makeBodyLabelWithHeader("Clinical Considerations/Notes", bodyText: currentDirective!.clinical)
-            stackView.addArrangedSubview(clinicalLabel)
+            rootStackView.addArrangedSubview(clinicalLabel)
         }
         
     }
     
-    func makeBodyLabelWithHeader(_ title : String, bodyText : String) -> UITextView
-    {
+    func makeBodyLabelWithHeader(_ title : String, bodyText : String) -> UITextView {
         let outputLabel = UITextView()
         let combinedString = String("<title>" + title + "</title>\n" + bodyText).set(style: styleGroup)
 
         outputLabel.attributedText = combinedString
+        outputLabel.backgroundColor = UIColor(named: "Primary_background")
         outputLabel.translatesAutoresizingMaskIntoConstraints = false
         outputLabel.isScrollEnabled = false
         outputLabel.isEditable = false
@@ -139,7 +114,7 @@ class MedicalDirectiveViewController : UIViewController
             newNote.text = textfield.text
             newNote.key = sender.key
             sender.parentView!.personalNotesLabel.setTitle(newNote.text, for: .normal)
-            sender.parentView!.personalNotesLabel.titleLabel!.textColor = UIColor.blue
+            sender.parentView!.personalNotesLabel.titleLabel!.textColor = UIColor.systemBlue
             self.saveNotes()
             self.reloadNotesLabels()
         }

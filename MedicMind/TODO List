@@ -50,16 +50,25 @@ TODO:
 
 - Send out invites to FE group - DONE
 - Drug tables - clear on edit - DONE
+- Finish proofreading drug monographs - DONE
+- Set drug tables to be based on last set weight - DONE
+- Write tutorial document for the app - DONE
+- add keyboard offset for y site compatibility checker - DONE
+- Fix drug table issue not showing all the doses - DONE
+- Add keyboard offset for drug tables - DONE
+
+- have corporate communications proof read app - PENDING
+
 - Fix document to resize cells when it enters and exits landscape mode
-- Finish proofreading from Diazepam on
-- Make list of items to be touched on in LMS training
-- Set drug tables to be based on last set weight
 - Fix constraint issues with drug monographs
 - Add bookmarks
 - Improve root menu access
-- Fix drug table issue not showing all the doses
-- Add keyboard offset for drug tables
+- Fix dark mode
 
+- connectivity, version control
+
+
+- add 2 additional fields in y site compatibility checker - redesign to have dynamic fields
 
 Long term
 - Make MedicalDirectiveView self initialize, instead of the the superview intializing it
