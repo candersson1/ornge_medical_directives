@@ -22,7 +22,7 @@ class DrugMonographViewController : UIViewController
     
     @objc func directiveButtonAction(sender : PageTargetButton)
     {
-        if(DataManager.instance.pageByKey(key: sender.key) == nil)
+        if(DataManager.instance.documentByKey(key: sender.key) == nil)
         {
             print("Could not find directive with key")
             return
@@ -31,7 +31,7 @@ class DrugMonographViewController : UIViewController
         let storyboard = navController?.storyboard
         
         let viewController = storyboard!.instantiateViewController(withIdentifier: "MedicalDirectiveTabViewController") as! MedicalDirectiveTabViewController
-        viewController.directive = DataManager.instance.pageByKey(key: sender.key) as? MedicalDirective
+        viewController.directive = DataManager.instance.documentByKey(key: sender.key) as? MedicalDirective
         viewController.loadSubviews()
         navController!.pushViewController(viewController, animated: true)
         
@@ -176,7 +176,7 @@ class DrugMonographViewController : UIViewController
                             
                             if(contentArray[0][0] == "#medical_directives")
                             {
-                                let directive = DataManager.instance.pageByKey(key: contentArray[y][x])
+                                let directive = DataManager.instance.documentByKey(key: contentArray[y][x])
                                 contentHStack.distribution = .fillEqually
                                 if(directive != nil)
                                 {

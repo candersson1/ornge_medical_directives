@@ -24,9 +24,6 @@
                             <subviews>
                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Ornge_Arc" translatesAutoresizingMaskIntoConstraints="NO" id="HcV-JM-Lm5">
                                     <rect key="frame" x="-80" y="-30" width="337" height="111.66666666666667"/>
-                                    <constraints>
-                                        <constraint firstAttribute="height" constant="110" id="2rf-5P-SLA"/>
-                                    </constraints>
                                 </imageView>
                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_white_orange" translatesAutoresizingMaskIntoConstraints="NO" id="Zfz-n9-ZIH">
                                     <rect key="frame" x="50.000000000000007" y="7" width="71.666666666666686" height="72"/>
@@ -68,7 +65,35 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fxe-Ef-s9y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="598.55072463768124" y="225"/>
+            <point key="canvasLocation" x="-823" y="234"/>
+        </scene>
+        <!--Document View Controller-->
+        <scene sceneID="u5i-ZU-VAP">
+            <objects>
+                <tableViewController storyboardIdentifier="DocumentViewController" id="Ucu-Th-469" customClass="DocumentViewController" customModule="Ornge" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="6K5-4a-ryy">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="nsi-eg-U7p">
+                                <rect key="frame" x="0.0" y="28" width="414" height="43.666667938232422"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="nsi-eg-U7p" id="Lly-Qg-yCr">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.666667938232422"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Ucu-Th-469" id="8Re-cR-5gr"/>
+                            <outlet property="delegate" destination="Ucu-Th-469" id="qHM-RB-gJP"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vvb-wt-Mpn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="82" y="-1218"/>
         </scene>
         <!--Drug Menu Table View Controller-->
         <scene sceneID="M17-JJ-xBC">
@@ -124,7 +149,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j2r-bi-Lm9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1411" y="235"/>
+            <point key="canvasLocation" x="91" y="-480"/>
         </scene>
         <!--Drug Monograph View Controller-->
         <scene sceneID="LlI-qf-8Nk">
@@ -153,7 +178,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jbg-lE-WOF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2262" y="258"/>
+            <point key="canvasLocation" x="1854" y="-480"/>
         </scene>
         <!--Drug Calculator View Controller-->
         <scene sceneID="1k1-mw-ZUg">
@@ -229,7 +254,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g1p-WO-sQh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4077" y="413"/>
+            <point key="canvasLocation" x="2735" y="-480"/>
         </scene>
         <!--Web View Controller-->
         <scene sceneID="p5x-RT-jPG">
@@ -311,7 +336,7 @@
         <!--Ideal Body Weight Calculator-->
         <scene sceneID="cHj-sc-C5E">
             <objects>
-                <viewController storyboardIdentifier="ventTool" title="Ideal Body Weight Calculator" id="Hr7-Gq-1Hy" customClass="VentToolViewController" customModule="Ornge" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="vent_tool" title="Ideal Body Weight Calculator" id="Hr7-Gq-1Hy" customClass="VentToolViewController" customModule="Ornge" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eCQ-co-r6A">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -640,7 +665,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cGR-Vx-RRE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3063.768115942029" y="1133.7053571428571"/>
+            <point key="canvasLocation" x="3554" y="-480"/>
         </scene>
         <!--Medical Directive View Controller-->
         <scene sceneID="jxR-a5-xeb">
@@ -719,7 +744,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zcf-fD-hgB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2256.521739130435" y="-424.55357142857139"/>
+            <point key="canvasLocation" x="983" y="234"/>
         </scene>
         <!--Edit Notes Table View Controller-->
         <scene sceneID="Gcq-6C-UhP">
@@ -765,7 +790,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ugC-de-GAu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3391" y="-281"/>
+            <point key="canvasLocation" x="3555" y="234"/>
         </scene>
         <!--Disclaimer View Controller-->
         <scene sceneID="CaA-Dz-wIT">
@@ -836,7 +861,7 @@ All information within this application is provided as REFERENCE ONLY. Drug dose
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="deT-Qa-xN2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-842.02898550724649" y="839.73214285714278"/>
+            <point key="canvasLocation" x="-2852" y="74"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="hUV-e8-mkM">
@@ -856,7 +881,7 @@ All information within this application is provided as REFERENCE ONLY. Drug dose
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aJ1-li-HPD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1090" y="74"/>
+            <point key="canvasLocation" x="-1855" y="74"/>
         </scene>
         <!--Directive Flow Chart View Controller-->
         <scene sceneID="6kI-Wx-leD">
@@ -901,7 +926,7 @@ All information within this application is provided as REFERENCE ONLY. Drug dose
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zc4-CV-Za3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3115.9420289855075" y="-1013.1696428571428"/>
+            <point key="canvasLocation" x="2735" y="234"/>
         </scene>
         <!--Content Page Tab Bar Controller-->
         <scene sceneID="zeh-mg-Afm">
@@ -915,7 +940,7 @@ All information within this application is provided as REFERENCE ONLY. Drug dose
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4dh-PJ-TE3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="468" y="-480"/>
+            <point key="canvasLocation" x="4390" y="-1325"/>
         </scene>
         <!--Drug Tab View Controller-->
         <scene sceneID="8CL-Vp-uMu">
@@ -929,7 +954,7 @@ All information within this application is provided as REFERENCE ONLY. Drug dose
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yes-Yy-Onv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="364" y="-1346"/>
+            <point key="canvasLocation" x="983" y="-480"/>
         </scene>
         <!--Flow Chart View Controller-->
         <scene sceneID="m0v-sV-3nu">
@@ -944,36 +969,7 @@ All information within this application is provided as REFERENCE ONLY. Drug dose
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U1a-Kf-gm6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1350.7246376811595" y="-425.22321428571428"/>
-        </scene>
-        <!--Document View Controller-->
-        <scene sceneID="7WJ-LH-TuT">
-            <objects>
-                <viewController storyboardIdentifier="DocumentViewController" id="lac-CF-W6g" customClass="DocumentViewController" customModule="Ornge" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="QzY-EO-hC4">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j0S-DK-YSq">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
-                            </scrollView>
-                        </subviews>
-                        <color key="backgroundColor" name="Primary_background"/>
-                        <constraints>
-                            <constraint firstItem="XkH-N4-0PL" firstAttribute="trailing" secondItem="j0S-DK-YSq" secondAttribute="trailing" id="AaP-qb-cT2"/>
-                            <constraint firstItem="j0S-DK-YSq" firstAttribute="top" secondItem="XkH-N4-0PL" secondAttribute="top" id="WnJ-xF-ne8"/>
-                            <constraint firstItem="XkH-N4-0PL" firstAttribute="bottom" secondItem="j0S-DK-YSq" secondAttribute="bottom" id="avF-Dp-Nbt"/>
-                            <constraint firstItem="j0S-DK-YSq" firstAttribute="leading" secondItem="XkH-N4-0PL" secondAttribute="leading" id="mRZ-Gs-hJj"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="XkH-N4-0PL"/>
-                    </view>
-                    <connections>
-                        <outlet property="scrollView" destination="j0S-DK-YSq" id="tGz-Vw-p55"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="R6e-Wb-spE" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3030" y="386"/>
+            <point key="canvasLocation" x="1854" y="234"/>
         </scene>
         <!--Drug Table View Controller-->
         <scene sceneID="Pig-lG-Xru">
@@ -1002,7 +998,7 @@ All information within this application is provided as REFERENCE ONLY. Drug dose
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RnQ-TT-rJh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3937.68115942029" y="1119.6428571428571"/>
+            <point key="canvasLocation" x="4390" y="-480"/>
         </scene>
         <!--Medical Directive Tab View Controller-->
         <scene sceneID="rPL-QG-hrl">
@@ -1016,7 +1012,7 @@ All information within this application is provided as REFERENCE ONLY. Drug dose
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iEO-yD-hMJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1280" y="-1347"/>
+            <point key="canvasLocation" x="90" y="234"/>
         </scene>
         <!--Document Collection View Controller-->
         <scene sceneID="6rU-VC-ce2">
@@ -1167,7 +1163,7 @@ All information within this application is provided as REFERENCE ONLY. Drug dose
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gvt-7l-1p4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2102.898550724638" y="-1325.2232142857142"/>
+            <point key="canvasLocation" x="2735" y="-1347"/>
         </scene>
         <!--Popover View Controller-->
         <scene sceneID="EGd-bI-ils">

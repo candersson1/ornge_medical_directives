@@ -10,49 +10,101 @@ import Foundation
 import CoreData
 import UIKit
 
-class Menu : Page {
-    var items: [Page]
+class MenuItem : Codable {
+    let title : String
+    
+    private enum MenuItemKeys: String, CodingKey {
+        case title
+    }
+    
+    required init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: MenuItemKeys.self)
+        self.title = try container.decodeIfPresent(String.self, forKey: .title) ?? ""
+    }
+}
+
+//Root class from which all the menus and menu items are parsed. There should only be one menus object
+class Menus : Codable {
+    let menus: [MenuItem]
+    
+    enum MenusKey: CodingKey {
+        case menus
+    }
+    
+    enum MenuItemTypeKey: CodingKey {
+        case type
+    }
+    
+    enum MenuItemTypes: String, Decodable {
+        case menu = "menu"
+    }
+    
+    required init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: MenusKey.self)
+        var pagesArrayForType = try container.nestedUnkeyedContainer(forKey: MenusKey.menus)
+        var pages = [MenuItem]()
+        
+        var pagesArray = pagesArrayForType
+        while(!pagesArrayForType.isAtEnd) {
+            let page = try pagesArrayForType.nestedContainer(keyedBy: MenuItemTypeKey.self)
+            let type = try page.decode(MenuItemTypes.self, forKey: MenuItemTypeKey.type)
+            switch type {
+            case .menu:
+                pages.append(try pagesArray.decode(Menu.self))
+            }
+        }
+        self.menus = pages
+    }
+}
+
+class MenuDocumentLink : MenuItem {
+    let key : String
+    
+    private enum MenuDocumentLinkKeys: String, CodingKey {
+        case key
+    }
+    
+    required init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: MenuDocumentLinkKeys.self)
+        self.key = try container.decodeIfPresent(String.self, forKey: .key) ?? ""
+        try super.init(from: decoder)
+    }
+}
+
+class Menu : MenuItem {
+    var items: [MenuItem]
     
     private enum MenuCodingKeys: CodingKey {
         case items
     }
     
-    enum PagesKey: CodingKey {
+    enum MenuItemsKey: CodingKey {
         case items
     }
     
-    enum PageTypeKey: CodingKey {
+    enum MenuItemTypeKey: CodingKey {
         case type
     }
     
-    enum PageTypes: String, Decodable {
+    enum MenuItemTypes: String, Decodable {
         case menu = "menu"
-        case directive = "directive"
-        case tool = "tool"
-        case document = "document"
-        case webview = "webview"
+        case menu_document_link = "menu_document_link"
     }
     
     required init(from decoder: Decoder) throws {
-        let container = try decoder.container(keyedBy: PagesKey.self)
-        var pagesArrayForType = try container.nestedUnkeyedContainer(forKey: PagesKey.items)
-        var pages = [Page]()
+        let container = try decoder.container(keyedBy: MenuItemsKey.self)
+        var pagesArrayForType = try container.nestedUnkeyedContainer(forKey: MenuItemsKey.items)
+        var pages = [MenuItem]()
         
         var pagesArray = pagesArrayForType
         while(!pagesArrayForType.isAtEnd) {
-            let page = try pagesArrayForType.nestedContainer(keyedBy: PageTypeKey.self)
-            let type = try page.decode(PageTypes.self, forKey: PageTypeKey.type)
+            let page = try pagesArrayForType.nestedContainer(keyedBy: MenuItemTypeKey.self)
+            let type = try page.decode(MenuItemTypes.self, forKey: MenuItemTypeKey.type)
             switch type {
             case .menu:
                 pages.append(try pagesArray.decode(Menu.self))
-            case .directive:
-                pages.append(try pagesArray.decode(Page.self))
-            case .tool:
-                pages.append(try pagesArray.decode(Page.self))
-            case .document:
-                pages.append(try pagesArray.decode(Document.self))
-            case .webview:
-                pages.append(try pagesArray.decode(Document.self))
+            case .menu_document_link:
+                pages.append(try pagesArray.decode(MenuDocumentLink.self))
             }
         }
         self.items = pages

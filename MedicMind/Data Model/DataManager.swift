@@ -97,11 +97,10 @@ let styleGroup = StyleGroup(base: normalStyle, ["title" : titleStyle, "b" : bold
 class DataManager
 {
     static let instance = DataManager()
-    var menuData : [Page] = []
-    var pageData : [Page] = []
+    var menuData : [MenuItem] = []
+    var pageData : [Document] = []
     var drugData : [Drug] = []
     var flowchartData : [FlowChart] = []
-    var currentPage : Page?
     var loaded = false
     
     var fontSize : Float
@@ -121,16 +120,15 @@ class DataManager
     
     func load()
     {
-        guard let menus = DataManager.instance.loadMenuJson(filename: "MenuData_P") ?? nil else { print("loadMenuJson() failed for MenuData.json"); return }
+        guard let menus = DataManager.instance.loadMenuJson(filename: "MenuData") ?? nil else { print("loadMenuJson() failed for MenuData.json"); return }
         guard let drugs = DataManager.instance.loadDrugLibraryJson(filename: "DrugLibrary") ?? nil
             else { print("loadDrugLibraryJson() for DrugLibrary.json"); return}
         guard let flowcharts = DataManager.instance.loadFlowChartsLibraryJson(filename: "FlowChartLibrary") ?? nil else {print("loadFlowChartsLibraryJson() failed for FlowChartLibrary.json"); return}
-        guard let pages = DataManager.instance.loadPagesLibraryJson(filename: "MedicalDirectives") ?? nil else {print("loadPagesLibraryJson() failed for MedicalDirectives.json"); return}
+        guard let pages = DataManager.instance.loadPagesLibraryJson(filename: "DocumentsData") ?? nil else {print("loadPagesLibraryJson() failed for DocumentsData.json"); return}
         menuData = menus
         drugData = drugs
         flowchartData = flowcharts
         pageData = pages
-        currentPage = menuData[0] as! Menu
         loaded = true
     }
     
@@ -139,7 +137,7 @@ class DataManager
        
     }
     
-    func loadMenuJson(filename fileName: String) ->[Page]?
+    func loadMenuJson(filename fileName: String) ->[MenuItem]?
     {
         if let url = Bundle.main.url(forResource: fileName, withExtension: "json")
         {
@@ -148,13 +146,13 @@ class DataManager
                 let decoder = JSONDecoder()
                 do
                 {
-                    let jsonData = try decoder.decode(Pages.self, from: data)
-                    for result in jsonData.pages
+                    let jsonData = try decoder.decode(Menus.self, from: data)
+                    for result in jsonData.menus
                     {
                         if result is Menu {
                             print((result as! Menu).items)
                         }
-                        return jsonData.pages
+                        return jsonData.menus
                     }
                 }
                 catch {
@@ -169,7 +167,7 @@ class DataManager
         return nil
     }
     
-    func loadPagesLibraryJson(filename fileName: String) ->[Page]?
+    func loadPagesLibraryJson(filename fileName: String) ->[Document]?
     {
         if let url = Bundle.main.url(forResource: fileName, withExtension: "json")
         {
@@ -178,8 +176,8 @@ class DataManager
                 let decoder = JSONDecoder()
                 do
                 {
-                    let jsonData = try decoder.decode(ContentPages.self, from: data)
-                    return jsonData.pages
+                    let jsonData = try decoder.decode(Documents.self, from: data)
+                    return jsonData.documents
                     
                 }
                 catch {
@@ -248,6 +246,19 @@ class DataManager
         return nil
     }
     
+    func documentByKey(key : String) -> Document?
+    {
+        for document in pageData {
+            if(document.key == key) {
+                return document
+            }
+        }
+        print("Could not find document for key")
+        return nil
+    }
+    
+    /// everything below here is deprecated and will be phased out
+    
     func drugByKey(key: String) -> Drug?
     {
         for drug in drugData
@@ -272,17 +283,19 @@ class DataManager
         return nil
     }
 
-    func pageByKey(key: String) -> Page?
+    /*func pageByKey(key: String) -> Page?
     {
         for page in pageData
         {
             if(page.key == key)
             {
-                return page
+                return nil
             }
         }
         return nil
-    }
+    }*/
+    
+    
     
     func flowchartByKey(key: String) -> FlowChart?
     {

@@ -362,6 +362,7 @@ class MedicalDirectiveView : UIView
 extension MedicalDirectiveView : UITextViewDelegate
 {
     func textView(_ textView: UITextView, shouldInteractWith URL: URL, in characterRange: NSRange, interaction: UITextItemInteraction) -> Bool {
+        print("Clicked a link")
         var targetString = URL.absoluteString
         if(targetString.hasPrefix("drugKey=")) {
             targetString = String(targetString.dropFirst(8))

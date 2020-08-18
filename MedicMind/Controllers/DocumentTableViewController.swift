@@ -466,7 +466,7 @@ class IndexedCollectionView : UICollectionView {
 class DocumentTableViewController: UITableViewController {
 
     @IBOutlet weak var headerLabel: UILabel!
-    var document : Document?
+    var document : dep_Document?
     var tableCellData : [SectionInfo] = []
     
     @objc func displayPopover(_ sender : UIView) {

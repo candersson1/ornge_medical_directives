@@ -74,44 +74,8 @@ struct TreatmentCard : Codable
     }
 }
 
-struct ContentPages : Codable {
-    let pages: [Page]
-    
-    enum DirectivesKey: CodingKey {
-        case pages
-    }
-    
-    enum DirectivesTypeKey: CodingKey {
-        case type
-    }
-    
-    enum DirectiveType: String, Decodable {
-        case directive = "medical_directive"
-        case document = "document"
-    }
-    
-    init(from decoder: Decoder) throws {
-        let container = try decoder.container(keyedBy: DirectivesKey.self)
-        var pagesArrayForType = try container.nestedUnkeyedContainer(forKey: DirectivesKey.pages)
-        var pages = [Page]()
-        
-        var pagesArray = pagesArrayForType
-        while(!pagesArrayForType.isAtEnd) {
-            let page = try pagesArrayForType.nestedContainer(keyedBy: DirectivesTypeKey.self)
-            let type = try page.decode(DirectiveType.self, forKey: DirectivesTypeKey.type)
-            
-            switch type {
-                case .document:
-                    pages.append(try pagesArray.decode(Document.self))
-                case .directive:
-                    pages.append(try pagesArray.decode(MedicalDirective.self))
-            }
-        }
-        self.pages = pages
-    }
-}
 
-class MedicalDirective : Page {
+class MedicalDirective : Document {
     var sectionLabel : String = ""
     var indications: String = ""
     var contraindications: String = ""
@@ -145,8 +109,7 @@ class MedicalDirective : Page {
     }
 }
 
-struct TreatmentData : Codable
-{
+struct TreatmentData : Codable {
     var key = ""
     var dose_route : [[String]] = []
     var loc = [["", ""]]
@@ -162,7 +125,6 @@ struct TreatmentData : Codable
         self.key = try container.decode(String.self, forKey: .key)
         self.dose_route = try container.decodeIfPresent([[String]].self, forKey: .dose_route) ?? []
         self.loc = try container.decodeIfPresent([[String]].self, forKey: .loc) ?? [["pcp","none"]]
-
     }
 }
 

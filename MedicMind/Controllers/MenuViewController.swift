@@ -33,21 +33,25 @@ class MenuViewController: UITableViewController
         if(!dataManager.loaded) {
             dataManager.load()
         }
-        if let menu = dataManager.currentPage {
-            if menu is Menu
-            {
-                currentMenu = (menu as! Menu)
-
-                for item in currentMenu!.items
-                {
-                    itemArray.append(item.title)
+        
+        //check to see if we have a menu already, otherwise set it to the root menu
+        if currentMenu == nil {
+            if !DataManager.instance.menuData.isEmpty {
+                if let rootMenu = DataManager.instance.menuData[0] as? Menu {
+                    currentMenu = rootMenu
+                } else {
+                    print("Could not assign root menu")
+                    return
                 }
+            } else {
+                print("Menu data is empty")
+                return
             }
         }
-        else {
-            print("Could not load page, not a valid menu")
-        }
         
+        for item in currentMenu!.items {
+            itemArray.append(item.title)
+        }
         navController = UIApplication.shared.windows[0].rootViewController as? UINavigationController
     }
     
@@ -72,12 +76,10 @@ class MenuViewController: UITableViewController
     //MARK - Tableview delegate methods
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
     {
-        if(currentMenu!.items[indexPath.row] is Menu)
+        if let nextMenu = currentMenu!.items[indexPath.row] as? Menu
         {
-            dataManager.currentPage = currentMenu!.items[indexPath.row]
-            
             let viewController = storyboard!.instantiateViewController(withIdentifier: "MenuViewController") as! MenuViewController
-            viewController.currentMenu = dataManager.currentPage as? Menu
+            viewController.currentMenu = nextMenu
             
             if(viewController.currentMenu != nil) {
                 navController!.pushViewController(viewController, animated: true)
@@ -86,46 +88,45 @@ class MenuViewController: UITableViewController
                 print("Could not load the menu")
             }
         }
-        else
+        else if let documentLink = currentMenu!.items[indexPath.row] as? MenuDocumentLink
         {
-            dataManager.currentPage = currentMenu!.items[indexPath.row]
-            
-            if(dataManager.currentPage?.type == .tool)
-            {
-                let viewController = storyboard!.instantiateViewController(withIdentifier: dataManager.currentPage!.key)
-                
-                navController!.pushViewController(viewController, animated: true)
-            }
-        }
-    
-        dataManager.currentPage = currentMenu!.items[indexPath.row]
-        
-        if(dataManager.currentPage?.type == .document)
-        {
-            let viewController = storyboard!.instantiateViewController(withIdentifier: "DocumentTableViewController") as! DocumentTableViewController
-            let pageData = DataManager.instance.pageByKey(key: (dataManager.currentPage!.key))
-            if(pageData != nil) {
-                if(pageData is Document) {
-                    let document = pageData as! Document
-                    viewController.document = document
+            if let document = DataManager.instance.documentByKey(key: documentLink.key) {
+                switch document.type {
+                case .directive:
+                    if let directive = document as? MedicalDirective {
+                        MedicalDirectiveTabViewController.loadViewControllerWithData(data: directive)
+                    } else {
+                        print("Could not load medical directive, not a valid directive")
+                    }
+                    break
+                case .webview:
+                    let viewController = storyboard!.instantiateViewController(withIdentifier: "WebViewController") as! WebViewController
+                    viewController.target = documentLink.key
                     navController!.pushViewController(viewController, animated: true)
+                    break
+                case .tool:
+                    let viewController = storyboard!.instantiateViewController(withIdentifier: documentLink.key)
+                    navController!.pushViewController(viewController, animated: true)
+                case .dep_document:
+                    if let dep_document = document as? dep_Document {
+                        print("Loading deprecated view controller DocumentTableViewController, this will be removed in the future")
+                        let viewController = storyboard!.instantiateViewController(withIdentifier: "DocumentTableViewController") as! DocumentTableViewController
+                        viewController.document = dep_document
+                        navController!.pushViewController(viewController, animated: true)
+                    } else {
+                        print("Could not load deprecated view controller DocumentTableViewController")
+                    }
+                default:
+                    break
                 }
             }
-            else
-            {
-                print("Could not load the document")
-            }
-            
-        } else if( dataManager.currentPage?.type == .webview) {
-            let viewController = storyboard!.instantiateViewController(withIdentifier: "WebViewController") as! WebViewController
-            viewController.target = dataManager.currentPage!.key
-            
-            navController!.pushViewController(viewController, animated: true)
         }
-        else if(dataManager.currentPage?.type == .directive)
+            
+        /*if(dataManager.currentPage?.type == .document)
         {
-            MedicalDirectiveTabViewController.loadViewControllerWithKey(key: dataManager.currentPage!.key)
-        }
+            DocumentViewController.loadViewControllerWithKey(key: dataManager.currentPage!.key)
+            
+        }*/
         tableView.deselectRow(at: indexPath, animated: true)
     }
 }

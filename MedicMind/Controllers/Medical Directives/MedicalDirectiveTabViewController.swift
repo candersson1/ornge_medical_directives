@@ -39,12 +39,25 @@ class MedicalDirectiveTabViewController : ContentPageTabBarController {
         }
     }
     
+    static func loadViewControllerWithData(data : MedicalDirective)
+    {
+        let navController = UIApplication.shared.windows[0].rootViewController as? UINavigationController
+        let storyboard = navController?.storyboard
+
+        let viewController = storyboard!.instantiateViewController(withIdentifier: "MedicalDirectiveTabViewController") as! MedicalDirectiveTabViewController
+        viewController.navigationItem.title = data.title
+        viewController.directive = data
+        viewController.loadSubviews()
+        navController!.pushViewController(viewController, animated: true)
+    
+    }
+    
     static func loadViewControllerWithKey(key : String)
     {
         let navController = UIApplication.shared.windows[0].rootViewController as? UINavigationController
         let storyboard = navController?.storyboard
 
-        let data = DataManager.instance.pageByKey(key: key)
+        let data = DataManager.instance.documentByKey(key: key)
         if(data == nil)
         {
             return

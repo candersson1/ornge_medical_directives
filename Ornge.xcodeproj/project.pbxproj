@@ -25,7 +25,7 @@
 		13478A02232747F80081E865 /* String+HTML.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13478A01232747F80081E865 /* String+HTML.swift */; };
 		1354E91E23DB297A00897B61 /* DisclaimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1354E91D23DB297A00897B61 /* DisclaimerViewController.swift */; };
 		135C05C8228A1EA500F7B6CF /* MedicalDirectiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135C05C7228A1EA500F7B6CF /* MedicalDirectiveViewController.swift */; };
-		135D4A9F23156673006C660C /* MenuData_P.json in Resources */ = {isa = PBXBuildFile; fileRef = 135D4A9D23156673006C660C /* MenuData_P.json */; };
+		135D4A9F23156673006C660C /* MenuData.json in Resources */ = {isa = PBXBuildFile; fileRef = 135D4A9D23156673006C660C /* MenuData.json */; };
 		1368DA6B238332FC003A7144 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1368DA6A238332FC003A7144 /* WebViewController.swift */; };
 		1368DA6E23833455003A7144 /* Executive Airway Summary.html in Resources */ = {isa = PBXBuildFile; fileRef = 1368DA6D23833455003A7144 /* Executive Airway Summary.html */; };
 		1368DA822385609C003A7144 /* Adult - Clinical Practice - Asthma.html in Resources */ = {isa = PBXBuildFile; fileRef = 1368DA812385609C003A7144 /* Adult - Clinical Practice - Asthma.html */; };
@@ -101,6 +101,10 @@
 		138F080624E44BDF00410D0D /* FrutigerLTStd-Roman.otf in Resources */ = {isa = PBXBuildFile; fileRef = 138F080124E44BDF00410D0D /* FrutigerLTStd-Roman.otf */; };
 		138F080A24E44FE400410D0D /* FrutigerLTStd-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 138F080924E44FC000410D0D /* FrutigerLTStd-Bold.otf */; };
 		138F080B24E44FE400410D0D /* FrutigerLTStd-CnBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 138F080824E44FC000410D0D /* FrutigerLTStd-CnBold.otf */; };
+		138F080D24E6E22C00410D0D /* DocumentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138F080C24E6E22C00410D0D /* DocumentViewController.swift */; };
+		138F080F24E6EA8600410D0D /* DocumentsData.json in Resources */ = {isa = PBXBuildFile; fileRef = 138F080E24E6EA8500410D0D /* DocumentsData.json */; };
+		138F081124E6EAAD00410D0D /* MenuDataTest.json in Resources */ = {isa = PBXBuildFile; fileRef = 138F081024E6EAAD00410D0D /* MenuDataTest.json */; };
+		138F081424E8007F00410D0D /* Content.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138F081324E8007F00410D0D /* Content.swift */; };
 		139BF3DB22849C7400D25766 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139BF3DA22849C7400D25766 /* AppDelegate.swift */; };
 		139BF3DD22849C7400D25766 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139BF3DC22849C7400D25766 /* MenuViewController.swift */; };
 		139BF3E022849C7400D25766 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 139BF3DE22849C7400D25766 /* Main.storyboard */; };
@@ -111,7 +115,6 @@
 		13C3C30722ECAADE002F5344 /* EditNotesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C3C30622ECAADE002F5344 /* EditNotesTableViewController.swift */; };
 		13C3C30922EF355E002F5344 /* DrugCalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C3C30822EF355E002F5344 /* DrugCalculatorViewController.swift */; };
 		13C662EA22AD4EA200FB9A63 /* Drugs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C662E922AD4EA200FB9A63 /* Drugs.swift */; };
-		13C662EC22AD4F0300FB9A63 /* Pages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C662EB22AD4F0300FB9A63 /* Pages.swift */; };
 		13C662EE22AEB09800FB9A63 /* MedicalDirective.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C662ED22AEB09800FB9A63 /* MedicalDirective.swift */; };
 		13C662F622B3FD6400FB9A63 /* VentToolViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C662F522B3FD6400FB9A63 /* VentToolViewController.swift */; };
 		13C7BDDC228C36D900D33B76 /* MedicalDirectiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C7BDDA228C36D900D33B76 /* MedicalDirectiveView.swift */; };
@@ -185,7 +188,7 @@
 		13478A01232747F80081E865 /* String+HTML.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+HTML.swift"; sourceTree = "<group>"; };
 		1354E91D23DB297A00897B61 /* DisclaimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisclaimerViewController.swift; sourceTree = "<group>"; };
 		135C05C7228A1EA500F7B6CF /* MedicalDirectiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicalDirectiveViewController.swift; sourceTree = "<group>"; };
-		135D4A9D23156673006C660C /* MenuData_P.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MenuData_P.json; sourceTree = "<group>"; };
+		135D4A9D23156673006C660C /* MenuData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MenuData.json; sourceTree = "<group>"; };
 		1368DA6A238332FC003A7144 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		1368DA6D23833455003A7144 /* Executive Airway Summary.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "Executive Airway Summary.html"; sourceTree = "<group>"; };
 		1368DA812385609C003A7144 /* Adult - Clinical Practice - Asthma.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "Adult - Clinical Practice - Asthma.html"; sourceTree = "<group>"; };
@@ -261,6 +264,10 @@
 		138F080124E44BDF00410D0D /* FrutigerLTStd-Roman.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FrutigerLTStd-Roman.otf"; sourceTree = "<group>"; };
 		138F080824E44FC000410D0D /* FrutigerLTStd-CnBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FrutigerLTStd-CnBold.otf"; sourceTree = "<group>"; };
 		138F080924E44FC000410D0D /* FrutigerLTStd-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FrutigerLTStd-Bold.otf"; sourceTree = "<group>"; };
+		138F080C24E6E22C00410D0D /* DocumentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentViewController.swift; sourceTree = "<group>"; };
+		138F080E24E6EA8500410D0D /* DocumentsData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = DocumentsData.json; sourceTree = "<group>"; };
+		138F081024E6EAAD00410D0D /* MenuDataTest.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MenuDataTest.json; sourceTree = "<group>"; };
+		138F081324E8007F00410D0D /* Content.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Content.swift; sourceTree = "<group>"; };
 		139BF3D722849C7400D25766 /* Ornge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ornge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		139BF3DA22849C7400D25766 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		139BF3DC22849C7400D25766 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
@@ -273,7 +280,6 @@
 		13C3C30622ECAADE002F5344 /* EditNotesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditNotesTableViewController.swift; sourceTree = "<group>"; };
 		13C3C30822EF355E002F5344 /* DrugCalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrugCalculatorViewController.swift; sourceTree = "<group>"; };
 		13C662E922AD4EA200FB9A63 /* Drugs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drugs.swift; sourceTree = "<group>"; };
-		13C662EB22AD4F0300FB9A63 /* Pages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pages.swift; sourceTree = "<group>"; };
 		13C662ED22AEB09800FB9A63 /* MedicalDirective.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicalDirective.swift; sourceTree = "<group>"; };
 		13C662F522B3FD6400FB9A63 /* VentToolViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VentToolViewController.swift; sourceTree = "<group>"; };
 		13C7BDDA228C36D900D33B76 /* MedicalDirectiveView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedicalDirectiveView.swift; sourceTree = "<group>"; };
@@ -359,6 +365,7 @@
 				13FBD436241D08B2002AD350 /* DocumentTableViewController.swift */,
 				1380D49B2421234D00E88644 /* DocumentTableLayout.swift */,
 				1354E91D23DB297A00897B61 /* DisclaimerViewController.swift */,
+				138F080C24E6E22C00410D0D /* DocumentViewController.swift */,
 				13C7BDDE228C36DE00D33B76 /* Subviews */,
 				13F44480235DF24E004F87E0 /* Medical Directives */,
 				13F4447F235DF241004F87E0 /* Drugs */,
@@ -382,11 +389,11 @@
 				13069D3C22EB48FA00AA8F24 /* DataModel.xcdatamodeld */,
 				131142A52285ECA100BD65C0 /* DataManager.swift */,
 				13C662E922AD4EA200FB9A63 /* Drugs.swift */,
-				13C662EB22AD4F0300FB9A63 /* Pages.swift */,
+				13FBD438241D0D95002AD350 /* Document.swift */,
 				13DBB9C222B802B300E4CE11 /* Menus.swift */,
 				134789FB23257AA20081E865 /* FlowChart.swift */,
 				13C662ED22AEB09800FB9A63 /* MedicalDirective.swift */,
-				13FBD438241D0D95002AD350 /* Document.swift */,
+				138F081324E8007F00410D0D /* Content.swift */,
 			);
 			path = "Data Model";
 			sourceTree = "<group>";
@@ -394,9 +401,9 @@
 		131B96A922D628B500D9A64F /* JSON */ = {
 			isa = PBXGroup;
 			children = (
-				130534182364210D00E4F016 /* MedicalDirectives.json */,
-				135D4A9D23156673006C660C /* MenuData_P.json */,
-				1309D7C0228CC9F3005F8D40 /* DrugLibrary.json */,
+				138F081224E6EB0900410D0D /* Backups */,
+				138F080E24E6EA8500410D0D /* DocumentsData.json */,
+				138F081024E6EAAD00410D0D /* MenuDataTest.json */,
 				134789FD23257B990081E865 /* FlowChartLibrary.json */,
 			);
 			path = JSON;
@@ -539,6 +546,16 @@
 				138F080124E44BDF00410D0D /* FrutigerLTStd-Roman.otf */,
 			);
 			path = frutiger_ssv;
+			sourceTree = "<group>";
+		};
+		138F081224E6EB0900410D0D /* Backups */ = {
+			isa = PBXGroup;
+			children = (
+				130534182364210D00E4F016 /* MedicalDirectives.json */,
+				135D4A9D23156673006C660C /* MenuData.json */,
+				1309D7C0228CC9F3005F8D40 /* DrugLibrary.json */,
+			);
+			path = Backups;
 			sourceTree = "<group>";
 		};
 		139BF3CE22849C7400D25766 = {
@@ -730,7 +747,7 @@
 				138F07DB24E44A9D00410D0D /* MinionPro-MediumCnItCapt.otf in Resources */,
 				138F07F124E44A9D00410D0D /* MinionPro-BoldSubh.otf in Resources */,
 				13E3C49323932A96001C3F08 /* Adult - Clinical Practice - Sedation Intubated.html in Resources */,
-				135D4A9F23156673006C660C /* MenuData_P.json in Resources */,
+				135D4A9F23156673006C660C /* MenuData.json in Resources */,
 				13F4A47E23A5CD30004F6D38 /* ped_flacc_score.png in Resources */,
 				138F07C224E44A9D00410D0D /* MinionPro-MediumItDisp.otf in Resources */,
 				13E3C49723949A41001C3F08 /* Adult - Clinical Practice - ROSC.html in Resources */,
@@ -773,6 +790,7 @@
 				138F07CA24E44A9D00410D0D /* MinionPro-CnSubh.otf in Resources */,
 				13E3C49B2396C49B001C3F08 /* Adult - Clinical Practice - STEMI.html in Resources */,
 				138F07D024E44A9D00410D0D /* MinionPro-Disp.otf in Resources */,
+				138F080F24E6EA8600410D0D /* DocumentsData.json in Resources */,
 				138F07CD24E44A9D00410D0D /* MinionPro-ItDisp.otf in Resources */,
 				138F07C324E44A9D00410D0D /* MinionPro-SemiboldCnCapt.otf in Resources */,
 				138F07FA24E44A9D00410D0D /* MinionPro-SemiboldCnItCapt.otf in Resources */,
@@ -832,6 +850,7 @@
 				138F07E724E44A9D00410D0D /* MinionPro-MediumCnDisp.otf in Resources */,
 				138F07CF24E44A9D00410D0D /* MinionPro-BoldCnItCapt.otf in Resources */,
 				138F07D624E44A9D00410D0D /* MinionPro-Bold.otf in Resources */,
+				138F081124E6EAAD00410D0D /* MenuDataTest.json in Resources */,
 				138F07C624E44A9D00410D0D /* MinionPro-CnIt.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -892,14 +911,15 @@
 				1344B2FE229100EC00E08C63 /* DirectiveFlowChartViewController.swift in Sources */,
 				13FBD441241EA821002AD350 /* CheckBoxButton.swift in Sources */,
 				1368DA86238C2F13003A7144 /* PaddingLabel.swift in Sources */,
+				138F081424E8007F00410D0D /* Content.swift in Sources */,
 				134789FC23257AA20081E865 /* FlowChart.swift in Sources */,
 				13E3C49F23974691001C3F08 /* DrugTableViewController.swift in Sources */,
 				13DBB9C322B802B300E4CE11 /* Menus.swift in Sources */,
-				13C662EC22AD4F0300FB9A63 /* Pages.swift in Sources */,
 				135C05C8228A1EA500F7B6CF /* MedicalDirectiveViewController.swift in Sources */,
 				13EE697C2321554200A5131A /* FlowChartViewController.swift in Sources */,
 				13DBB9BF22B674C400E4CE11 /* MixingCalculatorView.swift in Sources */,
 				13FBD437241D08B2002AD350 /* DocumentTableViewController.swift in Sources */,
+				138F080D24E6E22C00410D0D /* DocumentViewController.swift in Sources */,
 				13FBD4352416D15A002AD350 /* MedicalDirectiveTabViewController.swift in Sources */,
 				13C3C30722ECAADE002F5344 /* EditNotesTableViewController.swift in Sources */,
 				13F4A47C23A35923004F6D38 /* Double.swift in Sources */,
