@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		130534192364210D00E4F016 /* MedicalDirectives.json in Resources */ = {isa = PBXBuildFile; fileRef = 130534182364210D00E4F016 /* MedicalDirectives.json */; };
 		13069D3E22EB48FA00AA8F24 /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 13069D3C22EB48FA00AA8F24 /* DataModel.xcdatamodeld */; };
 		13069D4022EB52AA00AA8F24 /* TreatmentCardButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13069D3F22EB52AA00AA8F24 /* TreatmentCardButton.swift */; };
 		1309D7BF228CC584005F8D40 /* DrugMonographViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1309D7BE228CC584005F8D40 /* DrugMonographViewController.swift */; };
@@ -18,6 +17,7 @@
 		131B96B322D8B4AB00D9A64F /* UIStackViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 131B96B222D8B4AB00D9A64F /* UIStackViewExtension.swift */; };
 		131B96C122E0FD2700D9A64F /* ClosedRangeExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 131B96C022E0FD2700D9A64F /* ClosedRangeExtension.swift */; };
 		132F1BE2230D953E0071ADFF /* TODO List in Resources */ = {isa = PBXBuildFile; fileRef = 132F1BE1230D953E0071ADFF /* TODO List */; };
+		134122B425811D3000E3F3F7 /* COVID 2019 Operational Guidelines_Final_v6.2.1 Nov25.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 134122B325811D3000E3F3F7 /* COVID 2019 Operational Guidelines_Final_v6.2.1 Nov25.pdf */; };
 		1344B2FE229100EC00E08C63 /* DirectiveFlowChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1344B2FD229100EC00E08C63 /* DirectiveFlowChartViewController.swift */; };
 		1346EAE323AE7D9200992D6A /* preamble_signatures.png in Resources */ = {isa = PBXBuildFile; fileRef = 1346EAE223AE7D9200992D6A /* preamble_signatures.png */; };
 		134789FC23257AA20081E865 /* FlowChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134789FB23257AA20081E865 /* FlowChart.swift */; };
@@ -26,10 +26,13 @@
 		1354E91E23DB297A00897B61 /* DisclaimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1354E91D23DB297A00897B61 /* DisclaimerViewController.swift */; };
 		135C05C8228A1EA500F7B6CF /* MedicalDirectiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135C05C7228A1EA500F7B6CF /* MedicalDirectiveViewController.swift */; };
 		135D4A9F23156673006C660C /* MenuData.json in Resources */ = {isa = PBXBuildFile; fileRef = 135D4A9D23156673006C660C /* MenuData.json */; };
+		1368C2D5252F290E0061735B /* (null) in Resources */ = {isa = PBXBuildFile; };
+		1368C2D7252F29110061735B /* (null) in Resources */ = {isa = PBXBuildFile; };
 		1368DA6B238332FC003A7144 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1368DA6A238332FC003A7144 /* WebViewController.swift */; };
 		1368DA6E23833455003A7144 /* Executive Airway Summary.html in Resources */ = {isa = PBXBuildFile; fileRef = 1368DA6D23833455003A7144 /* Executive Airway Summary.html */; };
 		1368DA822385609C003A7144 /* Adult - Clinical Practice - Asthma.html in Resources */ = {isa = PBXBuildFile; fileRef = 1368DA812385609C003A7144 /* Adult - Clinical Practice - Asthma.html */; };
 		1368DA86238C2F13003A7144 /* PaddingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1368DA85238C2F13003A7144 /* PaddingLabel.swift */; };
+		1373FA22252A3E2300911854 /* app-20200409-RSI-Authorization-and-Limitation-Changes-(BH-MEM-067).pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1373FA21252A3E2300911854 /* app-20200409-RSI-Authorization-and-Limitation-Changes-(BH-MEM-067).pdf */; };
 		1380D49C2421234D00E88644 /* DocumentTableLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1380D49B2421234D00E88644 /* DocumentTableLayout.swift */; };
 		138F077524E413C700410D0D /* UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138F077424E413C700410D0D /* UIFont.swift */; };
 		138F07BB24E44A9D00410D0D /* MinionPro-BoldCnSubh.otf in Resources */ = {isa = PBXBuildFile; fileRef = 138F077A24E44A9D00410D0D /* MinionPro-BoldCnSubh.otf */; };
@@ -105,11 +108,15 @@
 		138F080F24E6EA8600410D0D /* DocumentsData.json in Resources */ = {isa = PBXBuildFile; fileRef = 138F080E24E6EA8500410D0D /* DocumentsData.json */; };
 		138F081124E6EAAD00410D0D /* MenuDataTest.json in Resources */ = {isa = PBXBuildFile; fileRef = 138F081024E6EAAD00410D0D /* MenuDataTest.json */; };
 		138F081424E8007F00410D0D /* Content.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138F081324E8007F00410D0D /* Content.swift */; };
+		1399FD0B25506CF700138F22 /* COVID 2019 Operational Guidelines_Draft_v6.1 Oct 26.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1399FD0A25506CF700138F22 /* COVID 2019 Operational Guidelines_Draft_v6.1 Oct 26.pdf */; };
 		139BF3DB22849C7400D25766 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139BF3DA22849C7400D25766 /* AppDelegate.swift */; };
 		139BF3DD22849C7400D25766 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139BF3DC22849C7400D25766 /* MenuViewController.swift */; };
 		139BF3E022849C7400D25766 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 139BF3DE22849C7400D25766 /* Main.storyboard */; };
 		139BF3E522849C7500D25766 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 139BF3E322849C7500D25766 /* LaunchScreen.storyboard */; };
+		139F25442555C789006CC6BB /* COVID 2019 Operational Guidelines_Final_v6.2 Nov6.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 139F25432555C789006CC6BB /* COVID 2019 Operational Guidelines_Final_v6.2 Nov6.pdf */; };
 		139FF61B23C8F7BC00B57A68 /* Adult - Clinical Practice Guidelines - Mechanical Ventilation.html in Resources */ = {isa = PBXBuildFile; fileRef = 139FF61A23C8F7BC00B57A68 /* Adult - Clinical Practice Guidelines - Mechanical Ventilation.html */; };
+		13B1D9E924FBF6A10039D6B0 /* RootNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B1D9E824FBF6A10039D6B0 /* RootNavigationViewController.swift */; };
+		13B1D9EB24FD66380039D6B0 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B1D9EA24FD66380039D6B0 /* UIViewController.swift */; };
 		13B6817323155FC3003EA3D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B6817223155FC3003EA3D7 /* Assets.xcassets */; };
 		13BF742F22B6647B00145035 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 13BF742E22B6647B00145035 /* Podfile */; };
 		13C3C30722ECAADE002F5344 /* EditNotesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C3C30622ECAADE002F5344 /* EditNotesTableViewController.swift */; };
@@ -158,7 +165,7 @@
 		13F4A45723A1726F004F6D38 /* UITapGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F4A45623A1726F004F6D38 /* UITapGestureRecognizer.swift */; };
 		13F4A47C23A35923004F6D38 /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F4A47B23A35923004F6D38 /* Double.swift */; };
 		13F4A47E23A5CD30004F6D38 /* ped_flacc_score.png in Resources */ = {isa = PBXBuildFile; fileRef = 13F4A47D23A5CD30004F6D38 /* ped_flacc_score.png */; };
-		13F4A48023A5CE0C004F6D38 /* Ped - Clinical Practice - Pain.html in Resources */ = {isa = PBXBuildFile; fileRef = 13F4A47F23A5CE0C004F6D38 /* Ped - Clinical Practice - Pain.html */; };
+		13F4A48023A5CE0C004F6D38 /* ped_cp_pain.html in Resources */ = {isa = PBXBuildFile; fileRef = 13F4A47F23A5CE0C004F6D38 /* ped_cp_pain.html */; };
 		13FBD4332416CBEB002AD350 /* DrugTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13FBD4322416CBEB002AD350 /* DrugTabViewController.swift */; };
 		13FBD4352416D15A002AD350 /* MedicalDirectiveTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13FBD4342416D15A002AD350 /* MedicalDirectiveTabViewController.swift */; };
 		13FBD437241D08B2002AD350 /* DocumentTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13FBD436241D08B2002AD350 /* DocumentTableViewController.swift */; };
@@ -166,11 +173,11 @@
 		13FBD43B241E78B6002AD350 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13FBD43A241E78B6002AD350 /* String.swift */; };
 		13FBD441241EA821002AD350 /* CheckBoxButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13FBD440241EA821002AD350 /* CheckBoxButton.swift */; };
 		13FBD463241FB079002AD350 /* PopoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13FBD462241FB079002AD350 /* PopoverViewController.swift */; };
-		9944CB92116F96C0571DEC02 /* Pods_Ornge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3A989A3A46AAA340CACD7F1 /* Pods_Ornge.framework */; };
+		2A8EB2C710150EE0CF62A692 /* Pods_Ornge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB4F90BDBEC488354DCC14E3 /* Pods_Ornge.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		130534182364210D00E4F016 /* MedicalDirectives.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MedicalDirectives.json; sourceTree = "<group>"; };
+		00F07AF6F7AEF0D398EB46F6 /* Pods-Ornge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ornge.release.xcconfig"; path = "Target Support Files/Pods-Ornge/Pods-Ornge.release.xcconfig"; sourceTree = "<group>"; };
 		13069D3D22EB48FA00AA8F24 /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
 		13069D3F22EB52AA00AA8F24 /* TreatmentCardButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreatmentCardButton.swift; sourceTree = "<group>"; };
 		1309D7BE228CC584005F8D40 /* DrugMonographViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrugMonographViewController.swift; sourceTree = "<group>"; };
@@ -181,6 +188,7 @@
 		131B96B222D8B4AB00D9A64F /* UIStackViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStackViewExtension.swift; sourceTree = "<group>"; };
 		131B96C022E0FD2700D9A64F /* ClosedRangeExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosedRangeExtension.swift; sourceTree = "<group>"; };
 		132F1BE1230D953E0071ADFF /* TODO List */ = {isa = PBXFileReference; lastKnownFileType = text; path = "TODO List"; sourceTree = "<group>"; };
+		134122B325811D3000E3F3F7 /* COVID 2019 Operational Guidelines_Final_v6.2.1 Nov25.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "COVID 2019 Operational Guidelines_Final_v6.2.1 Nov25.pdf"; sourceTree = "<group>"; };
 		1344B2FD229100EC00E08C63 /* DirectiveFlowChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectiveFlowChartViewController.swift; sourceTree = "<group>"; };
 		1346EAE223AE7D9200992D6A /* preamble_signatures.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = preamble_signatures.png; sourceTree = "<group>"; };
 		134789FB23257AA20081E865 /* FlowChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowChart.swift; sourceTree = "<group>"; };
@@ -193,6 +201,7 @@
 		1368DA6D23833455003A7144 /* Executive Airway Summary.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "Executive Airway Summary.html"; sourceTree = "<group>"; };
 		1368DA812385609C003A7144 /* Adult - Clinical Practice - Asthma.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "Adult - Clinical Practice - Asthma.html"; sourceTree = "<group>"; };
 		1368DA85238C2F13003A7144 /* PaddingLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddingLabel.swift; sourceTree = "<group>"; };
+		1373FA21252A3E2300911854 /* app-20200409-RSI-Authorization-and-Limitation-Changes-(BH-MEM-067).pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "app-20200409-RSI-Authorization-and-Limitation-Changes-(BH-MEM-067).pdf"; sourceTree = "<group>"; };
 		1380D49B2421234D00E88644 /* DocumentTableLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentTableLayout.swift; sourceTree = "<group>"; };
 		138F077424E413C700410D0D /* UIFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFont.swift; sourceTree = "<group>"; };
 		138F077A24E44A9D00410D0D /* MinionPro-BoldCnSubh.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MinionPro-BoldCnSubh.otf"; sourceTree = "<group>"; };
@@ -268,13 +277,17 @@
 		138F080E24E6EA8500410D0D /* DocumentsData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = DocumentsData.json; sourceTree = "<group>"; };
 		138F081024E6EAAD00410D0D /* MenuDataTest.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MenuDataTest.json; sourceTree = "<group>"; };
 		138F081324E8007F00410D0D /* Content.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Content.swift; sourceTree = "<group>"; };
-		139BF3D722849C7400D25766 /* Ornge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ornge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1399FD0A25506CF700138F22 /* COVID 2019 Operational Guidelines_Draft_v6.1 Oct 26.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "COVID 2019 Operational Guidelines_Draft_v6.1 Oct 26.pdf"; sourceTree = "<group>"; };
+		139BF3D722849C7400D25766 /* Ornge - Clinical Practice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ornge - Clinical Practice.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		139BF3DA22849C7400D25766 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		139BF3DC22849C7400D25766 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		139BF3DF22849C7400D25766 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		139BF3E422849C7500D25766 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		139BF3E622849C7500D25766 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		139F25432555C789006CC6BB /* COVID 2019 Operational Guidelines_Final_v6.2 Nov6.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "COVID 2019 Operational Guidelines_Final_v6.2 Nov6.pdf"; sourceTree = "<group>"; };
 		139FF61A23C8F7BC00B57A68 /* Adult - Clinical Practice Guidelines - Mechanical Ventilation.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "Adult - Clinical Practice Guidelines - Mechanical Ventilation.html"; sourceTree = "<group>"; };
+		13B1D9E824FBF6A10039D6B0 /* RootNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootNavigationViewController.swift; sourceTree = "<group>"; };
+		13B1D9EA24FD66380039D6B0 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		13B6817223155FC3003EA3D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		13BF742E22B6647B00145035 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		13C3C30622ECAADE002F5344 /* EditNotesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditNotesTableViewController.swift; sourceTree = "<group>"; };
@@ -323,7 +336,7 @@
 		13F4A45623A1726F004F6D38 /* UITapGestureRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITapGestureRecognizer.swift; sourceTree = "<group>"; };
 		13F4A47B23A35923004F6D38 /* Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
 		13F4A47D23A5CD30004F6D38 /* ped_flacc_score.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ped_flacc_score.png; sourceTree = "<group>"; };
-		13F4A47F23A5CE0C004F6D38 /* Ped - Clinical Practice - Pain.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "Ped - Clinical Practice - Pain.html"; sourceTree = "<group>"; };
+		13F4A47F23A5CE0C004F6D38 /* ped_cp_pain.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = ped_cp_pain.html; sourceTree = "<group>"; };
 		13FBD4322416CBEB002AD350 /* DrugTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrugTabViewController.swift; sourceTree = "<group>"; };
 		13FBD4342416D15A002AD350 /* MedicalDirectiveTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicalDirectiveTabViewController.swift; sourceTree = "<group>"; };
 		13FBD436241D08B2002AD350 /* DocumentTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentTableViewController.swift; sourceTree = "<group>"; };
@@ -331,9 +344,8 @@
 		13FBD43A241E78B6002AD350 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		13FBD440241EA821002AD350 /* CheckBoxButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckBoxButton.swift; sourceTree = "<group>"; };
 		13FBD462241FB079002AD350 /* PopoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopoverViewController.swift; sourceTree = "<group>"; };
-		9167FC5984E504BE25C11D5A /* Pods-Ornge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ornge.debug.xcconfig"; path = "Target Support Files/Pods-Ornge/Pods-Ornge.debug.xcconfig"; sourceTree = "<group>"; };
-		9B8BDF348D4CA2FF0B894A29 /* Pods-Ornge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ornge.release.xcconfig"; path = "Target Support Files/Pods-Ornge/Pods-Ornge.release.xcconfig"; sourceTree = "<group>"; };
-		E3A989A3A46AAA340CACD7F1 /* Pods_Ornge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ornge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8DA543087E0AEEDBE97A286 /* Pods-Ornge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ornge.debug.xcconfig"; path = "Target Support Files/Pods-Ornge/Pods-Ornge.debug.xcconfig"; sourceTree = "<group>"; };
+		FB4F90BDBEC488354DCC14E3 /* Pods_Ornge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ornge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -342,7 +354,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				131812CD242FB1B500767AEE /* WebKit.framework in Frameworks */,
-				9944CB92116F96C0571DEC02 /* Pods_Ornge.framework in Frameworks */,
+				2A8EB2C710150EE0CF62A692 /* Pods_Ornge.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -371,6 +383,7 @@
 				13F4447F235DF241004F87E0 /* Drugs */,
 				13C662F422B3FD5500FB9A63 /* Tools */,
 				13FBD462241FB079002AD350 /* PopoverViewController.swift */,
+				13B1D9E824FBF6A10039D6B0 /* RootNavigationViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -401,7 +414,8 @@
 		131B96A922D628B500D9A64F /* JSON */ = {
 			isa = PBXGroup;
 			children = (
-				138F081224E6EB0900410D0D /* Backups */,
+				135D4A9D23156673006C660C /* MenuData.json */,
+				1309D7C0228CC9F3005F8D40 /* DrugLibrary.json */,
 				138F080E24E6EA8500410D0D /* DocumentsData.json */,
 				138F081024E6EAAD00410D0D /* MenuDataTest.json */,
 				134789FD23257B990081E865 /* FlowChartLibrary.json */,
@@ -409,12 +423,13 @@
 			path = JSON;
 			sourceTree = "<group>";
 		};
-		1368DA6C23833391003A7144 /* HTML */ = {
+		1368DA6C23833391003A7144 /* External DOCS */ = {
 			isa = PBXGroup;
 			children = (
+				1373FA23252A3E3200911854 /* COVID */,
 				139FF61A23C8F7BC00B57A68 /* Adult - Clinical Practice Guidelines - Mechanical Ventilation.html */,
 				1346EAE223AE7D9200992D6A /* preamble_signatures.png */,
-				13F4A47F23A5CE0C004F6D38 /* Ped - Clinical Practice - Pain.html */,
+				13F4A47F23A5CE0C004F6D38 /* ped_cp_pain.html */,
 				13F4A47D23A5CD30004F6D38 /* ped_flacc_score.png */,
 				13F4A429239ED36F004F6D38 /* Authorization.html */,
 				13F4A42A239ED36F004F6D38 /* Preamble.html */,
@@ -441,10 +456,10 @@
 				13E3C49223932A96001C3F08 /* adult_sedation_score.png */,
 				13E3C4892392B815001C3F08 /* adult_airway_checklist.png */,
 				13E3C4862392B815001C3F08 /* adult_airway_patient_positioning.png */,
-				13E3C4872392B815001C3F08 /* adult_airway_post_checklist.png */,
 				13E3C4882392B815001C3F08 /* adult_airway_team_positioning.png */,
+				13E3C4872392B815001C3F08 /* adult_airway_post_checklist.png */,
 			);
-			path = HTML;
+			path = "External DOCS";
 			sourceTree = "<group>";
 		};
 		1368DA87238C2F1B003A7144 /* Subclasses */ = {
@@ -454,6 +469,17 @@
 				1368DA85238C2F13003A7144 /* PaddingLabel.swift */,
 			);
 			path = Subclasses;
+			sourceTree = "<group>";
+		};
+		1373FA23252A3E3200911854 /* COVID */ = {
+			isa = PBXGroup;
+			children = (
+				134122B325811D3000E3F3F7 /* COVID 2019 Operational Guidelines_Final_v6.2.1 Nov25.pdf */,
+				139F25432555C789006CC6BB /* COVID 2019 Operational Guidelines_Final_v6.2 Nov6.pdf */,
+				1399FD0A25506CF700138F22 /* COVID 2019 Operational Guidelines_Draft_v6.1 Oct 26.pdf */,
+				1373FA21252A3E2300911854 /* app-20200409-RSI-Authorization-and-Limitation-Changes-(BH-MEM-067).pdf */,
+			);
+			path = COVID;
 			sourceTree = "<group>";
 		};
 		138F077624E44A7000410D0D /* Custom Fonts */ = {
@@ -548,36 +574,26 @@
 			path = frutiger_ssv;
 			sourceTree = "<group>";
 		};
-		138F081224E6EB0900410D0D /* Backups */ = {
-			isa = PBXGroup;
-			children = (
-				130534182364210D00E4F016 /* MedicalDirectives.json */,
-				135D4A9D23156673006C660C /* MenuData.json */,
-				1309D7C0228CC9F3005F8D40 /* DrugLibrary.json */,
-			);
-			path = Backups;
-			sourceTree = "<group>";
-		};
 		139BF3CE22849C7400D25766 = {
 			isa = PBXGroup;
 			children = (
 				13BF742E22B6647B00145035 /* Podfile */,
-				139BF3D922849C7400D25766 /* MedicMind */,
+				139BF3D922849C7400D25766 /* Ornge */,
 				139BF3D822849C7400D25766 /* Products */,
-				CDF4AC6A4603585B28D06F56 /* Pods */,
 				605AFDD7D181846F9D083506 /* Frameworks */,
+				AF164C43215EF65BFDA88305 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
 		139BF3D822849C7400D25766 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				139BF3D722849C7400D25766 /* Ornge.app */,
+				139BF3D722849C7400D25766 /* Ornge - Clinical Practice.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		139BF3D922849C7400D25766 /* MedicMind */ = {
+		139BF3D922849C7400D25766 /* Ornge */ = {
 			isa = PBXGroup;
 			children = (
 				1311429E2285BD6A00BD65C0 /* Supporting Files */,
@@ -585,7 +601,7 @@
 				139BF3E622849C7500D25766 /* Info.plist */,
 				132F1BE1230D953E0071ADFF /* TODO List */,
 				139BF3DA22849C7400D25766 /* AppDelegate.swift */,
-				1368DA6C23833391003A7144 /* HTML */,
+				1368DA6C23833391003A7144 /* External DOCS */,
 				131B96A922D628B500D9A64F /* JSON */,
 				1311429C2285BD5900BD65C0 /* Views */,
 				1311429F2285BD8600BD65C0 /* Data Model */,
@@ -593,15 +609,15 @@
 				13C7BDE1228C6C1800D33B76 /* Extensions */,
 				1368DA87238C2F1B003A7144 /* Subclasses */,
 			);
-			path = MedicMind;
+			path = Ornge;
 			sourceTree = "<group>";
 		};
 		13C662F422B3FD5500FB9A63 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
 				13C662F522B3FD6400FB9A63 /* VentToolViewController.swift */,
-				13DBB9C022B8029A00E4CE11 /* SettingsViewController.swift */,
 				13C3C30822EF355E002F5344 /* DrugCalculatorViewController.swift */,
+				13DBB9C022B8029A00E4CE11 /* SettingsViewController.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -631,6 +647,7 @@
 				13F4A47B23A35923004F6D38 /* Double.swift */,
 				13FBD43A241E78B6002AD350 /* String.swift */,
 				138F077424E413C700410D0D /* UIFont.swift */,
+				13B1D9EA24FD66380039D6B0 /* UIViewController.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -650,13 +667,13 @@
 		13F44480235DF24E004F87E0 /* Medical Directives */ = {
 			isa = PBXGroup;
 			children = (
-				13EE697B2321554200A5131A /* FlowChartViewController.swift */,
+				13FBD4342416D15A002AD350 /* MedicalDirectiveTabViewController.swift */,
 				135C05C7228A1EA500F7B6CF /* MedicalDirectiveViewController.swift */,
+				13EE697B2321554200A5131A /* FlowChartViewController.swift */,
 				13EE6979232154C000A5131A /* ContentPageTabBarController.swift */,
 				1368DA6A238332FC003A7144 /* WebViewController.swift */,
 				1344B2FD229100EC00E08C63 /* DirectiveFlowChartViewController.swift */,
 				13C3C30622ECAADE002F5344 /* EditNotesTableViewController.swift */,
-				13FBD4342416D15A002AD350 /* MedicalDirectiveTabViewController.swift */,
 			);
 			path = "Medical Directives";
 			sourceTree = "<group>";
@@ -665,16 +682,16 @@
 			isa = PBXGroup;
 			children = (
 				131812CC242FB1B500767AEE /* WebKit.framework */,
-				E3A989A3A46AAA340CACD7F1 /* Pods_Ornge.framework */,
+				FB4F90BDBEC488354DCC14E3 /* Pods_Ornge.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		CDF4AC6A4603585B28D06F56 /* Pods */ = {
+		AF164C43215EF65BFDA88305 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				9167FC5984E504BE25C11D5A /* Pods-Ornge.debug.xcconfig */,
-				9B8BDF348D4CA2FF0B894A29 /* Pods-Ornge.release.xcconfig */,
+				D8DA543087E0AEEDBE97A286 /* Pods-Ornge.debug.xcconfig */,
+				00F07AF6F7AEF0D398EB46F6 /* Pods-Ornge.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -686,11 +703,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 139BF3E922849C7500D25766 /* Build configuration list for PBXNativeTarget "Ornge" */;
 			buildPhases = (
-				709BE00B97FD81545D1AFED3 /* [CP] Check Pods Manifest.lock */,
+				4D3E34B110F74083B635FC53 /* [CP] Check Pods Manifest.lock */,
 				139BF3D322849C7400D25766 /* Sources */,
 				139BF3D422849C7400D25766 /* Frameworks */,
 				139BF3D522849C7400D25766 /* Resources */,
-				1F1D8B15379EDFF535FD08B6 /* [CP] Embed Pods Frameworks */,
+				856D980FBF66676AB17899AF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -698,7 +715,7 @@
 			);
 			name = Ornge;
 			productName = MedicMind;
-			productReference = 139BF3D722849C7400D25766 /* Ornge.app */;
+			productReference = 139BF3D722849C7400D25766 /* Ornge - Clinical Practice.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -708,7 +725,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1020;
-				LastUpgradeCheck = 1020;
+				LastUpgradeCheck = 1200;
 				ORGANIZATIONNAME = "Charles Trickey";
 				TargetAttributes = {
 					139BF3D622849C7400D25766 = {
@@ -742,7 +759,7 @@
 				138F080A24E44FE400410D0D /* FrutigerLTStd-Bold.otf in Resources */,
 				13E3C48523917829001C3F08 /* Ornge Airway Manual Executive Summary.html in Resources */,
 				134789FE23257B990081E865 /* FlowChartLibrary.json in Resources */,
-				130534192364210D00E4F016 /* MedicalDirectives.json in Resources */,
+				1368C2D7252F29110061735B /* (null) in Resources */,
 				138F07BD24E44A9D00410D0D /* MinionPro-SemiboldDisp.otf in Resources */,
 				138F07DB24E44A9D00410D0D /* MinionPro-MediumCnItCapt.otf in Resources */,
 				138F07F124E44A9D00410D0D /* MinionPro-BoldSubh.otf in Resources */,
@@ -753,6 +770,7 @@
 				13E3C49723949A41001C3F08 /* Adult - Clinical Practice - ROSC.html in Resources */,
 				13E3C48323917306001C3F08 /* Controlled Intubation Checklist.html in Resources */,
 				13B6817323155FC3003EA3D7 /* Assets.xcassets in Resources */,
+				1368C2D5252F290E0061735B /* (null) in Resources */,
 				13E3C4992396B50C001C3F08 /* Adult - Clinical Practice - NSTEMI.html in Resources */,
 				138F07EE24E44A9D00410D0D /* minionproboldcndisp.png in Resources */,
 				139FF61B23C8F7BC00B57A68 /* Adult - Clinical Practice Guidelines - Mechanical Ventilation.html in Resources */,
@@ -789,6 +807,7 @@
 				13E3C4AB239C03F6001C3F08 /* Adult - Clinical Practice - Obstetrics.html in Resources */,
 				138F07CA24E44A9D00410D0D /* MinionPro-CnSubh.otf in Resources */,
 				13E3C49B2396C49B001C3F08 /* Adult - Clinical Practice - STEMI.html in Resources */,
+				139F25442555C789006CC6BB /* COVID 2019 Operational Guidelines_Final_v6.2 Nov6.pdf in Resources */,
 				138F07D024E44A9D00410D0D /* MinionPro-Disp.otf in Resources */,
 				138F080F24E6EA8600410D0D /* DocumentsData.json in Resources */,
 				138F07CD24E44A9D00410D0D /* MinionPro-ItDisp.otf in Resources */,
@@ -808,6 +827,7 @@
 				138F080324E44BDF00410D0D /* FrutigerLTStd-Black.otf in Resources */,
 				138F07FB24E44A9D00410D0D /* MinionPro-SemiboldIt.otf in Resources */,
 				138F07E124E44A9D00410D0D /* MinionPro-Regular.otf in Resources */,
+				134122B425811D3000E3F3F7 /* COVID 2019 Operational Guidelines_Final_v6.2.1 Nov25.pdf in Resources */,
 				138F07DD24E44A9D00410D0D /* MinionPro-Cn.otf in Resources */,
 				13F4A42C239ED370004F6D38 /* Authorization.html in Resources */,
 				138F07E924E44A9D00410D0D /* MinionPro-CnItDisp.otf in Resources */,
@@ -817,6 +837,8 @@
 				138F07C024E44A9D00410D0D /* MinionPro-BoldCnIt.otf in Resources */,
 				138F07E024E44A9D00410D0D /* MinionPro-Capt.otf in Resources */,
 				138F07D824E44A9D00410D0D /* MinionPro-MediumCnCapt.otf in Resources */,
+				1373FA22252A3E2300911854 /* app-20200409-RSI-Authorization-and-Limitation-Changes-(BH-MEM-067).pdf in Resources */,
+				1399FD0B25506CF700138F22 /* COVID 2019 Operational Guidelines_Draft_v6.1 Oct 26.pdf in Resources */,
 				138F07C124E44A9D00410D0D /* MinionPro-CnItSubh.otf in Resources */,
 				138F07C924E44A9D00410D0D /* MinionPro-SemiboldCn.otf in Resources */,
 				138F07F624E44A9D00410D0D /* MinionPro-ItSubh.otf in Resources */,
@@ -833,7 +855,7 @@
 				138F07C724E44A9D00410D0D /* MinionPro-MediumIt.otf in Resources */,
 				138F07CC24E44A9D00410D0D /* MinionPro-SemiboldItDisp.otf in Resources */,
 				138F07EF24E44A9D00410D0D /* MinionPro-MediumCnIt.otf in Resources */,
-				13F4A48023A5CE0C004F6D38 /* Ped - Clinical Practice - Pain.html in Resources */,
+				13F4A48023A5CE0C004F6D38 /* ped_cp_pain.html in Resources */,
 				138F07E424E44A9D00410D0D /* MinionPro-SemiboldSubh.otf in Resources */,
 				138F07F424E44A9D00410D0D /* MinionPro-SemiboldCnDisp.otf in Resources */,
 				138F07EA24E44A9D00410D0D /* MinionPro-BoldCapt.otf in Resources */,
@@ -858,24 +880,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1F1D8B15379EDFF535FD08B6 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Ornge/Pods-Ornge-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Ornge/Pods-Ornge-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Ornge/Pods-Ornge-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		709BE00B97FD81545D1AFED3 /* [CP] Check Pods Manifest.lock */ = {
+		4D3E34B110F74083B635FC53 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -895,6 +900,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		856D980FBF66676AB17899AF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Ornge/Pods-Ornge-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Ornge/Pods-Ornge-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Ornge/Pods-Ornge-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -935,7 +957,9 @@
 				131142A62285ECA100BD65C0 /* DataManager.swift in Sources */,
 				138F077524E413C700410D0D /* UIFont.swift in Sources */,
 				13C662F622B3FD6400FB9A63 /* VentToolViewController.swift in Sources */,
+				13B1D9EB24FD66380039D6B0 /* UIViewController.swift in Sources */,
 				13F4447E235DEA1E004F87E0 /* DrugMenuTableViewController.swift in Sources */,
+				13B1D9E924FBF6A10039D6B0 /* RootNavigationViewController.swift in Sources */,
 				13478A02232747F80081E865 /* String+HTML.swift in Sources */,
 				13DBB9C122B8029A00E4CE11 /* SettingsViewController.swift in Sources */,
 				13C662EA22AD4EA200FB9A63 /* Drugs.swift in Sources */,
@@ -1000,6 +1024,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -1061,6 +1086,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -1083,6 +1109,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
@@ -1092,21 +1119,21 @@
 		};
 		139BF3EA22849C7500D25766 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9167FC5984E504BE25C11D5A /* Pods-Ornge.debug.xcconfig */;
+			baseConfigurationReference = D8DA543087E0AEEDBE97A286 /* Pods-Ornge.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 72B3P2ME3P;
-				INFOPLIST_FILE = MedicMind/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				INFOPLIST_FILE = Ornge/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.2;
+				MARKETING_VERSION = 1.11;
 				PRODUCT_BUNDLE_IDENTIFIER = ca.ornge.medicaldirectives;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Ornge - Clinical Practice";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1114,21 +1141,21 @@
 		};
 		139BF3EB22849C7500D25766 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9B8BDF348D4CA2FF0B894A29 /* Pods-Ornge.release.xcconfig */;
+			baseConfigurationReference = 00F07AF6F7AEF0D398EB46F6 /* Pods-Ornge.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 72B3P2ME3P;
-				INFOPLIST_FILE = MedicMind/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				INFOPLIST_FILE = Ornge/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.2;
+				MARKETING_VERSION = 1.11;
 				PRODUCT_BUNDLE_IDENTIFIER = ca.ornge.medicaldirectives;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Ornge - Clinical Practice";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

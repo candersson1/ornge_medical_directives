@@ -1,0 +1,17 @@
+##Ornge Clinical Practice Guideline: Cardiogenic Shock<i>Please refer to the Drug Monographs and References document for references listed in the CPGs</i>  Suspect cardiogenic shock where there is acute severe LV or RV dysfunction with end-organ hypoperfusion (coolmottled extremities, decreased urine output, altered mentation). Acute LV failure may lead to acute pulmonaryedema.  
+Most common cause is acute coronary syndrome but other causes include cardiomyopathies as well as valvular heart disease and tachyarrhythmias.  
+Severe shock is manifested by persistent hypotension: SBP<90 or MAP<60 or drop of MAP 30 mm Hg below baseline<sup>1</sup>  
+Rule out and treat correctable causes: ensure that myocardial dysfunction is not secondary to another cause such as severe sepsis or occult hemorrhagic shock or tachyarrhythmias.
+ASA 160 mg is recommended to be given PO / NG / PR<sup>2</sup>
+Vasoactive agents
+* Vasopressor of choice is norepinephrine in severe shock with severe hypotension SBP <80 mmHg / MAP<60 mmHg* DOBUTamine can be considered in cases where SBP >90 mmHg (MAP >65 mmHg) but should be used cautiously where BP is borderline
+Avoid negative inotropes (beta blockers and calcium channel blockers) in patients with ACS and at risk for cardiogenic shock:
+* SBP <120 mmHg* Age over 70* Heart rate >110 bpm* Any sign of heart failure, acute pulmonary edema<sup>3</sup>
+Avoid antiarrhythmic agents with negative inotropic or vasodilating properties such as lidocaine and procainamide.Amiodarone is preferred for sustained ventricular or atrial tachyarrhythmias<sup>2</sup>
+Volume management
+* Empiric challenge of 250 mL crystalloid IV if suspected cardiogenic shock with no signs of pulmonary congestion or signs of respiratory distress and no previous IV fluid boluses* Caution in repeated fluid challenges to elderly, history of heart failure, large LV infarction* In cases of right ventricular infarction with hypotension and clear lung fields, more volume resuscitation will be required.
+Ventilatory support  
+* For respiratory failure from cardiogenic pulmonary edema* To reverse severe acidemia in shock* To relieve the work of breathing in refractory shock* Airway protection and maintaining oxygenation where decreased level of consciousness
+Mechanical support  * Intra-aortic balloon pump support can stabilize select patients in cardiogenic shock including the rapidly deteriorating patient with hypotension and/or cardiac arrhythmias or certain mechanical defects like acute mitral regurgitation or ventricular septal defect from wall rupture.* Percutaneous left ventricular assist devices such as Impella can maintain cardiac outputs of 2.5-5.0 litres/minute (depending on device) and can allow organ perfusion during myocardial stunning and while awaiting cardiac recovery. Both these devices are wide bore catheters inserted into the femoral artery and come with a console which has to be transported with the patient.
+Reperfusion  
+* Patients in cardiogenic shock should be rapidly transported to the closest center with PCI capabilitiespreferably with cardiac surgery backup.* Fibrinolytic therapy should be considered where indicated provided no contraindication and PCI will bedelayed more than 90 to 120 minutes. The decision should be made in conjunction with the receivingcardiologist. Benefit of fibrinolysis is questionable for delayed presentations of MI (>12-24 hours) but maybe considered where there are signs of recent progression of infarct.

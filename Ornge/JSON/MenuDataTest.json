@@ -1,0 +1,21 @@
+{
+  "menus" : [
+    {
+      "title" : "Main Menu",
+      "type" : "menu",
+      "items" : [
+        {
+            "title" : "Adult Mixing and Administration Table for Continuous Infusion Summary",
+            "type" : "menu",
+            "items" : [
+                {
+                    "title" : "Link",
+                    "type" : "menu_document_link",
+                    "key" : "adult_medication_list"
+                }
+            ]
+        }
+      ]
+    }
+  ]
+}
