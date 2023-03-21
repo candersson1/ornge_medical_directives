@@ -4031,65 +4031,67 @@
         },
         {
             "key" : "ped_non_intubated_sedation",
-            "title" : "Paediatric - Sedation and Pain Management for Non-Ventilated Patients",
+            "title" : "Paediatric Analgesia: Non-Intubated Patients",
             "type" : "directive",
             "flowchartkeys" : [["FLACC score", "ped_flacc_score"]],
-            "clinical" : "<tab1>• FLACC pain scoring / assessment <red>must</red> be completed at the start of normal patient care at a frequency that aligns with the patient’s clinical state\n• Pain assessment should be completed every 30 minutes as well as with significant changes in patient condition and also before and after interventions\n• Use Oral route to administer medications whenever possible\n• IM administration is not acceptable; use the least invasive route whenever possible\n• Match analgesic to the severity of pain\n• Consider using more than one class of analgesic (e.g Acetaminiphen + NSAID) to promote better pain relief; may reduce opioid requirements</tab1>",
+            "indications": "<tab1>• The provision of analgesia for non-intubated patients experiencing pain.\n• Assess and document pain on all patients using a 10-point scale (0 = no pain, 10 = maximum pain).\n• Document at least two pain scores on all patients and document a score before and after analgesia is provided to the patient.</tab1>",
+            "contraindications" : "<tab1>• Allergy or sensitivity to the medication\n• <b>Acetaminophen</b><tab2>\n• Acetaminophen use within the last 4 hours\n• History of liver disease</tab2>\n• <b>Ketorolac/Ibuprofen (NSAIDs)</b>\n<tab2>• NSAID in the past 6 hours\n• Impaired renal function\n• Active bleeding; do not use in Tonsillectomy patients</tab2>",
+            
+            
             "drug_cards" : [
+                
                 {
-                    "loc" : [["nil", "nil"]],
-                    "dose_route" : [
-                        ["<left><b>Pain Severity</b></left>", "<left><b>Medication Choices</b></left>"],
-                        ["<left>Mild pain</left>", "<left>Acetaminophen +/NSAID (if not contraindicated)</left>"],
-                        ["<left>Moderate to Severe Pain</left>", "<left>Acetaminophen +/NSAID (if not contraindicated) + Opioid</left>"]
-                    ],
-                    "notes" : "NSAID Non steroidal anti-inflammatory drug"
-                },
-                {
-                    "title" : "<b>Acetaminophen</b>",
+                    "section":"<b>Mild Pain</b>",
+                    "title" : "<b>Acetaminophen (Tylenol)</b>",
                     "drugKey" : "acetaminophen",
-                    "loc" : [["pcp", "none"], ["acpl", "none"]],
+                    "loc" : [["pcp", "none"]],
                     "dose_route" : [
                         ["<center><b>Age / Weight</b></center>", "<center><b>Dose</b></center>"],
-                        ["<center>12 years or ></center>", "<center>500-650 mg every 4 hours PO\nMax single dose 650 mg</center>"]
+                        ["<center>≥ 12 years</center>", "<center>500-650 mg every 4 hours PO\nMax single dose 650 mg</center>"]
                     ]
                 },
                 {
-                    "title" : "<b>Acetaminophen</b>",
+                    "section":"OR",
+                    "title" : "<b>Acetaminophen (Tylenol)</b>",
                     "drugKey" : "acetaminophen",
                     "loc" : [["acp", "none"]],
                     "dose_route" : [
                         ["<center><b>Age / Weight</b></center>", "<center><b>Dose</b></center>"],
-                        ["<center>< 12 years</center>", "<center>15 mg/kg every 4 hours PO or PR\nMax 1 gram\n(Suspension or Suppository)</center>"]
+                        ["<center> ≤ 12 years</center>", "<center>15 mg/kg every 4 hours PO or PR\nMax 1 gram\n(Suspension or Suppository)</center>"]
                     ]
                 },
                 {
-                    "title" : "<b>Ibuprofen</b>",
+                    "section" : "AND/OR",
+                    "title" : "<b>Ibuprofen (Advil)</b>",
                     "drugKey" : "ibuprofen",
-                    "loc" : [["pcp", "none"], ["acpl", "none"]],
+                    "loc" : [["pcp", "none"]],
                     "dose_route" : [
                         ["<center><b>Age / Weight</b></center>", "<center><b>Dose</b></center>"],
-                        ["<center>12 years or ></center>", "<center>400 mg every 6 hours PO</center>"]
+                        ["<center>≥ 12 years</center>", "<center>400 mg every 6 hours PO</center>"]
                     ]
                 },
                 {
+                    "section" : "OR",
                     "title" : "<b>Ibuprofen</b>",
                     "drugKey" : "ibuprofen",
                     "loc" : [["acp", "none"]],
                     "dose_route" : [
                         ["<center><b>Age / Weight</b></center>", "<center><b>Dose</b></center>"],
-                        ["<center>>6 months and <12 years</center>", "<center>10 mg/kg PO\nMax 400 mg</center>"]
+                        ["<center> ≥ 6 months and ≤ 12 years</center>", "<center>10 mg/kg PO\nMax 400 mg</center>"]
                     ]
                 },
                 {
-                    "title" : "<b>Morphine</b>",
-                    "drugKey" : "morphine",
-                    "loc" : [["acpl", "after"]],
+                    "section": "OR",
+                    "title" : "<b>Ketorolac</b>",
+                    "drugKey" : "ketorolac",
+                    "loc" : [["acpl", "none"]],
                     "dose_route" : [
-                        ["<center>0.05-0.1 mg/kg/dose IV (Max 4 mg/dose)</center>"]
+                        ["<center><b>Age / Weight</b></center>", "<center><b>Dose</b></center>"],
+                        ["<center> ≥ 1 year</center>", "<center>0.5 mg /kg IV/IM q 6-8 h prn\nMax 15 mg</center>"]
                     ]
                 },
                 {
+                    "section": "OR",
                     "title" : "<b>24% Sucrose</b>",
                     "loc" : [["acp", "none"]],
                     "dose_route" : [
@@ -4097,17 +4099,49 @@
                         ["<center><u>Less</u> than 18 months</center>", "<center>0.1 ml PO\n2 minutes prior to painful procedure</center>"]
                     ],
                     "notes" : "<title>Clinical Consideratons for 24% Sucrose:</title>\n<tab1>• Dose may be repeated at 5 minute intervals for prolonged procedures\n• <b>Contraindicated</b> in short-bowel syndrome, carbohydrate intolerance, unconscious or heavily sedated patients with absent gag reflex; <b>avoid use</b> in patients with gastrointestinal tract abnormalities (e.g. esophageal atresia or tracheal esophageal fistula), in patients at risk for aspiration. Sucrose <b>should not be used</b> for patients requiring ongoing analgesia</tab1>"
+                },
+                {
+                    "section": "<b>Moderate to Severe Pain – Acetaminophen + NSAID AND one of FentaNYL OR Morphine OR Ketamine</b>",
+                    "title" : "<b>FentaNYL (Sublimaze)</b>",
+                    "drugKey" : "fentanyl",
+                    "loc" : [["acpl", "after"]],
+                    "dose_route" : [
+                        ["<center>Bolus</center>"],
+                        ["<center>0.5 -2 microgram/kg/dose IV q 10 min1 slowly over 2-3 minutes IV\n(Max 40 mcg/dose)\nOR\nIntranasal 1.5 mcg/kg/dose q 5-10 min\nMaximum volume 0.5 mL/nostril in infants or 1 mL/nostril in children\n(Larger volumes should be divided between both nares)\nMax 3 doses prior to TMP Patch\nNote: Give 0.1 mL overfill to accommodate mucosal atomization device (MAD) dead-space volume</center>"]
+                    ]
+                },
+                {
+                    "section": "OR",
+                    "title" : "<b>Morphine</b>",
+                    "drugKey" : "morphine",
+                    "loc" : [["acpl", "after"]],
+                    "dose_route" : [
+                        ["<center>Bolus</center>"],
+                        ["<center>0.05-0.1 mg/kg/dose IV q 15 min PRN\nMax 5 mg/dose)\nMax 3 doses prior to TMP Patch</center>"]
+                    ]
+                },
+                {
+                    "section": "OR",
+                    "drugKey" : "ketamine",
+                    "title" : "<b>Ketamine</b>\nKetamine is <b>NOT</b> a first line agent for analgesia in normotensive patients but can be considered early for multiple trauma patients or those with concerning hemodynamic status",
+                    "loc" : [["acpl", "first"]],
+                    "dose_route" : [
+                        ["<center>Bolus</center>"],
+                        ["<center>0.5 -1.5mg/kg 0.1 mg/kg IV/IO q 10nutes slowly over 1-2 minutes; May repeat 0.5 mg/kg in 10 minutes\nOR\n<b>0.75 mg/kg IN\nMay repeat 0.5mg/kg after 20 minutes X 1</b>\nMAX total dose 100 mg/dose IV Systolic BP 70 + 2xAge See Clinical Considerations for administration guidance</center>"]
+                    ]
                 }
-            ]
+                
+            ],
+            "clinical" : "<tab1>• Ketamine can be administered undiluted over 60 seconds, but may be diluted to 2mg/mL in 0.9% NaCl before administration Ketamine Adverse Reactions: Emergence reactions, hallucinations especially with older children, Hypersalivation, tachycardia, and hypertension, laryngospasm in infants Consider multi-modal approach to analgesia where appropriate. For example, using Acetaminophen + NSAID promotes better pain relief and may reduce opioid requirements\n• Use Oral route to administer medications whenever possible\n• IM administration is reserved for patients in severe pain without appropriate IV access or suitable routes of admin; use the least invasive route whenever possible\n• FLACC pain scoring / assessment must be completed at the start of normal patient care at a frequency that aligns with the patient’s clinical state\n• Pain assessment should be completed every 30 minutes as well as with significant changes in patient condition and also before and after interventions\n• Match analgesic to the severity of pain",
         },
         {
             "key" : "ped_intubated_sedation",
-            "title" : "Paediatric - Sedation and Pain Management for Intubated and Ventilated Patients",
+            "title" : "Analgosedation: Intubated Patients",
             "type" : "directive",
             "flowchartkeys" : [["Sedation score", "ped_sedation_score"]],
-            "indications" : "<tab1>• Agitation and lability requiring intubation and ventilation\n• Any patient receiving muscle relaxation\n• Any patient undergoing invasive procedures\n• Any patient who demonstrates positive indications of pain, tachycardia, hypertension or grimacing\n• The patient must have a baseline and continuous assessment of response to the drug with heart rate, respiratory rate and blood pressure</tab1>",
+            "indications" : "<tab1>• Agitation and lability requiring intubation and ventilation\n• Any patient receiving muscle relaxation\n• Any patient undergoing invasive procedures\n• Any patient who demonstrates positive indications of pain, tachycardia, hypertension or grimacing\n• The patient must have a baseline and continuous assessment of response to the drug with heart rate, respiratory rate and blood pressure documented.\n• CCPs may administer sedation and analgesia without patching, within the dosage and MAP parameters outlined below. Caution must be taken to avoid sedation/analgesia related hypotension by titrating dosage slowly and to effect utilizing the sedation/analgesia scales below. ALL intubated patients receiving sedation/analgesia should have a sedation and analgesia score calculated, monitored and documented throughout transport.</tab1>",
             "contraindications" : "<tab1>• Allergy or sensitivity to the medication\n• Systolic BP below 70 + (2 x age in years)</tab1>",
-            "clinical" : "<tab1>• Observe patient for hemodynamic instability with analgosedation infusions\n• Fentanyl is preferred for procedural pain relief or if low SBP, otherwise morphine preferred for sedation/pain management\n• Systolic BP below 70 + (2 x age in years)</tab1>",
+            "clinical" : "<tab1>• Monitor patient for hemodynamic instability with analgosedation infusions\n• Systolic BP below 70 + (2 x age in years)\n• Some clinical conditions such as suspected ICP (TBI, ICH) or spinal cord injury require higher blood pressure parameters to maintain perfusion</tab1>",
             "drug_cards" : [
                 {
                     "section" : "<b>For Analgesia (choose one)</b>",
@@ -4116,7 +4150,7 @@
                     "loc" : [["acp", "after"]],
                     "dose_route" : [
                         ["<center>Bolus</center>", "<center>Infusion</center>"],
-                        ["<center>1-2 microgram/kg/dose slow IV push</center>", "<center>1-4 microgram/kg/hr</center>"]
+                        ["<center>1-2 microgram/kg/dose slow IV/IO push\nq 15 minutes PRN\nMAX dose of 4 microgram/kg/hr including infusion</center>", "<center>1-4 microgram/kg/hr</center>"]
                     ]
                 },
                 {
@@ -4126,27 +4160,47 @@
                     "loc" : [["acp", "after"]],
                     "dose_route" : [
                         ["<center>Bolus</center>", "<center>Infusion</center>"],
-                        ["<center>0.1 mg/kg/dose IV (MAX 4 mg/dose)</center>", "<center>10-40 microgram/kg/hr</center>"]
+                        ["<center>0.1 mg/kg/dose IV/IO (MAX 4 mg/dose)\n0.2 Q 20 minutes PRN</center>", "<center>10-40 microgram/kg/hr</center>"]
                     ]
                 },
                 {
                     "section" : "OR",
                     "title" : "<b>Ketamine</b>",
                     "drugKey" : "ketamine",
-                    "loc" : [["acp", "first"], ["ccp", "after"]],
+                    "loc" : [["acp", "first"]],
                     "dose_route" : [
                         ["<center>Bolus</center>", "<center>Infusion</center>"],
-                        ["<center>1-2 mg/kg slow IV push\nNot to exceed 0.3-2 mg/kg/hr</center>", "<center>0.3-1.2 mg/kg/hour IV/IO</center>"]
+                        ["<center>1-2 mg/kg slow IV/IO push\nQ 10 minutes PRN\nNot to exceed 2 mg/kg/hr</center>", "<center>0.3-1.2 mg/kg/hour\nIV/IO </center>"]
+                    ]
+                },
+                {
+                    
+                    "title" : "<b>Ketamine</b>",
+                    "drugKey" : "ketamine",
+                    "loc" : [["ccp", "after"]],
+                    "dose_route" : [
+                        ["<center>Bolus</center>", "<center>Infusion</center>"],
+                        ["<center>1-2 mg/kg slow IV/IO push\nQ 10 minutes PRN\nNot to exceed 2 mg/kg/hr</center>", "<center>0.3-1.2 mg/kg/hour\nIV/IO </center>"]
                     ]
                 },
                 {
                     "section" : "<b>For Sedation (choose one)</b>",
                     "drugKey" : "midazolam",
                     "title" : "<b>Midazolam (Versed)</b>",
-                    "loc" : [["acp", "first"], ["ccp", "after"]],
+                    "loc" : [["acp", "first"]],
                     "dose_route" : [
                         ["<center>Bolus</center>", "<center>Infusion</center>"],
-                        ["<center>0.05-0.1 mg/kg/dose IV/IO</center>", "<center>50-500microgram/kg/hour IV/IO</center>"]
+                        ["<center>0.05-0.1 mg/kg/dose IV/IO\nQ 5-10 minutes PRN</center>", "<center>50-500 microgram/kg/hour IV/IO</center>"]
+                    ]
+                },
+                {
+                    
+                    "drugKey" : "midazolam",
+                    "title" : "<b>Midazolam (Versed)</b>",
+                    "loc" : [["ccp", "after"]],
+                    "dose_route" : [
+                        ["<center>Bolus</center>", "<center>Infusion*</center>"],
+                        ["<center>0.05-0.1 mg/kg/dose IV/IO\nQ 5 minutes PRN</center>", "<center>50-500 microgram/kg/hour IV/IO</center>"]
                     ]
                 },
                 {
@@ -4155,9 +4209,19 @@
                     "drugKey" : "propofol",
                     "loc" : [["ccp", "first"]],
                     "dose_route" : [
-                        ["<center>Additional boluses of 0.5 mg/kg/dose\nq 5 minutes prn\nprovided BP is normal for ag</center>", "<center>0-12 mg/kg/hr titrated\nby increments of 0.3 mg/kg/hr\nq 5 minutes prn</center>"]
+                        ["<center>Additional boluses of 0.5 mg/kg/dose\nq 5 minutes PRN provided BP is normal for age</center>", "<center>0-12 mg/kg/hr titrated\nby increments of 0.3 mg/kg/hr\nQ 5 minutes PRN</center>"]
+                    ]
+                },
+                {
+                    
+                    "title" : "<b>DexMEDEtomidine</b>",
+                    "drugKey" : "dexmedetomidine",
+                    "loc" : [["ccp", "none"]],
+                    "dose_route" : [
+                        ["<center>0.2 – 1 mcg/kg/hour IV infusion\nTitration by 0.1 mcg/kg/hour q 30 minutes until desired sedation goal or clinical effect\nMax dose 2.5 mcg/kg/hour IV if authorized by TMP</center>"]
                     ]
                 }
+                
             ]
         },
         {
@@ -4228,14 +4292,22 @@
             "type" : "directive",
             "indications" : "<tab1>• Patients with known difficult airway\n• To facilitate and optimize mechanical ventilation and oxygenation\n• Persistent hypoxia/hypoxemia <b>despite adequate sedation</b>\n• To minimize risk of accidental extubation in transport\n• In labile patients requiring 100% oxygen</tab1>",
             "contraindications" : "<tab1>• Allergy or sensitivity to the medication\n• Inadequate sedation/analgesia</tab1>",
-            "clinical" : "<tab1>• In patients with known difficult airway, muscle relaxation is strongly recommended post intubation to ensure minimal risk for loss of ETT in transport\n• Complete history and physical examination (including baseline neurologic assessment) must be completed prior to medication administration\n• ETT tube confirmed to be in good position on, CXR (if available), auscultation and by EtCO2 tracing confirms ETT placement in the trachea, but does not confirm optimal positioning\n• Resuscitation equipment should be readily available\n• All patients must be on a cardiac, SpO2 and EtCO2 monitor, with frequent blood pressure monitoring (typically every 5-10 minutes unless otherwise indicated)\n• Baseline assessment of patient’s response (heart rate, blood pressure) to paralytic must be obtained and re-evaluated to determine need for further sedation and ongoing muscle relaxation\n• <b>Sedation/analgesia must be administered in conjunction with muscle relaxation</b>\n• Muscle relaxants will hide the motor component of seizures. In cases of status epilepticus or risk of seizures, paralysis should be administered as a last resort and in conjunction with anticonvulsant/sedative infusions. Monitor closely for autonomic manifestations of seizures</tab1>",
+            "clinical" : "<tab1>• <b>Sedation/analgesia <u><b>must</b></u> be administered in conjunction with muscle relaxation</b>\n• In patients with known difficult airway, muscle relaxation is strongly recommended post intubation to ensure minimal risk for loss of ETT in transport\n• Complete history and physical examination (including baseline neurologic assessment) must be completed prior to medication administration\n• ETT tube confirmed to be in good position on, CXR (if available), auscultation and by EtCO2 tracing confirms ETT placement in the trachea, but does not confirm optimal positioning\n• Resuscitation equipment should be readily available\n• All patients must be on a cardiac, SpO2 and EtCO2 monitor, with frequent blood pressure monitoring (typically every 5-10 minutes unless otherwise indicated)\n• The patient may require increased ventilatory support once muscle related\n• Baseline assessment of patient’s response (heart rate, blood pressure) to paralytic must be obtained and re-evaluated to determine need for further sedation and ongoing muscle relaxation\n• Muscle relaxants will hide the motor component of seizures. In cases of status epilepticus or risk of seizures, paralysis should be administered as a last resort and in conjunction with anticonvulsant/sedative infusions. Monitor closely for autonomic manifestations of seizures</tab1>",
             "drug_cards" : [
                 {
                     "title" : "<b>Rocuronium (Zemuron)</b>",
                     "drugKey" : "rocuronium",
                     "loc" : [["acp", "first"]],
                     "dose_route" : [
-                        ["<center>< 40 kg</center>", "<center>0.6 mg/kg/dose IV/IO</center>"]
+                        ["<center>< 40 kg</center>", "<center>1 mg/kg/dose IV/IO q 1 hour PRN</center>"]
+                    ]
+                },
+                {
+                    "title" : "<b>Rocuronium (Zemuron)</b>",
+                    "drugKey" : "rocuronium",
+                    "loc" : [["ccp", "after"]],
+                    "dose_route" : [
+                        ["<center>< 40 kg</center>", "<center>1 mg/kg/dose IV/IO q 1 hour PRN</center>"]
                     ]
                 }
             ]
@@ -4279,19 +4351,19 @@
                     "dose_route" : [["<b>Initiate the appropriate algorithm based upon the presenting ECG rhythm</b>"]]
                 },
                 {
-                    "title" : "EPINEPHrine",
+                    "title" : "<b>EPINEPHrine</b>",
                     "drugKey" : "epinephrine",
                     "loc" : [["acpl", "after"]],
                     "dose_route" : [["0.01 mg/kg (0.1 mL/kg of 1:10,000 concentration)\nRepeat q 3-5 min"]]
                 },
                 {
-                    "title" : "Amiodarone",
+                    "title" : "<b>AmioDARONE</b>",
                     "drugKey" : "amiodarone",
                     "loc" : [["acpl", "after"]],
                     "dose_route" : [["5 mg/kg (MAX 300 mg/dose) rapid bolus during cardiac arrest\nMay repeat up to 2 times to a MAX total dose of 15 mg/kg for refractory VF/pulseless VT"]]
                 },
                 {
-                    "title" : "Lidocaine",
+                    "title" : "<b>Lidocaine</b>",
                     "drugKey" : "lidocaine",
                     "loc" : [["acpl", "after"]],
                     "dose_route" : [["Initial 1 mg/kg loading dose\nMaintenance infusion 20-50 microgram/kg/min\n(repeat bolus dose if infusion initiated > 15 min after initial bolus therapy)"]]
@@ -4313,20 +4385,20 @@
                     "dose_route" : [["<b>Initiate Neonatal Resuscitation Algorithm"]]
                 },
                 {
-                    "section" : "<b>Neonatal Resuscitation Drug Dosages 0-28 days",
+                    "section" : "<b>Neonatal Resuscitation Drug Dosages 0-28 days</b>",
                     "title" : "",
                     "loc" : [["acpl", "after"]],
                     "dose_route" : [
                         ["<b>Drug", "<a href=\"drugKey=epinephrine\">EPINEPHrine</a>", "<a href=\"drugKey=epinephrine\">EPINEPHrine</a>", "<a href=\"drugKey=d50w\">Dextrose</a>"],
-                        ["<b>Concentration", "1:10,000", "1:10,000", "D₁₀W"],
+                        ["<b>Concentration", "1:10,000\n(0.1 mg/ml)", "1:10,000\n(0.1 mg/ml)", "D₁₀W"],
                         ["<b>Preparation", "1 ml Syringe", "3 mL Syringe", "D₁₀W"],
-                        ["<b>Dose", "0.1 mL/kg\n(0.01 mg/kg)", "1 mL/kg\n(0.1 mg/kg)", "2 mL/kg\n(0.2 mg/kg)"],
+                        ["<b>Dose", "0.02 mg/kg\n0.2 ml/kg", "0.1 mg/kg\n1 ml/kg", "2 mL/kg\n(0.2 mg/kg)"],
                         ["<b>Route", "UVC/IV/IO", "ETT*", "UVC/IV/IO"]
                     ],
-                    "notes" : "*IV or UVC route is preferred"
+                    "notes" : "*IV or UVC route is preferred\n<tab1>IV or IO Epinephrine dose range is 0.01‐0.03 mg/kg\nETT Epinephrine dose range is 0.05‐0.1 mg/kg</tab1>"
                 },
                 {
-                    "title" : "",
+                    
                     "loc" : [["acp", "first"]],
                     "dose_route" : [
                         ["<b>Drug", "Volume: Normal Saline and/or Blood as indicated"],
@@ -4336,8 +4408,52 @@
                 }
             ],
             "clinical" :
-            "<tab1>• Administration of Narcan is not recommended in the initial steps of resuscitation\n• *UVC/IV/IO route preferred. May consider giving one dose of EPINEPHrine via the tracheal tube (ET) while obtaining vascular access. If EPINEPHrine given by ET route and no response, as soon as UVC or IO access obtained do not wait 3-5 minutes after ET dose to administer IV dose\n• Preparation for Transport:\n</tab1><tab2>o Anticipate need for thermoregulation during initial steps of resuscitation, especially in premature infants < 32 weeks GA; all neonates require continuous temperature monitoring during initial resuscitation, stabilization and transport. Target normal temperatures 36.5 to 37.5 ̊C\no Following initial steps of resuscitation, target preductal oxygen saturations 90 to 95%; In neonates with suspected congenital heart disease requiring Alprostadil infusion, review preductal oxygen saturation target with TMP\no In neonates with suspected persistent pulmonary hypertension of the newborn, target preductal oxygen saturations 92% to 95%</tab2>"
+            "<tab1>• Epinephrine should be administered rapidly\n• Flush with 3ml nomal saline\n• Repeat every 3-5 minutes if heart rate remains <60\n• ETT Epinephrine: Administer ETT breaths to distribute into lungs. No flush\n• Administration of Narcan is not recommended in the initial steps of resuscitation\n• *UVC/IV/IO route preferred. May consider giving one dose of EPINEPHrine via the tracheal tube (ET) while obtaining vascular access. If EPINEPHrine given by ET route and no response, as soon as UVC or IO access obtained administer IV Epinephrine dose immediately. Do not wait 3-5 minutes after initial ET dose\n• Preparation for Transport:\n</tab1><tab2>o Anticipate need for thermoregulation during initial steps of resuscitation, especially in premature infants < 32 weeks GA; all neonates require continuous temperature monitoring during initial resuscitation, stabilization and transport. Target normal temperatures 36.5 to 37.5 ̊C\no Following initial steps of resuscitation, target preductal oxygen saturations 90% to 95%; In neonates with suspected congenital heart disease requiring Alprostadil infusion, review preductal oxygen saturation target with TMP\no In neonates with suspected persistent pulmonary hypertension of the newborn, target preductal oxygen saturations 92% to 95%</tab2>\n<tab1>• Administration of a volume expander is indicated if the baby is not responding to resuscitation and there are signs of shock or a history of acute blood loss\n• Infants in hypovolemic shock may appear pale with delayed capillary refill and /or weak pulses\n• Packed red blood cells should be considered for volume replacement when severe fetal anemia is suspected</tab1>"
         },
+        {
+            "key" : "ped_post_arrest_checklist",
+            "title" : "Post - Cardiac Arrest Care Check List",
+            "type" : "dep_document",
+            "content" :
+            [
+                    [
+                        ["<section><left><b>Oxygenation and Ventilation</b>", "<width=30>"],
+                        ["Provide continuous SpO2 monitoring and target normoxemia 94% to 99% (or child’s normal/appropriate oxygen saturation)", "<checkbox>"],
+                        ["Provide continuous EtCO2 monitoring and target PaCO2, appropriate to child’s underlying condition and limit exposure to severe hypercapnia and hypercapnia", "<checkbox>"]
+                    ],
+                    [
+                        ["<section><left><b>Hemodynamic Monitoring</b>", "<width=30>"],
+                        ["Set specific hemodynamic goals during post –cardiac arrest care; Review BP target with TMP", "<checkbox>"],
+                        ["Monitor arterial blood pressure if available", "<checkbox>"],
+                        ["Monitor serum lactate and urine output", "<checkbox>"],
+                        ["Use parental fluid bolus with or without inotropes or vasopressors to maintain a systolic blood pressure greater the 5th percentile for age", "<checkbox>"],
+                        
+                    ],
+                    [
+                        ["<section><left><b>Targeted Temperature Management</b>", "<width=30>"],
+                        ["Measure and continuously monitor <b>core</b> temperature", "<checkbox>"],
+                        ["Prevent and treat fever immediately after arrest", "<checkbox>"],
+                        ["Maintain temperature", "<checkbox>"],
+                        ["Prevent shivering", "<checkbox>"],
+                    ],
+                    [
+                        ["<section><left><b>Neuromonitoring</b>", "<width=30>"],
+                        ["Monitor closely for and treat seizures immediately", "<checkbox>"],
+                    ],
+                    [
+                        ["<section><left><b>Electrolyte and Glucose</b>", "<width=30>"],
+                        ["Monitor blood glucose and avoid hypoglycemia", "<checkbox>"],
+                        ["Maintain electrolytes within normal ranges to avoid life-threatening arrhythmias", "<checkbox>"],
+                    ],
+                    
+                    [
+                        ["<section><left><b>Sedation</b>", "<width=30>"],
+                        ["Manage with sedatives and anxiolytics", "<checkbox>"],
+                    ]
+                    
+            ]
+        },
+        
         {
             "key" : "ped_bradycardia",
             "title" : "Paediatric - Bradycardia",
@@ -5525,6 +5641,11 @@
             "type" : "webview"
         },
         {
+            "key" : "Ped - Post Arrest Checklist",
+            "title" : "Ped - Post Arrest Checklist",
+            "type" : "webview"
+        },
+        {
             "key" : "Authorization",
             "title" : "Authorization",
             "type" : "webview"
@@ -5610,6 +5731,11 @@
         {
             "key" : "Executive Airway Summary",
             "title" : "Executive Airway Summary",
+            "type" : "webview"
+        },
+        {
+            "key" : "Delivery Room Management of Premature Neonates",
+            "title" : "Delivery Room Management of Premature Neonates",
             "type" : "webview"
         }
     ]

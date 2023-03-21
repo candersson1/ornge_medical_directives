@@ -728,12 +728,12 @@
                             "key" : "ped_cp_pain"
                         },
                         {
-                            "title" : "Sedation and Pain Management for Non-Ventilated Patients",
+                            "title" : "Paediatric Analgesia: Non-Intubated Patients",
                             "type" : "menu_document_link",
                             "key" : "ped_non_intubated_sedation"
                         },
                         {
-                            "title" : "Sedation and Pain Management for Intubated and Ventilated Patients",
+                            "title" : "Analgosedation: Intubated Patients",
                             "type" : "menu_document_link",
                             "key" : "ped_intubated_sedation"
                         },
@@ -758,6 +758,7 @@
                     "title" : "Medical Cardiac Arrest and Post Resuscitation Care",
                     "type" : "menu",
                     "items" : [
+        
                         {
                             "title" : "Paediatric Non-Traumatic Cardiac Arrest: PCP(f)",
                             "type" : "menu_document_link",
@@ -772,7 +773,17 @@
                             "title" : "Neonatal Resuscitation (NRP)",
                             "type" : "menu_document_link",
                             "key" : "ped_nrp"
-                        }
+                        },
+                        {
+                            "title" : "Post - Cardiac Arrest Care Check List",
+                            "type" : "menu_document_link",
+                            "key" : "ped_post_arrest_checklist"
+                        },
+                        {
+                            "title" : "Delivery Room Management of Premature Neonates",
+                            "type" : "menu_document_link",
+                            "key" : "Delivery Room Management of Premature Neonates"
+                        },
                     ]
                 },
                 {
