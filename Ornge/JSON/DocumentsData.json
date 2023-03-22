@@ -4563,14 +4563,14 @@
                 }
             ],
             "clinical" :
-            "<tab1>• Not applicable</tab1>"
+            "<tab1>• If administering KCL in maintenance infusion, ensure K is < 5 and patient passing urine</tab1>"
         },
         {
             "key" : "ped_io_initiate",
             "title" : "Paediatric - Intraosseous Initiation and Maintenance",
             "type" : "directive",
             "indications" : "<tab1>• Inadequate intravenous access for resuscitation\n• Unable to obtain intravenous access after two (2) attempts or 90 seconds</tab1>",
-            "contraindications" : "<tab1>• Known or suspected fracture of affected limb\n• Known or suspected injury, deformity, or infection overlying the proposed insertion site\n• Absence of adequate anatomic landmarks</tab1>",
+            "contraindications" : "<tab1>• Known or suspected fracture of affected limb\n• Known or suspected injury, deformity, or infection overlying the proposed insertion site\n• Absence of adequate anatomic landmarks\n• Inability to identify anatomical landmarks</tab1>",
             "drug_cards" : [
                 {
                     "loc" : [["acpl", "after"]],
@@ -4578,7 +4578,7 @@
                 }
             ],
             "clinical" :
-            "<tab1>• If the patient has hypovolemic shock, extensive burns, or major trauma but not in cardiac arrest or pre-arrest state, attempt to contact the TMP prior to using the IO device\n• For neonates < 10 days of age and less than 3 kg, consider UVC Insertion\n• Paediatric IOs can be placed in the proximal and distal tibia, distal femur and the humerus</tab1><tab2>\no Choosing the site is based on ability to landmark\no Issue with choosing the humerus is ability to landmark the greater tubercle in patients < 6 years old as this site is not yet well developed</tab2>"
+            "<tab1>• In neonatal patients an IO can be placed in the proximal tibia\n• For neonates < 10 days of age and less than 3 kg, consider UVC Insertion\n• Paediatric IOs can be placed in the proximal and distal tibia, distal femur and the humerus</tab1><tab2>\no Choosing the site is based on ability to identify anatomical landmark\n</tab2><tab1>• Clinical judgement should be used to determine the appropriate needle set selection based on patient anatomy, insertion site, weight and tissue depth\n• If the EZ-IO is secured especially in infant due to softer, thinner boned in this population\n• A general flush volume of 2-5 ml is recommended for infants and small children\n• Confirm IO placement by: stability of catheter, ability to aspsirate blood or marrow (inability to aspirate/withdraw blood from the catheter does not mean the insertion was unsuccessful), adequate flow rate</tab1>"
         },
         {
             "key" : "ped_io_analgesia",
@@ -4637,7 +4637,7 @@
                 }
             ],
             "clinical" :
-            "<tab1>• Management based on these results will be via patch with the Paediatric TMP\n• These tests should only be completed if absolutely essential to patient management en route and will not cause unnecessary delays in initiating transport</tab1>"
+            "<tab1>• Should be reviewed with Paediatric TMP on patch\n• Management based on these results will be via patch with the Paediatric TMP\n• Mechanically ventilated patients should have point of care samples obtained for gas interpretation and ventilation titration, if recent samples are not readily available from the sending facilitiy. Typically, samples should be taken enroute, to avoid unnecessary delays in initiating transport\n• In severe DKA patients as per algorithm to monitor gases, electrolytes and glucose</tab1>"
         },
         {
             "key" : "ped_invasive_monitoring",
@@ -4659,7 +4659,7 @@
             "key" : "ped_seizure",
             "title" : "Paediatric - Seizures",
             "type" : "directive",
-            "indications" : "Active seizure",
+            "indications" : "• Active seizure",
             "flowchartkeys" : [["Neonatal Seizure", "ped_seizure_0"], ["Paediatric Seizure", "ped_seizure_1"]],
             "contraindications" : "• If blood glucose < 3 mmol/L, proceed with “Hypoglycemic Emergencies”. Concurrently, medicate with a benzodiazepine (as stated below) for treatment of seizure\n• Allergy or sensitivity to the medication",
             "drug_cards" : [
@@ -4667,7 +4667,8 @@
                     "title" : "<b>Midazolam (Versed)</b>",
                     "drugKey" : "midazolam",
                     "loc" : [["acpl", "after"]],
-                    "dose_route" : [["0.1 mg/kg IV/IO (MAX 4 mg)","0.2 mg/kg IM (MAX 5 mg)"]]
+                    "dose_route" : [["<center>0.1 mg/kg IV/IO (MAX 4 mg)\nOR\n0.2 mg/kg IN/IM (MAX 5 mg)*</center>"]],
+                    "notes" : "* Dose limit for intranasal (IN) is 2.5 mg/2.5 ml per nostril"
                 },
                 {
                     "title" : "<b>Midazolam (Versed)</b>",
@@ -4676,6 +4677,14 @@
                     "dose_route" : [["For <b>Status Epilepticus</b>"],
                     ["Midazolam bolus: 0.15 mg/kg/dose IV/IO"],
                     ["Midazolam infusion: initiate at 50 microgram/kg/hour q 5 min to a MAX of 1400 microgram/kg/hour\nBolus with 0.15 mg/kg/dose to MAX of 4 mg/dose IV/IO prior to each titration"]]
+                },
+                {
+                    "title" : "<b>Levetiracetam (Keppra)</b>",
+                    "drugKey" : "levetiracetam",
+                    "loc" : [["ccp", "first"]],
+                    "dose_route" : [
+                    
+                    ["<center>60 mg/kg/dose IV/IO MAX 3000 mg/dose\nInfuse over 5 minutes</center>"]]
                 },
                 {
                     "title" : "<b>LORazepam (Ativan)</b>",
@@ -4712,7 +4721,38 @@
                 }
             ],
             "clinical" :
-            "• If the seizure is not terminated within five 5 minutes of administration of Midazolam, <b>AND</b> the ACP(f), CCP is unable to establish contact with the TMP, a repeat dose of Midazolam (0.1 mg/kg IV) may be administered\n• Fosphenytoin is the preferred drug over phenyTOIN due to its’ enhanced safety profile, should be given in preference <u>if available</u>\n• Following benzodiazepine administration in the seizure algorithm, Fosphenytoin and/or phenyTOIN are the preferred seizure medications in Paediatrics > 1 month\n• 0.2 micron filter must be used when administering phenyTOIN\n• No micron filter is required to administer Fosphenytoin\n• Fosphenytoin/ phenyTOIN should not be used with a diagnosis of toxic ingestion or in the setting of a cardiac conduction system disturbance\n• Consider reducing the rate of phenyTOIN administration to 25 mg/min in children with cardiac conditions"
+            "• If the seizure is not terminated within five 5 minutes of administration of Midazolam, <b>AND</b> the ACP(f), CCP is unable to establish contact with the TMP, a repeat dose of Midazolam (0.1 mg/kg IV) may be administered\n• Seizures lasting longer than 5 minutes are unlikely to stop spontaneously. The longer seizures continue the more difficult they are to abort with medications\n• Fosphenytoin is the preferred medication over PhenyTOIN due to its enhanced safety profile and should be given in preference if available\n• 0.2 micron filter must be used when administering phenyTOIN\n• No micron filter is required to administer Fosphenytoin\n• Fosphenytoin/ phenyTOIN should not be used with a diagnosis of toxic ingestion or in the setting of a cardiac conduction system disturbance\n• Consider reducing the rate of phenyTOIN administration to 25 mg/min in children with cardiac conditions\n• If the patient is hemodynamically unstable and there is no IV access, consider placing an IO\n• Administration: Do not give undiluted. Compatible when mixed with 0.9% NaCl, D5W, & Ringer's Lactate.\n• In infants & older children:\n<tab1>o For doses < 200 mg dilute to 20mg/ml; Infuse over 15 minutes\no  For doses > 200 mg dilute to 40 mg/ml; Infuse over 15 minutes</tab1>"
+        },
+        {
+            "key": "ped_gcs",
+            "type": "dep_document",
+            "title": "Paediatric GCS",
+            "content": [
+                [
+                    ["<b>Eye Opening</b>", "<width=30>"],
+                    ["Spontaneous", "<width=30>4"],
+                    ["To speech", "<width=30>3"],
+                    ["To pain", "<width=30>2"],
+                    ["None", "<width=30>1"]
+                ],
+                [
+                    ["<b>Best Verbal Response</b>", "<width=30>"],
+                    ["Coos, babbles", "<width=30>5"],
+                    ["Irritable, cries", "<width=30>4"],
+                    ["Cries to pain", "<width=30>3"],
+                    ["Moans to pain", "<width=30>2"],
+                    ["None", "<width=30>1"]
+                ],
+                [
+                    ["<b>Best Motor Response</b>", "<width=30>"],
+                    ["Normal spontaneous movement","<width=30>6"],
+                    ["Withdraws to touch", "<width=30>5"],
+                    ["Withdraws to pain", "<width=30>4"],
+                    ["Abnormal flexion", "<width=30>3"],
+                    ["Abnormal extension", "<width=30>2"],
+                    ["None", "<width=30>1"]
+                ]
+            ]
         },
         {
             "key" : "ped_traumatic_arrest",
@@ -4753,8 +4793,8 @@
             ]
         },
         {
-            "key" : "ped_volume_replacement_non_hemorrhage",
-            "title" : "Paediatric - Volume Replacement in Non Hemorrhagic Hypovolemic Hypotension",
+            "key" : "ped_hemorrhagic_shock",
+            "title" : "Paediatric - Hemorrhagic Shock",
             "type" : "directive",
             "indications" : "<tab1>• Acute paediatric hypovolemia\n• Children exhibiting manifestations of cardiovascular compromise: delayed capillary refill time (> 3 seconds), poor peripheral pulses, pale and/or mottling, cool extremities, tachycardia\n• Hypotensive children\n• Children in cardiopulmonary arrest</tab1>",
             "contraindications" : "<tab1>• Known hypersensitivity, adverse side effects or newly presenting side effects\n• Parents refuse treatment/blood product-consult with TMP\n• Blood products when parents are known Jehovah Witness-consult with TMP</tab1>",
@@ -4771,11 +4811,139 @@
                     "loc" : [["acp", "first"]],
                     "title" : "Initiate or maintain the administration of blood and/or blood products as per Ornge Policy",
                     "dose_route" : [
-                        ["<b>Fresh Frozen Plasma</b>", "10-20 mL/kg IV/IO", "Give over 30 min for known coagulopathy or evidence of DIC"],
-                        ["<b>PRBC (O negative or cross-matched)</b>", "10-20 mL/kg IV/IO", "May repeat up to a MAX of 40 mL/kg IV/IO"]
+                        ["<b>Fresh Frozen Plasma(FP)</b>", "10-20 mL/kg IV/IO", "Give over 30 min for known coagulopathy or evidence of DIC"],
+                        ["<b>Prothrombin Complex Concentrate (PCC – Octaplex)</b>", "25 IU/kg (round to closest 500 units – MAX 200 IU)", "Substitute for coagulation factor replacement when FP NA"],
+                        ["<b>RBC (O negative or cross-matched)</b>", "10-20 mL/kg IV/IO", "May repeat up to a MAX of 40 mL/kg IV/IO"],
+                        ["Platelets (Plt)", "10-20 ml/kg IV/IO", "Transfusion Threshold - Platelets < 50 X 10⌃9/L"]
                     ]
                 }
             ]
+        },
+        {
+            "key" : "ped_mhp",
+            "title" : "Paediatric - Massive Hemorrhage Protocol",
+            "type" : "directive",
+            "indications" : "<tab1>• Obvious critical bleeding\n• Acute paediatric hemorrhagic shock\n• Poor BP response to fluids administration</tab1>",
+            "contraindications" : "<tab1>• Patient has not been transfused with up to 20ml/kg of RBC. Re-evaluate need for MHP after 20ml/kg.\n• Known hypersensitivity, adverse side effects or newly presenting side effects\n• Parents refuse treatment/blood product-consult with TMP\n• Blood products when parents are known Jehovah’s Witness-consult with TMP</tab1>",
+            "treatment" : "<tab1>• Rapidly control hemorrhage (direct pressure, tourniquet, etc.).\n• Obtain IV/IO access\n• Tranexamic acid (TXA) administration\n• Infuse all “pack 1” RBC’s (20 ml/kg/dose) BEFORE “Pack 2” products, UNLESS lab results direct otherwise\n• Limit use of crystalloids (max 20ml/kg > then RBC)\n• Administer Calcium according to dosing regimen noted below\n• Keep patient core temperatures above 36°C\n• Collect MHP/trauma labs including iSTAT\n• Reverse anticoagulation if applicable\n• Initiate transport for definitive bleeding control</tab1>",
+            
+            "clinical" : "",
+            "drug_cards" : [
+                {
+                    "loc" : [["acp", "after"]],
+                    "title" : "<b>Tranexamic Acid (TXA)</b>",
+                    "dose_route" : [
+                        ["<center>15-30 mg/kg (max 2g) IV/IO loading dose (over 1-2 minutes)*</center>"]
+                    ],
+                    "notes": "* Discuss the need for additional TXA due to persistent hemorrhage witht the TMP"
+                },
+                {
+                    "loc" : [["acp", "first"]],
+                    "title" : "<b>MHP Pack 1 Administration*</b>",
+                    "dose_route" : [
+                        [">40 kg", "4 units RBC (O negative or cross-matched)"],
+                        ["31-40 kg", "3 units RBC (O negative or cross-matched)"],
+                        ["10-30 kg*", "2 units RBC (O negative or cross-matched)"],
+                        ["< 10 kg*", "1 unit RBC (O negative or cross-matched)"],
+                        ["* < 30 kg: Infuse no more than 10-20 ml/kg at one time"]
+                    ],
+                    "notes":"* Refer to the blood product administration medical directive for further guidance on product admin"
+                },
+                {
+                    "loc" : [["acp", "first"]],
+                    "title" : "<b>Calcium Gluconate 10% (100 mg/mL)</b>",
+                    "dose_route" : [
+                        ["<center>60 mg/kg (0.6 mL/kg) IV/IO slow push (over 10-20 seconds)\nMaximum dose 3 grams</center>"]
+                    ]
+                    
+                },
+                {
+                    "section" : "OR",
+                    "loc" : [["acp", "first"]],
+                    "title" : "<b>Calcium Chloride 10% (100 mg/mL)</b>",
+                    "dose_route" : [
+                        ["<center>20mg/kg IV/IO slow push (over 10-20 seconds) (0.2 mL/kg)\nMaximum dose 1 gram</center>"]
+                        ]
+                    
+                    
+                },
+                {
+                    "section" : "OR",
+                    "loc" : [["acp", "none"]],
+                    "title" : "<b>Re-assess q 30-60 minutes</b>",
+                    "dose_route" : [
+                        ["• Can the MHP be discontinued\n• Can the patient be switched to lab directed transfusion\n• Monitor for complications (i.e hyperkalemia, hypothermia, and volume overload\n• Is resuscitation adequate (hemodynamics, lactate, base deficit, TBI considerations)?", "• Switch to group specific blood products when able\n• Blood samples collected q 30-60 minutes?\n• Transfusion of products adjusted?\n• Core temp > 36°C?\n• Calcium administered after each RBC equivalent of one pack transfused"]
+                        ]
+                },
+                {
+                    "loc" : [["acp", "first"]],
+                    "title" : "<b>MHP Pack 2 Administration</b>\nRBC=Red Blood Cell, FP = Frozen Plasma, FBGN = Fibrinogen",
+                    "dose_route" : [
+                        [">40 kg", "4 units RBC", "4 units FP", "4g FBGN"],
+                        ["31-40 kg", "3 units RBC", "3 units FP", "2g FBGN"],
+                        ["10-30 kg*", "2 units RBC", "2 units FP", "2g FBGN"],
+                        ["< 10 kg*", "1 unit RBC", "1 unit FP", "1g FBGN"],
+                        ["* < 30 kg: Infuse no more than 10-20 ml/kg at one time"]
+                    ],
+                    "notes":"Note: Calcium Administered after each RBC equivalent of ne pack transfused"
+                },
+                {
+                    "loc" : [["acp", "first"]],
+                    "title" : "<b>Fibrinogen</b>",
+                    "dose_route" : [
+                        ["<center>Fibrinogen concentrate 50mg/kg\nMAX 4g if > 30 kg\nMAX 2g if < 30 kg</center>"]
+                    ]
+                },
+                {
+                    "loc" : [["acp", "first"]],
+                    "title" : "<b>Calcium Gluconate or Calcium Chloride</b>",
+                    "dose_route" : [
+                        ["<center>Repeat calcium administration after each RBC equivalent of one pack transfused\nOR\nFor ionized calcium < 1.15 mmol/L</center>"]
+                    ]
+                },
+                {
+                    "loc" : [["acp", "first"]],
+                    "title" : "<b>MHP Pack 3 Administration</b>\nRBC=Red Blood Cell, FP = Frozen Plasma, FBGN = Fibrinogen PLT = Platelet\nPacks 2+ adjust RBC:FP ratio 2:1 (wt based dosing)",
+                    "dose_route" : [
+                        [">40 kg", "4 units RBC", "2 units FP", "1 unit PLT"],
+                        ["31-40 kg", "3 units RBC", "2 units FP", "1 unit PLT"],
+                        ["10-30 kg*", "2 units RBC", "1 unit FP", "1 unit PLT"],
+                        ["< 10 kg*", "1 unit RBC", "1 unit FP", "1 unit PLT"],
+                        ["* < 30 kg: Infuse no more than 10-20 ml/kg at one time"]
+                    ],
+                    "notes":"Note: Calcium Administered after each RBC equivalent of ne pack transfused"
+                },
+                {
+                    "loc" : [["acp", "first"]],
+                    "title" : "<b>Calcium Gluconate or Calcium Chloride</b>",
+                    "dose_route" : [
+                        ["<center>Repeat calcium administration after each RBC equivalent of one pack transfused\nOR\nFor ionized calcium < 1.15 mmol/L</center>"]
+                    ]
+                },
+                {
+                    "loc" : [["acp", "first"]],
+                    "title" : "<b>MHP Pack 4 Administration</b>\nRBC=Red Blood Cell, FP = Frozen Plasma, FBGN = Fibrinogen PLT = Platelet\nPacks 2+ adjust RBC:FP ratio 2:1 (wt based dosing)",
+                    "dose_route" : [
+                        [">40 kg", "4 units RBC", "2 units FP"],
+                        ["31-40 kg", "3 units RBC", "2 units FP"],
+                        ["10-30 kg*", "2 units RBC", "1 unit FP"],
+                        ["< 10 kg*", "1 unit RBC", "1 unit FP"],
+                        ["* < 30 kg: Infuse no more than 10-20 ml/kg at one time"]
+                    ]
+                },
+                {
+                    "section":"<b>Clinical Considerations/Notes:</b>",
+                    "loc" : [["nil", "nil"]],
+                    "title" : "<b>Laboratory Infusion Thresholds</b>",
+                    "dose_route" : [
+                        ["<center><b>Value</b></center>", "<center><b>Transfuse</b></center>"],
+                        ["<center>Hgb < 80 g/L</center>", "<center>RBC 20 ml/kg</center>"],
+                        ["<center>INR ≥ 1.8</center>", "<center>FP 10-20 ml/kg per dose</center>"],
+                        ["<center>Fibrinogen < 1.5 g/L</center>", "<center>Fibrinogen concentrate 50mg/kg (max 4g (max 2g if < 30 kg</center>"],
+                        ["<center>Platelets < 50 X 10⌃9/L</center>", "<center>Platelets 10ml/kg per dose</center>"]
+                    ]
+                },
+                ]
         },
         {
             "key" : "ped_cardiovascular_support",
@@ -4783,22 +4951,15 @@
             "type" : "directive",
             "indications" : "<tab1>• Exhibiting manifestations of cardiovascular compromise, delayed capillary refill (> 3 seconds), poor peripheral pulses, mottling/pale, cool extremities</tab1>",
             "contraindications" : "<tab1>• Allergy or sensitivity to the medication</tab1>",
-            "clinical" : "<tab1>• Patient must be on a cardio-respiratory monitor, with frequent blood pressure monitoring\n• Titrate infusions to keep Systolic BP > 70 + (age x 2) or Systolic BP as per Paediatric TMP order\n• Refer to Medication Information section for Medication Infusion Rate Charts</tab1>",
+            "clinical" : "<tab1>• Patient must be on a cardio-respiratory monitor, with frequent blood pressure monitoring\n• Titrate infusions to keep Systolic BP ≥ 70 + (age x 2) or Systolic BP as per Paediatric TMP order\n• Refer to Medication Information section for Medication Infusion Rate Charts</tab1>",
             "drug_cards" : [
-                {
-                    "loc" : [["acpl", "after"]],
-                    "drugKey" : "dopamine",
-                    "title" : "<b>DOPamine (Intropin)</b>",
-                    "dose_route" : [
-                        ["< 40 kg", "5-10 microgram/kg/min IV/IO"]
-                    ]
-                },
+
                 {
                     "drugKey" : "epinephrine",
                     "loc" : [["ccp", "after"]],
                     "title" : "<b>EPINEPHrine (Adrenalin)</b>",
                     "dose_route" : [
-                        ["< 40 kg", "0.05-0.3 microgram/kg/min IV/IO"]
+                        ["<center>< 40 kg</center>", "<center>0.05-0.3 microgram/kg/min IV/IO</center>"]
                     ]
                 },
                 {
@@ -4807,7 +4968,15 @@
                     "loc" : [["acp", "first"]],
                     "title" : "<b>Norepinephrine (Levophed)</b>",
                     "dose_route" : [
-                        ["< 40 kg", "0.05-0.3 microgram/kg/min IV/IO"]
+                        ["<center>< 40 kg</center>", "<center>0.05-0.3 microgram/kg/min IV/IO</center>"]
+                    ]
+                },
+                {
+                    "drugKey" : "dopamine",
+                    "loc" : [["acpl", "after"]],
+                    "title" : "<b>DOPamine (Intropin)</b>",
+                    "dose_route" : [
+                        ["<center>< 40 kg</center>", "<center>5-20 microgram/kg/min IV/IO</center>"]
                     ]
                 }
             ]
@@ -4818,14 +4987,14 @@
             "type" : "directive",
             "indications" : "<tab1>• Restoration of circulation temporarily, during paediatric PERI-ARREST and shock states presenting with severe hypotension and/or bradycardia for ages</tab1>",
             "contraindications" : "<tab1>• Patients receiving chest compressions\n• Patients in cardiac arrest</tab1>",
-            "clinical" : "<tab1>• During CARDIAC ARREST <b>only</b> a dose <b>10 mcg/kg</b> of Epinephrine 1: 10 000 (100 mcg/ml) <b>Pre-loaded syringe</b> (1 mg/10 ml) should be used\n• Types of critically ill patients in whom Epinephrine 1: <b>100</b> 000 may be considered include:</tab1><tab2>\no Acute Hypotension in severe shock states\no Heart Disease (e.g. unstable coronary perfusion, cardiomyopathy, heart failure, myocarditis) Prior to intubation in patients with shock\no Patients on Epinephrine infusions >0.5 mcg/kg/min</tab2><tab1>\n• Epinephrine 1: <b>100</b> 000 allows for restoration of circulation temporarily and avoids tachycardia and vasoconstriction that can occur with CARDIAC ARREST doses (10 mcg/kg)\n• Epinephrine 1: <b>100</b> 000 may provide temporary stabilization while other therapies are added or adjusted/titrated\n• Delivered as a concentration of Epinephrine 1: <b>100</b> 000 ( 10 micrograms/ml) which is equal to a dose volume of 0.<b>1</b> ml/kg/dose</tab1>\n<title>Preparation of Epinephrine 1: 100 000</title><tab1>\n1. Using a 10 ml syringe, draw 100 microgram (i.e. 1 ml of 1: 10 000) EPINEPHrine and dilute in 9 ml of Normal Saline.</tab1>",
+            "clinical" : "<tab1>• During CARDIAC ARREST <b>only</b> a dose <b>10 mcg/kg</b> of Epinephrine 1: 10 000 (100 mcg/ml) <b>Pre-loaded syringe</b> (1 mg/10 ml) should be used\n• Types of critically ill patients in whom Epinephrine 1: <b>100</b> 000 may be considered include:</tab1><tab2>\no Acute Hypotension in severe shock states\no Heart Disease (e.g. unstable coronary perfusion, cardiomyopathy, heart failure, myocarditis) Prior to intubation in patients with shock\no Patients on Epinephrine infusions >0.5 mcg/kg/min</tab2><tab1>\n• Epinephrine 1: <b>100</b> 000 allows for restoration of circulation temporarily and avoids tachycardia and vasoconstriction that can occur with CARDIAC ARREST doses (10 mcg/kg)\n• Epinephrine 1: <b>100</b> 000 may provide temporary stabilization while other therapies are added or adjusted/titrated\n• Delivered as a concentration of Epinephrine 1: <b>100</b> 000 ( 10 micrograms/ml) which is equal to a dose volume of 0.<b>1</b> ml/kg/dose</tab1>\n<title>Preparation of Epinephrine 1: 100 000</title><tab1>\n1. Using a 10 ml syringe, draw 100 microgram 1mg/ml (i.e. 1 ml of 1: 10 000/100mg/ml) EPINEPHrine and dilute in 9 ml of Normal Saline.</tab1>",
             "drug_cards" : [
                 {
                     "loc" : [["ccp", "first"]],
                     "drugKey" : "epinephrine",
                     "title" : "<b>EPINEPHrine 10 mcg/ml (1: 100 000)</b>",
                     "dose_route" : [
-                        ["1 mcg/kg/dose (0.1 ml/kg/dose) IV/IO\nMay repeat q 5 minutes\nTarget SBP > 70 + (2x age in years)"]
+                        ["<center>0.5 - 1 mcg/kg/dose IV/IO\nMAX Dose 20 mcg\nMay repeat q 5 minutes\nTarget SBP > 70 + (2x age in years)</center>"]
                     ]
                 }
             ]
@@ -4837,7 +5006,7 @@
             "flowchartkeys" : [["Flowchart", "ped_sepsis_flowchart"]],
             "indications" : "<tab1>• Cardiovascular dysfunction (hypotension [SBP < 70 + (2x age)], prolonged capillary refill, oliguria, metabolic acidosis, elevated arterial lactate)\n• Hemodynamic abnormalities persist despite > 40 mL/kg of fluid in one hour\n• GCS < 11</tab1>",
             "contraindications" : "<tab1>• Allergy or sensitivity to the medication</tab1>",
-            "clinical" : "<tab1>• Paediatrics are seldom in a pure warm shock state; Norepinephrine is <u>rarely</u> used as first line agent\n• Norepinephrine is for patients who are <b>CLEARLY</b> in warm shock state (wide pulse pressure, warm extremities, bounding pulses, brisk CRT)\n• Children are often significantly hypovolemic (from not keeping up with insensibles & 3rd spacing; especially infants who don't control their intake), therefore have a component of cold (vasoconstricted shock), myocardial dysfunction (occurs earlier in sepsis in paediatrics) and therefore an element of cardiogenic shock (cold shock)\n• Prepare 2nd line inotropes early\n<b>• Monitor peripheral infusions of Epinephrine & Norepinephrine > 0.05 mcg/kg/min closely for signs of extravasation.</b> In profound hypotension, infusions may be titrated > 0.1 mcg/kg/min, but <b>this is not optimal in peripheral IV sites and should be discussed with Paediatric TMP</b>\n• Physiologic indicators and target goals: strong distal pulses equal to central pulses, warm peripheries with CRT < 2 seconds, improved GCS (normal mental status), urine output > 1 ml/kg/hr, BP although not in itself a reliable endpoint for resuscitation, systolic BP 60 mmHg in infants , 1 month old; 70 mmHg + (2 x age in years) in children 1 month to 10 years of age; 90mm Hg in children 10 years of age or older\n• Vancomycin can be added by TMP based on severity of infection and risk factors in catchment area. Vancomycin should not be given without a patch</tab1>",
+            "clinical" : "<tab1>• Recognition of Severe Sepsis:</tab1>\n<tab2>• Fever (> 38.0 C) or hypothermia (<36.0 C)\n• Signs of infection (cough/chest pain/respiratory distress; abdominal pain/distention/vomiting/diarrhea, skin/joint pain/swelling/rash, decreased feeding, decreased urine output\n• Tachycardia, capillary refill >2 seconds, cold extremities, decreased urine output, SpO2 < 94%, mottled skin\n• Mental status changes (confusion, lethargy, inconsolability)</tab2>\n<tab1>• Initial management should include:</tab1>\n<tab2>• IV access X2; IO access if 2 failed IV attempts\n• May use IO to obtain blood samples\n• Administer fluid boluses Normal Saline 20 ml/kg IV over 5-10 minutes (reassess HR, RR, BP, perfusion, SpO2 (Palpate for hepatomegaly, auscultate for crackles)\n• Consider cardiogenic shock if deterioration after fluid boluses</tab2>\n<tab1>• Paediatrics are seldom in a pure warm shock state; Norepinephrine is <u>rarely</u> used as first line agent\n• Norepinephrine is for patients who are <b>CLEARLY</b> in warm shock state (wide pulse pressure, warm extremities, bounding pulses, brisk CRT)\n• Children are often significantly hypovolemic (from not keeping up with insensibles & 3rd spacing; especially infants who don't control their intake), therefore have a component of cold (vasoconstricted shock), myocardial dysfunction (occurs earlier in sepsis in paediatrics) and therefore an element of cardiogenic shock (cold shock)\n• Prepare 2nd line inotropes early\n<b>• Monitor peripheral infusions of Epinephrine & Norepinephrine > 0.05 mcg/kg/min closely for signs of extravasation.</b> In profound hypotension, infusions may be titrated > 0.1 mcg/kg/min, but <b>this is not optimal in peripheral IV sites and should be discussed with Paediatric TMP</b>\n• Physiologic indicators and target goals: strong distal pulses equal to central pulses, warm peripheries with CRT < 2 seconds, improved GCS (normal mental status), urine output > 1 ml/kg/hr, BP although not in itself a reliable endpoint for resuscitation, systolic BP 60 mmHg in infants , 1 month old; 70 mmHg + (2 x age in years) in children 1 month to 10 years of age; 90mm Hg in children 10 years of age or older\n• Vancomycin can be added by TMP based on severity of infection and risk factors in catchment area. Vancomycin should not be given without a patch</tab1>",
             "drug_cards" : [
                 {
                     "loc" : [["acpl", "none"]],
@@ -4856,15 +5025,6 @@
                 },
                 {
                     "section" : "<b>Fluid Refractory COLD Shock</b>",
-                    "loc" : [["acp", "after"]],
-                    "drugKey" : "dopamine",
-                    "title" : "<b>DOPamine (Intropin)</b>",
-                    "dose_route" : [
-                        ["5-10 microgram/kg/min IV/IO\nTarget SBP >70 + (2 x age)"]
-                    ]
-                },
-                {
-                    "section" : "OR",
                     "loc" : [["ccp", "after"]],
                     "drugKey" : "epinephrine",
                     "title" : "<b>EPINEPHrine (Adrenalin)</b>",
@@ -4872,6 +5032,16 @@
                         ["0.05-0.3 microgram/kg/min IV/IO\nTarget SBP >70 + (2 x age)"]
                     ]
                 },
+                {
+                    "section" : "OR",
+                    "loc" : [["acp", "after"]],
+                    "drugKey" : "dopamine",
+                    "title" : "<b>DOPamine (Intropin)</b>",
+                    "dose_route" : [
+                        ["5-20 microgram/kg/min IV/IO\nTarget SBP >70 + (2 x age)"]
+                    ]
+                },
+
                 {
                     "section" : "<b>Fluid Refractory WARM Shock</b>",
                     "loc" : [["acp", "after"]],
@@ -5736,6 +5906,11 @@
         {
             "key" : "Delivery Room Management of Premature Neonates",
             "title" : "Delivery Room Management of Premature Neonates",
+            "type" : "webview"
+        },
+        {
+            "key" : "Pediatric - Trauma",
+            "title" : "Paediatric - Trauma",
             "type" : "webview"
         }
     ]

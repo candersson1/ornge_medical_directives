@@ -855,6 +855,16 @@
                     "type" : "menu",
                     "items" : [
                         {
+                            "title" : "Paediatric Trauma",
+                            "type" : "menu_document_link",
+                            "key" : "Pediatric - Trauma"
+                        },
+                        {
+                            "title" : "Paediatric GCS",
+                            "type" : "menu_document_link",
+                            "key" : "ped_gcs"
+                        },
+                        {
                             "title" : "Paediatric Traumatic Cardiac Arrest",
                             "type" : "menu_document_link",
                             "key" : "ped_traumatic_arrest"
@@ -865,9 +875,14 @@
                             "key" : "ped_tbi"
                         },
                         {
-                            "title" : "Volume Replacement in Non Hemorrhagic Hypovolemic Hypotension",
+                            "title" : "Hemorrhagic Shock",
                             "type" : "menu_document_link",
-                            "key" : "ped_volume_replacement_non_hemorrhage"
+                            "key" : "ped_hemorrhagic_shock"
+                        },
+                        {
+                            "title" : "Massive Hemorrhage Protocol",
+                            "type" : "menu_document_link",
+                            "key" : "ped_mhp"
                         },
                         {
                             "title" : "Cardiovascular Support",
