@@ -3639,7 +3639,7 @@
         {
             "key" : "ped_rsi",
             "title" : "Paediatric - Pre-Intubation and Intubation Medications",
-            "flowchartkeys" : [["Algorhythm", "ped_universal_airway"], ["Setup", "ped_intubation_positioning"], ["Approach", "ped_intubation_types"]],
+            "flowchartkeys" : [["Algorhythm", "ped_universal_airway"], ["Setup", "ped_intubation_positioning"]],
             "type" : "directive",
             "indications" : "<tab1>• All Intubation attempts in paediatric patients older than newborn\n• Newborn infants should be intubated preferably using Atropine, Fentanyl and Succinylcholine</tab1>",
             "contraindications" : "<tab1>• Allergy or sensitivity to the medication</tab1>",
@@ -5074,10 +5074,19 @@
                 {
                     "section" : "Consider for motion sickness",
                     "drugKey" : "dimenhydrinate",
-                    "loc" : [["pcp", "after"]],
+                    "loc" : [["pcp", "none"]],
                     "title" : "<b>dimenhyDRINATE (Gravol)</b>",
                     "dose_route" : [
-                        ["< 40 kg", "1 mg/kg IM/PO\nTo a MAX of 40 mg"]
+                        ["<center>< 40 kg</center>", "<center>1 mg/kg IM/PO\nTo a MAX of 40 mg</center>"]
+                    ]
+                },
+                {
+                    "section" : "OR",
+                    "drugKey" : "ondansetron",
+                    "loc" : [["pcp", "none"]],
+                    "title" : "<b>Ondansetron (Zofran)</b>",
+                    "dose_route" : [
+                        ["<center>> 25 kg</center>", "<center>4 mg PO x 1</center>"]
                     ]
                 },
                 {
@@ -5086,16 +5095,16 @@
                     "loc" : [["acp", "after"]],
                     "title" : "<b>Ondansetron (Zofran)</b>",
                     "dose_route" : [
-                        ["< 40 kg", "0.1 mg/kg\n(MAX 4 mg)", "Oral dose > 6 months\n0.15 mg/kg/dose PO x 1 dose\n8-15 kg: 2 mg\n15-30 kg: 4 mg\n>30 kg: 8 mg"]
+                        ["<center>< 40 kg</center>", "<center>0.1 mg/kg\n(MAX 4 mg)</center>", "<center>Oral dose ≥ 6 months\n8 to ≤ 15 kg: 2mg PO x 1 dose\n≥ 15 to < 30 kg: 4 mg PO x 1 dose\n≥30 kg: 8 mg PO 1 x dose</center>"]
                     ]
                 },
                 {
                     "section" : "OR",
-                    "drugKey" : "ondansetron",
+                    "drugKey" : "dimenhydrinate",
                     "loc" : [["acpl", "none"]],
                     "title" : "<b>dimenhyDRINATE (Gravol)</b>",
                     "dose_route" : [
-                        ["< 40 kg", "1 mg/kg IV\n(MAX 40 mg)", "Give SLOW IV push to prevent vertigo, weakness and dizziness"]
+                        ["<center>< 40 kg</center>", "<center>1 mg/kg IV\n(MAX 40 mg)</center>", "<center>Give SLOW IV push to prevent vertigo, weakness and dizziness</center>"]
                     ]
                 }
             ]
@@ -5104,9 +5113,9 @@
             "key" : "ped_gastric_tubes",
             "title" : "Paediatric - Gastric (NG or OG) Tubes",
             "type" : "directive",
-            "indications" : "<tab1>• Actual or anticipated need to evacuate gastric contents in bowel obstructions\n• Intubated and ventilated patients</tab1>",
+            "indications" : "<tab1>• Actual or anticipated need to evacuate gastric contents in bowel obstructions\n• Intubated and ventilated patients\n• Neonates and infants receiving NIV by nasal prongs or nasal mas</tab1>",
             "contraindications" : "<tab1>• Patients presenting with facial fracture or suspected basal skull fracture should not have a nasogastric tube inserted</tab1>",
-            "clinical" : "<tab1>• A nasal or oral gastric tube should be placed prior to transport whenever possible with unresponsive paediatric patients</tab1>",
+            "clinical" : "<tab1>• A nasal or oral gastric tube should be placed prior to transport whenever possible with unresponsive paediatric patients\n• Ensure NG or OG tubes are placed prior to x-rays to confirm appropriate placement\n• Ensure largest bore NG or OG tubes for age are appropriately inserted in paediatric patients with abdominal distension and/or suspected bowel obstruction; NGT or OGT should be open to straight drainage and/or aspirated at regular intervals during transport</tab1>",
             "drug_cards" : [
                 {
                     "loc" : [["acp", "none"]],
@@ -5118,7 +5127,7 @@
         },
         {
             "key" : "ped_esophageal_probe",
-            "title" : "Paediatric - Esophageal Temperature Probes",
+            "title" : "Paediatric - Invasive Temperature Monitoring",
             "type" : "directive",
             "indications" : "<tab1>• Continuous monitoring of core body temperature for any intubated patient with a temperature outside normal range (36 to 37˚C)\n• Temperature monitoring during active rewarming measures\n• Continuous monitoring may be ordered by the TMP at their discretion</tab1>",
             "contraindications" : "<tab1>• Esophageal strictures\n• Esophageal varices\n• Esophageal perforation\n• Congenital anomalies such as tracheal esophageal fistula\n• Post-operative tonsillectomy and adenoidectomy patients\n• Facial trauma\n• Coagulopathies (review history with Paediatric TMP)\n• Patients receiving Anticoagulants. Anticoagulants include but are not limited to: unfractionated heparin IV bolus or infusion, Warfarin (Coumadin), Enoxaparin (Lovenox), or NOACs/DOACs</tab1>",
@@ -5185,15 +5194,30 @@
             "key" : "ped_anaphylaxis",
             "title" : "Paediatric - Anaphylaxis",
             "type" : "directive",
-            "indications" : "<tab1>• Confirmed or suspected history of exposure to an allergen\nAND\n• Moderate to severe allergic reaction including anaphylaxis</tab1>",
+            "indications" : "<tab1>• Confirmed or suspected history of exposure to an allergen\nAND\n• Moderate to severe allergic reaction including anaphylaxis\n• Recognition of Anaphylaxis:</tab1>\n<tab2>• Acute onset of skin changes (uticaria, erythema/flushing and/or angioedema)\n• PLUS: Respiratory +/- Cardiovascular +/- GI symptoms\nOR\n• Hypotension, Bronchospasm or Upper Airway obstruction with exposure to known allergen</tab2>",
             "contraindications" : "<tab1>• Allergy or sensitivity to the medication</tab1>",
             "drug_cards" : [
                 {
-                    "title" : "<b>EPINEPHrine (Adrenalin) (1:1000 Solution)</b>",
+                    "title" : "<b>EPINEPHrine (Adrenalin) (1mg/ml (1:1000 Solution))</b>",
                     "drugKey" : "epinephrine",
                     "loc" : [["pcp", "after"]],
                     "dose_route" : [
-                        ["< 40 kg", "IM EPINEPHrine dose:\n0.01 mg/kg\n(min 0.1 mg/dose to MAX 0.4 mg/dose)", "May repeat x 1 after 5 minutes <b>if symptoms persist</b>"]
+                        ["< 40 kg", "IM EPINEPHrine dose:\n0.01 mg/kg\n(min 0.1 mg/dose to MAX 0.5 mg/dose) in anterolateral thigh", "May repeat x 1 after 5 minutes <b>if symptoms persist</b>"]
+                    ]
+                },
+                {
+                    "title" : "",
+                    "loc" : [["nil", "nil"]],
+                    "notes": "If signs of lower airway involvement, such as wheezing, administer Salbutamol MDI or Neb (aerogen)",
+                    "dose_route" : [
+                        ["<b>Weigth(kg)</b>", "<b>Epinephrine dose (1mg/ml)</b>"],
+                        ["5-10", "0.1 mg"],
+                        ["11-15", "0.15 mg"],
+                        ["16-20", "0.2 mg"],
+                        ["21-25", "0.25 mg"],
+                        ["26-30", "0.3 mg"],
+                        ["31-35", "0.35 mg"],
+                        ["36-40", "0.4 mg"],
                     ]
                 },
                 {
@@ -5208,19 +5232,18 @@
                     "drugKey" : "salbutamol",
                     "loc" : [["pcp", "after"]],
                     "dose_route" : [
-                        ["< 10 kg", "1.25 mg* (0.5 mL)"],
-                        ["10-20 kg", "2.5 mg* (1.0 mL)\nRepeat q 30 minutes - 4 hours prn"],
+                       
+                        ["< 20 kg", "2.5 mg* (1.0 mL)\nRepeat q 30 minutes - 4 hours prn"],
                         ["> 20 kg", "5 mg* (2.0 mL)\nRepeat q 30 minutes - 4 hours prn"]
                     ],
-                    "notes" : "* Dilute salbutamol dose to 3 mL in normal saline; dose limit of added saline: MAX 1 mL/dose"
+                    "notes" : "* Dilute salbutamol dose to 3 mL in normal saline; dose limit of added saline: MAX 1 mL/dose\n* Never administer the IM preparation of EPINEPHrine (1 mg/ml) IV/IO route\n* *Never give IV EPINEPHrine bolus dose for initial anaphylaxis management\n\nEPINEPHrine Auto-injector Dose: 0.15 mg (EpiPen Junior) weight 5 to 20 kg\nEpinephrine Auto-injector Dose: 0.3 mg (EpiPen) weight 21- > 46 kg"
                 },
                 {
-                    "title" : "<b>Salbutamol (Ventolin) via MDI</b>\n100 microgram / puff",
+                    "title" : "<b>Salbutamol (Ventolin) via MDI</b>\n(100 microgram / puff) with Aerochamber",
                     "drugKey" : "salbutamol",
-                    "loc" : [["pcp", "after"]],
+                    "loc" : [["pcp", "none"]],
                     "dose_route" : [
-                        ["Less than 20 kg", "4 puffs (400 microgram) q 15-20 min x 3 doses"],
-                        ["Greater than 20 kg", "8 puffs (800 microgram) q 15-20 min x 3 doses"]
+                        ["<center>< 20 kg 5 puffs (500 microgram) x 1 reassess</center>\n<center>> 20 kg 10 puffs (1000 microgram) x 1 reassess</center>\n<center><b>Acute Asthma:</b>\n< 20 kg 5 puffs (500 microgram) q 20 min x 3 doses\n> 20 kg 10 puffs (1000 microgram)  q 20 min x 3 doses</center>"]
                     ]
                 },
                 {
@@ -5241,7 +5264,7 @@
                     ]
                 }
             ],
-            "clinical" : "<tab1>• Re-assess frequently during transport\n• After patch with Paediatric TMP, treatment may include administration of corticosteroids such as</tab1><tab2>\no <a href=\"drugKey=dexamethasone\">Dexamethasone</a> 0.3 mg/kg/dose IV/IM once daily (MAX 12 mg/dose), OR\no Hydrocortisone 5-10 mg/kg/dose IV q 6 hours (MAX 100 mg/dose), OR\no <a href=\"drugKey=methylprednisolone\">methylPREDNISolone</a> 1 mg/kg dose IV q 8 hours (MAX 60 mg/dose)</tab2><tab1>\n• If signs of hemodynamic instability, consider normal saline 20 mL/kg bolus IV for hypotension\n• <b>EPINEPHrine administration must not exceed one dose prior to patch.</b> Patch for further management\n• Patient may require EPINEPHrine infusion 0.1-1 microgram/kg/min in severe exacerbations</tab1>"
+            "clinical" : "<tab1>• Re-assess frequently during transport\n• After patch with Paediatric TMP, treatment may include administration of corticosteroids such as</tab1><tab2>\no <a href=\"drugKey=dexamethasone\">Dexamethasone</a> 0.3 mg/kg/dose IV/IM once daily (MAX 12 mg/dose), OR\no Hydrocortisone 5-10 mg/kg/dose IV q 6 hours (MAX 100 mg/dose), OR\no <a href=\"drugKey=methylprednisolone\">methylPREDNISolone</a> 1 mg/kg dose IV q 8 hours (MAX 60 mg/dose)</tab2><tab1>\n• If signs of hemodynamic instability, consider normal saline 20 mL/kg bolus IV for hypotension\n• <b>EPINEPHrine administration must not exceed one dose prior to patch.</b> Patch for further management\n• Patient may require EPINEPHrine infusion in severe exacerbations if no improvement >3 doses of IM epinephrine\n• If persistent hypotension or decrease LOC start Epinephrine infusion at 0.05 mcg/kg/min IV and titrate up by 0.05 mcg/kg/min increments to effect\n• Be prepared for potentially difficult airway</tab1>"
         },
         {
             "key" : "ped_hypoglycemia",
@@ -5290,17 +5313,18 @@
         {
             "key" : "neo_hypoglycemia",
             "title" : "Neonatal - Hypoglycemia",
+            "flowchartkeys" : [["Tx Flow", "ped_tx_of_hypoglycemia_in_the_well_newborn"]],
             "type" : "directive",
             "indications" : "<tab1>• Blood glucose < 3 mmol/L\n• Jitteriness or tremors\n• Episodes of cyanosis\n• Apneic spells\n• High pitched cry\n• Altered level of consciousness (limpless or lethargy)\n• Seizures</tab1>",
             "contraindications" : "<tab1>• Allergy or sensitivity to the medication</tab1>",
-             "clinical" : "<tab1>• Risk Factors for Hypoglycemia:</tab1><tab2>\no Prematurity (< 37 wks GA), SGA, IUGR, LGA, IDM</tab2>",
+             "clinical" : "<tab1>• Risk Factors for Hypoglycemia:</tab1><tab2>\no Prematurity (< 37 wks GA), SGA, IUGR, LGA, IDM</tab2>\n<tab1>• Inborn errors of metabolism, endocrine disorders (related to glucose homeostasis)\n• maternal treatment with beta-sympathomimetic agents (beta blockers)\n• severe hepatic dysfunction\n• Asphyxia, stress\n• Establish or increase IV infusion and calculate Glucose infusion rate (GIR)\n• Initial GIR should be 4-6 mg/kg/min\n• Glucose infusion rate: mg/kg/minute = IV rate (ml/hr) X glucose concentration mg/ml)/ weight (kg)/60 min\n• Glucose in IV fluids:</tab1>n/<tab2>D5W: 50 mg/ml\nD10W: 100 mg/ml\nD12.5W: 125 mg/ml</tab2>\n<tab1>• Can increase GIR by increasing TFI (hrly IV rate) and/or increasing Dextrose concentration in IVF</tab1>\nAt-risk infants for hypoglycemia: SGA, IUGR, LGA, IDM, GA < 37 weeks, asphyxia, maternal exposure to labetalol, late preterm antenatal steroids. Give 40% dextrose gel 0.5 mL/kg AND feed 5 mL/kg and breastfeed. Check glucose 30 min post-feed 4 OR feed 8 m. Give 40% dextrose gel 0.5 mL/kg AND feed 5 mL/kg and breastfeed Check glucose 30 min post-feed 4 OR feed 8 mL/kg and breastfeed L/kg and breastfeed",
             "drug_cards" : [
                 {
                     "title" : "<b>10% Dextrose</b>",
                     "loc" : [["acpl", "after"]],
                     "dose_route" : [
                         ["<center>Neonates\n(< 1 month)\nGlucose < 3.0 mmol/L and symptomatic</center>", "<center>0.2 gm/kg of D10W\n(2 mL/kg of D10W)</center>"],
-                        ["Increase maintenance glucose concentration to D12.5W\nRepeat blood glucose 15 minutes after interventions\nIf hypoglycemia persists increase maintenance glucose concentration to D15W.\nIV D15W can only be administered in a central line (umbilical venous catheter, PICC line)"]
+                        ["Increase maintenance glucose concentration to D12.5W\nRepeat blood glucose 20 minutes after interventions\nIf hypoglycemia persists increase maintenance glucose concentration to D15W.\nIV D15W can only be administered in a central line (umbilical venous catheter, PICC line)"]
                     ]
                 },
                 {
@@ -5360,10 +5384,10 @@
             "key" : "ped_dka",
             "title" : "Paediatric - Diabetic Ketoacidosis (DKA)",
             "type" : "directive",
-            "flowchartkeys" : [["DKA Algorithm page 1", "ped_dka_flowchart_1"], ["DKA Algorithm page 2", "ped_dka_flowchart_2"]],
+            "flowchartkeys" : [["DKA Algorithm", "ped_dka_flowchart_1"]],
             "indications" : "<tab1>• Hyperglycemia (blood glucose > 11 mmol/L) in a new or known diabetic\nAND\n• pH <7.30 and serum bicarbonate <15 mmol/L\nAND (if available)\n• Confirmed ketosis (positive ketones in blood or urine)</tab1>\n<title>Monitoring</title>\n<tab1>• Cardiorespiratory monitor and O2 saturation monitor\n• Monitoring of vital signs (HR, RR, BP) and neurovitals, q 10-15 minutes\n• Accurate intake and output q 1 hour\n• Bedside glucose q 1 hour</tab1>",
             "contraindications" : "<tab1>• Allergy or sensitivity to the medication</tab1>",
-             "clinical" : "<tab1>• All Paediatric patients < 18 years of age should be managed using the paediatric DKA algorithm</tab1>",
+             "clinical" : "<tab1>• All Paediatric patients < 18 years of age should be managed using the paediatric DKA algorithm\n• History/Handover</tab1>\n<tab2>• Clarify history of oral intake, urine output, weight loss, complaints of headache, nausea, vomiting, abdominal pain, generalized weakness and other medical conditions and current medications\n• Ask family or sending healthcare providers about any precipitating factors such as concurrent illness;\n• in patients with known diabetes, review Insulin dosages and adherence to care plan, any new medications or the possibility of pregnancy</tab2>\n<tab1>• NEVER start insulin infusion before 1st hour of IV fluids has been started\n• NEVER bolus IV insulin\n• Add 5% dextrose (D5W & 0.9% NaCl) to IV fluid once blood glucose is less than 17 mmol/L or if blood glucose is decreasing by more than 5 mmol/L/hr after Insulin infusion has started\n• Increase IV fluids to 10% dextrose (D10W & 0.9% NaCl) as required in discussion with TMP to keep blood glucose >10 mmol/L</tab1>\nPatients at RISK for Cerebral Injury include:<tab2>\n• Cerebral Injury may complicate any episode of paediatric DKA\n• Children who present with a longer duration of symptoms; patient appears unwell\n• Greater acidosis at time of presentation & hypocapnia\n• Evidence of more severe dehydration (Increased HCT, Urea)\n• Presentation in younger children (< 5 yrs old)\n• New onset diabetes</tab2>",
             "drug_cards" : [
                 {
                     "title" : "<b>0.9% Normal Saline</b>\nMAX 250 mL/hr",
@@ -5389,7 +5413,7 @@
                     "drugKey" : "3%_saline",
                     "loc" : [["acp", "first"]],
                     "dose_route" : [
-                        ["<b>Bolus:</b> 3-5 mL/kg/dose over 20 min"]
+                        ["<b>Bolus:</b> 5 mL/kg/dose (MAX 250mL) IV over 10 min"]
                     ]
                 },
                 {
@@ -5398,8 +5422,123 @@
                     "title" : "<b>Mannitol</b>",
                     "loc" : [["acp", "first"]],
                     "dose_route" : [
-                        ["<b>Bolus:</b> 0.5-1 g/kg over 20 minutes"]
+                        ["<b>Bolus:</b> 0.5‐1 g/kg (MAX 100 g) IV over 15 min"]
                     ]
+                },
+                {
+                    "title" : "",
+                    "loc" : [["nil", "nil"]],
+                    "dose_route" : [
+                        ["<center><b>Target Solution</b>\nD10W & 0.9% NaCl + 40 mmol/L KCl (1000 mL)</center>"],
+                        ["<center><b>Base Solution</b>\nD5W + 0.9 % NaCl + 40 mmol/L KCl (1000 mL)</center>"],
+                        ["<center><b>Remove this volume of Base Solution</b>\n100 ml</center>"],
+                        ["<center><b>Add this Volume of D50W</b>\n100 ml</center>"],
+                        ["<center><b>Add this Volume of 3% NaCl</b>\n0 ml</center>"],
+                        ["<center><b>Appr. Composition of final solution</b>\nD9.5W NaCl 139 mmol/L KCl 36 mmol/L</center>"],
+                        ["<center>-----------------------------</center>"],
+                        ["<center><b>Target Solution</b>\nD10W & 0.9% (500 mL)</center>"],
+                        ["<center><b>Base Solution</b>\nD5W + 0.9% NaCl (500 mL)</center>"],
+                        ["<center><b>Remove this volume of Base Solution</b>\n72 ml</center>"],
+                        ["<center><b>Add this Volume of D50W</b>\n50 ml</center>"],
+                        ["<center><b>Add this Volume of 3% NaCl</b>\n22 ml</center>"],
+                        ["<center><b>Appr. Composition of final solution</b>\nD9.3W NaCl 153 mmol/L</center>"],
+                    ]
+                }
+            ]
+        },
+        {
+            "key" : "ped_hypocalcemia",
+            "title" : "Paediatric - Hypocalcemia",
+            "type" : "directive",
+            "indications" : "<tab1>• Documented conditions:\n</tab1><tab2>  Total serum Calcium (Ca) <2 mmol/L and/or Ionized Calcium (iCa) <0.9 mmol/L\n</tab2><tab1>• Consider for the treatment of Hyperkalemia, hypomagenesia, calcium channel blocker overdose</tab1>",
+            "contraindications" : "<tab1>• Allergy or sensitivity to the medication”</tab1>",
+             "clinical" : "<tab1>• Bolus either in setting of MHP and unstable hemodynamics and/or hyperkalemia related arrhythmia\n• Rapid IV administration may cause vasodilation, hypotension, bradycardia, cardiac arrhythmias\n• Observe infusion site frequently for inflammation, phlebitis, tissue necrosis with extravasation\n• Incompatible with Ceftriaxone\n• Preference to infuse in CVL if available</tab1>\n<b> Calcium Gluconate:</b>\n<tab1>• May repeat if documented or suspected clinical indication persists (e.g. toxicologic problem)\n• Do not use routinely during resuscitation (may contribute to cellular injury)\n• Not recommended for routine treatment of asystole or PEA arrest</tab1>\n<b>Intermittent IV Infusion:</b>\n<tab1>• Dilute Calcium Gluconate 10% to Calcium Gluconate 2%\n• (Calcium Gluconate 2% = 20 mg Calcium Gluconate/mL)(see table above)</tab1>",
+            "drug_cards" : [
+                {
+                    "title" : "<b>Calcium Gluconate 10% (100 mg/ml)</b>",
+                    "drugKey" : "calcium_gluconate",
+                    "loc" : [["acp", "after"]],
+                    "dose_route" : [
+                        ["<center>60 mg/kg IV/IO slow push (over 10-20 seconds) q 10-20 minutes\n(0.6 mL/kg)\n<b>During Cardiac Arrest</b></center>"],
+                    ]
+                },
+                {
+                    "section" : "<b>OR</b>",
+                    "title" : "<b>Calcium Chloride 10% (100 mg/mL)</b>",
+                    "drugKey" : "calcium_chloride",
+                    "loc" : [["acp", "after"]],
+                    "dose_route" : [
+                        ["<center> 20mg/kg IV/IO slow push (over 10-20 seconds)\n(0.2 mL/kg) Maximum dose 2 grams\n<b>During Cardiac Arrest</b></center>"],
+                    ]
+                },
+                {
+                    "section" : "<b>Treatment for Acute Symptomatic Hypocalcemia (Intermittent IV Infusion)</b>",
+                    "title" : "<b>Calcium Gluconate 2 % (20mg/mL)</b>",
+                    "drugKey" : "calcium_gluconate",
+                    "loc" : [["acp", "after"]],
+                    "dose_route" : [
+                        ["<center>50-200 mg/kg/dose IV/IO\nInfuse over 30-60 minutes\nInfuse at a rate not to exceed 4 mg Calcium Gluconate/kg/min to a maximum of 150 mg of Calcium Gluconate/minute\nSee Reconstitution Instructions</center>"]
+                    ],
+                },
+                {
+                    "title" : "<b>Calcium Gluconate 2%\n(20 mg Calcium Gluconate/mL) Mixing</b>",
+                    "drugKey" : "calcium_gluconate",
+                    "loc" : [["nil", "nil"]],
+                    "dose_route" : [
+                        ["<center>50 ml\n 0.9% NaCl</center>", "<center>100 mL\n 0.9% NaCl</center>", "<center>250 mL\n 0.9% NaCl</center>", "<center>500 ml\n 0.9% NaCl</center>"],
+                        ["<center>Add\n1000 mg\nCalcium Gluconate</center>", "<center>Add\n2000 mg\nCalcium Gluconate</center>", "<center>Add\n5000 mg\nCalcium Gluconate</center>", "<center>Add\n10 000 mg\nCalcium Gluconate</center>"]
+                    ],
+                }
+            ]
+        },
+        {
+            "key" : "ped_hyperkalemia",
+            "title" : "Paediatric - Hyperkalemia",
+            "type" : "directive",
+            "indications" : "<tab1>• Abnormal ECG\n• Muscular weakness or paralysis\n• Serum or plasma K+ >6 mmol/l\n• Serum or plasma K+ between 6 and 7 mmol/L with ongoing risk of continued rise off K+ due to tumor lysis or major crush injury</tab1>",
+            "contraindications" : "<tab1>• Allergy or sensitivity to the medication\n• Spurious sample (blood specimen is hemolyzed)</tab1>",
+             "clinical" : "<tab1>• Assess CABs and LOC\n• Stop K+ infusions\n• Specimen hemolyzed? Consider repeat K+\n• For infants < 6 months of age, consider using 2 mL/kg/dose Sodium Bicarbonate 4.2 % 0.5 mmol/L<tab1>",
+            "drug_cards" : [
+                {
+                    "title" : "<b>Calcium Gluconate 10% (100 mg/ml)</b>",
+                    "drugKey" : "calcium_gluconate",
+                    "loc" : [["acp", "after"]],
+                    "dose_route" : [
+                        ["<center>60 mg/kg IV/IO over 5 minutes\n0.6 mL/kg diluted in equal volume of NS or D5W maximum dose 2 grams\nRepeat q 10-20 minutes for persistent ECG changes or arrhythmias</center>"],
+                    ]
+                },
+                {
+                    "section" : "<b>If patient is in cardiac arrest/peri-arrest</b>",
+                    "title" : "<b>Calcium Chloride 10% (100 mg/mL)</b>",
+                    "drugKey" : "calcium_chloride",
+                    "loc" : [["acp", "after"]],
+                    "dose_route" : [
+                        ["<center> 20mg/kg IV/IO slow push (over 10-20 seconds)\n(0.2 mL/kg) Maximum dose 2 grams\nMay Repeat in 10 minutes</center>"],
+                    ]
+                },
+                {
+                    
+                    "title" : "<b>Sodium Bicarabonate 8.4% (NaHCO3) 1 mmol/L</b>",
+                    "loc" : [["acp", "first"]],
+                    "dose_route" : [
+                        ["<center>1 mL/kg/dose IV/IO\nOver 30 minutes</center>"]
+                    ],
+                },
+                {
+                    "title" : "<b>Regular Human Insulin (10 units/mL)</b>",
+                    "drugKey" : "insulin",
+                    "loc" : [["acp", "first"]],
+                    "dose_route" : [
+                        ["<center>0.1 units/kg in 5 mL/kg D10W IV/IO\nOver 30 min</center>"]
+                    ],
+                },
+                {
+                    "title" : "<b>Salbutamol</b>",
+                    "drugKey" : "salbtamol",
+                    "loc" : [["acp", "first"]],
+                    "dose_route" : [
+                        ["<center>100mcg/puff\n< 20 kg 5 puffs q 15 min x 3\n>20 kg 10 puffs q 15 min x 3</center>"]
+                    ],
                 }
             ]
         },
@@ -5435,14 +5574,14 @@
             "type" : "directive",
             "indications" : "<tab1>• Suspected acetaminophen toxicity</tab1>",
             "contraindications" : "<tab1>• Allergy or sensitivity to the medication</tab1>",
-             "clinical" : "<tab1>• Mandatory Patch required to initiate an acetylcysteine infusion\n• The ACP(f), CCP and PCCP/PCCN may maintain the administration of a MucomystTM (acetylcysteine) infusion for an acetaminophen overdose <b>in the following circumstances:</b></tab1><tab2>\no The infusion was initiated by the sending facility\no Ingested or suspected ingestion of acetaminophen dose is greater or equal to:</tab2><tab3>\n• 7.5 gm\nOR\n• 150 mg/kg</tab3><tab2>\no The rate of infusion is in accordance with the accompanying dosage table and preparation guide\no The rate of infusion cannot be altered by the Paramedic unless ordered by the Transport Medicine Physician</tab2>\n<title>Guidelines to Prepare a 3% Intravenous N-Acetylcysteine Bag</title>\nAs part of the Poison Centre’s treatment recommendations for the acetaminophen-poisoned patient, a 3 % n-acetylcysteine solution will need to be prepared. The following are instructions on how to prepare this solution in <b>D5W.</b>\nPatient is <20 kg:\n<tab1>• Remove 37.5 ml from a 250 ml bag of D5W\n• Add 37.5 ml of 20% IV N-Acetylcysteine to the remaining 212.5 ml in the D5W bag</tab1><tab2>\no 37.5 ml X 200mg/ml = 7 500 mg of N-Acetylcysteine\no 7500 mg in 250 ml yields a final solution with 30 mg/ml or 3%</tab2>\nNotes:<tab1>\n1. 20% IV N-Acetylcysteine is equivalent to 200 mg/mL\n2. The 3% solution is slightly hyperosmolar but still within the safety margin for administration via a peripheral vein\n3. It is recognized that any particular bag of IV fluid could have excessive fluid more than advertised. It is of little consequence when making this 3% solution. Assume a finished volume as advertised on the bag</tab1>\nMixing is important to ensure uniform distribution of N-Acetylcysteine in infusion solution.</tab1>",
+             "clinical" : "<tab1>• Mandatory Patch required to initiate an acetylcysteine infusion\n• The ACP(f), CCP and PCCP/PCCN may maintain the administration of a MucomystTM (acetylcysteine) infusion for an acetaminophen overdose <b>in the following circumstances:</b></tab1><tab2>\no The infusion was initiated by the sending facility\no Ingested or suspected ingestion of acetaminophen dose is greater or equal to:</tab2><tab3>\n• 7.5 gm\nOR\n• 150 mg/kg</tab3><tab2>\no The rate of infusion is in accordance with the accompanying dosage table and preparation guide\no The rate of infusion cannot be altered by the Paramedic unless ordered by the Transport Medicine Physician\no High Risk dosing based on acetaminophen levels, liver enzymes, need for dialysis, altered mental status, lactic acidosis\no IV infusion for at least 8 hours until advised to stop by Poison Centre</tab2>\n<title>Guidelines to Prepare a 3% Intravenous N-Acetylcysteine Bag</title>\nAs part of the Poison Centre’s treatment recommendations for the acetaminophen-poisoned patient, a 3 % n-acetylcysteine solution will need to be prepared. The following are instructions on how to prepare this solution in <b>D5W.</b>\nPatient is <20 kg:\n<tab1>• Remove 37.5 ml from a 250 ml bag of D5W\n• Add 37.5 ml of 20% IV N-Acetylcysteine to the remaining 212.5 ml in the D5W bag</tab1><tab2>\no 37.5 ml X 200mg/ml = 7 500 mg of N-Acetylcysteine\no 7500 mg in 250 ml yields a final solution with 30 mg/ml or 3%</tab2>\n\nPatient is 21-40 kg:\n<tab1>• Remove 75 ml from a 500 ml bag of D5W\n• Add 75 ml of 20% IV N-Acetylcysteine to the remaining 425 ml in the D5W bag</tab1><tab2>\no 75 ml X 200mg/ml = 15 000 mg of N-Acetylcysteine\no 15 000 mg in 500 ml yields a final solution with 30 mg/ml or 3%</tab2>\nIf patient is >40 kg, refer to the adult directives for preparation instructions.\nNotes:<tab1>\n1. 20% IV N-Acetylcysteine is equivalent to 200 mg/mL\n2. The 3% solution is slightly hyperosmolar but still within the safety margin for administration via a peripheral vein\n3. It is recognized that any particular bag of IV fluid could have excessive fluid more than advertised. It is of little consequence when making this 3% solution. Assume a finished volume as advertised on the bag</tab1>\nMixing is important to ensure uniform distribution of N-Acetylcysteine in infusion solution.</tab1>",
             "drug_cards" : [
                 {
                     "title" : "<b>Maintenance Infusion: 3% Mucomyst (Acetylcysteine)\nDosage Guide and Preparation for IV Administration (reference CPS)</b>",
                     "drugKey" : "acetylcysteine",
                     "loc" : [["acp", "after"]],
                     "dose_route" : [
-                        ["<b>Body Weight (kg)</b>", "<b>Initial Infusion\n60 mg/kg/hr x 4 hrs</b>", "<b>Maintenance Infusion\n6 mg/kg/hr</b>", "<b>*High Risk*\nMaintenance Infusion\n12 mg/kg/hr</b>"],
+                        ["<b>Body Weight (kg)</b>", "<b>Initial Infusion\n60 mg/kg/hr x 4 hrs\nDose limit: 6000 mg/hr</b>", "<b>Maintenance Infusion\n6 mg/kg/hr\n Dose limit: 600 mg/hr</b>", "<b>*High Risk*\nMaintenance Infusion\n12 mg/kg/hr\nUsed only in consultation with Poison Centre\nDose limit: 1200 mg/hr</b>"],
                         ["", "<b>Dose\n(ml/hr)</b>", "<b>Dose\n(ml/hr)</b>", "<b>Dose\n(ml/hr)</b>"],
                         ["5", "10", "1", "2"],
                         ["7", "14", "1.4", "2.8"],
@@ -5547,16 +5686,17 @@
             "content" :
             [
                 [
-                    ["<section><section_width=600><b>Age</b>", "<b>Wt (kg)</b>", "<b>HR</b>", "<b>BP</b>", "<b>ETT</b>", "<b>NG (FR)</b>", "<b>Foley (FR)</b>", "<b>Angio (FR)</b>"],
-                    ["Birth-28 days", "3.5", "90-140", "65/40", "2.5-3.5", "8", "6", "24"],
-                    ["1 month", "variable", "115-190", "80/50", "3.5", "8", "6", "24"],
-                    ["3 months", "5.5", "110-180", "85/50", "3.5", "8", "8", "24"],
-                    ["6 months", "7.5", "110-180", "90/55", "3.5-4.0", "10", "8", "22"],
-                    ["1 year", "10", "110-160", "90/55", "4.0", "10", "8", "22"],
-                    ["3 years", "15", "90-150", "92/55", "4.5", "10", "8", "22"],
-                    ["5 years", "20", "80-150", "95/58", "5.0-5.5", "10", "10", "22"],
-                    ["10 years", "30", "60-110", "100/62", "6.5-7.0", "10", "10", "20"],
-                    ["12 years", "40", "55-110", "110/65", "7.0", "10", "10", "20"]
+                 ["<section><section_width=600><b>Age</b>", "<b>Heart Rate (beats/min)</b>", "<b>Respiratory Rate (beats/min)</b>", "<b>Blood Pressure (mmHg)</b>", "<b>ETT (mmID) Cuffed</b>", "<b>ETT (mmID) Uncuffed</b>"],
+                  ["0-1 month", "93-182", "26-65", "45-80/33-52", "", "3.5"],
+                  ["1-3 months", "120-180", "28-55", "65-85/35-55", "3.0", "3.5 to 4.0"],
+                  ["3-6 months", "107-180", "22-52", "70-90/35-65", "3.0 to 3.5", "3.5 to 4.0"],
+                  ["6-12 months", "108-178", "22-52", "80-100/40-65", "3.5", "4.0"],
+                  ["1-2 years", "90-152", "20-50", "80-100/40-70", "3.5 to 4.0", "4.0 to 4.5"],
+                  ["2-3 years", "90-152", "20-40", "80-110/40-80", "4.0", "4.5"],
+                  ["3-5 years", "74-138", "20-30", "80-115/40-80", "4.5", "4.5-5.0"],
+                  ["5-7 years", "65-138", "20-26", "80-115/40-80", "4.5 to 5.0", "5.0 to 5.5"],
+                  ["8-10 years", "62-130", "14-26", "85-125/45-85", "5.5 to 6.0", "6.0 to 6.5"],
+                  ["11-13 years", "62-130", "14-22", "95-135/45-85", "6.0 to 6.5", "6.5 to 7.0"]
                 ],
                 [
                     ["<b>Initial endotracheal tube insertion depth ('tip to lip') for orotracheal intubation</b>"]
@@ -5576,7 +5716,7 @@
                     ["Adapted from Kempley ST, Moreira JW, Petrone FL. Endotracheal tube length for neonatal intubation. Resuscitation. 2008;77(3):369-373"]
                 ],
                 [
-                    ["<tab1>• Mean Arterial Pressure (MAP) is variable based on patient age and cuff size, systolic blood pressure is less impacted by this, therefore thresholds for blood pressure interventions or precautions are based on systolic pressure in the < 12 years or < 40 kg paediatric population\n• Blood pressures listed in the table above are within the 50 percentile for age/weight\n• BroselowTM/paediatric tape version acceptable\n• ETT size formula: one year of age or more:</tab1><tab2>\no Uncuffed = (Age in years)/4) + 4 = tube size in mm\no Cuffed=(Age in years)/4) + 3.5 = tube size in mm\no Cuffed ETT’s can be used in any pediatric patient except newborns</tab2>"]
+                    ["<tab1>• Mean Arterial Pressure (MAP) is variable based on patient age and cuff size, systolic blood pressure is less impacted by this, therefore thresholds for blood pressure interventions or precautions are based on systolic pressure in the < 12 years or < 40 kg paediatric population\n• Blood pressures listed in the table above are within the 50 percentile for age/weight\n• BroselowTM/paediatric tape version acceptable\n• ETT size formula: one year of age or more:</tab1><tab2>\no Uncuffed = (Age in years)/4) + 4 = tube size in mm\no Cuffed=(Age in years)/4) + 3.5 = tube size in mm\no Cuffed ETT’s should be used in all paediatric patients except newborns</tab2>"]
                 ]
             ]
         },
@@ -5710,7 +5850,7 @@
                     ["Bimanual uterine massage", "", "", "", "I", "≥CCR3"],
                     ["NIPPV CPAP/BiPAP", "", "", "I", "I", "≥CCR3"],
                     ["Neonatal NIPPV", "", "", "", "I", "≥CCR3"],
-                    ["Blood analysis (iSTAT)", "", "", "I", "I", "≥CCR1"],
+                    ["Blood analysis (Point of Care-iSTAT etc.)", "", "", "I", "I", "≥CCR1"],
                     ["Blood product transfusion", "", "", "I", "I", "≥CCR3"],
                     ["Blood sampling-Peripheral venous and capillary", "", "", "I", "I", "≥CCR1"],
                     ["Brandt maneuver", "", "", "", "I", "≥CCR3"],
@@ -5737,7 +5877,7 @@
                     ["Multi‐channel infusion pump/syringe", "", "", "I", "I", "≥CCR1"],
                     ["Needle thoracostomy", "", "I", "I", "I", "I"],
                     ["Obstetrics:\n External uterine massage\nGaskin maneuvre\nH.E.L.P.E.R. maneuvers (shoulder dystocia)\nMariceau-Smellie-Veit maneuvr\nMcRoberts maneuvre\nUmbilical cord management", "I", "I", "I", "I", "I"],
-                    ["Rapid Sequence Intubation or RSI", "", "", "", "I", "≥CCR3"],
+                    ["Rapid Sequence Induction or RSI", "", "", "I", "I", "≥CCR3"],
                     ["Reverting uterine inversion", "", "", "", "I", "≥CCR3"],
                     ["Supraglottic Airway (SGA)", "I", "I", "I", "I", "I"],
                     ["Synchronized cardioversion", "", "I", "I", "I", "I"],

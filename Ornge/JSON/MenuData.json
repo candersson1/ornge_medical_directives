@@ -922,7 +922,7 @@
                             "key" : "ped_gastric_tubes"
                         },
                         {
-                            "title" : "Esophageal Temperature Probes",
+                            "title" : "Invasive Temperature Monitoring",
                             "type" : "menu_document_link",
                             "key" : "ped_esophageal_probe"
                         },
@@ -961,6 +961,16 @@
                             "title" : "Diabetic Ketoacidosis (DKA)",
                             "type" : "menu_document_link",
                             "key" : "ped_dka"
+                        },
+                        {
+                            "title" : "Hypocalcemia",
+                            "type" : "menu_document_link",
+                            "key" : "ped_hypocalcemia"
+                        },
+                        {
+                            "title" : "Hyperkalemia",
+                            "type" : "menu_document_link",
+                            "key" : "ped_hyperkalemia"
                         }
                     ]
                 },

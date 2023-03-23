@@ -19,7 +19,6 @@
 		132F1BE2230D953E0071ADFF /* TODO List in Resources */ = {isa = PBXBuildFile; fileRef = 132F1BE1230D953E0071ADFF /* TODO List */; };
 		134122B425811D3000E3F3F7 /* COVID 2019 Operational Guidelines_Final_v6.2.1 Nov25.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 134122B325811D3000E3F3F7 /* COVID 2019 Operational Guidelines_Final_v6.2.1 Nov25.pdf */; };
 		1344B2FE229100EC00E08C63 /* DirectiveFlowChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1344B2FD229100EC00E08C63 /* DirectiveFlowChartViewController.swift */; };
-		1346EAE323AE7D9200992D6A /* preamble_signatures.png in Resources */ = {isa = PBXBuildFile; fileRef = 1346EAE223AE7D9200992D6A /* preamble_signatures.png */; };
 		134789FC23257AA20081E865 /* FlowChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134789FB23257AA20081E865 /* FlowChart.swift */; };
 		134789FE23257B990081E865 /* FlowChartLibrary.json in Resources */ = {isa = PBXBuildFile; fileRef = 134789FD23257B990081E865 /* FlowChartLibrary.json */; };
 		13478A02232747F80081E865 /* String+HTML.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13478A01232747F80081E865 /* String+HTML.swift */; };
@@ -176,6 +175,8 @@
 		2A8EB2C710150EE0CF62A692 /* Pods_Ornge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB4F90BDBEC488354DCC14E3 /* Pods_Ornge.framework */; };
 		6E0FB90629CB643D0069E326 /* Pediatric - Trauma.html in Resources */ = {isa = PBXBuildFile; fileRef = 6E0FB90529CB643D0069E326 /* Pediatric - Trauma.html */; };
 		6E0FB90829CB6ED20069E326 /* ped_aw_positioning_trauma.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6E0FB90729CB6ED20069E326 /* ped_aw_positioning_trauma.jpg */; };
+		6E5BF9EE29CCC926003C39E1 /* ped_tx_of_hypoglycemia_in_the_well_newborn.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E5BF9ED29CCC926003C39E1 /* ped_tx_of_hypoglycemia_in_the_well_newborn.png */; };
+		6E5BF9F129CCFAF0003C39E1 /* preamble_signature.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6E5BF9F029CCFAF0003C39E1 /* preamble_signature.jpg */; };
 		6ECC145729CA55950039CA16 /* Delivery Room Management of Premature Neonates.html in Resources */ = {isa = PBXBuildFile; fileRef = 6ECC145629CA55950039CA16 /* Delivery Room Management of Premature Neonates.html */; };
 		6ECC145929CA59DB0039CA16 /* delivery_room_management_of_premature_neonates.png in Resources */ = {isa = PBXBuildFile; fileRef = 6ECC145829CA59DB0039CA16 /* delivery_room_management_of_premature_neonates.png */; };
 /* End PBXBuildFile section */
@@ -194,7 +195,6 @@
 		132F1BE1230D953E0071ADFF /* TODO List */ = {isa = PBXFileReference; lastKnownFileType = text; path = "TODO List"; sourceTree = "<group>"; };
 		134122B325811D3000E3F3F7 /* COVID 2019 Operational Guidelines_Final_v6.2.1 Nov25.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "COVID 2019 Operational Guidelines_Final_v6.2.1 Nov25.pdf"; sourceTree = "<group>"; };
 		1344B2FD229100EC00E08C63 /* DirectiveFlowChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectiveFlowChartViewController.swift; sourceTree = "<group>"; };
-		1346EAE223AE7D9200992D6A /* preamble_signatures.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = preamble_signatures.png; sourceTree = "<group>"; };
 		134789FB23257AA20081E865 /* FlowChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowChart.swift; sourceTree = "<group>"; };
 		134789FD23257B990081E865 /* FlowChartLibrary.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = FlowChartLibrary.json; sourceTree = "<group>"; };
 		13478A01232747F80081E865 /* String+HTML.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+HTML.swift"; sourceTree = "<group>"; };
@@ -350,6 +350,8 @@
 		13FBD462241FB079002AD350 /* PopoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopoverViewController.swift; sourceTree = "<group>"; };
 		6E0FB90529CB643D0069E326 /* Pediatric - Trauma.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = "Pediatric - Trauma.html"; sourceTree = "<group>"; };
 		6E0FB90729CB6ED20069E326 /* ped_aw_positioning_trauma.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ped_aw_positioning_trauma.jpg; sourceTree = "<group>"; };
+		6E5BF9ED29CCC926003C39E1 /* ped_tx_of_hypoglycemia_in_the_well_newborn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ped_tx_of_hypoglycemia_in_the_well_newborn.png; sourceTree = "<group>"; };
+		6E5BF9F029CCFAF0003C39E1 /* preamble_signature.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = preamble_signature.jpg; sourceTree = "<group>"; };
 		6ECC145629CA55950039CA16 /* Delivery Room Management of Premature Neonates.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = "Delivery Room Management of Premature Neonates.html"; sourceTree = "<group>"; };
 		6ECC145829CA59DB0039CA16 /* delivery_room_management_of_premature_neonates.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = delivery_room_management_of_premature_neonates.png; sourceTree = "<group>"; };
 		D8DA543087E0AEEDBE97A286 /* Pods-Ornge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ornge.debug.xcconfig"; path = "Target Support Files/Pods-Ornge/Pods-Ornge.debug.xcconfig"; sourceTree = "<group>"; };
@@ -436,7 +438,7 @@
 			children = (
 				1373FA23252A3E3200911854 /* COVID */,
 				139FF61A23C8F7BC00B57A68 /* Adult - Clinical Practice Guidelines - Mechanical Ventilation.html */,
-				1346EAE223AE7D9200992D6A /* preamble_signatures.png */,
+				6E5BF9F029CCFAF0003C39E1 /* preamble_signature.jpg */,
 				13F4A47F23A5CE0C004F6D38 /* ped_cp_pain.html */,
 				13F4A47D23A5CD30004F6D38 /* ped_flacc_score.png */,
 				13F4A429239ED36F004F6D38 /* Authorization.html */,
@@ -464,6 +466,7 @@
 				6ECC145829CA59DB0039CA16 /* delivery_room_management_of_premature_neonates.png */,
 				13F4A42F239F44E8004F6D38 /* preamble_sbarr.png */,
 				13F4A41D239ECED4004F6D38 /* preamble_patch_point.png */,
+				6E5BF9ED29CCC926003C39E1 /* ped_tx_of_hypoglycemia_in_the_well_newborn.png */,
 				13E3C49123932A95001C3F08 /* adult_pain_score_chart.png */,
 				13E3C49223932A96001C3F08 /* adult_sedation_score.png */,
 				13E3C4892392B815001C3F08 /* adult_airway_checklist.png */,
@@ -778,6 +781,8 @@
 				13E3C49323932A96001C3F08 /* Adult - Clinical Practice - Sedation Intubated.html in Resources */,
 				135D4A9F23156673006C660C /* MenuData.json in Resources */,
 				13F4A47E23A5CD30004F6D38 /* ped_flacc_score.png in Resources */,
+				6E5BF9F129CCFAF0003C39E1 /* preamble_signature.jpg in Resources */,
+				6E5BF9EE29CCC926003C39E1 /* ped_tx_of_hypoglycemia_in_the_well_newborn.png in Resources */,
 				138F07C224E44A9D00410D0D /* MinionPro-MediumItDisp.otf in Resources */,
 				13E3C49723949A41001C3F08 /* Adult - Clinical Practice - ROSC.html in Resources */,
 				13E3C48323917306001C3F08 /* Controlled Intubation Checklist.html in Resources */,
@@ -862,7 +867,6 @@
 				13E3C48D2392B815001C3F08 /* adult_airway_checklist.png in Resources */,
 				13F4A430239F44E9004F6D38 /* preamble_sbarr.png in Resources */,
 				138F07E224E44A9D00410D0D /* MinionPro-Semibold.otf in Resources */,
-				1346EAE323AE7D9200992D6A /* preamble_signatures.png in Resources */,
 				138F07E624E44A9D00410D0D /* MinionPro-MediumDisp.otf in Resources */,
 				138F07DA24E44A9D00410D0D /* MinionPro-ItCapt.otf in Resources */,
 				13E3C49423932A96001C3F08 /* adult_pain_score_chart.png in Resources */,
