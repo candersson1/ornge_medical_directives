@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Controlled Intubation Checklist</title>
+
+
+<style type="text/css">
+body {
+  font-family: Helvetica, arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: white;
+  padding: 30px; }
+
+body > *:first-child {
+  margin-top: 0 !important; }
+body > *:last-child {
+  margin-bottom: 0 !important; }
+
+a {
+  color: #4183C4; }
+a.absent {
+  color: #cc0000; }
+a.anchor {
+  display: block;
+  padding-left: 30px;
+  margin-left: -30px;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+  cursor: text;
+  position: relative; }
+
+h1:hover a.anchor, h2:hover a.anchor, h3:hover a.anchor, h4:hover a.anchor, h5:hover a.anchor, h6:hover a.anchor {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA09pVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoMTMuMCAyMDEyMDMwNS5tLjQxNSAyMDEyLzAzLzA1OjIxOjAwOjAwKSAgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OUM2NjlDQjI4ODBGMTFFMTg1ODlEODNERDJBRjUwQTQiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OUM2NjlDQjM4ODBGMTFFMTg1ODlEODNERDJBRjUwQTQiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo5QzY2OUNCMDg4MEYxMUUxODU4OUQ4M0REMkFGNTBBNCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo5QzY2OUNCMTg4MEYxMUUxODU4OUQ4M0REMkFGNTBBNCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PsQhXeAAAABfSURBVHjaYvz//z8DJYCRUgMYQAbAMBQIAvEqkBQWXI6sHqwHiwG70TTBxGaiWwjCTGgOUgJiF1J8wMRAIUA34B4Q76HUBelAfJYSA0CuMIEaRP8wGIkGMA54bgQIMACAmkXJi0hKJQAAAABJRU5ErkJggg==) no-repeat 10px center;
+  text-decoration: none; }
+
+h1 tt, h1 code {
+  font-size: inherit; }
+
+h2 tt, h2 code {
+  font-size: inherit; }
+
+h3 tt, h3 code {
+  font-size: inherit; }
+
+h4 tt, h4 code {
+  font-size: inherit; }
+
+h5 tt, h5 code {
+  font-size: inherit; }
+
+h6 tt, h6 code {
+  font-size: inherit; }
+
+h1 {
+  font-size: 20px;
+  color: black; }
+
+h2 {
+  font-size: 16px;
+  border-bottom: 1px solid #cccccc;
+  color: black; }
+
+h3 {
+  font-size: 18px; }
+
+h4 {
+  font-size: 16px; }
+
+h5 {
+  font-size: 14px; }
+
+h6 {
+  color: #777777;
+  font-size: 14px; }
+
+p, blockquote, ul, ol, dl, li, table, pre {
+  margin: 15px 0; }
+
+hr {
+  background: transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAECAYAAACtBE5DAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OENDRjNBN0E2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OENDRjNBN0I2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo4Q0NGM0E3ODY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo4Q0NGM0E3OTY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PqqezsUAAAAfSURBVHjaYmRABcYwBiM2QSA4y4hNEKYDQxAEAAIMAHNGAzhkPOlYAAAAAElFTkSuQmCC) repeat-x 0 0;
+  border: 0 none;
+  color: #cccccc;
+  height: 4px;
+  padding: 0;
+}
+
+body > h2:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+body > h1:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+  body > h1:first-child + h2 {
+    margin-top: 0;
+    padding-top: 0; }
+body > h3:first-child, body > h4:first-child, body > h5:first-child, body > h6:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0; }
+
+h1 p, h2 p, h3 p, h4 p, h5 p, h6 p {
+  margin-top: 0; }
+
+li p.first {
+  display: inline-block; }
+li {
+  margin: 0; }
+ul, ol {
+  padding-left: 30px; }
+
+ul :first-child, ol :first-child {
+  margin-top: 0; }
+
+dl {
+  padding: 0; }
+  dl dt {
+    font-size: 14px;
+    font-weight: bold;
+    font-style: italic;
+    padding: 0;
+    margin: 15px 0 5px; }
+    dl dt:first-child {
+      padding: 0; }
+    dl dt > :first-child {
+      margin-top: 0; }
+    dl dt > :last-child {
+      margin-bottom: 0; }
+  dl dd {
+    margin: 0 0 15px;
+    padding: 0 15px; }
+    dl dd > :first-child {
+      margin-top: 0; }
+    dl dd > :last-child {
+      margin-bottom: 0; }
+
+blockquote {
+  border-left: 4px solid #dddddd;
+  padding: 0 15px;
+  color: #777777; }
+  blockquote > :first-child {
+    margin-top: 0; }
+  blockquote > :last-child {
+    margin-bottom: 0; }
+
+table {
+  padding: 0;border-collapse: collapse; }
+  table tr {
+    border-top: 1px solid #cccccc;
+    background-color: white;
+    margin: 0;
+    padding: 0; }
+    table tr:nth-child(2n) {
+      background-color: #f8f8f8; }
+    table tr th {
+      font-weight: bold;
+      border: 1px solid #cccccc;
+      margin: 0;
+      padding: 6px 13px; }
+    table tr td {
+      border: 1px solid #cccccc;
+      margin: 0;
+      padding: 6px 13px; }
+    table tr th :first-child, table tr td :first-child {
+      margin-top: 0; }
+    table tr th :last-child, table tr td :last-child {
+      margin-bottom: 0; }
+
+img {
+  max-width: 100%; }
+
+span.frame {
+  display: block;
+  overflow: hidden; }
+  span.frame > span {
+    border: 1px solid #dddddd;
+    display: block;
+    float: left;
+    overflow: hidden;
+    margin: 13px 0 0;
+    padding: 7px;
+    width: auto; }
+  span.frame span img {
+    display: block;
+    float: left; }
+  span.frame span span {
+    clear: both;
+    color: #333333;
+    display: block;
+    padding: 5px 0 0; }
+span.align-center {
+  display: block;
+  overflow: hidden;
+  clear: both; }
+  span.align-center > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px auto 0;
+    text-align: center; }
+  span.align-center span img {
+    margin: 0 auto;
+    text-align: center; }
+span.align-right {
+  display: block;
+  overflow: hidden;
+  clear: both; }
+  span.align-right > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px 0 0;
+    text-align: right; }
+  span.align-right span img {
+    margin: 0;
+    text-align: right; }
+span.float-left {
+  display: block;
+  margin-right: 13px;
+  overflow: hidden;
+  float: left; }
+  span.float-left span {
+    margin: 13px 0 0; }
+span.float-right {
+  display: block;
+  margin-left: 13px;
+  overflow: hidden;
+  float: right; }
+  span.float-right > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px auto 0;
+    text-align: right; }
+
+code, tt {
+  margin: 0 2px;
+  padding: 0 5px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px; }
+
+pre code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent; }
+
+.highlight pre {
+  background-color: #f8f8f8;
+  border: 1px solid #cccccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px; }
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #cccccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px; }
+  pre code, pre tt {
+    background-color: transparent;
+    border: none; }
+
+sup {
+    font-size: 0.83em;
+    vertical-align: super;
+    line-height: 0;
+}
+
+kbd {
+  display: inline-block;
+  padding: 3px 5px;
+  font-size: 11px;
+  line-height: 10px;
+  color: #555;
+  vertical-align: middle;
+  background-color: #fcfcfc;
+  border: solid 1px #ccc;
+  border-bottom-color: #bbb;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #bbb
+}
+#myTable td {
+  width: 33.33%;
+  font-size: 12px;
+}
+
+input[type="number"] {
+  font-size: 18px;
+  width: 25px;
+}
+
+* {
+	-webkit-print-color-adjust: exact;
+}
+@media screen and (min-width: 914px) {
+    body {
+        width: 854px;
+        margin:0 auto;
+    }
+}
+@media print {
+	table, pre {
+		page-break-inside: avoid;
+	}
+	pre {
+		word-wrap: break-word;
+	}
+}
+.total {
+  font-weight: bold;
+  font-size: 18px;
+}
+.risk {
+  width: 100%;
+  height: 100px;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 5px;
+  z-index: 1;
+}
+.high-risk {
+  background-color: #c11111;
+  border-color: #c11111;
+}
+.moderate-risk {
+  background-color: #ff9100;
+  border-color: #ff9100;
+}
+.low-risk {
+  background-color: #05a105;
+  color: #05a105;
+}
+.selector {
+  width: 100%;
+  height: 30px;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 5px;
+  z-index: 1;
+  font-size: 16px;
+}
+label {
+  font-size: 16px;
+  font-weight: bold;
+}
+.btn {
+  width: 100%;
+  height: 50px;
+  background-color: #ff9100;
+  color: #fff;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 5px;
+  z-index: 1;
+  font-size: 16px;
+  font-weight: bold;
+}
+#results {
+  width: 100%;
+  padding: 10px;
+  background-color: #47433f;
+  color: #fff;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 5px;
+  z-index: 1;
+  font-size: 16px;
+  font-weight: bold;
+}
+.total-label {
+  font-style: normal;
+  font-size: 14px;
+}
+</style>
+
+
+</head>
+<body>
+
+<h1 d="toc_0">CIWA-Ar Alcohol Withdrawal Assessment</h1>
+
+<form id="ciwa-form">
+  <label for="nausea">Nausea and vomiting:</label><br>
+  <select id="nausea" name="nausea" class="selector">
+    <option value="0">0 - None</option>
+    <option value="1">1 - Mild Nausea & vomiting</option>
+    <option value="2">2 - More severe symptoms</option>
+    <option value="3">3 - More severe symptoms</option>
+    <option value="4">4 - Intermittent nausea</option>
+    <option value="5">5 - More severe symptoms</option>
+    <option value="6">6 - More severe symptoms</option>
+    <option value="7">7 - Constant nausea, frequent heaves & vomiting</option>
+  </select><br>
+<hr>
+  <label for="tremor">Tremor:</label><br>
+  <select id="tremor" name="tremor" class="selector">
+    <option value="0">0 - No Tremor</option>
+    <option value="1">1 - Not visible but can be felt fingertip to fingertip</option>
+    <option value="2">2 - More severe symptoms</option>
+    <option value="3">3 - More severe symptoms</option>
+    <option value="4">4 - Moderate with arms extended</option>
+    <option value="5">5 - More severe symptoms</option>
+    <option value="6">6 - More severe symptoms</option>
+    <option value="7">7 - Severe, even with arms not extended</option>
+  </select><br>
+<hr>
+  <label for="anxiety">Anxiety:</label><br>
+  <select id="anxiety" name="anxiety" class="selector">
+    <option value="0">0 - No anxiety, pt at ease</option>
+    <option value="1">1 - Mildly anxious</option>
+    <option value="2">2 - More severe symptoms</option>
+    <option value="3">3 - More severe symptoms</option>
+    <option value="4">4 - Moderately anxious or guarded, so anxiety is inferred</option>
+    <option value="5">5 - More severe symptoms</option>
+    <option value="6">6 - More severe symptoms</option>
+    <option value="7">7 - Equivalent to acute panic states seen in severe delirium or acute schizophrenic reactions</option>
+  </select><br>
+<hr>
+  <label for="agitation">Agitation:</label><br>
+  <select id="agitation" name="agitation" class="selector">
+    <option value="0">0 - Normal activity</option>
+    <option value="1">1 - Somewhat normal activity</option>
+    <option value="0">0 - Normal activity</option>
+    <option value="1">1 - Somewhat normal activity</option>
+    <option value="2">2 - More severe symptoms</option>
+    <option value="3">3 - More severe symptoms</option>
+    <option value="4">4 - Moderately fidgety & restless</option>
+    <option value="5">5 - More severe symptoms</option>
+    <option value="6">6 - More severe symptoms</option>
+    <option value="7">7 - Paces back & forth or constantly thrashes about</option>
+  </select><br>
+<hr>
+  <label for="sweats">Paroxysmal Sweats:</label><br>
+<select id="sweats" name="sweats" class="selector">
+  <option value="0">0 - No sweats</option>
+  <option value="1">1 - Barely perceptible sweating, palms moist</option>
+  <option value="2">2 - More severe symptoms</option>
+  <option value="3">3 - More severe symptoms</option>
+  <option value="4">4 - Beads of sweat obvious on forehead</option>
+  <option value="5">5 - More severe symptoms</option>
+  <option value="6">6 - More severe symptoms</option>
+  <option value="7">7 - Drenching sweats</option>
+</select><br>
+<hr>
+<label for="orientation">Orientation & Clouding of Sensorium:</label>
+<p>What day is this? Where are you? Who am I?</p>
+<select id="orientation" name="orientation" class="selector">
+  <option value="0">0 - Orientated</option>
+  <option value="1">1 - Cannot do serial additions or is uncertain about the date</option>
+  <option value="2">2 - Disorientated to date by no more than 2 calendar days</option>
+  <option value="3">3 - Disorientated to date by more than 2 calendar days</option>
+  <option value="4">4 - Disorientated to place/& or person</option>
+</select><br>
+<hr>
+<label for="tactile">Tactile Disturbances:</label>
+<p>Have you experienced any itching, pins & needles, burning or numbness, or a feeling of bugs crawling on or under your skin?</p>
+<select id="tactile" name="tactile" class="selector">
+  <option value="0">0 - None</option>
+  <option value="1">1 - Very mild itching, pins & needles, burning or numbness</option>
+  <option value="2">2 - Mild itching, pins & needles, burning or numbness</option>
+  <option value="3">3 - Moderate itching, pins & needles, burning or numbness</option>
+  <option value="4">4 - Moderate hallucinations</option>
+  <option value="5">5 - Severe hallucinations</option>
+  <option value="6">6 - Extremely severe hallucinations</option>
+  <option value="7">7 - Continuous hallucinations</option>
+</select><br>
+<hr>
+<label for="auditory">Auditory Disturbances:</label>
+<p>Are you more aware of sounds around you? Are they harsh? Do they startle you? Do you hear anything that disturbs you or that you know isn’t there?</p>
+<select id="auditory" name="auditory" class="selector">
+  <option value="0">0 - None present</option>
+  <option value="1">1 - Very mild harshness or ability to startle</option>
+  <option value="2">2 - Mild harshness or ability to startle</option>
+  <option value="3">3 - Moderate harshness or ability to startle</option>
+  <option value="4">4 - Moderate hallucinations</option>
+  <option value="5">5 - Severe hallucinations</option>
+  <option value="6">6 - Extremely severe hallucinations</option>
+  <option value="7">7 - Continuous hallucinations</option>
+</select><br>
+<hr>
+<label for="visual">Visual Disturbances:</label>
+<p>Does the light appear to be too bright? Is its color different from normal? Does it hurt your eyes? Are you seeing anything that disturbs you or that you know isn’t there?</p>
+<select id="visual" name="visual" class="selector">
+  <option value="0">0 - None</option>
+  <option value="1">1 - Very mildly sensitive</option>
+  <option value="2">2 - Mild sensitivity</option>
+  <option value="3">3 - Moderate sensitivity</option>
+  <option value="4">4 - Moderate hallucinations</option>
+  <option value="5">5 - Severe hallucinations</option>
+  <option value="6">6 - Extremely severe hallucinations</option>
+  <option value="7">7 - Continuous hallucinations</option>
+</select><br>
+<hr>
+<label for="headache">Headache:</label>
+<p>Does your head feel different from usual? Does it feel like there is a band around your head (Do not rate dizziness or light headedness)</p>
+<select id="headache" name="headache" class="selector">
+  <option value="0">0 - None</option>
+  <option value="1">1 - Very mild</option>
+  <option value="2">2 - Mild</option>
+  <option value="3">3 - Moderate</option>
+  <option value="4">4 - Moderately severe</option>
+  <option value="5">5 - Severe</option>
+  <option value="6">6 - Very severe</option>
+  <option value="7">7 - Extremely severe</option>
+</select><br>
+<hr>
+
+  <input type="button" value="Calculate" onclick="calculateScore()" class="btn">
+</form> 
+<div id="results">
+<h3 id="totalScore">Total Score: </h3>
+</div>
+<p>Make note of this value, it is not saved once you navigate away from this screen. <br> Reassess hourly to guide treatment.</p>
+<script>
+function calculateScore() {
+  let nausea = Number(document.getElementById('nausea').value);
+  let tremor = Number(document.getElementById('tremor').value);
+  let anxiety = Number(document.getElementById('anxiety').value);
+  let agitation = Number(document.getElementById('agitation').value);
+  let sweats = Number(document.getElementById('sweats').value);
+  let orientation = Number(document.getElementById('orientation').value);
+  let tactile = Number(document.getElementById('tactile').value);
+  let auditory = Number(document.getElementById('auditory').value);
+  let visual = Number(document.getElementById('visual').value);
+  let headache = Number(document.getElementById('headache').value);
+
+  let totalScore = nausea + tremor + anxiety + agitation + sweats + orientation + tactile + auditory + visual + headache;
+  let withdrawalLevel = '';
+
+  if (totalScore <= 8) {
+    withdrawalLevel = 'Absent or minimal withdrawal';
+  } else if (totalScore >= 9 && totalScore <= 19) {
+    withdrawalLevel = 'Mild to moderate withdrawal';
+  } else if (totalScore >= 20) {
+    withdrawalLevel = 'Severe withdrawal';
+  }
+
+  document.getElementById('totalScore').innerHTML = "<span class='total-label'>Total Score:</span> " + totalScore + "<br>" + withdrawalLevel ;
+}
+</script>
+
+</body>
+</html>

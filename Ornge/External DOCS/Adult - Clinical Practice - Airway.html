@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Adult - Clinical Practice - Airway</title>
+
+
+<style type="text/css">
+body {
+  font-family: Helvetica, arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: white;
+  padding: 30px; }
+
+body > *:first-child {
+  margin-top: 0 !important; }
+body > *:last-child {
+  margin-bottom: 0 !important; }
+
+a {
+  color: #4183C4; }
+a.absent {
+  color: #cc0000; }
+a.anchor {
+  display: block;
+  padding-left: 30px;
+  margin-left: -30px;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+  cursor: text;
+  position: relative; }
+
+h1:hover a.anchor, h2:hover a.anchor, h3:hover a.anchor, h4:hover a.anchor, h5:hover a.anchor, h6:hover a.anchor {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA09pVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoMTMuMCAyMDEyMDMwNS5tLjQxNSAyMDEyLzAzLzA1OjIxOjAwOjAwKSAgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OUM2NjlDQjI4ODBGMTFFMTg1ODlEODNERDJBRjUwQTQiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OUM2NjlDQjM4ODBGMTFFMTg1ODlEODNERDJBRjUwQTQiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo5QzY2OUNCMDg4MEYxMUUxODU4OUQ4M0REMkFGNTBBNCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo5QzY2OUNCMTg4MEYxMUUxODU4OUQ4M0REMkFGNTBBNCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PsQhXeAAAABfSURBVHjaYvz//z8DJYCRUgMYQAbAMBQIAvEqkBQWXI6sHqwHiwG70TTBxGaiWwjCTGgOUgJiF1J8wMRAIUA34B4Q76HUBelAfJYSA0CuMIEaRP8wGIkGMA54bgQIMACAmkXJi0hKJQAAAABJRU5ErkJggg==) no-repeat 10px center;
+  text-decoration: none; }
+
+h1 tt, h1 code {
+  font-size: inherit; }
+
+h2 tt, h2 code {
+  font-size: inherit; }
+
+h3 tt, h3 code {
+  font-size: inherit; }
+
+h4 tt, h4 code {
+  font-size: inherit; }
+
+h5 tt, h5 code {
+  font-size: inherit; }
+
+h6 tt, h6 code {
+  font-size: inherit; }
+
+h1 {
+  font-size: 28px;
+  color: black; }
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #cccccc;
+  color: black; }
+
+h3 {
+  font-size: 18px; }
+
+h4 {
+  font-size: 16px; }
+
+h5 {
+  font-size: 14px; }
+
+h6 {
+  color: #777777;
+  font-size: 14px; }
+
+p, blockquote, ul, ol, dl, li, table, pre {
+  margin: 15px 0; }
+
+hr {
+  background: transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAECAYAAACtBE5DAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OENDRjNBN0E2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OENDRjNBN0I2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo4Q0NGM0E3ODY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo4Q0NGM0E3OTY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PqqezsUAAAAfSURBVHjaYmRABcYwBiM2QSA4y4hNEKYDQxAEAAIMAHNGAzhkPOlYAAAAAElFTkSuQmCC) repeat-x 0 0;
+  border: 0 none;
+  color: #cccccc;
+  height: 4px;
+  padding: 0;
+}
+
+body > h2:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+body > h1:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+  body > h1:first-child + h2 {
+    margin-top: 0;
+    padding-top: 0; }
+body > h3:first-child, body > h4:first-child, body > h5:first-child, body > h6:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0; }
+
+h1 p, h2 p, h3 p, h4 p, h5 p, h6 p {
+  margin-top: 0; }
+
+li p.first {
+  display: inline-block; }
+li {
+  margin: 0; }
+ul, ol {
+  padding-left: 30px; }
+
+ul :first-child, ol :first-child {
+  margin-top: 0; }
+
+dl {
+  padding: 0; }
+  dl dt {
+    font-size: 14px;
+    font-weight: bold;
+    font-style: italic;
+    padding: 0;
+    margin: 15px 0 5px; }
+    dl dt:first-child {
+      padding: 0; }
+    dl dt > :first-child {
+      margin-top: 0; }
+    dl dt > :last-child {
+      margin-bottom: 0; }
+  dl dd {
+    margin: 0 0 15px;
+    padding: 0 15px; }
+    dl dd > :first-child {
+      margin-top: 0; }
+    dl dd > :last-child {
+      margin-bottom: 0; }
+
+blockquote {
+  border-left: 4px solid #dddddd;
+  padding: 0 15px;
+  color: #777777; }
+  blockquote > :first-child {
+    margin-top: 0; }
+  blockquote > :last-child {
+    margin-bottom: 0; }
+
+table {
+  padding: 0;border-collapse: collapse; }
+  table tr {
+    border-top: 1px solid #cccccc;
+    background-color: white;
+    margin: 0;
+    padding: 0; }
+    table tr:nth-child(2n) {
+      background-color: #f8f8f8; }
+    table tr th {
+      font-weight: bold;
+      border: 1px solid #cccccc;
+      margin: 0;
+      padding: 6px 13px; }
+    table tr td {
+      border: 1px solid #cccccc;
+      margin: 0;
+      padding: 6px 13px; }
+    table tr th :first-child, table tr td :first-child {
+      margin-top: 0; }
+    table tr th :last-child, table tr td :last-child {
+      margin-bottom: 0; }
+
+img {
+  max-width: 100%; }
+
+span.frame {
+  display: block;
+  overflow: hidden; }
+  span.frame > span {
+    border: 1px solid #dddddd;
+    display: block;
+    float: left;
+    overflow: hidden;
+    margin: 13px 0 0;
+    padding: 7px;
+    width: auto; }
+  span.frame span img {
+    display: block;
+    float: left; }
+  span.frame span span {
+    clear: both;
+    color: #333333;
+    display: block;
+    padding: 5px 0 0; }
+span.align-center {
+  display: block;
+  overflow: hidden;
+  clear: both; }
+  span.align-center > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px auto 0;
+    text-align: center; }
+  span.align-center span img {
+    margin: 0 auto;
+    text-align: center; }
+span.align-right {
+  display: block;
+  overflow: hidden;
+  clear: both; }
+  span.align-right > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px 0 0;
+    text-align: right; }
+  span.align-right span img {
+    margin: 0;
+    text-align: right; }
+span.float-left {
+  display: block;
+  margin-right: 13px;
+  overflow: hidden;
+  float: left; }
+  span.float-left span {
+    margin: 13px 0 0; }
+span.float-right {
+  display: block;
+  margin-left: 13px;
+  overflow: hidden;
+  float: right; }
+  span.float-right > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px auto 0;
+    text-align: right; }
+
+code, tt {
+  margin: 0 2px;
+  padding: 0 5px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px; }
+
+pre code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent; }
+
+.highlight pre {
+  background-color: #f8f8f8;
+  border: 1px solid #cccccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px; }
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #cccccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px; }
+  pre code, pre tt {
+    background-color: transparent;
+    border: none; }
+
+sup {
+    font-size: 0.83em;
+    vertical-align: super;
+    line-height: 0;
+}
+
+kbd {
+  display: inline-block;
+  padding: 3px 5px;
+  font-size: 11px;
+  line-height: 10px;
+  color: #555;
+  vertical-align: middle;
+  background-color: #fcfcfc;
+  border: solid 1px #ccc;
+  border-bottom-color: #bbb;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #bbb
+}
+
+* {
+	-webkit-print-color-adjust: exact;
+}
+@media screen and (min-width: 914px) {
+    body {
+        width: 854px;
+        margin:0 auto;
+    }
+}
+@media print {
+	table, pre {
+		page-break-inside: avoid;
+	}
+	pre {
+		word-wrap: break-word;
+	}
+}
+</style>
+
+
+</head>
+
+<body>
+
+<h2 id="toc_0">Ornge Clinical Practice Guideline: Airway Management</h2>
+
+<p>Version 1.03: June 2022</p>
+
+<p><b>Rationale</b><br>
+Working in the prehospital setting provides a challenging and dynamic workplace environment. Advanced airway
+management and emergency anesthesia are fundamental skills for the safe treatment and transport of critically
+unwell patients. These interventions can improve a patient’s hemodynamics and gas exchange, relieve airway
+obstruction, guard against aspiration, and expedite care at receiving hospitals. However, the process of
+emergency airway management in unfamiliar and dynamic settings is complex and it requires a structured
+approach to protect clinicians and patients from errors due to these environmental factors. Poor patient
+optimization, equipment failure, inappropriate drug dosing and selection, and difficult human factors can all lead
+to devastating outcomes. The adoption of a universal, streamlined, evidence-based approach to rapid sequence
+induction and airway management will ensure that any two Ornge clinicians can perform this challenging
+intervention both safely and expeditiously, raising the level of care that we provide to our patients.  </p>
+
+<p><b>Definitions</b>  </p>
+
+<p><span style="text-decoration: underline; ">Intubation attempt:</span> Insertion of a laryngoscope or flexible scope into the mouth, past the lips, for the purpose of
+passing an endotracheal tube. First pass success is not disqualified by necessary adjustments to the glottic view (i.e. utilizing “30 second drills”) or to the depth of the endotracheal tube.  </p>
+
+<p><span style="text-decoration: underline; ">Rapid Sequence Induction (RSI):</span> An advanced airway procedure involving the near simultaneous administration of
+a potent sedative followed by a neuromuscular blocking agent, allowing airway manipulation and endotracheal intubation.  </p>
+
+<p><span style="text-decoration: underline; ">Crash Intubation:</span> Attempted endotracheal intubation without the use of pretreatment, induction, or paralysis in a moribund patient</p>
+
+<p><span style="text-decoration: underline; ">Sedation Facilitated Intubation (SFI):</span> Attempted endotracheal intubation utilizing a topical anesthetic and sedative or dissociative agent, without the use of paralysis.</p>
+
+<p><b>Organizational Goals:</b>  </p>
+<p> The goal of airway management should not simply be reduced to the successful intubation of the larynx. A
+successful case of airway management is one that is void of potential complications. The aim is a hemodynamically
+neutral procedure that maintains an adequate oxygen saturation and results in successful laryngeal intubation
+during the first attempt at laryngoscopy while preventing aspiration. As an organization, Ornge strives to meet
+specific key performance indicators: </p>
+<ul>
+<li>First pass success</li>
+<li>No desaturation (SpO2 &lt;90%)</li>
+<li>No hypotension (SBP &lt;90 mmHg)(MAP &lt; 65)</li>
+<li>No other airway complications 
+
+<ul>
+<li>Vomiting/Aspiration</li>
+<li>Hypoventilation</li>
+<li>Airway trauma caused by the procedure</li>
+<li>Misplaced tracheal tube</li>
+<li>Bradycardia</li>
+<li>Cardiac arrest</li>
+</ul></li>
+</ul>
+
+<p><b>Benchmarks</b></p>
+
+<ul>
+<li>First pass success with RSI >90%</li>
+<li>Overall success with RSI >95%</li>
+<li>First pass success for all other intubations >85%</li>
+<li>Overall success for all other intubations >90%</li>
+</ul>
+
+<p><b>Organizational Approaches for Intubation</b>  </p>
+
+<ul>
+<li><span style="text-decoration: underline;">Rapid Sequence Inudtuction:</span> Critical Care Paramedic (CCP) or Advanced Care Flight Paramedic (ACP(f)) with another
+Ornge certified intubator (ACP(L), ACP(f), CCP or MD), within a facility or on scene</li>
+<li><span style="text-decoration: underline;">Sedation Facilitated Intubation:</span> CCP, Advanced Care Paramedic (flight) (ACP(f)), or Ornge MD within a facility</li>
+<li><span style="text-decoration: underline;">Crash Intubation:</span> CCP, ACP(f), ACP (L) or Ornge MD</li>
+</ul>
+<p>During scene calls with short out of hospital times, a careful determination of the risks of RSI in this high-risk setting should be balanced with its potential benefits and only performed if absolute indications exist, including airway obstruction, failure of oxygenation or ventilation, or failure of airway protection.</p>
+<p> 
+  Supraglottic airway insertion should be the initial airway strategy in cardiac arrest unless endotracheal intubation is deemed more appropriate by the Ornge team
+</p>
+<p>The following section outlines important components to the Ornge structured airway approach, but it is by no means an exhaustive resource for learning about safe emergency anesthesia. The organization’s overarching philosophy is to standardize as many aspects of our emergency airway process as possible, helping to reduce ‘cognitive noise’ during stressful situations and reduce the probability of error. Using this standardized approach, in and out of hospital, will ensure the immediate geography around a patient is always set up in the same manner, improving communication and team dynamics, and subsequently minimizing complications.</p>
+<p><b>Patient and team positioning</b>  </p>
+
+<p><img src="adult_airway_patient_positioning.png" alt=""></p>
+
+<p>Proper patient and team positioning are essential aspects in the preparation phase of airway management. Patient positioning will help optimize the view obtained during laryngoscopy and extend the safe apnea time until hypoxia is encountered. Team and equipment positioning will help ensure airway equipment is accessible to multiple team members in the case of a rescue airway scenario and optimize situational awareness. Optimal patient positioning is determined by two factors, (1) the patient’s physical location within their environment, and (2) the patient’s specific position.</p>
+
+<p><b>Patient's Physical Location</b></p>
+<p>Patients should undergo emergency airway management in a location that allows 360-degree access to the team with our airway bag within reach of both crew members. The patient should also be at umbilical height on an adjustable stretcher and other first responders should be used to guard against environmental distractions (sunlight, rain, or bystanders). The optimal location is nearly always a hospital resuscitation room where there is adequate room and light, however on scene calls this is not possible. Here, immediately outside the helicopter or land ambulance is most ideal. Intubation inside of our aircraft or in the rear of a ground ambulance, where space is limited, must be avoided unless environmental concerns dictate otherwise.</p>
+
+<p><b>Patient's Specific Position</b></p>
+<p>Optimal patient position is outlined in the figure above. The patient’s head should be at the umbilical height of the
+intubator and their head up 20-30 degrees. Optimal position of the head and neck for glottic exposure during
+laryngoscopy has been classically referred to as the ‘sniffing position’, ear-to-sternal notch and face plane parallel
+to the ceiling. The sniffing position has been demonstrated to reduce the required force during laryngoscopy to
+acquire glottic exposure and result in improved patency of the upper airway. When neck manipulation is not
+contraindicated, the sniffing position should be the initial position utilized during laryngoscopy. This can be
+achieved by manipulating the patient’s head and shoulders by placing a SAM splint or bed sheets.</p>
+
+<p><b>Intubation Team Positioning</b>
+<img src="adult_airway_team_positioning.png" alt=""></p>
+
+<p>The graphic above outlines the standardized geography that should be achieved prior to all intubation attempts.
+Whether in or out of hospital, this set up places our two Ornge clinicians near the patient’s head and neck and our airway bag so that we are ready to respond in the event of a difficult airway or critical desaturation. Local land EMS
+and sending staff should not be airway assistant in any circumstance, given their unfamiliarity with our kit and
+procedures. The airway bag can be placed on a tray table, adjacent stretcher at 45 degrees, or floor of the
+helicopter/road ambulance, between the two Ornge crew members. It is crucial that this is within arm’s reach of
+our two crew members for easy access. The patient’s monitor should be in direct line of sight of our lead airway
+assistant and ideally pointed away from the intubator to reduce cognitive overload. There should also be 360-
+degree access so that all IVs, monitors, and equipment are easily visible and accessible. Lastly, if manual inline
+stabilization is required, this assistant should be placed to the left of the intubator providing cervical spine
+immobilization from the patient’s left side or chest.</p>
+
+<p><b>Airway Bag</b></p>
+
+<p>The Ornge standardized airway bag should be used on all intubation attempts, whether at a hospital or on scene,
+not equipment provided by sending facilities or land ambulances. Our airway bag is checked for completeness on a
+daily basis and contains a complete set of airway equipment, organized sequentially to correspond to our
+emergency airway algorithm. The strength of our standardized airway bag is familiarity to our teams and
+equipment redundancy, and the use, location, and setup of this bag should only be deviated from in extenuating
+circumstances.</p>
+
+<p><b>Airway Checklist</b></p>
+
+<p>Paralysis is the point of no return in emergency airway management. Once the patient becomes fully apneic, our
+team must be able to secure a definitive airway or successfully rescue oxygenate and ventilate a failed intubation,
+otherwise risking critical hypoxia and cardiac arrest. Rapid sequence induction is a highly complex procedure which
+requires a slew of equipment, medications, set up, and communications. Checklists are a recognized tool in
+prehospital and military care and help reduce cognitive load and improve patient safety. Checklists have been
+shown to increase the rates of first pass success and reduce the rates of complications during RSI in both intensive
+care unit and emergency department intubations.</p>
+<p>The Ornge airway checklist should be utilized on all controlled intubations (RSI or awake intubation). This tool
+outlines the expected minimal standard preparation, equipment, and briefing required for a safe intubation
+attempt and it helps provide the best possible chance at first pass success. It also helps build a shared mental
+model with other assistants on scene and establish a plan for failure. It is even more crucial to use on unstable
+patients whereby the risks of missing or malfunctioning equipment and poor set up can have disastrous
+consequences.</p>
+<p>It is meant to be a final check following setup and planning for intubation, analogous to a pilot’s final checks before
+take-off and landing. It should not be used as a recipe to organize equipment and discuss management during set
+up (this should be done during the prepare and plan stage). This requires the team to discuss the roles and
+expectation of each team member and the airway plan prior to performing the checklist. The checklist should be
+performed in a challenge-response fashion, meaning the Ornge clinician that set up the airway equipment should
+subsequently read the checklist aloud so that his/her partner can confirm the partner’s set up. Each point is meant
+to be a simple visual check, not a conversation point. The entire checklist, when performed by a high functioning
+team, should take no longer than 45 seconds to complete.</p>
+<p>In certain circumstances, as in the moribund patient, is it not appropriate to proceed with a full airway kit
+preparation. Patients in respiratory or cardiac arrest do not need a full equipment set up or run through of the
+complete checklist. In this circumstance, an abbreviated ‘crash checklist’ should be utilized and the patient should
+be intubated without medications. If the patient is in extremis with residual muscle tone, consideration should be
+given to intubation with paralysis only.</p>
+<p>Prio to commencing checklist:</p>
+<ul>
+  <li>Brief MILS and ELM Assistants</li>
+  <li>Brief Airway Plan</li>
+  <li>Brief Rescue Ventilation Plan & 30 Second Drills</li>
+  <li>Palpate Cricothyroid-membrane</li>
+</ul>
+<h6>Controller Intubation Checklist</h6>
+<table>
+  <tr>
+    <th colspan="2">Resuscitation</th>
+  </tr>
+  <tr>
+    <td style="width: 90%;">Hemodynamics Addressed (Hypotension & Metabolic Acidosis)</td>
+    <td>Check</td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th colspan="2">Preparation</th>
+  </tr>
+  <tr>
+    <td style="width: 90%;">Patient Positioning (E2SN, Head Up, Umbilical Height, 360 Access)</td>
+    <td>Check</td>
+  </tr>
+  <tr>
+    <td style="width: 90%;">Monitoring (ECG, NIBP, SpO2, ETCO2 )</td>
+    <td>Check</td>
+  </tr>
+  <tr>
+    <td style="width: 90%;">O2 Supply Sufficient, 2 Sources</td>
+    <td>Check</td>
+  </tr>
+  <tr>
+    <td style="width: 90%;">Preoxygenation - (NRB + NP @ 15 LPM) or (BVM+PEEP) or (NIPPV)</td>
+    <td>Check</td>
+  </tr>
+  <tr>
+    <td style="width: 90%;">Ducanto Suction Tested</td>
+    <td>Check</td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th colspan="2">IV/IO Medication</th>
+  </tr>
+  <tr>
+    <td style="width: 90%;">2 IV/IOs</td>
+    <td>Check</td>
+  </tr>
+  <tr>
+    <td style="width: 90%;">Fluid Running Well</td>
+    <td>Check</td>
+  </tr>
+  <tr>
+    <td style="width: 90%;">BP Cuff on Opposite Arm</td>
+    <td>Check</td>
+  </tr>
+  <tr>
+    <td style="width: 90%;">Sedation and Paralytics: Ketamine, Fentanyl, Rocuronium/Succinylcholine</td>
+    <td>Check</td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th colspan="2">Team Brief</th>
+  </tr>
+  <tr>
+    <td style="width: 90%;">Airway Plan Briefed</td>
+    <td>Check</td>
+  </tr>
+  <tr>
+    <td style="width: 90%;">MILS Assistant Briefed - Collar Open, Neck Stabilized</td>
+    <td>Check</td>
+  </tr>
+  <tr>
+    <td style="width: 90%;">ELM Assistant Briefed</td>
+    <td>Check</td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th colspan="2">Equipment</th>
+  </tr>
+  <tr>
+    <td style="width: 90%;">PPE</td>
+    <td>Check</td>
+  </tr>
+  <tr>
+    <td style="width: 90%;">Airway Bag Open</td>
+    <td>Check</td>
+  </tr>
+  <tr>
+    <td style="width: 90%;">BVM Complete (ETCO2, PEEP, Filter, Manometer)</td>
+    <td>Check</td>
+ </tr>
+  <tr>
+    <td style="width: 90%;">OPA & NPA</td>
+    <td>Check</td>
+  </tr>
+  <tr>
+    <td style="width: 90%;">CMAC blade, Standard Geometry, size ‘       ’</td>
+    <td>Check</td>
+  </tr>
+  <tr>
+    <td style="width: 90%;">ETT, size ‘        ’</td>
+    <td>Check</td>
+  </tr>
+  <tr>
+    <td style="width: 90%;">Syringe & Cuff Tested</td>
+    <td>Check</td>
+  </tr>
+  <tr>
+    <td style="width: 90%;">Alternate ETT, size ‘        ’</td>
+    <td>Check</td>
+  </tr>
+  <tr>
+    <td style="width: 90%;">Bougie</td>
+    <td>Check</td>
+  </tr>
+  <tr>
+    <td style="width: 90%;">CMAC blade, Hyperangulated, size ‘       ’</td>
+    <td>Check</td>
+  </tr>
+  <tr>
+    <td style="width: 90%;">Stylet</td>
+    <td>Check</td>
+  </tr>
+  <tr>
+    <td style="width: 90%;">Tube Tie</td>
+    <td>Check</td>
+  </tr>
+  <tr>
+    <td style="width: 90%;">iGel, size ‘      ’</td>
+    <td>Check</td>
+  </tr>
+  <tr>
+    <td style="width: 90%;">Cricothyrotomy Set</td>
+    <td>Check</td>
+  </tr>
+</table>
+<h6>Post Intubation Checklist</h6>
+<table>
+  <tr>
+    <th colspan="2">Post Intubation Checklist</th>
+  </tr>
+  <tr>
+    <td style="width: 90%;">ETT/ SGA Placement Confirmed with waveform capnography</td>
+    <td>Check</td>
+  </tr>
+  <tr>
+    <td style="width: 90%;">ETT/ SGA Secured, Depth Confirmed, Cuff Pressure 20-30 cm H2O</td>
+    <td>Check</td>
+  </tr>
+  <tr>
+    <td style="width: 90%;">Ventilator – Settings, Circuit, In-Line Suction, Filter, ETCO2</td>
+    <td>Check</td>
+  </tr>
+  <tr>
+    <td style="width: 90%;">Analgesia + Sedation</td>
+    <td>Check</td>
+  </tr>
+  <tr>
+    <td style="width: 90%;">HOB Raised to 30 Degrees</td>
+    <td>Check</td>
+  </tr>
+  <tr>
+    <td style="width: 90%;">NG + Foley PRN</td>
+    <td>Check</td>
+  </tr>
+  <tr>
+    <td style="width: 90%;">Secure all Lines and Tubes</td>
+    <td>Check</td>
+  </tr>
+  <tr>
+    <td style="width: 90%;">Rescue Airway Equipment within Reach</td>
+    <td>Check</td>
+  </tr>
+  <tr>
+    <td style="width: 90%;">Supplies – Oxygen, Drugs, Power, Airway Bag Packed Up</td>
+    <td>Check</td>
+  </tr>
+  <tr>
+    <td style="width: 90%;">CMAC Record Button Off</td>
+    <td>Check</td>
+  </tr>
+  <tr>
+    <td style="width: 90%;">Chest Xray if appropriate</td>
+    <td>Check</td>
+  </tr>
+</table>
+<h6>Crash Intubation Checklist</h6>
+<table>
+  <tr>
+    <th colspan="2">Crash Intubation Checklist</th>
+  </tr>
+  <tr>
+    <td style="width: 90%;">Patient and Operator Position Optimized</td>
+    <td>Check</td>
+  </tr>
+  <tr>
+    <td style="width: 90%;">CMAC tested</td>
+    <td>Check</td>
+  </tr>
+  <tr>
+    <td style="width: 90%;">DuCanto Suction Tested</td>
+    <td>Check</td>
+  </tr>
+  <tr>
+    <td style="width: 90%;">Bougie</td>
+    <td>Check</td>
+  </tr>
+  <tr>
+    <td style="width: 90%;">ETT, size ‘    ’</td>
+    <td>Check</td>
+  </tr>
+  <tr>
+    <td style="width: 90%;">Tube Tie</td>
+    <td>Check</td>
+  </tr>
+  <tr>
+    <td style="width: 90%;">Syringe</td>
+    <td>Check</td>
+  </tr>
+  <tr>
+    <td style="width: 90%;">BVM (ETCO2, PEEP, Filter)</td>
+    <td>Check</td>
+  </tr>
+  <tr>
+    <td style="width: 90%;">iGel</td>
+    <td>Check</td>
+  </tr>
+</table>
+
+<p><b>Preoxygenation</b></p>
+
+<p>Preoxygenation is essential to performing a safe RSI and should occur during the entire preparation and be tailored
+to patients’ specific physiology. The goal of preoxygenation is to prolong the safe apnea time available for achieving
+tracheal intubation prior to critical desaturation once the cessation of breathing occurs. Preoxygenation provides
+an oxygen reservoir in the alveoli, blood, and tissues and can permit many minutes of apnea prior to desaturation
+and the requirement to perform rescue ventilations.
+Full nitrogen washout from the lungs in healthy adults occurs by the administration of 100% FiO2 during normal
+tidal volume breathing for 3-5 minutes. Similarly, a patient may also take 8 vital capacity breaths over a one-minute
+period to achieve nitrogen washout, however this may be difficult in the critically unwell who are not cooperative.
+This approach is adequate in patients with normal lung tissue.</p>
+<p>In patients who are hypoxic and demonstrating shunt physiology, having perfused alveoli that lack ventilation (due
+to blood, pus, or atelectasis), a more active approach to preoxygenation is required or else risking critical
+desaturation. This can be achieved by increasing mean airway pressure with a PEEP valve on a resuscitation bag or
+a NIPPV machine, to splint open collapsed and fluid filled alveoli.</p>
+<p>If patients have required positive airway pressure during the preoxygenation phase of RSI, it is likely to be required
+until the time of laryngoscopy, as apneic oxygenation with nasal cannula alone will not compensate for their
+disease process. Assisted bag mask ventilation during preoxygenation can help the operators determine
+appropriate mask fit and the effects of positive pressure ventilation for those patients deemed to have an
+anatomically difficult airway.</p>
+<p>Although apneic oxygenation has received much attention in the literature, it is important to note that this is the
+final stage of preoxygenation lasting only the brief, apneic time of laryngoscopy. It is not capable of overcoming a
+poorly performed global preoxygenation strategy.</p>
+<p>
+The following table summarizes the stepwise approach to preoxygenation strategies in various risk categories of
+patients. This table is based upon patients’ pulse oximetry readings on high flow oxygen via nonrebreather mask.
+Sniffing position, head of bed elevation, and apneic oxygenation are recommended for all patients whose
+physiology and anatomy allows. Those patients with shunt require a gradual escalation of positive pressure delivery
+in order to be safely prepared for an RSI.</p>
+    <table>
+        <thead>
+            <tr>
+                <th>Risk Category (SpO2 on NRB)</th>
+                <th>Preoxygenation Period (3-5 minutes)</th>
+                <th>Induction to Full Paralysis (~60 seconds)</th>
+                <th>Laryngoscopy (&lt;90 seconds)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Low (96-100%)</td>
+                <td>NRB @ 15L/min</td>
+                <td>NRB @ 15L/min and Nasal cannula 15L/min</td>
+                <td>Nasal cannula 15L/min</td>
+            </tr>
+            <tr>
+                <td>High (91-95%)</td>
+                <td>NRB @ flush rate, or NIPPV, or BVM with PEEP valve</td>
+                <td>NRB @ flush rate, or NIPPV, or BVM with PEEP valve and Nasal cannula 15L/min</td>
+                <td>Nasal cannula 15L/min</td>
+            </tr>
+            <tr>
+                <td>Hypoxemic (&lt;90%)</td>
+                <td>NIPPV, or BVM with PEEP valve</td>
+                <td>NIPPV, or BVM with PEEP valve and Nasal cannula 15L/min</td>
+                <td>Nasal cannula 15L/min</td>
+            </tr>
+        </tbody>
+    </table>
+<p>Patients in all categories should receive preoxygenation in head-elevated or reverse Trendelenburg position when possible</p>
+<p><b>Drilled Responses to the Difficult Airway</b></p>
+<p>(Laryngoscope blade is in the mouth but there is difficulty generating a view of the glottis)</p>
+<p>Laryngoscopy should be a controlled, deliberate skill that occurs in a stepwise fashion to help keep the intubator
+oriented on the specific anatomy on route to the glottis (E-V-L-I). First, the airway operator should perform
+<span style="text-decoration: underline;">epiglottoscopy</span>, following the tongue to the epiglottis. Then, <span style="text-decoration: underline;"> valleculoscopy</span>, placing the tip of the blade in the
+epiglottis and engaging the hyoepiglottic ligament to lift the epiglottis. Next, <span style="text-decoration: underline;">laryngoscopy</span>, manipulating the
+thyroid cartilage and head lift to bring the vocal cords into better view. And finally, <span style="text-decoration: underline;">intubation</span>, with bougie and
+endotracheal tube delivery.</p>
+<p> During an intubation, if there is difficulty generating an appropriate view of the glottis, teams must have a
+structured approach for additional maneuvers that can be performed to optimize the view. Several HEMS
+organizations have incorporated the concept of “30 second drills” when dealing with this scenario, which can be
+recalled using the memory aid, "Neck, head, hands, scoop, pull back". It involves the intubator and assistant
+performing five maneuvers in rapid succession:</p>
+    <ol>
+        <li>NECK - External laryngeal manipulation of the thyroid cartilage</li>
+        <li>HEAD - Extra head lift - right hand under the occiput lifting the patient’s head</li>
+        <li>HANDS - Extra head lift - both hands lifting the laryngoscope blade</li>
+        <li>SCOOP - lift epiglottis with laryngoscope blade tip</li>
+        <li>PULL BACK - obtain a purposeful grade II view with VL to decrease delivery angle of the endotracheal tube</li>
+    </ol>
+<p>In the event of a grade III view which does not improve with the above maneuvers, a bougie may be passed under
+the epiglottis. Tracheal placement can be confirmed with gentle distal hold-up, palpated between 30-40cm. An
+endotracheal tube should only be placed if distal hold up is confirmed.</p>
+<p>In adults, the rare grade IV views are invariably improved by changing patient and operator position. Meticulous
+attention to detail should be placed to optimizing these prior to the first attempt.</p>
+
+<p><b>Airway Plan and Choice of Equipment</b></p>
+<p>An appropriate airway plan, discussed prior to induction, should include the intubator’s choice of equipment on
+their first look. The usual clinical predictors of a “difficult airway” are unreliable and each intubation in our
+environment should be regarded as such. At Ornge, we advocate that all first-attempt intubations occur utilizing a
+standard geometry video laryngoscope (CMAC) and a bougie. All attempts should also be recorded. Video
+laryngoscopes have demonstrated superior first pass success rates in novice intubators due to their ease of use and
+magnified view of the glottis. In addition, the screen allows for better team dynamics and communication as the
+airway assistant can visualize the challenges the laryngoscopist may be encountering. A bougie should be used as
+an adjunct as it helps increase first pass success rates and makes the intubation of grade IIb and grade III views of
+the glottis more favourable. Utilizing these two devices on a routine basis on ‘easy’ anatomical airways will ensure
+proficiency of the team when difficulty arises. Additionally, we recommend leading with suction to minimize the
+chances the video laryngoscope camera could come into contact with fluids and become obscured.</p>
+<p>The second aspect of an airway plan is the threshold saturation level in which the airway attempt is aborted and
+reoxygenation performed. Stating this value during the team brief empowers the airway assistant to abort
+laryngoscopy when saturations are close to hitting a critical stage. This number should be agreed upon as well as
+the initial choice of rescue ventilation technique (bag mask ventilation or supraglottic airway).</p>
+<p>As an example, an airway plan can be succinct yet cover the crucial information, “On first attempt, we’ll use a
+CMAC 4-blade and a bougie. Any difficult view, we’ll perform the 30 second drills. If saturations fall to 92%, we’ll
+abort, and rescue ventilate with two-hand BVM with an OPA and NPA”.</p>
+<p>After successful rescue ventilation, any additional intubation attempts must consider the encountered difficulties
+and utilize different equipment, personnel, or techniques to mitigate their reoccurrence. Most often, if difficulty
+with glottic exposure is encountered with a standard geometry blade, a hyper-angulated video laryngoscope blade
+and styleted endotracheal tube should be considered. Failure at this point should lead to the most experienced
+intubator taking control at the head of the bed.</p>
+<p>In advanced prehospital clinical teams comprising Anesthesia or Emergency Medicine, flexible intubating scopes
+are essential airway adjuncts when used alone or in combination with a video laryngoscope for securing
+endotracheal intubation, as they allow one to navigate difficult anatomy by both the oral and nasal routes. They
+can also be used through second generation supraglottic airways in the unanticipated difficult airway.</p>
+
+<p><b>Drilled Response to Hypoxia During Intubation Attempt</b></p>
+<p>Anytime there is encountered difficulty and hypoxia, it is important to be decisive in progressing through our
+rescue airway algorithms and use the most familiar techniques and equipment to perform rescue airway
+maneuvers.</p>
+<p>If the critical saturation threshold is reached (typically ≤ 92%):</p>
+<ul>
+        <li>Immediately stop laryngoscopy unless the bougie or endotracheal is visualized to be through the vocal cords (not a blind insertion)</li>
+        <li>Rescue-ventilate with optimized bag mask ventilation to saturations &gt;= 95%
+            <ul>
+                <li>Two-person technique</li>
+                <li>Two thumbs down mask seal</li>
+                <li>Jaw thrust and lateral head rotation (if potential injuries allow)</li>
+                <li>OPA and NPA insertion</li>
+                <li>PEEP valve and waveform capnography</li>
+                <li>BVM flush rate oxygen and nasal oxygen 15L/min</li>
+            </ul>
+        </li>
+        <li>Note that a rise in SpO2, despite good ventilations, may be delayed in those in shock states. Continue optimized BVM if waveform capnography indicates good ventilations</li>
+        <li>Failure of optimized BVM to ventilate means a “cant oxygenate, can’t ventilate” scenario where rescue airway interventions are emergently required.</li>
+        <li>SpO2 &lt;85% and falling with optimized BVM = supraglottic airway insertion.</li>
+        <li>SpO2 &lt;80% and falling despite supraglottic airway = cricothyrotomy (&gt;40kg).</li>
+        <li>Patch at first available opportunity to discuss options.</li>
+    </ul>
+<h5>Ornge Universal Airway Algorithm</h5>
+<p><img src="adult-airway-algorithm.png" alt=""></p>
+</body>
+
+</html>

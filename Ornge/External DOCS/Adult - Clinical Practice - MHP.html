@@ -5,7 +5,7 @@
 
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-<title>Clinical Practice - NSTEMI</title>
+<title>Controlled Intubation Checklist</title>
 
 
 <style type="text/css">
@@ -68,11 +68,11 @@ h6 tt, h6 code {
   font-size: inherit; }
 
 h1 {
-  font-size: 28px;
+  font-size: 20px;
   color: black; }
 
 h2 {
-  font-size: 24px;
+  font-size: 16px;
   border-bottom: 1px solid #cccccc;
   color: black; }
 
@@ -303,6 +303,15 @@ kbd {
   border-radius: 3px;
   box-shadow: inset 0 -1px 0 #bbb
 }
+#myTable td {
+  width: 33.33%;
+  font-size: 12px;
+}
+
+input[type="number"] {
+  font-size: 18px;
+  width: 25px;
+}
 
 * {
 	-webkit-print-color-adjust: exact;
@@ -321,6 +330,38 @@ kbd {
 		word-wrap: break-word;
 	}
 }
+.total {
+  font-weight: bold;
+  font-size: 18px;
+}
+.risk {
+  width: 100%;
+  height: 100px;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 5px;
+  z-index: 1;
+}
+.high-risk {
+  background-color: #c11111;
+  border-color: #c11111;
+}
+.moderate-risk {
+  background-color: #ff9100;
+  border-color: #ff9100;
+}
+.low-risk {
+  background-color: #05a105;
+  color: #05a105;
+}
+.selector {
+  width: 100%;
+  height: 50px;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 5px;
+  z-index: 1;
+}
 </style>
 
 
@@ -328,59 +369,190 @@ kbd {
 
 <body>
 
-<h2 id="toc_0">Ornge Clinical Practice Guideline: Non ST Elevation MI (NSTEMI)</h2>
+  <h1 id="toc_0">Ornge Clinical Practice Guideline: Risk Assessment Tool for the Transport of Patients with Mental Health Complaints</h1>
+  <p>*for columns 2 and 3:
+    <ul style="list-style-type: none;">
+      <li>
+        0 = Absent
+      </li>
+      <li>
+        1 = Minimal to Moderately present (can be controlled/managed)
+      </li>
+      <li>
+        2 = Strongly Present (difficult to control/manage)
+      </li>
+    </ul>
+  </p>
+  <table id="myTable">
+    <tr>
+      <th colspan="3">
+        Emotional state: has the patient been suicidal, agitated, irritable, hostile, reactive, or manic?
+      </th>
+    </tr>
+    <tr>
+      <td>
+        <p>Ever:<br>Yes = 1<br>No = 0</p>
+      </td>
+      <td>
+        <p>Last 24 hours:<br> *(0, 1, 2)</p>
+      </td>
+      <td>
+        <p>Anticipated during transport:<br> *(0, 1, 2)</p>
+      </td>
+      <tr>
+        <td>
+          <select id="input1a" class="selector" onchange="calculateSum()">
+            <option value="0">0 - No</option>
+            <option value="1">1 - Yes</option>
+          </select>
+        </td>
+        <td>
+          <select id="input1b" class="selector" onchange="calculateSum()">
+            <option value="0">0 - Absent</option>
+            <option value="1">1 - Minimal to Moderately present</option>
+            <option value="2">2 - Strongly Present</option>
+          </select>
+        </td>
+        <td>
+          <select id="input1c" class="selector" onchange="calculateSum()">
+            <option value="0">0 - Absent</option>
+            <option value="1">1 - Minimal to Moderately present</option>
+            <option value="2">2 - Strongly Present</option>
+          </select>
+        </td>
+      </tr>
+    </tr>
+    
+    <tr>
+      <th colspan="3">
+        Mental state: has the patient been confused, disoriented, cognitively impaired, hallucinating, deluded, or thought disordered?
+      </th>
+    </tr>
+    <tr>
+      <td>
+        <p>Ever:<br>Yes = 1<br>No = 0</p>
+      </td>
+      <td>
+        <p>Last 24 hours:<br> *(0, 1, 2)</p>
+      </td>
+      <td>
+        <p>Anticipated during transport:<br> *(0, 1, 2)</p>
+      </td>
+      <tr>
+        <td>
+          <select id="input2a" class="selector" onchange="calculateSum()">
+            <option value="0">0 - No</option>
+            <option value="1">1 - Yes</option>
+          </select>
+        </td>
+        <td>
+          <select id="input2b" class="selector" onchange="calculateSum()">
+            <option value="0">0 - Absent</option>
+            <option value="1">1 - Minimal to Moderately present</option>
+            <option value="2">2 - Strongly Present</option>
+          </select>
+        </td>
+        <td>
+          <select id="input2c" class="selector" onchange="calculateSum()">
+            <option value="0">0 - Absent</option>
+            <option value="1">1 - Minimal to Moderately present</option>
+            <option value="2">2 - Strongly Present</option>
+          </select>
+        </td>
+      </tr>
+    </tr>
+    <tr>
+      <th colspan="3">
+        Behaviour: has the patient been threatening or violent to self, others or objects; impulsive, uncooperative with instructions or directions?
+      </th>
+    </tr>
+    <tr>
+      <td>
+        <p>Ever:<br>Yes = 1<br>No = 0</p>
+      </td>
+      <td>
+        <p>Last 24 hours:<br> *(0, 1, 2)</p>
+      </td>
+      <td>
+        <p>Anticipated during transport:<br> *(0, 1, 2)</p>
+      </td>
+      <tr >
+        <td>
+          <select id="input3a" class="selector" onchange="calculateSum()">
+            <option value="0">0 - No</option>
+            <option value="1">1 - Yes</option>
+          </select>
+        </td>
+        <td>
+          <select id="input3b" class="selector" onchange="calculateSum()">
+            <option value="0">0 - Absent</option>
+            <option value="1">1 - Minimal to Moderately present</option>
+            <option value="2">2 - Strongly Present</option>
+          </select>
+        </td>
+        <td>
+          <select id="input3c" class="selector" onchange="calculateSum()">
+            <option value="0">0 - Absent</option>
+            <option value="1">1 - Minimal to Moderately present</option>
+            <option value="2">2 - Strongly Present</option>
+          </select>
+        </td>
+      </tr>
+    </tr>
+    <tr>
+      <th colspan="3">
+        Totals:
+      </th>
+    </tr>
+    <tr>
+      <td id="totala" class="total"></td>
+      <td id="totalb" class="total"></td>
+      <td id="totalc" class="total"></td>
+    </tr>
+  </table>
+  
+  <div class="risk" id="risk">
+    <h2 id="sum" style="color:white; text-align: center;"></h2>
+  </div>
+  <p><b>** Note: this risk rating should be modified if there is any belief the patient is at risk for disruptive behaviour during transport due to fear of flying, fear of restraint, claustrophobia, or any other factor.</b></p>
+<script>
+function calculateSum() {
+  var val1a = parseInt(document.getElementById('input1a').value) || 0;
+  var val2a = parseInt(document.getElementById('input2a').value) || 0;
+  var val3a = parseInt(document.getElementById('input3a').value) || 0;
+  
+  var val1b = parseInt(document.getElementById('input1b').value) || 0;
+  var val2b = parseInt(document.getElementById('input2b').value) || 0;
+  var val3b = parseInt(document.getElementById('input3b').value) || 0;
+  
+  var val1c = parseInt(document.getElementById('input1c').value) || 0;
+  var val2c = parseInt(document.getElementById('input2c').value) || 0;
+  var val3c = parseInt(document.getElementById('input3c').value) || 0;
 
-<p><i>Please refer to the Drug Monographs and References document for references listed in the CPGs</i></p>
+  var sumA = val1a + val2a + val3a;
+  var sumB = val1b + val2b + val3b;
+  var sumC = val1c + val2c + val3c;
+  document.getElementById('totala').innerHTML = `${sumA}`;
+  document.getElementById('totalb').innerHTML = `${sumB}`;
+  document.getElementById('totalc').innerHTML = `${sumC}`;
+  var sumTotal = sumA + sumB + sumC;
+  var risk = "";
 
-<h4 id="toc_1">Early Hospital Care: Recommendations</h4>
+  if (sumTotal > 8 || Math.max(val1c, val2c, val3c) == 2 ) {
+    risk = "High";
+  } else if ((sumTotal >= 5 && sumTotal <= 8) || Math.max(val1b, val2b, val3b) == 2) {
+    risk = "Moderate";
+  } else if (sumA < 3 && sumB + sumC < 1) {
+    risk = "Low";
+  }
+  document.getElementById('risk').setAttribute('class', 'risk ' + risk.toLowerCase() + '-risk');
+  document.getElementById('sum').innerHTML = "The total score is: " + sumTotal + "/15.<br>The risk is: " + risk + "**";
+}
 
-<p><b>Standard Medical Therapies</b></p>
-
-<ol><li>Oxygen</li>  
-Class I  
-    <ol type="a"><li>Supplemental oxygen should be administered to patients with NSTEMI with arterial oxygen saturation less than 90%, respiratory distress, or other high-risk features of hypoxemia <sup>37</sup>. Oxygen should be titrated to SpO2 94-98%</li></ol>
-<li>Nitrates</li>  
-Class I  
-    <ol type="a"><li> Patients with NSTEMI with continuing ischemic pain should receive <b>sublingual nitroglycerin</b> (0.3 mg– 0.4 mg) every 5 minutes for up to 3 doses, after which an assessment should be made about the need for intravenous nitroglycerin if not contraindicated</li>
-    <li> <b>Intravenous nitroglycerin</b> is indicated for patients with NSTEMI for the treatment of persistent ischemia, heart failure (HF), or hypertension (2014 AHA/ACC 106-111)<sup>1-7</sup> </li></ol>
-    Class III: Harm
-<ol type="a" start="3"><li> Nitrates should not be administered to patients with NSTEMI who recently received a phosphodiesterase inhibitor, especially within 24 hours of sildenafil or vardenafil, or within 48 hours of tadalafil (2014 AHA/ACC 112-114) <sup>1(19), 8-10</sup></li></ol>
-<li>Analgesic Therapy</li>  
-Class IIb  
-    <ol type="a"><li>In the absence of contraindications, it may be reasonable to administer <b>Morphine Sulfate or fentaNYL</b> intravenously to patients with NSTEMI if there is continued ischemic chest pain despite treatment with maximally tolerated anti-ischemic medications (2014 AHA/ACC 115-116) <sup>1, 11, 12</sup></li></ol></ol>
-
-
-<b>Initial Antiplatelet/Anticoagulant Therapy in Patients With Definite or Likely NSTEMI</b>
-
-<ol><li>Initial Oral and Intravenous Antiplatelet Therapy in Patients with Definite or Likely NSTEMI</li>
-Class I
-    <ol type="a"><li><b>Non-enteric-coated, chewable aspirin (160 mg to 325 mg)</b> should be given to all patients with NSTEMI
-without contraindications as soon as possible after presentation, and a maintenance dose of aspirin
-(81 mg/day to 160 mg/day) should be continued indefinitely (2014 AHA/ACC 142-144) <sup>1, 13, 14, 15</sup> </li>
-<li>In patients with NSTEMI who are unable to take aspirin because of hypersensitivity or major gastrointestinal intolerance, a loading dose of <b>clopidogrel</b> followed by a daily maintenance dose should be administered (2014 AHA/ACC 145)<sup>1(22), 16</sup> </li>
-<li>A P2Y12 inhibitor (either clopidogrel or ticagrelor) in addition to aspirin should be given to all patients with NSTEMI without contraindications, and administered for up to 12 months to all patients with NSTEMI without contraindications who are treated with either an early invasive or ischemia-guided strategy. Options include:</li>
-<ul style="list-style-type:disc;"><li><b>Clopidogrel:</b> 300 mg or 600 mg loading dose, then 75 mg daily</li>
-<ul style="list-style-type:circle;"><li>600 mg usually intended for patients who will undergo angioplasty</li></ul>
-<li><b>Ticagrelor:</b> 180 mg loading dose, then 90 mg twice daily</li></ul></ol>
-
-<p><li>Initial Parenteral Anticoagulant Therapy in Patients with Definite NSTE-ACS</li>
-Class I<br>
-<ol type="a"><li>In patients with NSTEMI, anticoagulation, in addition to antiplatelet therapy, is recommended for all patients irrespective of initial treatment strategy. Treatment options include:</li>
-<ul style="list-style-type:disc;"><li><b>Enoxaparin:</b> 1 mg/kg subcutaneous (SubQ) every 12 hours (reduce dose to 1 mg/kg SubQ once
-daily in patients with creatinine clearance [CrCl] <30 mL/min) until percutaneous coronary intervention (PCI) is performed. An initial intravenous loading dose is 30 mg (2014 AHA/ACC 151-
-153)<sup>1, 17-19</sup></li>
-<li><b>Unfractionated heparin (UFH) IV:</b> initial loading dose of 60 IU/kg (MAX 4,000 IU) with initial infusion of 12 IU/kg per hour (MAX 1,000 IU/h) adjusted per activated partial thromboplastin time
-to maintain therapeutic anticoagulation according to the specific hospital protocol until PCI is performed (2014 AHA/ACC 160-166)<sup>1, 20-26</sup>
-<li><b>Bivalirudin:</b> 0.10 mg/kg loading dose followed by 0.25 mg/kg per hour (only in patients managed with an early invasive strategy), continued until diagnostic angiography or PCI, with only provisional
-use of GP IIb/IIIa inhibitor, provided the patient is also treated with DAPT (2014 AHA/ACC 146,147,154,155)<sup>1, 27-30</sup></li>
-<li><b>Fondaparinux:</b> 2.5 mg SC daily, continued for the duration of hospitalization or until PCI is performed (2014 AHA/ACC 156-158) <sup>1, 31-33</sup>. If PCI is performed while the patient is on
-fondaparinux, an additional anticoagulant with anti-IIa activity (either UFH or bivalirudin) should be administered because of the risk of catheter thrombosis (2014 AHA/ACC 157-159) <sup>1, 32-34</sup></li></ul></ol>
-Class III: Harm<br>
-<ol type="a"><li>In patients with NSTEMI (i.e., without ST elevation, true posterior MI, or left bundle-branch block not known to be old), intravenous fibrinolytic therapy should not be used (2014 AHA/ACC 167,168) <sup>1, 35, 36</sup></p>
-
-
-
+</script>
 
 </body>
+
+
 
 </html>

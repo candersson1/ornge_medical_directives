@@ -251,7 +251,7 @@ class DrugMonographViewController : UIViewController
                                 contentLabel.attributedText = contentArray[y][x].set(style: styleGroup)
                                 contentLabel.translatesAutoresizingMaskIntoConstraints = false
                                 
-                                if(contentArray[y][x] == "PCP(f)" || contentArray[y][x] == "≥PCP(f)") {
+                                if(contentArray[y][x] == "pcp" || contentArray[y][x] == "≥pcp") {
                                     labelView.backgroundColor = pcpColor
                                     contentLabel.textColor = .black
                                 }

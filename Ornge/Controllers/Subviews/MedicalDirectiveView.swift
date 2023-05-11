@@ -249,7 +249,7 @@ class MedicalDirectiveView : UIView
 
                 if(locVersion[0] == "pcp") {
                     locButton.backgroundColor = pcpColor
-                    locLabel.text = "≥PCP(f)"
+                    locLabel.text = "≥PCP"
                 }  else if(locVersion[0] == "acpl") {
                    locButton.backgroundColor = acplColor
                    locLabel.text = "≥ACP(L)"
@@ -368,12 +368,26 @@ extension MedicalDirectiveView : UITextViewDelegate
     func textView(_ textView: UITextView, shouldInteractWith URL: URL, in characterRange: NSRange, interaction: UITextItemInteraction) -> Bool {
         print("Clicked a link")
         var targetString = URL.absoluteString
+        print("TaegrString: \(targetString)")
         if(targetString.hasPrefix("drugKey=")) {
             targetString = String(targetString.dropFirst(8))
             DrugMonographViewController.loadViewControllerWithKey(key: targetString)
         } else if(targetString.hasPrefix("directive=")) {
             targetString = String(targetString.dropFirst(10))
             MedicalDirectiveTabViewController.loadViewControllerWithKey(key: targetString)
+        } else if(targetString.hasPrefix("webview=")) {
+            targetString = String(targetString.dropFirst(8))
+            let webViewController = WebViewController()
+            print("Ready to go to webview: \(targetString)")
+            let navController = UIApplication.shared.windows[0].rootViewController as? UINavigationController
+            let storyboard = navController?.storyboard
+            let viewController = storyboard!.instantiateViewController(withIdentifier: "WebViewController") as! WebViewController
+            viewController.target = targetString
+            navController!.pushViewController(viewController, animated: true)
+
+         
+            // And then you push it into the navigation controller
+            //self.navigationController?.pushViewController(webViewController, animated: true)
         }
         return false
     }

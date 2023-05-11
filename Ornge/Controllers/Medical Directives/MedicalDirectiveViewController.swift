@@ -175,9 +175,20 @@ extension MedicalDirectiveViewController : UITextViewDelegate
     func textView(_ textView: UITextView, shouldInteractWith URL: URL, in characterRange: NSRange, interaction: UITextItemInteraction) -> Bool {
         print("Clicked a link")
         var targetString = URL.absoluteString
+        print("Target String", targetString)
         if(targetString.hasPrefix("drugKey=")) {
             targetString = String(targetString.dropFirst(8))
             DrugMonographViewController.loadViewControllerWithKey(key: targetString)
+        } else if(targetString.hasPrefix("webview=")) {
+            targetString = String(targetString.dropFirst(8))
+            let webViewController = WebViewController()
+            // If you want to set some properties
+            //webViewController.colour = "Red"
+            webViewController.target = targetString
+            // And then you push it into the navigation controller
+            self.navigationController?.pushViewController(webViewController, animated: true)
+            
+           
         }
         return false
     }

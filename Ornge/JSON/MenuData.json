@@ -1,1087 +1,1113 @@
 {
-  "menus" : [
-    {
-      "title" : "Main Menu",
-      "type" : "menu",
-      "items" : [
+    "menus": [
         {
-            "title" : "Adult Medical Directives",
-            "type" : "menu",
-            "items" : [
+            "title": "Main Menu",
+            "type": "menu",
+            "items": [
                 {
-                    "title" : "Adult Mixing and Administration Table for Continuous Infusion Summary",
-                    "type" : "menu_document_link",
-                    "key" : "adult_mixing_table"
-                },
-                {
-                    "title" : "Adult Medication List",
-                    "type" : "menu_document_link",
-                    "key" : "adult_medication_list"
-                },
-                {
-                    "title" : "Adult Procedure List",
-                    "type" : "menu_document_link",
-                    "key" : "adult_procedure_list"
-                },
-                {
-                    
-                     "title" : "Airway",
-                     "type" : "menu",
-                     "items" : [
-                         {
-                             "title" : "Controlled Intubation Checklist",
-                             "type" : "menu_document_link",
-                             "key" : "adult_intubation_checklist"
-                         },
-                         {
-                             "title" : "Ornge Airway Manual - Executive Summary",
-                             "type" : "menu_document_link",
-                             "key" : "Ornge Airway Manual Executive Summary"
-                         },
-                         {
-                             "title" : "Supraglotic Airway",
-                             "type" : "menu_document_link",
-                             "key" : "adult_sga"
-                         },
-                         {
-                             "title" : "Pre-Intubation and Intubation Medications",
-                             "type" : "menu_document_link",
-                             "key" : "adult_rsi"
-                         },
-                         {
-                             "title" : "Emergency Tracheostomy Tube Reinsertion",
-                             "type" : "menu_document_link",
-                             "key" : "adult_tracheostomy"
-                         }
-                    ]
-                },
-                {
-                    "title" : "Respiratory",
-                    "type" : "menu",
-                    "items" : [
+                    "title": "Adult Medical Directives",
+                    "type": "menu",
+                    "items": [
                         {
-                            "title" : "Ideal Body Weight Calculator",
-                            "type" : "menu_document_link",
-                            "key" : "vent_tool"
+                            "title": "Adult Mixing and Administration Table for Continuous Infusion Summary",
+                            "type": "menu_document_link",
+                            "key": "adult_mixing_table"
                         },
                         {
-                            "title" : "Clinical Practice Guideline - Asthma",
-                            "type" : "menu_document_link",
-                            "key" : "Adult - Clinical Practice - Asthma"
+                            "title": "Adult Medication List",
+                            "type": "menu_document_link",
+                            "key": "adult_medication_list"
                         },
                         {
-                            "title" : "Bronchoconstriction",
-                            "type" : "menu_document_link",
-                            "key" : "adult_bronchoconstriction"
+                            "title": "Adult Procedure List",
+                            "type": "menu_document_link",
+                            "key": "adult_procedure_list"
                         },
                         {
-                            "title" : "Tension Pneumothorax",
-                            "type" : "menu_document_link",
-                            "key" : "adult_pneumothorax"
+                            "title": "Airway",
+                            "type": "menu",
+                            "items": [
+                                {
+                                    "title": "Controlled Intubation Checklist",
+                                    "type": "menu_document_link",
+                                    "key": "adult_intubation_checklist"
+                                },
+                                {
+                                    "title": "Adult - Clinical Practice - Airway",
+                                    "type": "menu_document_link",
+                                    "key": "Adult - Clinical Practice - Airway"
+                                },
+                                {
+                                    "title": "Supraglotic Airway",
+                                    "type": "menu_document_link",
+                                    "key": "adult_sga"
+                                },
+                                {
+                                    "title": "Cricothyrotomy",
+                                    "type": "menu_document_link",
+                                    "key": "adult_cricothyrotomy"
+                                },
+                                {
+                                    "title": "Transport of the Tracheostomy Patient",
+                                    "type": "menu_document_link",
+                                    "key": "adult_transport_of_tracheostomy_patient"
+                                },
+                                {
+                                    "title": "Pre-Intubation and Intubation Medications",
+                                    "type": "menu_document_link",
+                                    "key": "adult_rsi"
+                                },
+                                {
+                                    "title": "Emergency Tracheostomy Tube Reinsertion",
+                                    "type": "menu_document_link",
+                                    "key": "adult_tracheostomy"
+                                }
+                            ]
                         },
                         {
-                            "title" : "Maintenance of Chest Tubes",
-                            "type" : "menu_document_link",
-                            "key" : "adult_chest_tube"
+                            "title": "Respiratory",
+                            "type": "menu",
+                            "items": [
+                                {
+                                    "title": "Ideal Body Weight Calculator",
+                                    "type": "menu_document_link",
+                                    "key": "vent_tool"
+                                },
+                                {
+                                    "title": "Clinical Practice Guideline - Asthma",
+                                    "type": "menu_document_link",
+                                    "key": "Adult - Clinical Practice - Asthma"
+                                },
+                                {
+                                    "title": "Bronchoconstriction",
+                                    "type": "menu_document_link",
+                                    "key": "adult_bronchoconstriction"
+                                },
+                                {
+                                    "title": "Needle Thoracostomy",
+                                    "type": "menu_document_link",
+                                    "key": "adult_pneumothorax"
+                                },
+                                {
+                                    "title": "Maintenance of Chest Tubes",
+                                    "type": "menu_document_link",
+                                    "key": "adult_chest_tube"
+                                },
+                                {
+                                    "title": "Clinical Practice Guidelines - Mechanical Ventilation",
+                                    "type": "menu_document_link",
+                                    "key": "Adult - Clinical Practice Guidelines - Mechanical Ventilation"
+                                },
+                                {
+                                    "title": "Initiating or Maintaining Mechanical Ventilation",
+                                    "type": "menu_document_link",
+                                    "key": "adult_ventilation"
+                                },
+                                {
+                                    "title": "Lung Volume Recruitment (LVR)",
+                                    "type": "menu_document_link",
+                                    "key": "adult_lvr"
+                                },
+                                {
+                                    "title": "Non-Invasive Positive Pressure Ventilation (NPPV)",
+                                    "type": "menu_document_link",
+                                    "key": "adult_nippv"
+                                },
+                                {
+                                    "title": "High Flow Nasal Cannula Therapy (HFNC)",
+                                    "type": "menu_document_link",
+                                    "key": "adult_hfnc"
+                                },
+                                {
+                                    "title": "Clinical Practice - Epoprostenol",
+                                    "type": "menu_document_link",
+                                    "key": "Adult - Clinical Practice - Epoprostenol"
+                                },
+                                {
+                                    "title": "Inhaled Epoprostenol (Flolan®)",
+                                    "type": "menu_document_link",
+                                    "key": "adult_flolan"
+                                },
+                                {
+                                    "title": "Trasport of Patients in the Prone Position",
+                                    "type": "menu_document_link",
+                                    "key": "adult_prone"
+                                }
+                            ]
                         },
                         {
-                            "title" : "Clinical Practice Guidelines - Mechanical Ventilation",
-                            "type" : "menu_document_link",
-                            "key" : "Adult - Clinical Practice Guidelines - Mechanical Ventilation"
+                            "title": "Analgosedation & Paralysis",
+                            "type": "menu",
+                            "items": [
+                                {
+                                    "title": "Pre-Transfer Anxiolysis",
+                                    "type": "menu_document_link",
+                                    "key": "adult_anxiety"
+                                },
+                                {
+                                    "title": "Analgesia: Non-Intubated Patients",
+                                    "type": "menu_document_link",
+                                    "key": "adult_awake_analgesia"
+                                },
+                                {
+                                    "title": "Clinical Practice - Sedation and Pain Management for Intubated and Ventilated Patients",
+                                    "type": "menu_document_link",
+                                    "key": "Adult - Clinical Practice - Sedation Intubated"
+                                },
+                                {
+                                    "title": "Pain Scale For Adult Intubated Patients",
+                                    "type": "menu_document_link",
+                                    "key": "adult_pain_scale"
+                                },
+                                {
+                                    "title": "Sedation Scale For Adults (RASS Score)",
+                                    "type": "menu_document_link",
+                                    "key": "adult_sedation_scale"
+                                },
+                                {
+                                    "title": "Analgosedation for Intubated Patients",
+                                    "type": "menu_document_link",
+                                    "key": "adult_intubated_analgesia"
+                                },
+                                {
+                                    "title": "Post Intubation Paralysis",
+                                    "type": "menu_document_link",
+                                    "key": "adult_paralysis"
+                                }
+                            ]
                         },
                         {
-                            "title" : "Initiating or Maintaining Mechanical Ventilation",
-                            "type" : "menu_document_link",
-                            "key" : "adult_ventilation"
+                            "title": "Medical Cardiac Arrest and Post Resuscitation Care",
+                            "type": "menu",
+                            "items": [
+                                {
+                                    "title": "Adult Non-Traumatic Cardiac Arrest",
+                                    "type": "menu_document_link",
+                                    "key": "adult_medical_arrest"
+                                },
+                                {
+                                    "title": "Adult Severe Hypothermic Arrest",
+                                    "type": "menu_document_link",
+                                    "key": "adult_hypothermic_arrest"
+                                },
+                                {
+                                    "title": "Clinical Practice - Post Resuscitation Care of Cardiac Arrest",
+                                    "type": "menu_document_link",
+                                    "key": "Adult - Clinical Practice - ROSC"
+                                },
+                                {
+                                    "title": "Adult Post Arrest Return of Spontaneous Circulation (ROSC)",
+                                    "type": "menu_document_link",
+                                    "key": "adult_rosc"
+                                }
+                            ]
                         },
                         {
-                            "title" : "Lung Volume Recruitment (LVR)",
-                            "type" : "menu_document_link",
-                            "key" : "adult_lvr"
+                            "title": "Cardiac (Non-Arrest)",
+                            "type": "menu",
+                            "items": [
+                                {
+                                    "title": "Adult - Clinical Practice - Non ST Elevation ACS (NSTEACS)",
+                                    "type": "menu_document_link",
+                                    "key": "Adult - Clinical Practice - Non ST Elevation ACS (NSTEACS)"
+                                },
+                                {
+                                    "title": "Acute Coronary Syndrome",
+                                    "type": "menu_document_link",
+                                    "key": "adult_acs"
+                                },
+                                {
+                                    "title": "Clinical Practice - ST Elevation MI (STEMI)",
+                                    "type": "menu_document_link",
+                                    "key": "Adult - Clinical Practice - STEMI"
+                                },
+                                {
+                                    "title": "ST Elevation MI (STEMI)",
+                                    "type": "menu_document_link",
+                                    "key": "adult_stemi"
+                                },
+                                {
+                                    "title": "TNK Checklist",
+                                    "type": "menu_document_link",
+                                    "key": "adult_tnk_checklist"
+                                },
+                                {
+                                    "title": "Cardiogenic Pulmonary Edema",
+                                    "type": "menu_document_link",
+                                    "key": "adult_chf"
+                                },
+                                {
+                                    "title": "Clinical Practice - Cardiogenic Shock",
+                                    "type": "menu_document_link",
+                                    "key": "Adult - Clinical Practice - Cardiogenic Shock"
+                                },
+                                {
+                                    "title": "Cardiogenic Shock",
+                                    "type": "menu_document_link",
+                                    "key": "adult_cardiogenic_shock"
+                                },
+                                {
+                                    "title": "Care of Patients with Left Ventricular Assist Device (LVAD)",
+                                    "type": "menu_document_link",
+                                    "key": "adult_lvad"
+                                },
+                                {
+                                    "title": "Intra-Aortic Balloon Pump (IABP) Auxiliary Medical Directive",
+                                    "type": "menu_document_link",
+                                    "key": "adult_iabp"
+                                },
+                                {
+                                    "title": "Extracorporeal Membrane Oxygenation (ECMO) Auxiliary Medical Directive",
+                                    "type": "menu_document_link",
+                                    "key": "adult_ecmo"
+                                },
+                                {
+                                    "title": "Emergency Medical Directive for ECMO/ECLS Failure",
+                                    "type": "menu_document_link",
+                                    "key": "adult_ecmo_failure"
+                                }
+                            ]
                         },
                         {
-                            "title" : "Non-Invasive Positive Pressure Ventilation (NPPV)",
-                            "type" : "menu_document_link",
-                            "key" : "adult_nippv"
+                            "title": "Arrhythmias",
+                            "type": "menu",
+                            "items": [
+                                {
+                                    "title": "Adult Symptomatic Bradycardia",
+                                    "type": "menu_document_link",
+                                    "key": "adult_bradycardia"
+                                },
+                                {
+                                    "title": "Transvenous Cardiac Pacing",
+                                    "type": "menu_document_link",
+                                    "key": "adult_tvp"
+                                },
+                                {
+                                    "title": "Adult Symptomatic Atrial Fibrillation/Flutter",
+                                    "type": "menu_document_link",
+                                    "key": "adult_afib"
+                                },
+                                {
+                                    "title": "Adult Paroxysmal Supraventricular Tachycardia (PSVT)",
+                                    "type": "menu_document_link",
+                                    "key": "adult_svt"
+                                },
+                                {
+                                    "title": "Adult Ventricular Tachycardia with Perfusion",
+                                    "type": "menu_document_link",
+                                    "key": "adult_vtach"
+                                }
+                            ]
                         },
                         {
-                            "title" : "High Flow Nasal Cannula Therapy (HFNC)",
-                            "type" : "menu_document_link",
-                            "key" : "adult_hfnc"
+                            "title": "IV/IO and Arterial Lines",
+                            "type": "menu",
+                            "items": [
+                                {
+                                    "title": "Intravenous Line Initiation",
+                                    "type": "menu_document_link",
+                                    "key": "adult_iv_start"
+                                },
+                                {
+                                    "title": "Intraosseous Initiation and Maintenance",
+                                    "type": "menu_document_link",
+                                    "key": "adult_io_start"
+                                },
+                                {
+                                    "title": "Intraosseous Vascular Access Analgesia",
+                                    "type": "menu_document_link",
+                                    "key": "adult_io_analgesia"
+                                },
+                                {
+                                    "title": "Intravenous Line Maintenance Standard: pcp",
+                                    "type": "menu_document_link",
+                                    "key": "adult_iv_pcp"
+                                },
+                                {
+                                    "title": "Blood Sampling and Lab Value Interpretation",
+                                    "type": "menu_document_link",
+                                    "key": "adult_blood_sampling"
+                                },
+                                {
+                                    "title": "Maintaining and Accessing Central Venous Lines",
+                                    "type": "menu_document_link",
+                                    "key": "adult_central_venous_lines"
+                                },
+                                {
+                                    "title": "Arterial Line Maintenance and Monitoring",
+                                    "type": "menu_document_link",
+                                    "key": "adult_arterial_lines"
+                                },
+                                {
+                                    "title": "Pulmonary Artery Catheters Auxiliary Medical Directive",
+                                    "type": "menu_document_link",
+                                    "key": "adult_pulmonary_artery_catheters"
+                                }
+                            ]
                         },
                         {
-                            "title" : "Clinical Practice - Epoprostenol",
-                            "type" : "menu_document_link",
-                            "key" : "Adult - Clinical Practice - Epoprostenol"
+                            "title": "Neurological & Psychological",
+                            "type": "menu",
+                            "items": [
+                                {
+                                    "title": "Clinical Practice - Stroke",
+                                    "type": "menu_document_link",
+                                    "key": "Adult - Clinical Practice - Stroke"
+                                },
+                                {
+                                    "title": "Stroke",
+                                    "type": "menu_document_link",
+                                    "key": "adult_stroke"
+                                },
+                                {
+                                    "title": "Seizure",
+                                    "type": "menu_document_link",
+                                    "key": "adult_seizure"
+                                },
+                                {
+                                    "title": "Clinical Practice - Risk Assessment for Mental Health Complaints",
+                                    "type": "menu_document_link",
+                                    "key": "Adult - Clinical Practice - MHP"
+                                },
+                                {
+                                    "title": "Care of the Agitated or Combative Patient",
+                                    "type": "menu_document_link",
+                                    "key": "adult_combative_patient"
+                                },
+                                {
+                                    "title": "Alcohol Withdrawal Assessment Scoring Guidelines (CIWA-Ar)",
+                                    "type": "menu_document_link",
+                                    "key": "alcohol_withdrawal_assessment_tool"
+                                },
+                                {
+                                    "title": "Management of Alcohol Intoxication Withdrawal",
+                                    "type": "menu_document_link",
+                                    "key": "adult_alcohol_intoxication_withdrawal"
+                                }
+                            ]
                         },
                         {
-                            "title" : "Inhaled Epoprostenol (Flolan®)",
-                            "type" : "menu_document_link",
-                            "key" : "adult_flolan"
+                            "title": "Trauma",
+                            "type": "menu",
+                            "items": [
+                                {
+                                    "title": "Clinical Practice - Trauma",
+                                    "type": "menu_document_link",
+                                    "key": "Adult - Clinical Practice - Trauma"
+                                },
+                                {
+                                    "title": "Adult Traumatic Cardiac Arrest",
+                                    "type": "menu_document_link",
+                                    "key": "adult_traumatic_arrest"
+                                },
+                                {
+                                    "title": "Traumatic Brain Injury",
+                                    "type": "menu_document_link",
+                                    "key": "adult_tbi"
+                                },
+                                {
+                                    "title": "Clinical Practice - Spinal Cord Injury",
+                                    "type": "menu_document_link",
+                                    "key": "Adult - Clinical Practice - SCI"
+                                },
+                                {
+                                    "title": "Spinal Cord Injury",
+                                    "type": "menu_document_link",
+                                    "key": "adult_sci"
+                                },
+                                {
+                                    "title": "Neurogenic Shock",
+                                    "type": "menu_document_link",
+                                    "key": "adult_neurogenic_shock"
+                                },
+                                {
+                                    "title": "Traumatic Hemorrhagic Shock",
+                                    "type": "menu_document_link",
+                                    "key": "adult_hemorrhagic_shock"
+                                }
+                            ]
                         },
                         {
-                            "title" : "Trasport of Patients in the Prone Position",
-                            "type" : "menu_document_link",
-                            "key" : "adult_prone"
+                            "title": "Blood Products",
+                            "type": "menu",
+                            "items": [
+                                {
+                                    "title": "Blood Product Administration",
+                                    "type": "menu_document_link",
+                                    "key": "adult_blood_product"
+                                },
+                                {
+                                    "title": "Reversal of Warfarin/Coumadin",
+                                    "type": "menu_document_link",
+                                    "key": "adult_warfarin_reversal"
+                                },
+                                {
+                                    "title": "Direct Oral Anticoagulant/Novel Oral Anticoagulants Reversal",
+                                    "type": "menu_document_link",
+                                    "key": "adult_doac_reversal"
+                                },
+                                {
+                                    "title": "Tranexamic Acid (TXA) Administration",
+                                    "type": "menu_document_link",
+                                    "key": "adult_txa"
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Shock States",
+                            "type": "menu",
+                            "items": [
+                                {
+                                    "title": "Push Dose EPINEPHrine (10 mcg/ml = 1: 100 000)",
+                                    "type": "menu_document_link",
+                                    "key": "adult_push_dose_epi"
+                                },
+                                {
+                                    "title": "Hypovolemic Shock",
+                                    "type": "menu_document_link",
+                                    "key": "adult_hypovolemic_shock"
+                                },
+                                {
+                                    "title": "Clinical Practice - Sepsis",
+                                    "type": "menu_document_link",
+                                    "key": "Adult - Clinical Practice - Sepsis"
+                                },
+                                {
+                                    "title": "Septic Shock",
+                                    "type": "menu_document_link",
+                                    "key": "adult_sepsis"
+                                },
+                                {
+                                    "title": "Extravasation of Vasopressors from Peripheral IV Infusion",
+                                    "type": "menu_document_link",
+                                    "key": "adult_extravasation_vasopressors"
+                                }
+                            ]
+                        },
+                        {
+                            "title": "GI/GU",
+                            "type": "menu",
+                            "items": [
+                                {
+                                    "title": "Nausea, Vomiting and Motion Sickness",
+                                    "type": "menu_document_link",
+                                    "key": "adult_nausea"
+                                },
+                                {
+                                    "title": "Gastric (NG or OG) Tubes",
+                                    "type": "menu_document_link",
+                                    "key": "adult_gastric_tubes"
+                                },
+                                {
+                                    "title": "Gastrointestinal Bleed",
+                                    "type": "menu_document_link",
+                                    "key": "adult_gi_bleed"
+                                },
+                                {
+                                    "title": "Gastroesophageal Balloon Tamponade Devices (Blakemore Tube)",
+                                    "type": "menu_document_link",
+                                    "key": "adult_blakemore_tube"
+                                },
+                                {
+                                    "title": "Esophageal Temperature Probes",
+                                    "type": "menu_document_link",
+                                    "key": "adult_esophageal_probe"
+                                },
+                                {
+                                    "title": "Urinary Catheter Insertion and Maintenance",
+                                    "type": "menu_document_link",
+                                    "key": "adult_urinary_catheter"
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Environmental and Metabolic",
+                            "type": "menu",
+                            "items": [
+                                {
+                                    "title": "Fever",
+                                    "type": "menu_document_link",
+                                    "key": "adult_fever"
+                                },
+                                {
+                                    "title": "Anaphylaxis",
+                                    "type": "menu_document_link",
+                                    "key": "adult_anaphylaxis"
+                                },
+                                {
+                                    "title": "Hypoglycemic Emergencies",
+                                    "type": "menu_document_link",
+                                    "key": "adult_hypoglycemia"
+                                },
+                                {
+                                    "title": "Hyperkalemia",
+                                    "type": "menu_document_link",
+                                    "key": "adult_hyperkalemia"
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Toxicology",
+                            "type": "menu",
+                            "items": [
+                                {
+                                    "title": "Suspected Acetaminophen Overdose",
+                                    "type": "menu_document_link",
+                                    "key": "adult_tylenol_od"
+                                },
+                                {
+                                    "title": "Suspected Opioid Overdose",
+                                    "type": "menu_document_link",
+                                    "key": "adult_opioid_od"
+                                },
+                                {
+                                    "title": "Sedative Overdose",
+                                    "type": "menu_document_link",
+                                    "key": "adult_sedative_od"
+                                },
+                                {
+                                    "title": "Beta Blocker Overdose",
+                                    "type": "menu_document_link",
+                                    "key": "adult_betablocker_od"
+                                },
+                                {
+                                    "title": "Calcium Channel Blocker Overdose",
+                                    "type": "menu_document_link",
+                                    "key": "adult_cchannel_od"
+                                },
+                                {
+                                    "title": "Cholinesterase Inhibitor Poisoning",
+                                    "type": "menu_document_link",
+                                    "key": "adult_cholinesterase_od"
+                                },
+                                {
+                                    "title": "Cyclic Antidepressant Overdose",
+                                    "type": "menu_document_link",
+                                    "key": "adult_tca_od"
+                                },
+                                {
+                                    "title": "Salicylate Overdose",
+                                    "type": "menu_document_link",
+                                    "key": "adult_salicylate_od"
+                                },
+                                {
+                                    "title": "Stimulant Overdose",
+                                    "type": "menu_document_link",
+                                    "key": "adult_stimulant_od"
+                                },
+                                {
+                                    "title": "Toxic Alcohol Poisoning",
+                                    "type": "menu_document_link",
+                                    "key": "adult_alcohol_od"
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Obstetrics",
+                            "type": "menu",
+                            "items": [
+                                {
+                                    "title": "Ornge Emergency Birth Pre-Delivery Checklist",
+                                    "type": "menu_document_link",
+                                    "key": "adult_obs_checklist"
+                                },
+                                {
+                                    "title": "Clinical Practice - Obstetrics",
+                                    "type": "menu_document_link",
+                                    "key": "Adult - Clinical Practice - Obstetrics"
+                                },
+                                {
+                                    "title": "Pre-Term Obstetrical Complications",
+                                    "type": "menu_document_link",
+                                    "key": "adult_obs_complications"
+                                },
+                                {
+                                    "title": "Pre-eclampsia / Eclampsia",
+                                    "type": "menu_document_link",
+                                    "key": "adult_obs_eclampsia"
+                                },
+                                {
+                                    "title": "Labour and Delivery - Emergency Birth",
+                                    "type": "menu_document_link",
+                                    "key": "adult_obs_emergency_birth"
+                                },
+                                {
+                                    "title": "Post Emergency Birth",
+                                    "type": "menu_document_link",
+                                    "key": "adult_obs_post_birth"
+                                },
+                                {
+                                    "title": "Post-Partum Hemorrhage",
+                                    "type": "menu_document_link",
+                                    "key": "adult_obs_pph"
+                                },
+                                {
+                                    "title": "Advanced Active Management of the Third Stage",
+                                    "type": "menu_document_link",
+                                    "key": "adult_obs_third_stage"
+                                }
+                            ]
                         }
                     ]
                 },
                 {
-                    "title" : "Analgosedation & Paralysis",
-                    "type" : "menu",
-                    "items" : [
+                    "title": "Paediatric Medical Directives",
+                    "type": "menu",
+                    "items": [
                         {
-                            "title" : "Pre-Transfer Anxiolysis",
-                            "type" : "menu_document_link",
-                            "key" : "adult_anxiety"
+                            "title": "Guideline for Paediatric Vital Signs/Tube Sizes",
+                            "type": "menu_document_link",
+                            "key": "ped_vital_signs"
                         },
                         {
-                            "title" : "Agitated/Combative Patient",
-                            "type" : "menu_document_link",
-                            "key" : "adult_combative"
+                            "title": "Paediatric Mixing and Administration Table for Continuous Infusion Summary",
+                            "type": "menu_document_link",
+                            "key": "ped_mixing_table"
                         },
                         {
-                            "title" : "Analgesia: Moderate to Severe Pain",
-                            "type" : "menu_document_link",
-                            "key" : "adult_awake_analgesia"
+                            "title": "Neonatal Mixing and Administration Table for Continuous Infusion Summary",
+                            "type": "menu_document_link",
+                            "key": "neo_mixing_table"
                         },
                         {
-                            "title" : "Clinical Practice - Sedation and Pain Management for Intubated and Ventilated Patients",
-                            "type" : "menu_document_link",
-                            "key" : "Adult - Clinical Practice - Sedation Intubated"
+                            "title": "Paediatric Medication List",
+                            "type": "menu_document_link",
+                            "key": "ped_medication_list"
                         },
                         {
-                            "title" : "Pain Scale For Adult Intubated Patients",
-                            "type" : "menu_document_link",
-                            "key" : "adult_pain_scale"
+                            "title": "Paediatric Procedure List",
+                            "type": "menu_document_link",
+                            "key": "ped_procedure_list"
                         },
                         {
-                            "title" : "Sedation Scale For Adults (RASS Score)",
-                            "type" : "menu_document_link",
-                            "key" : "adult_sedation_scale"
+                            "title": "Airway",
+                            "type": "menu",
+                            "items": [
+                                {
+                                    "title": "Controlled Intubation Checklist",
+                                    "type": "menu_document_link",
+                                    "key": "ped_intubation_checklist"
+                                },
+                                {
+                                    "title": "Supraglottic Airway",
+                                    "type": "menu_document_link",
+                                    "key": "ped_sga"
+                                },
+                                {
+                                    "title": "Pre-Intubation and Intubation Medications",
+                                    "type": "menu_document_link",
+                                    "key": "ped_rsi"
+                                }
+                            ]
                         },
                         {
-                            "title" : "Sedation and Pain Management for Intubated and Ventilated Patients",
-                            "type" : "menu_document_link",
-                            "key" : "adult_intubated_analgesia"
+                            "title": "Respiratory",
+                            "type": "menu",
+                            "items": [
+                                {
+                                    "title": "Ideal Body Weight Calculator",
+                                    "type": "menu_document_link",
+                                    "key": "vent_tool"
+                                },
+                                {
+                                    "title": "Bronchoconstriction",
+                                    "type": "menu_document_link",
+                                    "key": "ped_bronchoconstriction"
+                                },
+                                {
+                                    "title": "Croup – Suspected Cases",
+                                    "type": "menu_document_link",
+                                    "key": "ped_croup"
+                                },
+                                {
+                                    "title": "Tension Pneumothorax",
+                                    "type": "menu_document_link",
+                                    "key": "ped_pneumothorax"
+                                },
+                                {
+                                    "title": "Maintenance of Chest Tubes",
+                                    "type": "menu_document_link",
+                                    "key": "ped_chest_tubes"
+                                },
+                                {
+                                    "title": "Mechanical Ventilation",
+                                    "type": "menu_document_link",
+                                    "key": "ped_ventilation"
+                                },
+                                {
+                                    "title": "Non-Invasive Positive Pressure Ventilation (NPPV)",
+                                    "type": "menu_document_link",
+                                    "key": "ped_nippv"
+                                },
+                                {
+                                    "title": "High Flow Nasal Cannula Therapy (HFNC)",
+                                    "type": "menu_document_link",
+                                    "key": "ped_hfnc"
+                                }
+                            ]
                         },
                         {
-                            "title" : "Post Intubation Paralysis",
-                            "type" : "menu_document_link",
-                            "key" : "adult_paralysis"
+                            "title": "Analgosedation and Paralysis",
+                            "type": "menu",
+                            "items": [
+                                {
+                                    "title": "Clinical Practice - Sedation and Pain Management for Intubated and Ventilated Patients",
+                                    "type": "menu_document_link",
+                                    "key": "ped_cp_pain"
+                                },
+                                {
+                                    "title": "Paediatric Analgesia: Non-Intubated Patients",
+                                    "type": "menu_document_link",
+                                    "key": "ped_non_intubated_sedation"
+                                },
+                                {
+                                    "title": "Analgosedation: Intubated Patients",
+                                    "type": "menu_document_link",
+                                    "key": "ped_intubated_sedation"
+                                },
+                                {
+                                    "title": "Pain Scale For Paediatric Intubated Patients",
+                                    "type": "menu_document_link",
+                                    "key": "ped_pain_scale"
+                                },
+                                {
+                                    "title": "Sedation Scale For Paediatrics",
+                                    "type": "menu_document_link",
+                                    "key": "ped_sedation_scale"
+                                },
+                                {
+                                    "title": "Post Intubation Paralysis",
+                                    "type": "menu_document_link",
+                                    "key": "ped_intubated_paralysis"
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Medical Cardiac Arrest and Post Resuscitation Care",
+                            "type": "menu",
+                            "items": [
+                                {
+                                    "title": "Paediatric Non-Traumatic Cardiac Arrest: pcp",
+                                    "type": "menu_document_link",
+                                    "key": "ped_medical_arrest_pcp"
+                                },
+                                {
+                                    "title": "Paediatric Non-Traumatic Cardiac Arrest: ACP(f)",
+                                    "type": "menu_document_link",
+                                    "key": "ped_medical_arrest"
+                                },
+                                {
+                                    "title": "Neonatal Resuscitation (NRP)",
+                                    "type": "menu_document_link",
+                                    "key": "ped_nrp"
+                                },
+                                {
+                                    "title": "Post - Cardiac Arrest Care Check List",
+                                    "type": "menu_document_link",
+                                    "key": "ped_post_arrest_checklist"
+                                },
+                                {
+                                    "title": "Delivery Room Management of Premature Neonates",
+                                    "type": "menu_document_link",
+                                    "key": "Delivery Room Management of Premature Neonates"
+                                },
+                            ]
+                        },
+                        {
+                            "title": "Arrhythmias",
+                            "type": "menu",
+                            "items": [
+                                {
+                                    "title": "Paediatric Bradycardia",
+                                    "type": "menu_document_link",
+                                    "key": "ped_bradycardia"
+                                },
+                                {
+                                    "title": "Paediatric Tachycardia",
+                                    "type": "menu_document_link",
+                                    "key": "ped_tachycardia"
+                                }
+                            ]
+                        },
+                        {
+                            "title": "IV/IO and Arterial Lines",
+                            "type": "menu",
+                            "items": [
+                                {
+                                    "title": "Intreavenous Line Initiation and Maintenance",
+                                    "type": "menu_document_link",
+                                    "key": "ped_iv"
+                                },
+                                {
+                                    "title": "Intraosseous Initiation and Maintenance",
+                                    "type": "menu_document_link",
+                                    "key": "ped_io_initiate"
+                                },
+                                {
+                                    "title": "Intraosseous Vascular Access Analgesia",
+                                    "type": "menu_document_link",
+                                    "key": "ped_io_analgesia"
+                                },
+                                {
+                                    "title": "Umbilical Vein Catheterization",
+                                    "type": "menu_document_link",
+                                    "key": "ped_uvc"
+                                },
+                                {
+                                    "title": "Venous/Capillary Blood Sampling and Lab Value Interpretation",
+                                    "type": "menu_document_link",
+                                    "key": "ped_venous_lab_value"
+                                },
+                                {
+                                    "title": "Central Venous and Arterial Line Monitoring",
+                                    "type": "menu_document_link",
+                                    "key": "ped_invasive_monitoring"
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Neurological",
+                            "type": "menu",
+                            "items": [
+                                {
+                                    "title": "Seizures",
+                                    "type": "menu_document_link",
+                                    "key": "ped_seizure"
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Trauma",
+                            "type": "menu",
+                            "items": [
+                                {
+                                    "title": "Paediatric Trauma",
+                                    "type": "menu_document_link",
+                                    "key": "Pediatric - Trauma"
+                                },
+                                {
+                                    "title": "Paediatric GCS",
+                                    "type": "menu_document_link",
+                                    "key": "ped_gcs"
+                                },
+                                {
+                                    "title": "Paediatric Traumatic Cardiac Arrest",
+                                    "type": "menu_document_link",
+                                    "key": "ped_traumatic_arrest"
+                                },
+                                {
+                                    "title": "Severe Traumatic Brain Injury (GCS < 8, Abnormal CT)",
+                                    "type": "menu_document_link",
+                                    "key": "ped_tbi"
+                                },
+                                {
+                                    "title": "Hemorrhagic Shock",
+                                    "type": "menu_document_link",
+                                    "key": "ped_hemorrhagic_shock"
+                                },
+                                {
+                                    "title": "Massive Hemorrhage Protocol",
+                                    "type": "menu_document_link",
+                                    "key": "ped_mhp"
+                                },
+                                {
+                                    "title": "Cardiovascular Support",
+                                    "type": "menu_document_link",
+                                    "key": "ped_cardiovascular_support"
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Shock States",
+                            "type": "menu",
+                            "items": [
+                                {
+                                    "title": "Push Dose Epinephrine – 10 mcg/ml (1:100 000)",
+                                    "type": "menu_document_link",
+                                    "key": "ped_push_dose_epi"
+                                },
+                                {
+                                    "title": "Paediatric Septic Shock",
+                                    "type": "menu_document_link",
+                                    "key": "ped_sepsis"
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Gastrointestinal / Genitourinary (GI/GU)",
+                            "type": "menu",
+                            "items": [
+                                {
+                                    "title": "Nausea, Vomiting and Motion Sickness",
+                                    "type": "menu_document_link",
+                                    "key": "ped_nausea"
+                                },
+                                {
+                                    "title": "Gastric (NG or OG) Tubes",
+                                    "type": "menu_document_link",
+                                    "key": "ped_gastric_tubes"
+                                },
+                                {
+                                    "title": "Invasive Temperature Monitoring",
+                                    "type": "menu_document_link",
+                                    "key": "ped_esophageal_probe"
+                                },
+                                {
+                                    "title": "Urinary Catheter Insertion and Maintenance",
+                                    "type": "menu_document_link",
+                                    "key": "ped_catheter"
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Environmental and Metabolic",
+                            "type": "menu",
+                            "items": [
+                                {
+                                    "title": "Fever",
+                                    "type": "menu_document_link",
+                                    "key": "ped_fever"
+                                },
+                                {
+                                    "title": "Anaphylaxis",
+                                    "type": "menu_document_link",
+                                    "key": "ped_anaphylaxis"
+                                },
+                                {
+                                    "title": "Paediatric Hypoglycemia",
+                                    "type": "menu_document_link",
+                                    "key": "ped_hypoglycemia"
+                                },
+                                {
+                                    "title": "Neonatal Hypoglycemia",
+                                    "type": "menu_document_link",
+                                    "key": "neo_hypoglycemia"
+                                },
+                                {
+                                    "title": "Diabetic Ketoacidosis (DKA)",
+                                    "type": "menu_document_link",
+                                    "key": "ped_dka"
+                                },
+                                {
+                                    "title": "Hypocalcemia",
+                                    "type": "menu_document_link",
+                                    "key": "ped_hypocalcemia"
+                                },
+                                {
+                                    "title": "Hyperkalemia",
+                                    "type": "menu_document_link",
+                                    "key": "ped_hyperkalemia"
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Toxicology",
+                            "type": "menu",
+                            "items": [
+                                {
+                                    "title": "Suspected Opioid Overdose",
+                                    "type": "menu_document_link",
+                                    "key": "ped_opioid_od"
+                                },
+                                {
+                                    "title": "Suspected Acetaminophen Toxicity",
+                                    "type": "menu_document_link",
+                                    "key": "ped_tylenol_od"
+                                }
+                            ]
                         }
                     ]
                 },
                 {
-                    "title" : "Medical Cardiac Arrest and Post Resuscitation Care",
-                    "type" : "menu",
-                    "items" : [
+                    "title": "Drug Monographs",
+                    "type": "menu_document_link",
+                    "key": "DrugMenuTableViewController"
+                },
+                {
+                    "title": "Memorandums and Operational Guidelines",
+                    "type": "menu",
+                    "items": [
                         {
-                            "title" : "Adult Non-Traumatic Cardiac Arrest",
-                            "type" : "menu_document_link",
-                            "key" : "adult_medical_arrest"
-                        },
-                        {
-                            "title" : "Adult Severe Hypothermic Arrest",
-                            "type" : "menu_document_link",
-                            "key" : "adult_hypothermic_arrest"
-                        },
-                        {
-                            "title" : "Clinical Practice - Post Resuscitation Care of Cardiac Arrest",
-                            "type" : "menu_document_link",
-                            "key" : "Adult - Clinical Practice - ROSC"
-                        },
-                        {
-                            "title" : "Adult Post Arrest Return of Spontaneous Circulation (ROSC)",
-                            "type" : "menu_document_link",
-                            "key" : "adult_rosc"
+                            "title": "COVID 19",
+                            "type": "menu",
+                            "items": [
+                                {
+                                    "title": "COVID Memorandum - 2020/04/09",
+                                    "type": "menu_document_link",
+                                    "key": "app-20200409-RSI-Authorization-and-Limitation-Changes-(BH-MEM-067)"
+                                },
+                                {
+                                    "key": "COVID 2019 Operational Guidelines_Final_v6.2.1 Nov25",
+                                    "title": "COVID Operational Clinical Guidelines v6.2.1 - 2020/11/25",
+                                    "type": "menu_document_link",
+                                },
+                                {
+                                    "title": "Personal Protective Equipment (PPE) Donning Checklist",
+                                    "type": "menu_document_link",
+                                    "key": "covid_donning_checklist"
+                                },
+                                {
+                                    "title": "Personal Protective Equipment (PPE) Doffing Checklist",
+                                    "type": "menu_document_link",
+                                    "key": "covid_doffing_checklist"
+                                }
+                            ]
                         }
                     ]
                 },
                 {
-                    "title" : "Cardiac (Non-Arrest)",
-                    "type" : "menu",
-                    "items" : [
+                    "title": "Supporting Documents",
+                    "type": "menu",
+                    "items": [
                         {
-                            "title" : "Clinical Practice - Non ST Elevation MI (NSTEMI)",
-                            "type" : "menu_document_link",
-                            "key" : "Adult - Clinical Practice - NSTEMI"
+                            "title": "Authorization for Delegation of Medical Directives",
+                            "type": "menu_document_link",
+                            "key": "Authorization"
                         },
                         {
-                            "title" : "Acute Coronary Syndrome",
-                            "type" : "menu_document_link",
-                            "key" : "adult_acs"
+                            "title": "Preamble",
+                            "type": "menu_document_link",
+                            "key": "Preamble"
                         },
                         {
-                            "title" : "Clinical Practice - ST Elevation MI (STEMI)",
-                            "type" : "menu_document_link",
-                            "key" : "Adult - Clinical Practice - STEMI"
+                            "title": "General Structure of a Medical Directive",
+                            "type": "menu_document_link",
+                            "key": "Structure of Medical Directive"
                         },
                         {
-                            "title" : "ST Elevation MI (STEMI)",
-                            "type" : "menu_document_link",
-                            "key" : "adult_stemi"
+                            "title": "Version",
+                            "type": "menu_document_link",
+                            "key": "version"
                         },
                         {
-                            "title" : "TNK Checklist",
-                            "type" : "menu_document_link",
-                            "key" : "adult_tnk_checklist"
-                        },
-                        {
-                            "title" : "Cardiogenic Pulmonary Edema",
-                            "type" : "menu_document_link",
-                            "key" : "adult_chf"
-                        },
-                        {
-                            "title" : "Clinical Practice - Cardiogenic Shock",
-                            "type" : "menu_document_link",
-                            "key" : "Adult - Clinical Practice - Cardiogenic Shock"
-                        },
-                        {
-                            "title" : "Cardiogenic Shock",
-                            "type" : "menu_document_link",
-                            "key" : "adult_cardiogenic_shock"
-                        },
-                        {
-                            "title" : "Intra-Aortic Balloon Pump (IABP) Auxiliary Medical Directive",
-                            "type" : "menu_document_link",
-                            "key" : "adult_iabp"
-                        },
-                        {
-                            "title" : "Extracorporeal Membrane Oxygenation (ECMO) Auxiliary Medical Directive",
-                            "type" : "menu_document_link",
-                            "key" : "adult_ecmo"
-                        },
-                        {
-                            "title" : "Emergency Medical Directive for ECMO/ECLS Failure",
-                            "type" : "menu_document_link",
-                            "key" : "adult_ecmo_failure"
+                            "title": "Privacy Policy",
+                            "type": "menu_document_link",
+                            "key": "privacy"
                         }
                     ]
                 },
                 {
-                    "title" : "Arrhythmias",
-                    "type" : "menu",
-                    "items" : [
+                    "title": "Tools",
+                    "type": "menu",
+                    "items": [
                         {
-                            "title" : "Adult Symptomatic Bradycardia",
-                            "type" : "menu_document_link",
-                            "key" : "adult_bradycardia"
+                            "title": "Mechanical Ventilation Tidal Volume Calculator",
+                            "type": "menu_document_link",
+                            "key": "vent_tool"
                         },
                         {
-                            "title" : "Transvenous Cardiac Pacing",
-                            "type" : "menu_document_link",
-                            "key" : "adult_tvp"
-                        },
-                        {
-                            "title" : "Adult Symptomatic Atrial Fibrillation/Flutter",
-                            "type" : "menu_document_link",
-                            "key" : "adult_afib"
-                        },
-                        {
-                            "title" : "Adult Paroxysmal Supraventricular Tachycardia (PSVT)",
-                            "type" : "menu_document_link",
-                            "key" : "adult_svt"
-                        },
-                        {
-                            "title" : "Adult Ventricular Tachycardia with Perfusion",
-                            "type" : "menu_document_link",
-                            "key" : "adult_vtach"
+                            "title": "Y Site Compatibility Checker",
+                            "type": "menu_document_link",
+                            "key": "y_site"
                         }
                     ]
                 },
                 {
-                    "title" : "IV/IO and Arterial Lines",
-                    "type" : "menu",
-                    "items" : [
-                        {
-                            "title" : "Intravenous Line Initiation",
-                            "type" : "menu_document_link",
-                            "key" : "adult_iv_start"
-                        },
-                        {
-                            "title" : "Intraosseous Initiation and Maintenance",
-                            "type" : "menu_document_link",
-                            "key" : "adult_io_start"
-                        },
-                        {
-                            "title" : "Intraosseous Vascular Access Analgesia",
-                            "type" : "menu_document_link",
-                            "key" : "adult_io_analgesia"
-                        },
-                        {
-                            "title" : "Intravenous Line Maintenance Standard: PCP(f)",
-                            "type" : "menu_document_link",
-                            "key" : "adult_iv_pcp"
-                        },
-                        {
-                            "title" : "Blood Sampling and Lab Value Interpretation",
-                            "type" : "menu_document_link",
-                            "key" : "adult_blood_sampling"
-                        },
-                        {
-                            "title" : "Maintaining and Accessing Central Venous Lines",
-                            "type" : "menu_document_link",
-                            "key" : "adult_central_venous_lines"
-                        },
-                        {
-                            "title" : "Arterial Line Maintenance and Monitoring",
-                            "type" : "menu_document_link",
-                            "key" : "adult_arterial_lines"
-                        },
-                        {
-                            "title" : "Pulmonary Artery Catheters Auxiliary Medical Directive",
-                            "type" : "menu_document_link",
-                            "key" : "adult_pulmonary_artery_catheters"
-                        }
-                    ]
-                },
-                {
-                    "title" : "Neurological",
-                    "type" : "menu",
-                    "items" : [
-                        {
-                            "title" : "Clinical Practice - Stroke",
-                            "type" : "menu_document_link",
-                            "key" : "Adult - Clinical Practice - Stroke"
-                        },
-                        {
-                            "title" : "Stroke",
-                            "type" : "menu_document_link",
-                            "key" : "adult_stroke"
-                        },
-                        {
-                            "title" : "Seizure",
-                            "type" : "menu_document_link",
-                            "key" : "adult_seizure"
-                        }
-                    ]
-                },
-                {
-                    "title" : "Trauma",
-                    "type" : "menu",
-                    "items" : [
-                        {
-                            "title" : "Clinical Practice - Trauma",
-                            "type" : "menu_document_link",
-                            "key" : "Adult - Clinical Practice - Trauma"
-                        },
-                        {
-                            "title" : "Adult Traumatic Cardiac Arrest",
-                            "type" : "menu_document_link",
-                            "key" : "adult_traumatic_arrest"
-                        },
-                        {
-                            "title" : "Traumatic Brain Injury",
-                            "type" : "menu_document_link",
-                            "key" : "adult_tbi"
-                        },
-                        {
-                            "title" : "Clinical Practice - Spinal Cord Injury",
-                            "type" : "menu_document_link",
-                            "key" : "Adult - Clinical Practice - SCI"
-                        },
-                        {
-                            "title" : "Spinal Cord Injury",
-                            "type" : "menu_document_link",
-                            "key" : "adult_sci"
-                        },
-                        {
-                            "title" : "Neurogenic Shock",
-                            "type" : "menu_document_link",
-                            "key" : "adult_neurogenic_shock"
-                        },
-                        {
-                            "title" : "Traumatic Hemorrhagic Shock",
-                            "type" : "menu_document_link",
-                            "key" : "adult_hemorrhagic_shock"
-                        }
-                    ]
-                },
-                {
-                    "title" : "Blood Products",
-                    "type" : "menu",
-                    "items" : [
-                        {
-                            "title" : "Blood Product Administration",
-                            "type" : "menu_document_link",
-                            "key" : "adult_blood_product"
-                        },
-                        {
-                            "title" : "Reversal of Warfarin/Coumadin",
-                            "type" : "menu_document_link",
-                            "key" : "adult_warfarin_reversal"
-                        },
-                        {
-                            "title" : "Direct Oral Anticoagulant/Novel Oral Anticoagulants Reversal",
-                            "type" : "menu_document_link",
-                            "key" : "adult_doac_reversal"
-                        },
-                        {
-                            "title" : "Tranexamic Acid (TXA) Administration",
-                            "type" : "menu_document_link",
-                            "key" : "adult_txa"
-                        }
-                    ]
-                },
-                {
-                    "title" : "Shock States",
-                    "type" : "menu",
-                    "items" : [
-                        {
-                            "title" : "Push Dose EPINEPHrine (10 mcg/ml = 1: 100 000)",
-                            "type" : "menu_document_link",
-                            "key" : "adult_push_dose_epi"
-                        },
-                        {
-                            "title" : "Hypovolemic Shock",
-                            "type" : "menu_document_link",
-                            "key" : "adult_hypovolemic_shock"
-                        },
-                        {
-                            "title" : "Clinical Practice - Sepsis",
-                            "type" : "menu_document_link",
-                            "key" : "Adult - Clinical Practice - Sepsis"
-                        },
-                        {
-                            "title" : "Septic Shock",
-                            "type" : "menu_document_link",
-                            "key" : "adult_sepsis"
-                        },
-                        {
-                            "title" : "Extravasation of Vasopressors from Peripheral IV Infusion",
-                            "type" : "menu_document_link",
-                            "key" : "adult_extravasation_vasopressors"
-                        }
-                    ]
-                },
-                {
-                    "title" : "GI/GU",
-                    "type" : "menu",
-                    "items" : [
-                        {
-                            "title" : "Nausea, Vomiting and Motion Sickness",
-                            "type" : "menu_document_link",
-                            "key" : "adult_nausea"
-                        },
-                        {
-                            "title" : "Gastric (NG or OG) Tubes",
-                            "type" : "menu_document_link",
-                            "key" : "adult_gastric_tubes"
-                        },
-                        {
-                            "title" : "Gastrointestinal Bleed",
-                            "type" : "menu_document_link",
-                            "key" : "adult_gi_bleed"
-                        },
-                        {
-                            "title" : "Gastroesophageal Balloon Tamponade Devices (Blakemore Tube)",
-                            "type" : "menu_document_link",
-                            "key" : "adult_blakemore_tube"
-                        },
-                        {
-                            "title" : "Esophageal Temperature Probes",
-                            "type" : "menu_document_link",
-                            "key" : "adult_esophageal_probe"
-                        },
-                        {
-                            "title" : "Urinary Catheter Insertion and Maintenance",
-                            "type" : "menu_document_link",
-                            "key" : "adult_urinary_catheter"
-                        }
-                    ]
-                },
-                {
-                    "title" : "Environmental and Metabolic",
-                    "type" : "menu",
-                    "items" : [
-                        {
-                            "title" : "Fever",
-                            "type" : "menu_document_link",
-                            "key" : "adult_fever"
-                        },
-                        {
-                            "title" : "Anaphylaxis",
-                            "type" : "menu_document_link",
-                            "key" : "adult_anaphylaxis"
-                        },
-                        {
-                            "title" : "Hypoglycemic Emergencies",
-                            "type" : "menu_document_link",
-                            "key" : "adult_hypoglycemia"
-                        },
-                        {
-                            "title" : "Hyperkalemia",
-                            "type" : "menu_document_link",
-                            "key" : "adult_hyperkalemia"
-                        }
-                    ]
-                },
-                {
-                    "title" : "Toxicology",
-                    "type" : "menu",
-                    "items" : [
-                        {
-                            "title" : "Suspected Acetaminophen Overdose",
-                            "type" : "menu_document_link",
-                            "key" : "adult_tylenol_od"
-                        },
-                        {
-                            "title" : "Suspected Opioid Overdose",
-                            "type" : "menu_document_link",
-                            "key" : "adult_opioid_od"
-                        },
-                        {
-                            "title" : "Sedative Overdose",
-                            "type" : "menu_document_link",
-                            "key" : "adult_sedative_od"
-                        },
-                        {
-                            "title" : "Beta Blocker Overdose",
-                            "type" : "menu_document_link",
-                            "key" : "adult_betablocker_od"
-                        },
-                        {
-                            "title" : "Calcium Channel Blocker Overdose",
-                            "type" : "menu_document_link",
-                            "key" : "adult_cchannel_od"
-                        },
-                        {
-                            "title" : "Cholinesterase Inhibitor Poisoning",
-                            "type" : "menu_document_link",
-                            "key" : "adult_cholinesterase_od"
-                        },
-                        {
-                            "title" : "Cyclic Antidepressant Overdose",
-                            "type" : "menu_document_link",
-                            "key" : "adult_tca_od"
-                        },
-                        {
-                            "title" : "Salicylate Overdose",
-                            "type" : "menu_document_link",
-                            "key" : "adult_salicylate_od"
-                        },
-                        {
-                            "title" : "Stimulant Overdose",
-                            "type" : "menu_document_link",
-                            "key" : "adult_stimulant_od"
-                        },
-                        {
-                            "title" : "Toxic Alcohol Poisoning",
-                            "type" : "menu_document_link",
-                            "key" : "adult_alcohol_od"
-                        }
-                    ]
-                },
-                {
-                    "title" : "Obstetrics",
-                    "type" : "menu",
-                    "items" : [
-                        {
-                            "title" : "Ornge Emergency Birth Pre-Delivery Checklist",
-                            "type" : "menu_document_link",
-                            "key" : "adult_obs_checklist"
-                        },
-                        {
-                            "title" : "Clinical Practice - Obstetrics",
-                            "type" : "menu_document_link",
-                            "key" : "Adult - Clinical Practice - Obstetrics"
-                        },
-                        {
-                            "title" : "Pre-Term Obstetrical Complications",
-                            "type" : "menu_document_link",
-                            "key" : "adult_obs_complications"
-                        },
-                        {
-                            "title" : "Pre-eclampsia / Eclampsia",
-                            "type" : "menu_document_link",
-                            "key" : "adult_obs_eclampsia"
-                        },
-                        {
-                            "title" : "Labour and Delivery - Emergency Birth",
-                            "type" : "menu_document_link",
-                            "key" : "adult_obs_emergency_birth"
-                        },
-                        {
-                            "title" : "Post Emergency Birth",
-                            "type" : "menu_document_link",
-                            "key" : "adult_obs_post_birth"
-                        },
-                        {
-                            "title" : "Post-Partum Hemorrhage",
-                            "type" : "menu_document_link",
-                            "key" : "adult_obs_pph"
-                        },
-                        {
-                            "title" : "Advanced Active Management of the Third Stage",
-                            "type" : "menu_document_link",
-                            "key" : "adult_obs_third_stage"
-                        }
-                    ]
+                    "title": "Settings",
+                    "type": "menu_document_link",
+                    "key": "settings"
                 }
             ]
-        },
-        {
-            "title" : "Paediatric Medical Directives",
-            "type" : "menu",
-            "items" : [
-                {
-                    "title" : "Guideline for Paediatric Vital Signs/Tube Sizes",
-                    "type" : "menu_document_link",
-                    "key" : "ped_vital_signs"
-                },
-                {
-                    "title" : "Paediatric Mixing and Administration Table for Continuous Infusion Summary",
-                    "type" : "menu_document_link",
-                    "key" : "ped_mixing_table"
-                },
-                {
-                    "title" : "Neonatal Mixing and Administration Table for Continuous Infusion Summary",
-                    "type" : "menu_document_link",
-                    "key" : "neo_mixing_table"
-                },
-                {
-                    "title" : "Paediatric Medication List",
-                    "type" : "menu_document_link",
-                    "key" : "ped_medication_list"
-                },
-                {
-                    "title" : "Paediatric Procedure List",
-                    "type" : "menu_document_link",
-                    "key" : "ped_procedure_list"
-                },
-                {
-                    
-                    "title" : "Airway",
-                    "type" : "menu",
-                    "items" : [
-                        {
-                            "title" : "Controlled Intubation Checklist",
-                            "type" : "menu_document_link",
-                            "key" : "ped_intubation_checklist"
-                        },
-                        {
-                            "title" : "Supraglottic Airway",
-                            "type" : "menu_document_link",
-                            "key" : "ped_sga"
-                        },
-                        {
-                            "title" : "Pre-Intubation and Intubation Medications",
-                            "type" : "menu_document_link",
-                            "key" : "ped_rsi"
-                        }
-                    ]
-                },
-                {
-                    "title" : "Respiratory",
-                    "type" : "menu",
-                    "items" : [
-                        {
-                            "title" : "Ideal Body Weight Calculator",
-                            "type" : "menu_document_link",
-                            "key" : "vent_tool"
-                        },
-                        {
-                            "title" : "Bronchoconstriction",
-                            "type" : "menu_document_link",
-                            "key" : "ped_bronchoconstriction"
-                        },
-                        {
-                            "title" : "Croup – Suspected Cases",
-                            "type" : "menu_document_link",
-                            "key" : "ped_croup"
-                        },
-                        {
-                            "title" : "Tension Pneumothorax",
-                            "type" : "menu_document_link",
-                            "key" : "ped_pneumothorax"
-                        },
-                        {
-                            "title" : "Maintenance of Chest Tubes",
-                            "type" : "menu_document_link",
-                            "key" : "ped_chest_tubes"
-                        },
-                        {
-                            "title" : "Mechanical Ventilation",
-                            "type" : "menu_document_link",
-                            "key" : "ped_ventilation"
-                        },
-                        {
-                            "title" : "Non-Invasive Positive Pressure Ventilation (NPPV)",
-                            "type" : "menu_document_link",
-                            "key" : "ped_nippv"
-                        },
-                        {
-                            "title" : "High Flow Nasal Cannula Therapy (HFNC)",
-                            "type" : "menu_document_link",
-                            "key" : "ped_hfnc"
-                        }
-                    ]
-                },
-                {
-                "title" : "Analgosedation and Paralysis",
-                "type" : "menu",
-                "items" : [
-                        {
-                            "title" : "Clinical Practice - Sedation and Pain Management for Intubated and Ventilated Patients",
-                            "type" : "menu_document_link",
-                            "key" : "ped_cp_pain"
-                        },
-                        {
-                            "title" : "Paediatric Analgesia: Non-Intubated Patients",
-                            "type" : "menu_document_link",
-                            "key" : "ped_non_intubated_sedation"
-                        },
-                        {
-                            "title" : "Analgosedation: Intubated Patients",
-                            "type" : "menu_document_link",
-                            "key" : "ped_intubated_sedation"
-                        },
-                        {
-                            "title" : "Pain Scale For Paediatric Intubated Patients",
-                            "type" : "menu_document_link",
-                            "key" : "ped_pain_scale"
-                        },
-                        {
-                            "title" : "Sedation Scale For Paediatrics",
-                            "type" : "menu_document_link",
-                            "key" : "ped_sedation_scale"
-                        },
-                        {
-                            "title" : "Post Intubation Paralysis",
-                            "type" : "menu_document_link",
-                            "key" : "ped_intubated_paralysis"
-                        }
-                    ]
-                },
-                {
-                    "title" : "Medical Cardiac Arrest and Post Resuscitation Care",
-                    "type" : "menu",
-                    "items" : [
-        
-                        {
-                            "title" : "Paediatric Non-Traumatic Cardiac Arrest: PCP(f)",
-                            "type" : "menu_document_link",
-                            "key" : "ped_medical_arrest_pcp"
-                        },
-                        {
-                            "title" : "Paediatric Non-Traumatic Cardiac Arrest: ACP(f)",
-                            "type" : "menu_document_link",
-                            "key" : "ped_medical_arrest"
-                        },
-                        {
-                            "title" : "Neonatal Resuscitation (NRP)",
-                            "type" : "menu_document_link",
-                            "key" : "ped_nrp"
-                        },
-                        {
-                            "title" : "Post - Cardiac Arrest Care Check List",
-                            "type" : "menu_document_link",
-                            "key" : "ped_post_arrest_checklist"
-                        },
-                        {
-                            "title" : "Delivery Room Management of Premature Neonates",
-                            "type" : "menu_document_link",
-                            "key" : "Delivery Room Management of Premature Neonates"
-                        },
-                    ]
-                },
-                {
-                    "title" : "Arrhythmias",
-                    "type" : "menu",
-                    "items" : [
-                        {
-                            "title" : "Paediatric Bradycardia",
-                            "type" : "menu_document_link",
-                            "key" : "ped_bradycardia"
-                        },
-                        {
-                            "title" : "Paediatric Tachycardia",
-                            "type" : "menu_document_link",
-                            "key" : "ped_tachycardia"
-                        }
-                    ]
-                },
-                {
-                    "title" : "IV/IO and Arterial Lines",
-                    "type" : "menu",
-                    "items" : [
-                        {
-                            "title" : "Intreavenous Line Initiation and Maintenance",
-                            "type" : "menu_document_link",
-                            "key" : "ped_iv"
-                        },
-                        {
-                            "title" : "Intraosseous Initiation and Maintenance",
-                            "type" : "menu_document_link",
-                            "key" : "ped_io_initiate"
-                        },
-                        {
-                            "title" : "Intraosseous Vascular Access Analgesia",
-                            "type" : "menu_document_link",
-                            "key" : "ped_io_analgesia"
-                        },
-                        {
-                            "title" : "Umbilical Vein Catheterization",
-                            "type" : "menu_document_link",
-                            "key" : "ped_uvc"
-                        },
-                        {
-                            "title" : "Venous/Capillary Blood Sampling and Lab Value Interpretation",
-                            "type" : "menu_document_link",
-                            "key" : "ped_venous_lab_value"
-                        },
-                        {
-                            "title" : "Central Venous and Arterial Line Monitoring",
-                            "type" : "menu_document_link",
-                            "key" : "ped_invasive_monitoring"
-                        }
-                        
-                    ]
-                },
-                {
-                    "title" : "Neurological",
-                    "type" : "menu",
-                    "items" : [
-                        {
-                            "title" : "Seizures",
-                            "type" : "menu_document_link",
-                            "key" : "ped_seizure"
-                        }
-                    ]
-                },
-                {
-                    "title" : "Trauma",
-                    "type" : "menu",
-                    "items" : [
-                        {
-                            "title" : "Paediatric Trauma",
-                            "type" : "menu_document_link",
-                            "key" : "Pediatric - Trauma"
-                        },
-                        {
-                            "title" : "Paediatric GCS",
-                            "type" : "menu_document_link",
-                            "key" : "ped_gcs"
-                        },
-                        {
-                            "title" : "Paediatric Traumatic Cardiac Arrest",
-                            "type" : "menu_document_link",
-                            "key" : "ped_traumatic_arrest"
-                        },
-                        {
-                            "title" : "Severe Traumatic Brain Injury (GCS < 8, Abnormal CT)",
-                            "type" : "menu_document_link",
-                            "key" : "ped_tbi"
-                        },
-                        {
-                            "title" : "Hemorrhagic Shock",
-                            "type" : "menu_document_link",
-                            "key" : "ped_hemorrhagic_shock"
-                        },
-                        {
-                            "title" : "Massive Hemorrhage Protocol",
-                            "type" : "menu_document_link",
-                            "key" : "ped_mhp"
-                        },
-                        {
-                            "title" : "Cardiovascular Support",
-                            "type" : "menu_document_link",
-                            "key" : "ped_cardiovascular_support"
-                        }
-                    ]
-                },
-                {
-                    "title" : "Shock States",
-                    "type" : "menu",
-                    "items" : [
-                        {
-                            "title" : "Push Dose Epinephrine – 10 mcg/ml (1:100 000)",
-                            "type" : "menu_document_link",
-                            "key" : "ped_push_dose_epi"
-                        },
-                        {
-                            "title" : "Paediatric Septic Shock",
-                            "type" : "menu_document_link",
-                            "key" : "ped_sepsis"
-                        }
-                    ]
-                },
-                {
-                    "title" : "Gastrointestinal / Genitourinary (GI/GU)",
-                    "type" : "menu",
-                    "items" : [
-                        {
-                            "title" : "Nausea, Vomiting and Motion Sickness",
-                            "type" : "menu_document_link",
-                            "key" : "ped_nausea"
-                        },
-                        {
-                            "title" : "Gastric (NG or OG) Tubes",
-                            "type" : "menu_document_link",
-                            "key" : "ped_gastric_tubes"
-                        },
-                        {
-                            "title" : "Invasive Temperature Monitoring",
-                            "type" : "menu_document_link",
-                            "key" : "ped_esophageal_probe"
-                        },
-                        {
-                            "title" : "Urinary Catheter Insertion and Maintenance",
-                            "type" : "menu_document_link",
-                            "key" : "ped_catheter"
-                        }
-                    ]
-                },
-                {
-                    "title" : "Environmental and Metabolic",
-                    "type" : "menu",
-                    "items" : [
-                        {
-                            "title" : "Fever",
-                            "type" : "menu_document_link",
-                            "key" : "ped_fever"
-                        },
-                        {
-                            "title" : "Anaphylaxis",
-                            "type" : "menu_document_link",
-                            "key" : "ped_anaphylaxis"
-                        },
-                        {
-                            "title" : "Paediatric Hypoglycemia",
-                            "type" : "menu_document_link",
-                            "key" : "ped_hypoglycemia"
-                        },
-                        {
-                            "title" : "Neonatal Hypoglycemia",
-                            "type" : "menu_document_link",
-                            "key" : "neo_hypoglycemia"
-                        },
-                        {
-                            "title" : "Diabetic Ketoacidosis (DKA)",
-                            "type" : "menu_document_link",
-                            "key" : "ped_dka"
-                        },
-                        {
-                            "title" : "Hypocalcemia",
-                            "type" : "menu_document_link",
-                            "key" : "ped_hypocalcemia"
-                        },
-                        {
-                            "title" : "Hyperkalemia",
-                            "type" : "menu_document_link",
-                            "key" : "ped_hyperkalemia"
-                        }
-                    ]
-                },
-                {
-                    "title" : "Toxicology",
-                    "type" : "menu",
-                    "items" : [
-                        {
-                            "title" : "Suspected Opioid Overdose",
-                            "type" : "menu_document_link",
-                            "key" : "ped_opioid_od"
-                        },
-                        {
-                            "title" : "Suspected Acetaminophen Toxicity",
-                            "type" : "menu_document_link",
-                            "key" : "ped_tylenol_od"
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "title" : "Drug Monographs",
-            "type" : "menu_document_link",
-            "key" : "DrugMenuTableViewController"
-        },
-        {
-            "title" : "Memorandums and Operational Guidelines",
-            "type" : "menu",
-            "items" : [
-                {
-                    "title" : "COVID 19",
-                    "type" : "menu",
-                    "items" : [
-                        {
-                            "title" : "COVID Memorandum - 2020/04/09",
-                            "type" : "menu_document_link",
-                            "key" : "app-20200409-RSI-Authorization-and-Limitation-Changes-(BH-MEM-067)"
-                        },
-                        {
-                            "key" : "COVID 2019 Operational Guidelines_Final_v6.2.1 Nov25",
-                            "title" : "COVID Operational Clinical Guidelines v6.2.1 - 2020/11/25",
-                            "type" : "menu_document_link",
-                        },
-                        {
-                            "title" : "Personal Protective Equipment (PPE) Donning Checklist",
-                            "type" : "menu_document_link",
-                            "key" : "covid_donning_checklist"
-                        },
-                        {
-                            "title" : "Personal Protective Equipment (PPE) Doffing Checklist",
-                            "type" : "menu_document_link",
-                            "key" : "covid_doffing_checklist"
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "title" : "Supporting Documents",
-            "type" : "menu",
-            "items" : [
-                {
-                  "title" : "Authorization for Delegation of Medical Directives",
-                  "type" : "menu_document_link",
-                  "key" : "Authorization"
-                },
-                {
-                  "title" : "Preamble",
-                  "type" : "menu_document_link",
-                  "key" : "Preamble"
-                },
-                {
-                  "title" : "General Structure of a Medical Directive",
-                  "type" : "menu_document_link",
-                  "key" : "Structure of Medical Directive"
-                },
-                {
-                    "title" : "Version",
-                    "type" : "menu_document_link",
-                    "key" : "version"
-                },
-                {
-                    "title" : "Privacy Policy",
-                    "type" : "menu_document_link",
-                    "key" : "privacy"
-                }
-            ]
-        },
-        {
-            "title" : "Tools",
-            "type" : "menu",
-            "items" : [
-                {
-                    "title" : "Mechanical Ventilation Tidal Volume Calculator",
-                    "type" : "menu_document_link",
-                    "key" : "vent_tool"
-                },
-                {
-                    "title" : "Y Site Compatibility Checker",
-                    "type" : "menu_document_link",
-                    "key" : "y_site"
-                }
-            ]
-        },
-        {
-            "title" : "Settings",
-            "type" : "menu_document_link",
-            "key" : "settings"
         }
-      ]
-    }
-  ]
+    ]
 }
