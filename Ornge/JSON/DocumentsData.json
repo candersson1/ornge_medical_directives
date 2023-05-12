@@ -1293,7 +1293,7 @@
             "title": "Adult - Inhaled Epoprostenol (Flolan®)",
             "type": "directive",
             "indications": "<tab1>• Severe ARDS with refractory hypoxemia\n• Pulmonary hypertension\n• Right heart failure</tab1>",
-            "contraindications": "<tab1>• Severe left ventricular systolic dysfunction\n• Pulmonary hemorrhage\n</tab1><title>Relative Contraindications:</title><tab1>\n• Thrombocytopenia (platelets <50 x 109/L )\n• Active hemorrhage\n• Pulmonary edema\n• Hypotension</tab1>",
+            "contraindications": "<tab1>• Severe left ventricular systolic dysfunction\n• Pulmonary hemorrhage\n</tab1><title>Relative Contraindications:</title><tab1>\n• Thrombocytopenia (platelets <50 x 10⁹/L )\n• Active hemorrhage\n• Pulmonary edema\n• Hypotension</tab1>",
             "drug_cards": [
                 {
                     "title": "<b>Inhaled Epoprostenol (Flolan®)</b>",
@@ -4661,7 +4661,7 @@
                     "adult_trauma_arrest_flowchart"
                 ]
             ],
-            "clinical": "<tab1>• If this is inter-facility then a STAT patch to the TMP is indicated for further management decision making\n• Routinely bind pelvis if MOI suggests potential for pelvic injury\n• Perform bilateral needle thoracostomy in acute traumatic arrest</tab1>",
+            "clinical": "<tab1>• If this is inter-facility then a STAT patch to the TMP is indicated for further management decision making\n• Routinely bind pelvis if MOI suggests potential for pelvic injury\n• Perform bilateral needle thoracostomy in acute traumatic arrest\n• If no obvious external signs of significant blunt trauma, consider medical cardiac arrest and treat according to ‘Adult Non-Traumatic Cardiac Arrest’ MDSO</tab1>\n<tab2>o Signs of life include: any spontaneous movement; respiratory efforts; organized electrical activity on ECG; reactive pupils</tab2>",
             "drug_cards": [
                 {
                     "loc": [
@@ -4690,7 +4690,7 @@
                     "adult_tbi_flowchart"
                 ]
             ],
-            "clinical": "<tab1>• Trauma patients should be kept warm with temperature > 35 degrees</tab1>",
+            "clinical": "<tab1>• Recent evidence has suggested that hypertonic saline appears to be superior to mannitol in the reduction of the combined burden of intracranial hypertension and associated hypoperfusion in Severe TBI. Refer to CPG\n• Trauma patients should be kept warm with temperature > 35 degrees\n• TMP contact is required following the initiation of Norepinephrine to discuss ongoing management and make TMP aware of potential deterioration in patient condition</tab1>",
             "drug_cards": [
                 {
                     "title": "<b>Norepinephrine (Levophed)</b>",
@@ -4708,7 +4708,7 @@
                     ]
                 },
                 {
-                    "title": "<b>Hypertonic Saline (3%)</b>",
+                    "title": "<center><b>Hypertonic Saline (3%)</b></center>",
                     "drugKey": "3%_saline",
                     "loc": [
                         [
@@ -4718,7 +4718,7 @@
                     ],
                     "dose_route": [
                         [
-                            "<center>3 mL/kg IV/IO\nMAX rate of 20 mL/min\n\nConsider if MAP < 80 mmHg</center>"
+                            "<center>3 mL/kg IV/IO\nMAX rate of 20 mL/min\n</center>"
                         ]
                     ]
                 },
@@ -4857,7 +4857,7 @@
             "key": "adult_hemorrhagic_shock",
             "title": "Adult - Traumatic Hemorrhagic Shock",
             "type": "directive",
-            "indications": "<tab1>• Hemorrhagic shock MAP < 65 mmHg with active, ongoing and significant bleeding</tab1>",
+            "indications": "<tab1>• Hemorrhagic shock SBP < 90 mmHg with active, ongoing and significant bleeding</tab1>",
             "contraindications": "<tab1>• Allergy or sensitivity to the medication</tab1>",
             "flowchartkeys": [
                 [
@@ -4865,7 +4865,7 @@
                     "adult_hemorrhagic_shock_flowchart"
                 ]
             ],
-            "clinical": "<tab1>• Avoid hypothermia. Keep patient’s temperature above 35ºC</tab1>",
+            "clinical": "<tab1>• Avoid hypothermia. Keep patient’s temperature above 35°C\n• Permissive hypotension should be considered for patients suffering penetrating torso injury\n• Target systolic blood pressure should be 90 mmHg. However, in all cases, perfusion of the brain (level of consciousness) must be maintained</tab1>",
             "drug_cards": [
                 {
                     "title": "<b>Normal Saline or Ringers Lactate</b>",
@@ -4877,12 +4877,12 @@
                     ],
                     "dose_route": [
                         [
-                            "<center>20-40 mL/kg IV/IO bolus\nTarget MAP > 65</center>"
+                            "<center>10 mL/kg IV/IO bolus\nTarget MAP > 65</center>"
                         ]
                     ]
                 },
                 {
-                    "title": "<b>Consider PRBCs and TXA</b>",
+                    "title": "<b>Consider RBC and TXA</b>",
                     "loc": [
                         [
                             "acp",
@@ -4903,7 +4903,7 @@
             "type": "directive",
             "indications": "<tab1>• Hemorrhagic shock MAP < 65 mmHg with active, ongoing and significant bleeding\n• Hemoglobin < 70 grams/litre with evidence of circulatory compromise\n• TMP judgement</tab1>",
             "contraindications": "<tab1>• Allergy or sensitivity to the medication</tab1>",
-            "clinical": "<tab1>• Contact the TMP to request Packed Red Blood Cells (PRBCs) at the scene. This would only be indicated in very rare individual circumstances i.e. uncontrolled hemorrhagic shock despite adequate crystalloid resuscitation, prolonged out-of-hospital time (i.e. prolonged extrication) and no significant delay to arrival to patient caused by waiting to retrieve the blood\n• Ensure all available identifiers (i.e. name, blood type, patient number, etc) are checked to ensure correct blood product transfusion\n• Once any of the above products are administered, the blood product form must be completed and submitted to the receiving institution, so that they are aware\n• Informed consent for blood product administration must be obtained if Ornge initiates the blood product (please refer to the consent form in the Clinical Affairs P&P manual) except in life threatening circumstances\n• Please note, if immediate PRBCs are required for an unstable patient request Type O blood if available (O Negative for women of child bearing age)</tab1>",
+            "clinical": "<tab1>• Contact the TMP to request Red Blood Cells (RBCs) at the scene. This would only be indicated in very rare individual circumstances i.e. uncontrolled hemorrhagic shock despite adequate crystalloid resuscitation, prolonged out-of-hospital time (i.e. prolonged extrication) and no significant delay to arrival to patient caused by waiting to retrieve the blood\n• Ensure all available identifiers (i.e. name, blood type, patient number, etc) are checked to ensure correct blood product transfusion\n• Once any of the above products are administered, the blood product form must be completed and submitted to the receiving institution, so that they are aware\n• Informed consent for blood product administration must be obtained if Ornge initiates the blood product (please refer to the consent form in the Clinical Affairs P&P manual) except in life threatening circumstances\n• Please note, if immediate RBCs are required for an unstable patient request Type O blood if available (O Negative for women of child bearing age)</tab1>",
             "drug_cards": [
                 {
                     "loc": [
@@ -4914,7 +4914,7 @@
                     ],
                     "dose_route": [
                         [
-                            "<center><b>Packed Red Blood Cells (PRBC)</b></center>",
+                            "<center><b>Red Blood Cells (RBC)</b></center>",
                             "<center><b>Fresh Frozen Plasma (FFP)</b></center>"
                         ],
                         [
@@ -4932,12 +4932,245 @@
                     ],
                     "dose_route": [
                         [
-                            "<center><b>Packed Red Blood Cells (PRBC)</b></center>",
+                            "<center><b>Packed Red Blood Cells (RBC)</b></center>",
                             "<center><b>Fresh Frozen Plasma (FFP)</b></center>"
                         ],
                         [
-                            "<center>1-2 PRBC to maintain\nMAP > 65 mm Hg or Hgb > 70 as directed</center>",
+                            "<center>1-2 RBC to maintain\nMAP > 65 mm Hg or Hgb > 70 as directed</center>",
                             "<center>2 U for every 2 U PRBC delivered</center>"
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "key": "adult_massive_hemorrhage_protocol",
+            "title": "Adult - Massive Hemorrhage Protocol",
+            "type": "directive",
+            "indications": "<tab1>• Hemorrhagic shock SBP < 90 for traumatic hemorrhage, or MAP < 65 mmHg with active, ongoing and significant bleeding\n• Hemoglobin < 70 grams/litre with evidence of circulatory compromise\n• Up to 3 units RBCs administered and patient requires further blood products\n• TMP judgement</tab1>",
+            "contraindications": "<tab1>• Allergy or sensitivity to the medication</tab1>",
+            "clinical": "<tab1>• Consider a lower threshold to activate the MHP for patients who are anticoagulated\n• Consider a lower threshold to activate the MHP for geriatric patients (> 65 years)</tab1>",
+            "drug_cards": [
+                {
+                    "dose_route": [
+                        [
+                            "<center><b>Key Treatment Goals for Controlling Hemorrhage</b></center>",
+                            "<center><b>Resuscitation Targets</b></center>"
+                        ],
+                        [
+                            "<center><middle>Ratio based blood products administration</middle></center>",
+                            "<center>Target SBP 80-90 mmHg or SBP > 100 mmHg in TBI\nConsider SBP 100mmHg in peri-intubation period or for transport</center>"
+                        ],
+                        [
+                            "<center><middle>Temperature management – normal temp</middle></center>",
+                            "<center>Target normothermia</center>"
+                        ],
+                        [
+                            "<center><middle>TXA administration</middle></center>",
+                            "<center>Calcium – administer after 2nd unit of RBC and q 4 units after - monitor and replace as practical</center>"
+                        ],
+                        [
+                            "<center><middle>Correct coagulopathy</middle></center>",
+                            "<center> Fibrinogen - monitor and replace</center>"
+                        ],
+                        [
+                            "<center><middle>Definitive and rapid hemostasis</middle></center>",
+                            ""
+                        ]
+                    ]
+                },
+                {
+                    "section": "If blood components are available, proceed with ration based transfusion of blood components as identified below in MHP Pack 1, 2 etc.\nIf blood components are not available, transfuse RBC’s as available for SBP/MAP targets + PCC and Fibrinogen concentrate.",
+                    "title": "<b>Tranexamic Acid (TXA)</b>",
+                    "loc": [
+                        [
+                            "acp",
+                            "after"
+                        ]
+                    ],
+                    "dose_route": [
+                        [
+                            "<center>2 gram loading dose (over 1-2 minutes)\nRefer to TXA Medical Directive for further information</center>"
+                        ]
+                    ]
+                },
+                {
+                    "title": "<b>MHP Pack 1 Administration</b>",
+                    "notes": "*Applies to all stages of MHP\n*Refer to the blood product administration medical directive for further guidance on product admin",
+                    "loc": [
+                        [
+                            "acp",
+                            "first"
+                        ]
+                    ],
+                    "dose_route": [
+                        [
+                            "<center><middle><b>4 units RBC</b></middle></center>",
+                            "Female < 45 yrs - RBC (O negative or cross matched)*\nFemale > 45 yrs - O positive or cross matched*\nMale - O positive or cross matched*"
+                        ]
+                    ]
+                },
+                {
+                    "title": "<b>Calcium Gluconate 10% (100 mg/mL)</b>",
+                    "drug_key": "calcium_gluconate",
+                    "loc": [
+                        [
+                            "acp",
+                            "first"
+                        ]
+                    ],
+                    "dose_route": [
+                        [
+                            "<center>60 mg/kg (0.6 mL/kg) IV/IO slow push (over 10-20 seconds)\nMaximum dose 3 grams</center>"
+                        ]
+                    ]
+                },
+                {
+                    "section": "<b>OR</b>",
+                    "title": "<b>Calcium Chloride 10% (100 mg/mL)</b>",
+                    "drug_key": "calcium_chloride",
+                    "loc": [
+                        [
+                            "acp",
+                            "first"
+                        ]
+                    ],
+                    "dose_route": [
+                        [
+                            "<center>20 mg/kg IV/IO slow push (over 10-20 seconds)\n(0.2 mL/kg)\nMaximum dose 1 gram</center>"
+                        ]
+                    ]
+                },
+                {
+                    "title": "<b>Re-assess q 30-60 minutes</b>",
+                    "loc": [
+                        [
+                            "acp",
+                            "none"
+                        ]
+                    ],
+                    "dose_route": [
+                        [
+                            "<center><tab1>• Can the MHP be discontinued\n• Can the patient be switched to lab directed transfusion\n• Monitor for complications (i.e. hyperkalemia, hypothermia, and volume overload)\n• Is resuscitation adequate (hemodynamics, lactate, base deficit, TBI considerations)?\n• Switch to group specific blood products when able</tab1></center>",
+                            "<center><tab1>• Blood samples collected q 30-60 minutes?\n• Transfusion of products adjusted?\n• Core temp >36°C?\n• Calcium administered after each RBC equivalent of one pack transfused</tab1>"
+                        ]
+                    ]
+                },
+                {
+                    "title": "<b>MHP Pack 2 Administration</b>",
+                    "loc": [
+                        [
+                            "acp",
+                            "first"
+                        ]
+                    ],
+                    "dose_route": [
+                        [
+                            "<center><middle>4 units RBC\nAND\n4 units Frozen Plasma(FP)</middle></center>",
+                            "Female < 45 yrs - RBC (O negative or cross matched)*\nFemale > 45 yrs - O positive or cross matched*\nMale - O positive or cross matched*"
+                        ]
+                    ]
+                },
+                {
+                    "title": "<b>Prothrombin Complex Concentrate (PCC) (Octaplex)</b>",
+                    "drug_key": "octaplex",
+                    "loc": [
+                        [
+                            "acp",
+                            "first"
+                        ]
+                    ],
+                    "dose_route": [
+                        [
+                            "<center>As an alternate to Frozen Plasma (FP) as part of MHP</center>"
+                        ],
+                        [
+                            "<center>Prothrombin Complex Concentrate 2000 IU (80ML) IV/IO\nFibrinogen replacement should be administered concurrently</center>"
+                        ]
+                    ]
+                },
+                {
+                    "title": "<b>Fibrinogen</b>",
+                    "drug_key": "fibrinogen",
+                    "loc": [
+                        [
+                            "acp",
+                            "first"
+                        ]
+                    ],
+                    "dose_route": [
+                        [
+                            "<center>Fibrinogen concentrate 50mg/kg IV/IO\nMAX 4g</center>"
+                        ]
+                    ]
+                },
+                {
+                    "title": "<b>MHP Pack 3 Administration</b>",
+                    "loc": [
+                        [
+                            "acp",
+                            "first"
+                        ]
+                    ],
+                    "dose_route": [
+                        [
+                            "<center><middle>4 units RBC\nAND\n4 units Frozen Plasma(FP)\nAND\n4g Fibrinogen Concentrate</middle></center>",
+                            "Female < 45 yrs - RBC (O negative or cross matched)*\nFemale > 45 yrs - O positive or cross matched*\nMale - O positive or cross matched*"
+                        ]
+                    ]
+                },
+                {
+                    "title": "<b>MHP Pack 4 (and beyond) Administration</b>",
+                    "loc": [
+                        [
+                            "acp",
+                            "first"
+                        ]
+                    ],
+                    "dose_route": [
+                        [
+                            "<center><middle>4 units RBC\nAND\n4 units Frozen Plasma(FP)\nAND\n4g Fibrinogen Concentrate</middle></center>",
+                            "Female < 45 yrs - RBC (O negative or cross matched)*\nFemale > 45 yrs - O positive or cross matched*\nMale - O positive or cross matched*"
+                        ]
+                    ]
+                },
+                {
+                    "title": "<b>Platelets (PLT)</b>",
+                    "drug_key": "platelets",
+                    "loc": [
+                        [
+                            "acp",
+                            "first"
+                        ]
+                    ],
+                    "dose_route": [
+                        [
+                            "<center>10-20 ml/kg IV/IO\nTransfusion Threshold - Platelets <50 X 10⁹/L</center>"
+                        ]
+                    ]
+                },
+                {
+                    "title": "<b>Laboratory Infusion Thresholds</b>",
+                    "dose_route": [
+                        [
+                            "<center><b>Value</b></center>",
+                            "<center><b>Transfuse</b></center>"
+                        ],
+                        [
+                            "<center>Hgb <80 g/L</center>",
+                            "<center>RBC 20 ml/kg</center>"
+                        ],
+                        [
+                            "<center>INR > 1.8</center>",
+                            "<center>FP 10-20 ml/kg per dose</center>"
+                        ],
+                        [
+                            "<center>Fibrinogen <1.5 g/L</center>",
+                            "<center>Fibrinogen concentrate 50 mg/kg (max 4g)</center>"
+                        ],
+                        [
+                            "<center>Platelets <50 X 10⁹/L</center>",
+                            "<center>Platelets 10 ml/kg per dose</center>"
                         ]
                     ]
                 }
@@ -5004,7 +5237,8 @@
             "clinical": "<tab1>• Not applicable</tab1>",
             "drug_cards": [
                 {
-                    "title": "<b>Idarucizumab</b>",
+                    "section": "<b>Urgent Reversal of Dabigatran (Pradaxa)</b>",
+                    "title": "<b>Idarucizumab(Praxbind)</b>",
                     "loc": [
                         [
                             "acp",
@@ -5013,12 +5247,12 @@
                     ],
                     "dose_route": [
                         [
-                            "<center>For Dabigatran (Pradaxa) only</center>",
                             "<center>5 grams (2 x 2.5 vials) in 100 mL over 10 minutes by bolus infusion\nCompatible with NS</center>"
                         ]
                     ]
                 },
                 {
+                    "section": "<b>Urgent Reversal of Xa Inhibitors Rivaroxaban (Xarelto), Apixaban (Eliquis), Edoxaban (Lixiana)</b>",
                     "title": "<b>Prothrombin Complex Concentrate (PCC)*</b>",
                     "drugKey": "pcc",
                     "loc": [
@@ -5029,7 +5263,6 @@
                     ],
                     "dose_route": [
                         [
-                            "<center>For Rivaroxaban (Xarelto) / Apixaban (Eliquis) only</center>",
                             "<center>2000 IU and repeat\n2000 IU at 1 hour\nif ongoing bleeding</center>"
                         ]
                     ],
@@ -5041,13 +5274,12 @@
                     "loc": [
                         [
                             "acp",
-                            "first"
+                            "none"
                         ]
                     ],
                     "dose_route": [
                         [
-                            "<center>For Rivaroxaban (Xarelto) / Apixaban (Eliquis) only</center>",
-                            "<center>1 g and repeat in 1 hours (2nd bolus of 1g in 1 hour)</center>"
+                            "<center>2 gram loading dose (over 1-2 minutes)</center>"
                         ]
                     ]
                 }
@@ -5057,7 +5289,7 @@
             "key": "adult_txa",
             "title": "Adult - Tranexamic Acid (TXA) Administration",
             "type": "directive",
-            "indications": "<tab1>• Treatment of trauma-associated hemorrhage, management of massive bleeding, or prophylaxis of systemic or local hyperfibrinolysis</tab1>",
+            "indications": "<tab1>• Treatment of trauma-associated hemorrhage, management of massive bleeding, or prophylaxis of systemic or local hyperfibrinolysis\n• Tranexamic acid should be administered as soon as IV/IO access is achieved but within 3-hours from time of injury or within 3-hours from MHP activation in all other patients\n• HR > 100 <b>OR</b>\n• SBP < 100 mmHg</tab1>",
             "contraindications": "<tab1>• Known hypersensitivity to TXA\n• Greater than 3 hours from time of injury to drug administration (for traumatic injury)</tab1>",
             "clinical": "<tab1>• If active bleeding persists, additional 1 gram bolus doses of TXA may be indicated. Discuss with TMP.</tab1>",
             "drug_cards": [
@@ -5072,10 +5304,7 @@
                     ],
                     "dose_route": [
                         [
-                            "<center>Initiate if the following indications are met:\n<tab1>• Administration is limited to definite knowledge of <3 hours from time of injury\n• HR > 100 bpm or SBP < 100 mmHg</center>"
-                        ],
-                        [
-                            "<center>1 gram loading dose (over 10 minutes)\nrepeat 1g bolus in 1 hour</center>"
+                            "<center>2 gram loading dose (over 1-2 minutes)</center>"
                         ]
                     ]
                 }

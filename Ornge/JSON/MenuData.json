@@ -437,6 +437,11 @@
                                     "key": "adult_blood_product"
                                 },
                                 {
+                                    "title": "Massive Hemorrhage Protocol",
+                                    "type": "menu_document_link",
+                                    "key": "adult_massive_hemorrhage_protocol"
+                                },
+                                {
                                     "title": "Reversal of Warfarin/Coumadin",
                                     "type": "menu_document_link",
                                     "key": "adult_warfarin_reversal"
