@@ -5316,7 +5316,7 @@
             "type": "directive",
             "indications": "<tab1>• Temporary improvement of circulation in peri-arrest or shock states with severe hypotension and/or bradycardia</tab1>",
             "contraindications": "<tab1>• Patients in cardiac arrest</tab1>",
-            "clinical": "<tab1>• Epinephrine 1: <b>100</b> 000 may provide temporary stabilization while other therapies are added or adjusted/titrated</tab1>\n\n<b>Preparation of Push Dose Epinephrine - 10 mcg/ml concentration</b>\n1. Using a 10 mL syringe, draw 100 microgram (i.e. 1 mL of 1:10,000) EPINEPHrine and dilute in 9 mL of Normal Saline</tab1>",
+            "clinical": "<tab1>• Epinephrine 10 mcg/ml may provide temporary stabilization while other therapies are added or adjusted/ titrated</tab1>\n<tab1>• Resuscitation involving push dose EPINEPHrine is expected to be performed in consultation with the TMP</tab1>\n<b>Preparation of Push Dose Epinephrine - 10 mcg/ml concentration</b>\n<tab1>Using a 10 mL syringe, draw 100 microgram (i.e. 1 mL of 1:10,000) EPINEPHrine and dilute in 9 mL of Normal Saline</tab1>",
             "drug_cards": [
                 {
                     "title": "<b>EPINEPHrine (Adrenalin) 10 mcg/ml - 1: 100 000</b>",
@@ -5379,7 +5379,7 @@
                     ]
                 },
                 {
-                    "title": "<b>Consider PRBCs and FFP</b>",
+                    "title": "<b>Consider RBCs and FFP</b>",
                     "loc": [
                         [
                             "acp",
@@ -5406,7 +5406,7 @@
             ],
             "indications": "<tab1>• Septic shock (MAP < 65)</tab1>",
             "contraindications": "<tab1>• Allergy or sensitivity to the medication</tab1>",
-            "clinical": "<tab1>• Consider 1 g CaCl in 100 mL NS/1 hour if ionized Ca < 1 or Ca < 2.0 (corrected if available)\n• For patients that are profoundly hypotensive with MAP <50 or pre-arrest consider emergent TMP patch to discuss epinephrine 1: 100 000 and start Norepinephrine infusion at minimum 0.3 mcg/kg/min. Crystalloid bolus should be given concurrently with push dose pressors and/or Norepinephrine infusion initiation\n• If Hydrocortisone not available consider Methylprednisolone 125 mg IV/IO</tab1>",
+            "clinical": "<tab1>• Consider 1 g CaCl in 100 mL NS/1 hour if ionized Ca < 1 or Ca < 2.0 (corrected if available)\n• For patients that are profoundly hypotensive with MAP <50 or pre-arrest consider emergent TMP patch to discuss epinephrine 1: 100 000 and start Norepinephrine infusion at minimum 0.3 mcg/kg/min. Crystalloid bolus should be given concurrently with push dose pressors and/or Norepinephrine infusion initiation\n• If Hydrocortisone not available consider Methylprednisolone 125 mg IV/IO\n• Consider HCO3 if pH <7.1\n• Target of 1h from patient contact at sending to receive appropriate antibiotics</tab1>",
             "drug_cards": [
                 {
                     "title": "<b>Normal Saline or Ringers Lactate</b>",
@@ -5418,7 +5418,7 @@
                     ],
                     "dose_route": [
                         [
-                            "<center>30 mL/kg IV/IO bolus\nTarget MAP > 65</center>"
+                            "<center>500 ml IV/IO bolus, to MAX 30 ml/kg\nTarget MAP > 65</center>"
                         ]
                     ]
                 },
@@ -5433,7 +5433,22 @@
                     ],
                     "dose_route": [
                         [
-                            "<center>0-0.5 microgram/kg/min IV/IO\nTarget MAP > 65</center>"
+                            "<center>0-0.5 microgram/kg/min IV/IO\nTarget MAP > 65\nfor MAP <50, initiate at min 0.3 mcg/kg/min and consider push dose EPINEPHrine</center>"
+                        ]
+                    ]
+                },
+                {
+                    "title": "<b>Norepinephrine (Levophed)</b>",
+                    "drugKey": "norepinephrine",
+                    "loc": [
+                        [
+                            "ccp",
+                            "none"
+                        ]
+                    ],
+                    "dose_route": [
+                        [
+                            "<center>0-0.5 microgram/kg/min IV/IO\nTarget MAP > 65\nfor MAP <50, initiate at min 0.3 mcg/kg/min and consider push dose EPINEPHrine</center>"
                         ]
                     ]
                 },
@@ -5463,7 +5478,7 @@
                     ],
                     "dose_route": [
                         [
-                            "<center>0-0.5 microgram/kg/min IV/IO\nTarget MAP > 65</center>"
+                            "<center>0-0.5 microgram/kg/min IV/IO\nTarget MAP > 65\nfor MAP <50, initiate at min 0.3 mcg/kg/min and consider push dose EPINEPHrine</center>"
                         ]
                     ]
                 },
@@ -5479,6 +5494,35 @@
                     "dose_route": [
                         [
                             "<center>100 mg IV/IO</center>"
+                        ]
+                    ]
+                },
+                {
+                    "title": "<b>Calcium Chloride (Calcijet)</b>",
+                    "drugKey": "calcium_chloride",
+                    "loc": [
+                        [
+                            "acp",
+                            "after"
+                        ]
+                    ],
+                    "dose_route": [
+                        [
+                            "<center>20 mg/kg IV/IO q 5 minutes prn\nSingle MAX dose 1g over 20 minutes PIV (5 minutes if central line)\nTotal MAX dose 40 mg/kg or 2g (lesser of)</center>"
+                        ]
+                    ]
+                },
+                {
+                    "title": "<b>Antimicrobial Administration</b>",
+                    "loc": [
+                        [
+                            "acp",
+                            "none"
+                        ]
+                    ],
+                    "dose_route": [
+                        [
+                            "<center>When initiated appropriately by a sending facility:\nMaintain existing antimicrobial infusions\nAdminister repeat antimicrobial doses within the prescribed time interval\n<b>New/modified antimicrobial administration requires a TMP patch</b></center>"
                         ]
                     ]
                 }
@@ -5549,6 +5593,21 @@
                 },
                 {
                     "section": "OR",
+                    "title": "<b>Ondansetron (Zofran)*</b>",
+                    "drugKey": "ondansetron",
+                    "loc": [
+                        [
+                            "pcp",
+                            "none"
+                        ]
+                    ],
+                    "dose_route": [
+                        [
+                            "<center>4 mg IM q 4-8 hours prn</center>"
+                        ]
+                    ]
+                },
+                {
                     "title": "<b>Ondansetron (Zofran)*</b>",
                     "drugKey": "ondansetron",
                     "loc": [
@@ -5631,7 +5690,7 @@
                     ]
                 },
                 {
-                    "title": "<b>Consider PRBC</b>",
+                    "title": "<b>Consider RBC</b>",
                     "loc": [
                         [
                             "acp",
@@ -5724,7 +5783,7 @@
         },
         {
             "key": "adult_esophageal_probe",
-            "title": "Adult - Esophageal Temperature Probes",
+            "title": "Adult - Invasive Temperature Monitoring",
             "type": "directive",
             "indications": "<tab1>• Continuous monitoring of core body temperature for any intubated patient with a temperature outside normal range (36.5 to 37.5oC)\n• Temperature monitoring during active rewarming measures\n• Continuous monitoring may be ordered by the TMP at their discretion\n• Required for targeted temperature management in ROSC</tab1>",
             "contraindications": "<tab1>• Esophageal strictures\n• Esophageal varices\n• Esophageal perforation\n• Congenital anomalies such as tracheal esophageal fistula\n• Post-Operative tonsil and adenoidectomy patients\n• Facial trauma\n• Patients receiving Anticoagulants. Anticoagulants include but are not limited to: IV Heparin, Warfarin (Coumadin), Enoxaparin (Lovenox)</tab1>",
@@ -5739,7 +5798,7 @@
                     ],
                     "dose_route": [
                         [
-                            "<center><b>Insert and monitor core temperature with Esophageal Temperature probe</b></center>"
+                            "<center><b>Insert and monitor core temperature with esophageal or rectal temperature probe</b></center>"
                         ]
                     ]
                 }
@@ -5751,7 +5810,7 @@
             "type": "directive",
             "indications": "<tab1>• For monitoring urine output\n• For urinary tract obstruction</tab1>",
             "contraindications": "<tab1>• Blood at the urethral meatus\n• Perineal or scrotal hematoma\n• Suspected urethral tear\n• High riding prostate</tab1>",
-            "clinical": "<tab1>• Urinary catheter removal can only be performed by the ACP(f), CCP and PCCP/PCCN\n• If during transport the catheter becomes obstructed contact the TMP</tab1>",
+            "clinical": "<tab1>• Urinary catheter removal can only be performed by the ACP(f)and CCP\n• If during transport the catheter becomes obstructed contact the TMP</tab1>",
             "drug_cards": [
                 {
                     "loc": [
@@ -5776,6 +5835,29 @@
                     "dose_route": [
                         [
                             "<center><b>Insertion and/or Maintenance</b></center>"
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "key": "adult_cbi",
+            "title": "Adult - Continuous Bladder Irrigation",
+            "type": "directive",
+            "indications": "<tab1>• Maintenance of Continuous Bladder irrigation initiated by sending facilities</tab1>",
+            "contraindications": "<tab1>• Inability to safely secure equipment</tab1>",
+            "clinical": "<tab1>• CBI should preferentially be discontinued for transport. If d/c is not appropriate, CBI may be maintained during transport.</tab1>\n<tab1>• Documentation should include the following:</tab1>\n<tab2>o Type of irrigation fluid</tab2>\n<tab2>o Volume infused</tab2>\n<tab2>o Amount and colour of drainage</tab2>\n<tab2>o Presence/absence of clots</tab2>\n<tab2>o Rate of irrigation (slow/moderate/fast)</tab2>\n<tab2>o Drainage volume</tab2>\n<tab3>• Net urine output is calculated by subtracting the total volume of irrigant infused from the total volume of drainage</tab3>",
+            "drug_cards": [
+                {
+                    "loc": [
+                        [
+                            "acp",
+                            "none"
+                        ]
+                    ],
+                    "dose_route": [
+                        [
+                            "<center>Maintenance of Continuous Bladder Irrigation\nInitiated by sending facility & not appropriate for discontinuation during transport</center>"
                         ]
                     ]
                 }
@@ -5953,7 +6035,7 @@
                     "drugKey": "epinephrine",
                     "dose_route": [
                         [
-                            "<center>0-0.5 microgram/kg/min IV/IO\nTarget MAP > 65</center>"
+                            "<center>0-0.5 microgram/kg/min IV/IO\nTarget MAP > 65\nFor MAP <50, initiate at min 0.3 mcg/kg/min and consider push dose EPINEPHrine</center>"
                         ]
                     ]
                 }
@@ -5965,7 +6047,7 @@
             "type": "directive",
             "indications": "<tab1>• Altered level of consciousness (GCS <14)\n• Blood glucose < 4 mmol</tab1>",
             "contraindications": "<tab1>• Allergy or sensitivity to the medication\n• Pheochromocytoma is a contraindication to glucagon</tab1>",
-            "clinical": "<tab1>• Not applicable</tab1>",
+            "clinical": "<tab1>• TMP contact is required after initiating treatment in hypoglycemic cases to discuss ongoing management</tab1>",
             "drug_cards": [
                 {
                     "title": "<b>Glucagon for Hypoglycemia</b>",
@@ -6183,6 +6265,131 @@
             ]
         },
         {
+            "title": "Adult - Diabetic Ketoacidosis (DKA)",
+            "type": "directive",
+            "flowchartkeys": [
+                [
+                    "Flowchart",
+                    "adult_dka_flowchart"
+                ]
+            ],
+            "key": "adult_dka",
+            "indications": "<tab1>• Hyperglycemia (blood glucose > 11 mmol/L) in a new or known diabetic</tab1>\n<tab1>AND</tab1>\n<tab1>• pH <7.30, serum bicarbonate <15 mmol/L and anion gap > 12 mmol/L</tab1>\n<tab1>AND (if available)</tab1>\n<tab1>• Confirmed ketosis (positive ketones in blood or urine)</tab1>\n<b>Monitoring:</b>\n<tab1>• Cardiorespiratory monitor and O2 saturation monitor</tab1>\n<tab1>• Monitoring of vital signs (HR, RR, BP) and neurovitals, q 10-15 minutes</tab1>\n<tab1>• Accurate intake and output q 1 hour</tab1>\n<tab1>• Bedside glucose q 1 hour</tab1>",
+            "contraindications": "<tab1>• Allergy or sensitivity to the medication</tab1>",
+            "clinical": "<tab1>• A normal or mildly elevated blood glucose level does not rule out diabetic ketoacidosis in certain conditions, such as pregnancy or with SGLT2 inhibitor use.</tab1>\n<tab1>• Diabetic ketoacidosis and hyperosmolar hyperglycemic state are medical emergencies that require treatment and monitoring for multiple metabolic abnormalities and vigilance for complications.</tab1>\n<tab1>• Diabetic ketoacidosis requires intravenous insulin administration (0.1 units/kg/h) for resolution. Bicarbonate therapy may be considered only for extreme acidosis (pH ≤7.0).</tab1>\n<tab1>• Diabetic ketoacidosis and hyperosmolar hyperglycemic state should be suspected in people who have diabetes and are ill. If either diabetic ketoacidosis or hyperosmolar hyperglycemic state is diagnosed, precipitating factors must be sought and treated.</tab1>\n<tab1>• Although the diagnosis and treatment of DKA in adult and in children share general principles, there are significant differences in their application, largely related to the increased risk of life-threatening cerebral edema with DKA in children and adolescents.</tab1>\n<tab1>• Refer to DKA flow chart</tab1>",
+            "drug_cards": [
+                {
+                    "title": "<b>0.9% Normal Saline</b>",
+                    "loc": [
+                        [
+                            "acp",
+                            "after"
+                        ]
+                    ],
+                    "drugKey": "normal_saline",
+                    "dose_route": [
+                        [
+                            "<center>Reduced Extracellular Fluid Volume Status (ECFV) – Refer to Flow Chart</center>"
+                        ],
+                        [
+                            "<center>Severe ECFV Deficit/Shock</center>",
+                            "<center>Mild to Moderate ECFV Deficit</center>"
+                        ],
+                        [
+                            "<center>1-2 L/hr to reduce correct hypotension/shock</center>",
+                            "<center>500 mL/hr X 4 hrs\n<b>Then</b>250 Ml/hr X 4 hrs</center>"
+                        ]
+                    ]
+                },
+                {
+                    "title": "<b>Potassium (K) Replacement</b>",
+                    "drugKey": "potassium_chloride",
+                    "loc": [
+                        [
+                            "acp",
+                            "first"
+                        ]
+                    ],
+                    "dose_route": [
+                        [
+                            "<center>Serum K < 3.3 mmol/L</center>",
+                            "<center>Serum K 3.3 but < 5.5 mmol/L</center>"
+                        ],
+                        [
+                            "<center>Admin 40 mmol/L KCL & NO insulin until K ≥3.3 mmol/L\n(Max 40 mmol/L)</center>",
+                            "<center>Admin 10-40 mmol/L KCL\nProvide less aggressive KCL replacement in renal failure – discuss with TMP</center>"
+                        ]
+                    ]
+                },
+                {
+                    "title": "<b>Insulin (Regular)</b>",
+                    "loc": [
+                        [
+                            "acp",
+                            "first"
+                        ]
+                    ],
+                    "drugKey": "insulin",
+                    "dose_route": [
+                        [
+                            "<center>Infusion: 0.1 units/kg/hr IV</center>"
+                        ]
+                    ]
+                },
+                {
+                    "section": "<b>If Acidosis pH <7.0</b>",
+                    "title": "<b>Sodium Bicarbonate (NaHCO3) for pH < 7.0</b>",
+                    "loc": [
+                        [
+                            "acp",
+                            "first"
+                        ]
+                    ],
+                    "drugKey": "sodium_bicarbonate",
+                    "dose_route": [
+                        [
+                            "<center><b>Infusion</b></center>"
+                        ],
+                        [
+                            "<center><b>1 amp/hr (50 mEq) IV/IO\n(Remove 150 mL of fluid from 1000 mL of D5W and add 150 mEq of Sodium Bicarbonate)\nAdmin at 333 ml/hr to achieve 1 amp/hr</b></center>"
+                        ]
+                    ]
+                },
+                {
+                    "section": "<b>If Neurological Deterioration</b>",
+                    "title": "<b>3% Sodium Chloride</b>",
+                    "loc": [
+                        [
+                            "acp",
+                            "first"
+                        ]
+                    ],
+                    "drugKey": "sodium_chloride_3_percent",
+                    "dose_route": [
+                        [
+                            "<center><b>Bolus: </b>3-5 mL/kg/dose over 20 min\nDiscuss repeat orders with TMP</center>"
+                        ]
+                    ]
+                },
+                {
+                    "section": "<b>OR</b>",
+                    "title": "<b>Mannitol</b>",
+                    "loc": [
+                        [
+                            "acp",
+                            "first"
+                        ]
+                    ],
+                    "drugKey": "mannitol",
+                    "dose_route": [
+                        [
+                            "<center><b>Bolus: </b>0.5-1 g/kg IV over 20 minutes</center>"
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
             "key": "adult_tylenol_od",
             "title": "Adult - Suspected Acetaminophen Overdose",
             "type": "directive",
@@ -6258,24 +6465,12 @@
                             "200",
                             "20",
                             "40"
-                        ],
-                        [
-                            "110",
-                            "220",
-                            "22",
-                            "44"
-                        ],
-                        [
-                            "120",
-                            "240",
-                            "24",
-                            "48"
                         ]
                     ],
                     "notes": "*Please refer to MucomystTM (acetylcysteine) Drug Monographs profile"
                 }
             ],
-            "clinical": "<tab1>• *If local reaction or rash occurs: Stop the infusion temporarily, treat with antihistamines, ventolin prn, then restart infusion at ½ the rate\n• <b>Mandatory Patch</b> required to initiate an acetylcysteine infusion\n• The ACP(f), CCP and PCCP/PCCN may maintain the administration of a MucomystTM (acetylcysteine) infusion as per the above table for an Acetaminophen overdose <b>in the following circumstances:</b>\n</tab1><tab2>◦ The infusion was initiated by the sending facility\n◦ Ingested or suspected ingestion of Acetaminophen dose is greater or equal to:\n</tab2><tab3>• 10 g TOTAL\n <b> OR </b> \n• 200 mg/kg ideal body weight\n</tab3><tab2>◦ The rate of infusion is in accordance with the accompanying dosage table and preparation guide\n◦ The rate of infusion cannot be altered by the Paramedic unless ordered by the Transport Medicine Physician</tab2>\n\n<title>Guidelines to Prepare a 3% Intravenous N-Acetylcysteine Bag</title>\nAs part of the Poison Centre’s treatment recommendations for the acetaminophen-poisoned patient, a 3 % nacetylcysteine solution will need to be prepared. The following are instructions on how to prepare this solution in <b>D5W.</b>\nPatient is > 40 kg\n<tab1>• Remove 150 ml from a 1000 ml bag of D5W\n• Add 150 ml of 20% IV N-Acetylcysteine to the remaining 850 ml in the D5W bag\n</tab1><tab2>◦ 150 ml X 200 mg/ml = 30 000 mg of N-Acetylcysteine\n◦ 30 000 mg in 1000 ml yields a final solution with 30 mg/ml or 3%\n</tab2>NOTES:<tab1>\n 1. 20% IV N-Acetylcysteine is equivalent to 200 mg/ml\n 2. The 3% solution is slightly hyperosmolar but still within the safety margin for administration via a peripheral vein\n 3. It is recognized that any particular bag of IV fluid could have excessive fluid more than advertised. It is of little consequence when making this 3% solution. Assume a finished volume as advertised on the bag\n</tab1>Mixing is important to ensure uniform distribution of N-Acetylcysteine in infusion solution"
+            "clinical": "<tab1>• In severe acetaminophen overdose, discuss the role of Fomepizole (Antizol) with the TMP to determine if indicated\n• Calculate Acetylcysteine dose using total body weight up to a maximum of 100 kg\n• *If local reaction or rash occurs: Stop the infusion temporarily, treat with antihistamines, ventolin prn, then restart infusion at ½ the rate\n• <b>Mandatory Patch</b> required to initiate an acetylcysteine infusion\n• The ACP(f) and CCP may maintain the administration of a MucomystTM (acetylcysteine) infusion as per the above table for an Acetaminophen overdose <b>in the following circumstances:</b>\n</tab1><tab2>◦ The infusion was initiated by the sending facility\n◦ Ingested or suspected ingestion of Acetaminophen dose is greater or equal to:\n</tab2><tab3>• 10 g TOTAL\n <b> OR </b> \n• 200 mg/kg ideal body weight\n</tab3><tab2>◦ The rate of infusion is in accordance with the accompanying dosage table and preparation guide\n◦ The rate of infusion cannot be altered by the Paramedic unless ordered by the Transport Medicine Physician</tab2>\n\n<title>Guidelines to Prepare a 3% Intravenous N-Acetylcysteine Bag</title>\nAs part of the Poison Centre’s treatment recommendations for the acetaminophen-poisoned patient, a 3 % nacetylcysteine solution will need to be prepared. The following are instructions on how to prepare this solution in <b>D5W.</b>\nPatient is > 40 kg\n<tab1>• Remove 150 ml from a 1000 ml bag of D5W\n• Add 150 ml of 20% IV N-Acetylcysteine to the remaining 850 ml in the D5W bag\n</tab1><tab2>◦ 150 ml X 200 mg/ml = 30 000 mg of N-Acetylcysteine\n◦ 30 000 mg in 1000 ml yields a final solution with 30 mg/ml or 3%\n</tab2>NOTES:<tab1>\n 1. 20% IV N-Acetylcysteine is equivalent to 200 mg/ml\n 2. The 3% solution is slightly hyperosmolar but still within the safety margin for administration via a peripheral vein\n 3. It is recognized that any particular bag of IV fluid could have excessive fluid more than advertised. It is of little consequence when making this 3% solution. Assume a finished volume as advertised on the bag\n</tab1>Mixing is important to ensure uniform distribution of N-Acetylcysteine in infusion solution"
         },
         {
             "key": "adult_opioid_od",
@@ -6375,7 +6570,7 @@
                     "drugKey": "norepinephrine",
                     "dose_route": [
                         [
-                            "<center>0-0.5 microgram/kg/min IV/IO\nTarget MAP > 65</center>"
+                            "<center>0-0.5 microgram/kg/min IV/IO\nTarget MAP > 65\nFor MAP <50, initiate at min 0.3 mcg/kg/min and consider push dose EPINEPHrine</center>"
                         ]
                     ]
                 }
@@ -6677,7 +6872,7 @@
                     "drugKey": "norepinephrine",
                     "dose_route": [
                         [
-                            "<center>0-0.5 microgram/kg/min IV/IO\nTarget MAP > 65</center>"
+                            "<center>0-0.5 microgram/kg/min IV/IO\nTarget MAP > 65\nFor MAP <50, initiate at min 0.3 mcg/kg/min and consider push dose EPINEPHrine</center>"
                         ]
                     ]
                 },
@@ -6784,7 +6979,7 @@
                     ],
                     "dose_route": [
                         [
-                            "<center>0-0.5 microgram/kg/min IV/IO\nTarget MAP > 65</center>"
+                            "<center>0-0.5 microgram/kg/min IV/IO\nTarget MAP > 65\nFor MAP <50, initiate at min 0.3 mcg/kg/min and consider push dose EPINEPHrine</center>"
                         ]
                     ]
                 }
@@ -7298,7 +7493,7 @@
                     "adult_obs_labor_complications_flowchart"
                 ]
             ],
-            "indications": "<tab1>• Complicated delivery</tab1>",
+            "indications": "<tab1>• Patient experiencing labour & imminent or precipitous childbirth\n• Complicated delivery</tab1>",
             "contraindications": "<tab1>• Allergy or sensitivity to the medication</tab1>",
             "clinical": "<tab1>• Not applicable</tab1>",
             "drug_cards": [
@@ -7350,7 +7545,7 @@
             "title": "Obstetrics - Post Emergency Birth",
             "type": "directive",
             "indications": "<tab1>• Following an emergency birth</tab1>",
-            "contraindications": "<tab1>• Allergy or sensitivity to the medication</tab1>",
+            "contraindications": "<tab1>• Allergy or sensitivity to the medication\n• Undelivered fetus\n• Suspected or known pre-eclampsia/eclampsia (seizures)</tab1>",
             "clinical": "<tab1>• Notify the receiving facility ASAP\n• <b>DO NOT</b> administer oxytocin by IV push\n• <b>For postpartum hemorrhage (PPH)</b> consider differential diagnosis and additional pharmacologic therapies (i.e. Ergonovine, Hemabate)</tab1>",
             "drug_cards": [
                 {
@@ -7364,7 +7559,10 @@
                     ],
                     "dose_route": [
                         [
-                            "<center>Additional 10 units IM after delivery of the placenta\nAND\n40 units in 1000 mL NS at 2.5 units/hr (62.5 mL/hr) if bleeding minimal</center>"
+                            "<center>Additional 10 units IM after delivery of the placenta</center>"
+                        ],
+                        [
+                            "<center>40 units in 1000 mL NS at 2.5 units/hr (62.5 mL/hr) if bleeding minimal</center>"
                         ]
                     ]
                 }
@@ -7375,7 +7573,7 @@
             "title": "Obstetrics - Post-Partum Hemorrhage",
             "type": "directive",
             "indications": "<tab1>• Post-Partum Hemorrhage</tab1>",
-            "contraindications": "<tab1>• Allergy or sensitivity to the medication\n• Ergonovine is contraindicated in presence of hypertension</tab1>",
+            "contraindications": "<tab1>• Allergy or sensitivity to the medication\n• Undelivered placenta\n• Ergonovine is contraindicated in presence of hypertension</tab1>",
             "flowchartkeys": [
                 [
                     "Flowchart",

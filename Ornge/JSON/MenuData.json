@@ -514,7 +514,7 @@
                                     "key": "adult_blakemore_tube"
                                 },
                                 {
-                                    "title": "Esophageal Temperature Probes",
+                                    "title": "Invasive Temperature Monitoring",
                                     "type": "menu_document_link",
                                     "key": "adult_esophageal_probe"
                                 },
@@ -522,6 +522,11 @@
                                     "title": "Urinary Catheter Insertion and Maintenance",
                                     "type": "menu_document_link",
                                     "key": "adult_urinary_catheter"
+                                },
+                                {
+                                    "title": "Continuous Bladder Irrigation",
+                                    "type": "menu_document_link",
+                                    "key": "adult_cbi"
                                 }
                             ]
                         },
@@ -548,6 +553,11 @@
                                     "title": "Hyperkalemia",
                                     "type": "menu_document_link",
                                     "key": "adult_hyperkalemia"
+                                },
+                                {
+                                    "title": "Diabetic Ketoacidosis (DKA)",
+                                    "type": "menu_document_link",
+                                    "key": "adult_dka"
                                 }
                             ]
                         },
