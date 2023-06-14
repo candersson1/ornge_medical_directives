@@ -756,7 +756,7 @@
                                         <color key="backgroundColor" name="Primary_background"/>
                                         <attributedString key="attributedText">
                                             <fragment>
-                                                <string key="content">Version 1.11 - updated July 23, 2021 
+                                                <string key="content">Version 1.2 - updated March 2023 
 By downloading this app, you (“User”) agree to the terms and conditions contained in this Disclaimer.  
 PLEASE READ CAREFULLY. 
 Ornge is a not-for-profit corporation designated by the Ministry of Health and Long-Term Care of Ontario as an ambulance operator and base hospital under the Ambulance Act (Ontario). 
@@ -764,7 +764,7 @@ This application is intended to be used exclusively by Ontario paramedics who ar
 Where a User is a non-Ornge Base Hospital paramedic, all clinical information should be independently verified and confirmed by undertaking the appropriate clinical protocols or consulting a professional for medical advice, diagnosis or treatment.   
 While we endeavour to keep the information up-to-date and correct, Ornge makes no representations or warranties of any kind, express or implied about the completeness, accuracy, reliability, suitability or availability with respect to the application or the information contained in the application for any purpose.  Any reliance non-Ornge Base Hospital Users place on such material is strictly at your own risk.   
 Any reproduction, copy, modification, or attempt to modify, extract the source code or create derivative works is prohibited.  All rights in the trade marks, copyright, or other intellectual property rights belong to Ornge.   
-Copyright © 2020 Ornge All rights reserved.
+Copyright © 2023 Ornge All rights reserved.
 </string>
                                                 <attributes>
                                                     <color key="NSColor" systemColor="labelColor"/>

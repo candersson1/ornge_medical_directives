@@ -5,7 +5,7 @@
 
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-<title>Controlled Intubation Checklist</title>
+<title>MHP</title>
 
 
 <style type="text/css">
@@ -542,7 +542,7 @@ function calculateSum() {
     risk = "High";
   } else if ((sumTotal >= 5 && sumTotal <= 8) || Math.max(val1b, val2b, val3b) == 2) {
     risk = "Moderate";
-  } else if (sumA < 3 && sumB + sumC < 1) {
+  } else if (sumA <= 4 && sumB + sumC < 1) {
     risk = "Low";
   }
   document.getElementById('risk').setAttribute('class', 'risk ' + risk.toLowerCase() + '-risk');
