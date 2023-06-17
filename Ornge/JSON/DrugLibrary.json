@@ -7418,27 +7418,24 @@
             }
         },
         {
-            "name": "Epoprostenol (Flolan®)",
+            "name": "Epoprostenol",
             "key": "epoprostenol",
             "drug_tables": [
                 {
                     "name": "<center><b>Epoprostenol</b></center>",
-                    "diluent_label": "100 mL PH 12 Diluent",
-                    "amount_label": "0.5 mg vial",
-                    "concentration_label": "<b>5000 ng/mL</b>\nCentral/Peripheral IV",
-                    "dosing_label": "<b>Adult Continuous IV Infusion Dosing:</b>\nInitiate at 2 ng/kg/min IV and increase infusion rate in increments of 2 ng/kg/min at intervals of at least 15 minutes",
-                    "concentration": 5000,
+                    "diluent_label": "50 ml of NS/SWFI for Caripul or 50 ml of Flolan Dilutent",
+                    "amount_label": "1.5 mg/10 mL vial",
+                    "concentration_label": "<b>30 mcg/mL or 30,000 ng/mL\n*Nebulized Inhalation*</b>",
+                    "dosing_label": "<b>Adult Continuous Nebulized Inhalation:</b> Dose titration should not be attempted in transport unless specifically directed and discussion by TMP with sending MD. Acute discontinuation of the medication can result in rebound pulmonary vasoconstriction. Titrate by increasing or decreasing dose in increments of 10 ng/kg/minute every 30 minutes to 2 hours if the patient is stable, maximum dose: 50 mg/kg/minute using ideal body weight rounded to the nearest 10kg.\n<b>IBW (male) = 50 + 2.3 (Height in inches - 60)\nIBW (female) = 45 + 2.3 (Height in inches) - 60)</b>",
+                    "concentration": 30000,
                     "unit_weight": "ng",
                     "unit_time": "min",
                     "dose_array": [
-                        2,
-                        4,
-                        6,
-                        8,
                         10,
-                        12,
-                        14,
-                        16
+                        20,
+                        30,
+                        40,
+                        50
                     ],
                     "weight_based": true
                 }
@@ -7447,7 +7444,7 @@
                 [
                     [
                         "Route",
-                        "Continuous IV\nInfusion"
+                        "Nebulized\nInhalation"
                     ],
                     [
                         "Scope of Practice",
@@ -7457,11 +7454,11 @@
                 [
                     [
                         "<b>Formulary Dosage Forms</b>",
-                        "0.5 or 1.5 mg per vial"
+                        "1.5 mg per 10 mL vial"
                     ],
                     [
                         "<b>Other Names</b>",
-                        "Flolan"
+                        "Caripul, Flolan"
                     ],
                     [
                         "<b>Classification</b>",
@@ -7473,7 +7470,7 @@
                         "<b>Indication(s)</b>"
                     ],
                     [
-                        "• Long-term treatment of primary pulmonary hypertension and secondary pulmonary hypertension due to scleroderma spectrum of diseases in New York Heart Association Class III and Class IV patients who did not respond adequately to conventional therapy."
+                        "• Severe ARDS with refractory hypoxemia (nebulized)\n• Pulmonary hypertension\n• Decompensated right heart failure"
                     ]
                 ],
                 [
@@ -7482,7 +7479,7 @@
                     ],
                     [
                         "<b>Adult:</b>",
-                        "Pulmonary Hypertension: Initiate at 2 ng/kg/min IV and increase infusion rate in increments of 2 ng/kg/min at intervals of at least 15 minutes until dose-limiting pharmacological effects occur. If symptoms of pulmonary hypertension persist, recur or worsen, increase infusion rate by 1-2 ng/kg/min increments at intervals of at least 15 minutes until clinical response obtained. If side effects are not tolerated, decrease infusion rate gradually by 2 ng/kg/min decrements at intervals of at least 15 minutes until tolerable. In patients receiving lung transplants, dose was tapered after the initiation of cardiopulmonary bypass"
+                        "Nebulized Inhalation: 10 – 50 ng/kg/min using ideal body weight (IBW). Dose titration should not be attempted in transport unless specifically directed and discussion by TMP with sending MD. Acute discontinuation of the medication can result in rebound pulmonary vasoconstriction. Titration can be accomplished by increasing or decreasing dose in increments of 10 ng/kg/minute every 30 minutes to 2 hours if the patient is stable; Maximum dose: 50 ng/kg/minute rounded to the nearest 10 kg. Inhaled epoprostenol is usually started at the maximum dose.\nIBW (male) = 50 + 2.3 (Height in inches - 60)\nIBW (female) = 45 + 2.3 (Height in inches - 60)"
                     ],
                     [
                         "<b>Paediatric:</b>",
@@ -7494,7 +7491,7 @@
                     ],
                     [
                         "<b>Special\nConsiderations:</b>",
-                        "• Should not be given as a bolus.\n• Interruptions in drug delivery or sudden large reductions in administration rate can lead to rapid return of pulmonary hypertension and can be fatal.\n• Unless contraindicated, anticoagulant therapy should be administered in patients on epoprostenol to reduce the risk of pulmonary thromboembolism or systemic embolism."
+                        "• With nebulized inhalations, due to the viscosity of the diluent, filters can become sticky and blocked. If this happens, auto-PEEPing can occur. Filters on the ventilator need to be changed frequently (typically Q4H to QShift on double limb ICU vent circuits). LTV1200 and Hamilton T1 filters should be changed approximately every 2 hours to ensure consistent drug delivery and to avoid auto-PEEPing.\n• Interruptions in drug delivery or sudden large reductions in administration rate can lead to rapid return of pulmonary hypertension and can be fatal. Ensure an adequate amount of epoprostenol is obtained from the sending facility.\n• In addition, the pump device and catheters should be monitored frequently to avoid “system” related failure to nebulized administration.\n• Dosing is IBW based."
                     ]
                 ],
                 [
@@ -7502,7 +7499,7 @@
                         "#medical_directives"
                     ],
                     [
-                        "Adult - Clinical Practice - Epoprostenol"
+                        "Adult - Inhaled Epoprostenol (Flolan)"
                     ],
                     [
                         "adult_flolan"
@@ -7513,7 +7510,7 @@
                         "<b>Reconstitution and Administration</b>"
                     ],
                     [
-                        "<b>Adult Direct IV:</b> N/A\n<b>Adult Continuous IV Infusion:</b> Reconstitute contents of one 0.5 mg vial with 5 mL of pH 12 STERILE DILUENT for FLOLAN. Withdraw entire vial contents and add sufficient pH 12 STERILE DILUENT for FLOLAN to make a total of 100 mL. During initiation of treatment, may be given peripherally. For chronic continuous administration, infusion via central venous catheter is necessary. Must be administered by an infusion pump. Recommended to infuse through a 0.22 micron in-line filter.\n<b>Paediatric Continuous IV Infusion:</b> N/A\nPossible to administer <b>intraosseous (IO).</b>"
+                        "<b>Adult Continuous Nebulized Inhalation:</b>\nCaripul: To mix a concentration of 30,000 ng/mL or 30 mcg/mL, reconstitute contents of one 1.5 mg vial with 5 mL of NS or SWFI. Withdraw entire vial contents and add sufficient volume of the identical diluent to make a total of 50 mL for a final concentration of 30 mcg/mL or 30,000 ng/mL.\nFlolan: To mix a concentration of 30,000 ng/mL or 30 mcg/mL, reconstitute contents of one 1.5 mg vial with 5 mL of provided Flolan diluent. Withdraw entire vial contents and add sufficient Flolan diluent to make a total of 50 mL for a final concentration of 30 mcg/mL or 30,000 ng/mL.\n<b>Paediatric Continuous IV Infusion:</b>N/A\nPossible to administer <b>intraosseous (IO).</b>"
                     ]
                 ],
                 [
@@ -7522,11 +7519,11 @@
                     ],
                     [
                         "<b>Compatibility:</b>",
-                        "<b>Admixture:</b> Compatible only with specific sterile diluent accompanying the product.\n<b>Y-site Compatible:</b> none, do no co-administer with other solutions."
+                        "<b>Admixture:</b> None.\n<b>Y-site Compatible:</b> None, do no co-administer with other solutions."
                     ],
                     [
                         "<b>Stability and\nStorage:</b>",
-                        "Store epoprostenol and diluent vials at 15-25°C and protect from light. Once placed in infusion pump: freshly prepared reconstituted solutions or reconstituted solutions that have been stored at 2° to 8°C (36° to 46°F) for no longer than 8 days can be administered up to: 72 hours at up to 25°C; 48 hours at up to 30°C; 24 hours at up to 35°C; 12 hours at up to 40°C."
+                        "• Store epoprostenol vials at room temperature and protect from light.\n• Protect mixed IV product from direct sunlight during administration.\n• Caripul: When mixed to a concentration of 10,000 ng/mL, the product is stable for 48 hours if administered immediately and 24 hours if stored at 2-8°C for up to 8 days. When mixed to a concentration of 30,000 ng/mL the product is stable for 48 hours if administered immediately or if stored at 2-8°C for up to 8 days.\n• Flolan: Mixed IV products that have been stored at 2°C to 8°C for no longer than 8 days can be administered up to 72 hours at up to 25°C; 48 hours at up to 30°C; 24 hours at up to 35°C; 12 hours at up to 40°C."
                     ],
                     [
                         "<b>Freezing:</b>",
@@ -7546,7 +7543,7 @@
                         "<b>Patient Monitoring</b>"
                     ],
                     [
-                        "Monitor for improvements in pulmonary function, decreased exertional dyspnea, fatigue, syncope and chest pain, blood pressure, pulmonary vascular resistance, pulmonary arterial pressure and quality of life. Following establishment of a new chronic infusion rate, measure standing and supine blood pressure for several hours. In addition, the pump device and catheters should be monitored frequently to avoid “system” related failure. Monitor arterial pressure; assess all vital functions. Hypoxia, flushing, and tachycardia may indicate overdose."
+                        "• Monitor patients for improvements in pulmonary function, oxygenation, and exertional dyspnea.\n• Monitor for adverse effects: hypotension, bleeding, bronchospasm and volume overload/pulmonary edema.\n• Hypoxia, flushing, and tachycardia may indicate overdose."
                     ]
                 ],
                 [
@@ -7554,7 +7551,7 @@
                         "<b>Complications and Adverse Effects</b>"
                     ],
                     [
-                        "• Cardiovascular: chest pain, bradycardia, hypotension, tachycardia.\n• GI: nausea, vomiting, diarrhea, abdominal pain, anorexia. Discontinued in case of pulmonary edema during dosage initiation\n• CNS: anxiety, nervousness, dizziness, headache, tremor.\n• Dermatologic: flushing, eczema, rash, urticaria.\n• Other: Jaw pain, flu-like symptoms, myalgia, chills, fever, sepsis, hemorrhage, hyperglycemia;"
+                        "• Cardiovascular: hypotension, chest pain, bradycardia, tachycardia, volume overload\n• Pulmonary: pulmonary edema, bronchospasm, pulmonary hemorrhage\n• GI: nausea, vomiting, diarrhea, abdominal pain, anorexia\n• CNS: anxiety, nervousness, dizziness, headache, tremor\n• Dermatologic: flushing, eczema, rash, urticaria\n• Other: bleeding, thrombocytopenia, jaw pain, flu-like symptoms, myalgia, chills, fever, sepsis, hyperglycemia."
                     ]
                 ],
                 [
@@ -7562,7 +7559,7 @@
                         "<b>Contraindications</b>"
                     ],
                     [
-                        "• Hypersensitivity to epoprostenol.\n• Contraindicated in patients with congestive heart failure secondary to severe left ventricular systolic dysfunction\n• Should not be used chronically in patients who develop pulmonary edema during dose initiation"
+                        "• Pulmonary edema during dose initiation\n• Active Pulmonary Hemorrhage\n• Thrombocytopenia (platelets < 50 x 10^9/L)\n• Hypersensitivity to epoprostenol\n• Chronic use in congestive heart failure secondary to severe left ventricular systolic dysfunction."
                     ]
                 ],
                 [
@@ -7570,7 +7567,7 @@
                         "<b>Precautions</b>"
                     ],
                     [
-                        "• Epoprostenol is a potent inhibitor of platelet aggregation, therefore, an increased risk for hemorrhagic complications should be considered.\n• Because of the high pH of the final infusion solutions, care should be taken to avoid extravasation during their administration and consequent risk of tissue damage.\n• Use has been associated with an increased incidence of bradycardia with episodes of severe hypotension, including fatalities."
+                        "• Acute discontinuation of the medication can result in rebound pulmonary vasoconstriction. This effect usually presents itself within 30 minutes of discontinuation of the medication. Epoprostenol should always be weaned slowly to avoid rebound pulmonary vasoconstriction\n• Systemic hypotension, because of the vasodilatory properties, is possible but has not been directly linked with typical dosage ranges of inhaled epoprostenol (0-50 ng/kg/min)\n• Thrombocytopenia (platelets <50 x 10^9/L ) or active bleeding, due to inhibition of platelet aggregation, is possible but has not been directly linked with typical dosage ranges of inhaled epoprostenol (0-50 ng/kg/min). Administration should be avoided during active hemorrhage (especially pulmonary hemorrhage)\n• Epoprostenol may act as a pulmonary irritant due the solutions’ alkaline pH (10.2 to 10.8). Care must be taken to avoid accidental spillage into the trachea. Because of this, use with caution in patients with reactive airways/bronchospasm\n• Volume overload/pulmonary edema has been reported from increased flow. Careful consideration and caution should be taken in this patient population\n• Use has been associated with an increased incidence of bradycardia with episodes of severe hypotension, including fatalities\n• Do not mix epoprostenol with any other parenteral medication or solution prior to or during administration."
                     ]
                 ],
                 [
@@ -7578,7 +7575,7 @@
                         "<b>Drug Interactions</b>"
                     ],
                     [
-                        "• Combining with anticoagulant therapy will increase the risk of bleeding.\n• May enhance the hypotensive effects of concurrent blood pressure lowering and vasodilating medications."
+                        "• Combining with NSAIDS or anticoagulant therapy will increase the risk of bleeding.\n• May enhance the hypotensive effects of concurrent diuretic or blood pressure lowering medications."
                     ]
                 ],
                 [
@@ -7613,7 +7610,7 @@
                         "<b>Pharmacologic Mechanism</b>"
                     ],
                     [
-                        "Epoprostenol widens the blood vessels to lower the blood pressure in the lungs."
+                        "Epoprostenol is a prostaglandin I2 (PGI2) which inhibits platelet aggregation and is a potent vasodilator. When administering epoprostenol via inhalation, it results in selective pulmonary vasodilation to areas ventilated as these are the areas where the drug is delivered to. This results in improved ventilation/perfusion matching, reduced pulmonary artery pressures, improved right ventricular (RV) function, and decreased hypoxemia."
                     ]
                 ],
                 [
@@ -7621,7 +7618,7 @@
                         "<b>References</b>"
                     ],
                     [
-                        "• The Ottawa Hospital Parenteral Drug Therapy Manual. 2014. Mario Bédard, Pharm.D., Nathalie Grégoire, B.Pharm, Anne Massicotte, Bpharm. M.Sc.\n• AHFS: Drug Information. Bethesda, MD: American Society of. Health-System Pharmacists, 2012\n• Lexicomp Online, Pediatric and Neonatal Lexi-Drugs Online, Hudson, Ohio: Lexi-Comp, Inc.; 2013; Accessed Oct 6, 2014\n• Lexicomp Online, Lexi-Drugs Online, Hudson, Ohio: Lexi-Comp Inc.; 2013; Accessed Oct 6, 2014\n• CHEO Pediatric and Neonatal Manual. 2014 Version. www.outreach.cheo.on.ca\n• Critical Care Medicine Drip Infusions and Tables. 4th Edition 2008. Medical Information Systems, Inc\n• Sick Kids IV Monograph. 2014 Version\n• LactMed Drug and Lactation. The National Library of Medicines accessed via http://toxnet.nlm.nih.gov/cgibin/sis/htmlgen?LACT"
+                        "• Caripul (epoprostenol) [product monograph]. Toronto, Ontario, Canada: Janssen Inc; December 2020.\n• Flolan (epoprostenol) [product monograph]. Mississauga, Ontario, Canada: GlaxoSmithKline Inc; February 2019.\n• The Ottawa Hospital Parenteral Drug Therapy Manual. 2014. Mario Bédard, Pharm.D., Nathalie Grégoire, B.Pharm, Anne Massicotte, Bpharm. M.Sc.\n• AHFS: Drug Information. Bethesda, MD: American Society of. Health-System Pharmacists, 2012\n• Lexicomp Online, Pediatric and Neonatal Lexi-Drugs Online, Hudson, Ohio: Lexi-Comp, Inc.; 2013; Accessed Oct 6, 2014\n• Lexicomp Online, Lexi-Drugs Online, Hudson, Ohio: Lexi-Comp Inc.; 2013; Accessed Oct 6, 2014\n• Critical Care Medicine Drip Infusions and Tables. 4th Edition 2008. Medical Information Systems, Inc\n• LactMed Drug and Lactation. The National Library of Medicines accessed via https://www.ncbi.nlm.nih.gov/books/NBK501922/."
                     ]
                 ],
                 [
@@ -7976,7 +7973,215 @@
                 "txa": false,
                 "vancomycin": true,
                 "vecuronium": true
-            }
+            },
+            "drug_tables": [
+                {
+                    "name": "<center><b>Esmolol</b></center>",
+                    "diluent_label": "250 ml NS",
+                    "amount_label": "2500 mg",
+                    "concentration_label": "<b>10 mg/mL\nPeripheral Central</b>",
+                    "dosing_label": "<b>Adult Continuous IV Infusion Dosing:</b> Initiate a 4 minute maintenance infusion at 50 mcg/kg/min (or 0.05 mg/kg/min) after the administration of a loading dose over 1 minute. The recommended duration of maintenance infusions are 4 minutes. For additional blood pressure control, repeat loading dose and increase the maintenance infusion by 25-50 mcg/kg/minute increments no more frequent than every 4 minutes, up to a maximum of 200 mcg/kg/minute (or 0.2 mg/kg/min). Therapy should be gradually tapered to avoid acute tachycardia, hypertension, and/or ischemia. Close to the target HR or BP, omit the loading dose and reduce the incremental dose of the maintenance infusion to 25 mcg/kg/min or less, or increase the titration interval to 10 minutes.",
+                    "concentration": 10000,
+                    "unit_weight": "mcg",
+                    "unit_time": "min",
+                    "dose_array": [
+                        50,
+                        100,
+                        150,
+                        200
+                    ],
+                    "weight_based": true
+                }
+            ],
+            "content": [
+                [
+                    [
+                        "Route",
+                        "IV Direct",
+                        "Continous IV Infusion"
+                    ],
+                    [
+                        "Scope of Practice",
+                        "CCP",
+                        "CCP"
+                    ]
+                ],
+                [
+                    [
+                        "<b>Formulary Dosage Forms</b>",
+                        "10 mg/mL, 10 mL vial; 2500 mg in 250 mL 0.59% Sodium Chloride Premixed Bag"
+                    ],
+                    [
+                        "<b>Other Names</b>",
+                        "Brevibloc"
+                    ],
+                    [
+                        "<b>Classification</b>",
+                        "Beta-Blocker"
+                    ]
+                ],
+                [
+                    [
+                        "<b>Indication(s)</b>"
+                    ],
+                    [
+                        "• Rapid control of ventricular response in atrial fibrillation or flutter in situations requiring a short-acting agent\n• Hypertensive emergencies (including aortic dissection)\n• Post intubation tachycardia or hypertension"
+                    ]
+                ],
+                [
+                    [
+                        "<b>Dosing</b>"
+                    ],
+                    [
+                        "<b>Adult:</b>",
+                        "Supraventricular tachycardia and atrial fibrillation / flutter: Initial loading dose infusion of 500 mcg/kg/min over 1 min, then a maintenance infusion of 50 mcg/kg/min for 4 minutes (total treatment duration of loading dose and maintenance infusion are 5 mins). If needed, repeat the loading dose and increase the maintenance infusion to 100 mcg/kg/min. Continue giving a loading dose and increasing the maintenance infusion by increments of 50 mcg/kg/min (increase no more frequent than every 4 minutes). Close to the target HR or BP, omit the loading dose and reduce the incremental dose of the maintenance infusion to 25 mcg/kg/min or less, or increase the titration interval to 10 minutes. (Maximum: 200 mcg/kg/min)\nHypertensive emergencies (including aortic dissection): Initial loading dose of 25-50 mcg/kg given over 1 min, then 50–100 mcg/kg/min for 4 minutes. For additional blood pressure control, repeat loading dose and increase infusion by 50 mcg/kg/minute increments no more frequent than every 4 minutes, up to a maximum of 200 mcg/kg/minute.\nPost Intubation Tachycardia or Hypertension: 1–2 min before intubation give 1500 mcg/kg IV as a bolus injection over 30 seconds. (given as a single dose, maximum 100 mg (or 100 000 mcg)."
+                    ],
+                    [
+                        "<b>Paediatric:</b>",
+                        "Supraventricular tachycardia (SVT): Initial IV bolus loading dose 100 to 500 mcg/kg over 1 minute followed by a continuous IV infusion of 25 to 100 mcg/kg/minute; titrate by 25 to 50 mcg/kg/minute; usual maintenance dose: 50 to 500 mcg/kg/minute.\nHypertension, acute severe with significant, life-threatening symptoms (eg, seizures): Initiate 100 to 500 mcg/kg/minute continuous infusion."
+                    ],
+                    [
+                        "<b>Neonatal:</b>",
+                        "N/A"
+                    ],
+                    [
+                        "<b>Special\nConsiderations:</b>",
+                        "• Patient should be monitoring during esmolol administration, in particular BP and HR\n• Abrupt withdrawal: therapy should be gradually tapered to avoid acute tachycardia, hypertension, and/or ischemia. Temporary but prompt resumption of beta-blocker therapy may be indicated with worsening of angina or acute coronary insufficiency\n• Should be administered via central venous line whenever possible\n• Continuous infusions must be administered by infusion device and the pump library must be enabled.\n• Intra-arterial pressure monitoring is preferred for patients requiring a continuous infusion of esmolol.\n• Medication port of premixed bags should be used to withdraw only the initial bolus, if necessary (not to be used for withdrawal of additional bolus doses).\n• Infusion into small veins or through a butterfly catheter should be avoided (can cause thrombophlebitis). Extravasation management: If extravasation occurs, stop infusion immediately and disconnect (leave cannula/needle in place); gently aspirate extravasated solution (do NOT flush the line); remove needle/cannula; elevate extremity."
+                    ]
+                ],
+                [
+                    [
+                        "#medical_directives"
+                    ],
+                    [
+                        "N/A"
+                    ]
+                ],
+                [
+                    [
+                        "<b>Reconstitution and Administration</b>"
+                    ],
+                    [
+                        "<b>Adult IV Direct:</b>Give undiluted loading or bolus doses using 10mg/mL concentration 10 mL vial and administer over 30 seconds to 1 minute. Alternatively, withdraw the loading dose from the 10 mg/mL 250 mL premixed bag port once. The medication withdrawal port is not intended for repeat bolus administration.\n<b>Adult/Pediatric Continuous: </b>Administer premixed 10mg/mL, 2500 mg in 250 mL NS at indicated infusion rate.\n<b>Pediatric IV Direct: </b>Give undiluted 10mg/mL concentration over 1 minute.\nPossible to administer <b>intraosseous (IO).</b>"
+                    ]
+                ],
+                [
+                    [
+                        "<b>Compatibility/Stability/Storage</b>"
+                    ],
+                    [
+                        "<b>Compatibility:</b>",
+                        "<b>Diluent Compatibility: </b>NS, D5W, LR\n<b>Y-site Compatible: </b>ampicillin, clindamycin, dopamine, fentanyl, metronidazole, morphine, potassium chloride\n<b>Y-Site Incompatible: </b>furosemide, amphotericin, ciprofloxacin, diazepam, procainamide, pantoprazole, ketorolac"
+                    ],
+                    [
+                        "<b>Stability and\nStorage:</b>",
+                        "• Store vials and premixed bags at room temp. Solution is colorless to light yellow. Discard any vials that contain particulate matter or discoloration.\n• Stable for at least 24 hours (under refrigeration or at controlled room temperature) at a final concentration of 10 mg/mL"
+                    ],
+                    [
+                        "<b>Freezing:</b>",
+                        "Avoid freezing"
+                    ]
+                ],
+                [
+                    [
+                        "<b>Patient Safety</b>"
+                    ],
+                    [
+                        "<b>High-Alert Medication:</b> This medication has a heightened risk of causing significant patient harm when used in error.\n<b>Sound-Alike/ Look-Alike:</b> None."
+                    ]
+                ],
+                [
+                    [
+                        "<b>Patient Monitoring</b>"
+                    ],
+                    [
+                        "• Monitor BP, ECG, HR, RR, urine output, IV site, potassium (particularly in patients with renal impairment)"
+                    ]
+                ],
+                [
+                    [
+                        "<b>Complications and Adverse Effects</b>"
+                    ],
+                    [
+                        "• Cardiovascular: symptomatic hypotension (with diaphoresis, dizziness and headache), asymptomatic hypotension, bradycardia, heart block, heart failure, flushing\n• GI: nausea\n• Respiratory: Bronchospasm\n• Local reactions: phlebitis, inflammation and induration at the site of injection. Vesicant Extravasation risk\n• CNS: confusion"
+                    ]
+                ],
+                [
+                    [
+                        "<b>Contraindications</b>"
+                    ],
+                    [
+                        "• Contraindicated in patients with sinus bradycardia, second or third degree heart block, right ventricular failure secondary to pulmonary hypertension, hypotension, decompensated HF, untreated pheochromocytoma, cardiogenic shock, or if requiring vasopressor/inotropes to maintain BP.\n• Concurrent administration with IV diltiazem or verapamil"
+                    ]
+                ],
+                [
+                    [
+                        "<b>Precautions</b>"
+                    ],
+                    [
+                        "• Caution in diabetic patients as esmolol may mask tachycardia occurring during hypoglycemia (but dizziness and sweating may not be masked).\n• Caution in patients comorbid with asthma, bronchospastic disease, sinus-node dysfunction, hyperthyroidism.\n• Extravasation: Vesicant; ensure proper needle or catheter placement prior to and during infusion. Avoid extravasation. Extravasation can lead to skin necrosis and sloughing; avoid infusions into small veins or through a butterfly catheter.\n• Hyperkalemia: Esmolol has been associated with elevations in serum potassium and development of hyperkalemia especially in patients with risk factors (eg, kidney impairment); monitor serum potassium during therapy.\n• Hypotension: Can commonly occur; patients need close blood pressure monitoring. If an unacceptable drop in blood pressure occurs, reduction in dose or discontinuation may reverse hypotension (usually within 30 minutes).\n• Hypovolemic patients: Avoid use in patients with hypovolemia; treat hypovolemia first, otherwise, use of esmolol may attenuate reflex tachycardia and further increase the risk of hypotension"
+                    ]
+                ],
+                [
+                    [
+                        "<b>Drug Interactions</b>"
+                    ],
+                    [
+                        "• Concomitant use of IV esmolol with IV diltiazem or IV verapamil may cause significant cardiac depression.\n• Use with caution in patient with hyper-reactive airway disease.\n• May increase digoxin or theophylline serum concentrations.\n• Morphine may increase esmolol blood concentrations.\n• Esmolol may enhance the neuromuscular blocking effects of succinylcholine.\n• Dexmedetomidine may enhance the AV-blocking effect of Beta-Blockers.\n• Beta-Blockers may enhance the rebound hypertensive effect of dexmedetomidine. This effect can occur when the dexmedetomidine is discontinued."
+                    ]
+                ],
+                [
+                    [
+                        "<b>Onset:</b>",
+                        "2 - 5 minutes",
+                        "<b>Peak:</b>",
+                        "2 - 6 minutes",
+                    ],
+                    [
+                        "<b>T1/2:</b>",
+                        "9 mins",
+                        "<b>Duration:</b>",
+                        "10 - 30 minutes"
+                    ]
+                ],
+                [
+                    [
+                        "<b>Pregnancy and Lactation</b>"
+                    ],
+                    [
+                        "<b>Pregnancy:</b>",
+                        "Compatible with pregnancy as cardioselective β1-adrenergic blocking agents are not thought to cause for structural anomalies. However, maternal exposure to esmolol has resulted in persistent β-blockade of the fetus and/or newborn.  If maternal use of a beta-blocker is needed, fetal growth should be monitored during pregnancy and the newborn should be monitored for 48 hours after delivery for bradycardia, hypoglycemia, and respiratory depression."
+                    ],
+                    [
+                        "<b>Lactation:</b>",
+                        "Esmolol is not expected to cause any adverse events in breastfed infants and is probably compatible based on its physicochemical properties and extremely short half-life. "
+                    ]
+                ],
+                [
+                    [
+                        "<b>Pharmacologic Mechanism</b>"
+                    ],
+                    [
+                        "This Class II antiarrhythmic competitively blocks response to beta1-adrenergic stimulation with little or no effect of beta2-receptors except at high doses, no intrinsic sympathomimetic activity, no membrane stabilizing activity. Effect is relatively selective for beta-1 receptors in decreasing HR, decreases AV conduction, decreases myocardial contractility to decrease myocardial oxygen consumption."
+                    ]
+                ],
+                [
+                    [
+                        "<b>References</b>"
+                    ],
+                    [
+                        "• Brevibloc Injection, Esmolol hydrochloride [package insert]. Mississauga, On: Baxter Corporation; Nov 2016.\n• The Ottawa Hospital Parenteral Drug Therapy Manual. 2014. Mario Bédard, Pharm.D., Nathalie Grégoire, B.Pharm, Anne Massicotte, Bpharm. M.Sc.\n• AHFS: Drug Information. Bethesda, MD: American Society of. Health-System Pharmacists, 2022.\n• Lexicomp Online, Pediatric and Neonatal Lexi-Drugs Online, Hudson, Ohio: Lexi-Comp, Inc.; 2023; Accessed Jan 8, 2023.\n• Lexicomp Online, Lexi-Drugs Online, Hudson, Ohio: Lexi-Comp Inc.; 2023; Accessed Jan 8, 2023.\n• CHEO Pediatric and Neonatal Manual. 2023 Version. www.outreach.cheo.on.ca.\n• Critical Care Medicine Drip Infusions and Tables. 4th Edition 2008. Medical Information Systems, Inc.\n• Sick Kids IV Monograph. 2023 Version.\n• LactMed Drug and Lactation. The National Library of Medicines accessed via http://toxnet.nlm.nih.gov/cgibin/sis/htmlgen?LACT."
+                    ]
+                ],
+                [
+                    [
+                        "Note: The information contained herein does not supersede or negate the MoHLTC Provincial Advanced Life Support Patient Care Standards or ORNGE MD and should only serve as general information for the medication itself"
+                    ],
+                    [
+                        "<b>Infusion Table (included)</b>"
+                    ]
+                ]
+            ]
         },
         {
             "name": "Etomidate",
@@ -13534,6 +13739,266 @@
                     [
                         ""
                     ],
+                    [
+                        "Note: The information contained herein does not supersede or negate the MoHLTC Provincial Advanced Life Support Patient Care Standards or ORNGE MD and should only serve as general information for the medication itself"
+                    ]
+                ]
+            ]
+        },
+        {
+            "name": "LevETIRAcetam",
+            "key": "levetiracetam",
+            "y_site": {
+                "ns": true,
+                "d5w": true,
+                "lr": true,
+                "abciximab": true,
+                "acetylcysteine": true,
+                "acyclovir": true,
+                "amiodarone": true,
+                "ampicillin": true,
+                "calcium_chloride": true,
+                "calcium_gluconate": true,
+                "cefazolin": true,
+                "ceftriaxone": true,
+                "cisatracurium": true,
+                "dexamethasone": true,
+                "diazepam": true,
+                "digoxin": true,
+                "diltiazem": true,
+                "dimenhydrinate": true,
+                "diphenhydramine": true,
+                "dobutamine": true,
+                "dopamine": true,
+                "epinephrine": true,
+                "eptifibatide": true,
+                "ergonovine": true,
+                "esmolol": true,
+                "fentanyl": true,
+                "fomepizole": true,
+                "fosphenytoin": true,
+                "furosemide": true,
+                "gentamicin": true,
+                "glucagon": true,
+                "haloperidol": true,
+                "heparin": true,
+                "hydralazine": true,
+                "insulin": true,
+                "isoproterenol": true,
+                "ketamine": true,
+                "labetalol": true,
+                "lidocaine": true,
+                "lorazepam": true,
+                "magnesium": true,
+                "mannitol": true,
+                "methylprednisolone": true,
+                "metoprolol": true,
+                "metronidazole": true,
+                "midazolam": true,
+                "milrinone": true,
+                "morphine": true,
+                "naloxone": true,
+                "nitroglycerin": true,
+                "norepinephrine": true,
+                "octreotide": true,
+                "oxytocin": true,
+                "pantoprazole": true,
+                "phenobarbital": true,
+                "phentolamine": true,
+                "phenylephrine": true,
+                "phenytoin": true,
+                "potassium": true,
+                "piperacillin": false,
+                "pralidoxime": true,
+                "procainamide": true,
+                "propofol": true,
+                "rocuronium": true,
+                "sodium_bicarbonate": true,
+                "thiamine": true,
+                "txa": true,
+                "vancomycin": true,
+                "vecuronium": true,
+                "valproate_sodium": true
+            },
+            "content": [
+                [
+                    [
+                        "Route",
+                        "Intermittent IV infusion"
+                    ],
+                    [
+                        "Scope of Practice",
+                        "CCP"
+                    ]
+                ],
+                [
+                    [
+                        "<b>Formulary Dosage Forms</b>",
+                        "IV  100 mg /mL , 5 mL vial"
+                    ],
+                    [
+                        "<b>Other Names</b>",
+                        "Keppra"
+                    ],
+                    [
+                        "<b>Classification</b>",
+                        "Anticonvulsant, Anti-epileptic"
+                    ]
+                ],
+                [
+                    [
+                        "<b>Indication(s)</b>"
+                    ],
+                    [
+                        "• Treatment of status epilepticus when adjunctive therapy in the management of patients with epilepsy who are not satisfactorily controlled by conventional therapy\n• Seizure prophylaxis in patients stabilized on oral levETIRAcetam, who cannot take orally or via a feeding tube"
+                    ]
+                ],
+                [
+                    [
+                        "<b>Dosing</b>"
+                    ],
+                    [
+                        "<b>Adult:</b>",
+                        "Status Epilepticus: 40 to 60 mg/kg IV x 1 dose (dose limit: 4500 mg) Seizure Prophylaxis (maintenance dosing): 500 mg to 1500 mg IV Q12H IV For PO to IV switches use the same dose and frequency as the oral dose."
+                    ],
+                    [
+                        "<b>Paediatric:</b>",
+                        "Loading dose: 20 - 40 mg kg/dose IV x 1 dose (Dose limit:  60 mg/kg/dose or 3000 mg/dose)\nMaintenance Dose: 5 - 10 mg/kg/day IV divided Q12H (Dose limit: 100 mg/kg/day or 3000 mg/day, whichever is less)\nFor PO to IV switches use the same dose and frequency as the oral dose. Switch back to oral dosing as soon as feasible."
+                    ],
+                    [
+                        "<b>Neonatal:</b>",
+                        "Loading Dose: 60 mg/kg/dose IV x 1 dose\nMaintenance Dose: 10 - 60 mg/kg/day IV divided Q12h"
+                    ],
+                    [
+                        "<b>Special\nConsiderations:</b>",
+                        "• IV:PO conversion is 1:1. Consider switching back to oral dosing as soon as feasible because IV maintenance dosing safety and effectiveness has not been studied beyond 4 days\n• Loading doses should be utilized unadjusted for renal function or dialytic therapy\n• Maintenance dosage should be reduced in patients with impaired renal function, particularly older adults. However the risks/benefits favor dosing on the high side of the recommended dosing range when initiating treatment in patients with acute seizures\n• LevETIRAcetam Injection USP should be withdrawn gradually to minimize the potential of increased seizure frequency"
+                    ]
+                ],
+                [
+                    [
+                        "#medical_directives"
+                    ],
+                    [
+                        "N/A"
+                    ]
+                ],
+                [
+                    [
+                        "<b>Reconstitution and Administration</b>"
+                    ],
+                    [
+                        "<b>Adult Intermittent IV Infusion: </b>For status epilepticus, dilute dose in 100 mL immediately prior to use.  Give up to 3000 mg over 5 minutes and more than 3000 mg to 4500 mg over 10 minutes. For seizure prophylaxis (maintenance dosing), dilute doses up to 1500 mg in 100 mL and infuse over 15 minutes and dilute doses above 1500 mg in 250 mL infuse over 15 minutes.\n<b>Adult Direct IV: </b>N/A\n<b>Paediatric Intermittent IV Infusion:</b> Dilute in 100 mL of NS, LR, or D5W to a maximum concentration of 15 mg/mL and infuse over 15 minutes. May give over 5 minutes for status epilepticus.\nPossible to administer <b>intraosseous (IO)</b>."
+                    ]
+                ],
+                [
+                    [
+                        "<b>Compatibility/Stability/Storage</b>"
+                    ],
+                    [
+                        "<b>Compatibility:</b>",
+                        "<b>Diluent Compatibility:</b> NS, D5W, LR\n<b>Admixture Compatibility:</b> Diazepam, Valproate Sodium, Lorazapam\n<b>Y-site Incompatible: </b>Piperacillin Tazobactam"
+                    ],
+                    [
+                        "<b>Stability and\nStorage:</b>",
+                        "• Store vials at room temperature in original container to protect from light\n• Prepared admixtures with NS, D5W, or LR are stable for 4 hours\n• Concentrations greater than 15 mg/mL must be used immediately after mixing\n• Undiluted and diluted solutions should be clear, colorless, and transparent"
+                    ],
+                    [
+                        "<b>Freezing:</b>",
+                        "Avoid freezing"
+                    ]
+                ],
+                [
+                    [
+                        "<b>Patient Safety</b>"
+                    ],
+                    [
+                        "<b>High-Alert Medication:</b> N/A\n<b>Look-alike/Sound-alike Issues:</b> Keppra sounds like Keflex, LevETIRAcetam sounds like lamotrigine, levocarnitine, levofloxacin"
+                    ]
+                ],
+                [
+                    [
+                        "<b>Patient Monitoring</b>"
+                    ],
+                    [
+                        "Monitor therapeutic response (seizure activity, force, type, duration) at beginning of therapy and periodically throughout. Monitor for CNS depression (somnolence and fatigue), behavioral abnormalities (psychosis, hallucinations, psychotic depression), and other behavioral symptoms (agitation, anger, aggression, irritability, hostility, anxiety, apathy, emotional lability, depersonalization, and depression). Consider monitor for hematologic abnormalities (WBC, neutrophils, eosinophils, RBCs)."
+                    ]
+                ],
+                [
+                    [
+                        "<b>Complications and Adverse Effects</b>"
+                    ],
+                    [
+                        "• CNS: ataxia, weakness, fatigue, dizziness, drowsiness, headache, aggressive, agitated, confusion\n• Psychiatric symptoms: anxiety, anger, emotional lability, depression, suicidal ideation\n• Cardiovascular: Increased BP\n• Pulmonary: nasopharyngitis\n• GI: abdominal pain, vomiting\n• Dermatologic: maculopapular rash, severe rash (Stevens-Johnson syndrome, DRESS)\n• Other: rare hypersensitivity reactions (i.e., anaphylaxis, angioedema, hypotension, hives, rash, dyspnea)\n• Hematologic: decrease in RBC count, Hgb, leukopenia, neutropenia\n• Hepatic: rare cases of liver failure and hepatitis"
+                    ]
+                ],
+                [
+                    [
+                        "<b>Contraindications</b>"
+                    ],
+                    [
+                        "• Hypersensitive to levETIRAcetam or ingredients within its formulation\n• Hypersensitivity to other pyrrolidines derivatives"
+                    ]
+                ],
+                [
+                    [
+                        "<b>Precautions</b>"
+                    ],
+                    [
+                        "• LevETIRAcetam Injection USP should be used with caution, particularly in patients with QTc-interval prolongation, in patients concomitantly treated with drugs affecting the QTc-interval, or in patients with relevant pre-existing cardiac disease or electrolyte disturbances (hypomagnesia, hypokalemia, hypocalcemia)\n• Monitor for an increase in BP in patients 4 years and younger\n• Driving and Operating Machinery: LevETIRAcetam may cause somnolence and fatigue. Therefore, patients are advised not to drive or operate machinery or perform other skilled tasks until it is established that their ability to perform such activities is not affected."
+                    ]
+                ],
+                [
+                    [
+                        "<b>Drug Interactions</b>"
+                    ],
+                    [
+                        "• CNS depressants may enhance the CNS depressant effects of Levetiracetam"
+                    ]
+                ],
+                [
+                    [
+                        "<b>Onset:</b>",
+                        "5 mins",
+                        "<b>Peak:</b>",
+                        "30 mins"
+                    ],
+                    [
+                        "<b>T1/2:</b>",
+                        "6-8 hours",
+                        "<b>Duration:</b>",
+                        "30-40 hours"
+                    ]
+                ],
+                [
+                    [
+                        "<b>Pregnancy and Lactation</b>"
+                    ],
+                    [
+                        "<b>Pregnancy:</b>",
+                        "Avoid if possible. There is non-clinical evidence suggesting that levetiracetam is embryotoxic and teratogenic. LevETIRAcetam Injection USP should therefore be used during pregnancy only when the potential benefits outweigh the possible risks to the fetus."
+                    ],
+                    [
+                        "<b>Lactation:</b>",
+                        "Avoid if possible. LevETIRAcetam is excreted in breast milk and can cause serious adverse reactions such as sedation and poor feeding."
+                    ]
+                ],
+                [
+                    [
+                        "<b>Pharmacologic Mechanism</b>"
+                    ],
+                    [
+                        "The precise mechanism of action is unknown. Some theories include inhibition of voltage-dependent N-type calcium channels; facilitation of GABA-ergic inhibitory transmission through displacement of negative modulators; reduction of delayed rectifier potassium current; and/or binding to synaptic proteins which modulate neurotransmitter release."
+                    ]
+                ],
+                [
+                    [
+                        "<b>References</b>"
+                    ],
+                    [
+                        "• Pendopharma (levetiracetam) [prescribing information]. Montreal, Quebec: Division of Pharmascience Inc.; July 2019.\n• AHFS: Drug Information. Bethesda, MD: American Society of Health-System Pharmacists, 2022\n• Lexicomp Online, Pediatric and Neonatal Lexi-Drugs Online, Hudson, Ohio: Lexi-Comp, Inc.; 2023; Accessed Oct 6, 2014\n• Lexicomp Online, Lexi-Drugs Online, Hudson, Ohio: Lexi-Comp Inc.; 2023; Accessed Oct 6, 2014\n• CHEO Pediatric and Neonatal Manual. 2023 Version. www.outreach.cheo.on.ca\n• Critical Care Medicine Drip Infusions and Tables. 4th Edition 2008. Medical Information Systems, Inc\n• Sick Kids IV Monograph. 2014 Version\n• LactMed Drug and Lactation. The National Library of Medicines accessed via http://toxnet.nlm.nih.gov/cgibin/sis/htmlgen?LACT"
+                    ]
+                ],
+                [
                     [
                         "Note: The information contained herein does not supersede or negate the MoHLTC Provincial Advanced Life Support Patient Care Standards or ORNGE MD and should only serve as general information for the medication itself"
                     ]
