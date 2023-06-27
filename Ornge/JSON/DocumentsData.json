@@ -15795,7 +15795,7 @@
                     ],
                     [
                         "<b>CCP: Critical Care Paramedic</b>"
-                    ],
+                    ]
                 ]
             ]
         },
@@ -15806,7 +15806,7 @@
             "content": [
                 [
                     [
-                        "Ornge: Clinical Practice version 1.2, last updated March 2023"
+                        "Ornge: Clinical Practice version 2.0, last updated March 2023"
                     ]
                 ]
             ]
@@ -15822,6 +15822,36 @@
                     ]
                 ]
             ]
+        },
+        {
+            "key": "Hamilton T1 MR850 Setup",
+            "title": "Hamilton T1 MR850 Setup",
+            "type": "webview"
+        },
+        {
+            "key": "Hamilton T1 - Heated Humidified Nasal Cannula Setup",
+            "title": "Hamilton T1 - Heated Humidified Nasal Cannula Setup",
+            "type": "webview"
+        },
+        {
+            "key": "Hamilton T1 - Infant Nasal CPAP",
+            "title": "Hamilton T1 - Infant Nasal CPAP",
+            "type": "webview"
+        },
+        {
+            "key": "Hamilton T1 - Aerogen",
+            "title": "Hamilton T1 - Aerogen",
+            "type": "webview"
+        },
+        {
+            "key": "Hamilton T1 & MR850 Disinfection",
+            "title": "Hamilton T1 & MR850 Disinfection",
+            "type": "webview"
+        },
+        {
+            "key": "Hamilton T1 - Circuit Guide",
+            "title": "Hamilton T1 - Circuit Guide",
+            "type": "webview"
         },
         {
             "key": "vent_tool",

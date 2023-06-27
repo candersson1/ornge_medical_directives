@@ -174,6 +174,20 @@
 		2A8EB2C710150EE0CF62A692 /* Pods_Ornge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB4F90BDBEC488354DCC14E3 /* Pods_Ornge.framework */; };
 		6E0FB90629CB643D0069E326 /* Pediatric - Trauma.html in Resources */ = {isa = PBXBuildFile; fileRef = 6E0FB90529CB643D0069E326 /* Pediatric - Trauma.html */; };
 		6E0FB90829CB6ED20069E326 /* ped_aw_positioning_trauma.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6E0FB90729CB6ED20069E326 /* ped_aw_positioning_trauma.jpg */; };
+		6E3AF6692A4B2E3C00DAA6AF /* Hamilton T1 MR850 Setup.html in Resources */ = {isa = PBXBuildFile; fileRef = 6E3AF6682A4B2E3C00DAA6AF /* Hamilton T1 MR850 Setup.html */; };
+		6E3AF66D2A4B366C00DAA6AF /* generalHookup.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E3AF66C2A4B366B00DAA6AF /* generalHookup.png */; };
+		6E3AF66F2A4B383A00DAA6AF /* plugin.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E3AF66E2A4B383A00DAA6AF /* plugin.png */; };
+		6E3AF6712A4B3EFF00DAA6AF /* part_2_heater_setup.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E3AF6702A4B3EFF00DAA6AF /* part_2_heater_setup.png */; };
+		6E3AF6732A4B41D600DAA6AF /* Hamilton T1 - Heated Humidified Nasal Cannula Setup.html in Resources */ = {isa = PBXBuildFile; fileRef = 6E3AF6722A4B41D500DAA6AF /* Hamilton T1 - Heated Humidified Nasal Cannula Setup.html */; };
+		6E3AF6792A4B452400DAA6AF /* hnc_part2.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E3AF6782A4B452400DAA6AF /* hnc_part2.png */; };
+		6E3AF67B2A4B465A00DAA6AF /* part_3_hnc.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E3AF67A2A4B465A00DAA6AF /* part_3_hnc.png */; };
+		6E3AF67D2A4B485800DAA6AF /* Hamilton T1 - Infant Nasal CPAP.html in Resources */ = {isa = PBXBuildFile; fileRef = 6E3AF67C2A4B485800DAA6AF /* Hamilton T1 - Infant Nasal CPAP.html */; };
+		6E3AF67F2A4B491800DAA6AF /* infant_ncpap.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E3AF67E2A4B491800DAA6AF /* infant_ncpap.png */; };
+		6E3AF6812A4B4E5200DAA6AF /* Hamilton T1 - Aerogen.html in Resources */ = {isa = PBXBuildFile; fileRef = 6E3AF6802A4B4E5200DAA6AF /* Hamilton T1 - Aerogen.html */; };
+		6E3AF6832A4B4ED300DAA6AF /* aerogen.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E3AF6822A4B4ED300DAA6AF /* aerogen.png */; };
+		6E3AF6852A4B4FEC00DAA6AF /* disinfect_table.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E3AF6842A4B4FEC00DAA6AF /* disinfect_table.png */; };
+		6E3AF6872A4B502F00DAA6AF /* Hamilton T1 & MR850 Disinfection.html in Resources */ = {isa = PBXBuildFile; fileRef = 6E3AF6862A4B502F00DAA6AF /* Hamilton T1 & MR850 Disinfection.html */; };
+		6E3AF6892A4B523E00DAA6AF /* Hamilton T1 - Circuit Guide.html in Resources */ = {isa = PBXBuildFile; fileRef = 6E3AF6882A4B523E00DAA6AF /* Hamilton T1 - Circuit Guide.html */; };
 		6E5BF9EE29CCC926003C39E1 /* ped_tx_of_hypoglycemia_in_the_well_newborn.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E5BF9ED29CCC926003C39E1 /* ped_tx_of_hypoglycemia_in_the_well_newborn.png */; };
 		6E5BF9F129CCFAF0003C39E1 /* preamble_signature.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6E5BF9F029CCFAF0003C39E1 /* preamble_signature.jpg */; };
 		6EAD537C2A094F9900843EF2 /* Adult - Clinical Practice - Airway.html in Resources */ = {isa = PBXBuildFile; fileRef = 6EAD537B2A094F9800843EF2 /* Adult - Clinical Practice - Airway.html */; };
@@ -356,6 +370,20 @@
 		13FBD462241FB079002AD350 /* PopoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopoverViewController.swift; sourceTree = "<group>"; };
 		6E0FB90529CB643D0069E326 /* Pediatric - Trauma.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = "Pediatric - Trauma.html"; sourceTree = "<group>"; };
 		6E0FB90729CB6ED20069E326 /* ped_aw_positioning_trauma.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ped_aw_positioning_trauma.jpg; sourceTree = "<group>"; };
+		6E3AF6682A4B2E3C00DAA6AF /* Hamilton T1 MR850 Setup.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "Hamilton T1 MR850 Setup.html"; sourceTree = "<group>"; };
+		6E3AF66C2A4B366B00DAA6AF /* generalHookup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = generalHookup.png; sourceTree = "<group>"; };
+		6E3AF66E2A4B383A00DAA6AF /* plugin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plugin.png; sourceTree = "<group>"; };
+		6E3AF6702A4B3EFF00DAA6AF /* part_2_heater_setup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = part_2_heater_setup.png; sourceTree = "<group>"; };
+		6E3AF6722A4B41D500DAA6AF /* Hamilton T1 - Heated Humidified Nasal Cannula Setup.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "Hamilton T1 - Heated Humidified Nasal Cannula Setup.html"; sourceTree = "<group>"; };
+		6E3AF6782A4B452400DAA6AF /* hnc_part2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = hnc_part2.png; path = "../../../../../Desktop/T1 Circuit Photos/hnc_part2.png"; sourceTree = "<group>"; };
+		6E3AF67A2A4B465A00DAA6AF /* part_3_hnc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = part_3_hnc.png; sourceTree = "<group>"; };
+		6E3AF67C2A4B485800DAA6AF /* Hamilton T1 - Infant Nasal CPAP.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "Hamilton T1 - Infant Nasal CPAP.html"; sourceTree = "<group>"; };
+		6E3AF67E2A4B491800DAA6AF /* infant_ncpap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = infant_ncpap.png; sourceTree = "<group>"; };
+		6E3AF6802A4B4E5200DAA6AF /* Hamilton T1 - Aerogen.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "Hamilton T1 - Aerogen.html"; sourceTree = "<group>"; };
+		6E3AF6822A4B4ED300DAA6AF /* aerogen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aerogen.png; sourceTree = "<group>"; };
+		6E3AF6842A4B4FEC00DAA6AF /* disinfect_table.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = disinfect_table.png; sourceTree = "<group>"; };
+		6E3AF6862A4B502F00DAA6AF /* Hamilton T1 & MR850 Disinfection.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "Hamilton T1 & MR850 Disinfection.html"; sourceTree = "<group>"; };
+		6E3AF6882A4B523E00DAA6AF /* Hamilton T1 - Circuit Guide.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "Hamilton T1 - Circuit Guide.html"; sourceTree = "<group>"; };
 		6E5BF9ED29CCC926003C39E1 /* ped_tx_of_hypoglycemia_in_the_well_newborn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ped_tx_of_hypoglycemia_in_the_well_newborn.png; sourceTree = "<group>"; };
 		6E5BF9F029CCFAF0003C39E1 /* preamble_signature.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = preamble_signature.jpg; sourceTree = "<group>"; };
 		6EAD537B2A094F9800843EF2 /* Adult - Clinical Practice - Airway.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "Adult - Clinical Practice - Airway.html"; sourceTree = "<group>"; };
@@ -452,6 +480,7 @@
 			children = (
 				1373FA23252A3E3200911854 /* COVID */,
 				139FF61A23C8F7BC00B57A68 /* Adult - Clinical Practice Guidelines - Mechanical Ventilation.html */,
+				6E3AF6682A4B2E3C00DAA6AF /* Hamilton T1 MR850 Setup.html */,
 				6EAD53832A0ABC6D00843EF2 /* adult_non_traumatic_arrest_flowchart.png */,
 				6E5BF9F029CCFAF0003C39E1 /* preamble_signature.jpg */,
 				6EAD537B2A094F9800843EF2 /* Adult - Clinical Practice - Airway.html */,
@@ -475,12 +504,25 @@
 				13E3C49023932A95001C3F08 /* Adult - Clinical Practice - Sedation Intubated.html */,
 				13E3C48E2392BD0D001C3F08 /* Adult - Clinical Practice - Epoprostenol.html */,
 				6E0FB90529CB643D0069E326 /* Pediatric - Trauma.html */,
+				6E3AF6722A4B41D500DAA6AF /* Hamilton T1 - Heated Humidified Nasal Cannula Setup.html */,
+				6E3AF67C2A4B485800DAA6AF /* Hamilton T1 - Infant Nasal CPAP.html */,
+				6E3AF6802A4B4E5200DAA6AF /* Hamilton T1 - Aerogen.html */,
+				6E3AF6862A4B502F00DAA6AF /* Hamilton T1 & MR850 Disinfection.html */,
+				6E3AF6882A4B523E00DAA6AF /* Hamilton T1 - Circuit Guide.html */,
 				13E3C48423917829001C3F08 /* Ornge Airway Manual Executive Summary.html */,
 				6ECC145629CA55950039CA16 /* Delivery Room Management of Premature Neonates.html */,
 				13E3C48223917306001C3F08 /* Controlled Intubation Checklist.html */,
+				6E3AF66E2A4B383A00DAA6AF /* plugin.png */,
 				1368DA812385609C003A7144 /* Adult - Clinical Practice - Asthma.html */,
 				1368DA6D23833455003A7144 /* Executive Airway Summary.html */,
+				6E3AF6842A4B4FEC00DAA6AF /* disinfect_table.png */,
+				6E3AF6822A4B4ED300DAA6AF /* aerogen.png */,
 				13F4A41F239ECED4004F6D38 /* preamble_loc.png */,
+				6E3AF66C2A4B366B00DAA6AF /* generalHookup.png */,
+				6E3AF6782A4B452400DAA6AF /* hnc_part2.png */,
+				6E3AF67E2A4B491800DAA6AF /* infant_ncpap.png */,
+				6E3AF67A2A4B465A00DAA6AF /* part_3_hnc.png */,
+				6E3AF6702A4B3EFF00DAA6AF /* part_2_heater_setup.png */,
 				6EAD53812A099EBB00843EF2 /* adult_trach_transport_flowchart.png */,
 				6E0FB90729CB6ED20069E326 /* ped_aw_positioning_trauma.jpg */,
 				6ECC145829CA59DB0039CA16 /* delivery_room_management_of_premature_neonates.png */,
@@ -796,10 +838,12 @@
 				13E3C48523917829001C3F08 /* Ornge Airway Manual Executive Summary.html in Resources */,
 				134789FE23257B990081E865 /* FlowChartLibrary.json in Resources */,
 				1368C2D7252F29110061735B /* (null) in Resources */,
+				6E3AF6892A4B523E00DAA6AF /* Hamilton T1 - Circuit Guide.html in Resources */,
 				138F07BD24E44A9D00410D0D /* MinionPro-SemiboldDisp.otf in Resources */,
 				6EAD537C2A094F9900843EF2 /* Adult - Clinical Practice - Airway.html in Resources */,
 				138F07DB24E44A9D00410D0D /* MinionPro-MediumCnItCapt.otf in Resources */,
 				138F07F124E44A9D00410D0D /* MinionPro-BoldSubh.otf in Resources */,
+				6E3AF6832A4B4ED300DAA6AF /* aerogen.png in Resources */,
 				13E3C49323932A96001C3F08 /* Adult - Clinical Practice - Sedation Intubated.html in Resources */,
 				135D4A9F23156673006C660C /* MenuData.json in Resources */,
 				13F4A47E23A5CD30004F6D38 /* ped_flacc_score.png in Resources */,
@@ -815,11 +859,14 @@
 				139FF61B23C8F7BC00B57A68 /* Adult - Clinical Practice Guidelines - Mechanical Ventilation.html in Resources */,
 				6EAD53802A09836400843EF2 /* adult-airway-algorithm.png in Resources */,
 				13E3C49D2396C6BD001C3F08 /* Adult - Clinical Practice - Cardiogenic Shock.html in Resources */,
+				6E3AF6732A4B41D600DAA6AF /* Hamilton T1 - Heated Humidified Nasal Cannula Setup.html in Resources */,
 				13BF742F22B6647B00145035 /* Podfile in Resources */,
 				6E0FB90629CB643D0069E326 /* Pediatric - Trauma.html in Resources */,
 				138F07D324E44A9D00410D0D /* MinionPro-BoldCnCapt.otf in Resources */,
 				6ECC145929CA59DB0039CA16 /* delivery_room_management_of_premature_neonates.png in Resources */,
+				6E3AF6872A4B502F00DAA6AF /* Hamilton T1 & MR850 Disinfection.html in Resources */,
 				138F080524E44BDF00410D0D /* FrutigerLTStd-Italic.otf in Resources */,
+				6E3AF6712A4B3EFF00DAA6AF /* part_2_heater_setup.png in Resources */,
 				138F07BF24E44A9D00410D0D /* MinionPro-MediumCnSubh.otf in Resources */,
 				138F07F524E44A9D00410D0D /* MinionPro-CnDisp.otf in Resources */,
 				138F07D224E44A9D00410D0D /* MinionPro-SemiboldCnIt.otf in Resources */,
@@ -856,6 +903,7 @@
 				138F07D024E44A9D00410D0D /* MinionPro-Disp.otf in Resources */,
 				138F080F24E6EA8600410D0D /* DocumentsData.json in Resources */,
 				138F07CD24E44A9D00410D0D /* MinionPro-ItDisp.otf in Resources */,
+				6E3AF6692A4B2E3C00DAA6AF /* Hamilton T1 MR850 Setup.html in Resources */,
 				138F07C324E44A9D00410D0D /* MinionPro-SemiboldCnCapt.otf in Resources */,
 				138F07FA24E44A9D00410D0D /* MinionPro-SemiboldCnItCapt.otf in Resources */,
 				13E3C4A5239964F8001C3F08 /* Adult - Clinical Practice - SCI.html in Resources */,
@@ -867,7 +915,10 @@
 				138F07C824E44A9D00410D0D /* MinionPro-BoldCnItSubh.otf in Resources */,
 				13E3C48F2392BD0D001C3F08 /* Adult - Clinical Practice - Epoprostenol.html in Resources */,
 				13C7BDDD228C36D900D33B76 /* MedicalDirectiveView.xib in Resources */,
+				6E3AF67D2A4B485800DAA6AF /* Hamilton T1 - Infant Nasal CPAP.html in Resources */,
 				138F07E324E44A9D00410D0D /* MinionPro-BoldCnDisp.otf in Resources */,
+				6E3AF67B2A4B465A00DAA6AF /* part_3_hnc.png in Resources */,
+				6E3AF6852A4B4FEC00DAA6AF /* disinfect_table.png in Resources */,
 				13E3C49523932A96001C3F08 /* adult_sedation_score.png in Resources */,
 				138F080324E44BDF00410D0D /* FrutigerLTStd-Black.otf in Resources */,
 				138F07FB24E44A9D00410D0D /* MinionPro-SemiboldIt.otf in Resources */,
@@ -883,6 +934,7 @@
 				138F07C024E44A9D00410D0D /* MinionPro-BoldCnIt.otf in Resources */,
 				138F07E024E44A9D00410D0D /* MinionPro-Capt.otf in Resources */,
 				6EAD53882A0AD1AE00843EF2 /* adult_lvad_flowchart.jpg in Resources */,
+				6E3AF66D2A4B366C00DAA6AF /* generalHookup.png in Resources */,
 				138F07D824E44A9D00410D0D /* MinionPro-MediumCnCapt.otf in Resources */,
 				1373FA22252A3E2300911854 /* app-20200409-RSI-Authorization-and-Limitation-Changes-(BH-MEM-067).pdf in Resources */,
 				1399FD0B25506CF700138F22 /* COVID 2019 Operational Guidelines_Draft_v6.1 Oct 26.pdf in Resources */,
@@ -890,9 +942,11 @@
 				138F07C924E44A9D00410D0D /* MinionPro-SemiboldCn.otf in Resources */,
 				138F07F624E44A9D00410D0D /* MinionPro-ItSubh.otf in Resources */,
 				6E0FB90829CB6ED20069E326 /* ped_aw_positioning_trauma.jpg in Resources */,
+				6E3AF6812A4B4E5200DAA6AF /* Hamilton T1 - Aerogen.html in Resources */,
 				138F07F724E44A9D00410D0D /* MinionPro-MediumCnItSubh.otf in Resources */,
 				13E3C48D2392B815001C3F08 /* adult_airway_checklist.png in Resources */,
 				13F4A430239F44E9004F6D38 /* preamble_sbarr.png in Resources */,
+				6E3AF6792A4B452400DAA6AF /* hnc_part2.png in Resources */,
 				138F07E224E44A9D00410D0D /* MinionPro-Semibold.otf in Resources */,
 				138F07E624E44A9D00410D0D /* MinionPro-MediumDisp.otf in Resources */,
 				138F07DA24E44A9D00410D0D /* MinionPro-ItCapt.otf in Resources */,
@@ -902,6 +956,7 @@
 				138F07C724E44A9D00410D0D /* MinionPro-MediumIt.otf in Resources */,
 				138F07CC24E44A9D00410D0D /* MinionPro-SemiboldItDisp.otf in Resources */,
 				138F07EF24E44A9D00410D0D /* MinionPro-MediumCnIt.otf in Resources */,
+				6E3AF67F2A4B491800DAA6AF /* infant_ncpap.png in Resources */,
 				13F4A48023A5CE0C004F6D38 /* ped_cp_pain.html in Resources */,
 				138F07E424E44A9D00410D0D /* MinionPro-SemiboldSubh.otf in Resources */,
 				138F07F424E44A9D00410D0D /* MinionPro-SemiboldCnDisp.otf in Resources */,
@@ -918,6 +973,7 @@
 				138F07EB24E44A9D00410D0D /* MinionPro-BoldIt.otf in Resources */,
 				138F07E724E44A9D00410D0D /* MinionPro-MediumCnDisp.otf in Resources */,
 				138F07CF24E44A9D00410D0D /* MinionPro-BoldCnItCapt.otf in Resources */,
+				6E3AF66F2A4B383A00DAA6AF /* plugin.png in Resources */,
 				6EAD538C2A0C339000843EF2 /* alcohol_withdrawal_assessment_tool.html in Resources */,
 				138F07D624E44A9D00410D0D /* MinionPro-Bold.otf in Resources */,
 				138F081124E6EAAD00410D0D /* MenuDataTest.json in Resources */,
@@ -1179,7 +1235,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.11;
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ca.ornge.medicaldirectives;
 				PRODUCT_NAME = "Ornge - Clinical Practice";
 				SWIFT_VERSION = 5.0;
@@ -1201,7 +1257,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.11;
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ca.ornge.medicaldirectives;
 				PRODUCT_NAME = "Ornge - Clinical Practice";
 				SWIFT_VERSION = 5.0;

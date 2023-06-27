@@ -1098,6 +1098,36 @@
                             "title": "Privacy Policy",
                             "type": "menu_document_link",
                             "key": "privacy"
+                        },
+                        {
+                            "title": "Hamilton T1 - MR850 Heater Setup",
+                            "type": "menu_document_link",
+                            "key": "Hamilton T1 MR850 Setup"
+                        },
+                        {
+                            "title": "Hamilton T1 - Heated Humidified Nasal Cannula Setup",
+                            "type": "menu_document_link",
+                            "key": "Hamilton T1 - Heated Humidified Nasal Cannula Setup"
+                        },
+                        {
+                            "title": "Hamilton T1 - Infant Nasal CPAP",
+                            "type": "menu_document_link",
+                            "key": "Hamilton T1 - Infant Nasal CPAP"
+                        },
+                        {
+                            "title": "Hamilton T1 - Aerogen Setup",
+                            "type": "menu_document_link",
+                            "key": "Hamilton T1 - Aerogen"
+                        },
+                        {
+                            "title": "Hamilton T1 & MR850 Disinfection",
+                            "type": "menu_document_link",
+                            "key": "Hamilton T1 & MR850 Disinfection"
+                        },
+                        {
+                            "title": "Hamilton T1 Circuit Guide",
+                            "type": "menu_document_link",
+                            "key": "Hamilton T1 - Circuit Guide"
                         }
                     ]
                 },
