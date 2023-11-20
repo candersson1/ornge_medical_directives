@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Oxygen Duration Tool</title>
+    <style>
+      /* Global Styles */
+      body {
+        font-family: "Inter", sans-serif;
+        background-color: #f7f9fc;
+        color: #333;
+        margin: 0;
+        padding: 0;
+        font-size: 16px;
+      }
+
+      /* Form Styles */
+      form {
+        max-width: 480px;
+        margin: 40px auto;
+        padding: 30px;
+        background-color: #fff;
+        border-radius: 12px;
+        box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.1);
+      }
+
+      label {
+        display: block;
+        margin-bottom: 15px;
+        font-weight: 600;
+      }
+
+      input[type="text"],
+      select {
+        width: 100%;
+        padding: 12px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        font-family: "Inter", sans-serif;
+        font-size: 16px;
+      }
+
+      button {
+        display: block;
+        padding: 12px 24px;
+        background-color: #4caf50;
+        color: #fff;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+      .reset {
+        padding: 5px;
+        font-size: 12;
+        margin: 10px;
+        background-color: coral;
+        border-radius: 3px;
+      }
+
+      button:hover {
+        background-color: #45a049;
+      }
+
+      /* Output Styles */
+      .output {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 480px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 12px;
+        box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.1);
+      }
+
+      .output p {
+        font-size: 1.2em;
+        margin-bottom: 10px;
+      }
+
+      .output h2 {
+        font-size: 2em;
+        color: #4caf50;
+        margin: 0;
+      }
+      /* Message Styles */
+      .message-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 480px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 12px;
+        box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.1);
+      }
+
+      .message-container p {
+        font-size: 1.2em;
+        font-weight: bold; /* Make the text bold */
+        margin-bottom: 10px;
+      }
+      .hhmm {
+        color: gray;
+        font-weight: normal;
+        margin-left: 10px;
+        font-size: 14px;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="#" method="post" id="myForm">
+      <button class="reset" type="button" id="clearForm">Clear Form</button>
+      <label>
+        Select Patient Type (< or > 10Kg):
+        <select name="patient_type">
+          <option value="" selected disabled>Select...</option>
+          <option value=">10 Kg">>10 Kg</option>
+          <option value="&lt;10 Kg">&lt;10 Kg</option>
+        </select>
+      </label>
+      <label>
+        Select delivery method:
+        <select name="delivery_method">
+          <option value="" selected disabled>Select...</option>
+          <option value="HHFNC">HHFNC</option>
+          <option value="NIPPV">NIPPV</option>
+          <option value="Invasive">Invasive</option>
+        </select>
+      </label>
+      <label>
+        Enter current tank pressure (PSI):
+        <input type="text" name="tank_pressure" placeholder="e.g., 1750" />
+      </label>
+      <label>
+        <span id="minuteVolumeText"
+          >Enter current EXPIRED minute volume (LPM):</span
+        >
+        <input type="text" name="minute_volume" placeholder="e.g., 12" />
+      </label>
+      <label class="leak-label" style="display: none">
+        Is leak value known?
+        <select name="leak_value_known">
+          <option value="" selected disabled>Select...</option>
+          <option value="Yes">Yes</option>
+          <option value="No">No</option>
+        </select>
+      </label>
+      <label class="leak-label" style="display: none">
+        Enter leak percentage:
+        <input type="text" name="leak_percentage" placeholder="e.g., 25" />
+      </label>
+      <label>
+        Enter current FiO2:
+        <input type="text" name="fio2" placeholder="e.g., 45" />
+      </label>
+      <label>
+        Select asset type or tank size:
+        <select name="asset_type">
+          <option value="" selected disabled>Select...</option>
+          <option value="CCLA (K)">CCLA (K)</option>
+          <option value="FW">FW</option>
+          <option value="RW">RW</option>
+          <option value="E">E</option>
+          <option value="D">D</option>
+          <option value="Local EMS (M)">Local EMS (M)</option>
+        </select>
+      </label>
+      <label>
+        Select air or land for this leg:
+        <select name="leg_type">
+          <option value="" selected disabled>Select...</option>
+          <option value="Air">Air</option>
+          <option value="Land">Land</option>
+        </select>
+      </label>
+      <button type="submit">Submit</button>
+    </form>
+    <div class="message-container" id="messages"></div>
+    <div class="output" id="output">
+      <p>Duration in minutes, including safety margins:</p>
+      <h2 id="duration"></h2>
+    </div>
+  </body>
+  <script>
+    document
+      .getElementById("clearForm")
+      .addEventListener("click", function (e) {
+        // Prevent event bubbling
+        e.stopPropagation();
+
+        // Reset the form
+        document.getElementById("myForm").reset();
+
+        // Clear the output
+        document.getElementById("duration").innerHTML = "";
+        document.getElementById("messages").innerHTML = "";
+      });
+    let base_flow = {
+      ">10 Kg": { Flow: 3, Unit: "LPM" },
+      "<10 Kg": { Flow: 4, Unit: "LPM" },
+    };
+    let safety_margin = {
+      "O2 Reserve": { Flow: 200, Unit: "PSI" },
+      Land: { Flow: 10, Unit: "Min" },
+      Air: { Flow: 30, Unit: "Min" },
+    };
+    let default_leak = {
+      NIPPV: { Flow: 50, Unit: "%" },
+    };
+    let tank_constant = {
+      "CCLA (K)": { Flow: 3.14 },
+      FW: { Flow: 2.96 },
+      RW: { Flow: 1.98 },
+      E: { Flow: 0.28 },
+      D: { Flow: 0.16 },
+      "Local EMS (M)": { Flow: 1.56 },
+    };
+
+    let altitude_compensation = {
+      0: { Flow: 1 },
+      8000: { Flow: 0.74 },
+    };
+    document
+      .querySelector('select[name="delivery_method"]')
+      .addEventListener("change", function (event) {
+        const selectedValue = event.target.value;
+        const minuteVolumeLabel = document.getElementById("minuteVolumeText");
+
+        if (selectedValue === "HHFNC") {
+          minuteVolumeLabel.textContent = "Enter current flow rate in LPM:";
+        } else {
+          minuteVolumeLabel.textContent =
+            "Enter current EXPIRED minute volume (LPM):";
+        }
+      });
+
+    document
+      .querySelector('select[name="delivery_method"]')
+      .addEventListener("change", function (event) {
+        const selectedValue = event.target.value;
+        const leakLabels = document.querySelectorAll(".leak-label");
+
+        if (selectedValue === "NIPPV") {
+          leakLabels.forEach((label) => (label.style.display = "block"));
+        } else {
+          leakLabels.forEach((label) => (label.style.display = "none"));
+        }
+      });
+    document.querySelector("form").addEventListener("submit", function (event) {
+      event.preventDefault();
+
+      const patientType = document.querySelector(
+        'select[name="patient_type"]'
+      ).value;
+      console.log("patientType:", patientType);
+      const deliveryMethod = document.querySelector(
+        'select[name="delivery_method"]'
+      ).value;
+      const tankPressure = parseFloat(
+        document.querySelector('input[name="tank_pressure"]').value
+      );
+      const minuteVolume = parseFloat(
+        document.querySelector('input[name="minute_volume"]').value
+      );
+
+      const fio2 = document.querySelector('input[name="fio2"]').value;
+      const assetType = document.querySelector(
+        'select[name="asset_type"]'
+      ).value;
+      const legType = document.querySelector('select[name="leg_type"]').value;
+      console.log("legType:", legType);
+      const leak_known = document.querySelector(
+        'select[name="leak_value_known"]'
+      ).value;
+      const safety_time = safety_margin[legType].Flow;
+      const calc_base_flow = base_flow[patientType].Flow;
+      const entered_leak = parseFloat(
+        document.querySelector('input[name="leak_percentage"]').value
+          ? document.querySelector('input[name="leak_percentage"]').value
+          : 25
+      );
+      const leak_known_value = minuteVolume * (entered_leak / 100);
+      const calc_default_leak =
+        minuteVolume * (parseFloat(default_leak["NIPPV"].Flow) / 100);
+      const leak_used =
+        leak_known === "No" && deliveryMethod === "NIPPV"
+          ? calc_default_leak
+          : leak_known_value;
+      const tank_constant_value = tank_constant[assetType].Flow;
+      const altitude_compensated_fio2 =
+        (fio2 * altitude_compensation[0].Flow) /
+        altitude_compensation[8000].Flow;
+      let fio2_used = null;
+      if (assetType === "FW" && altitude_compensated_fio2 > 100) {
+        fio2_used = 100;
+      } else if (assetType === "FW") {
+        fio2_used = altitude_compensated_fio2;
+      } else {
+        fio2_used = fio2;
+      }
+      const o2_consumption = {
+        HHFNC: minuteVolume * ((fio2_used - 20.9) / 79.1),
+        NIPPV:
+          (minuteVolume + calc_base_flow + leak_used) *
+          ((fio2_used - 20.9) / 79.1),
+        Invasive: (minuteVolume + calc_base_flow) * ((fio2_used - 20.9) / 79.1),
+      };
+      const o2_duration = {
+        HHFNC: (tankPressure * tank_constant_value) / o2_consumption.HHFNC,
+        NIPPV: (tankPressure * tank_constant_value) / o2_consumption.NIPPV,
+        Invasive:
+          (tankPressure * tank_constant_value) / o2_consumption.Invasive,
+      };
+      console.log("O2 reservce:", safety_margin["O2 Reserve"]);
+      const o2_duration_with_safety = {
+        HHFNC:
+          ((tankPressure - safety_margin["O2 Reserve"].Flow) *
+            tank_constant_value) /
+            o2_consumption.HHFNC -
+          safety_time,
+        NIPPV:
+          ((tankPressure - safety_margin["O2 Reserve"].Flow) *
+            tank_constant_value) /
+            o2_consumption.NIPPV -
+          safety_time,
+        Invasive:
+          ((tankPressure - safety_margin["O2 Reserve"].Flow) *
+            tank_constant_value) /
+            o2_consumption.Invasive -
+          safety_time,
+      };
+      const output = Math.round(o2_duration_with_safety[deliveryMethod]);
+      let messages = [];
+      if (assetType !== "FW" && assetType !== "RW" && legType === "Air") {
+        messages.push(
+          "Are you sure this is correct? You are using a portable tank during flight."
+        );
+      }
+      if ((assetType === "FW" || assetType === "RW") && legType === "Land") {
+        messages.push(
+          "Are you sure this is correct? You may be using the wrong safety margin for this leg."
+        );
+      }
+      if (patientType === "<10 Kg" && deliveryMethod === "NIPPV") {
+        messages.push("This tool can not be used for this patient.");
+      }
+      if (altitude_compensated_fio2 > 100 && assetType === "FW") {
+        messages.push(
+          "FiO2 requirements at altitidue will exceed 100%. Consider alternate options"
+        );
+      }
+      console.log("leak_known_value", entered_leak);
+      if (
+        (leak_known === "No" || entered_leak >= 50) &&
+        deliveryMethod === "NIPPV"
+      ) {
+        messages.push("TMP/Crew to contact sending.");
+      }
+      function minutesToHHMM(minutes) {
+        let hours = Math.floor(minutes / 60);
+        let remainderMinutes = minutes % 60;
+        return `${hours
+          .toString()
+          .padStart(
+            2,
+            "0"
+          )}hr:${remainderMinutes.toString().padStart(2, "0")}min`;
+      }
+      document.getElementById(
+        "duration"
+      ).innerHTML = `${output} minutes <span class="hhmm">(${minutesToHHMM(
+        output
+      )})</span>`;
+      //document.querySelector("#duration").innerHTML = output;
+      //document.querySelector("#duration").innerHTML = output;
+
+      let messageContainer = document.querySelector(".message-container");
+      messageContainer.innerHTML = ""; // Clear previous messages
+
+      messages.forEach((message) => {
+        let messageElement = document.createElement("p");
+        messageElement.innerHTML = message;
+        messageContainer.appendChild(messageElement);
+      });
+      const element = document.getElementById("output");
+      element.scrollIntoView({
+        behavior: "smooth",
+        block: "end",
+        inline: "nearest",
+      });
+      // console.log("Minute Vol:", minuteVolume);
+      // console.log("safety_time:", safety_time);
+      // console.log("calc_base_flow:", calc_base_flow);
+      // console.log("leak_known_value:", leak_known_value);
+      // console.log("default_leak:", calc_default_leak);
+      // console.log("leak_used:", leak_used);
+      // console.log("tank_constant_value:", tank_constant_value);
+      // console.log("altitude_compensated_fio2:", altitude_compensated_fio2);
+      // console.log("fio2_used:", fio2_used);
+      // console.log("o2_consumption:", o2_consumption);
+      // console.log("o2duration:", o2_duration);
+      // console.log("o2duration_with_safety:", o2_duration_with_safety);
+      // console.log("output:", output);
+      // You can now use these variables for further processing
+    });
+  </script>
+</html>

@@ -174,12 +174,94 @@
 		2A8EB2C710150EE0CF62A692 /* Pods_Ornge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB4F90BDBEC488354DCC14E3 /* Pods_Ornge.framework */; };
 		6E0FB90629CB643D0069E326 /* Pediatric - Trauma.html in Resources */ = {isa = PBXBuildFile; fileRef = 6E0FB90529CB643D0069E326 /* Pediatric - Trauma.html */; };
 		6E0FB90829CB6ED20069E326 /* ped_aw_positioning_trauma.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6E0FB90729CB6ED20069E326 /* ped_aw_positioning_trauma.jpg */; };
+		6E3336692AD713F000EAEB76 /* Hamilton T1 - Aerogen.html in Resources */ = {isa = PBXBuildFile; fileRef = 6E3336142AD713F000EAEB76 /* Hamilton T1 - Aerogen.html */; };
+		6E33366A2AD713F000EAEB76 /* Adult - Clinical Practice - ROSC.html in Resources */ = {isa = PBXBuildFile; fileRef = 6E3336152AD713F000EAEB76 /* Adult - Clinical Practice - ROSC.html */; };
+		6E33366B2AD713F000EAEB76 /* adult_lvad_flowchart.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6E3336162AD713F000EAEB76 /* adult_lvad_flowchart.jpg */; };
+		6E33366C2AD713F000EAEB76 /* Clinical Practice - SCI.md in Resources */ = {isa = PBXBuildFile; fileRef = 6E3336172AD713F000EAEB76 /* Clinical Practice - SCI.md */; };
+		6E33366D2AD713F000EAEB76 /* adult_hypothermic_arrest_flowchart.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E3336182AD713F000EAEB76 /* adult_hypothermic_arrest_flowchart.png */; };
+		6E33366E2AD713F000EAEB76 /* preamble_loc.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E3336192AD713F000EAEB76 /* preamble_loc.png */; };
+		6E33366F2AD713F000EAEB76 /* Hamilton T1 - Infant Nasal CPAP.html in Resources */ = {isa = PBXBuildFile; fileRef = 6E33361A2AD713F000EAEB76 /* Hamilton T1 - Infant Nasal CPAP.html */; };
+		6E3336702AD713F000EAEB76 /* Clinical Practice - Stroke.md in Resources */ = {isa = PBXBuildFile; fileRef = 6E33361B2AD713F000EAEB76 /* Clinical Practice - Stroke.md */; };
+		6E3336712AD713F000EAEB76 /* preamble_patch_point.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E33361C2AD713F000EAEB76 /* preamble_patch_point.png */; };
+		6E3336722AD713F000EAEB76 /* Adult - Clinical Practice - SCI.html in Resources */ = {isa = PBXBuildFile; fileRef = 6E33361D2AD713F000EAEB76 /* Adult - Clinical Practice - SCI.html */; };
+		6E3336732AD713F000EAEB76 /* Pediatric - Trauma.html in Resources */ = {isa = PBXBuildFile; fileRef = 6E33361E2AD713F000EAEB76 /* Pediatric - Trauma.html */; };
+		6E3336742AD713F000EAEB76 /* delivery_room_management_of_premature_neonates.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E33361F2AD713F000EAEB76 /* delivery_room_management_of_premature_neonates.png */; };
+		6E3336752AD713F000EAEB76 /* Clinical Practice - Sepsis.md in Resources */ = {isa = PBXBuildFile; fileRef = 6E3336202AD713F000EAEB76 /* Clinical Practice - Sepsis.md */; };
+		6E3336762AD713F000EAEB76 /* Preamble.html in Resources */ = {isa = PBXBuildFile; fileRef = 6E3336212AD713F000EAEB76 /* Preamble.html */; };
+		6E3336772AD713F000EAEB76 /* adult_airway_checklist.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E3336222AD713F000EAEB76 /* adult_airway_checklist.png */; };
+		6E3336782AD713F000EAEB76 /* ped_flacc_score.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E3336232AD713F000EAEB76 /* ped_flacc_score.png */; };
+		6E3336792AD713F000EAEB76 /* Adult - Clinical Practice - Cardiogenic Shock.html in Resources */ = {isa = PBXBuildFile; fileRef = 6E3336242AD713F000EAEB76 /* Adult - Clinical Practice - Cardiogenic Shock.html */; };
+		6E33367A2AD713F000EAEB76 /* Clinical Practice - Cardiogenic Shock.md in Resources */ = {isa = PBXBuildFile; fileRef = 6E3336252AD713F000EAEB76 /* Clinical Practice - Cardiogenic Shock.md */; };
+		6E33367B2AD713F000EAEB76 /* Clinical Practice - Asthma.md in Resources */ = {isa = PBXBuildFile; fileRef = 6E3336262AD713F000EAEB76 /* Clinical Practice - Asthma.md */; };
+		6E33367C2AD713F000EAEB76 /* Clinical Practice - NSTEMI.md in Resources */ = {isa = PBXBuildFile; fileRef = 6E3336272AD713F000EAEB76 /* Clinical Practice - NSTEMI.md */; };
+		6E33367D2AD713F000EAEB76 /* ped_aw_positioning_trauma.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6E3336282AD713F000EAEB76 /* ped_aw_positioning_trauma.jpg */; };
+		6E33367E2AD713F000EAEB76 /* Adult - Clinical Practice - Airway.html in Resources */ = {isa = PBXBuildFile; fileRef = 6E3336292AD713F000EAEB76 /* Adult - Clinical Practice - Airway.html */; };
+		6E33367F2AD713F000EAEB76 /* Ornge Airway Manual Executive Summary.md in Resources */ = {isa = PBXBuildFile; fileRef = 6E33362A2AD713F000EAEB76 /* Ornge Airway Manual Executive Summary.md */; };
+		6E3336802AD713F000EAEB76 /* adult_pain_score_chart.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E33362B2AD713F000EAEB76 /* adult_pain_score_chart.png */; };
+		6E3336812AD713F000EAEB76 /* part_2_heater_setup.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E33362C2AD713F000EAEB76 /* part_2_heater_setup.png */; };
+		6E3336822AD713F000EAEB76 /* Authorization.md in Resources */ = {isa = PBXBuildFile; fileRef = 6E33362D2AD713F000EAEB76 /* Authorization.md */; };
+		6E3336832AD713F000EAEB76 /* adult_trach_transport_flowchart.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E33362E2AD713F000EAEB76 /* adult_trach_transport_flowchart.png */; };
+		6E3336842AD713F000EAEB76 /* Adult - Clinical Practice - STEMI.html in Resources */ = {isa = PBXBuildFile; fileRef = 6E33362F2AD713F000EAEB76 /* Adult - Clinical Practice - STEMI.html */; };
+		6E3336852AD713F000EAEB76 /* Clinical Practice Guidelines - Mechanical Ventilation.md in Resources */ = {isa = PBXBuildFile; fileRef = 6E3336302AD713F000EAEB76 /* Clinical Practice Guidelines - Mechanical Ventilation.md */; };
+		6E3336862AD713F000EAEB76 /* Adult - Clinical Practice - Obstetrics.html in Resources */ = {isa = PBXBuildFile; fileRef = 6E3336312AD713F000EAEB76 /* Adult - Clinical Practice - Obstetrics.html */; };
+		6E3336872AD713F000EAEB76 /* adult_airway_post_checklist.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E3336322AD713F000EAEB76 /* adult_airway_post_checklist.png */; };
+		6E3336882AD713F000EAEB76 /* Adult - Clinical Practice Guidelines - Mechanical Ventilation.html in Resources */ = {isa = PBXBuildFile; fileRef = 6E3336332AD713F000EAEB76 /* Adult - Clinical Practice Guidelines - Mechanical Ventilation.html */; };
+		6E3336892AD713F000EAEB76 /* plugin.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E3336342AD713F000EAEB76 /* plugin.png */; };
+		6E33368B2AD713F000EAEB76 /* hnc_part2.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E3336362AD713F000EAEB76 /* hnc_part2.png */; };
+		6E33368C2AD713F000EAEB76 /* Hamilton T1 - Circuit Guide.html in Resources */ = {isa = PBXBuildFile; fileRef = 6E3336372AD713F000EAEB76 /* Hamilton T1 - Circuit Guide.html */; };
+		6E33368D2AD713F000EAEB76 /* adult_airway_patient_positioning.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E3336382AD713F000EAEB76 /* adult_airway_patient_positioning.png */; };
+		6E33368E2AD713F000EAEB76 /* Clinical Practice - Epoprostenol.md in Resources */ = {isa = PBXBuildFile; fileRef = 6E3336392AD713F000EAEB76 /* Clinical Practice - Epoprostenol.md */; };
+		6E33368F2AD713F000EAEB76 /* Hamilton T1 & MR850 Disinfection.html in Resources */ = {isa = PBXBuildFile; fileRef = 6E33363A2AD713F000EAEB76 /* Hamilton T1 & MR850 Disinfection.html */; };
+		6E3336902AD713F000EAEB76 /* Adult - Clinical Practice - Asthma.html in Resources */ = {isa = PBXBuildFile; fileRef = 6E33363B2AD713F000EAEB76 /* Adult - Clinical Practice - Asthma.html */; };
+		6E3336912AD713F000EAEB76 /* preamble_sbarr.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E33363C2AD713F000EAEB76 /* preamble_sbarr.png */; };
+		6E3336922AD713F000EAEB76 /* Clinical Practice - STEMI.md in Resources */ = {isa = PBXBuildFile; fileRef = 6E33363D2AD713F000EAEB76 /* Clinical Practice - STEMI.md */; };
+		6E3336932AD713F000EAEB76 /* Clinical Practice - Obstetrics.md in Resources */ = {isa = PBXBuildFile; fileRef = 6E33363E2AD713F000EAEB76 /* Clinical Practice - Obstetrics.md */; };
+		6E3336942AD713F000EAEB76 /* Structure of Medical Directive.html in Resources */ = {isa = PBXBuildFile; fileRef = 6E33363F2AD713F000EAEB76 /* Structure of Medical Directive.html */; };
+		6E3336952AD713F000EAEB76 /* Adult - Clinical Practice - Sedation Intubated.html in Resources */ = {isa = PBXBuildFile; fileRef = 6E3336402AD713F000EAEB76 /* Adult - Clinical Practice - Sedation Intubated.html */; };
+		6E3336962AD713F000EAEB76 /* Authorization.html in Resources */ = {isa = PBXBuildFile; fileRef = 6E3336412AD713F000EAEB76 /* Authorization.html */; };
+		6E3336972AD713F000EAEB76 /* Adult - Clinical Practice - Trauma.html in Resources */ = {isa = PBXBuildFile; fileRef = 6E3336422AD713F000EAEB76 /* Adult - Clinical Practice - Trauma.html */; };
+		6E3336982AD713F000EAEB76 /* Adult - Clinical Practice - Non ST Elevation ACS (NSTEACS).html in Resources */ = {isa = PBXBuildFile; fileRef = 6E3336432AD713F000EAEB76 /* Adult - Clinical Practice - Non ST Elevation ACS (NSTEACS).html */; };
+		6E3336992AD713F000EAEB76 /* test.html in Resources */ = {isa = PBXBuildFile; fileRef = 6E3336442AD713F000EAEB76 /* test.html */; };
+		6E33369A2AD713F000EAEB76 /* oxygen_duration_calculator.html in Resources */ = {isa = PBXBuildFile; fileRef = 6E3336452AD713F000EAEB76 /* oxygen_duration_calculator.html */; };
+		6E33369B2AD713F000EAEB76 /* Ped - Clinical - Pain.md in Resources */ = {isa = PBXBuildFile; fileRef = 6E3336462AD713F000EAEB76 /* Ped - Clinical - Pain.md */; };
+		6E33369C2AD713F000EAEB76 /* generalHookup.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E3336472AD713F000EAEB76 /* generalHookup.png */; };
+		6E33369D2AD713F000EAEB76 /* alcohol_withdrawal_assessment_tool.html in Resources */ = {isa = PBXBuildFile; fileRef = 6E3336482AD713F000EAEB76 /* alcohol_withdrawal_assessment_tool.html */; };
+		6E33369E2AD713F000EAEB76 /* Adult - Clinical Practice - Epoprostenol.html in Resources */ = {isa = PBXBuildFile; fileRef = 6E3336492AD713F000EAEB76 /* Adult - Clinical Practice - Epoprostenol.html */; };
+		6E33369F2AD713F000EAEB76 /* Adult - Clinical Practice - Stroke.html in Resources */ = {isa = PBXBuildFile; fileRef = 6E33364A2AD713F000EAEB76 /* Adult - Clinical Practice - Stroke.html */; };
+		6E3336A02AD713F000EAEB76 /* adult_rosc.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E33364B2AD713F000EAEB76 /* adult_rosc.png */; };
+		6E3336A12AD713F000EAEB76 /* Adult - Clinical Practice - Sepsis.html in Resources */ = {isa = PBXBuildFile; fileRef = 6E33364C2AD713F000EAEB76 /* Adult - Clinical Practice - Sepsis.html */; };
+		6E3336A22AD713F000EAEB76 /* Delivery Room Management of Premature Neonates.html in Resources */ = {isa = PBXBuildFile; fileRef = 6E33364D2AD713F000EAEB76 /* Delivery Room Management of Premature Neonates.html */; };
+		6E3336A32AD713F000EAEB76 /* Preamble.md in Resources */ = {isa = PBXBuildFile; fileRef = 6E33364E2AD713F000EAEB76 /* Preamble.md */; };
+		6E3336A42AD713F000EAEB76 /* Clinical Practice - ROSC.md in Resources */ = {isa = PBXBuildFile; fileRef = 6E33364F2AD713F000EAEB76 /* Clinical Practice - ROSC.md */; };
+		6E3336A52AD713F000EAEB76 /* disinfect_table.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E3336502AD713F000EAEB76 /* disinfect_table.png */; };
+		6E3336A62AD713F000EAEB76 /* Adult - Clinical Practice - MHP.html in Resources */ = {isa = PBXBuildFile; fileRef = 6E3336512AD713F000EAEB76 /* Adult - Clinical Practice - MHP.html */; };
+		6E3336A72AD713F000EAEB76 /* ped_tx_of_hypoglycemia_in_the_well_newborn.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E3336522AD713F000EAEB76 /* ped_tx_of_hypoglycemia_in_the_well_newborn.png */; };
+		6E3336A82AD713F000EAEB76 /* Clinical Practice - Sedation Intubated.md in Resources */ = {isa = PBXBuildFile; fileRef = 6E3336532AD713F000EAEB76 /* Clinical Practice - Sedation Intubated.md */; };
+		6E3336A92AD713F000EAEB76 /* Hamilton T1 MR850 Setup.html in Resources */ = {isa = PBXBuildFile; fileRef = 6E3336542AD713F000EAEB76 /* Hamilton T1 MR850 Setup.html */; };
+		6E3336AA2AD713F000EAEB76 /* Controlled Intubation Checklist.html in Resources */ = {isa = PBXBuildFile; fileRef = 6E3336552AD713F000EAEB76 /* Controlled Intubation Checklist.html */; };
+		6E3336AB2AD713F000EAEB76 /* Clinical Practice - Trauma.md in Resources */ = {isa = PBXBuildFile; fileRef = 6E3336562AD713F000EAEB76 /* Clinical Practice - Trauma.md */; };
+		6E3336AC2AD713F000EAEB76 /* preamble_signature.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6E3336572AD713F000EAEB76 /* preamble_signature.jpg */; };
+		6E3336AD2AD713F000EAEB76 /* adult_sedation_score.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E3336582AD713F000EAEB76 /* adult_sedation_score.png */; };
+		6E3336AE2AD713F000EAEB76 /* ped_cp_pain.html in Resources */ = {isa = PBXBuildFile; fileRef = 6E3336592AD713F000EAEB76 /* ped_cp_pain.html */; };
+		6E3336AF2AD713F000EAEB76 /* aerogen.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E33365A2AD713F000EAEB76 /* aerogen.png */; };
+		6E3336B02AD713F000EAEB76 /* Structure of Medical Directive.md in Resources */ = {isa = PBXBuildFile; fileRef = 6E33365B2AD713F000EAEB76 /* Structure of Medical Directive.md */; };
+		6E3336B12AD713F000EAEB76 /* infant_ncpap.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E33365C2AD713F000EAEB76 /* infant_ncpap.png */; };
+		6E3336B22AD713F000EAEB76 /* Ornge Airway Manual Executive Summary.html in Resources */ = {isa = PBXBuildFile; fileRef = 6E33365D2AD713F000EAEB76 /* Ornge Airway Manual Executive Summary.html */; };
+		6E3336B32AD713F000EAEB76 /* adult_airway_team_positioning.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E33365E2AD713F000EAEB76 /* adult_airway_team_positioning.png */; };
+		6E3336B42AD713F000EAEB76 /* COVID 2019 Operational Guidelines_Final_v6.2 Nov6.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 6E3336602AD713F000EAEB76 /* COVID 2019 Operational Guidelines_Final_v6.2 Nov6.pdf */; };
+		6E3336B52AD713F000EAEB76 /* COVID 2019 Operational Guidelines_Final_v6.2.1 Nov25.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 6E3336612AD713F000EAEB76 /* COVID 2019 Operational Guidelines_Final_v6.2.1 Nov25.pdf */; };
+		6E3336B62AD713F000EAEB76 /* COVID 2019 Operational Guidelines_Draft_v6.1 Oct 26.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 6E3336622AD713F000EAEB76 /* COVID 2019 Operational Guidelines_Draft_v6.1 Oct 26.pdf */; };
+		6E3336B72AD713F000EAEB76 /* app-20200409-RSI-Authorization-and-Limitation-Changes-(BH-MEM-067).pdf in Resources */ = {isa = PBXBuildFile; fileRef = 6E3336632AD713F000EAEB76 /* app-20200409-RSI-Authorization-and-Limitation-Changes-(BH-MEM-067).pdf */; };
+		6E3336B82AD713F000EAEB76 /* Executive Airway Summary.md in Resources */ = {isa = PBXBuildFile; fileRef = 6E3336642AD713F000EAEB76 /* Executive Airway Summary.md */; };
+		6E3336B92AD713F000EAEB76 /* Executive Airway Summary.html in Resources */ = {isa = PBXBuildFile; fileRef = 6E3336652AD713F000EAEB76 /* Executive Airway Summary.html */; };
+		6E3336BA2AD713F000EAEB76 /* Hamilton T1 - Heated Humidified Nasal Cannula Setup.html in Resources */ = {isa = PBXBuildFile; fileRef = 6E3336662AD713F000EAEB76 /* Hamilton T1 - Heated Humidified Nasal Cannula Setup.html */; };
+		6E3336BB2AD713F000EAEB76 /* part_3_hnc.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E3336672AD713F000EAEB76 /* part_3_hnc.png */; };
+		6E3336BC2AD713F000EAEB76 /* Clinical Practice Guidelines - Mechanical Ventilation.html in Resources */ = {isa = PBXBuildFile; fileRef = 6E3336682AD713F000EAEB76 /* Clinical Practice Guidelines - Mechanical Ventilation.html */; };
 		6E3AF6692A4B2E3C00DAA6AF /* Hamilton T1 MR850 Setup.html in Resources */ = {isa = PBXBuildFile; fileRef = 6E3AF6682A4B2E3C00DAA6AF /* Hamilton T1 MR850 Setup.html */; };
 		6E3AF66D2A4B366C00DAA6AF /* generalHookup.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E3AF66C2A4B366B00DAA6AF /* generalHookup.png */; };
 		6E3AF66F2A4B383A00DAA6AF /* plugin.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E3AF66E2A4B383A00DAA6AF /* plugin.png */; };
 		6E3AF6712A4B3EFF00DAA6AF /* part_2_heater_setup.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E3AF6702A4B3EFF00DAA6AF /* part_2_heater_setup.png */; };
 		6E3AF6732A4B41D600DAA6AF /* Hamilton T1 - Heated Humidified Nasal Cannula Setup.html in Resources */ = {isa = PBXBuildFile; fileRef = 6E3AF6722A4B41D500DAA6AF /* Hamilton T1 - Heated Humidified Nasal Cannula Setup.html */; };
-		6E3AF6792A4B452400DAA6AF /* hnc_part2.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E3AF6782A4B452400DAA6AF /* hnc_part2.png */; };
 		6E3AF67B2A4B465A00DAA6AF /* part_3_hnc.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E3AF67A2A4B465A00DAA6AF /* part_3_hnc.png */; };
 		6E3AF67D2A4B485800DAA6AF /* Hamilton T1 - Infant Nasal CPAP.html in Resources */ = {isa = PBXBuildFile; fileRef = 6E3AF67C2A4B485800DAA6AF /* Hamilton T1 - Infant Nasal CPAP.html */; };
 		6E3AF67F2A4B491800DAA6AF /* infant_ncpap.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E3AF67E2A4B491800DAA6AF /* infant_ncpap.png */; };
@@ -370,6 +452,91 @@
 		13FBD462241FB079002AD350 /* PopoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopoverViewController.swift; sourceTree = "<group>"; };
 		6E0FB90529CB643D0069E326 /* Pediatric - Trauma.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = "Pediatric - Trauma.html"; sourceTree = "<group>"; };
 		6E0FB90729CB6ED20069E326 /* ped_aw_positioning_trauma.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ped_aw_positioning_trauma.jpg; sourceTree = "<group>"; };
+		6E3336122AD6FF3900EAEB76 /* oxygen_duration_calculator.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = oxygen_duration_calculator.html; sourceTree = "<group>"; };
+		6E3336142AD713F000EAEB76 /* Hamilton T1 - Aerogen.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "Hamilton T1 - Aerogen.html"; sourceTree = "<group>"; };
+		6E3336152AD713F000EAEB76 /* Adult - Clinical Practice - ROSC.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "Adult - Clinical Practice - ROSC.html"; sourceTree = "<group>"; };
+		6E3336162AD713F000EAEB76 /* adult_lvad_flowchart.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = adult_lvad_flowchart.jpg; sourceTree = "<group>"; };
+		6E3336172AD713F000EAEB76 /* Clinical Practice - SCI.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "Clinical Practice - SCI.md"; sourceTree = "<group>"; };
+		6E3336182AD713F000EAEB76 /* adult_hypothermic_arrest_flowchart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = adult_hypothermic_arrest_flowchart.png; sourceTree = "<group>"; };
+		6E3336192AD713F000EAEB76 /* preamble_loc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = preamble_loc.png; sourceTree = "<group>"; };
+		6E33361A2AD713F000EAEB76 /* Hamilton T1 - Infant Nasal CPAP.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "Hamilton T1 - Infant Nasal CPAP.html"; sourceTree = "<group>"; };
+		6E33361B2AD713F000EAEB76 /* Clinical Practice - Stroke.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "Clinical Practice - Stroke.md"; sourceTree = "<group>"; };
+		6E33361C2AD713F000EAEB76 /* preamble_patch_point.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = preamble_patch_point.png; sourceTree = "<group>"; };
+		6E33361D2AD713F000EAEB76 /* Adult - Clinical Practice - SCI.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "Adult - Clinical Practice - SCI.html"; sourceTree = "<group>"; };
+		6E33361E2AD713F000EAEB76 /* Pediatric - Trauma.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "Pediatric - Trauma.html"; sourceTree = "<group>"; };
+		6E33361F2AD713F000EAEB76 /* delivery_room_management_of_premature_neonates.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = delivery_room_management_of_premature_neonates.png; sourceTree = "<group>"; };
+		6E3336202AD713F000EAEB76 /* Clinical Practice - Sepsis.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "Clinical Practice - Sepsis.md"; sourceTree = "<group>"; };
+		6E3336212AD713F000EAEB76 /* Preamble.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Preamble.html; sourceTree = "<group>"; };
+		6E3336222AD713F000EAEB76 /* adult_airway_checklist.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = adult_airway_checklist.png; sourceTree = "<group>"; };
+		6E3336232AD713F000EAEB76 /* ped_flacc_score.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ped_flacc_score.png; sourceTree = "<group>"; };
+		6E3336242AD713F000EAEB76 /* Adult - Clinical Practice - Cardiogenic Shock.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "Adult - Clinical Practice - Cardiogenic Shock.html"; sourceTree = "<group>"; };
+		6E3336252AD713F000EAEB76 /* Clinical Practice - Cardiogenic Shock.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "Clinical Practice - Cardiogenic Shock.md"; sourceTree = "<group>"; };
+		6E3336262AD713F000EAEB76 /* Clinical Practice - Asthma.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "Clinical Practice - Asthma.md"; sourceTree = "<group>"; };
+		6E3336272AD713F000EAEB76 /* Clinical Practice - NSTEMI.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "Clinical Practice - NSTEMI.md"; sourceTree = "<group>"; };
+		6E3336282AD713F000EAEB76 /* ped_aw_positioning_trauma.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ped_aw_positioning_trauma.jpg; sourceTree = "<group>"; };
+		6E3336292AD713F000EAEB76 /* Adult - Clinical Practice - Airway.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "Adult - Clinical Practice - Airway.html"; sourceTree = "<group>"; };
+		6E33362A2AD713F000EAEB76 /* Ornge Airway Manual Executive Summary.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "Ornge Airway Manual Executive Summary.md"; sourceTree = "<group>"; };
+		6E33362B2AD713F000EAEB76 /* adult_pain_score_chart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = adult_pain_score_chart.png; sourceTree = "<group>"; };
+		6E33362C2AD713F000EAEB76 /* part_2_heater_setup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = part_2_heater_setup.png; sourceTree = "<group>"; };
+		6E33362D2AD713F000EAEB76 /* Authorization.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Authorization.md; sourceTree = "<group>"; };
+		6E33362E2AD713F000EAEB76 /* adult_trach_transport_flowchart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = adult_trach_transport_flowchart.png; sourceTree = "<group>"; };
+		6E33362F2AD713F000EAEB76 /* Adult - Clinical Practice - STEMI.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "Adult - Clinical Practice - STEMI.html"; sourceTree = "<group>"; };
+		6E3336302AD713F000EAEB76 /* Clinical Practice Guidelines - Mechanical Ventilation.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "Clinical Practice Guidelines - Mechanical Ventilation.md"; sourceTree = "<group>"; };
+		6E3336312AD713F000EAEB76 /* Adult - Clinical Practice - Obstetrics.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "Adult - Clinical Practice - Obstetrics.html"; sourceTree = "<group>"; };
+		6E3336322AD713F000EAEB76 /* adult_airway_post_checklist.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = adult_airway_post_checklist.png; sourceTree = "<group>"; };
+		6E3336332AD713F000EAEB76 /* Adult - Clinical Practice Guidelines - Mechanical Ventilation.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "Adult - Clinical Practice Guidelines - Mechanical Ventilation.html"; sourceTree = "<group>"; };
+		6E3336342AD713F000EAEB76 /* plugin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plugin.png; sourceTree = "<group>"; };
+		6E3336352AD713F000EAEB76 /* adult_non_traumatic_arrest_flowchart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = adult_non_traumatic_arrest_flowchart.png; sourceTree = "<group>"; };
+		6E3336362AD713F000EAEB76 /* hnc_part2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hnc_part2.png; sourceTree = "<group>"; };
+		6E3336372AD713F000EAEB76 /* Hamilton T1 - Circuit Guide.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "Hamilton T1 - Circuit Guide.html"; sourceTree = "<group>"; };
+		6E3336382AD713F000EAEB76 /* adult_airway_patient_positioning.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = adult_airway_patient_positioning.png; sourceTree = "<group>"; };
+		6E3336392AD713F000EAEB76 /* Clinical Practice - Epoprostenol.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "Clinical Practice - Epoprostenol.md"; sourceTree = "<group>"; };
+		6E33363A2AD713F000EAEB76 /* Hamilton T1 & MR850 Disinfection.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "Hamilton T1 & MR850 Disinfection.html"; sourceTree = "<group>"; };
+		6E33363B2AD713F000EAEB76 /* Adult - Clinical Practice - Asthma.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "Adult - Clinical Practice - Asthma.html"; sourceTree = "<group>"; };
+		6E33363C2AD713F000EAEB76 /* preamble_sbarr.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = preamble_sbarr.png; sourceTree = "<group>"; };
+		6E33363D2AD713F000EAEB76 /* Clinical Practice - STEMI.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "Clinical Practice - STEMI.md"; sourceTree = "<group>"; };
+		6E33363E2AD713F000EAEB76 /* Clinical Practice - Obstetrics.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "Clinical Practice - Obstetrics.md"; sourceTree = "<group>"; };
+		6E33363F2AD713F000EAEB76 /* Structure of Medical Directive.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "Structure of Medical Directive.html"; sourceTree = "<group>"; };
+		6E3336402AD713F000EAEB76 /* Adult - Clinical Practice - Sedation Intubated.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "Adult - Clinical Practice - Sedation Intubated.html"; sourceTree = "<group>"; };
+		6E3336412AD713F000EAEB76 /* Authorization.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Authorization.html; sourceTree = "<group>"; };
+		6E3336422AD713F000EAEB76 /* Adult - Clinical Practice - Trauma.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "Adult - Clinical Practice - Trauma.html"; sourceTree = "<group>"; };
+		6E3336432AD713F000EAEB76 /* Adult - Clinical Practice - Non ST Elevation ACS (NSTEACS).html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "Adult - Clinical Practice - Non ST Elevation ACS (NSTEACS).html"; sourceTree = "<group>"; };
+		6E3336442AD713F000EAEB76 /* test.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = test.html; sourceTree = "<group>"; };
+		6E3336452AD713F000EAEB76 /* oxygen_duration_calculator.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = oxygen_duration_calculator.html; sourceTree = "<group>"; };
+		6E3336462AD713F000EAEB76 /* Ped - Clinical - Pain.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "Ped - Clinical - Pain.md"; sourceTree = "<group>"; };
+		6E3336472AD713F000EAEB76 /* generalHookup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = generalHookup.png; sourceTree = "<group>"; };
+		6E3336482AD713F000EAEB76 /* alcohol_withdrawal_assessment_tool.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = alcohol_withdrawal_assessment_tool.html; sourceTree = "<group>"; };
+		6E3336492AD713F000EAEB76 /* Adult - Clinical Practice - Epoprostenol.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "Adult - Clinical Practice - Epoprostenol.html"; sourceTree = "<group>"; };
+		6E33364A2AD713F000EAEB76 /* Adult - Clinical Practice - Stroke.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "Adult - Clinical Practice - Stroke.html"; sourceTree = "<group>"; };
+		6E33364B2AD713F000EAEB76 /* adult_rosc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = adult_rosc.png; sourceTree = "<group>"; };
+		6E33364C2AD713F000EAEB76 /* Adult - Clinical Practice - Sepsis.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "Adult - Clinical Practice - Sepsis.html"; sourceTree = "<group>"; };
+		6E33364D2AD713F000EAEB76 /* Delivery Room Management of Premature Neonates.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "Delivery Room Management of Premature Neonates.html"; sourceTree = "<group>"; };
+		6E33364E2AD713F000EAEB76 /* Preamble.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Preamble.md; sourceTree = "<group>"; };
+		6E33364F2AD713F000EAEB76 /* Clinical Practice - ROSC.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "Clinical Practice - ROSC.md"; sourceTree = "<group>"; };
+		6E3336502AD713F000EAEB76 /* disinfect_table.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = disinfect_table.png; sourceTree = "<group>"; };
+		6E3336512AD713F000EAEB76 /* Adult - Clinical Practice - MHP.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "Adult - Clinical Practice - MHP.html"; sourceTree = "<group>"; };
+		6E3336522AD713F000EAEB76 /* ped_tx_of_hypoglycemia_in_the_well_newborn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ped_tx_of_hypoglycemia_in_the_well_newborn.png; sourceTree = "<group>"; };
+		6E3336532AD713F000EAEB76 /* Clinical Practice - Sedation Intubated.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "Clinical Practice - Sedation Intubated.md"; sourceTree = "<group>"; };
+		6E3336542AD713F000EAEB76 /* Hamilton T1 MR850 Setup.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "Hamilton T1 MR850 Setup.html"; sourceTree = "<group>"; };
+		6E3336552AD713F000EAEB76 /* Controlled Intubation Checklist.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "Controlled Intubation Checklist.html"; sourceTree = "<group>"; };
+		6E3336562AD713F000EAEB76 /* Clinical Practice - Trauma.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "Clinical Practice - Trauma.md"; sourceTree = "<group>"; };
+		6E3336572AD713F000EAEB76 /* preamble_signature.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = preamble_signature.jpg; sourceTree = "<group>"; };
+		6E3336582AD713F000EAEB76 /* adult_sedation_score.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = adult_sedation_score.png; sourceTree = "<group>"; };
+		6E3336592AD713F000EAEB76 /* ped_cp_pain.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = ped_cp_pain.html; sourceTree = "<group>"; };
+		6E33365A2AD713F000EAEB76 /* aerogen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aerogen.png; sourceTree = "<group>"; };
+		6E33365B2AD713F000EAEB76 /* Structure of Medical Directive.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "Structure of Medical Directive.md"; sourceTree = "<group>"; };
+		6E33365C2AD713F000EAEB76 /* infant_ncpap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = infant_ncpap.png; sourceTree = "<group>"; };
+		6E33365D2AD713F000EAEB76 /* Ornge Airway Manual Executive Summary.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "Ornge Airway Manual Executive Summary.html"; sourceTree = "<group>"; };
+		6E33365E2AD713F000EAEB76 /* adult_airway_team_positioning.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = adult_airway_team_positioning.png; sourceTree = "<group>"; };
+		6E3336602AD713F000EAEB76 /* COVID 2019 Operational Guidelines_Final_v6.2 Nov6.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "COVID 2019 Operational Guidelines_Final_v6.2 Nov6.pdf"; sourceTree = "<group>"; };
+		6E3336612AD713F000EAEB76 /* COVID 2019 Operational Guidelines_Final_v6.2.1 Nov25.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "COVID 2019 Operational Guidelines_Final_v6.2.1 Nov25.pdf"; sourceTree = "<group>"; };
+		6E3336622AD713F000EAEB76 /* COVID 2019 Operational Guidelines_Draft_v6.1 Oct 26.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "COVID 2019 Operational Guidelines_Draft_v6.1 Oct 26.pdf"; sourceTree = "<group>"; };
+		6E3336632AD713F000EAEB76 /* app-20200409-RSI-Authorization-and-Limitation-Changes-(BH-MEM-067).pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "app-20200409-RSI-Authorization-and-Limitation-Changes-(BH-MEM-067).pdf"; sourceTree = "<group>"; };
+		6E3336642AD713F000EAEB76 /* Executive Airway Summary.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "Executive Airway Summary.md"; sourceTree = "<group>"; };
+		6E3336652AD713F000EAEB76 /* Executive Airway Summary.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "Executive Airway Summary.html"; sourceTree = "<group>"; };
+		6E3336662AD713F000EAEB76 /* Hamilton T1 - Heated Humidified Nasal Cannula Setup.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "Hamilton T1 - Heated Humidified Nasal Cannula Setup.html"; sourceTree = "<group>"; };
+		6E3336672AD713F000EAEB76 /* part_3_hnc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = part_3_hnc.png; sourceTree = "<group>"; };
+		6E3336682AD713F000EAEB76 /* Clinical Practice Guidelines - Mechanical Ventilation.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "Clinical Practice Guidelines - Mechanical Ventilation.html"; sourceTree = "<group>"; };
 		6E3AF6682A4B2E3C00DAA6AF /* Hamilton T1 MR850 Setup.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "Hamilton T1 MR850 Setup.html"; sourceTree = "<group>"; };
 		6E3AF66C2A4B366B00DAA6AF /* generalHookup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = generalHookup.png; sourceTree = "<group>"; };
 		6E3AF66E2A4B383A00DAA6AF /* plugin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plugin.png; sourceTree = "<group>"; };
@@ -481,6 +648,8 @@
 				1373FA23252A3E3200911854 /* COVID */,
 				139FF61A23C8F7BC00B57A68 /* Adult - Clinical Practice Guidelines - Mechanical Ventilation.html */,
 				6E3AF6682A4B2E3C00DAA6AF /* Hamilton T1 MR850 Setup.html */,
+				6E3336122AD6FF3900EAEB76 /* oxygen_duration_calculator.html */,
+				6E3336132AD713F000EAEB76 /* External DOCS */,
 				6EAD53832A0ABC6D00843EF2 /* adult_non_traumatic_arrest_flowchart.png */,
 				6E5BF9F029CCFAF0003C39E1 /* preamble_signature.jpg */,
 				6EAD537B2A094F9800843EF2 /* Adult - Clinical Practice - Airway.html */,
@@ -765,6 +934,105 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		6E3336132AD713F000EAEB76 /* External DOCS */ = {
+			isa = PBXGroup;
+			children = (
+				6E3336142AD713F000EAEB76 /* Hamilton T1 - Aerogen.html */,
+				6E3336152AD713F000EAEB76 /* Adult - Clinical Practice - ROSC.html */,
+				6E3336162AD713F000EAEB76 /* adult_lvad_flowchart.jpg */,
+				6E3336172AD713F000EAEB76 /* Clinical Practice - SCI.md */,
+				6E3336182AD713F000EAEB76 /* adult_hypothermic_arrest_flowchart.png */,
+				6E3336192AD713F000EAEB76 /* preamble_loc.png */,
+				6E33361A2AD713F000EAEB76 /* Hamilton T1 - Infant Nasal CPAP.html */,
+				6E33361B2AD713F000EAEB76 /* Clinical Practice - Stroke.md */,
+				6E33361C2AD713F000EAEB76 /* preamble_patch_point.png */,
+				6E33361D2AD713F000EAEB76 /* Adult - Clinical Practice - SCI.html */,
+				6E33361E2AD713F000EAEB76 /* Pediatric - Trauma.html */,
+				6E33361F2AD713F000EAEB76 /* delivery_room_management_of_premature_neonates.png */,
+				6E3336202AD713F000EAEB76 /* Clinical Practice - Sepsis.md */,
+				6E3336212AD713F000EAEB76 /* Preamble.html */,
+				6E3336222AD713F000EAEB76 /* adult_airway_checklist.png */,
+				6E3336232AD713F000EAEB76 /* ped_flacc_score.png */,
+				6E3336242AD713F000EAEB76 /* Adult - Clinical Practice - Cardiogenic Shock.html */,
+				6E3336252AD713F000EAEB76 /* Clinical Practice - Cardiogenic Shock.md */,
+				6E3336262AD713F000EAEB76 /* Clinical Practice - Asthma.md */,
+				6E3336272AD713F000EAEB76 /* Clinical Practice - NSTEMI.md */,
+				6E3336282AD713F000EAEB76 /* ped_aw_positioning_trauma.jpg */,
+				6E3336292AD713F000EAEB76 /* Adult - Clinical Practice - Airway.html */,
+				6E33362A2AD713F000EAEB76 /* Ornge Airway Manual Executive Summary.md */,
+				6E33362B2AD713F000EAEB76 /* adult_pain_score_chart.png */,
+				6E33362C2AD713F000EAEB76 /* part_2_heater_setup.png */,
+				6E33362D2AD713F000EAEB76 /* Authorization.md */,
+				6E33362E2AD713F000EAEB76 /* adult_trach_transport_flowchart.png */,
+				6E33362F2AD713F000EAEB76 /* Adult - Clinical Practice - STEMI.html */,
+				6E3336302AD713F000EAEB76 /* Clinical Practice Guidelines - Mechanical Ventilation.md */,
+				6E3336312AD713F000EAEB76 /* Adult - Clinical Practice - Obstetrics.html */,
+				6E3336322AD713F000EAEB76 /* adult_airway_post_checklist.png */,
+				6E3336332AD713F000EAEB76 /* Adult - Clinical Practice Guidelines - Mechanical Ventilation.html */,
+				6E3336342AD713F000EAEB76 /* plugin.png */,
+				6E3336352AD713F000EAEB76 /* adult_non_traumatic_arrest_flowchart.png */,
+				6E3336362AD713F000EAEB76 /* hnc_part2.png */,
+				6E3336372AD713F000EAEB76 /* Hamilton T1 - Circuit Guide.html */,
+				6E3336382AD713F000EAEB76 /* adult_airway_patient_positioning.png */,
+				6E3336392AD713F000EAEB76 /* Clinical Practice - Epoprostenol.md */,
+				6E33363A2AD713F000EAEB76 /* Hamilton T1 & MR850 Disinfection.html */,
+				6E33363B2AD713F000EAEB76 /* Adult - Clinical Practice - Asthma.html */,
+				6E33363C2AD713F000EAEB76 /* preamble_sbarr.png */,
+				6E33363D2AD713F000EAEB76 /* Clinical Practice - STEMI.md */,
+				6E33363E2AD713F000EAEB76 /* Clinical Practice - Obstetrics.md */,
+				6E33363F2AD713F000EAEB76 /* Structure of Medical Directive.html */,
+				6E3336402AD713F000EAEB76 /* Adult - Clinical Practice - Sedation Intubated.html */,
+				6E3336412AD713F000EAEB76 /* Authorization.html */,
+				6E3336422AD713F000EAEB76 /* Adult - Clinical Practice - Trauma.html */,
+				6E3336432AD713F000EAEB76 /* Adult - Clinical Practice - Non ST Elevation ACS (NSTEACS).html */,
+				6E3336442AD713F000EAEB76 /* test.html */,
+				6E3336452AD713F000EAEB76 /* oxygen_duration_calculator.html */,
+				6E3336462AD713F000EAEB76 /* Ped - Clinical - Pain.md */,
+				6E3336472AD713F000EAEB76 /* generalHookup.png */,
+				6E3336482AD713F000EAEB76 /* alcohol_withdrawal_assessment_tool.html */,
+				6E3336492AD713F000EAEB76 /* Adult - Clinical Practice - Epoprostenol.html */,
+				6E33364A2AD713F000EAEB76 /* Adult - Clinical Practice - Stroke.html */,
+				6E33364B2AD713F000EAEB76 /* adult_rosc.png */,
+				6E33364C2AD713F000EAEB76 /* Adult - Clinical Practice - Sepsis.html */,
+				6E33364D2AD713F000EAEB76 /* Delivery Room Management of Premature Neonates.html */,
+				6E33364E2AD713F000EAEB76 /* Preamble.md */,
+				6E33364F2AD713F000EAEB76 /* Clinical Practice - ROSC.md */,
+				6E3336502AD713F000EAEB76 /* disinfect_table.png */,
+				6E3336512AD713F000EAEB76 /* Adult - Clinical Practice - MHP.html */,
+				6E3336522AD713F000EAEB76 /* ped_tx_of_hypoglycemia_in_the_well_newborn.png */,
+				6E3336532AD713F000EAEB76 /* Clinical Practice - Sedation Intubated.md */,
+				6E3336542AD713F000EAEB76 /* Hamilton T1 MR850 Setup.html */,
+				6E3336552AD713F000EAEB76 /* Controlled Intubation Checklist.html */,
+				6E3336562AD713F000EAEB76 /* Clinical Practice - Trauma.md */,
+				6E3336572AD713F000EAEB76 /* preamble_signature.jpg */,
+				6E3336582AD713F000EAEB76 /* adult_sedation_score.png */,
+				6E3336592AD713F000EAEB76 /* ped_cp_pain.html */,
+				6E33365A2AD713F000EAEB76 /* aerogen.png */,
+				6E33365B2AD713F000EAEB76 /* Structure of Medical Directive.md */,
+				6E33365C2AD713F000EAEB76 /* infant_ncpap.png */,
+				6E33365D2AD713F000EAEB76 /* Ornge Airway Manual Executive Summary.html */,
+				6E33365E2AD713F000EAEB76 /* adult_airway_team_positioning.png */,
+				6E33365F2AD713F000EAEB76 /* COVID */,
+				6E3336642AD713F000EAEB76 /* Executive Airway Summary.md */,
+				6E3336652AD713F000EAEB76 /* Executive Airway Summary.html */,
+				6E3336662AD713F000EAEB76 /* Hamilton T1 - Heated Humidified Nasal Cannula Setup.html */,
+				6E3336672AD713F000EAEB76 /* part_3_hnc.png */,
+				6E3336682AD713F000EAEB76 /* Clinical Practice Guidelines - Mechanical Ventilation.html */,
+			);
+			name = "External DOCS";
+			sourceTree = "<group>";
+		};
+		6E33365F2AD713F000EAEB76 /* COVID */ = {
+			isa = PBXGroup;
+			children = (
+				6E3336602AD713F000EAEB76 /* COVID 2019 Operational Guidelines_Final_v6.2 Nov6.pdf */,
+				6E3336612AD713F000EAEB76 /* COVID 2019 Operational Guidelines_Final_v6.2.1 Nov25.pdf */,
+				6E3336622AD713F000EAEB76 /* COVID 2019 Operational Guidelines_Draft_v6.1 Oct 26.pdf */,
+				6E3336632AD713F000EAEB76 /* app-20200409-RSI-Authorization-and-Limitation-Changes-(BH-MEM-067).pdf */,
+			);
+			path = COVID;
+			sourceTree = "<group>";
+		};
 		AF164C43215EF65BFDA88305 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -835,51 +1103,82 @@
 			buildActionMask = 2147483647;
 			files = (
 				138F080A24E44FE400410D0D /* FrutigerLTStd-Bold.otf in Resources */,
+				6E33367F2AD713F000EAEB76 /* Ornge Airway Manual Executive Summary.md in Resources */,
 				13E3C48523917829001C3F08 /* Ornge Airway Manual Executive Summary.html in Resources */,
+				6E3336B52AD713F000EAEB76 /* COVID 2019 Operational Guidelines_Final_v6.2.1 Nov25.pdf in Resources */,
+				6E3336BA2AD713F000EAEB76 /* Hamilton T1 - Heated Humidified Nasal Cannula Setup.html in Resources */,
 				134789FE23257B990081E865 /* FlowChartLibrary.json in Resources */,
 				1368C2D7252F29110061735B /* (null) in Resources */,
+				6E3336932AD713F000EAEB76 /* Clinical Practice - Obstetrics.md in Resources */,
 				6E3AF6892A4B523E00DAA6AF /* Hamilton T1 - Circuit Guide.html in Resources */,
 				138F07BD24E44A9D00410D0D /* MinionPro-SemiboldDisp.otf in Resources */,
 				6EAD537C2A094F9900843EF2 /* Adult - Clinical Practice - Airway.html in Resources */,
 				138F07DB24E44A9D00410D0D /* MinionPro-MediumCnItCapt.otf in Resources */,
+				6E3336712AD713F000EAEB76 /* preamble_patch_point.png in Resources */,
+				6E33366E2AD713F000EAEB76 /* preamble_loc.png in Resources */,
+				6E3336792AD713F000EAEB76 /* Adult - Clinical Practice - Cardiogenic Shock.html in Resources */,
+				6E33366D2AD713F000EAEB76 /* adult_hypothermic_arrest_flowchart.png in Resources */,
 				138F07F124E44A9D00410D0D /* MinionPro-BoldSubh.otf in Resources */,
 				6E3AF6832A4B4ED300DAA6AF /* aerogen.png in Resources */,
+				6E3336772AD713F000EAEB76 /* adult_airway_checklist.png in Resources */,
+				6E33369B2AD713F000EAEB76 /* Ped - Clinical - Pain.md in Resources */,
 				13E3C49323932A96001C3F08 /* Adult - Clinical Practice - Sedation Intubated.html in Resources */,
+				6E3336982AD713F000EAEB76 /* Adult - Clinical Practice - Non ST Elevation ACS (NSTEACS).html in Resources */,
+				6E3336AB2AD713F000EAEB76 /* Clinical Practice - Trauma.md in Resources */,
 				135D4A9F23156673006C660C /* MenuData.json in Resources */,
 				13F4A47E23A5CD30004F6D38 /* ped_flacc_score.png in Resources */,
 				6E5BF9F129CCFAF0003C39E1 /* preamble_signature.jpg in Resources */,
+				6E3336862AD713F000EAEB76 /* Adult - Clinical Practice - Obstetrics.html in Resources */,
 				6E5BF9EE29CCC926003C39E1 /* ped_tx_of_hypoglycemia_in_the_well_newborn.png in Resources */,
 				138F07C224E44A9D00410D0D /* MinionPro-MediumItDisp.otf in Resources */,
+				6E33367E2AD713F000EAEB76 /* Adult - Clinical Practice - Airway.html in Resources */,
 				13E3C49723949A41001C3F08 /* Adult - Clinical Practice - ROSC.html in Resources */,
 				13E3C48323917306001C3F08 /* Controlled Intubation Checklist.html in Resources */,
 				13B6817323155FC3003EA3D7 /* Assets.xcassets in Resources */,
+				6E3336AA2AD713F000EAEB76 /* Controlled Intubation Checklist.html in Resources */,
+				6E3336822AD713F000EAEB76 /* Authorization.md in Resources */,
 				1368C2D5252F290E0061735B /* (null) in Resources */,
+				6E3336B42AD713F000EAEB76 /* COVID 2019 Operational Guidelines_Final_v6.2 Nov6.pdf in Resources */,
 				6EAD538A2A0BF01500843EF2 /* Adult - Clinical Practice - MHP.html in Resources */,
 				138F07EE24E44A9D00410D0D /* minionproboldcndisp.png in Resources */,
 				139FF61B23C8F7BC00B57A68 /* Adult - Clinical Practice Guidelines - Mechanical Ventilation.html in Resources */,
+				6E3336B32AD713F000EAEB76 /* adult_airway_team_positioning.png in Resources */,
 				6EAD53802A09836400843EF2 /* adult-airway-algorithm.png in Resources */,
+				6E33368B2AD713F000EAEB76 /* hnc_part2.png in Resources */,
+				6E3336BB2AD713F000EAEB76 /* part_3_hnc.png in Resources */,
 				13E3C49D2396C6BD001C3F08 /* Adult - Clinical Practice - Cardiogenic Shock.html in Resources */,
 				6E3AF6732A4B41D600DAA6AF /* Hamilton T1 - Heated Humidified Nasal Cannula Setup.html in Resources */,
 				13BF742F22B6647B00145035 /* Podfile in Resources */,
+				6E3336802AD713F000EAEB76 /* adult_pain_score_chart.png in Resources */,
 				6E0FB90629CB643D0069E326 /* Pediatric - Trauma.html in Resources */,
+				6E3336A32AD713F000EAEB76 /* Preamble.md in Resources */,
 				138F07D324E44A9D00410D0D /* MinionPro-BoldCnCapt.otf in Resources */,
 				6ECC145929CA59DB0039CA16 /* delivery_room_management_of_premature_neonates.png in Resources */,
 				6E3AF6872A4B502F00DAA6AF /* Hamilton T1 & MR850 Disinfection.html in Resources */,
 				138F080524E44BDF00410D0D /* FrutigerLTStd-Italic.otf in Resources */,
 				6E3AF6712A4B3EFF00DAA6AF /* part_2_heater_setup.png in Resources */,
 				138F07BF24E44A9D00410D0D /* MinionPro-MediumCnSubh.otf in Resources */,
+				6E33367C2AD713F000EAEB76 /* Clinical Practice - NSTEMI.md in Resources */,
 				138F07F524E44A9D00410D0D /* MinionPro-CnDisp.otf in Resources */,
 				138F07D224E44A9D00410D0D /* MinionPro-SemiboldCnIt.otf in Resources */,
+				6E33368D2AD713F000EAEB76 /* adult_airway_patient_positioning.png in Resources */,
 				13E3C4A92399FAAF001C3F08 /* Adult - Clinical Practice - Sepsis.html in Resources */,
 				6EAD53862A0ABEFE00843EF2 /* Adult - Clinical Practice - Non ST Elevation ACS (NSTEACS).html in Resources */,
+				6E3336BC2AD713F000EAEB76 /* Clinical Practice Guidelines - Mechanical Ventilation.html in Resources */,
 				138F07BC24E44A9D00410D0D /* MinionPro-MediumSubh.otf in Resources */,
 				1368DA822385609C003A7144 /* Adult - Clinical Practice - Asthma.html in Resources */,
 				13F4A423239ECED4004F6D38 /* preamble_loc.png in Resources */,
+				6E3336952AD713F000EAEB76 /* Adult - Clinical Practice - Sedation Intubated.html in Resources */,
+				6E3336752AD713F000EAEB76 /* Clinical Practice - Sepsis.md in Resources */,
 				13E3C48B2392B815001C3F08 /* adult_airway_post_checklist.png in Resources */,
+				6E3336742AD713F000EAEB76 /* delivery_room_management_of_premature_neonates.png in Resources */,
+				6E33366F2AD713F000EAEB76 /* Hamilton T1 - Infant Nasal CPAP.html in Resources */,
 				138F07D424E44A9D00410D0D /* MinionPro-CnItCapt.otf in Resources */,
 				138F07CB24E44A9D00410D0D /* MinionPro-SemiboldCnSubh.otf in Resources */,
 				138F07DF24E44A9D00410D0D /* MinionPro-BoldCnItDisp.otf in Resources */,
+				6E3336992AD713F000EAEB76 /* test.html in Resources */,
 				13E3C4A7239964FF001C3F08 /* Adult - Clinical Practice - Trauma.html in Resources */,
+				6E3336832AD713F000EAEB76 /* adult_trach_transport_flowchart.png in Resources */,
 				138F07D524E44A9D00410D0D /* MinionPro-BoldDisp.otf in Resources */,
 				138F07D724E44A9D00410D0D /* MinionPro-BoldCn.otf in Resources */,
 				1309D7C1228CC9F3005F8D40 /* DrugLibrary.json in Resources */,
@@ -888,24 +1187,40 @@
 				138F080B24E44FE400410D0D /* FrutigerLTStd-CnBold.otf in Resources */,
 				6EAD53842A0ABC6D00843EF2 /* adult_non_traumatic_arrest_flowchart.png in Resources */,
 				139BF3E522849C7500D25766 /* LaunchScreen.storyboard in Resources */,
+				6E33369D2AD713F000EAEB76 /* alcohol_withdrawal_assessment_tool.html in Resources */,
 				13E3C4A32398B5D4001C3F08 /* Adult - Clinical Practice - Stroke.html in Resources */,
+				6E3336B92AD713F000EAEB76 /* Executive Airway Summary.html in Resources */,
 				138F07BB24E44A9D00410D0D /* MinionPro-BoldCnSubh.otf in Resources */,
+				6E3336912AD713F000EAEB76 /* preamble_sbarr.png in Resources */,
+				6E3336B72AD713F000EAEB76 /* app-20200409-RSI-Authorization-and-Limitation-Changes-(BH-MEM-067).pdf in Resources */,
+				6E3336A22AD713F000EAEB76 /* Delivery Room Management of Premature Neonates.html in Resources */,
 				1368DA6E23833455003A7144 /* Executive Airway Summary.html in Resources */,
 				6EAD53822A099EBB00843EF2 /* adult_trach_transport_flowchart.png in Resources */,
 				132F1BE2230D953E0071ADFF /* TODO List in Resources */,
 				138F07DC24E44A9D00410D0D /* MinionPro-MediumCn.otf in Resources */,
+				6E3336902AD713F000EAEB76 /* Adult - Clinical Practice - Asthma.html in Resources */,
+				6E3336722AD713F000EAEB76 /* Adult - Clinical Practice - SCI.html in Resources */,
 				13F4A42E239ED370004F6D38 /* Structure of Medical Directive.html in Resources */,
 				138F07D124E44A9D00410D0D /* MinionPro-MediumCapt.otf in Resources */,
 				13E3C4AB239C03F6001C3F08 /* Adult - Clinical Practice - Obstetrics.html in Resources */,
 				138F07CA24E44A9D00410D0D /* MinionPro-CnSubh.otf in Resources */,
 				13E3C49B2396C49B001C3F08 /* Adult - Clinical Practice - STEMI.html in Resources */,
 				139F25442555C789006CC6BB /* COVID 2019 Operational Guidelines_Final_v6.2 Nov6.pdf in Resources */,
+				6E3336B22AD713F000EAEB76 /* Ornge Airway Manual Executive Summary.html in Resources */,
 				138F07D024E44A9D00410D0D /* MinionPro-Disp.otf in Resources */,
+				6E3336812AD713F000EAEB76 /* part_2_heater_setup.png in Resources */,
 				138F080F24E6EA8600410D0D /* DocumentsData.json in Resources */,
+				6E3336B02AD713F000EAEB76 /* Structure of Medical Directive.md in Resources */,
 				138F07CD24E44A9D00410D0D /* MinionPro-ItDisp.otf in Resources */,
+				6E3336692AD713F000EAEB76 /* Hamilton T1 - Aerogen.html in Resources */,
 				6E3AF6692A4B2E3C00DAA6AF /* Hamilton T1 MR850 Setup.html in Resources */,
+				6E3336A12AD713F000EAEB76 /* Adult - Clinical Practice - Sepsis.html in Resources */,
 				138F07C324E44A9D00410D0D /* MinionPro-SemiboldCnCapt.otf in Resources */,
 				138F07FA24E44A9D00410D0D /* MinionPro-SemiboldCnItCapt.otf in Resources */,
+				6E33367D2AD713F000EAEB76 /* ped_aw_positioning_trauma.jpg in Resources */,
+				6E3336732AD713F000EAEB76 /* Pediatric - Trauma.html in Resources */,
+				6E33368F2AD713F000EAEB76 /* Hamilton T1 & MR850 Disinfection.html in Resources */,
+				6E3336962AD713F000EAEB76 /* Authorization.html in Resources */,
 				13E3C4A5239964F8001C3F08 /* Adult - Clinical Practice - SCI.html in Resources */,
 				138F07F924E44A9D00410D0D /* MinionPro-Subh.otf in Resources */,
 				138F07ED24E44A9D00410D0D /* MinionPro-SemiboldCapt.otf in Resources */,
@@ -914,46 +1229,75 @@
 				13F4A42D239ED370004F6D38 /* Preamble.html in Resources */,
 				138F07C824E44A9D00410D0D /* MinionPro-BoldCnItSubh.otf in Resources */,
 				13E3C48F2392BD0D001C3F08 /* Adult - Clinical Practice - Epoprostenol.html in Resources */,
+				6E33368E2AD713F000EAEB76 /* Clinical Practice - Epoprostenol.md in Resources */,
 				13C7BDDD228C36D900D33B76 /* MedicalDirectiveView.xib in Resources */,
+				6E3336762AD713F000EAEB76 /* Preamble.html in Resources */,
 				6E3AF67D2A4B485800DAA6AF /* Hamilton T1 - Infant Nasal CPAP.html in Resources */,
+				6E33366C2AD713F000EAEB76 /* Clinical Practice - SCI.md in Resources */,
 				138F07E324E44A9D00410D0D /* MinionPro-BoldCnDisp.otf in Resources */,
+				6E3336892AD713F000EAEB76 /* plugin.png in Resources */,
+				6E3336942AD713F000EAEB76 /* Structure of Medical Directive.html in Resources */,
 				6E3AF67B2A4B465A00DAA6AF /* part_3_hnc.png in Resources */,
 				6E3AF6852A4B4FEC00DAA6AF /* disinfect_table.png in Resources */,
+				6E3336AD2AD713F000EAEB76 /* adult_sedation_score.png in Resources */,
 				13E3C49523932A96001C3F08 /* adult_sedation_score.png in Resources */,
 				138F080324E44BDF00410D0D /* FrutigerLTStd-Black.otf in Resources */,
+				6E33368C2AD713F000EAEB76 /* Hamilton T1 - Circuit Guide.html in Resources */,
 				138F07FB24E44A9D00410D0D /* MinionPro-SemiboldIt.otf in Resources */,
+				6E3336A72AD713F000EAEB76 /* ped_tx_of_hypoglycemia_in_the_well_newborn.png in Resources */,
 				138F07E124E44A9D00410D0D /* MinionPro-Regular.otf in Resources */,
 				134122B425811D3000E3F3F7 /* COVID 2019 Operational Guidelines_Final_v6.2.1 Nov25.pdf in Resources */,
+				6E3336A42AD713F000EAEB76 /* Clinical Practice - ROSC.md in Resources */,
 				138F07DD24E44A9D00410D0D /* MinionPro-Cn.otf in Resources */,
+				6E3336A62AD713F000EAEB76 /* Adult - Clinical Practice - MHP.html in Resources */,
 				13F4A42C239ED370004F6D38 /* Authorization.html in Resources */,
 				138F07E924E44A9D00410D0D /* MinionPro-CnItDisp.otf in Resources */,
+				6E3336852AD713F000EAEB76 /* Clinical Practice Guidelines - Mechanical Ventilation.md in Resources */,
 				6ECC145729CA55950039CA16 /* Delivery Room Management of Premature Neonates.html in Resources */,
+				6E3336AC2AD713F000EAEB76 /* preamble_signature.jpg in Resources */,
 				138F07E524E44A9D00410D0D /* MinionPro-BoldItSubh.otf in Resources */,
 				138F080624E44BDF00410D0D /* FrutigerLTStd-Roman.otf in Resources */,
 				138F07F824E44A9D00410D0D /* MinionPro-SemiboldItSubh.otf in Resources */,
 				138F07C024E44A9D00410D0D /* MinionPro-BoldCnIt.otf in Resources */,
 				138F07E024E44A9D00410D0D /* MinionPro-Capt.otf in Resources */,
+				6E3336A92AD713F000EAEB76 /* Hamilton T1 MR850 Setup.html in Resources */,
 				6EAD53882A0AD1AE00843EF2 /* adult_lvad_flowchart.jpg in Resources */,
+				6E3336972AD713F000EAEB76 /* Adult - Clinical Practice - Trauma.html in Resources */,
+				6E33367B2AD713F000EAEB76 /* Clinical Practice - Asthma.md in Resources */,
+				6E3336AF2AD713F000EAEB76 /* aerogen.png in Resources */,
 				6E3AF66D2A4B366C00DAA6AF /* generalHookup.png in Resources */,
 				138F07D824E44A9D00410D0D /* MinionPro-MediumCnCapt.otf in Resources */,
+				6E33369F2AD713F000EAEB76 /* Adult - Clinical Practice - Stroke.html in Resources */,
+				6E3336782AD713F000EAEB76 /* ped_flacc_score.png in Resources */,
 				1373FA22252A3E2300911854 /* app-20200409-RSI-Authorization-and-Limitation-Changes-(BH-MEM-067).pdf in Resources */,
 				1399FD0B25506CF700138F22 /* COVID 2019 Operational Guidelines_Draft_v6.1 Oct 26.pdf in Resources */,
 				138F07C124E44A9D00410D0D /* MinionPro-CnItSubh.otf in Resources */,
+				6E3336B82AD713F000EAEB76 /* Executive Airway Summary.md in Resources */,
 				138F07C924E44A9D00410D0D /* MinionPro-SemiboldCn.otf in Resources */,
 				138F07F624E44A9D00410D0D /* MinionPro-ItSubh.otf in Resources */,
 				6E0FB90829CB6ED20069E326 /* ped_aw_positioning_trauma.jpg in Resources */,
 				6E3AF6812A4B4E5200DAA6AF /* Hamilton T1 - Aerogen.html in Resources */,
+				6E3336B12AD713F000EAEB76 /* infant_ncpap.png in Resources */,
+				6E3336882AD713F000EAEB76 /* Adult - Clinical Practice Guidelines - Mechanical Ventilation.html in Resources */,
+				6E33369C2AD713F000EAEB76 /* generalHookup.png in Resources */,
+				6E3336B62AD713F000EAEB76 /* COVID 2019 Operational Guidelines_Draft_v6.1 Oct 26.pdf in Resources */,
+				6E33369E2AD713F000EAEB76 /* Adult - Clinical Practice - Epoprostenol.html in Resources */,
 				138F07F724E44A9D00410D0D /* MinionPro-MediumCnItSubh.otf in Resources */,
 				13E3C48D2392B815001C3F08 /* adult_airway_checklist.png in Resources */,
 				13F4A430239F44E9004F6D38 /* preamble_sbarr.png in Resources */,
-				6E3AF6792A4B452400DAA6AF /* hnc_part2.png in Resources */,
+				6E33366A2AD713F000EAEB76 /* Adult - Clinical Practice - ROSC.html in Resources */,
+				6E3336AE2AD713F000EAEB76 /* ped_cp_pain.html in Resources */,
+				6E3336A52AD713F000EAEB76 /* disinfect_table.png in Resources */,
 				138F07E224E44A9D00410D0D /* MinionPro-Semibold.otf in Resources */,
 				138F07E624E44A9D00410D0D /* MinionPro-MediumDisp.otf in Resources */,
 				138F07DA24E44A9D00410D0D /* MinionPro-ItCapt.otf in Resources */,
 				13E3C49423932A96001C3F08 /* adult_pain_score_chart.png in Resources */,
+				6E3336702AD713F000EAEB76 /* Clinical Practice - Stroke.md in Resources */,
 				13E3C48A2392B815001C3F08 /* adult_airway_patient_positioning.png in Resources */,
 				138F07C524E44A9D00410D0D /* MinionPro-SemiboldCnItDisp.otf in Resources */,
 				138F07C724E44A9D00410D0D /* MinionPro-MediumIt.otf in Resources */,
+				6E33369A2AD713F000EAEB76 /* oxygen_duration_calculator.html in Resources */,
+				6E3336842AD713F000EAEB76 /* Adult - Clinical Practice - STEMI.html in Resources */,
 				138F07CC24E44A9D00410D0D /* MinionPro-SemiboldItDisp.otf in Resources */,
 				138F07EF24E44A9D00410D0D /* MinionPro-MediumCnIt.otf in Resources */,
 				6E3AF67F2A4B491800DAA6AF /* infant_ncpap.png in Resources */,
@@ -962,13 +1306,19 @@
 				138F07F424E44A9D00410D0D /* MinionPro-SemiboldCnDisp.otf in Resources */,
 				138F07EA24E44A9D00410D0D /* MinionPro-BoldCapt.otf in Resources */,
 				138F07BE24E44A9D00410D0D /* MinionPro-BoldItDisp.otf in Resources */,
+				6E3336922AD713F000EAEB76 /* Clinical Practice - STEMI.md in Resources */,
 				131894CE234E0BCB00DC307D /* MixingCalculatorView.xib in Resources */,
+				6E33366B2AD713F000EAEB76 /* adult_lvad_flowchart.jpg in Resources */,
 				138F07F024E44A9D00410D0D /* MinionPro-Medium.otf in Resources */,
 				138F07EC24E44A9D00410D0D /* MinionPro-BoldItCapt.otf in Resources */,
+				6E3336872AD713F000EAEB76 /* adult_airway_post_checklist.png in Resources */,
+				6E3336A02AD713F000EAEB76 /* adult_rosc.png in Resources */,
+				6E33367A2AD713F000EAEB76 /* Clinical Practice - Cardiogenic Shock.md in Resources */,
 				138F07C424E44A9D00410D0D /* MinionPro-It.otf in Resources */,
 				139BF3E022849C7400D25766 /* Main.storyboard in Resources */,
 				138F07E824E44A9D00410D0D /* MinionPro-MediumItSubh.otf in Resources */,
 				13E3C48C2392B815001C3F08 /* adult_airway_team_positioning.png in Resources */,
+				6E3336A82AD713F000EAEB76 /* Clinical Practice - Sedation Intubated.md in Resources */,
 				13F4A421239ECED4004F6D38 /* preamble_patch_point.png in Resources */,
 				138F07EB24E44A9D00410D0D /* MinionPro-BoldIt.otf in Resources */,
 				138F07E724E44A9D00410D0D /* MinionPro-MediumCnDisp.otf in Resources */,
@@ -1227,7 +1577,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 72B3P2ME3P;
 				INFOPLIST_FILE = Ornge/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
@@ -1235,7 +1585,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.0;
+				MARKETING_VERSION = 2.2;
 				PRODUCT_BUNDLE_IDENTIFIER = ca.ornge.medicaldirectives;
 				PRODUCT_NAME = "Ornge - Clinical Practice";
 				SWIFT_VERSION = 5.0;
@@ -1249,7 +1599,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 72B3P2ME3P;
 				INFOPLIST_FILE = Ornge/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
@@ -1257,7 +1607,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.0;
+				MARKETING_VERSION = 2.2;
 				PRODUCT_BUNDLE_IDENTIFIER = ca.ornge.medicaldirectives;
 				PRODUCT_NAME = "Ornge - Clinical Practice";
 				SWIFT_VERSION = 5.0;

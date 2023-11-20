@@ -662,6 +662,17 @@
                                     "key": "adult_obs_third_stage"
                                 }
                             ]
+                        },
+                        {
+                            "title": "TMP Escalation Patch",
+                            "type": "menu",
+                            "items": [
+                                {
+                                    "title": "Transport Medicine Physician (TMP) Escalation Patch",
+                                    "type": "menu_document_link",
+                                    "key": "tmp_escalation_patch"
+                                }
+                            ]
                         }
                     ]
                 },
@@ -1144,6 +1155,11 @@
                             "title": "Y Site Compatibility Checker",
                             "type": "menu_document_link",
                             "key": "y_site"
+                        },
+                        {
+                            "title": "Oxygen Duration Calculator",
+                            "type": "menu_document_link",
+                            "key": "oxygen_duration_calculator"
                         }
                     ]
                 },

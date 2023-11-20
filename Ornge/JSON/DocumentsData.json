@@ -1207,7 +1207,7 @@
             "key": "adult_lvr",
             "title": "Adult - Lung Volume Recruitment (LVR)",
             "type": "directive",
-            "clinical": "<b>Refer to Hamilton T1 LRM Procedure when using T1 ventilator</b>",
+            "clinical": "<b><center>Hamilton T1 Lung Volume Recruitment Maneuver (LRM)</center></b>\n<tab1>1. With ventilation in the current mode, open the Mode screen and select APRV then hit Confirm to open the controls screen.</tab1>\n<tab1>2. Set P high 30 cm H2O and T high to 30 seconds.</tab1>\n<tab1>3. P low will be the same as the current PEEP cm H2O, … add + 2 cmH2O which establishes post LRM PEEP in the original mode as well.</tab1>\n<tab1>4. Open “Apnea” screen and turn off apnea back-up ventilation</tab1>\n<tab2> a. Note that if you need to perform a repeat LRM, the vent will remember APRV Pressure and Time settings, however the apnea back-up will revert to “ON”. Remember to turn this off each time.</tab2>\n<tab1>5. Hit “Confirm” to start the maneuver.</tab1>\n<tab1>6. As the vent switches to APRV, watch the Pressure/Time curve. The pressure should be at 30 cmH2O. If it is lower, hit the “Manual breath” button to end the current APRV breath and force a new one at the P high level 30 cm H2O.</tab1>\n<tab1>7. As soon as you’ve confirmed that the LRM is working at 30 cmH2O, open the Mode screen, select the previous mode and hit Confirm.</tab1>\n<tab2> a. All the control settings will be retained and the PEEP will now reflect the PEEP you set in the APRV mode.</tab2>\n<tab2> b. Hit Confirm again. <u><b>Don’t delay this step.</b></u> This will allow:</tab2>\n<tab3> i. you to abort the LRM if indicated by simply activating a manual breath</tab3>\n<tab3> ii. the vent to automatically switch back to the desired mode at the APRV 30 second mark</tab3>\n<tab1>8. The vent will stay in APRV at the P high level until the next breath cycle (i.e. 30 seconds). With the next breath the vent will resume ventilation in the previous mode.</tab1>",
             "flowchartkeys": [
                 [
                     "Lung Volume Recruitment Flowchart",
@@ -7705,6 +7705,29 @@
                     "dose_route": [
                         [
                             "<center><b>Brandt Manoeuvre</b>\nApply firm traction to the (clamped) umbilical cord with one hand while the other applies suprapubic counter pressure to deliver the placenta</center>"
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "key": "tmp_escalation_patch",
+            "title": "Transport Medicine Physician (TMP) - Escalation Patch",
+            "type": "directive",
+            "indications": "<tab1>Patient clinical status may change from the time of booking of transport to initial patient contact with transport crews. This medical directive is to provide guidance for Ornge Primary Care Paramedics (PCP) as to when to patch with the Ornge TMP for further clinical guidance and advice.</tab1>",
+            "contraindications": "<tab1>• N/A</tab1>",
+            "clinical": "<tab1><b>1. AGE AND VITAL SIGNS</b>\nThe general age cut off between adults and pediatrics is 18 years. There is a wide range of “normal” for vital signs in adults and especially pediatrics. PCP should consider patch to TMP when vital signs are outside of the following “normal” ranges:\n</tab1><tab2><b>ADULTS</b>\n<b>Hypotension</b>-SBP<90 mmHg\n<b>Bradycardia</b>-<50 BPM\n<b>Tachycardia</b>->100 BPM\n<b>Tachypnea</b>-RR ≥28 breath/min\n<b>Oxygen Saturation</b>-<90% on room air or patient’s usual supplemental oxygen setting\n<b>GCS:<15</b>-(unless at their baseline level. Any change from baseline GCS should prompt a TMP patch.\n</tab2><tab2><b>PEDIATRICS</b>\nAGE         Respiratory Rate Heart Rate\n0-3 months    30-60              90-180\n3-6 months    30-60              80-160\n6-12 months   25-45              80-140\n1-3 yr              20-30              75-130\n6 yr                16-24              70-110\n10 yr               14-20              60-90\n<b>Systolic Blood Pressure (for children 1-10 yrs) = 70 + (2 x age in years)\nWeight (kg) = (age x 2) + 10</b></tab2>\n<tab1><b>2. HYPOGLYCEMIA</b>\n<tab2>Age ≥2 years: glucometry <4.0 mmol/L\nAge <2 years: glucometry <3.0 mmol/L</tab2></tab1>\n<tab1><b>3. CHANGES TO CLINICAL STATUS</b></tab1>\n<tab2>Every transport request is reviewed by a TMP. In some cases, these transports are booked the day before. During this time, the clinical condition of patients may change and as such no longer be appropriate for primary paramedic level of care. Please make every effort to ensure the current clinical status of the patient mirrors that provided in the pre-transport booking information. <b>When there is a change in a clinical status that has the potential to cause complications or puts that patient at higher risk for patient decompensation, please inform the TMP.</b></tab2>\n<tab1><b>4. ARRHYTHMIAS</b>\n<tab2>Patch to the TMP when the patient has a heart rhythm that is new, not confirmed prior and/or the paramedic is concerned that the cardiac rhythm may cause complications during the transport.</tab2></tab1>\n<tab1><b>5. PROLONGED TARMAC DELAYS</b></tab1>\n<tab2>In situations of prolonged tarmac delays for land transport into the receiving facility, changes to the clinical status of patients can be subtle. Regardless of the presence of additional escorts, diligence and careful monitoring of patients is required for changes to hydration, temperature, level of consciousness, glucose levels and other vital signs. Patch to the TMP in any change to clinical status during prolonged tarmac delays. The OCC will inform the TMP for any tarmac delay exceeding 180min along with the Provincial Duty Officer and the OCC Manager.</tab2>\n<tab1><b>6. TARMAC DELAYS DURING EXTREMES OF TEMPERATURE</b>\n<tab2>Given aircraft are unable to maintain environmental controls while stationary on the ground, crews should identify to OCC when they are on delay with a patient and ambient temperatures at the airport are above 25° Celsius or below – 10° Celsius for review for ‘Delays During Extreme Temperatures’.</tab2></tab1>",
+            "drug_cards": [
+                {
+                    "loc": [
+                        [
+                            "pcp",
+                            "first"
+                        ]
+                    ],
+                    "dose_route": [
+                        [
+                            "<center>PCP(f) are to patch with the Ornge Operations Control Centre (OCC) and provide an update for the TMP when providing care to patients with vital signs not within expected ranges for age or other clinical considerations not limited to those noted below</center>"
                         ]
                     ]
                 }
@@ -15806,7 +15829,7 @@
             "content": [
                 [
                     [
-                        "Ornge: Clinical Practice version 2.0, last updated March 2023"
+                        "Ornge: Clinical Practice version 2.1, last updated September 2023"
                     ]
                 ]
             ]
@@ -15991,6 +16014,11 @@
         {
             "key": "Pediatric - Trauma",
             "title": "Paediatric - Trauma",
+            "type": "webview"
+        },
+        {
+            "key": "oxygen_duration_calculator",
+            "title": "Oxygen Consumption Calculator",
             "type": "webview"
         }
     ]
