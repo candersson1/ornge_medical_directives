@@ -969,9 +969,10 @@
                     ],
                     "dose_route": [
                         [
-                            "<center><a href=\"drugKey=dexamethasone\">Dexamethasone</a> 8 mg IM/IV/IO</center>"
+                            "<center><a href=\"drugKey=dexamethasone\">Dexamethasone</a> 8 mg PO/IM/IV/IO*</center>"
                         ]
-                    ]
+                    ],
+                    "notes": "*No IV/IO for PCP"
                 },
                 {
                     "title": "<b>methylPREDNISolone</b>",
@@ -5124,7 +5125,7 @@
                     ],
                     "dose_route": [
                         [
-                            "<center><middle>4 units RBC\nAND\n4 units Frozen Plasma(FP)\nAND\n4g Fibrinogen Concentrate</middle></center>",
+                            "<center><middle>4 units RBC\nAND\n2 units Frozen Plasma(FP)\nAND\n4g Fibrinogen Concentrate</middle></center>",
                             "Female < 45 yrs - RBC (O negative or cross matched)*\nFemale > 45 yrs - O positive or cross matched*\nMale - O positive or cross matched*"
                         ]
                     ]
@@ -5139,7 +5140,7 @@
                     ],
                     "dose_route": [
                         [
-                            "<center><middle>4 units RBC\nAND\n4 units Frozen Plasma(FP)\nAND\n4g Fibrinogen Concentrate</middle></center>",
+                            "<center><middle>4 units RBC\nAND\n2 units Frozen Plasma(FP)\nAND\n4g Fibrinogen Concentrate</middle></center>",
                             "Female < 45 yrs - RBC (O negative or cross matched)*\nFemale > 45 yrs - O positive or cross matched*\nMale - O positive or cross matched*"
                         ]
                     ]
@@ -5569,7 +5570,7 @@
             "type": "directive",
             "indications": "<tab1>• Nausea, vomiting, or prevention of motion sickness</tab1>",
             "contraindications": "<tab1>• Allergy or sensitivity to the medication\n• Received dimenhyDRINATE or Ondansetron within the last 4 hours\n• Prolonged QT interval or concomitant use of other drugs that may prolong the QT interval (specific to Ondansetron)</tab1>",
-            "clinical": "<tab1>• dimenhyDRINATE should be administered SLOW IV push to prevent vertigo, weakness and dizziness</tab1>",
+            "clinical": "<tab1>• dimenhyDRINATE should be administered SLOW IV push to prevent vertigo, weakness and dizziness</tab1>\n<tab1>• for nausea/vomiting related to motion sickness, dimenhyDRINATE is the most appropriate anti-nauseant</tab1>",
             "drug_cards": [
                 {
                     "title": "<b>dimenhyDRINATE (Gravol)</b>",
@@ -5613,7 +5614,7 @@
                     ],
                     "dose_route": [
                         [
-                            "<center>4 mg IM q 4-8 hours prn</center>"
+                            "<center>4 mg PO q 4-8 hours prn</center>"
                         ]
                     ]
                 },
@@ -6076,7 +6077,7 @@
                     ]
                 },
                 {
-                    "title": "<b>50% Dextrose for Hypoglycemia</b>",
+                    "title": "<b>Dextrose for Hypoglycemia</b>",
                     "loc": [
                         [
                             "acpl",
@@ -6086,8 +6087,15 @@
                     "drugKey": "d50w",
                     "dose_route": [
                         [
-                            "<center>25 g of D50W IV\n(50 mL D50W)</center>",
-                            "<center>Repeat blood glucose measurement\n10 minutes after the administration of\nDextrose IV\n\nFollow with oral carbohydrates <b>ASAP</b> if LOC permits</center>"
+                            "<center><b>10% Dextrose</b></center>",
+                            "<center><b>50% Dextrose</b></center>"
+                        ],
+                        [
+                            "<center>0.2 g/kg (2 ml/kg) D10W IV\nMax Single Dose 25 g (250 ml)</center>",
+                            "<center>0.5 g/kg (1 ml/kg) D50W IV\nMax Single Dose 25 g (50 ml)</center>"
+                        ],
+                        [
+                            "<center>Repeat glucometry 10 minutes post dextrose administration\nIf patient responds to dextrose or glucagon, follow with oral glucose or simple carbohydrates </center>"
                         ]
                     ]
                 },
@@ -13084,7 +13092,7 @@
             "type": "directive",
             "indications": "<tab1>• The patient is <40 kg\n• The patient is suffering from nausea or vomiting\n• There is an increased risk of motion sickness in transport\n• The patient has not received <b>dimenhyDRINATE within the last 4 hours</b></tab1>",
             "contraindications": "<tab1>• Allergy or sensitivity to the medication\n• Prolonged QT (concern in Ondansetron administration or concomitant use of other drugs that may prolong the QT interval)\n• The patient has received Ondansetron within 8 hours\n• The patient has received dimenhyDRINATE within the last 4 hours</tab1>",
-            "clinical": "<tab1>• Not applicable</tab1>",
+            "clinical": "<tab1>• For nausea/vomiting related to motion sickness, dimenhyDRINATE is the most appropriate anti-nauseant.</tab1>",
             "drug_cards": [
                 {
                     "section": "Consider for motion sickness",
@@ -13479,15 +13487,15 @@
                     "dose_route": [
                         [
                             "< 10 kg",
-                            "0.5 gm/kg of D10W\n(5 mL/kg of D10W)"
+                            "0.5 g/kg (5 ml/kg) D10W IV"
                         ],
                         [
                             "10 kg – 20 kg",
-                            "0.5 gm/kg of D25W\n(2 mL/kg of D25W)"
+                            "0.5 g/kg (2 ml/kg) D25W\n<b>or</b>\n0.5 g/kg (5 ml/kg) D10W IV"
                         ],
                         [
                             "20 kg – 39 kg",
-                            "0.5 gm/kg of D50W\n(1 mL/kg of D50W)\nTo a MAX of 25 gm (50 mL)"
+                            "0.5 g/kg (1 ml/kg) D50W\nMax Single Dose 25 g (50 ml)\n<b>or</b>\n0.2 g/kg (2 ml/kg) D10W IV\nMax Single Dose - 25 g (250 ML)"
                         ]
                     ]
                 },
@@ -15829,7 +15837,7 @@
             "content": [
                 [
                     [
-                        "Ornge: Clinical Practice version 2.1, last updated September 2023"
+                        "Ornge: Clinical Practice version 2.2, last updated March 2024"
                     ]
                 ]
             ]

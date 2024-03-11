@@ -111,19 +111,21 @@
         margin-left: 10px;
         font-size: 14px;
       }
+      .safety-margin-label {
+      }
     </style>
   </head>
   <body>
     <form action="#" method="post" id="myForm">
       <button class="reset" type="button" id="clearForm">Clear Form</button>
-      <label>
+      <!-- <label>
         Select Patient Type (< or > 10Kg):
         <select name="patient_type">
           <option value="" selected disabled>Select...</option>
           <option value=">10 Kg">>10 Kg</option>
           <option value="&lt;10 Kg">&lt;10 Kg</option>
         </select>
-      </label>
+      </label> -->
       <label>
         Select delivery method:
         <select name="delivery_method">
@@ -155,6 +157,9 @@
         Enter leak percentage:
         <input type="text" name="leak_percentage" placeholder="e.g., 25" />
       </label>
+      <label id="leak_info_label" style="display: none">
+        Estimated leak 50%
+      </label>
       <label>
         Enter current FiO2:
         <input type="text" name="fio2" placeholder="e.g., 45" />
@@ -164,7 +169,7 @@
         <select name="asset_type">
           <option value="" selected disabled>Select...</option>
           <option value="CCLA (K)">CCLA (K)</option>
-          <option value="FW">FW</option>
+          <option value="FW">Ornge PC-12</option>
           <option value="RW">RW</option>
           <option value="E">E</option>
           <option value="D">D</option>
@@ -183,11 +188,35 @@
     </form>
     <div class="message-container" id="messages"></div>
     <div class="output" id="output">
-      <p>Duration in minutes, including safety margins:</p>
+      <p>
+        Duration in minutes, including safety margins:
+        <span id="safety_margin_label" class="safety-margin-label"></span>
+      </p>
       <h2 id="duration"></h2>
     </div>
   </body>
   <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const leakValueKnownSelect = document.querySelector(
+        'select[name="leak_value_known"]'
+      );
+      const leakPercentageInput = document.querySelector(
+        'input[name="leak_percentage"]'
+      );
+      const leakInfoLabel = document.getElementById("leak_info_label");
+
+      leakValueKnownSelect.addEventListener("change", function () {
+        if (this.value === "No") {
+          leakPercentageInput.style.display = "none";
+          leakInfoLabel.style.display = "block";
+          leakPercentageInput.value = "";
+        } else {
+          leakPercentageInput.style.display = "block";
+          leakInfoLabel.style.display = "none";
+        }
+      });
+    });
+
     document
       .getElementById("clearForm")
       .addEventListener("click", function (e) {
@@ -199,14 +228,15 @@
 
         // Clear the output
         document.getElementById("duration").innerHTML = "";
+        document.getElementById("safety_margin_label").innerHTML = "";
         document.getElementById("messages").innerHTML = "";
       });
-    let base_flow = {
-      ">10 Kg": { Flow: 3, Unit: "LPM" },
-      "<10 Kg": { Flow: 4, Unit: "LPM" },
-    };
+    // let base_flow = {
+    //   ">10 Kg": { Flow: 3, Unit: "LPM" },
+    //   "<10 Kg": { Flow: 4, Unit: "LPM" },
+    // };
     let safety_margin = {
-      "O2 Reserve": { Flow: 200, Unit: "PSI" },
+      "O2 Reserve": { Flow: 500, Unit: "PSI" },
       Land: { Flow: 10, Unit: "Min" },
       Air: { Flow: 30, Unit: "Min" },
     };
@@ -255,10 +285,10 @@
     document.querySelector("form").addEventListener("submit", function (event) {
       event.preventDefault();
 
-      const patientType = document.querySelector(
-        'select[name="patient_type"]'
-      ).value;
-      console.log("patientType:", patientType);
+      // const patientType = document.querySelector(
+      //   'select[name="patient_type"]'
+      // ).value;
+      // console.log("patientType:", patientType);
       const deliveryMethod = document.querySelector(
         'select[name="delivery_method"]'
       ).value;
@@ -279,11 +309,10 @@
         'select[name="leak_value_known"]'
       ).value;
       const safety_time = safety_margin[legType].Flow;
-      const calc_base_flow = base_flow[patientType].Flow;
+      //const calc_base_flow = base_flow[patientType].Flow;
+      const calc_base_flow = 4;
       const entered_leak = parseFloat(
         document.querySelector('input[name="leak_percentage"]').value
-          ? document.querySelector('input[name="leak_percentage"]').value
-          : 25
       );
       const leak_known_value = minuteVolume * (entered_leak / 100);
       const calc_default_leak =
@@ -347,9 +376,9 @@
           "Are you sure this is correct? You may be using the wrong safety margin for this leg."
         );
       }
-      if (patientType === "<10 Kg" && deliveryMethod === "NIPPV") {
-        messages.push("This tool can not be used for this patient.");
-      }
+      // if (patientType === "<10 Kg" && deliveryMethod === "NIPPV") {
+      //   messages.push("This tool can not be used for this patient.");
+      // }
       if (altitude_compensated_fio2 > 100 && assetType === "FW") {
         messages.push(
           "FiO2 requirements at altitidue will exceed 100%. Consider alternate options"
@@ -377,6 +406,9 @@
       ).innerHTML = `${output} minutes <span class="hhmm">(${minutesToHHMM(
         output
       )})</span>`;
+      document.getElementById(
+        "safety_margin_label"
+      ).innerHTML = `Safe residual pressure ${safety_margin["O2 Reserve"].Flow} psi and ${safety_time} mins reserve time.`;
       //document.querySelector("#duration").innerHTML = output;
       //document.querySelector("#duration").innerHTML = output;
 
