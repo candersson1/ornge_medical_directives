@@ -14,14 +14,19 @@
                             "key": "adult_mixing_table"
                         },
                         {
-                            "title": "Adult Medication List",
+                            "title": "Adult Medication Matrix",
                             "type": "menu_document_link",
                             "key": "adult_medication_list"
                         },
                         {
-                            "title": "Adult Procedure List",
+                            "title": "Adult Procedure Matrix",
                             "type": "menu_document_link",
                             "key": "adult_procedure_list"
+                        },
+                        {
+                            "title": "Critical Care Resident Meds & Procedures Matrix",
+                            "type": "menu_document_link",
+                            "key": "ccr_list"
                         },
                         {
                             "title": "Airway",
@@ -84,7 +89,7 @@
                                     "key": "adult_bronchoconstriction"
                                 },
                                 {
-                                    "title": "Needle Thoracostomy",
+                                    "title": "Thoracostomy - Needle",
                                     "type": "menu_document_link",
                                     "key": "adult_pneumothorax"
                                 },
@@ -696,14 +701,19 @@
                             "key": "neo_mixing_table"
                         },
                         {
-                            "title": "Paediatric Medication List",
+                            "title": "Paediatric Medication Matrix",
                             "type": "menu_document_link",
                             "key": "ped_medication_list"
                         },
                         {
-                            "title": "Paediatric Procedure List",
+                            "title": "Paediatric Procedure Matrix",
                             "type": "menu_document_link",
                             "key": "ped_procedure_list"
+                        },
+                        {
+                            "title": "Paediatric Critical Care Resident Meds & Procedures Matrix",
+                            "type": "menu_document_link",
+                            "key": "ped_ccr_med_matrix"
                         },
                         {
                             "title": "Airway",

@@ -18,9 +18,12 @@ let acplColor = UIColor(hex: "#fcba03ff")
 let acpColor = UIColor(hex: "#34a8ebff")
 let ccpColor = UIColor(hex: "#cdbce0ff")
 let pccpColor = UIColor(hex: "#ff96ddff")
+let frnColor = UIColor(hex: "#8e1d24ff")
+let mhrnColor = UIColor(hex: "#EF4C00ff")
 let noPatchColor = UIColor(hex: "#90d246ff")//"#9ab898ff")
 let patchAfterColor = UIColor(hex: "#fff319ff")
 let patchFirstColor = UIColor(hex: "#ff522bff")
+
 
 class MedicalDirectiveView : UIView
 {
@@ -259,12 +262,15 @@ class MedicalDirectiveView : UIView
                 } else if(locVersion[0] == "ccp") {
                     locButton.backgroundColor = ccpColor
                     locLabel.text = "CCP(f)"
-                } else if(locVersion[0] == "pccp") {
+                } else if(locVersion[0] == "all") {
                     locButton.backgroundColor = pccpColor
-                    locLabel.text = "PCCP/PCCN"
-                } else if(locVersion[0] == "pccn") {
-                    locButton.backgroundColor = pccpColor
-                    locLabel.text = "PCCN"
+                    locLabel.text = "All Clinicians"
+                } else if(locVersion[0] == "frn") {
+                    locButton.backgroundColor = frnColor
+                    locLabel.text = "F-RN"
+                } else if(locVersion[0] == "mhrn") {
+                    locButton.backgroundColor = mhrnColor
+                    locLabel.text = "MH-RN"
                 }
 
                 if(locVersion[1] == "none") {
