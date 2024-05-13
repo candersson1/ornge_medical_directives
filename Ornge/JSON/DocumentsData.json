@@ -12291,7 +12291,7 @@
                     "title": "<b>Supraglottic Airway</b>",
                     "loc": [
                         [
-                            "pcp",
+                            "all",
                             "after"
                         ]
                     ],
@@ -12748,7 +12748,7 @@
                     "drugKey": "salbutamol",
                     "loc": [
                         [
-                            "pcp",
+                            "all",
                             "none"
                         ]
                     ],
@@ -12772,7 +12772,7 @@
                     "drugKey": "salbutamol",
                     "loc": [
                         [
-                            "pcp",
+                            "all",
                             "none"
                         ]
                     ],
@@ -12790,6 +12790,10 @@
                         [
                             "acp",
                             "none"
+                        ],
+                        [
+                            "frn",
+                            "none"
                         ]
                     ],
                     "dose_route": [
@@ -12805,6 +12809,10 @@
                     "loc": [
                         [
                             "acp",
+                            "none"
+                        ],
+                        [
+                            "frn",
                             "none"
                         ]
                     ],
@@ -12822,6 +12830,10 @@
                         [
                             "pcp",
                             "after"
+                        ],
+                        [
+                            "frn",
+                            "after"
                         ]
                     ],
                     "dose_route": [
@@ -12838,6 +12850,10 @@
                     "loc": [
                         [
                             "acp",
+                            "after"
+                        ],
+                        [
+                            "frn",
                             "after"
                         ]
                     ],
@@ -12873,6 +12889,10 @@
                         [
                             "pcp",
                             "first"
+                        ],
+                        [
+                            "frn",
+                            "first"
                         ]
                     ],
                     "dose_route": [
@@ -12888,6 +12908,10 @@
                     "loc": [
                         [
                             "acp",
+                            "first"
+                        ],
+                        [
+                            "frn",
                             "first"
                         ]
                     ],
@@ -12931,6 +12955,10 @@
                         [
                             "pcp",
                             "after"
+                        ],
+                        [
+                            "frn",
+                            "after"
                         ]
                     ],
                     "dose_route": [
@@ -12959,6 +12987,10 @@
                         [
                             "pcp",
                             "after"
+                        ],
+                        [
+                            "frn",
+                            "after"
                         ]
                     ],
                     "dose_route": [
@@ -12974,7 +13006,7 @@
         },
         {
             "key": "ped_pneumothorax",
-            "title": "Paediatric - Tension Pneumothorax",
+            "title": "Paediatric - Thoracostomy - Needle",
             "type": "directive",
             "indications": "<tab1>• Severe respiratory distress in the setting of chest trauma with hemodynamic compromise\nOR\n• Traumatic VSA\nOR\n• Severe hemodynamic compromise with positive pressure ventilation particularly with altitude in trauma or asthma\nOR\n• Either chest trauma or severe asthma and hemodynamic instability and one of the following:</tab1>\n<tab2>o Decreased/absent breath sounds\no Altered LOC\no Cyanosis\no JVD (not seen in young children)\no Hyper resonance on affected side\no Tracheal shift (late sign)</tab2>",
             "contraindications": "<tab1>• Not applicable</tab1>",
@@ -12984,11 +13016,23 @@
                         [
                             "acpl",
                             "after"
+                        ],
+                        [
+                            "frn",
+                            "after"
                         ]
                     ],
                     "dose_route": [
                         [
                             "<center>Consider differential diagnosis and decompress if high probability of tension pneumothorax</center>"
+                        ],
+                        [
+                            [
+                                ">12 years of age"
+                            ],
+                            [
+                                "1 <"
+                            ]
                         ]
                     ]
                 }
