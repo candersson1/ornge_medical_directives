@@ -13027,12 +13027,16 @@
                             "<center>Consider differential diagnosis and decompress if high probability of tension pneumothorax</center>"
                         ],
                         [
-                            [
-                                ">12 years of age"
-                            ],
-                            [
-                                "1 <"
-                            ]
+                            "<center> >12 years of age</center>",
+                            "<center>Turkel Device\n14-16 gauge - 2 inch needle</center>"
+                        ],
+                        [
+                            "<center>≥1 to 12 years of age</center>",
+                            "<center>14-16 gauge - 2 inch needle</center>"
+                        ],
+                        [
+                            "<center><1 year of age</center>",
+                            "<center>20-22 gauge - 1.0-1.8 inch needle</center>"
                         ]
                     ]
                 }
@@ -13051,6 +13055,10 @@
                     "loc": [
                         [
                             "acp",
+                            "none"
+                        ],
+                        [
+                            "frn",
                             "none"
                         ]
                     ],
@@ -13319,7 +13327,7 @@
                     "drugKey": "acetaminophen",
                     "loc": [
                         [
-                            "pcp",
+                            "all",
                             "none"
                         ]
                     ],
@@ -13342,6 +13350,10 @@
                         [
                             "acp",
                             "none"
+                        ],
+                        [
+                            "frn",
+                            "none"
                         ]
                     ],
                     "dose_route": [
@@ -13361,7 +13373,7 @@
                     "drugKey": "ibuprofen",
                     "loc": [
                         [
-                            "pcp",
+                            "all",
                             "none"
                         ]
                     ],
@@ -13384,6 +13396,10 @@
                         [
                             "acp",
                             "none"
+                        ],
+                        [
+                            "frn",
+                            "none"
                         ]
                     ],
                     "dose_route": [
@@ -13405,6 +13421,10 @@
                         [
                             "acpl",
                             "none"
+                        ],
+                        [
+                            "frn",
+                            "none"
                         ]
                     ],
                     "dose_route": [
@@ -13424,6 +13444,10 @@
                     "loc": [
                         [
                             "acp",
+                            "none"
+                        ],
+                        [
+                            "frn",
                             "none"
                         ]
                     ],
@@ -13447,6 +13471,10 @@
                         [
                             "acpl",
                             "after"
+                        ],
+                        [
+                            "frn",
+                            "first"
                         ]
                     ],
                     "dose_route": [
@@ -13466,6 +13494,10 @@
                         [
                             "acpl",
                             "after"
+                        ],
+                        [
+                            "frn",
+                            "first"
                         ]
                     ],
                     "dose_route": [
@@ -13484,6 +13516,10 @@
                     "loc": [
                         [
                             "acpl",
+                            "first"
+                        ],
+                        [
+                            "frn",
                             "first"
                         ]
                     ],
@@ -13926,7 +13962,7 @@
                 {
                     "loc": [
                         [
-                            "pcp",
+                            "all",
                             "after"
                         ]
                     ],
@@ -14005,6 +14041,10 @@
                         [
                             "acpl",
                             "after"
+                        ],
+                        [
+                            "frn",
+                            "after"
                         ]
                     ],
                     "dose_route": [
@@ -14019,6 +14059,10 @@
                     "loc": [
                         [
                             "acpl",
+                            "after"
+                        ],
+                        [
+                            "frn",
                             "after"
                         ]
                     ],
@@ -14035,6 +14079,10 @@
                         [
                             "acpl",
                             "after"
+                        ],
+                        [
+                            "frn",
+                            "after"
                         ]
                     ],
                     "dose_route": [
@@ -14049,6 +14097,10 @@
                     "loc": [
                         [
                             "acpl",
+                            "after"
+                        ],
+                        [
+                            "frn",
                             "after"
                         ]
                     ],
@@ -14080,6 +14132,10 @@
                         [
                             "acpl",
                             "after"
+                        ],
+                        [
+                            "frn",
+                            "after"
                         ]
                     ],
                     "dose_route": [
@@ -14095,63 +14151,48 @@
                         [
                             "acpl",
                             "after"
+                        ],
+                        [
+                            "frn",
+                            "after"
                         ]
                     ],
                     "dose_route": [
                         [
-                            "<b>Drug",
                             "<a href=\"drugKey=epinephrine\">EPINEPHrine</a>",
                             "<a href=\"drugKey=epinephrine\">EPINEPHrine</a>",
                             "<a href=\"drugKey=d50w\">Dextrose</a>"
                         ],
                         [
-                            "<b>Concentration",
                             "1:10,000\n(0.1 mg/ml)",
                             "1:10,000\n(0.1 mg/ml)",
                             "D₁₀W"
                         ],
                         [
-                            "<b>Preparation",
                             "1 ml Syringe",
                             "3 mL Syringe",
                             "D₁₀W"
                         ],
                         [
-                            "<b>Dose",
                             "0.02 mg/kg\n0.2 ml/kg",
                             "0.1 mg/kg\n1 ml/kg",
                             "2 mL/kg\n(0.2 mg/kg)"
                         ],
                         [
-                            "<b>Route",
                             "UVC/IV/IO",
                             "ETT*",
+                            "UVC/IV/IO"
+                        ],
+                        [
+                            ""
+                        ],
+                        [
+                            "Normal Saline and/or Blood as indicated",
+                            "10 mL/kg IV over 5 to 10 minutes",
                             "UVC/IV/IO"
                         ]
                     ],
                     "notes": "*IV or UVC route is preferred\n<tab1>IV or IO Epinephrine dose range is 0.01‐0.03 mg/kg\nETT Epinephrine dose range is 0.05‐0.1 mg/kg</tab1>"
-                },
-                {
-                    "loc": [
-                        [
-                            "acp",
-                            "first"
-                        ]
-                    ],
-                    "dose_route": [
-                        [
-                            "<b>Drug",
-                            "Volume: Normal Saline and/or Blood as indicated"
-                        ],
-                        [
-                            "<b>Dose",
-                            "10 mL/kg IV over 5 to 10 minutes"
-                        ],
-                        [
-                            "<b>Route",
-                            "UVC/IV/IO"
-                        ]
-                    ]
                 }
             ],
             "clinical": "<tab1>• Epinephrine should be administered rapidly\n• Flush with 3ml nomal saline\n• Repeat every 3-5 minutes if heart rate remains <60\n• ETT Epinephrine: Administer ETT breaths to distribute into lungs. No flush\n• Administration of Narcan is not recommended in the initial steps of resuscitation\n• *UVC/IV/IO route preferred. May consider giving one dose of EPINEPHrine via the tracheal tube (ET) while obtaining vascular access. If EPINEPHrine given by ET route and no response, as soon as UVC or IO access obtained administer IV Epinephrine dose immediately. Do not wait 3-5 minutes after initial ET dose\n• Preparation for Transport:\n</tab1><tab2>o Anticipate need for thermoregulation during initial steps of resuscitation, especially in premature infants < 32 weeks GA; all neonates require continuous temperature monitoring during initial resuscitation, stabilization and transport. Target normal temperatures 36.5 to 37.5 ̊C\no Following initial steps of resuscitation, target preductal oxygen saturations 90% to 95%; In neonates with suspected congenital heart disease requiring Alprostadil infusion, review preductal oxygen saturation target with TMP\no In neonates with suspected persistent pulmonary hypertension of the newborn, target preductal oxygen saturations 92% to 95%</tab2>\n<tab1>• Administration of a volume expander is indicated if the baby is not responding to resuscitation and there are signs of shock or a history of acute blood loss\n• Infants in hypovolemic shock may appear pale with delayed capillary refill and /or weak pulses\n• Packed red blood cells should be considered for volume replacement when severe fetal anemia is suspected</tab1>"
@@ -14274,6 +14315,10 @@
                         [
                             "acp",
                             "after"
+                        ],
+                        [
+                            "frn",
+                            "after"
                         ]
                     ],
                     "dose_route": [
@@ -14288,6 +14333,10 @@
                     "loc": [
                         [
                             "acp",
+                            "after"
+                        ],
+                        [
+                            "frn",
                             "after"
                         ]
                     ],
@@ -14319,6 +14368,10 @@
                         [
                             "acp",
                             "after"
+                        ],
+                        [
+                            "frn",
+                            "after"
                         ]
                     ],
                     "dose_route": [
@@ -14333,6 +14386,10 @@
                     "loc": [
                         [
                             "acp",
+                            "after"
+                        ],
+                        [
+                            "frn",
                             "after"
                         ]
                     ],
@@ -14364,6 +14421,10 @@
                         [
                             "acp",
                             "after"
+                        ],
+                        [
+                            "frn",
+                            "after"
                         ]
                     ],
                     "dose_route": [
@@ -14379,6 +14440,10 @@
                         [
                             "acp",
                             "after"
+                        ],
+                        [
+                            "frn",
+                            "after"
                         ]
                     ],
                     "dose_route": [
@@ -14393,6 +14458,10 @@
                         [
                             "acp",
                             "first"
+                        ],
+                        [
+                            "frn",
+                            "first"
                         ]
                     ],
                     "dose_route": [
@@ -14406,6 +14475,10 @@
                     "loc": [
                         [
                             "acp",
+                            "first"
+                        ],
+                        [
+                            "frn",
                             "first"
                         ]
                     ],
@@ -14434,7 +14507,7 @@
                     "title": "<b>Monitor</b>",
                     "loc": [
                         [
-                            "pcp",
+                            "all",
                             "none"
                         ]
                     ],
@@ -14448,6 +14521,10 @@
                     "loc": [
                         [
                             "acpl",
+                            "after"
+                        ],
+                        [
+                            "frn",
                             "after"
                         ]
                     ],
@@ -14466,6 +14543,10 @@
                     "loc": [
                         [
                             "acpl",
+                            "none"
+                        ],
+                        [
+                            "frn",
                             "none"
                         ]
                     ],
@@ -14491,6 +14572,10 @@
                         [
                             "acpl",
                             "after"
+                        ],
+                        [
+                            "frn",
+                            "after"
                         ]
                     ],
                     "dose_route": [
@@ -14514,6 +14599,10 @@
                     "loc": [
                         [
                             "acp",
+                            "after"
+                        ],
+                        [
+                            "frn",
                             "after"
                         ]
                     ],
@@ -14585,6 +14674,10 @@
                         [
                             "acp",
                             "none"
+                        ],
+                        [
+                            "frn",
+                            "none"
                         ]
                     ],
                     "dose_route": [
@@ -14607,6 +14700,10 @@
                     "loc": [
                         [
                             "acp",
+                            "none"
+                        ],
+                        [
+                            "frn",
                             "none"
                         ]
                     ],
@@ -14643,6 +14740,10 @@
                         [
                             "acpl",
                             "after"
+                        ],
+                        [
+                            "frn",
+                            "after"
                         ]
                     ],
                     "dose_route": [
@@ -14658,6 +14759,10 @@
                     "loc": [
                         [
                             "acp",
+                            "first"
+                        ],
+                        [
+                            "frn",
                             "first"
                         ]
                     ],
@@ -14680,6 +14785,10 @@
                         [
                             "ccp",
                             "first"
+                        ],
+                        [
+                            "frn",
+                            "first"
                         ]
                     ],
                     "dose_route": [
@@ -14694,6 +14803,10 @@
                     "loc": [
                         [
                             "acp",
+                            "after"
+                        ],
+                        [
+                            "frn",
                             "after"
                         ]
                     ],
@@ -14711,6 +14824,10 @@
                         [
                             "acp",
                             "first"
+                        ],
+                        [
+                            "frn",
+                            "first"
                         ]
                     ],
                     "dose_route": [
@@ -14727,6 +14844,10 @@
                     "loc": [
                         [
                             "acp",
+                            "first"
+                        ],
+                        [
+                            "frn",
                             "first"
                         ]
                     ],
@@ -14860,6 +14981,10 @@
                         [
                             "acpl",
                             "after"
+                        ],
+                        [
+                            "frn",
+                            "after"
                         ]
                     ],
                     "dose_route": [
@@ -14872,6 +14997,10 @@
                     "loc": [
                         [
                             "pcp",
+                            "after"
+                        ],
+                        [
+                            "frn",
                             "after"
                         ]
                     ],
@@ -14922,6 +15051,10 @@
                     "loc": [
                         [
                             "acpl",
+                            "after"
+                        ],
+                        [
+                            "frn",
                             "after"
                         ]
                     ],
@@ -15286,6 +15419,10 @@
                         [
                             "acp",
                             "first"
+                        ],
+                        [
+                            "frn",
+                            "first"
                         ]
                     ],
                     "title": "<b>Norepinephrine (Levophed)</b>",
@@ -15301,6 +15438,10 @@
                     "loc": [
                         [
                             "acpl",
+                            "after"
+                        ],
+                        [
+                            "frn",
                             "after"
                         ]
                     ],
@@ -15358,6 +15499,10 @@
                         [
                             "acpl",
                             "none"
+                        ],
+                        [
+                            "frn",
+                            "none"
                         ]
                     ],
                     "title": "<b>Isotonic Crystalloid or Colloid</b>",
@@ -15371,6 +15516,10 @@
                     "loc": [
                         [
                             "acp",
+                            "first"
+                        ],
+                        [
+                            "frn",
                             "first"
                         ]
                     ],
@@ -15404,6 +15553,10 @@
                         [
                             "acp",
                             "after"
+                        ],
+                        [
+                            "frn",
+                            "after"
                         ]
                     ],
                     "drugKey": "dopamine",
@@ -15420,6 +15573,10 @@
                         [
                             "acp",
                             "after"
+                        ],
+                        [
+                            "frn",
+                            "after"
                         ]
                     ],
                     "drugKey": "norepinephrine",
@@ -15435,6 +15592,10 @@
                     "loc": [
                         [
                             "acp",
+                            "first"
+                        ],
+                        [
+                            "frn",
                             "first"
                         ]
                     ],
@@ -15462,7 +15623,7 @@
                     "drugKey": "dimenhydrinate",
                     "loc": [
                         [
-                            "pcp",
+                            "all",
                             "none"
                         ]
                     ],
@@ -15479,7 +15640,7 @@
                     "drugKey": "ondansetron",
                     "loc": [
                         [
-                            "pcp",
+                            "all",
                             "none"
                         ]
                     ],
@@ -15498,6 +15659,10 @@
                         [
                             "acp",
                             "after"
+                        ],
+                        [
+                            "frn",
+                            "after"
                         ]
                     ],
                     "title": "<b>Ondansetron (Zofran)</b>",
@@ -15515,6 +15680,10 @@
                     "loc": [
                         [
                             "acpl",
+                            "none"
+                        ],
+                        [
+                            "frn",
                             "none"
                         ]
                     ],
@@ -15542,6 +15711,10 @@
                         [
                             "acp",
                             "none"
+                        ],
+                        [
+                            "frn",
+                            "none"
                         ]
                     ],
                     "dose_route": [
@@ -15565,6 +15738,10 @@
                         [
                             "acp",
                             "none"
+                        ],
+                        [
+                            "frn",
+                            "none"
                         ]
                     ],
                     "dose_route": [
@@ -15586,7 +15763,7 @@
                 {
                     "loc": [
                         [
-                            "pcp",
+                            "all",
                             "none"
                         ]
                     ],
@@ -15600,6 +15777,10 @@
                     "loc": [
                         [
                             "acp",
+                            "none"
+                        ],
+                        [
+                            "frn",
                             "none"
                         ]
                     ],
@@ -15625,6 +15806,10 @@
                         [
                             "acp",
                             "none"
+                        ],
+                        [
+                            "frn",
+                            "none"
                         ]
                     ],
                     "dose_route": [
@@ -15641,6 +15826,10 @@
                     "loc": [
                         [
                             "acp",
+                            "none"
+                        ],
+                        [
+                            "frn",
                             "none"
                         ]
                     ],
@@ -15664,11 +15853,11 @@
             "contraindications": "<tab1>• Allergy or sensitivity to the medication</tab1>",
             "drug_cards": [
                 {
-                    "title": "<b>EPINEPHrine (Adrenalin) (1mg/ml (1:1000 Solution))</b>",
+                    "title": "<b><center>EPINEPHrine (Adrenalin) (1mg/ml (1:1000 Solution))</center></b>",
                     "drugKey": "epinephrine",
                     "loc": [
                         [
-                            "pcp",
+                            "all",
                             "after"
                         ]
                     ],
@@ -15725,36 +15914,40 @@
                     ]
                 },
                 {
-                    "title": "<b>Crystalloids</b>",
+                    "title": "<b><center>Crystalloids</center></b>",
                     "loc": [
                         [
                             "acpl",
                             "after"
-                        ]
-                    ],
-                    "dose_route": [
+                        ],
                         [
-                            "20 mL/kg IV/IO bolus if signs of hemodynamic instability\nMAX 1 Litre\nTarget SBP 70 + 2x age"
-                        ]
-                    ]
-                },
-                {
-                    "title": "<b>Salbutamol (Ventolin) Solution Via Nebulized Aerosol (2.5 mg/2.5 mL)</b>",
-                    "drugKey": "salbutamol",
-                    "loc": [
-                        [
-                            "pcp",
+                            "frn",
                             "after"
                         ]
                     ],
                     "dose_route": [
                         [
-                            "< 20 kg",
-                            "2.5 mg* (1.0 mL)\nRepeat q 30 minutes - 4 hours prn"
+                            "<center>20 mL/kg IV/IO bolus if signs of hemodynamic instability\nMAX 1 Litre\nTarget SBP 70 + 2x age</center>"
+                        ]
+                    ]
+                },
+                {
+                    "title": "<b><center>Salbutamol (Ventolin) Solution Via Nebulized Aerosol (2.5 mg/2.5 mL)</center></b>",
+                    "drugKey": "salbutamol",
+                    "loc": [
+                        [
+                            "all",
+                            "after"
+                        ]
+                    ],
+                    "dose_route": [
+                        [
+                            "<center><center 20 kg</center>",
+                            "<center>2.5 mg* (1.0 mL)\nRepeat q 30 minutes - 4 hours prn</center>"
                         ],
                         [
-                            "> 20 kg",
-                            "5 mg* (2.0 mL)\nRepeat q 30 minutes - 4 hours prn"
+                            "<center>> 20 kg</center>",
+                            "<center>5 mg* (2.0 mL)\nRepeat q 30 minutes - 4 hours prn</center>"
                         ]
                     ],
                     "notes": "* Dilute salbutamol dose to 3 mL in normal saline; dose limit of added saline: MAX 1 mL/dose\n* Never administer the IM preparation of EPINEPHrine (1 mg/ml) IV/IO route\n* *Never give IV EPINEPHrine bolus dose for initial anaphylaxis management\n\nEPINEPHrine Auto-injector Dose: 0.15 mg (EpiPen Junior) weight 5 to 20 kg\nEpinephrine Auto-injector Dose: 0.3 mg (EpiPen) weight 21- > 46 kg"
@@ -15764,7 +15957,7 @@
                     "drugKey": "salbutamol",
                     "loc": [
                         [
-                            "pcp",
+                            "all",
                             "none"
                         ]
                     ],
@@ -15779,7 +15972,7 @@
                     "drugKey": "diphenhydramine",
                     "loc": [
                         [
-                            "pcp",
+                            "all",
                             "after"
                         ]
                     ],
@@ -15822,7 +16015,7 @@
                     "drugKey": "glucagon",
                     "loc": [
                         [
-                            "pcp",
+                            "all",
                             "none"
                         ]
                     ],
@@ -15844,6 +16037,10 @@
                     "loc": [
                         [
                             "acpl",
+                            "after"
+                        ],
+                        [
+                            "frn",
                             "after"
                         ]
                     ],
@@ -15890,6 +16087,10 @@
                         [
                             "acp",
                             "first"
+                        ],
+                        [
+                            "frn",
+                            "first"
                         ]
                     ],
                     "dose_route": [
@@ -15920,6 +16121,10 @@
                     "loc": [
                         [
                             "acpl",
+                            "after"
+                        ],
+                        [
+                            "frn",
                             "after"
                         ]
                     ],
@@ -16006,6 +16211,10 @@
                         [
                             "acpl",
                             "after"
+                        ],
+                        [
+                            "frn",
+                            "after"
                         ]
                     ],
                     "dose_route": [
@@ -16028,6 +16237,10 @@
                     "loc": [
                         [
                             "acpl",
+                            "none"
+                        ],
+                        [
+                            "frn",
                             "none"
                         ]
                     ],
@@ -16054,6 +16267,10 @@
                     "loc": [
                         [
                             "acpl",
+                            "after"
+                        ],
+                        [
+                            "frn",
                             "after"
                         ]
                     ],
@@ -16094,6 +16311,10 @@
                         [
                             "acp",
                             "after"
+                        ],
+                        [
+                            "frn",
+                            "after"
                         ]
                     ],
                     "dose_route": [
@@ -16122,6 +16343,10 @@
                     "loc": [
                         [
                             "acp",
+                            "first"
+                        ],
+                        [
+                            "frn",
                             "first"
                         ]
                     ],
@@ -16230,6 +16455,10 @@
                         [
                             "acp",
                             "after"
+                        ],
+                        [
+                            "frn",
+                            "after"
                         ]
                     ],
                     "dose_route": [
@@ -16246,6 +16475,10 @@
                         [
                             "acp",
                             "after"
+                        ],
+                        [
+                            "frn",
+                            "after"
                         ]
                     ],
                     "dose_route": [
@@ -16261,7 +16494,11 @@
                     "loc": [
                         [
                             "acp",
-                            "after"
+                            "first"
+                        ],
+                        [
+                            "frn",
+                            "first"
                         ]
                     ],
                     "dose_route": [
@@ -16311,6 +16548,10 @@
                         [
                             "acp",
                             "after"
+                        ],
+                        [
+                            "frn",
+                            "after"
                         ]
                     ],
                     "dose_route": [
@@ -16327,6 +16568,10 @@
                         [
                             "acp",
                             "after"
+                        ],
+                        [
+                            "frn",
+                            "after"
                         ]
                     ],
                     "dose_route": [
@@ -16340,6 +16585,10 @@
                     "loc": [
                         [
                             "acp",
+                            "first"
+                        ],
+                        [
+                            "frn",
                             "first"
                         ]
                     ],
@@ -16356,6 +16605,10 @@
                         [
                             "acp",
                             "first"
+                        ],
+                        [
+                            "frn",
+                            "first"
                         ]
                     ],
                     "dose_route": [
@@ -16370,6 +16623,10 @@
                     "loc": [
                         [
                             "acp",
+                            "first"
+                        ],
+                        [
+                            "frn",
                             "first"
                         ]
                     ],
@@ -16395,7 +16652,7 @@
                     "loc": [
                         [
                             "pcp",
-                            "first"
+                            "after"
                         ]
                     ],
                     "dose_route": [
@@ -16411,7 +16668,11 @@
                     "loc": [
                         [
                             "acpl",
-                            "first"
+                            "after"
+                        ],
+                        [
+                            "frn",
+                            "after"
                         ]
                     ],
                     "dose_route": [
@@ -16437,6 +16698,10 @@
                     "loc": [
                         [
                             "acp",
+                            "after"
+                        ],
+                        [
+                            "frn",
                             "after"
                         ]
                     ],
@@ -19435,7 +19700,7 @@
             "content": [
                 [
                     [
-                        "Ornge: Clinical Practice version 2.2, last updated March 2024"
+                        "Ornge: Clinical Practice 2.3, last updated May 2024"
                     ]
                 ]
             ]

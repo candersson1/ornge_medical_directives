@@ -240,7 +240,6 @@
 		6E3336A92AD713F000EAEB76 /* Hamilton T1 MR850 Setup.html in Resources */ = {isa = PBXBuildFile; fileRef = 6E3336542AD713F000EAEB76 /* Hamilton T1 MR850 Setup.html */; };
 		6E3336AA2AD713F000EAEB76 /* Controlled Intubation Checklist.html in Resources */ = {isa = PBXBuildFile; fileRef = 6E3336552AD713F000EAEB76 /* Controlled Intubation Checklist.html */; };
 		6E3336AB2AD713F000EAEB76 /* Clinical Practice - Trauma.md in Resources */ = {isa = PBXBuildFile; fileRef = 6E3336562AD713F000EAEB76 /* Clinical Practice - Trauma.md */; };
-		6E3336AC2AD713F000EAEB76 /* preamble_signature.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6E3336572AD713F000EAEB76 /* preamble_signature.jpg */; };
 		6E3336AD2AD713F000EAEB76 /* adult_sedation_score.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E3336582AD713F000EAEB76 /* adult_sedation_score.png */; };
 		6E3336AE2AD713F000EAEB76 /* ped_cp_pain.html in Resources */ = {isa = PBXBuildFile; fileRef = 6E3336592AD713F000EAEB76 /* ped_cp_pain.html */; };
 		6E3336AF2AD713F000EAEB76 /* aerogen.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E33365A2AD713F000EAEB76 /* aerogen.png */; };
@@ -271,7 +270,7 @@
 		6E3AF6872A4B502F00DAA6AF /* Hamilton T1 & MR850 Disinfection.html in Resources */ = {isa = PBXBuildFile; fileRef = 6E3AF6862A4B502F00DAA6AF /* Hamilton T1 & MR850 Disinfection.html */; };
 		6E3AF6892A4B523E00DAA6AF /* Hamilton T1 - Circuit Guide.html in Resources */ = {isa = PBXBuildFile; fileRef = 6E3AF6882A4B523E00DAA6AF /* Hamilton T1 - Circuit Guide.html */; };
 		6E5BF9EE29CCC926003C39E1 /* ped_tx_of_hypoglycemia_in_the_well_newborn.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E5BF9ED29CCC926003C39E1 /* ped_tx_of_hypoglycemia_in_the_well_newborn.png */; };
-		6E5BF9F129CCFAF0003C39E1 /* preamble_signature.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6E5BF9F029CCFAF0003C39E1 /* preamble_signature.jpg */; };
+		6E6795D12BF3B64900D173F7 /* preamble_signature.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E6795D02BF3B64900D173F7 /* preamble_signature.png */; };
 		6EAD537C2A094F9900843EF2 /* Adult - Clinical Practice - Airway.html in Resources */ = {isa = PBXBuildFile; fileRef = 6EAD537B2A094F9800843EF2 /* Adult - Clinical Practice - Airway.html */; };
 		6EAD53802A09836400843EF2 /* adult-airway-algorithm.png in Resources */ = {isa = PBXBuildFile; fileRef = 6EAD537F2A09836400843EF2 /* adult-airway-algorithm.png */; };
 		6EAD53822A099EBB00843EF2 /* adult_trach_transport_flowchart.png in Resources */ = {isa = PBXBuildFile; fileRef = 6EAD53812A099EBB00843EF2 /* adult_trach_transport_flowchart.png */; };
@@ -520,7 +519,6 @@
 		6E3336542AD713F000EAEB76 /* Hamilton T1 MR850 Setup.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "Hamilton T1 MR850 Setup.html"; sourceTree = "<group>"; };
 		6E3336552AD713F000EAEB76 /* Controlled Intubation Checklist.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "Controlled Intubation Checklist.html"; sourceTree = "<group>"; };
 		6E3336562AD713F000EAEB76 /* Clinical Practice - Trauma.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "Clinical Practice - Trauma.md"; sourceTree = "<group>"; };
-		6E3336572AD713F000EAEB76 /* preamble_signature.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = preamble_signature.jpg; sourceTree = "<group>"; };
 		6E3336582AD713F000EAEB76 /* adult_sedation_score.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = adult_sedation_score.png; sourceTree = "<group>"; };
 		6E3336592AD713F000EAEB76 /* ped_cp_pain.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = ped_cp_pain.html; sourceTree = "<group>"; };
 		6E33365A2AD713F000EAEB76 /* aerogen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aerogen.png; sourceTree = "<group>"; };
@@ -552,7 +550,7 @@
 		6E3AF6862A4B502F00DAA6AF /* Hamilton T1 & MR850 Disinfection.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "Hamilton T1 & MR850 Disinfection.html"; sourceTree = "<group>"; };
 		6E3AF6882A4B523E00DAA6AF /* Hamilton T1 - Circuit Guide.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "Hamilton T1 - Circuit Guide.html"; sourceTree = "<group>"; };
 		6E5BF9ED29CCC926003C39E1 /* ped_tx_of_hypoglycemia_in_the_well_newborn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ped_tx_of_hypoglycemia_in_the_well_newborn.png; sourceTree = "<group>"; };
-		6E5BF9F029CCFAF0003C39E1 /* preamble_signature.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = preamble_signature.jpg; sourceTree = "<group>"; };
+		6E6795D02BF3B64900D173F7 /* preamble_signature.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = preamble_signature.png; path = ../../../../../Desktop/preamble_signature.png; sourceTree = "<group>"; };
 		6EAD537B2A094F9800843EF2 /* Adult - Clinical Practice - Airway.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "Adult - Clinical Practice - Airway.html"; sourceTree = "<group>"; };
 		6EAD537F2A09836400843EF2 /* adult-airway-algorithm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "adult-airway-algorithm.png"; path = "../../../../../Dropbox/0_NEW SYSTEM/Projects/Medical Directives App Update/Adult Directives/adult-airway-algorithm.png"; sourceTree = "<group>"; };
 		6EAD53812A099EBB00843EF2 /* adult_trach_transport_flowchart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = adult_trach_transport_flowchart.png; sourceTree = "<group>"; };
@@ -651,7 +649,6 @@
 				6E3336122AD6FF3900EAEB76 /* oxygen_duration_calculator.html */,
 				6E3336132AD713F000EAEB76 /* External DOCS */,
 				6EAD53832A0ABC6D00843EF2 /* adult_non_traumatic_arrest_flowchart.png */,
-				6E5BF9F029CCFAF0003C39E1 /* preamble_signature.jpg */,
 				6EAD537B2A094F9800843EF2 /* Adult - Clinical Practice - Airway.html */,
 				13F4A47F23A5CE0C004F6D38 /* ped_cp_pain.html */,
 				13F4A47D23A5CD30004F6D38 /* ped_flacc_score.png */,
@@ -1004,7 +1001,7 @@
 				6E3336542AD713F000EAEB76 /* Hamilton T1 MR850 Setup.html */,
 				6E3336552AD713F000EAEB76 /* Controlled Intubation Checklist.html */,
 				6E3336562AD713F000EAEB76 /* Clinical Practice - Trauma.md */,
-				6E3336572AD713F000EAEB76 /* preamble_signature.jpg */,
+				6E6795D02BF3B64900D173F7 /* preamble_signature.png */,
 				6E3336582AD713F000EAEB76 /* adult_sedation_score.png */,
 				6E3336592AD713F000EAEB76 /* ped_cp_pain.html */,
 				6E33365A2AD713F000EAEB76 /* aerogen.png */,
@@ -1127,7 +1124,6 @@
 				6E3336AB2AD713F000EAEB76 /* Clinical Practice - Trauma.md in Resources */,
 				135D4A9F23156673006C660C /* MenuData.json in Resources */,
 				13F4A47E23A5CD30004F6D38 /* ped_flacc_score.png in Resources */,
-				6E5BF9F129CCFAF0003C39E1 /* preamble_signature.jpg in Resources */,
 				6E3336862AD713F000EAEB76 /* Adult - Clinical Practice - Obstetrics.html in Resources */,
 				6E5BF9EE29CCC926003C39E1 /* ped_tx_of_hypoglycemia_in_the_well_newborn.png in Resources */,
 				138F07C224E44A9D00410D0D /* MinionPro-MediumItDisp.otf in Resources */,
@@ -1171,6 +1167,7 @@
 				6E3336952AD713F000EAEB76 /* Adult - Clinical Practice - Sedation Intubated.html in Resources */,
 				6E3336752AD713F000EAEB76 /* Clinical Practice - Sepsis.md in Resources */,
 				13E3C48B2392B815001C3F08 /* adult_airway_post_checklist.png in Resources */,
+				6E6795D12BF3B64900D173F7 /* preamble_signature.png in Resources */,
 				6E3336742AD713F000EAEB76 /* delivery_room_management_of_premature_neonates.png in Resources */,
 				6E33366F2AD713F000EAEB76 /* Hamilton T1 - Infant Nasal CPAP.html in Resources */,
 				138F07D424E44A9D00410D0D /* MinionPro-CnItCapt.otf in Resources */,
@@ -1254,7 +1251,6 @@
 				138F07E924E44A9D00410D0D /* MinionPro-CnItDisp.otf in Resources */,
 				6E3336852AD713F000EAEB76 /* Clinical Practice Guidelines - Mechanical Ventilation.md in Resources */,
 				6ECC145729CA55950039CA16 /* Delivery Room Management of Premature Neonates.html in Resources */,
-				6E3336AC2AD713F000EAEB76 /* preamble_signature.jpg in Resources */,
 				138F07E524E44A9D00410D0D /* MinionPro-BoldItSubh.otf in Resources */,
 				138F080624E44BDF00410D0D /* FrutigerLTStd-Roman.otf in Resources */,
 				138F07F824E44A9D00410D0D /* MinionPro-SemiboldItSubh.otf in Resources */,

@@ -27,6 +27,18 @@ The Adult TMP acts as a backup in the event that the Transport Medicine Paediatr
     <td>Refers to CCP</td>
   </tr>
   <tr>
+    <td bgcolor="#8e1d24ff"><b>F-RN<b></td>
+    <td>Refers to Flight Registered Nurse</td>
+  </tr>
+  <tr>
+    <td bgcolor="#EF4C00ff"><b>MH-RN<b></td>
+    <td>Refers to Mental Health Registered Nurse</td>
+  </tr>
+  <tr>
+    <td bgcolor="#ff96ddff"><b>All Clinicians<b></td>
+    <td>Refers to Mental Health Registered Nurse</td>
+  </tr>
+  <tr>
     <td style="color:#ff0000" bgcolor="#ff96dd"><b><strike>PCCP</strike></b></td>
     <td style="color:#ff0000"> <strike>Refers to PCCP and PCCN<strike></td>
   </tr>
