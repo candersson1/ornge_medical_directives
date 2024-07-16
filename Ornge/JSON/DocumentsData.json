@@ -1256,7 +1256,7 @@
             "key": "adult_lvr",
             "title": "Adult - Lung Volume Recruitment (LVR)",
             "type": "directive",
-            "clinical": "",
+            "clinical": "<b><center>Hamilton T1 Lung Volume Recruitment Maneuver (LRM)</center></b>\n<tab1>1. With ventilation in the current mode, open the Mode screen and select APRV then hit Confirm to open the controls screen.</tab1>\n<tab1>2. Set P high 30 cm H2O and T high to 30 seconds.</tab1>\n<tab1>3. P low will be the same as the current PEEP cm H2O, … add + 2 cmH2O which establishes post LRM PEEP in the original mode as well.</tab1>\n<tab1>4. Open 'Apnea' screen and turn off apnea back-up ventilation</tab1>\n<tab2> a. Note that if you need to perform a repeat LRM, the vent will remember APRV Pressure and Time settings, however the apnea back-up will revert to “ON”. Remember to turn this off each time.</tab2>\n<tab1>5. Hit “Confirm” to start the maneuver.</tab1>\n<tab1>6. As the vent switches to APRV, watch the Pressure/Time curve. The pressure should be at 30 cmH2O. If it is lower, hit the 'Manual breath' button to end the current APRV breath and force a new one at the P high level 30 cm H2O.</tab1>\n<tab1>7. As soon as you’ve confirmed that the LRM is working at 30 cmH2O, open the Mode screen, select the previous mode and hit Confirm.</tab1>\n<tab2> a. All the control settings will be retained and the PEEP will now reflect the PEEP you set in the APRV mode.</tab2>\n<tab2> b. Hit Confirm again. <u><b>Don’t delay this step.</b></u> This will allow:</tab2>\n<tab3> i. you to abort the LRM if indicated by simply activating a manual breath</tab3>\n<tab3> ii. the vent to automatically switch back to the desired mode at the APRV 30 second mark</tab3>\n<tab1>8. The vent will stay in APRV at the P high level until the next breath cycle (i.e. 30 seconds). With the next breath the vent will resume ventilation in the previous mode.</tab1>",
             "flowchartkeys": [
                 [
                     "Lung Volume Recruitment Flowchart",
@@ -19700,7 +19700,7 @@
             "content": [
                 [
                     [
-                        "Ornge: Clinical Practice 2.3, last updated May 2024"
+                        "Ornge: Clinical Practice 2.3.1, last updated July 2024"
                     ]
                 ]
             ]
