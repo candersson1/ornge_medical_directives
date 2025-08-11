@@ -3,41 +3,41 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0720859DB541FD0063A1BF0B69D94762 /* FontConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091A3DD88E11724920EF4F63A2BD3C7E /* FontConvertible.swift */; };
-		13B3971F3B9206A9135F38F5F292253C /* URLRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F459B12B4CC9DB23A5FEE3C0D7C4272D /* URLRepresentable.swift */; };
-		19C588251F494B2C7879C852C83FF105 /* StyleProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C90A35BA1073917E22A8DD642BA082D /* StyleProtocol.swift */; };
-		26645A3149DB8C364195331BB6C286E1 /* FontInfoAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D494E7DA4BD70774F6F834909AF818C /* FontInfoAttribute.swift */; };
-		271BBE0E0847A7187897E4267B7B462C /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6153843928FC45505B580BADD2ACFA01 /* String+Ext.swift */; };
-		2D28030536845D5F851B8F04EEACA4FD /* FontData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E49F346731A65B5E59FA1581521B875 /* FontData.swift */; };
-		338805313EC1AEB273BA9A95709D8088 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		3C2DDF86B17A80AF7B961C2E2410F5B5 /* SwiftRichString-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A727E9DB645D8A93E4519A9F43E0612 /* SwiftRichString-dummy.m */; };
-		3C7C01C496A4FF72C26C7B2905026533 /* Compatibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9E9662B843A705C79BE99DFBD35B72 /* Compatibility.swift */; };
-		406752A1CC850748BBC15DC12E0BE213 /* SwiftRichString-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BF01CE865E4D38EDEB65258254DB5E2 /* SwiftRichString-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4A1A9D855819C34217117E1ABB56FC71 /* String+Subscript.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41641796B5EFB49B24126769E29F0A9 /* String+Subscript.swift */; };
-		582D60718A37097DE45327994421F39E /* ColorConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C851B6CEF2CB05C688BC13115A420D /* ColorConvertible.swift */; };
-		6525AFA6F3C7E28383EDE3F7CFA66896 /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A56A18D5A98349B68DB06013879C98 /* Style.swift */; };
-		71CF49B162CCF8AA10310409D245F2AE /* SystemFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7853E931B499B4D226D5701CF72D11AF /* SystemFonts.swift */; };
-		9A300E950C2495FE9848BA98CCA4C0C5 /* AttributedString+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B9730901EF7270BD6C9E6B0B414D53 /* AttributedString+Ext.swift */; };
-		A28E846C63B6D694CDCABC2C06583F64 /* AssociatedValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04CE918CBBB5595710F235208024F2E /* AssociatedValues.swift */; };
-		A38919ABC9246F40ACD0DB5A1A0EEE30 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B2FEDEC341C9D0D6B147B5F2196D186 /* Extensions.swift */; };
-		A8FF2702436E2302AFB947A3B49E1C87 /* Pods-Ornge-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1832FB020A410B0424328F4EECA3E959 /* Pods-Ornge-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B5D804FF8014C78309C9594C4572FF88 /* CommonsAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16AED209418EA41619BAB994077B6D35 /* CommonsAttributes.swift */; };
-		B8FF287D201E840156163FF6A95575E5 /* OrderedDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7442AC6E8196B38429633588DBC9E755 /* OrderedDictionary.swift */; };
-		BDBEAF71D4238FD2FFCEC60644553A5C /* UIKit+Extras.swift in Sources */ = {isa = PBXBuildFile; fileRef = 705F932BC8F2C17CF424F6BCB7061DDE /* UIKit+Extras.swift */; };
-		C2B4C045BF7525D62677FA702F137BEC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		CA7C3B15E721C43C3B1EF01E2160CE9A /* StyleGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 152FB817CB7209323378F4B1E39D5FAA /* StyleGroup.swift */; };
-		D2ED08549F7756BEEB13243A2EC5C21E /* DynamicText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7701759489612BF09B481C16FC1EF6 /* DynamicText.swift */; };
-		D450C6CDF8AEF965CB3F0B8F41F34AD8 /* Pods-Ornge-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B45E955793EB7030155763ACD994ECC /* Pods-Ornge-dummy.m */; };
-		D82811C220349636B2F323719D67B441 /* StyleRegEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147C6D3F6D0BB63E51BEBA64E56FB2F2 /* StyleRegEx.swift */; };
-		E91D8648D2AF562A0D72AF7A6D760CC8 /* StylesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B4F44FEFC85E8E59BBC6FFDAA36569 /* StylesManager.swift */; };
+		064346BA5ECF17ADFD58C77D0FDF0C19 /* StyleGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 152FB817CB7209323378F4B1E39D5FAA /* StyleGroup.swift */; };
+		082559EE069F7440C938A853A2ABACB4 /* DynamicText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7701759489612BF09B481C16FC1EF6 /* DynamicText.swift */; };
+		0B1CD77A63BFE6307AD3F4D1D7A6B097 /* FontConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091A3DD88E11724920EF4F63A2BD3C7E /* FontConvertible.swift */; };
+		180009445C925A8040ED5831BB554225 /* FontData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E49F346731A65B5E59FA1581521B875 /* FontData.swift */; };
+		1CE6B4EA2A31277BF9506FF57DFD0F03 /* AssociatedValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04CE918CBBB5595710F235208024F2E /* AssociatedValues.swift */; };
+		26E1FC00B53493054F4A3DA45475D0CC /* SwiftRichString-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A727E9DB645D8A93E4519A9F43E0612 /* SwiftRichString-dummy.m */; };
+		2AA87FDF33550427DBDE4D188C36C931 /* URLRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F459B12B4CC9DB23A5FEE3C0D7C4272D /* URLRepresentable.swift */; };
+		2CDE0565758318F91FDC710920300BD1 /* FontInfoAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D494E7DA4BD70774F6F834909AF818C /* FontInfoAttribute.swift */; };
+		32E3E7654D1FFF0BB42E0A3F9F3750D0 /* ColorConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C851B6CEF2CB05C688BC13115A420D /* ColorConvertible.swift */; };
+		32EBADD2A2B79576F256B1562E6B9C78 /* StylesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B4F44FEFC85E8E59BBC6FFDAA36569 /* StylesManager.swift */; };
+		5143A6E40AAF323EB45CE20E078DF10D /* Compatibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9E9662B843A705C79BE99DFBD35B72 /* Compatibility.swift */; };
+		55F6818CBD878FC732D0982B88B0BA42 /* AttributedString+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B9730901EF7270BD6C9E6B0B414D53 /* AttributedString+Ext.swift */; };
+		594DA1E1CFE996695AADD1DF7DA5F257 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
+		5BD5FA5E9203764D3C9DD5B2CF7BCA01 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
+		62EFC13AABE2F751CF69FAB2A03262F6 /* OrderedDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7442AC6E8196B38429633588DBC9E755 /* OrderedDictionary.swift */; };
+		6ADD2D0F4F646C49A41ED7A8E125F683 /* SystemFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7853E931B499B4D226D5701CF72D11AF /* SystemFonts.swift */; };
+		756A0EEF62B4DC10647EFA9C9799E81F /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B2FEDEC341C9D0D6B147B5F2196D186 /* Extensions.swift */; };
+		A5CB5450FE2A87D81CD0FCD38E0BCE07 /* UIKit+Extras.swift in Sources */ = {isa = PBXBuildFile; fileRef = 705F932BC8F2C17CF424F6BCB7061DDE /* UIKit+Extras.swift */; };
+		A9E0D09AF5001EE9D6DF6F2B41003BB1 /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A56A18D5A98349B68DB06013879C98 /* Style.swift */; };
+		AB8AB8B8C5DB09D3FC982C99E94B03FD /* SwiftRichString-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BF01CE865E4D38EDEB65258254DB5E2 /* SwiftRichString-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B4E571235BF81FC5466EA2A9F8399484 /* String+Subscript.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41641796B5EFB49B24126769E29F0A9 /* String+Subscript.swift */; };
+		B67EC8DE61ACF33721F87B30FF88C68C /* Pods-Ornge-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B45E955793EB7030155763ACD994ECC /* Pods-Ornge-dummy.m */; };
+		DE34034DFFABD3BE1B85AB22648216D8 /* CommonsAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16AED209418EA41619BAB994077B6D35 /* CommonsAttributes.swift */; };
+		F295C5624B80E5A7F6E8853A17F28A3F /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6153843928FC45505B580BADD2ACFA01 /* String+Ext.swift */; };
+		F8A1A4536F9C805CA5367BE27A1B4994 /* Pods-Ornge-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1832FB020A410B0424328F4EECA3E959 /* Pods-Ornge-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FA00948A6BEC2BE9662EBA82062499F0 /* StyleRegEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147C6D3F6D0BB63E51BEBA64E56FB2F2 /* StyleRegEx.swift */; };
+		FE0219B14D529F06780AFA5E64663DF4 /* StyleProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C90A35BA1073917E22A8DD642BA082D /* StyleProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		50A8085B618E04F80FF8279893C34CBC /* PBXContainerItemProxy */ = {
+		32701308CD6EA02D4D0F01BCCBB562E4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -60,7 +60,7 @@
 		241384295A70748B23F862FAD4320229 /* Pods-Ornge-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Ornge-acknowledgements.markdown"; sourceTree = "<group>"; };
 		28B4F44FEFC85E8E59BBC6FFDAA36569 /* StylesManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StylesManager.swift; path = Sources/SwiftRichString/Style/StylesManager.swift; sourceTree = "<group>"; };
 		2BA37D34ED2320DB1E34FCF10F828417 /* Pods-Ornge.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Ornge.modulemap"; sourceTree = "<group>"; };
-		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		4E49F346731A65B5E59FA1581521B875 /* FontData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FontData.swift; path = Sources/SwiftRichString/Attributes/FontData.swift; sourceTree = "<group>"; };
 		50D339F92C9D4688478C7E32AD99CD74 /* Pods_Ornge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ornge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A727E9DB645D8A93E4519A9F43E0612 /* SwiftRichString-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftRichString-dummy.m"; sourceTree = "<group>"; };
@@ -91,19 +91,19 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		8DAD365EF92761166C9BB549AB7EC233 /* Frameworks */ = {
+		859767380C39813848B43064A0FD34BC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				338805313EC1AEB273BA9A95709D8088 /* Foundation.framework in Frameworks */,
+				594DA1E1CFE996695AADD1DF7DA5F257 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		947214B1604302917FC09B984C43F7AB /* Frameworks */ = {
+		EC6217C2A446788EBDB8ED20158595E7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C2B4C045BF7525D62677FA702F137BEC /* Foundation.framework in Frameworks */,
+				5BD5FA5E9203764D3C9DD5B2CF7BCA01 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -172,15 +172,6 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		773BFC8639BD2E830E051D9784518151 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				50D339F92C9D4688478C7E32AD99CD74 /* Pods_Ornge.framework */,
-				1DAD29E60FB0961C151CF7A715E19DB7 /* SwiftRichString.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		79DEB97DA4839FBFD1D79DF745D07286 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -196,21 +187,13 @@
 			path = "../Target Support Files/SwiftRichString";
 			sourceTree = "<group>";
 		};
-		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
 				52E44E618704E1CAF2D6C394CD10BE69 /* Pods */,
-				773BFC8639BD2E830E051D9784518151 /* Products */,
+				ED399395089CD0C6B1E669AD74D6DD9C /* Products */,
 				6F02B329BA8EECCA38204C2C97559E32 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -218,27 +201,44 @@
 		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+				E4801F62A6B08CD9B5410329F1A18FDE /* iOS */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E4801F62A6B08CD9B5410329F1A18FDE /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		ED399395089CD0C6B1E669AD74D6DD9C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				50D339F92C9D4688478C7E32AD99CD74 /* Pods_Ornge.framework */,
+				1DAD29E60FB0961C151CF7A715E19DB7 /* SwiftRichString.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		004669619B91DCCB46C4B46DC9638C5C /* Headers */ = {
+		2C4C80DD19E32154058A4F3C3C9F2F54 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A8FF2702436E2302AFB947A3B49E1C87 /* Pods-Ornge-umbrella.h in Headers */,
+				F8A1A4536F9C805CA5367BE27A1B4994 /* Pods-Ornge-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CFE8796E3B329730E99B0E9E9E45027F /* Headers */ = {
+		7101B0E70A55275E9B3227BF5DEB0F58 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				406752A1CC850748BBC15DC12E0BE213 /* SwiftRichString-umbrella.h in Headers */,
+				AB8AB8B8C5DB09D3FC982C99E94B03FD /* SwiftRichString-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,31 +247,31 @@
 /* Begin PBXNativeTarget section */
 		2D4C87FE1F1EED6834DCA9CD62A44B05 /* Pods-Ornge */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C5C1020A6D0EA5F9658BDFA57174871B /* Build configuration list for PBXNativeTarget "Pods-Ornge" */;
+			buildConfigurationList = 6893B90FF6E9FE5E24BD9299A8065417 /* Build configuration list for PBXNativeTarget "Pods-Ornge" */;
 			buildPhases = (
-				004669619B91DCCB46C4B46DC9638C5C /* Headers */,
-				68AA255175DFBFE022E343F07EAC77C5 /* Sources */,
-				8DAD365EF92761166C9BB549AB7EC233 /* Frameworks */,
-				EE9329AD1A0ED14C3587D8302C25F5EF /* Resources */,
+				2C4C80DD19E32154058A4F3C3C9F2F54 /* Headers */,
+				8712A26A569E322ACDC5C21D3BFE00B0 /* Sources */,
+				859767380C39813848B43064A0FD34BC /* Frameworks */,
+				9C59031A4D5889A997CC65B2CE8B966D /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				BCF62D193F8A69ABD5F7FE2FC8D688EC /* PBXTargetDependency */,
+				3BE0019EE64D190EA9D5ABA339ADCAC0 /* PBXTargetDependency */,
 			);
 			name = "Pods-Ornge";
-			productName = "Pods-Ornge";
+			productName = Pods_Ornge;
 			productReference = 50D339F92C9D4688478C7E32AD99CD74 /* Pods_Ornge.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		66CA0BE090A4CCA7C634B80EF1FB1126 /* SwiftRichString */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 459FFA2C492415A1EF573D63C054B0D0 /* Build configuration list for PBXNativeTarget "SwiftRichString" */;
+			buildConfigurationList = FBB8D14E3746A44A77BF9D39A405CDFC /* Build configuration list for PBXNativeTarget "SwiftRichString" */;
 			buildPhases = (
-				CFE8796E3B329730E99B0E9E9E45027F /* Headers */,
-				17C167C6ED6A44B44F9C3FEE706D20F6 /* Sources */,
-				947214B1604302917FC09B984C43F7AB /* Frameworks */,
-				E86015AD5DBB582009A149BA48175E91 /* Resources */,
+				7101B0E70A55275E9B3227BF5DEB0F58 /* Headers */,
+				526D9E5B4D5DA53FA37D4D74DE973D32 /* Sources */,
+				EC6217C2A446788EBDB8ED20158595E7 /* Frameworks */,
+				BBC7EEA599AF6B2A53C9F48AA476BA01 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -288,19 +288,19 @@
 		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1100;
-				LastUpgradeCheck = 1250;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
-			compatibilityVersion = "Xcode 10.0";
+			compatibilityVersion = "Xcode 12.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
 				Base,
+				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 773BFC8639BD2E830E051D9784518151 /* Products */;
+			productRefGroup = ED399395089CD0C6B1E669AD74D6DD9C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -311,14 +311,14 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		E86015AD5DBB582009A149BA48175E91 /* Resources */ = {
+		9C59031A4D5889A997CC65B2CE8B966D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EE9329AD1A0ED14C3587D8302C25F5EF /* Resources */ = {
+		BBC7EEA599AF6B2A53C9F48AA476BA01 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -328,106 +328,71 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		17C167C6ED6A44B44F9C3FEE706D20F6 /* Sources */ = {
+		526D9E5B4D5DA53FA37D4D74DE973D32 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A28E846C63B6D694CDCABC2C06583F64 /* AssociatedValues.swift in Sources */,
-				9A300E950C2495FE9848BA98CCA4C0C5 /* AttributedString+Ext.swift in Sources */,
-				582D60718A37097DE45327994421F39E /* ColorConvertible.swift in Sources */,
-				B5D804FF8014C78309C9594C4572FF88 /* CommonsAttributes.swift in Sources */,
-				3C7C01C496A4FF72C26C7B2905026533 /* Compatibility.swift in Sources */,
-				D2ED08549F7756BEEB13243A2EC5C21E /* DynamicText.swift in Sources */,
-				A38919ABC9246F40ACD0DB5A1A0EEE30 /* Extensions.swift in Sources */,
-				0720859DB541FD0063A1BF0B69D94762 /* FontConvertible.swift in Sources */,
-				2D28030536845D5F851B8F04EEACA4FD /* FontData.swift in Sources */,
-				26645A3149DB8C364195331BB6C286E1 /* FontInfoAttribute.swift in Sources */,
-				B8FF287D201E840156163FF6A95575E5 /* OrderedDictionary.swift in Sources */,
-				271BBE0E0847A7187897E4267B7B462C /* String+Ext.swift in Sources */,
-				4A1A9D855819C34217117E1ABB56FC71 /* String+Subscript.swift in Sources */,
-				6525AFA6F3C7E28383EDE3F7CFA66896 /* Style.swift in Sources */,
-				CA7C3B15E721C43C3B1EF01E2160CE9A /* StyleGroup.swift in Sources */,
-				19C588251F494B2C7879C852C83FF105 /* StyleProtocol.swift in Sources */,
-				D82811C220349636B2F323719D67B441 /* StyleRegEx.swift in Sources */,
-				E91D8648D2AF562A0D72AF7A6D760CC8 /* StylesManager.swift in Sources */,
-				3C2DDF86B17A80AF7B961C2E2410F5B5 /* SwiftRichString-dummy.m in Sources */,
-				71CF49B162CCF8AA10310409D245F2AE /* SystemFonts.swift in Sources */,
-				BDBEAF71D4238FD2FFCEC60644553A5C /* UIKit+Extras.swift in Sources */,
-				13B3971F3B9206A9135F38F5F292253C /* URLRepresentable.swift in Sources */,
+				1CE6B4EA2A31277BF9506FF57DFD0F03 /* AssociatedValues.swift in Sources */,
+				55F6818CBD878FC732D0982B88B0BA42 /* AttributedString+Ext.swift in Sources */,
+				32E3E7654D1FFF0BB42E0A3F9F3750D0 /* ColorConvertible.swift in Sources */,
+				DE34034DFFABD3BE1B85AB22648216D8 /* CommonsAttributes.swift in Sources */,
+				5143A6E40AAF323EB45CE20E078DF10D /* Compatibility.swift in Sources */,
+				082559EE069F7440C938A853A2ABACB4 /* DynamicText.swift in Sources */,
+				756A0EEF62B4DC10647EFA9C9799E81F /* Extensions.swift in Sources */,
+				0B1CD77A63BFE6307AD3F4D1D7A6B097 /* FontConvertible.swift in Sources */,
+				180009445C925A8040ED5831BB554225 /* FontData.swift in Sources */,
+				2CDE0565758318F91FDC710920300BD1 /* FontInfoAttribute.swift in Sources */,
+				62EFC13AABE2F751CF69FAB2A03262F6 /* OrderedDictionary.swift in Sources */,
+				F295C5624B80E5A7F6E8853A17F28A3F /* String+Ext.swift in Sources */,
+				B4E571235BF81FC5466EA2A9F8399484 /* String+Subscript.swift in Sources */,
+				A9E0D09AF5001EE9D6DF6F2B41003BB1 /* Style.swift in Sources */,
+				064346BA5ECF17ADFD58C77D0FDF0C19 /* StyleGroup.swift in Sources */,
+				FE0219B14D529F06780AFA5E64663DF4 /* StyleProtocol.swift in Sources */,
+				FA00948A6BEC2BE9662EBA82062499F0 /* StyleRegEx.swift in Sources */,
+				32EBADD2A2B79576F256B1562E6B9C78 /* StylesManager.swift in Sources */,
+				26E1FC00B53493054F4A3DA45475D0CC /* SwiftRichString-dummy.m in Sources */,
+				6ADD2D0F4F646C49A41ED7A8E125F683 /* SystemFonts.swift in Sources */,
+				A5CB5450FE2A87D81CD0FCD38E0BCE07 /* UIKit+Extras.swift in Sources */,
+				2AA87FDF33550427DBDE4D188C36C931 /* URLRepresentable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		68AA255175DFBFE022E343F07EAC77C5 /* Sources */ = {
+		8712A26A569E322ACDC5C21D3BFE00B0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D450C6CDF8AEF965CB3F0B8F41F34AD8 /* Pods-Ornge-dummy.m in Sources */,
+				B67EC8DE61ACF33721F87B30FF88C68C /* Pods-Ornge-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		BCF62D193F8A69ABD5F7FE2FC8D688EC /* PBXTargetDependency */ = {
+		3BE0019EE64D190EA9D5ABA339ADCAC0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SwiftRichString;
 			target = 66CA0BE090A4CCA7C634B80EF1FB1126 /* SwiftRichString */;
-			targetProxy = 50A8085B618E04F80FF8279893C34CBC /* PBXContainerItemProxy */;
+			targetProxy = 32701308CD6EA02D4D0F01BCCBB562E4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		44A03BCC80614D24F2387637435494AA /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A6E9D05E8C43265372B7C44707DDF154 /* SwiftRichString.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SwiftRichString/SwiftRichString-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SwiftRichString/SwiftRichString-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/SwiftRichString/SwiftRichString.modulemap";
-				PRODUCT_MODULE_NAME = SwiftRichString;
-				PRODUCT_NAME = SwiftRichString;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.1;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		4DFD70574157BAC5D6E031F0D0F83620 /* Debug */ = {
+		1BF0EAA10BFC0D6CB79B977A723E15BB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 722BEF7CE08E5E13D2B5E0E7EF9D96E0 /* Pods-Ornge.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = BRNXR4V584;
+				"DEVELOPMENT_TEAM[sdk=macosx*]" = BRNXR4V584;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				INFOPLIST_FILE = "Target Support Files/Pods-Ornge/Pods-Ornge-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
@@ -451,10 +416,111 @@
 			};
 			name = Debug;
 		};
-		6410F571BA8C1AEC6A19403F1B61B0B5 /* Debug */ = {
+		5D93F53E6A4C220C9C0BA71A5B11DB65 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9DBB08AAFE002D92B08A95AD2A93D0EF /* SwiftRichString.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftRichString/SwiftRichString-prefix.pch";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Target Support Files/SwiftRichString/SwiftRichString-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SwiftRichString/SwiftRichString.modulemap";
+				PRODUCT_MODULE_NAME = SwiftRichString;
+				PRODUCT_NAME = SwiftRichString;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_VERSION = 5.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6C98B09FF5CCB107837D1A84E8F3A4F1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		8E6A8FF58D100B7F9B1943F455C00F02 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -516,56 +582,22 @@
 			};
 			name = Debug;
 		};
-		6899EA343B8707F8BD70873D68A29861 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9DBB08AAFE002D92B08A95AD2A93D0EF /* SwiftRichString.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SwiftRichString/SwiftRichString-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SwiftRichString/SwiftRichString-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/SwiftRichString/SwiftRichString.modulemap";
-				PRODUCT_MODULE_NAME = SwiftRichString;
-				PRODUCT_NAME = SwiftRichString;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.1;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		9F372DA6AC6F5CB194F381005C53068B /* Release */ = {
+		CB32122AD7FF7E6494C873ECA978BA18 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 62AC559F1024736BA902275C558D5945 /* Pods-Ornge.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = BRNXR4V584;
+				"DEVELOPMENT_TEAM[sdk=macosx*]" = BRNXR4V584;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				INFOPLIST_FILE = "Target Support Files/Pods-Ornge/Pods-Ornge-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
@@ -590,93 +622,71 @@
 			};
 			name = Release;
 		};
-		A27713CB74E99AF202AADC23200A32F4 /* Release */ = {
+		F3574BFC6E0F1D605DEAD087E074F99A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A6E9D05E8C43265372B7C44707DDF154 /* SwiftRichString.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftRichString/SwiftRichString-prefix.pch";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Target Support Files/SwiftRichString/SwiftRichString-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 5.0;
-				SYMROOT = "${SRCROOT}/../build";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SwiftRichString/SwiftRichString.modulemap";
+				PRODUCT_MODULE_NAME = SwiftRichString;
+				PRODUCT_NAME = SwiftRichString;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_VERSION = 5.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		459FFA2C492415A1EF573D63C054B0D0 /* Build configuration list for PBXNativeTarget "SwiftRichString" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				6899EA343B8707F8BD70873D68A29861 /* Debug */,
-				44A03BCC80614D24F2387637435494AA /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6410F571BA8C1AEC6A19403F1B61B0B5 /* Debug */,
-				A27713CB74E99AF202AADC23200A32F4 /* Release */,
+				8E6A8FF58D100B7F9B1943F455C00F02 /* Debug */,
+				6C98B09FF5CCB107837D1A84E8F3A4F1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C5C1020A6D0EA5F9658BDFA57174871B /* Build configuration list for PBXNativeTarget "Pods-Ornge" */ = {
+		6893B90FF6E9FE5E24BD9299A8065417 /* Build configuration list for PBXNativeTarget "Pods-Ornge" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4DFD70574157BAC5D6E031F0D0F83620 /* Debug */,
-				9F372DA6AC6F5CB194F381005C53068B /* Release */,
+				1BF0EAA10BFC0D6CB79B977A723E15BB /* Debug */,
+				CB32122AD7FF7E6494C873ECA978BA18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBB8D14E3746A44A77BF9D39A405CDFC /* Build configuration list for PBXNativeTarget "SwiftRichString" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D93F53E6A4C220C9C0BA71A5B11DB65 /* Debug */,
+				F3574BFC6E0F1D605DEAD087E074F99A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -1,0 +1,4639 @@
+<html
+  xmlns:o="urn:schemas-microsoft-com:office:office"
+  xmlns:w="urn:schemas-microsoft-com:office:word"
+  xmlns:dt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"
+  xmlns:m="http://schemas.microsoft.com/office/2004/12/omml"
+  xmlns="http://www.w3.org/TR/REC-html40"
+>
+  <head>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <style>
+      :root {
+        --bg: #ffffff;
+        --fg: #0b0b0b;
+        --muted: #586069;
+        --border: #e6e6e6;
+        --card: #ffffff;
+        --accent: #0a84ff;
+      }
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        background: var(--bg);
+        color: var(--fg);
+        -webkit-text-size-adjust: 100%;
+      }
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text",
+          "Helvetica Neue", Arial, sans-serif;
+        line-height: 1.55;
+        font-size: 17px;
+      }
+
+      /* Container wrapper (added at runtime if not present) */
+      .container {
+        max-width: 860px;
+        margin: 0 auto;
+        padding: 20px 16px 40px;
+      }
+
+      /* Typography tidy-up for Word exports */
+      h1,
+      h2,
+      h3,
+      h4 {
+        line-height: 1.25;
+        margin: 1.1em 0 0.5em;
+        font-weight: 700;
+      }
+      h1 {
+        font-size: 24px;
+        margin-top: 0.6rem;
+      }
+      h2 {
+        font-size: 20px;
+      }
+      h3 {
+        font-size: 18px;
+      }
+      p {
+        margin: 0.7em 0;
+      }
+      ul,
+      ol {
+        padding-left: 1.25em;
+        margin: 0.6em 0;
+      }
+      li {
+        margin: 0.35em 0;
+      }
+      a {
+        color: var(--accent);
+        text-decoration: underline;
+        text-underline-offset: 2px;
+      }
+      a:active {
+        opacity: 0.85;
+      }
+      img,
+      svg {
+        max-width: 100%;
+        height: auto;
+      }
+      hr {
+        border: 0;
+        height: 1px;
+        background: var(--border);
+        margin: 1.25rem 0;
+      }
+      .note {
+        color: var(--muted);
+      }
+      .lead {
+        font-size: 18px;
+        color: #1f2937;
+      }
+
+      /* Make wide tables readable on phones: stack rows as cards */
+      table {
+        width: 100% !important;
+        border-collapse: collapse;
+        border-spacing: 0;
+      }
+      table td,
+      table th {
+        vertical-align: top;
+      }
+
+      /* Mobile card layout */
+      @media (max-width: 740px) {
+        table.card-table {
+          border-collapse: separate;
+          border-spacing: 0 12px;
+        }
+        table.card-table thead,
+        table.card-table tr.header {
+          display: none !important;
+        }
+        table.card-table tr {
+          display: block;
+          background: var(--card);
+          border: 1px solid var(--border);
+          border-radius: 12px;
+          padding: 12px 14px;
+          box-shadow: 0 1px 2px rgba(0, 0, 0, 0.06);
+        }
+        table.card-table td,
+        table.card-table th {
+          display: block;
+          padding: 6px 0;
+        }
+        table.card-table td + td {
+          border-top: 1px solid var(--border);
+        }
+        table.card-table td::before {
+          content: attr(data-label);
+          display: block;
+          font-size: 12px;
+          color: var(--muted);
+          margin-bottom: 2px;
+        }
+      }
+
+      /* Desktop/tablet keep tabular look */
+      @media (min-width: 741px) {
+        table.card-table {
+          border: 1px solid var(--border);
+          border-radius: 10px;
+          overflow: hidden;
+        }
+        table.card-table th {
+          text-align: left;
+          background: #fafafa;
+          font-weight: 600;
+          border-bottom: 1px solid var(--border);
+          padding: 10px 12px;
+        }
+        table.card-table td {
+          padding: 10px 12px;
+          border-bottom: 1px solid var(--border);
+        }
+        table.card-table tr:last-child td {
+          border-bottom: 0;
+        }
+      }
+
+      /* Section title background for readability */
+      h2 {
+        background: #f8fafc;
+        border-radius: 12px;
+        padding: 10px 12px;
+      }
+
+      /* Dark mode support */
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #0b0b0b;
+          --fg: #f5f5f5;
+          --muted: #9ca3af;
+          --border: #2a2a2a;
+          --card: #141414;
+        }
+        a {
+          color: #79b5ff;
+        }
+        .meta {
+          color: #e5e7eb;
+          background: #1f2937;
+        }
+        h2 {
+          background: #111418;
+        }
+        .card {
+          box-shadow: none;
+        }
+      }
+
+      /* Generic card utility for highlighted blocks */
+      .cards {
+        margin-top: 8px;
+      }
+      .card {
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: 14px;
+        padding: 14px 16px;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+        margin: 12px 0;
+      }
+      .card-title {
+        font-weight: 600;
+        margin: 0 0 6px;
+        line-height: 1.3;
+        font-size: 18px;
+      }
+      .card-body {
+        margin-top: 6px;
+      }
+      .meta {
+        display: inline-block;
+        background: #e8f1ff;
+        color: #0f172a;
+        padding: 2px 8px;
+        border-radius: 999px;
+        font-size: 12px;
+        letter-spacing: 0.2px;
+        margin-top: 2px;
+      }
+
+      /* Reduce Word’s default oversized margins */
+      body > div,
+      body > p,
+      body > table {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+      }
+    </style>
+    <script>
+      (function () {
+        function wrapBodyInContainer() {
+          if (!document.body) return;
+          if (
+            document.body.firstElementChild &&
+            document.body.firstElementChild.classList &&
+            document.body.firstElementChild.classList.contains("container")
+          )
+            return;
+          var container = document.createElement("div");
+          container.className = "container";
+          while (document.body.firstChild) {
+            container.appendChild(document.body.firstChild);
+          }
+          document.body.appendChild(container);
+        }
+
+        function enhanceTables() {
+          var tables = Array.prototype.slice.call(
+            document.querySelectorAll("table")
+          );
+          tables.forEach(function (table) {
+            table.classList.add("card-table");
+
+            // Try to extract headers from the first row (thead > tr or first tbody tr)
+            var headerCells = [];
+            var thead = table.querySelector("thead");
+            if (thead && thead.querySelector("tr")) {
+              headerCells = Array.from(thead.querySelectorAll("th, td")).map(
+                function (c) {
+                  return (c.textContent || "").trim();
+                }
+              );
+              if (thead.querySelector("tr"))
+                thead.querySelector("tr").classList.add("header");
+            } else if (table.rows && table.rows.length) {
+              var firstRow = table.rows[0];
+              headerCells = Array.from(firstRow.cells || []).map(function (c) {
+                return (c.textContent || "").trim();
+              });
+              // Mark the first row as header and skip labeling it as data
+              if (firstRow) firstRow.classList.add("header");
+            }
+
+            // Label each cell with its header for stacked layout
+            for (var r = 0; r < table.rows.length; r++) {
+              var row = table.rows[r];
+              if (row.classList.contains("header")) continue;
+              for (var c = 0; c < row.cells.length; c++) {
+                var cell = row.cells[c];
+                var label = headerCells[c] || "";
+                if (label && !cell.getAttribute("data-label")) {
+                  cell.setAttribute("data-label", label);
+                }
+              }
+            }
+          });
+        }
+
+        function transformBebaTables() {
+          var tables = Array.prototype.slice.call(
+            document.querySelectorAll("table")
+          );
+          tables.forEach(function (table) {
+            // Heuristic: the header contains the 'Transfusion Adverse Event/Risk' column
+            var headerRow = null;
+            var headerText = "";
+            var thead = table.querySelector("thead");
+            if (thead && thead.querySelector("tr")) {
+              headerRow = thead.querySelector("tr");
+            } else if (table.rows && table.rows.length) {
+              headerRow = table.rows[0];
+            }
+            if (!headerRow) return;
+            headerText = (headerRow.textContent || "")
+              .replace(/\s+/g, " ")
+              .trim()
+              .toLowerCase();
+            if (
+              headerText.indexOf("transfusion adverse event/risk") === -1 &&
+              headerText.indexOf("adverse event/risk") === -1
+            ) {
+              return; // not the BEBA risk table
+            }
+
+            // Build cards UI
+            var cardsWrap = document.createElement("div");
+            cardsWrap.className = "cards";
+
+            // Determine column indexes by header labels
+            var headers = Array.from(headerRow.cells || []).map(function (c) {
+              return (c.textContent || "")
+                .replace(/\s+/g, " ")
+                .trim()
+                .toLowerCase();
+            });
+            var idxEvent = headers.findIndex(function (t) {
+              return (
+                t.indexOf("adverse event") !== -1 ||
+                t.indexOf("event/risk") !== -1 ||
+                t.indexOf("risk") !== -1
+              );
+            });
+            var idxInc = headers.findIndex(function (t) {
+              return t.indexOf("incidence") !== -1;
+            });
+            var idxComment = headers.findIndex(function (t) {
+              return t.indexOf("comment") !== -1;
+            });
+
+            function cleanText(el) {
+              return ((el && el.textContent) || "").replace(/\s+/g, " ").trim();
+            }
+
+            for (var r = 0; r < table.rows.length; r++) {
+              var row = table.rows[r];
+              if (row === headerRow) continue;
+              var cells = Array.from(row.cells || []);
+              if (cells.length <= 1) {
+                var section = cleanText(cells[0]);
+                if (section) {
+                  var h2 = document.createElement("h2");
+                  h2.textContent = section;
+                  cardsWrap.appendChild(h2);
+                }
+                continue;
+              }
+              var title = cleanText(cells[idxEvent >= 0 ? idxEvent : 0]);
+              var incidence = cleanText(cells[idxInc >= 0 ? idxInc : 1]);
+              var comment = cleanText(
+                cells[idxComment >= 0 ? idxComment : cells.length > 2 ? 2 : 1]
+              );
+
+              if (!title && !incidence && !comment) continue;
+
+              var card = document.createElement("div");
+              card.className = "card";
+              var titleEl = document.createElement("div");
+              titleEl.className = "card-title";
+              titleEl.textContent = title || "—";
+              var metaEl = document.createElement("div");
+              metaEl.className = "meta";
+              metaEl.textContent = incidence ? "Incidence: " + incidence : "";
+              var bodyEl = document.createElement("div");
+              bodyEl.className = "card-body";
+              bodyEl.textContent = comment;
+              card.appendChild(titleEl);
+              if (metaEl.textContent) card.appendChild(metaEl);
+              if (bodyEl.textContent) card.appendChild(bodyEl);
+              cardsWrap.appendChild(card);
+            }
+
+            // Replace the original table with cards
+            table.parentNode.insertBefore(cardsWrap, table);
+            table.parentNode.removeChild(table);
+          });
+        }
+
+        function onReady(fn) {
+          if (document.readyState === "loading")
+            document.addEventListener("DOMContentLoaded", fn);
+          else fn();
+        }
+
+        onReady(function () {
+          wrapBodyInContainer();
+          // Convert the BEBA risks table into mobile-friendly cards first
+          transformBebaTables();
+          // Then enhance any remaining tables
+          enhanceTables();
+        });
+      })();
+    </script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="ProgId" content="Word.Document" />
+    <meta name="Generator" content="Microsoft Word 15" />
+    <meta name="Originator" content="Microsoft Word 15" />
+    <link
+      rel="File-List"
+      href="BEBA_Informed_Consent_Information_for_patient_dialogue.fld/filelist.xml"
+    />
+    <!--[if gte mso 9
+      ]><xml>
+        <o:DocumentProperties>
+          <o:Author>Berta, Donna</o:Author>
+          <o:LastAuthor>Chris Andersson</o:LastAuthor>
+          <o:Revision>2</o:Revision>
+          <o:TotalTime>0</o:TotalTime>
+          <o:Created>2025-08-11T15:12:00Z</o:Created>
+          <o:LastSaved>2025-08-11T15:12:00Z</o:LastSaved>
+          <o:Pages>1</o:Pages>
+          <o:Words>429</o:Words>
+          <o:Characters>2447</o:Characters>
+          <o:Lines>20</o:Lines>
+          <o:Paragraphs>5</o:Paragraphs>
+          <o:CharactersWithSpaces>2871</o:CharactersWithSpaces>
+          <o:Version>16.00</o:Version>
+        </o:DocumentProperties>
+        <o:CustomDocumentProperties>
+          <o:Created dt:dt="date">2021-10-05</o:Created>
+          <o:Creator dt:dt="string">Microsoft Word</o:Creator>
+          <o:LastSaved dt:dt="date">2025-08-11</o:LastSaved>
+        </o:CustomDocumentProperties>
+      </xml><!
+    [endif]-->
+    <link
+      rel="themeData"
+      href="BEBA_Informed_Consent_Information_for_patient_dialogue.fld/themedata.thmx"
+    />
+    <link
+      rel="colorSchemeMapping"
+      href="BEBA_Informed_Consent_Information_for_patient_dialogue.fld/colorschememapping.xml"
+    />
+    <!--[if gte mso 9
+      ]><xml>
+        <w:WordDocument>
+          <w:SpellingState>Clean</w:SpellingState>
+          <w:GrammarState>Clean</w:GrammarState>
+          <w:TrackMoves>false</w:TrackMoves>
+          <w:TrackFormatting />
+          <w:PunctuationKerning />
+          <w:DrawingGridHorizontalSpacing
+            >5.5 pt</w:DrawingGridHorizontalSpacing
+          >
+          <w:DisplayHorizontalDrawingGridEvery
+            >2</w:DisplayHorizontalDrawingGridEvery
+          >
+          <w:ValidateAgainstSchemas />
+          <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+          <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+          <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+          <w:DoNotPromoteQF />
+          <w:LidThemeOther>EN-CA</w:LidThemeOther>
+          <w:LidThemeAsian>X-NONE</w:LidThemeAsian>
+          <w:LidThemeComplexScript>X-NONE</w:LidThemeComplexScript>
+          <w:Compatibility>
+            <w:ULTrailSpace />
+            <w:ShapeLayoutLikeWW8 />
+            <w:BreakWrappedTables />
+            <w:SnapToGridInCell />
+            <w:WrapTextWithPunct />
+            <w:UseAsianBreakRules />
+            <w:UseWord2010TableStyleRules />
+            <w:DontGrowAutofit />
+            <w:SplitPgBreakAndParaMark />
+          </w:Compatibility>
+          <w:DoNotOptimizeForBrowser />
+          <m:mathPr>
+            <m:mathFont m:val="Cambria Math" />
+            <m:brkBin m:val="before" />
+            <m:brkBinSub m:val="&#45;-" />
+            <m:smallFrac m:val="off" />
+            <m:dispDef />
+            <m:lMargin m:val="0" />
+            <m:rMargin m:val="0" />
+            <m:defJc m:val="centerGroup" />
+            <m:wrapIndent m:val="1440" />
+            <m:intLim m:val="subSup" />
+            <m:naryLim m:val="undOvr" /> </m:mathPr
+        ></w:WordDocument> </xml
+    ><![endif]-->
+    <!--[if gte mso 9
+      ]><xml>
+        <w:LatentStyles
+          DefLockedState="false"
+          DefUnhideWhenUsed="false"
+          DefSemiHidden="false"
+          DefQFormat="false"
+          DefPriority="99"
+          LatentStyleCount="376"
+        >
+          <w:LsdException
+            Locked="false"
+            Priority="0"
+            QFormat="true"
+            Name="Normal"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="9"
+            QFormat="true"
+            Name="heading 1"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="9"
+            SemiHidden="true"
+            UnhideWhenUsed="true"
+            QFormat="true"
+            Name="heading 2"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="9"
+            SemiHidden="true"
+            UnhideWhenUsed="true"
+            QFormat="true"
+            Name="heading 3"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="9"
+            SemiHidden="true"
+            UnhideWhenUsed="true"
+            QFormat="true"
+            Name="heading 4"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="9"
+            SemiHidden="true"
+            UnhideWhenUsed="true"
+            QFormat="true"
+            Name="heading 5"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="9"
+            SemiHidden="true"
+            UnhideWhenUsed="true"
+            QFormat="true"
+            Name="heading 6"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="9"
+            SemiHidden="true"
+            UnhideWhenUsed="true"
+            QFormat="true"
+            Name="heading 7"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="9"
+            SemiHidden="true"
+            UnhideWhenUsed="true"
+            QFormat="true"
+            Name="heading 8"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="9"
+            SemiHidden="true"
+            UnhideWhenUsed="true"
+            QFormat="true"
+            Name="heading 9"
+          />
+          <w:LsdException
+            Locked="false"
+            SemiHidden="true"
+            UnhideWhenUsed="true"
+            Name="index 1"
+          />
+          <w:LsdException
+            Locked="false"
+            SemiHidden="true"
+            UnhideWhenUsed="true"
+            Name="index 2"
+          />
+          <w:LsdException
+            Locked="false"
+            SemiHidden="true"
+            UnhideWhenUsed="true"
+            Name="index 3"
+          />
+          <w:LsdException
+            Locked="false"
+            SemiHidden="true"
+            UnhideWhenUsed="true"
+            Name="index 4"
+          />
+          <w:LsdException
+            Locked="false"
+            SemiHidden="true"
+            UnhideWhenUsed="true"
+            Name="index 5"
+          />
+          <w:LsdException
+            Locked="false"
+            SemiHidden="true"
+            UnhideWhenUsed="true"
+            Name="index 6"
+          />
+          <w:LsdException
+            Locked="false"
+            SemiHidden="true"
+            UnhideWhenUsed="true"
+            Name="index 7"
+          />
+          <w:LsdException
+            Locked="false"
+            SemiHidden="true"
+            UnhideWhenUsed="true"
+            Name="index 8"
+          />
+          <w:LsdException
+            Locked="false"
+            SemiHidden="true"
+            UnhideWhenUsed="true"
+            Name="index 9"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="39"
+            SemiHidden="true"
+            UnhideWhenUsed="true"
+            Name="toc 1"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="39"
+            SemiHidden="true"
+            UnhideWhenUsed="true"
+            Name="toc 2"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="39"
+            SemiHidden="true"
+            UnhideWhenUsed="true"
+            Name="toc 3"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="39"
+            SemiHidden="true"
+            UnhideWhenUsed="true"
+            Name="toc 4"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="39"
+            SemiHidden="true"
+            UnhideWhenUsed="true"
+            Name="toc 5"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="39"
+            SemiHidden="true"
+            UnhideWhenUsed="true"
+            Name="toc 6"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="39"
+            SemiHidden="true"
+            UnhideWhenUsed="true"
+            Name="toc 7"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="39"
+            SemiHidden="true"
+            UnhideWhenUsed="true"
+            Name="toc 8"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="39"
+            SemiHidden="true"
+            UnhideWhenUsed="true"
+            Name="toc 9"
+          />
+          <w:LsdException
+            Locked="false"
+            SemiHidden="true"
+            UnhideWhenUsed="true"
+            Name="Normal Indent"
+          />
+          <w:LsdException
+            Locked="false"
+            SemiHidden="true"
+            UnhideWhenUsed="true"
+            Name="footnote text"
+          />
+          <w:LsdException
+            Locked="false"
+            SemiHidden="true"
+            UnhideWhenUsed="true"
+            Name="annotation text"
+          />
+          <w:LsdException
+            Locked="false"
+            SemiHidden="true"
+            UnhideWhenUsed="true"
+            Name="header"
+          />
+          <w:LsdException
+            Locked="false"
+            SemiHidden="true"
+            UnhideWhenUsed="true"
+            Name="footer"
+          />
+          <w:LsdException
+            Locked="false"
+            SemiHidden="true"
+            UnhideWhenUsed="true"
+            Name="index heading"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="35"
+            SemiHidden="true"
+            UnhideWhenUsed="true"
+            QFormat="true"
+            Name="caption"
+          />
+          <w:LsdException
+            Locked="false"
+            SemiHidden="true"
+            UnhideWhenUsed="true"
+            Name="table of figures"
+          />
+          <w:LsdException
+            Locked="false"
+            SemiHidden="true"
+            UnhideWhenUsed="true"
+            Name="envelope address"
+          />
+          <w:LsdException
+            Locked="false"
+            SemiHidden="true"
+            UnhideWhenUsed="true"
+            Name="envelope return"
+          />
+          <w:LsdException
+            Locked="false"
+            SemiHidden="true"
+            UnhideWhenUsed="true"
+            Name="footnote reference"
+          />
+          <w:LsdException
+            Locked="false"
+            SemiHidden="true"
+            UnhideWhenUsed="true"
+            Name="annotation reference"
+          />
+          <w:LsdException
+            Locked="false"
+            SemiHidden="true"
+            UnhideWhenUsed="true"
+            Name="line number"
+          />
+          <w:LsdException
+            Locked="false"
+            SemiHidden="true"
+            UnhideWhenUsed="true"
+            Name="page number"
+          />
+          <w:LsdException
+            Locked="false"
+            SemiHidden="true"
+            UnhideWhenUsed="true"
+            Name="endnote reference"
+          />
+          <w:LsdException
+            Locked="false"
+            SemiHidden="true"
+            UnhideWhenUsed="true"
+            Name="endnote text"
+          />
+          <w:LsdException
+            Locked="false"
+            SemiHidden="true"
+            UnhideWhenUsed="true"
+            Name="table of authorities"
+          />
+          <w:LsdException
+            Locked="false"
+            SemiHidden="true"
+            UnhideWhenUsed="true"
+            Name="macro"
+          />
+          <w:LsdException
+            Locked="false"
+            SemiHidden="true"
+            UnhideWhenUsed="true"
+            Name="toa heading"
+          />
+          <w:LsdException
+            Locked="false"
+            SemiHidden="true"
+            UnhideWhenUsed="true"
+            Name="List"
+          />
+          <w:LsdException
+            Locked="false"
+            SemiHidden="true"
+            UnhideWhenUsed="true"
+            Name="List Bullet"
+          />
+          <w:LsdException
+            Locked="false"
+            SemiHidden="true"
+            UnhideWhenUsed="true"
+            Name="List Number"
+          />
+          <w:LsdException
+            Locked="false"
+            SemiHidden="true"
+            UnhideWhenUsed="true"
+            Name="List 2"
+          />
+          <w:LsdException
+            Locked="false"
+            SemiHidden="true"
+            UnhideWhenUsed="true"
+            Name="List 3"
+          />
+          <w:LsdException
+            Locked="false"
+            SemiHidden="true"
+            UnhideWhenUsed="true"
+            Name="List 4"
+          />
+          <w:LsdException
+            Locked="false"
+            SemiHidden="true"
+            UnhideWhenUsed="true"
+            Name="List 5"
+          />
+          <w:LsdException
+            Locked="false"
+            SemiHidden="true"
+            UnhideWhenUsed="true"
+            Name="List Bullet 2"
+          />
+          <w:LsdException
+            Locked="false"
+            SemiHidden="true"
+            UnhideWhenUsed="true"
+            Name="List Bullet 3"
+          />
+          <w:LsdException
+            Locked="false"
+            SemiHidden="true"
+            UnhideWhenUsed="true"
+            Name="List Bullet 4"
+          />
+          <w:LsdException
+            Locked="false"
+            SemiHidden="true"
+            UnhideWhenUsed="true"
+            Name="List Bullet 5"
+          />
+          <w:LsdException
+            Locked="false"
+            SemiHidden="true"
+            UnhideWhenUsed="true"
+            Name="List Number 2"
+          />
+          <w:LsdException
+            Locked="false"
+            SemiHidden="true"
+            UnhideWhenUsed="true"
+            Name="List Number 3"
+          />
+          <w:LsdException
+            Locked="false"
+            SemiHidden="true"
+            UnhideWhenUsed="true"
+            Name="List Number 4"
+          />
+          <w:LsdException
+            Locked="false"
+            SemiHidden="true"
+            UnhideWhenUsed="true"
+            Name="List Number 5"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="10"
+            QFormat="true"
+            Name="Title"
+          />
+          <w:LsdException
+            Locked="false"
+            SemiHidden="true"
+            UnhideWhenUsed="true"
+            Name="Closing"
+          />
+          <w:LsdException
+            Locked="false"
+            SemiHidden="true"
+            UnhideWhenUsed="true"
+            Name="Signature"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="1"
+            SemiHidden="true"
+            UnhideWhenUsed="true"
+            Name="Default Paragraph Font"
+          />
+          <w:LsdException
+            Locked="false"
+            SemiHidden="true"
+            UnhideWhenUsed="true"
+            Name="Body Text"
+          />
+          <w:LsdException
+            Locked="false"
+            SemiHidden="true"
+            UnhideWhenUsed="true"
+            Name="Body Text Indent"
+          />
+          <w:LsdException
+            Locked="false"
+            SemiHidden="true"
+            UnhideWhenUsed="true"
+            Name="List Continue"
+          />
+          <w:LsdException
+            Locked="false"
+            SemiHidden="true"
+            UnhideWhenUsed="true"
+            Name="List Continue 2"
+          />
+          <w:LsdException
+            Locked="false"
+            SemiHidden="true"
+            UnhideWhenUsed="true"
+            Name="List Continue 3"
+          />
+          <w:LsdException
+            Locked="false"
+            SemiHidden="true"
+            UnhideWhenUsed="true"
+            Name="List Continue 4"
+          />
+          <w:LsdException
+            Locked="false"
+            SemiHidden="true"
+            UnhideWhenUsed="true"
+            Name="List Continue 5"
+          />
+          <w:LsdException
+            Locked="false"
+            SemiHidden="true"
+            UnhideWhenUsed="true"
+            Name="Message Header"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="11"
+            QFormat="true"
+            Name="Subtitle"
+          />
+          <w:LsdException
+            Locked="false"
+            SemiHidden="true"
+            UnhideWhenUsed="true"
+            Name="Salutation"
+          />
+          <w:LsdException
+            Locked="false"
+            SemiHidden="true"
+            UnhideWhenUsed="true"
+            Name="Date"
+          />
+          <w:LsdException
+            Locked="false"
+            SemiHidden="true"
+            UnhideWhenUsed="true"
+            Name="Body Text First Indent"
+          />
+          <w:LsdException
+            Locked="false"
+            SemiHidden="true"
+            UnhideWhenUsed="true"
+            Name="Body Text First Indent 2"
+          />
+          <w:LsdException
+            Locked="false"
+            SemiHidden="true"
+            UnhideWhenUsed="true"
+            Name="Note Heading"
+          />
+          <w:LsdException
+            Locked="false"
+            SemiHidden="true"
+            UnhideWhenUsed="true"
+            Name="Body Text 2"
+          />
+          <w:LsdException
+            Locked="false"
+            SemiHidden="true"
+            UnhideWhenUsed="true"
+            Name="Body Text 3"
+          />
+          <w:LsdException
+            Locked="false"
+            SemiHidden="true"
+            UnhideWhenUsed="true"
+            Name="Body Text Indent 2"
+          />
+          <w:LsdException
+            Locked="false"
+            SemiHidden="true"
+            UnhideWhenUsed="true"
+            Name="Body Text Indent 3"
+          />
+          <w:LsdException
+            Locked="false"
+            SemiHidden="true"
+            UnhideWhenUsed="true"
+            Name="Block Text"
+          />
+          <w:LsdException
+            Locked="false"
+            SemiHidden="true"
+            UnhideWhenUsed="true"
+            Name="Hyperlink"
+          />
+          <w:LsdException
+            Locked="false"
+            SemiHidden="true"
+            UnhideWhenUsed="true"
+            Name="FollowedHyperlink"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="22"
+            QFormat="true"
+            Name="Strong"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="20"
+            QFormat="true"
+            Name="Emphasis"
+          />
+          <w:LsdException
+            Locked="false"
+            SemiHidden="true"
+            UnhideWhenUsed="true"
+            Name="Document Map"
+          />
+          <w:LsdException
+            Locked="false"
+            SemiHidden="true"
+            UnhideWhenUsed="true"
+            Name="Plain Text"
+          />
+          <w:LsdException
+            Locked="false"
+            SemiHidden="true"
+            UnhideWhenUsed="true"
+            Name="E-mail Signature"
+          />
+          <w:LsdException
+            Locked="false"
+            SemiHidden="true"
+            UnhideWhenUsed="true"
+            Name="HTML Top of Form"
+          />
+          <w:LsdException
+            Locked="false"
+            SemiHidden="true"
+            UnhideWhenUsed="true"
+            Name="HTML Bottom of Form"
+          />
+          <w:LsdException
+            Locked="false"
+            SemiHidden="true"
+            UnhideWhenUsed="true"
+            Name="Normal (Web)"
+          />
+          <w:LsdException
+            Locked="false"
+            SemiHidden="true"
+            UnhideWhenUsed="true"
+            Name="HTML Acronym"
+          />
+          <w:LsdException
+            Locked="false"
+            SemiHidden="true"
+            UnhideWhenUsed="true"
+            Name="HTML Address"
+          />
+          <w:LsdException
+            Locked="false"
+            SemiHidden="true"
+            UnhideWhenUsed="true"
+            Name="HTML Cite"
+          />
+          <w:LsdException
+            Locked="false"
+            SemiHidden="true"
+            UnhideWhenUsed="true"
+            Name="HTML Code"
+          />
+          <w:LsdException
+            Locked="false"
+            SemiHidden="true"
+            UnhideWhenUsed="true"
+            Name="HTML Definition"
+          />
+          <w:LsdException
+            Locked="false"
+            SemiHidden="true"
+            UnhideWhenUsed="true"
+            Name="HTML Keyboard"
+          />
+          <w:LsdException
+            Locked="false"
+            SemiHidden="true"
+            UnhideWhenUsed="true"
+            Name="HTML Preformatted"
+          />
+          <w:LsdException
+            Locked="false"
+            SemiHidden="true"
+            UnhideWhenUsed="true"
+            Name="HTML Sample"
+          />
+          <w:LsdException
+            Locked="false"
+            SemiHidden="true"
+            UnhideWhenUsed="true"
+            Name="HTML Typewriter"
+          />
+          <w:LsdException
+            Locked="false"
+            SemiHidden="true"
+            UnhideWhenUsed="true"
+            Name="HTML Variable"
+          />
+          <w:LsdException
+            Locked="false"
+            SemiHidden="true"
+            UnhideWhenUsed="true"
+            Name="Normal Table"
+          />
+          <w:LsdException
+            Locked="false"
+            SemiHidden="true"
+            UnhideWhenUsed="true"
+            Name="annotation subject"
+          />
+          <w:LsdException
+            Locked="false"
+            SemiHidden="true"
+            UnhideWhenUsed="true"
+            Name="No List"
+          />
+          <w:LsdException
+            Locked="false"
+            SemiHidden="true"
+            UnhideWhenUsed="true"
+            Name="Outline List 1"
+          />
+          <w:LsdException
+            Locked="false"
+            SemiHidden="true"
+            UnhideWhenUsed="true"
+            Name="Outline List 2"
+          />
+          <w:LsdException
+            Locked="false"
+            SemiHidden="true"
+            UnhideWhenUsed="true"
+            Name="Outline List 3"
+          />
+          <w:LsdException
+            Locked="false"
+            SemiHidden="true"
+            UnhideWhenUsed="true"
+            Name="Table Simple 1"
+          />
+          <w:LsdException
+            Locked="false"
+            SemiHidden="true"
+            UnhideWhenUsed="true"
+            Name="Table Simple 2"
+          />
+          <w:LsdException
+            Locked="false"
+            SemiHidden="true"
+            UnhideWhenUsed="true"
+            Name="Table Simple 3"
+          />
+          <w:LsdException
+            Locked="false"
+            SemiHidden="true"
+            UnhideWhenUsed="true"
+            Name="Table Classic 1"
+          />
+          <w:LsdException
+            Locked="false"
+            SemiHidden="true"
+            UnhideWhenUsed="true"
+            Name="Table Classic 2"
+          />
+          <w:LsdException
+            Locked="false"
+            SemiHidden="true"
+            UnhideWhenUsed="true"
+            Name="Table Classic 3"
+          />
+          <w:LsdException
+            Locked="false"
+            SemiHidden="true"
+            UnhideWhenUsed="true"
+            Name="Table Classic 4"
+          />
+          <w:LsdException
+            Locked="false"
+            SemiHidden="true"
+            UnhideWhenUsed="true"
+            Name="Table Colorful 1"
+          />
+          <w:LsdException
+            Locked="false"
+            SemiHidden="true"
+            UnhideWhenUsed="true"
+            Name="Table Colorful 2"
+          />
+          <w:LsdException
+            Locked="false"
+            SemiHidden="true"
+            UnhideWhenUsed="true"
+            Name="Table Colorful 3"
+          />
+          <w:LsdException
+            Locked="false"
+            SemiHidden="true"
+            UnhideWhenUsed="true"
+            Name="Table Columns 1"
+          />
+          <w:LsdException
+            Locked="false"
+            SemiHidden="true"
+            UnhideWhenUsed="true"
+            Name="Table Columns 2"
+          />
+          <w:LsdException
+            Locked="false"
+            SemiHidden="true"
+            UnhideWhenUsed="true"
+            Name="Table Columns 3"
+          />
+          <w:LsdException
+            Locked="false"
+            SemiHidden="true"
+            UnhideWhenUsed="true"
+            Name="Table Columns 4"
+          />
+          <w:LsdException
+            Locked="false"
+            SemiHidden="true"
+            UnhideWhenUsed="true"
+            Name="Table Columns 5"
+          />
+          <w:LsdException
+            Locked="false"
+            SemiHidden="true"
+            UnhideWhenUsed="true"
+            Name="Table Grid 1"
+          />
+          <w:LsdException
+            Locked="false"
+            SemiHidden="true"
+            UnhideWhenUsed="true"
+            Name="Table Grid 2"
+          />
+          <w:LsdException
+            Locked="false"
+            SemiHidden="true"
+            UnhideWhenUsed="true"
+            Name="Table Grid 3"
+          />
+          <w:LsdException
+            Locked="false"
+            SemiHidden="true"
+            UnhideWhenUsed="true"
+            Name="Table Grid 4"
+          />
+          <w:LsdException
+            Locked="false"
+            SemiHidden="true"
+            UnhideWhenUsed="true"
+            Name="Table Grid 5"
+          />
+          <w:LsdException
+            Locked="false"
+            SemiHidden="true"
+            UnhideWhenUsed="true"
+            Name="Table Grid 6"
+          />
+          <w:LsdException
+            Locked="false"
+            SemiHidden="true"
+            UnhideWhenUsed="true"
+            Name="Table Grid 7"
+          />
+          <w:LsdException
+            Locked="false"
+            SemiHidden="true"
+            UnhideWhenUsed="true"
+            Name="Table Grid 8"
+          />
+          <w:LsdException
+            Locked="false"
+            SemiHidden="true"
+            UnhideWhenUsed="true"
+            Name="Table List 1"
+          />
+          <w:LsdException
+            Locked="false"
+            SemiHidden="true"
+            UnhideWhenUsed="true"
+            Name="Table List 2"
+          />
+          <w:LsdException
+            Locked="false"
+            SemiHidden="true"
+            UnhideWhenUsed="true"
+            Name="Table List 3"
+          />
+          <w:LsdException
+            Locked="false"
+            SemiHidden="true"
+            UnhideWhenUsed="true"
+            Name="Table List 4"
+          />
+          <w:LsdException
+            Locked="false"
+            SemiHidden="true"
+            UnhideWhenUsed="true"
+            Name="Table List 5"
+          />
+          <w:LsdException
+            Locked="false"
+            SemiHidden="true"
+            UnhideWhenUsed="true"
+            Name="Table List 6"
+          />
+          <w:LsdException
+            Locked="false"
+            SemiHidden="true"
+            UnhideWhenUsed="true"
+            Name="Table List 7"
+          />
+          <w:LsdException
+            Locked="false"
+            SemiHidden="true"
+            UnhideWhenUsed="true"
+            Name="Table List 8"
+          />
+          <w:LsdException
+            Locked="false"
+            SemiHidden="true"
+            UnhideWhenUsed="true"
+            Name="Table 3D effects 1"
+          />
+          <w:LsdException
+            Locked="false"
+            SemiHidden="true"
+            UnhideWhenUsed="true"
+            Name="Table 3D effects 2"
+          />
+          <w:LsdException
+            Locked="false"
+            SemiHidden="true"
+            UnhideWhenUsed="true"
+            Name="Table 3D effects 3"
+          />
+          <w:LsdException
+            Locked="false"
+            SemiHidden="true"
+            UnhideWhenUsed="true"
+            Name="Table Contemporary"
+          />
+          <w:LsdException
+            Locked="false"
+            SemiHidden="true"
+            UnhideWhenUsed="true"
+            Name="Table Elegant"
+          />
+          <w:LsdException
+            Locked="false"
+            SemiHidden="true"
+            UnhideWhenUsed="true"
+            Name="Table Professional"
+          />
+          <w:LsdException
+            Locked="false"
+            SemiHidden="true"
+            UnhideWhenUsed="true"
+            Name="Table Subtle 1"
+          />
+          <w:LsdException
+            Locked="false"
+            SemiHidden="true"
+            UnhideWhenUsed="true"
+            Name="Table Subtle 2"
+          />
+          <w:LsdException
+            Locked="false"
+            SemiHidden="true"
+            UnhideWhenUsed="true"
+            Name="Table Web 1"
+          />
+          <w:LsdException
+            Locked="false"
+            SemiHidden="true"
+            UnhideWhenUsed="true"
+            Name="Table Web 2"
+          />
+          <w:LsdException
+            Locked="false"
+            SemiHidden="true"
+            UnhideWhenUsed="true"
+            Name="Table Web 3"
+          />
+          <w:LsdException
+            Locked="false"
+            SemiHidden="true"
+            UnhideWhenUsed="true"
+            Name="Balloon Text"
+          />
+          <w:LsdException Locked="false" Priority="39" Name="Table Grid" />
+          <w:LsdException
+            Locked="false"
+            SemiHidden="true"
+            UnhideWhenUsed="true"
+            Name="Table Theme"
+          />
+          <w:LsdException
+            Locked="false"
+            SemiHidden="true"
+            Name="Placeholder Text"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="1"
+            QFormat="true"
+            Name="No Spacing"
+          />
+          <w:LsdException Locked="false" Priority="60" Name="Light Shading" />
+          <w:LsdException Locked="false" Priority="61" Name="Light List" />
+          <w:LsdException Locked="false" Priority="62" Name="Light Grid" />
+          <w:LsdException
+            Locked="false"
+            Priority="63"
+            Name="Medium Shading 1"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="64"
+            Name="Medium Shading 2"
+          />
+          <w:LsdException Locked="false" Priority="65" Name="Medium List 1" />
+          <w:LsdException Locked="false" Priority="66" Name="Medium List 2" />
+          <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1" />
+          <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2" />
+          <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3" />
+          <w:LsdException Locked="false" Priority="70" Name="Dark List" />
+          <w:LsdException
+            Locked="false"
+            Priority="71"
+            Name="Colorful Shading"
+          />
+          <w:LsdException Locked="false" Priority="72" Name="Colorful List" />
+          <w:LsdException Locked="false" Priority="73" Name="Colorful Grid" />
+          <w:LsdException
+            Locked="false"
+            Priority="60"
+            Name="Light Shading Accent 1"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="61"
+            Name="Light List Accent 1"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="62"
+            Name="Light Grid Accent 1"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="63"
+            Name="Medium Shading 1 Accent 1"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="64"
+            Name="Medium Shading 2 Accent 1"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="65"
+            Name="Medium List 1 Accent 1"
+          />
+          <w:LsdException Locked="false" SemiHidden="true" Name="Revision" />
+          <w:LsdException
+            Locked="false"
+            Priority="34"
+            QFormat="true"
+            Name="List Paragraph"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="29"
+            QFormat="true"
+            Name="Quote"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="30"
+            QFormat="true"
+            Name="Intense Quote"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="66"
+            Name="Medium List 2 Accent 1"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="67"
+            Name="Medium Grid 1 Accent 1"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="68"
+            Name="Medium Grid 2 Accent 1"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="69"
+            Name="Medium Grid 3 Accent 1"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="70"
+            Name="Dark List Accent 1"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="71"
+            Name="Colorful Shading Accent 1"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="72"
+            Name="Colorful List Accent 1"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="73"
+            Name="Colorful Grid Accent 1"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="60"
+            Name="Light Shading Accent 2"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="61"
+            Name="Light List Accent 2"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="62"
+            Name="Light Grid Accent 2"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="63"
+            Name="Medium Shading 1 Accent 2"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="64"
+            Name="Medium Shading 2 Accent 2"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="65"
+            Name="Medium List 1 Accent 2"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="66"
+            Name="Medium List 2 Accent 2"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="67"
+            Name="Medium Grid 1 Accent 2"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="68"
+            Name="Medium Grid 2 Accent 2"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="69"
+            Name="Medium Grid 3 Accent 2"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="70"
+            Name="Dark List Accent 2"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="71"
+            Name="Colorful Shading Accent 2"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="72"
+            Name="Colorful List Accent 2"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="73"
+            Name="Colorful Grid Accent 2"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="60"
+            Name="Light Shading Accent 3"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="61"
+            Name="Light List Accent 3"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="62"
+            Name="Light Grid Accent 3"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="63"
+            Name="Medium Shading 1 Accent 3"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="64"
+            Name="Medium Shading 2 Accent 3"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="65"
+            Name="Medium List 1 Accent 3"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="66"
+            Name="Medium List 2 Accent 3"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="67"
+            Name="Medium Grid 1 Accent 3"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="68"
+            Name="Medium Grid 2 Accent 3"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="69"
+            Name="Medium Grid 3 Accent 3"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="70"
+            Name="Dark List Accent 3"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="71"
+            Name="Colorful Shading Accent 3"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="72"
+            Name="Colorful List Accent 3"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="73"
+            Name="Colorful Grid Accent 3"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="60"
+            Name="Light Shading Accent 4"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="61"
+            Name="Light List Accent 4"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="62"
+            Name="Light Grid Accent 4"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="63"
+            Name="Medium Shading 1 Accent 4"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="64"
+            Name="Medium Shading 2 Accent 4"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="65"
+            Name="Medium List 1 Accent 4"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="66"
+            Name="Medium List 2 Accent 4"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="67"
+            Name="Medium Grid 1 Accent 4"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="68"
+            Name="Medium Grid 2 Accent 4"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="69"
+            Name="Medium Grid 3 Accent 4"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="70"
+            Name="Dark List Accent 4"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="71"
+            Name="Colorful Shading Accent 4"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="72"
+            Name="Colorful List Accent 4"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="73"
+            Name="Colorful Grid Accent 4"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="60"
+            Name="Light Shading Accent 5"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="61"
+            Name="Light List Accent 5"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="62"
+            Name="Light Grid Accent 5"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="63"
+            Name="Medium Shading 1 Accent 5"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="64"
+            Name="Medium Shading 2 Accent 5"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="65"
+            Name="Medium List 1 Accent 5"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="66"
+            Name="Medium List 2 Accent 5"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="67"
+            Name="Medium Grid 1 Accent 5"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="68"
+            Name="Medium Grid 2 Accent 5"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="69"
+            Name="Medium Grid 3 Accent 5"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="70"
+            Name="Dark List Accent 5"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="71"
+            Name="Colorful Shading Accent 5"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="72"
+            Name="Colorful List Accent 5"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="73"
+            Name="Colorful Grid Accent 5"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="60"
+            Name="Light Shading Accent 6"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="61"
+            Name="Light List Accent 6"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="62"
+            Name="Light Grid Accent 6"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="63"
+            Name="Medium Shading 1 Accent 6"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="64"
+            Name="Medium Shading 2 Accent 6"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="65"
+            Name="Medium List 1 Accent 6"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="66"
+            Name="Medium List 2 Accent 6"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="67"
+            Name="Medium Grid 1 Accent 6"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="68"
+            Name="Medium Grid 2 Accent 6"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="69"
+            Name="Medium Grid 3 Accent 6"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="70"
+            Name="Dark List Accent 6"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="71"
+            Name="Colorful Shading Accent 6"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="72"
+            Name="Colorful List Accent 6"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="73"
+            Name="Colorful Grid Accent 6"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="19"
+            QFormat="true"
+            Name="Subtle Emphasis"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="21"
+            QFormat="true"
+            Name="Intense Emphasis"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="31"
+            QFormat="true"
+            Name="Subtle Reference"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="32"
+            QFormat="true"
+            Name="Intense Reference"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="33"
+            QFormat="true"
+            Name="Book Title"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="37"
+            SemiHidden="true"
+            UnhideWhenUsed="true"
+            Name="Bibliography"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="39"
+            SemiHidden="true"
+            UnhideWhenUsed="true"
+            QFormat="true"
+            Name="TOC Heading"
+          />
+          <w:LsdException Locked="false" Priority="41" Name="Plain Table 1" />
+          <w:LsdException Locked="false" Priority="42" Name="Plain Table 2" />
+          <w:LsdException Locked="false" Priority="43" Name="Plain Table 3" />
+          <w:LsdException Locked="false" Priority="44" Name="Plain Table 4" />
+          <w:LsdException Locked="false" Priority="45" Name="Plain Table 5" />
+          <w:LsdException
+            Locked="false"
+            Priority="40"
+            Name="Grid Table Light"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="46"
+            Name="Grid Table 1 Light"
+          />
+          <w:LsdException Locked="false" Priority="47" Name="Grid Table 2" />
+          <w:LsdException Locked="false" Priority="48" Name="Grid Table 3" />
+          <w:LsdException Locked="false" Priority="49" Name="Grid Table 4" />
+          <w:LsdException
+            Locked="false"
+            Priority="50"
+            Name="Grid Table 5 Dark"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="51"
+            Name="Grid Table 6 Colorful"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="52"
+            Name="Grid Table 7 Colorful"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="46"
+            Name="Grid Table 1 Light Accent 1"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="47"
+            Name="Grid Table 2 Accent 1"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="48"
+            Name="Grid Table 3 Accent 1"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="49"
+            Name="Grid Table 4 Accent 1"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="50"
+            Name="Grid Table 5 Dark Accent 1"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="51"
+            Name="Grid Table 6 Colorful Accent 1"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="52"
+            Name="Grid Table 7 Colorful Accent 1"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="46"
+            Name="Grid Table 1 Light Accent 2"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="47"
+            Name="Grid Table 2 Accent 2"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="48"
+            Name="Grid Table 3 Accent 2"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="49"
+            Name="Grid Table 4 Accent 2"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="50"
+            Name="Grid Table 5 Dark Accent 2"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="51"
+            Name="Grid Table 6 Colorful Accent 2"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="52"
+            Name="Grid Table 7 Colorful Accent 2"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="46"
+            Name="Grid Table 1 Light Accent 3"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="47"
+            Name="Grid Table 2 Accent 3"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="48"
+            Name="Grid Table 3 Accent 3"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="49"
+            Name="Grid Table 4 Accent 3"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="50"
+            Name="Grid Table 5 Dark Accent 3"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="51"
+            Name="Grid Table 6 Colorful Accent 3"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="52"
+            Name="Grid Table 7 Colorful Accent 3"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="46"
+            Name="Grid Table 1 Light Accent 4"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="47"
+            Name="Grid Table 2 Accent 4"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="48"
+            Name="Grid Table 3 Accent 4"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="49"
+            Name="Grid Table 4 Accent 4"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="50"
+            Name="Grid Table 5 Dark Accent 4"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="51"
+            Name="Grid Table 6 Colorful Accent 4"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="52"
+            Name="Grid Table 7 Colorful Accent 4"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="46"
+            Name="Grid Table 1 Light Accent 5"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="47"
+            Name="Grid Table 2 Accent 5"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="48"
+            Name="Grid Table 3 Accent 5"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="49"
+            Name="Grid Table 4 Accent 5"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="50"
+            Name="Grid Table 5 Dark Accent 5"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="51"
+            Name="Grid Table 6 Colorful Accent 5"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="52"
+            Name="Grid Table 7 Colorful Accent 5"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="46"
+            Name="Grid Table 1 Light Accent 6"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="47"
+            Name="Grid Table 2 Accent 6"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="48"
+            Name="Grid Table 3 Accent 6"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="49"
+            Name="Grid Table 4 Accent 6"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="50"
+            Name="Grid Table 5 Dark Accent 6"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="51"
+            Name="Grid Table 6 Colorful Accent 6"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="52"
+            Name="Grid Table 7 Colorful Accent 6"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="46"
+            Name="List Table 1 Light"
+          />
+          <w:LsdException Locked="false" Priority="47" Name="List Table 2" />
+          <w:LsdException Locked="false" Priority="48" Name="List Table 3" />
+          <w:LsdException Locked="false" Priority="49" Name="List Table 4" />
+          <w:LsdException
+            Locked="false"
+            Priority="50"
+            Name="List Table 5 Dark"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="51"
+            Name="List Table 6 Colorful"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="52"
+            Name="List Table 7 Colorful"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="46"
+            Name="List Table 1 Light Accent 1"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="47"
+            Name="List Table 2 Accent 1"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="48"
+            Name="List Table 3 Accent 1"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="49"
+            Name="List Table 4 Accent 1"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="50"
+            Name="List Table 5 Dark Accent 1"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="51"
+            Name="List Table 6 Colorful Accent 1"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="52"
+            Name="List Table 7 Colorful Accent 1"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="46"
+            Name="List Table 1 Light Accent 2"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="47"
+            Name="List Table 2 Accent 2"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="48"
+            Name="List Table 3 Accent 2"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="49"
+            Name="List Table 4 Accent 2"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="50"
+            Name="List Table 5 Dark Accent 2"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="51"
+            Name="List Table 6 Colorful Accent 2"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="52"
+            Name="List Table 7 Colorful Accent 2"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="46"
+            Name="List Table 1 Light Accent 3"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="47"
+            Name="List Table 2 Accent 3"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="48"
+            Name="List Table 3 Accent 3"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="49"
+            Name="List Table 4 Accent 3"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="50"
+            Name="List Table 5 Dark Accent 3"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="51"
+            Name="List Table 6 Colorful Accent 3"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="52"
+            Name="List Table 7 Colorful Accent 3"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="46"
+            Name="List Table 1 Light Accent 4"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="47"
+            Name="List Table 2 Accent 4"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="48"
+            Name="List Table 3 Accent 4"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="49"
+            Name="List Table 4 Accent 4"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="50"
+            Name="List Table 5 Dark Accent 4"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="51"
+            Name="List Table 6 Colorful Accent 4"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="52"
+            Name="List Table 7 Colorful Accent 4"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="46"
+            Name="List Table 1 Light Accent 5"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="47"
+            Name="List Table 2 Accent 5"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="48"
+            Name="List Table 3 Accent 5"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="49"
+            Name="List Table 4 Accent 5"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="50"
+            Name="List Table 5 Dark Accent 5"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="51"
+            Name="List Table 6 Colorful Accent 5"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="52"
+            Name="List Table 7 Colorful Accent 5"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="46"
+            Name="List Table 1 Light Accent 6"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="47"
+            Name="List Table 2 Accent 6"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="48"
+            Name="List Table 3 Accent 6"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="49"
+            Name="List Table 4 Accent 6"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="50"
+            Name="List Table 5 Dark Accent 6"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="51"
+            Name="List Table 6 Colorful Accent 6"
+          />
+          <w:LsdException
+            Locked="false"
+            Priority="52"
+            Name="List Table 7 Colorful Accent 6"
+          />
+          <w:LsdException
+            Locked="false"
+            SemiHidden="true"
+            UnhideWhenUsed="true"
+            Name="Mention"
+          />
+          <w:LsdException
+            Locked="false"
+            SemiHidden="true"
+            UnhideWhenUsed="true"
+            Name="Smart Hyperlink"
+          />
+          <w:LsdException
+            Locked="false"
+            SemiHidden="true"
+            UnhideWhenUsed="true"
+            Name="Hashtag"
+          />
+          <w:LsdException
+            Locked="false"
+            SemiHidden="true"
+            UnhideWhenUsed="true"
+            Name="Unresolved Mention"
+          />
+          <w:LsdException
+            Locked="false"
+            SemiHidden="true"
+            UnhideWhenUsed="true"
+            Name="Smart Link"
+          />
+        </w:LatentStyles> </xml
+    ><![endif]-->
+    <style>
+      <!--
+       /* Font Definitions */
+       @font-face
+      	{font-family:"Cambria Math";
+      	panose-1:2 4 5 3 5 4 6 3 2 4;
+      	mso-font-charset:0;
+      	mso-generic-font-family:roman;
+      	mso-font-pitch:variable;
+      	mso-font-signature:-536870145 1107305727 0 0 415 0;}
+       /* Style Definitions */
+       p.MsoNormal, li.MsoNormal, div.MsoNormal
+      	{mso-style-unhide:no;
+      	mso-style-qformat:yes;
+      	mso-style-parent:"";
+      	margin:0cm;
+      	mso-pagination:none;
+      	text-autospace:none;
+      	font-size:11.0pt;
+      	font-family:"Arial",sans-serif;
+      	mso-fareast-font-family:Arial;
+      	mso-ansi-language:EN-US;}
+      h1
+      	{mso-style-priority:9;
+      	mso-style-unhide:no;
+      	mso-style-qformat:yes;
+      	margin-top:2.2pt;
+      	margin-right:0cm;
+      	margin-bottom:0cm;
+      	margin-left:0cm;
+      	mso-pagination:none;
+      	mso-outline-level:1;
+      	text-autospace:none;
+      	font-size:11.0pt;
+      	font-family:"Arial",sans-serif;
+      	mso-fareast-font-family:Arial;
+      	mso-font-kerning:0pt;
+      	mso-ansi-language:EN-US;}
+      p.MsoBodyText, li.MsoBodyText, div.MsoBodyText
+      	{mso-style-priority:1;
+      	mso-style-unhide:no;
+      	mso-style-qformat:yes;
+      	margin:0cm;
+      	mso-pagination:none;
+      	text-autospace:none;
+      	font-size:11.0pt;
+      	font-family:"Arial",sans-serif;
+      	mso-fareast-font-family:Arial;
+      	mso-ansi-language:EN-US;}
+      p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+      	{mso-style-priority:1;
+      	mso-style-unhide:no;
+      	mso-style-qformat:yes;
+      	margin:0cm;
+      	mso-pagination:none;
+      	text-autospace:none;
+      	font-size:11.0pt;
+      	font-family:"Arial",sans-serif;
+      	mso-fareast-font-family:Arial;
+      	mso-ansi-language:EN-US;}
+      p.TableParagraph, li.TableParagraph, div.TableParagraph
+      	{mso-style-name:"Table Paragraph";
+      	mso-style-priority:1;
+      	mso-style-unhide:no;
+      	mso-style-qformat:yes;
+      	margin-top:.15pt;
+      	margin-right:0cm;
+      	margin-bottom:0cm;
+      	margin-left:5.45pt;
+      	mso-pagination:none;
+      	text-autospace:none;
+      	font-size:11.0pt;
+      	font-family:"Arial",sans-serif;
+      	mso-fareast-font-family:Arial;
+      	mso-ansi-language:EN-US;}
+      span.GramE
+      	{mso-style-name:"";
+      	mso-gram-e:yes;}
+      .MsoChpDefault
+      	{mso-style-type:export-only;
+      	mso-default-props:yes;
+      	font-size:11.0pt;
+      	mso-ansi-font-size:11.0pt;
+      	mso-bidi-font-size:11.0pt;
+      	font-family:"Calibri",sans-serif;
+      	mso-ascii-font-family:Calibri;
+      	mso-ascii-theme-font:minor-latin;
+      	mso-fareast-font-family:Calibri;
+      	mso-fareast-theme-font:minor-latin;
+      	mso-hansi-font-family:Calibri;
+      	mso-hansi-theme-font:minor-latin;
+      	mso-bidi-font-family:"Times New Roman";
+      	mso-bidi-theme-font:minor-bidi;
+      	mso-font-kerning:0pt;
+      	mso-ligatures:none;
+      	mso-ansi-language:EN-US;}
+      .MsoPapDefault
+      	{mso-style-type:export-only;
+      	mso-pagination:none;
+      	text-autospace:none;}
+      @page WordSection1
+      	{size:612.0pt 792.0pt;
+      	margin:70.0pt 54.0pt 14.0pt 72.0pt;
+      	mso-header-margin:36.0pt;
+      	mso-footer-margin:36.0pt;
+      	mso-paper-source:0;}
+      div.WordSection1
+      	{page:WordSection1;}
+       /* List Definitions */
+       @list l0
+      	{mso-list-id:1702969939;
+      	mso-list-type:hybrid;
+      	mso-list-template-ids:1239220106 -439681046 1743145202 -899507616 -791742920 1112955870 -1478583702 1338273824 -564857370 21913724;}
+      @list l0:level1
+      	{mso-level-start-at:0;
+      	mso-level-number-format:bullet;
+      	mso-level-text:-;
+      	mso-level-tab-stop:none;
+      	mso-level-number-position:left;
+      	margin-left:10.45pt;
+      	text-indent:-6.0pt;
+      	mso-ansi-font-size:11.0pt;
+      	mso-bidi-font-size:11.0pt;
+      	font-family:"Arial",sans-serif;
+      	mso-fareast-font-family:Arial;
+      	letter-spacing:0pt;
+      	mso-font-width:91%;
+      	mso-ansi-language:EN-US;
+      	mso-fareast-language:EN-US;
+      	mso-bidi-language:AR-SA;
+      	mso-ansi-font-weight:normal;
+      	mso-bidi-font-weight:normal;
+      	mso-ansi-font-style:normal;
+      	mso-bidi-font-style:normal;}
+      @list l0:level2
+      	{mso-level-start-at:0;
+      	mso-level-number-format:bullet;
+      	mso-level-text:•;
+      	mso-level-tab-stop:none;
+      	mso-level-number-position:left;
+      	margin-left:28.8pt;
+      	text-indent:-6.0pt;
+      	mso-ansi-language:EN-US;
+      	mso-fareast-language:EN-US;
+      	mso-bidi-language:AR-SA;}
+      @list l0:level3
+      	{mso-level-start-at:0;
+      	mso-level-number-format:bullet;
+      	mso-level-text:•;
+      	mso-level-tab-stop:none;
+      	mso-level-number-position:left;
+      	margin-left:47.6pt;
+      	text-indent:-6.0pt;
+      	mso-ansi-language:EN-US;
+      	mso-fareast-language:EN-US;
+      	mso-bidi-language:AR-SA;}
+      @list l0:level4
+      	{mso-level-start-at:0;
+      	mso-level-number-format:bullet;
+      	mso-level-text:•;
+      	mso-level-tab-stop:none;
+      	mso-level-number-position:left;
+      	margin-left:66.4pt;
+      	text-indent:-6.0pt;
+      	mso-ansi-language:EN-US;
+      	mso-fareast-language:EN-US;
+      	mso-bidi-language:AR-SA;}
+      @list l0:level5
+      	{mso-level-start-at:0;
+      	mso-level-number-format:bullet;
+      	mso-level-text:•;
+      	mso-level-tab-stop:none;
+      	mso-level-number-position:left;
+      	margin-left:85.2pt;
+      	text-indent:-6.0pt;
+      	mso-ansi-language:EN-US;
+      	mso-fareast-language:EN-US;
+      	mso-bidi-language:AR-SA;}
+      @list l0:level6
+      	{mso-level-start-at:0;
+      	mso-level-number-format:bullet;
+      	mso-level-text:•;
+      	mso-level-tab-stop:none;
+      	mso-level-number-position:left;
+      	margin-left:104.05pt;
+      	text-indent:-6.0pt;
+      	mso-ansi-language:EN-US;
+      	mso-fareast-language:EN-US;
+      	mso-bidi-language:AR-SA;}
+      @list l0:level7
+      	{mso-level-start-at:0;
+      	mso-level-number-format:bullet;
+      	mso-level-text:•;
+      	mso-level-tab-stop:none;
+      	mso-level-number-position:left;
+      	margin-left:122.85pt;
+      	text-indent:-6.0pt;
+      	mso-ansi-language:EN-US;
+      	mso-fareast-language:EN-US;
+      	mso-bidi-language:AR-SA;}
+      @list l0:level8
+      	{mso-level-start-at:0;
+      	mso-level-number-format:bullet;
+      	mso-level-text:•;
+      	mso-level-tab-stop:none;
+      	mso-level-number-position:left;
+      	margin-left:141.65pt;
+      	text-indent:-6.0pt;
+      	mso-ansi-language:EN-US;
+      	mso-fareast-language:EN-US;
+      	mso-bidi-language:AR-SA;}
+      @list l0:level9
+      	{mso-level-start-at:0;
+      	mso-level-number-format:bullet;
+      	mso-level-text:•;
+      	mso-level-tab-stop:none;
+      	mso-level-number-position:left;
+      	margin-left:160.45pt;
+      	text-indent:-6.0pt;
+      	mso-ansi-language:EN-US;
+      	mso-fareast-language:EN-US;
+      	mso-bidi-language:AR-SA;}
+      @list l1
+      	{mso-list-id:1904489987;
+      	mso-list-type:hybrid;
+      	mso-list-template-ids:2132590872 891089590 -136259774 -1474892830 -706712978 -1898562732 -1788568334 -1988067178 -1765747070 -285957782;}
+      @list l1:level1
+      	{mso-level-start-at:0;
+      	mso-level-number-format:bullet;
+      	mso-level-text:-;
+      	mso-level-tab-stop:none;
+      	mso-level-number-position:left;
+      	margin-left:11.45pt;
+      	text-indent:-6.0pt;
+      	mso-ansi-font-size:11.0pt;
+      	mso-bidi-font-size:11.0pt;
+      	font-family:"Arial",sans-serif;
+      	mso-fareast-font-family:Arial;
+      	letter-spacing:0pt;
+      	mso-font-width:91%;
+      	mso-ansi-language:EN-US;
+      	mso-fareast-language:EN-US;
+      	mso-bidi-language:AR-SA;
+      	mso-ansi-font-weight:normal;
+      	mso-bidi-font-weight:normal;
+      	mso-ansi-font-style:normal;
+      	mso-bidi-font-style:normal;}
+      @list l1:level2
+      	{mso-level-start-at:0;
+      	mso-level-number-format:bullet;
+      	mso-level-text:•;
+      	mso-level-tab-stop:none;
+      	mso-level-number-position:left;
+      	margin-left:29.7pt;
+      	text-indent:-6.0pt;
+      	mso-ansi-language:EN-US;
+      	mso-fareast-language:EN-US;
+      	mso-bidi-language:AR-SA;}
+      @list l1:level3
+      	{mso-level-start-at:0;
+      	mso-level-number-format:bullet;
+      	mso-level-text:•;
+      	mso-level-tab-stop:none;
+      	mso-level-number-position:left;
+      	margin-left:48.4pt;
+      	text-indent:-6.0pt;
+      	mso-ansi-language:EN-US;
+      	mso-fareast-language:EN-US;
+      	mso-bidi-language:AR-SA;}
+      @list l1:level4
+      	{mso-level-start-at:0;
+      	mso-level-number-format:bullet;
+      	mso-level-text:•;
+      	mso-level-tab-stop:none;
+      	mso-level-number-position:left;
+      	margin-left:67.1pt;
+      	text-indent:-6.0pt;
+      	mso-ansi-language:EN-US;
+      	mso-fareast-language:EN-US;
+      	mso-bidi-language:AR-SA;}
+      @list l1:level5
+      	{mso-level-start-at:0;
+      	mso-level-number-format:bullet;
+      	mso-level-text:•;
+      	mso-level-tab-stop:none;
+      	mso-level-number-position:left;
+      	margin-left:85.8pt;
+      	text-indent:-6.0pt;
+      	mso-ansi-language:EN-US;
+      	mso-fareast-language:EN-US;
+      	mso-bidi-language:AR-SA;}
+      @list l1:level6
+      	{mso-level-start-at:0;
+      	mso-level-number-format:bullet;
+      	mso-level-text:•;
+      	mso-level-tab-stop:none;
+      	mso-level-number-position:left;
+      	margin-left:104.55pt;
+      	text-indent:-6.0pt;
+      	mso-ansi-language:EN-US;
+      	mso-fareast-language:EN-US;
+      	mso-bidi-language:AR-SA;}
+      @list l1:level7
+      	{mso-level-start-at:0;
+      	mso-level-number-format:bullet;
+      	mso-level-text:•;
+      	mso-level-tab-stop:none;
+      	mso-level-number-position:left;
+      	margin-left:123.25pt;
+      	text-indent:-6.0pt;
+      	mso-ansi-language:EN-US;
+      	mso-fareast-language:EN-US;
+      	mso-bidi-language:AR-SA;}
+      @list l1:level8
+      	{mso-level-start-at:0;
+      	mso-level-number-format:bullet;
+      	mso-level-text:•;
+      	mso-level-tab-stop:none;
+      	mso-level-number-position:left;
+      	margin-left:141.95pt;
+      	text-indent:-6.0pt;
+      	mso-ansi-language:EN-US;
+      	mso-fareast-language:EN-US;
+      	mso-bidi-language:AR-SA;}
+      @list l1:level9
+      	{mso-level-start-at:0;
+      	mso-level-number-format:bullet;
+      	mso-level-text:•;
+      	mso-level-tab-stop:none;
+      	mso-level-number-position:left;
+      	margin-left:160.65pt;
+      	text-indent:-6.0pt;
+      	mso-ansi-language:EN-US;
+      	mso-fareast-language:EN-US;
+      	mso-bidi-language:AR-SA;}
+      ol
+      	{margin-bottom:0cm;}
+      ul
+      	{margin-bottom:0cm;}
+      -->
+    </style>
+    <!--[if gte mso 10]>
+      <style>
+        /* Style Definitions */
+        table.MsoNormalTable {
+          mso-style-name: "Table Normal";
+          mso-tstyle-rowband-size: 0;
+          mso-tstyle-colband-size: 0;
+          mso-style-noshow: yes;
+          mso-style-priority: 99;
+          mso-style-parent: "";
+          mso-padding-alt: 0cm 5.4pt 0cm 5.4pt;
+          mso-para-margin: 0cm;
+          mso-pagination: none;
+          text-autospace: none;
+          font-size: 11pt;
+          font-family: "Calibri", sans-serif;
+          mso-ascii-font-family: Calibri;
+          mso-ascii-theme-font: minor-latin;
+          mso-hansi-font-family: Calibri;
+          mso-hansi-theme-font: minor-latin;
+          mso-bidi-font-family: "Times New Roman";
+          mso-bidi-theme-font: minor-bidi;
+          mso-ansi-language: EN-US;
+        }
+      </style>
+    <![endif]-->
+  </head>
+
+  <body lang="EN-CA" style="tab-interval: 36pt; word-wrap: break-word">
+    <div class="WordSection1">
+      <h1>
+        <span lang="EN-US" style="mso-font-width: 85%">Informed</span
+        ><span lang="EN-US" style="letter-spacing: 0.55pt"> </span
+        ><span lang="EN-US" style="mso-font-width: 85%">Consent:</span
+        ><span lang="EN-US" style="letter-spacing: 0.4pt"> </span
+        ><span lang="EN-US" style="mso-font-width: 85%">Information</span
+        ><span lang="EN-US" style="letter-spacing: 0.55pt"> </span
+        ><span lang="EN-US" style="mso-font-width: 85%">to</span
+        ><span lang="EN-US" style="letter-spacing: 0.25pt"> </span
+        ><span lang="EN-US" style="mso-font-width: 85%">engage</span
+        ><span lang="EN-US" style="letter-spacing: 0.35pt"> </span
+        ><span lang="EN-US" style="mso-font-width: 85%">in</span
+        ><span lang="EN-US" style="letter-spacing: 0.6pt"> </span
+        ><span lang="EN-US" style="mso-font-width: 85%">patient</span
+        ><span lang="EN-US" style="letter-spacing: 0.35pt"> </span
+        ><span lang="EN-US" style="letter-spacing: -0.1pt; mso-font-width: 85%"
+          >dialogue</span
+        >
+      </h1>
+
+      <p
+        class="MsoBodyText"
+        style="
+          margin-top: 9.85pt;
+          margin-right: 23.8pt;
+          margin-bottom: 0cm;
+          margin-left: 0cm;
+          margin-bottom: 0.0001pt;
+          line-height: 115%;
+        "
+      >
+        <span lang="EN-US" style="mso-font-width: 90%"
+          >Transfusion adverse events or risks can be characterized as: common
+          but not life threatening, serious </span
+        ><span lang="EN-US" style="letter-spacing: -0.3pt">and</span
+        ><span lang="EN-US" style="letter-spacing: -0.45pt"> </span
+        ><span lang="EN-US" style="letter-spacing: -0.3pt">life</span
+        ><span lang="EN-US" style="letter-spacing: -0.4pt"> </span
+        ><span lang="EN-US" style="letter-spacing: -0.3pt">threatening</span
+        ><span lang="EN-US" style="letter-spacing: -0.4pt"> </span
+        ><span lang="EN-US" style="letter-spacing: -0.3pt">requiring</span
+        ><span lang="EN-US" style="letter-spacing: -0.4pt"> </span
+        ><span lang="EN-US" style="letter-spacing: -0.3pt">some</span
+        ><span lang="EN-US" style="letter-spacing: -0.4pt"> </span
+        ><span lang="EN-US" style="letter-spacing: -0.3pt"
+          >prevention/treatment</span
+        ><span lang="EN-US" style="letter-spacing: -0.4pt"> </span
+        ><span lang="EN-US" style="letter-spacing: -0.3pt">measures,</span
+        ><span lang="EN-US" style="letter-spacing: -0.45pt"> </span
+        ><span lang="EN-US" style="letter-spacing: -0.3pt">and</span
+        ><span lang="EN-US" style="letter-spacing: -0.5pt"> </span
+        ><span lang="EN-US" style="letter-spacing: -0.3pt">rare</span
+        ><span lang="EN-US" style="letter-spacing: -0.4pt"> </span
+        ><span lang="EN-US" style="letter-spacing: -0.3pt">with</span
+        ><span lang="EN-US" style="letter-spacing: -0.45pt"> </span
+        ><span lang="EN-US" style="letter-spacing: -0.3pt">life</span
+        ><span lang="EN-US" style="letter-spacing: -0.4pt"> </span
+        ><span lang="EN-US" style="letter-spacing: -0.3pt">altering</span
+        ><span lang="EN-US" style="letter-spacing: -0.4pt"> </span
+        ><span lang="EN-US" style="letter-spacing: -0.3pt">effects. A</span
+        ><span lang="EN-US" style="letter-spacing: -0.35pt"> </span
+        ><span lang="EN-US" style="letter-spacing: -0.3pt"
+          >synopsis is provided in the table below</span
+        ><span lang="EN-US" style="letter-spacing: -0.35pt"> </span
+        ><span lang="EN-US" style="letter-spacing: -0.3pt">(for</span
+        ><span lang="EN-US" style="letter-spacing: -0.35pt"> </span
+        ><span lang="EN-US" style="letter-spacing: -0.3pt"
+          >inclusive transfusion risk details, refer to</span
+        >
+      </p>
+
+      <p
+        class="MsoBodyText"
+        style="line-height: 12.55pt; mso-line-height-rule: exactly"
+      >
+        <span lang="EN-US"
+          ><a
+            href="https://transfusionontario.org/wp-content/uploads/2020/12/Bloody-Easy-Version-3-EN-FINAL-Interactive-Handbook.pdf"
+            ><span style="color: #0462c1; mso-font-width: 90%"
+              >Bloody<span style="letter-spacing: -0.2pt"> </span>Easy<span
+                style="letter-spacing: -0.1pt"
+              >
+              </span
+              >Blood<span style="letter-spacing: -0.15pt"> </span
+              >Administration<span style="letter-spacing: -0.2pt"> </span
+              >version<span style="letter-spacing: -0.15pt"> </span
+              ><span class="GramE"
+                >3<span style="letter-spacing: -0.15pt"> </span
+                ><span
+                  style="
+                    color: windowtext;
+                    text-decoration: none;
+                    text-underline: none;
+                  "
+                  >,</span
+                ></span
+              ></span
+            ></a
+          ><span style="letter-spacing: -0.15pt; mso-font-width: 90%"> </span
+          ><span style="mso-font-width: 90%"
+            >pages<span style="letter-spacing: -0.2pt"> </span>118-<span
+              style="letter-spacing: -0.25pt"
+              >9).</span
+            ></span
+          ></span
+        >
+      </p>
+
+      <h1 style="margin-top: 9.85pt">
+        <span lang="EN-US" style="mso-font-width: 80%">Transfusion</span
+        ><span lang="EN-US" style="letter-spacing: 1.95pt"> </span
+        ><span lang="EN-US" style="mso-font-width: 80%">Adverse</span
+        ><span lang="EN-US" style="letter-spacing: 1.3pt"> </span
+        ><span lang="EN-US" style="letter-spacing: -0.1pt; mso-font-width: 80%"
+          >Events/Risks</span
+        >
+      </h1>
+
+      <p class="MsoBodyText" style="margin-top: 0.45pt">
+        <b style="mso-bidi-font-weight: normal"
+          ><span lang="EN-US" style="font-size: 8pt; mso-bidi-font-size: 11pt"
+            ><o:p>&nbsp;</o:p></span
+          ></b
+        >
+      </p>
+
+      <table
+        class="MsoNormalTable"
+        border="1"
+        cellspacing="0"
+        cellpadding="0"
+        style="
+          margin-left: 0.5pt;
+          border-collapse: collapse;
+          mso-table-layout-alt: fixed;
+          border: none;
+          mso-border-alt: solid black 0.5pt;
+          mso-yfti-tbllook: 480;
+          mso-padding-alt: 0cm 0cm 0cm 0cm;
+          mso-border-insideh: 0.5pt solid black;
+          mso-border-insidev: 0.5pt solid black;
+        "
+      >
+        <tr style="mso-yfti-irow: 0; mso-yfti-firstrow: yes; height: 13.25pt">
+          <td
+            width="226"
+            valign="top"
+            style="
+              width: 169.85pt;
+              border: solid black 1pt;
+              mso-border-alt: solid black 0.5pt;
+              padding: 0cm 0cm 0cm 0cm;
+              height: 13.25pt;
+            "
+          >
+            <p
+              class="TableParagraph"
+              style="
+                margin-top: 0cm;
+                margin-right: 0cm;
+                margin-bottom: 0cm;
+                margin-left: 5.5pt;
+                margin-bottom: 0.0001pt;
+                line-height: 12.3pt;
+                mso-line-height-rule: exactly;
+              "
+            >
+              <b style="mso-bidi-font-weight: normal"
+                ><span lang="EN-US" style="mso-font-width: 80%"
+                  >Transfusion</span
+                ><span lang="EN-US" style="letter-spacing: 1.95pt"> </span
+                ><span lang="EN-US" style="mso-font-width: 80%">Adverse</span
+                ><span lang="EN-US" style="letter-spacing: 1.25pt"> </span
+                ><span
+                  lang="EN-US"
+                  style="letter-spacing: -0.1pt; mso-font-width: 80%"
+                  >Event/Risk</span
+                ><span lang="EN-US"><o:p></o:p></span
+              ></b>
+            </p>
+          </td>
+          <td
+            width="132"
+            valign="top"
+            style="
+              width: 99.3pt;
+              border: solid black 1pt;
+              border-left: none;
+              mso-border-left-alt: solid black 0.5pt;
+              mso-border-alt: solid black 0.5pt;
+              padding: 0cm 0cm 0cm 0cm;
+              height: 13.25pt;
+            "
+          >
+            <p
+              class="TableParagraph"
+              style="
+                margin-top: 0cm;
+                line-height: 12.3pt;
+                mso-line-height-rule: exactly;
+              "
+            >
+              <b style="mso-bidi-font-weight: normal"
+                ><span lang="EN-US" style="letter-spacing: -0.1pt"
+                  >Incidence/unit</span
+                ><span lang="EN-US"><o:p></o:p></span
+              ></b>
+            </p>
+          </td>
+          <td
+            width="265"
+            valign="top"
+            style="
+              width: 198.6pt;
+              border: solid black 1pt;
+              border-left: none;
+              mso-border-left-alt: solid black 0.5pt;
+              mso-border-alt: solid black 0.5pt;
+              padding: 0cm 0cm 0cm 0cm;
+              height: 13.25pt;
+            "
+          >
+            <p
+              class="TableParagraph"
+              style="
+                margin-top: 0cm;
+                line-height: 12.3pt;
+                mso-line-height-rule: exactly;
+              "
+            >
+              <b style="mso-bidi-font-weight: normal"
+                ><span lang="EN-US" style="letter-spacing: -0.1pt">Comment</span
+                ><span lang="EN-US"><o:p></o:p></span
+              ></b>
+            </p>
+          </td>
+        </tr>
+        <tr style="mso-yfti-irow: 1; height: 13.5pt">
+          <td
+            width="624"
+            colspan="3"
+            valign="top"
+            style="
+              width: 467.75pt;
+              border: solid black 1pt;
+              border-top: none;
+              mso-border-top-alt: solid black 0.5pt;
+              mso-border-alt: solid black 0.5pt;
+              padding: 0cm 0cm 0cm 0cm;
+              height: 13.5pt;
+            "
+          >
+            <p
+              class="TableParagraph"
+              style="
+                margin-left: 5.5pt;
+                line-height: 12.3pt;
+                mso-line-height-rule: exactly;
+              "
+            >
+              <b style="mso-bidi-font-weight: normal"
+                ><span lang="EN-US" style="mso-font-width: 85%">Common,</span
+                ><span lang="EN-US" style="letter-spacing: 0.2pt"> </span
+                ><span lang="EN-US" style="mso-font-width: 85%">not</span
+                ><span lang="EN-US" style="letter-spacing: 0.25pt"> </span
+                ><span lang="EN-US" style="mso-font-width: 85%">life</span
+                ><span lang="EN-US" style="letter-spacing: 0.35pt"> </span
+                ><span
+                  lang="EN-US"
+                  style="letter-spacing: -0.1pt; mso-font-width: 85%"
+                  >threatening</span
+                ><span lang="EN-US"><o:p></o:p></span
+              ></b>
+            </p>
+          </td>
+        </tr>
+        <tr style="mso-yfti-irow: 2; height: 13.5pt">
+          <td
+            width="226"
+            valign="top"
+            style="
+              width: 169.85pt;
+              border: solid black 1pt;
+              border-top: none;
+              mso-border-top-alt: solid black 0.5pt;
+              mso-border-alt: solid black 0.5pt;
+              padding: 0cm 0cm 0cm 0cm;
+              height: 13.5pt;
+            "
+          >
+            <p
+              class="TableParagraph"
+              style="
+                margin-left: 5.5pt;
+                line-height: 12.3pt;
+                mso-line-height-rule: exactly;
+              "
+            >
+              <span lang="EN-US" style="mso-font-width: 90%">Minor</span
+              ><span lang="EN-US" style="letter-spacing: 0.55pt"> </span
+              ><span lang="EN-US" style="mso-font-width: 90%">allergic</span
+              ><span lang="EN-US" style="letter-spacing: 0.8pt"> </span
+              ><span lang="EN-US" style="mso-font-width: 90%">reaction</span
+              ><span lang="EN-US" style="letter-spacing: 0.75pt"> </span
+              ><span
+                lang="EN-US"
+                style="letter-spacing: -0.1pt; mso-font-width: 90%"
+                >(urticaria)</span
+              >
+            </p>
+          </td>
+          <td
+            width="132"
+            valign="top"
+            style="
+              width: 99.3pt;
+              border-top: none;
+              border-left: none;
+              border-bottom: solid black 1pt;
+              border-right: solid black 1pt;
+              mso-border-top-alt: solid black 0.5pt;
+              mso-border-left-alt: solid black 0.5pt;
+              mso-border-alt: solid black 0.5pt;
+              padding: 0cm 0cm 0cm 0cm;
+              height: 13.5pt;
+            "
+          >
+            <p
+              class="TableParagraph"
+              style="line-height: 12.3pt; mso-line-height-rule: exactly"
+            >
+              <span lang="EN-US" style="letter-spacing: -0.4pt">1</span
+              ><span lang="EN-US" style="letter-spacing: -0.55pt"> </span
+              ><span lang="EN-US" style="letter-spacing: -0.4pt">in</span
+              ><span lang="EN-US" style="letter-spacing: -0.5pt"> </span
+              ><span lang="EN-US" style="letter-spacing: -0.4pt">100</span>
+            </p>
+          </td>
+          <td
+            width="265"
+            valign="top"
+            style="
+              width: 198.6pt;
+              border-top: none;
+              border-left: none;
+              border-bottom: solid black 1pt;
+              border-right: solid black 1pt;
+              mso-border-top-alt: solid black 0.5pt;
+              mso-border-left-alt: solid black 0.5pt;
+              mso-border-alt: solid black 0.5pt;
+              padding: 0cm 0cm 0cm 0cm;
+              height: 13.5pt;
+            "
+          >
+            <p
+              class="TableParagraph"
+              style="line-height: 12.3pt; mso-line-height-rule: exactly"
+            >
+              <span lang="EN-US" style="mso-font-width: 90%">-</span
+              ><span lang="EN-US" style="letter-spacing: -0.15pt"> </span
+              ><span lang="EN-US" style="mso-font-width: 90%">Generally,</span
+              ><span lang="EN-US" style="letter-spacing: -0.3pt"> </span
+              ><span lang="EN-US" style="mso-font-width: 90%">resolves</span
+              ><span lang="EN-US" style="letter-spacing: -0.25pt"> </span
+              ><span lang="EN-US" style="mso-font-width: 90%">with</span
+              ><span lang="EN-US" style="letter-spacing: -0.3pt"> </span
+              ><span
+                lang="EN-US"
+                style="letter-spacing: -0.1pt; mso-font-width: 90%"
+                >antihistamine</span
+              >
+            </p>
+          </td>
+        </tr>
+        <tr style="mso-yfti-irow: 3; height: 13.5pt">
+          <td
+            width="226"
+            valign="top"
+            style="
+              width: 169.85pt;
+              border: solid black 1pt;
+              border-top: none;
+              mso-border-top-alt: solid black 0.5pt;
+              mso-border-alt: solid black 0.5pt;
+              padding: 0cm 0cm 0cm 0cm;
+              height: 13.5pt;
+            "
+          >
+            <p
+              class="TableParagraph"
+              style="
+                margin-left: 5.5pt;
+                line-height: 12.3pt;
+                mso-line-height-rule: exactly;
+              "
+            >
+              <span lang="EN-US" style="mso-font-width: 90%">Febrile</span
+              ><span lang="EN-US" style="letter-spacing: 0.75pt"> </span
+              ><span lang="EN-US" style="mso-font-width: 90%"
+                >non-hemolytic</span
+              ><span lang="EN-US" style="letter-spacing: 0.8pt"> </span
+              ><span
+                lang="EN-US"
+                style="letter-spacing: -0.1pt; mso-font-width: 90%"
+                >reaction</span
+              >
+            </p>
+          </td>
+          <td
+            width="132"
+            valign="top"
+            style="
+              width: 99.3pt;
+              border-top: none;
+              border-left: none;
+              border-bottom: solid black 1pt;
+              border-right: solid black 1pt;
+              mso-border-top-alt: solid black 0.5pt;
+              mso-border-left-alt: solid black 0.5pt;
+              mso-border-alt: solid black 0.5pt;
+              padding: 0cm 0cm 0cm 0cm;
+              height: 13.5pt;
+            "
+          >
+            <p
+              class="TableParagraph"
+              style="line-height: 12.3pt; mso-line-height-rule: exactly"
+            >
+              <span lang="EN-US" style="mso-font-width: 90%"
+                >1<span style="letter-spacing: -0.2pt"> </span>in<span
+                  style="letter-spacing: -0.2pt"
+                >
+                </span
+                >300</span
+              ><span lang="EN-US" style="letter-spacing: -0.2pt"> </span
+              ><span
+                lang="EN-US"
+                style="letter-spacing: -0.1pt; mso-font-width: 90%"
+                >(RBC)</span
+              >
+            </p>
+          </td>
+          <td
+            width="265"
+            valign="top"
+            style="
+              width: 198.6pt;
+              border-top: none;
+              border-left: none;
+              border-bottom: solid black 1pt;
+              border-right: solid black 1pt;
+              mso-border-top-alt: solid black 0.5pt;
+              mso-border-left-alt: solid black 0.5pt;
+              mso-border-alt: solid black 0.5pt;
+              padding: 0cm 0cm 0cm 0cm;
+              height: 13.5pt;
+            "
+          >
+            <p
+              class="TableParagraph"
+              style="line-height: 12.3pt; mso-line-height-rule: exactly"
+            >
+              <span lang="EN-US" style="mso-font-width: 90%">-</span
+              ><span lang="EN-US" style="letter-spacing: -0.15pt"> </span
+              ><span lang="EN-US" style="mso-font-width: 90%">Generally,</span
+              ><span lang="EN-US" style="letter-spacing: -0.3pt"> </span
+              ><span lang="EN-US" style="mso-font-width: 90%">resolves</span
+              ><span lang="EN-US" style="letter-spacing: -0.25pt"> </span
+              ><span lang="EN-US" style="mso-font-width: 90%">with</span
+              ><span lang="EN-US" style="letter-spacing: -0.3pt"> </span
+              ><span
+                lang="EN-US"
+                style="letter-spacing: -0.1pt; mso-font-width: 90%"
+                >antipyretic</span
+              >
+            </p>
+          </td>
+        </tr>
+        <tr style="mso-yfti-irow: 4; height: 13.25pt">
+          <td
+            width="624"
+            colspan="3"
+            valign="top"
+            style="
+              width: 467.75pt;
+              border: solid black 1pt;
+              border-top: none;
+              mso-border-top-alt: solid black 0.5pt;
+              mso-border-alt: solid black 0.5pt;
+              padding: 0cm 0cm 0cm 0cm;
+              height: 13.25pt;
+            "
+          >
+            <p
+              class="TableParagraph"
+              style="
+                margin-top: 0cm;
+                margin-right: 0cm;
+                margin-bottom: 0cm;
+                margin-left: 5.5pt;
+                margin-bottom: 0.0001pt;
+                line-height: 12.25pt;
+                mso-line-height-rule: exactly;
+              "
+            >
+              <b style="mso-bidi-font-weight: normal"
+                ><span lang="EN-US" style="mso-font-width: 85%">Serious</span
+                ><span lang="EN-US" style="letter-spacing: 1.05pt"> </span
+                ><span lang="EN-US" style="mso-font-width: 85%">and</span
+                ><span lang="EN-US" style="letter-spacing: 1.1pt"> </span
+                ><span lang="EN-US" style="mso-font-width: 85%">life</span
+                ><span lang="EN-US" style="letter-spacing: 0.95pt"> </span
+                ><span lang="EN-US" style="mso-font-width: 85%"
+                  >threatening,</span
+                ><span lang="EN-US" style="letter-spacing: 0.8pt"> </span
+                ><span lang="EN-US" style="mso-font-width: 85%">requiring</span
+                ><span lang="EN-US" style="letter-spacing: 1pt"> </span
+                ><span lang="EN-US" style="mso-font-width: 85%">some</span
+                ><span lang="EN-US" style="letter-spacing: 0.85pt"> </span
+                ><span lang="EN-US" style="mso-font-width: 85%"
+                  >prevention/treatment</span
+                ><span lang="EN-US" style="letter-spacing: 0.85pt"> </span
+                ><span
+                  lang="EN-US"
+                  style="letter-spacing: -0.1pt; mso-font-width: 85%"
+                  >measures</span
+                ><span lang="EN-US"><o:p></o:p></span
+              ></b>
+            </p>
+          </td>
+        </tr>
+        <tr style="mso-yfti-irow: 5; height: 94pt">
+          <td
+            width="226"
+            valign="top"
+            style="
+              width: 169.85pt;
+              border: solid black 1pt;
+              border-top: none;
+              mso-border-top-alt: solid black 0.5pt;
+              mso-border-alt: solid black 0.5pt;
+              padding: 0cm 0cm 0cm 0cm;
+              height: 94pt;
+            "
+          >
+            <p class="TableParagraph" style="margin-left: 5.5pt">
+              <span lang="EN-US" style="mso-font-width: 75%">RBC</span
+              ><span lang="EN-US" style="letter-spacing: -0.3pt"> </span
+              ><span lang="EN-US" style="letter-spacing: -0.1pt"
+                >alloantibodies</span
+              >
+            </p>
+          </td>
+          <td
+            width="132"
+            valign="top"
+            style="
+              width: 99.3pt;
+              border-top: none;
+              border-left: none;
+              border-bottom: solid black 1pt;
+              border-right: solid black 1pt;
+              mso-border-top-alt: solid black 0.5pt;
+              mso-border-left-alt: solid black 0.5pt;
+              mso-border-alt: solid black 0.5pt;
+              padding: 0cm 0cm 0cm 0cm;
+              height: 94pt;
+            "
+          >
+            <p class="TableParagraph">
+              <span lang="EN-US" style="letter-spacing: -0.4pt">1</span
+              ><span lang="EN-US" style="letter-spacing: -0.55pt"> </span
+              ><span lang="EN-US" style="letter-spacing: -0.4pt">in</span
+              ><span lang="EN-US" style="letter-spacing: -0.5pt"> </span
+              ><span lang="EN-US" style="letter-spacing: -0.4pt">13</span>
+            </p>
+          </td>
+          <td
+            width="265"
+            valign="top"
+            style="
+              width: 198.6pt;
+              border-top: none;
+              border-left: none;
+              border-bottom: solid black 1pt;
+              border-right: solid black 1pt;
+              mso-border-top-alt: solid black 0.5pt;
+              mso-border-left-alt: solid black 0.5pt;
+              mso-border-alt: solid black 0.5pt;
+              padding: 0cm 0cm 0cm 0cm;
+              height: 94pt;
+            "
+          >
+            <p
+              class="TableParagraph"
+              style="
+                margin-top: 0.15pt;
+                margin-right: 32.35pt;
+                margin-bottom: 0cm;
+                margin-left: 10.45pt;
+                margin-bottom: 0.0001pt;
+                text-indent: -5pt;
+                line-height: 106%;
+                mso-list: l0 level1 lfo2;
+                tab-stops: 10.45pt 11.4pt;
+              "
+            >
+              <![if !supportLists]><span
+                lang="EN-US"
+                style="mso-font-width: 91%"
+                ><span style="mso-list: Ignore"
+                  >-<span style="font: 7pt 'Times New Roman'">
+                  </span></span></span
+              ><![endif]><span lang="EN-US" style="mso-font-width: 90%"
+                >All</span
+              ><span lang="EN-US">
+                <span style="mso-font-width: 90%"
+                  >future RBC transfusions<span style="letter-spacing: -0.1pt">
+                  </span
+                  >require </span
+                >antigen<span style="letter-spacing: -0.15pt"> </span
+                >negative<span style="letter-spacing: -0.1pt"> </span
+                >blood</span
+              >
+            </p>
+            <p
+              class="TableParagraph"
+              style="
+                margin-top: 0cm;
+                margin-right: 21.35pt;
+                margin-bottom: 0cm;
+                margin-left: 12.95pt;
+                margin-bottom: 0.0001pt;
+                text-indent: -7.5pt;
+                line-height: 106%;
+                mso-list: l0 level1 lfo2;
+                tab-stops: 11.4pt 12.95pt;
+              "
+            >
+              <![if !supportLists]><span
+                lang="EN-US"
+                style="mso-font-width: 91%"
+                ><span style="mso-list: Ignore"
+                  >-<span style="font: 7pt 'Times New Roman'"
+                    >&nbsp;
+                  </span></span
+                ></span
+              ><![endif]><span lang="EN-US" style="mso-font-width: 90%"
+                >Risk of acute hemolytic reaction with </span
+              ><span lang="EN-US"
+                >future<span style="letter-spacing: -0.1pt"> </span
+                >transfusion</span
+              >
+            </p>
+            <p
+              class="TableParagraph"
+              style="
+                margin-top: 0cm;
+                margin-right: 0cm;
+                margin-bottom: 0cm;
+                margin-left: 11.4pt;
+                margin-bottom: 0.0001pt;
+                text-indent: -5.95pt;
+                line-height: 12.6pt;
+                mso-line-height-rule: exactly;
+                mso-list: l0 level1 lfo2;
+                tab-stops: 11.4pt;
+              "
+            >
+              <![if !supportLists]><span
+                lang="EN-US"
+                style="mso-font-width: 91%"
+                ><span style="mso-list: Ignore"
+                  >-<span style="font: 7pt 'Times New Roman'"
+                    >&nbsp;
+                  </span></span
+                ></span
+              ><![endif]><span
+                lang="EN-US"
+                style="letter-spacing: -0.1pt; mso-font-width: 90%"
+                >Risk</span
+              ><span lang="EN-US" style="letter-spacing: -0.25pt"> </span
+              ><span
+                lang="EN-US"
+                style="letter-spacing: -0.1pt; mso-font-width: 90%"
+                >of</span
+              ><span lang="EN-US" style="letter-spacing: -0.4pt"> </span
+              ><span
+                lang="EN-US"
+                style="letter-spacing: -0.1pt; mso-font-width: 90%"
+                >hemolytic</span
+              ><span lang="EN-US" style="letter-spacing: -0.2pt"> </span
+              ><span
+                lang="EN-US"
+                style="letter-spacing: -0.1pt; mso-font-width: 90%"
+                >disease</span
+              ><span lang="EN-US" style="letter-spacing: -0.15pt"> </span
+              ><span
+                lang="EN-US"
+                style="letter-spacing: -0.35pt; mso-font-width: 90%"
+                >of</span
+              >
+            </p>
+            <p
+              class="TableParagraph"
+              style="
+                margin-top: 0.15pt;
+                margin-right: 42.15pt;
+                margin-bottom: 0cm;
+                margin-left: 12.95pt;
+                margin-bottom: 0.0001pt;
+                line-height: 13pt;
+              "
+            >
+              <span lang="EN-US" style="letter-spacing: -0.2pt"
+                >fetus/newborn</span
+              ><span lang="EN-US" style="letter-spacing: -0.6pt"> </span
+              ><span lang="EN-US" style="letter-spacing: -0.2pt">for</span
+              ><span lang="EN-US" style="letter-spacing: -0.55pt"> </span
+              ><span lang="EN-US" style="letter-spacing: -0.2pt">females</span
+              ><span lang="EN-US" style="letter-spacing: -0.65pt"> </span
+              ><span lang="EN-US" style="letter-spacing: -0.2pt">with </span
+              ><span lang="EN-US"
+                >childbearing<span style="letter-spacing: -0.1pt"> </span
+                >potential</span
+              >
+            </p>
+          </td>
+        </tr>
+        <tr style="mso-yfti-irow: 6; height: 67.25pt">
+          <td
+            width="226"
+            valign="top"
+            style="
+              width: 169.85pt;
+              border: solid black 1pt;
+              border-top: none;
+              mso-border-top-alt: solid black 0.5pt;
+              mso-border-alt: solid black 0.5pt;
+              padding: 0cm 0cm 0cm 0cm;
+              height: 67.25pt;
+            "
+          >
+            <p
+              class="TableParagraph"
+              style="
+                margin-top: 0.2pt;
+                margin-right: 0cm;
+                margin-bottom: 0cm;
+                margin-left: 5.5pt;
+                margin-bottom: 0.0001pt;
+                line-height: 106%;
+              "
+            >
+              <span lang="EN-US" style="mso-font-width: 90%"
+                >Transfusion<span style="letter-spacing: -0.5pt"> </span
+                >Associated<span style="letter-spacing: -0.45pt"> </span
+                >Circulatory </span
+              ><span lang="EN-US" style="letter-spacing: -0.1pt">Overload</span
+              ><span lang="EN-US" style="letter-spacing: -0.7pt"> </span
+              ><span lang="EN-US" style="letter-spacing: -0.1pt">(TACO)</span>
+            </p>
+          </td>
+          <td
+            width="132"
+            valign="top"
+            style="
+              width: 99.3pt;
+              border-top: none;
+              border-left: none;
+              border-bottom: solid black 1pt;
+              border-right: solid black 1pt;
+              mso-border-top-alt: solid black 0.5pt;
+              mso-border-left-alt: solid black 0.5pt;
+              mso-border-alt: solid black 0.5pt;
+              padding: 0cm 0cm 0cm 0cm;
+              height: 67.25pt;
+            "
+          >
+            <p class="TableParagraph" style="margin-top: 0.2pt">
+              <span lang="EN-US" style="letter-spacing: -0.4pt">1</span
+              ><span lang="EN-US" style="letter-spacing: -0.55pt"> </span
+              ><span lang="EN-US" style="letter-spacing: -0.4pt">in</span
+              ><span lang="EN-US" style="letter-spacing: -0.5pt"> </span
+              ><span lang="EN-US" style="letter-spacing: -0.4pt">100</span>
+            </p>
+          </td>
+          <td
+            width="265"
+            valign="top"
+            style="
+              width: 198.6pt;
+              border-top: none;
+              border-left: none;
+              border-bottom: solid black 1pt;
+              border-right: solid black 1pt;
+              mso-border-top-alt: solid black 0.5pt;
+              mso-border-left-alt: solid black 0.5pt;
+              mso-border-alt: solid black 0.5pt;
+              padding: 0cm 0cm 0cm 0cm;
+              height: 67.25pt;
+            "
+          >
+            <p
+              class="TableParagraph"
+              style="
+                margin-top: 0.2pt;
+                margin-right: 0cm;
+                margin-bottom: 0cm;
+                margin-left: 11.4pt;
+                margin-bottom: 0.0001pt;
+                text-indent: -5.95pt;
+                mso-list: l1 level1 lfo1;
+                tab-stops: 11.4pt;
+              "
+            >
+              <![if !supportLists]><span
+                lang="EN-US"
+                style="mso-font-width: 91%"
+                ><span style="mso-list: Ignore"
+                  >-<span style="font: 7pt 'Times New Roman'"
+                    >&nbsp;
+                  </span></span
+                ></span
+              ><![endif]><span
+                lang="EN-US"
+                style="letter-spacing: -0.1pt; mso-font-width: 90%"
+                >Pre-transfusion:</span
+              ><span lang="EN-US" style="letter-spacing: -0.1pt">
+                <span style="mso-font-width: 90%">assess</span></span
+              ><span lang="EN-US" style="letter-spacing: -0.15pt"> </span
+              ><span
+                lang="EN-US"
+                style="letter-spacing: -0.1pt; mso-font-width: 90%"
+                >for</span
+              ><span lang="EN-US" style="letter-spacing: -0.25pt"> </span
+              ><span
+                lang="EN-US"
+                style="letter-spacing: -0.2pt; mso-font-width: 90%"
+                >risk</span
+              >
+            </p>
+            <p
+              class="TableParagraph"
+              style="
+                margin-top: 0.85pt;
+                margin-right: 0cm;
+                margin-bottom: 0cm;
+                margin-left: 11.4pt;
+                margin-bottom: 0.0001pt;
+                text-indent: -5.95pt;
+                mso-list: l1 level1 lfo1;
+                tab-stops: 11.4pt;
+              "
+            >
+              <![if !supportLists]><span
+                lang="EN-US"
+                style="mso-font-width: 91%"
+                ><span style="mso-list: Ignore"
+                  >-<span style="font: 7pt 'Times New Roman'"
+                    >&nbsp;
+                  </span></span
+                ></span
+              ><![endif]><span lang="EN-US" style="letter-spacing: -0.1pt"
+                >Prevention:</span
+              >
+            </p>
+            <p
+              class="TableParagraph"
+              style="
+                margin-top: 0cm;
+                margin-right: 57.1pt;
+                margin-bottom: 0cm;
+                margin-left: 12.95pt;
+                margin-bottom: 0.0001pt;
+                line-height: 13.5pt;
+                mso-line-height-rule: exactly;
+              "
+            >
+              <span lang="EN-US" style="letter-spacing: -0.3pt"
+                >pre-transfusion</span
+              ><span lang="EN-US" style="letter-spacing: -0.55pt"> </span
+              ><span lang="EN-US" style="letter-spacing: -0.3pt"
+                >diuretic, </span
+              ><span lang="EN-US"
+                >slow rate of infusion, single<span
+                  style="letter-spacing: -0.15pt"
+                >
+                </span
+                >unit<span style="letter-spacing: -0.1pt"> </span
+                >transfusion</span
+              >
+            </p>
+          </td>
+        </tr>
+        <tr style="mso-yfti-irow: 7; height: 26.75pt">
+          <td
+            width="226"
+            valign="top"
+            style="
+              width: 169.85pt;
+              border: solid black 1pt;
+              border-top: none;
+              mso-border-top-alt: solid black 0.5pt;
+              mso-border-alt: solid black 0.5pt;
+              padding: 0cm 0cm 0cm 0cm;
+              height: 26.75pt;
+            "
+          >
+            <p class="TableParagraph" style="margin-left: 5.5pt">
+              <span lang="EN-US" style="mso-font-width: 90%"
+                >Transfusion<span style="letter-spacing: -0.45pt"> </span
+                >Related<span style="letter-spacing: -0.4pt"> </span>Acute<span
+                  style="letter-spacing: -0.35pt"
+                >
+                </span
+                ><span style="letter-spacing: -0.2pt">Lung</span></span
+              >
+            </p>
+            <p
+              class="TableParagraph"
+              style="
+                margin-top: 0.65pt;
+                margin-right: 0cm;
+                margin-bottom: 0cm;
+                margin-left: 5.5pt;
+                margin-bottom: 0.0001pt;
+                line-height: 12.3pt;
+                mso-line-height-rule: exactly;
+              "
+            >
+              <span lang="EN-US" style="letter-spacing: -0.3pt">Injury</span
+              ><span lang="EN-US" style="letter-spacing: -0.2pt"> </span
+              ><span lang="EN-US" style="letter-spacing: -0.1pt">(TRALI)</span>
+            </p>
+          </td>
+          <td
+            width="132"
+            valign="top"
+            style="
+              width: 99.3pt;
+              border-top: none;
+              border-left: none;
+              border-bottom: solid black 1pt;
+              border-right: solid black 1pt;
+              mso-border-top-alt: solid black 0.5pt;
+              mso-border-left-alt: solid black 0.5pt;
+              mso-border-alt: solid black 0.5pt;
+              padding: 0cm 0cm 0cm 0cm;
+              height: 26.75pt;
+            "
+          >
+            <p class="TableParagraph">
+              <span lang="EN-US" style="letter-spacing: -0.4pt">1</span
+              ><span lang="EN-US" style="letter-spacing: -0.55pt"> </span
+              ><span lang="EN-US" style="letter-spacing: -0.4pt">in</span
+              ><span lang="EN-US" style="letter-spacing: -0.5pt"> </span
+              ><span lang="EN-US" style="letter-spacing: -0.4pt">10,000</span>
+            </p>
+          </td>
+          <td
+            width="265"
+            valign="top"
+            style="
+              width: 198.6pt;
+              border-top: none;
+              border-left: none;
+              border-bottom: solid black 1pt;
+              border-right: solid black 1pt;
+              mso-border-top-alt: solid black 0.5pt;
+              mso-border-left-alt: solid black 0.5pt;
+              mso-border-alt: solid black 0.5pt;
+              padding: 0cm 0cm 0cm 0cm;
+              height: 26.75pt;
+            "
+          >
+            <p class="TableParagraph">
+              <span lang="EN-US" style="mso-font-width: 90%"
+                >-<span style="letter-spacing: -0.1pt"> </span>Supportive<span
+                  style="letter-spacing: -0.15pt"
+                >
+                </span
+                >care<span style="letter-spacing: -0.15pt"> </span>(oxygen,<span
+                  style="letter-spacing: -0.2pt"
+                >
+                </span
+                ><span style="letter-spacing: -0.1pt">respiratory</span></span
+              >
+            </p>
+            <p
+              class="TableParagraph"
+              style="
+                margin-top: 0.65pt;
+                margin-right: 0cm;
+                margin-bottom: 0cm;
+                margin-left: 12.95pt;
+                margin-bottom: 0.0001pt;
+                line-height: 12.3pt;
+                mso-line-height-rule: exactly;
+              "
+            >
+              <span lang="EN-US" style="mso-font-width: 90%">support,</span
+              ><span lang="EN-US" style="letter-spacing: 0.65pt"> </span
+              ><span lang="EN-US" style="letter-spacing: -0.1pt"
+                >vasopressors)</span
+              >
+            </p>
+          </td>
+        </tr>
+        <tr style="mso-yfti-irow: 8; height: 40.25pt">
+          <td
+            width="226"
+            valign="top"
+            style="
+              width: 169.85pt;
+              border: solid black 1pt;
+              border-top: none;
+              mso-border-top-alt: solid black 0.5pt;
+              mso-border-alt: solid black 0.5pt;
+              padding: 0cm 0cm 0cm 0cm;
+              height: 40.25pt;
+            "
+          >
+            <p class="TableParagraph" style="margin-left: 5.5pt">
+              <span lang="EN-US" style="mso-font-width: 90%">Acute</span
+              ><span lang="EN-US" style="letter-spacing: 0.6pt"> </span
+              ><span lang="EN-US" style="mso-font-width: 90%">hemolytic</span
+              ><span lang="EN-US" style="letter-spacing: 0.85pt"> </span
+              ><span
+                lang="EN-US"
+                style="letter-spacing: -0.1pt; mso-font-width: 90%"
+                >reaction</span
+              >
+            </p>
+          </td>
+          <td
+            width="132"
+            valign="top"
+            style="
+              width: 99.3pt;
+              border-top: none;
+              border-left: none;
+              border-bottom: solid black 1pt;
+              border-right: solid black 1pt;
+              mso-border-top-alt: solid black 0.5pt;
+              mso-border-left-alt: solid black 0.5pt;
+              mso-border-alt: solid black 0.5pt;
+              padding: 0cm 0cm 0cm 0cm;
+              height: 40.25pt;
+            "
+          >
+            <p class="TableParagraph">
+              <span lang="EN-US" style="letter-spacing: -0.4pt">1</span
+              ><span lang="EN-US" style="letter-spacing: -0.55pt"> </span
+              ><span lang="EN-US" style="letter-spacing: -0.4pt">in</span
+              ><span lang="EN-US" style="letter-spacing: -0.5pt"> </span
+              ><span lang="EN-US" style="letter-spacing: -0.4pt">40,000</span>
+            </p>
+          </td>
+          <td
+            width="265"
+            valign="top"
+            style="
+              width: 198.6pt;
+              border-top: none;
+              border-left: none;
+              border-bottom: solid black 1pt;
+              border-right: solid black 1pt;
+              mso-border-top-alt: solid black 0.5pt;
+              mso-border-left-alt: solid black 0.5pt;
+              mso-border-alt: solid black 0.5pt;
+              padding: 0cm 0cm 0cm 0cm;
+              height: 40.25pt;
+            "
+          >
+            <p
+              class="TableParagraph"
+              style="
+                margin-top: 0.15pt;
+                margin-right: 8.45pt;
+                margin-bottom: 0cm;
+                margin-left: 12.95pt;
+                margin-bottom: 0.0001pt;
+                text-indent: -7.5pt;
+                line-height: 106%;
+              "
+            >
+              <span lang="EN-US" style="letter-spacing: -0.3pt">-</span
+              ><span lang="EN-US" style="letter-spacing: -0.5pt"> </span
+              ><span lang="EN-US" style="letter-spacing: -0.3pt"
+                >Unequivocal</span
+              ><span lang="EN-US" style="letter-spacing: -0.65pt"> </span
+              ><span lang="EN-US" style="letter-spacing: -0.3pt">patient</span
+              ><span lang="EN-US" style="letter-spacing: -0.55pt"> </span
+              ><span lang="EN-US" style="letter-spacing: -0.3pt"
+                >identification</span
+              ><span lang="EN-US" style="letter-spacing: -0.6pt"> </span
+              ><span lang="EN-US" style="letter-spacing: -0.3pt">steps </span
+              ><span lang="EN-US"
+                >critical<span style="letter-spacing: -0.8pt"> </span>at<span
+                  style="letter-spacing: -0.75pt"
+                >
+                </span
+                >sample<span style="letter-spacing: -0.75pt"> </span
+                >collection<span style="letter-spacing: -0.8pt"> </span
+                >and</span
+              >
+            </p>
+            <p
+              class="TableParagraph"
+              style="
+                margin-top: 0cm;
+                margin-right: 0cm;
+                margin-bottom: 0cm;
+                margin-left: 12.95pt;
+                margin-bottom: 0.0001pt;
+                line-height: 12pt;
+                mso-line-height-rule: exactly;
+              "
+            >
+              <span lang="EN-US" style="letter-spacing: -0.1pt">at</span
+              ><span lang="EN-US" style="letter-spacing: -0.65pt"> </span
+              ><span lang="EN-US" style="letter-spacing: -0.1pt"
+                >administration</span
+              >
+            </p>
+          </td>
+        </tr>
+        <tr style="mso-yfti-irow: 9; height: 27pt">
+          <td
+            width="226"
+            valign="top"
+            style="
+              width: 169.85pt;
+              border: solid black 1pt;
+              border-top: none;
+              mso-border-top-alt: solid black 0.5pt;
+              mso-border-alt: solid black 0.5pt;
+              padding: 0cm 0cm 0cm 0cm;
+              height: 27pt;
+            "
+          >
+            <p class="TableParagraph" style="margin-left: 5.5pt">
+              <span lang="EN-US" style="letter-spacing: -0.1pt"
+                >Anaphylaxis</span
+              >
+            </p>
+          </td>
+          <td
+            width="132"
+            valign="top"
+            style="
+              width: 99.3pt;
+              border-top: none;
+              border-left: none;
+              border-bottom: solid black 1pt;
+              border-right: solid black 1pt;
+              mso-border-top-alt: solid black 0.5pt;
+              mso-border-left-alt: solid black 0.5pt;
+              mso-border-alt: solid black 0.5pt;
+              padding: 0cm 0cm 0cm 0cm;
+              height: 27pt;
+            "
+          >
+            <p class="TableParagraph">
+              <span lang="EN-US" style="letter-spacing: -0.4pt">1</span
+              ><span lang="EN-US" style="letter-spacing: -0.55pt"> </span
+              ><span lang="EN-US" style="letter-spacing: -0.4pt">in</span
+              ><span lang="EN-US" style="letter-spacing: -0.5pt"> </span
+              ><span lang="EN-US" style="letter-spacing: -0.4pt">40,000</span>
+            </p>
+          </td>
+          <td
+            width="265"
+            valign="top"
+            style="
+              width: 198.6pt;
+              border-top: none;
+              border-left: none;
+              border-bottom: solid black 1pt;
+              border-right: solid black 1pt;
+              mso-border-top-alt: solid black 0.5pt;
+              mso-border-left-alt: solid black 0.5pt;
+              mso-border-alt: solid black 0.5pt;
+              padding: 0cm 0cm 0cm 0cm;
+              height: 27pt;
+            "
+          >
+            <p class="TableParagraph">
+              <span lang="EN-US" style="mso-font-width: 90%">-</span
+              ><span lang="EN-US">
+                <span style="mso-font-width: 90%">Close</span
+                ><span style="letter-spacing: -0.1pt"> </span
+                ><span style="mso-font-width: 90%">monitoring</span
+                ><span style="letter-spacing: -0.1pt"> </span
+                ><span style="mso-font-width: 90%">during</span
+                ><span style="letter-spacing: -0.05pt"> </span
+                ><span style="letter-spacing: -0.1pt; mso-font-width: 90%"
+                  >transfusion,</span
+                ></span
+              >
+            </p>
+            <p
+              class="TableParagraph"
+              style="
+                margin-top: 0.85pt;
+                margin-right: 0cm;
+                margin-bottom: 0cm;
+                margin-left: 7.95pt;
+                margin-bottom: 0.0001pt;
+                line-height: 12.3pt;
+                mso-line-height-rule: exactly;
+              "
+            >
+              <span lang="EN-US" style="letter-spacing: -0.3pt">identify</span
+              ><span lang="EN-US" style="letter-spacing: -0.5pt"> </span
+              ><span lang="EN-US" style="letter-spacing: -0.3pt">early,</span
+              ><span lang="EN-US" style="letter-spacing: -0.5pt"> </span
+              ><span lang="EN-US" style="letter-spacing: -0.3pt">prompt</span
+              ><span lang="EN-US" style="letter-spacing: -0.45pt"> </span
+              ><span lang="EN-US" style="letter-spacing: -0.3pt">medical</span
+              ><span lang="EN-US" style="letter-spacing: -0.55pt"> </span
+              ><span lang="EN-US" style="letter-spacing: -0.3pt"
+                >treatment</span
+              >
+            </p>
+          </td>
+        </tr>
+        <tr style="mso-yfti-irow: 10; height: 26.75pt">
+          <td
+            width="226"
+            valign="top"
+            style="
+              width: 169.85pt;
+              border: solid black 1pt;
+              border-top: none;
+              mso-border-top-alt: solid black 0.5pt;
+              mso-border-alt: solid black 0.5pt;
+              padding: 0cm 0cm 0cm 0cm;
+              height: 26.75pt;
+            "
+          >
+            <p
+              class="TableParagraph"
+              style="
+                margin-top: 0.2pt;
+                margin-right: 0cm;
+                margin-bottom: 0cm;
+                margin-left: 5.5pt;
+                margin-bottom: 0.0001pt;
+              "
+            >
+              <span lang="EN-US" style="mso-font-width: 90%">Bacterial</span
+              ><span lang="EN-US" style="letter-spacing: -0.2pt"> </span
+              ><span lang="EN-US" style="letter-spacing: -0.1pt">sepsis</span>
+            </p>
+          </td>
+          <td
+            width="132"
+            valign="top"
+            style="
+              width: 99.3pt;
+              border-top: none;
+              border-left: none;
+              border-bottom: solid black 1pt;
+              border-right: solid black 1pt;
+              mso-border-top-alt: solid black 0.5pt;
+              mso-border-left-alt: solid black 0.5pt;
+              mso-border-alt: solid black 0.5pt;
+              padding: 0cm 0cm 0cm 0cm;
+              height: 26.75pt;
+            "
+          >
+            <p class="TableParagraph" style="margin-top: 0.2pt">
+              <span lang="EN-US" style="mso-font-width: 90%"
+                >1<span style="letter-spacing: -0.15pt"> </span>in<span
+                  style="letter-spacing: -0.15pt"
+                >
+                </span
+                >250,000<span style="letter-spacing: -0.15pt"> </span
+                ><span style="letter-spacing: -0.2pt">(RBC)</span></span
+              >
+            </p>
+          </td>
+          <td
+            width="265"
+            valign="top"
+            style="
+              width: 198.6pt;
+              border-top: none;
+              border-left: none;
+              border-bottom: solid black 1pt;
+              border-right: solid black 1pt;
+              mso-border-top-alt: solid black 0.5pt;
+              mso-border-left-alt: solid black 0.5pt;
+              mso-border-alt: solid black 0.5pt;
+              padding: 0cm 0cm 0cm 0cm;
+              height: 26.75pt;
+            "
+          >
+            <p class="TableParagraph" style="margin-top: 0.2pt">
+              <span lang="EN-US" style="mso-font-width: 90%">-</span
+              ><span lang="EN-US">
+                <span style="mso-font-width: 90%">Close</span
+                ><span style="letter-spacing: -0.1pt"> </span
+                ><span style="mso-font-width: 90%">monitoring</span
+                ><span style="letter-spacing: -0.1pt"> </span
+                ><span style="mso-font-width: 90%">during</span
+                ><span style="letter-spacing: -0.05pt"> </span
+                ><span style="letter-spacing: -0.1pt; mso-font-width: 90%"
+                  >transfusion,</span
+                ></span
+              >
+            </p>
+            <p
+              class="TableParagraph"
+              style="
+                margin-top: 0.6pt;
+                margin-right: 0cm;
+                margin-bottom: 0cm;
+                margin-left: 7.95pt;
+                margin-bottom: 0.0001pt;
+                line-height: 12.3pt;
+                mso-line-height-rule: exactly;
+              "
+            >
+              <span lang="EN-US" style="letter-spacing: -0.3pt">identify</span
+              ><span lang="EN-US" style="letter-spacing: -0.5pt"> </span
+              ><span lang="EN-US" style="letter-spacing: -0.3pt">early,</span
+              ><span lang="EN-US" style="letter-spacing: -0.5pt"> </span
+              ><span lang="EN-US" style="letter-spacing: -0.3pt">prompt</span
+              ><span lang="EN-US" style="letter-spacing: -0.45pt"> </span
+              ><span lang="EN-US" style="letter-spacing: -0.3pt">medical</span
+              ><span lang="EN-US" style="letter-spacing: -0.55pt"> </span
+              ><span lang="EN-US" style="letter-spacing: -0.3pt"
+                >treatment</span
+              >
+            </p>
+          </td>
+        </tr>
+        <tr style="mso-yfti-irow: 11; height: 13.5pt">
+          <td
+            width="624"
+            colspan="3"
+            valign="top"
+            style="
+              width: 467.75pt;
+              border: solid black 1pt;
+              border-top: none;
+              mso-border-top-alt: solid black 0.5pt;
+              mso-border-alt: solid black 0.5pt;
+              padding: 0cm 0cm 0cm 0cm;
+              height: 13.5pt;
+            "
+          >
+            <p
+              class="TableParagraph"
+              style="
+                margin-left: 5.5pt;
+                line-height: 12.3pt;
+                mso-line-height-rule: exactly;
+              "
+            >
+              <b style="mso-bidi-font-weight: normal"
+                ><span lang="EN-US" style="mso-font-width: 85%">Rare,</span
+                ><span lang="EN-US" style="letter-spacing: -0.15pt"> </span
+                ><span lang="EN-US" style="mso-font-width: 85%">life</span
+                ><span lang="EN-US">
+                  <span style="letter-spacing: -0.1pt; mso-font-width: 85%"
+                    >altering</span
+                  ><o:p></o:p></span
+              ></b>
+            </p>
+          </td>
+        </tr>
+        <tr style="mso-yfti-irow: 12; height: 13.5pt">
+          <td
+            width="226"
+            valign="top"
+            style="
+              width: 169.85pt;
+              border: solid black 1pt;
+              border-top: none;
+              mso-border-top-alt: solid black 0.5pt;
+              mso-border-alt: solid black 0.5pt;
+              padding: 0cm 0cm 0cm 0cm;
+              height: 13.5pt;
+            "
+          >
+            <p
+              class="TableParagraph"
+              style="
+                margin-left: 5.5pt;
+                line-height: 12.3pt;
+                mso-line-height-rule: exactly;
+              "
+            >
+              <span lang="EN-US" style="mso-font-width: 90%">Transmission</span
+              ><span lang="EN-US" style="letter-spacing: -0.05pt"> </span
+              ><span lang="EN-US" style="mso-font-width: 90%">of</span
+              ><span lang="EN-US" style="letter-spacing: -0.15pt"> </span
+              ><span lang="EN-US" style="mso-font-width: 90%">hepatitis</span
+              ><span lang="EN-US" style="letter-spacing: -0.1pt"> </span
+              ><span
+                lang="EN-US"
+                style="letter-spacing: -0.5pt; mso-font-width: 90%"
+                >B</span
+              >
+            </p>
+          </td>
+          <td
+            width="132"
+            valign="top"
+            style="
+              width: 99.3pt;
+              border-top: none;
+              border-left: none;
+              border-bottom: solid black 1pt;
+              border-right: solid black 1pt;
+              mso-border-top-alt: solid black 0.5pt;
+              mso-border-left-alt: solid black 0.5pt;
+              mso-border-alt: solid black 0.5pt;
+              padding: 0cm 0cm 0cm 0cm;
+              height: 13.5pt;
+            "
+          >
+            <p
+              class="TableParagraph"
+              style="line-height: 12.3pt; mso-line-height-rule: exactly"
+            >
+              <span lang="EN-US" style="mso-font-width: 90%"
+                >1<span style="letter-spacing: -0.15pt"> </span>in<span
+                  style="letter-spacing: -0.2pt"
+                >
+                </span
+                >7.5<span style="letter-spacing: -0.2pt"> </span
+                ><span style="letter-spacing: -0.1pt">million</span></span
+              >
+            </p>
+          </td>
+          <td
+            width="265"
+            valign="top"
+            style="
+              width: 198.6pt;
+              border-top: none;
+              border-left: none;
+              border-bottom: solid black 1pt;
+              border-right: solid black 1pt;
+              mso-border-top-alt: solid black 0.5pt;
+              mso-border-left-alt: solid black 0.5pt;
+              mso-border-alt: solid black 0.5pt;
+              padding: 0cm 0cm 0cm 0cm;
+              height: 13.5pt;
+            "
+          >
+            <p
+              class="TableParagraph"
+              style="line-height: 12.3pt; mso-line-height-rule: exactly"
+            >
+              <span lang="EN-US" style="mso-font-width: 90%">-</span
+              ><span lang="EN-US" style="letter-spacing: 0.25pt"> </span
+              ><span lang="EN-US" style="mso-font-width: 90%">Medical</span
+              ><span lang="EN-US">
+                <span style="letter-spacing: -0.1pt; mso-font-width: 90%"
+                  >treatment</span
+                ></span
+              >
+            </p>
+          </td>
+        </tr>
+        <tr style="mso-yfti-irow: 13; height: 13.25pt">
+          <td
+            width="226"
+            valign="top"
+            style="
+              width: 169.85pt;
+              border: solid black 1pt;
+              border-top: none;
+              mso-border-top-alt: solid black 0.5pt;
+              mso-border-alt: solid black 0.5pt;
+              padding: 0cm 0cm 0cm 0cm;
+              height: 13.25pt;
+            "
+          >
+            <p
+              class="TableParagraph"
+              style="
+                margin-top: 0cm;
+                margin-right: 0cm;
+                margin-bottom: 0cm;
+                margin-left: 5.5pt;
+                margin-bottom: 0.0001pt;
+                line-height: 12.25pt;
+                mso-line-height-rule: exactly;
+              "
+            >
+              <span lang="EN-US" style="mso-font-width: 90%">Transmission</span
+              ><span lang="EN-US" style="letter-spacing: -0.05pt"> </span
+              ><span lang="EN-US" style="mso-font-width: 90%">of</span
+              ><span lang="EN-US" style="letter-spacing: -0.15pt"> </span
+              ><span lang="EN-US" style="mso-font-width: 90%">hepatitis</span
+              ><span lang="EN-US" style="letter-spacing: -0.1pt"> </span
+              ><span
+                lang="EN-US"
+                style="letter-spacing: -0.5pt; mso-font-width: 90%"
+                >C</span
+              >
+            </p>
+          </td>
+          <td
+            width="132"
+            valign="top"
+            style="
+              width: 99.3pt;
+              border-top: none;
+              border-left: none;
+              border-bottom: solid black 1pt;
+              border-right: solid black 1pt;
+              mso-border-top-alt: solid black 0.5pt;
+              mso-border-left-alt: solid black 0.5pt;
+              mso-border-alt: solid black 0.5pt;
+              padding: 0cm 0cm 0cm 0cm;
+              height: 13.25pt;
+            "
+          >
+            <p
+              class="TableParagraph"
+              style="
+                margin-top: 0cm;
+                line-height: 12.25pt;
+                mso-line-height-rule: exactly;
+              "
+            >
+              <span lang="EN-US" style="mso-font-width: 90%"
+                >1<span style="letter-spacing: -0.2pt"> </span>in<span
+                  style="letter-spacing: -0.15pt"
+                >
+                </span
+                >13<span style="letter-spacing: -0.15pt"> </span
+                ><span style="letter-spacing: -0.1pt">million</span></span
+              >
+            </p>
+          </td>
+          <td
+            width="265"
+            valign="top"
+            style="
+              width: 198.6pt;
+              border-top: none;
+              border-left: none;
+              border-bottom: solid black 1pt;
+              border-right: solid black 1pt;
+              mso-border-top-alt: solid black 0.5pt;
+              mso-border-left-alt: solid black 0.5pt;
+              mso-border-alt: solid black 0.5pt;
+              padding: 0cm 0cm 0cm 0cm;
+              height: 13.25pt;
+            "
+          >
+            <p
+              class="TableParagraph"
+              style="
+                margin-top: 0cm;
+                line-height: 12.25pt;
+                mso-line-height-rule: exactly;
+              "
+            >
+              <span lang="EN-US" style="mso-font-width: 90%">-</span
+              ><span lang="EN-US" style="letter-spacing: 0.25pt"> </span
+              ><span lang="EN-US" style="mso-font-width: 90%">Medical</span
+              ><span lang="EN-US">
+                <span style="letter-spacing: -0.1pt; mso-font-width: 90%"
+                  >treatment</span
+                ></span
+              >
+            </p>
+          </td>
+        </tr>
+        <tr style="mso-yfti-irow: 14; mso-yfti-lastrow: yes; height: 27pt">
+          <td
+            width="226"
+            valign="top"
+            style="
+              width: 169.85pt;
+              border: solid black 1pt;
+              border-top: none;
+              mso-border-top-alt: solid black 0.5pt;
+              mso-border-alt: solid black 0.5pt;
+              padding: 0cm 0cm 0cm 0cm;
+              height: 27pt;
+            "
+          >
+            <p
+              class="TableParagraph"
+              style="
+                margin-top: 0.2pt;
+                margin-right: 0cm;
+                margin-bottom: 0cm;
+                margin-left: 5.5pt;
+                margin-bottom: 0.0001pt;
+              "
+            >
+              <span
+                lang="EN-US"
+                style="letter-spacing: -0.1pt; mso-font-width: 90%"
+                >Transmission</span
+              ><span lang="EN-US" style="letter-spacing: -0.05pt"> </span
+              ><span
+                lang="EN-US"
+                style="letter-spacing: -0.1pt; mso-font-width: 90%"
+                >of</span
+              ><span lang="EN-US" style="letter-spacing: -0.15pt"> </span
+              ><span
+                lang="EN-US"
+                style="letter-spacing: -0.1pt; mso-font-width: 90%"
+                >human</span
+              >
+            </p>
+            <p
+              class="TableParagraph"
+              style="
+                margin-top: 0.85pt;
+                margin-right: 0cm;
+                margin-bottom: 0cm;
+                margin-left: 5.5pt;
+                margin-bottom: 0.0001pt;
+                line-height: 12.3pt;
+                mso-line-height-rule: exactly;
+              "
+            >
+              <span lang="EN-US" style="mso-font-width: 90%"
+                >immunodeficiency</span
+              ><span lang="EN-US" style="letter-spacing: 0.6pt"> </span
+              ><span lang="EN-US" style="mso-font-width: 90%">virus</span
+              ><span lang="EN-US" style="letter-spacing: 0.55pt"> </span
+              ><span
+                lang="EN-US"
+                style="letter-spacing: -0.1pt; mso-font-width: 90%"
+                >(HIV)</span
+              >
+            </p>
+          </td>
+          <td
+            width="132"
+            valign="top"
+            style="
+              width: 99.3pt;
+              border-top: none;
+              border-left: none;
+              border-bottom: solid black 1pt;
+              border-right: solid black 1pt;
+              mso-border-top-alt: solid black 0.5pt;
+              mso-border-left-alt: solid black 0.5pt;
+              mso-border-alt: solid black 0.5pt;
+              padding: 0cm 0cm 0cm 0cm;
+              height: 27pt;
+            "
+          >
+            <p class="TableParagraph" style="margin-top: 0.2pt">
+              <span lang="EN-US" style="mso-font-width: 90%"
+                >1<span style="letter-spacing: -0.2pt"> </span>in<span
+                  style="letter-spacing: -0.15pt"
+                >
+                </span
+                >21<span style="letter-spacing: -0.15pt"> </span
+                ><span style="letter-spacing: -0.1pt">million</span></span
+              >
+            </p>
+          </td>
+          <td
+            width="265"
+            valign="top"
+            style="
+              width: 198.6pt;
+              border-top: none;
+              border-left: none;
+              border-bottom: solid black 1pt;
+              border-right: solid black 1pt;
+              mso-border-top-alt: solid black 0.5pt;
+              mso-border-left-alt: solid black 0.5pt;
+              mso-border-alt: solid black 0.5pt;
+              padding: 0cm 0cm 0cm 0cm;
+              height: 27pt;
+            "
+          >
+            <p class="TableParagraph" style="margin-top: 0.2pt">
+              <span lang="EN-US" style="mso-font-width: 90%">-</span
+              ><span lang="EN-US" style="letter-spacing: 0.25pt"> </span
+              ><span lang="EN-US" style="mso-font-width: 90%">Medical</span
+              ><span lang="EN-US">
+                <span style="letter-spacing: -0.1pt; mso-font-width: 90%"
+                  >treatment</span
+                ></span
+              >
+            </p>
+          </td>
+        </tr>
+      </table>
+
+      <p
+        class="MsoBodyText"
+        style="
+          margin-top: 0.3pt;
+          margin-right: 18.6pt;
+          margin-bottom: 0cm;
+          margin-left: 0cm;
+          margin-bottom: 0.0001pt;
+          line-height: 115%;
+        "
+      >
+        <span lang="EN-US" style="color: #172b4d; mso-font-width: 90%"
+          >Durant E, Berta D. Using Blood Wisely aims to decrease inappropriate
+          red blood cell transfusion practice. </span
+        ><span lang="EN-US" style="color: #172b4d; letter-spacing: -0.3pt"
+          >Canadian</span
+        ><span lang="EN-US" style="color: #172b4d; letter-spacing: -0.35pt">
+        </span
+        ><span lang="EN-US" style="color: #172b4d; letter-spacing: -0.3pt"
+          >Nurse.</span
+        ><span lang="EN-US" style="color: #172b4d; letter-spacing: -0.35pt">
+        </span
+        ><span lang="EN-US" style="color: #172b4d; letter-spacing: -0.3pt"
+          >[Internet] 2021</span
+        ><span lang="EN-US" style="color: #172b4d; letter-spacing: -0.4pt">
+        </span
+        ><span lang="EN-US" style="color: #172b4d; letter-spacing: -0.3pt"
+          >[cited</span
+        ><span lang="EN-US" style="color: #172b4d; letter-spacing: -0.35pt">
+        </span
+        ><span lang="EN-US" style="color: #172b4d; letter-spacing: -0.3pt"
+          >2021 Aug 16]; Mar</span
+        ><span lang="EN-US" style="color: #172b4d; letter-spacing: -0.5pt">
+        </span
+        ><span lang="EN-US" style="color: #172b4d; letter-spacing: -0.3pt"
+          >29,</span
+        ><span lang="EN-US" style="color: #172b4d; letter-spacing: -0.35pt">
+        </span
+        ><span lang="EN-US" style="color: #172b4d; letter-spacing: -0.3pt"
+          >2021. Available</span
+        ><span lang="EN-US" style="color: #172b4d; letter-spacing: -0.35pt">
+        </span
+        ><span lang="EN-US" style="color: #172b4d; letter-spacing: -0.3pt"
+          >from: </span
+        ><span lang="EN-US"
+          ><a
+            href="https://canadian-nurse.com/en/articles/issues/2021/march-2021/using-blood-wisely-aims-to-decrease-inappropriate-red-blood-cell-transfusion-practice"
+            ><span style="color: #0462c1; letter-spacing: -0.3pt"
+              >https://canadian-</span
+            ></a
+          ><span style="color: #0462c1; letter-spacing: -0.3pt"> </span
+          ><a
+            href="https://canadian-nurse.com/en/articles/issues/2021/march-2021/using-blood-wisely-aims-to-decrease-inappropriate-red-blood-cell-transfusion-practice"
+            ><span style="color: #0462c1; letter-spacing: -0.3pt"
+              >nurse.com/en/articles/issues/2021/march-2021/using-blood-wisely-aims-to-decrease-inappropriate-</span
+            ></a
+          ><span style="color: #0462c1; letter-spacing: -0.3pt"> </span
+          ><a
+            href="https://canadian-nurse.com/en/articles/issues/2021/march-2021/using-blood-wisely-aims-to-decrease-inappropriate-red-blood-cell-transfusion-practice"
+            ><span style="color: #0462c1; letter-spacing: -0.1pt"
+              >red-blood-cell-transfusion-practice</span
+            ></a
+          ></span
+        >
+      </p>
+    </div>
+  </body>
+</html>

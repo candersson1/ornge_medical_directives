@@ -221,7 +221,7 @@
 		6E3336962AD713F000EAEB76 /* Authorization.html in Resources */ = {isa = PBXBuildFile; fileRef = 6E3336412AD713F000EAEB76 /* Authorization.html */; };
 		6E3336972AD713F000EAEB76 /* Adult - Clinical Practice - Trauma.html in Resources */ = {isa = PBXBuildFile; fileRef = 6E3336422AD713F000EAEB76 /* Adult - Clinical Practice - Trauma.html */; };
 		6E3336982AD713F000EAEB76 /* Adult - Clinical Practice - Non ST Elevation ACS (NSTEACS).html in Resources */ = {isa = PBXBuildFile; fileRef = 6E3336432AD713F000EAEB76 /* Adult - Clinical Practice - Non ST Elevation ACS (NSTEACS).html */; };
-		6E3336992AD713F000EAEB76 /* test.html in Resources */ = {isa = PBXBuildFile; fileRef = 6E3336442AD713F000EAEB76 /* test.html */; };
+		6E3336992AD713F000EAEB76 /* blood_consent_counselling.html in Resources */ = {isa = PBXBuildFile; fileRef = 6E3336442AD713F000EAEB76 /* blood_consent_counselling.html */; };
 		6E33369A2AD713F000EAEB76 /* oxygen_duration_calculator.html in Resources */ = {isa = PBXBuildFile; fileRef = 6E3336452AD713F000EAEB76 /* oxygen_duration_calculator.html */; };
 		6E33369B2AD713F000EAEB76 /* Ped - Clinical - Pain.md in Resources */ = {isa = PBXBuildFile; fileRef = 6E3336462AD713F000EAEB76 /* Ped - Clinical - Pain.md */; };
 		6E33369C2AD713F000EAEB76 /* generalHookup.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E3336472AD713F000EAEB76 /* generalHookup.png */; };
@@ -272,7 +272,6 @@
 		6E5BF9EE29CCC926003C39E1 /* ped_tx_of_hypoglycemia_in_the_well_newborn.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E5BF9ED29CCC926003C39E1 /* ped_tx_of_hypoglycemia_in_the_well_newborn.png */; };
 		6E6795D12BF3B64900D173F7 /* preamble_signature.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E6795D02BF3B64900D173F7 /* preamble_signature.png */; };
 		6EAD537C2A094F9900843EF2 /* Adult - Clinical Practice - Airway.html in Resources */ = {isa = PBXBuildFile; fileRef = 6EAD537B2A094F9800843EF2 /* Adult - Clinical Practice - Airway.html */; };
-		6EAD53802A09836400843EF2 /* adult-airway-algorithm.png in Resources */ = {isa = PBXBuildFile; fileRef = 6EAD537F2A09836400843EF2 /* adult-airway-algorithm.png */; };
 		6EAD53822A099EBB00843EF2 /* adult_trach_transport_flowchart.png in Resources */ = {isa = PBXBuildFile; fileRef = 6EAD53812A099EBB00843EF2 /* adult_trach_transport_flowchart.png */; };
 		6EAD53842A0ABC6D00843EF2 /* adult_non_traumatic_arrest_flowchart.png in Resources */ = {isa = PBXBuildFile; fileRef = 6EAD53832A0ABC6D00843EF2 /* adult_non_traumatic_arrest_flowchart.png */; };
 		6EAD53862A0ABEFE00843EF2 /* Adult - Clinical Practice - Non ST Elevation ACS (NSTEACS).html in Resources */ = {isa = PBXBuildFile; fileRef = 6EAD53852A0ABEFE00843EF2 /* Adult - Clinical Practice - Non ST Elevation ACS (NSTEACS).html */; };
@@ -500,7 +499,7 @@
 		6E3336412AD713F000EAEB76 /* Authorization.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Authorization.html; sourceTree = "<group>"; };
 		6E3336422AD713F000EAEB76 /* Adult - Clinical Practice - Trauma.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "Adult - Clinical Practice - Trauma.html"; sourceTree = "<group>"; };
 		6E3336432AD713F000EAEB76 /* Adult - Clinical Practice - Non ST Elevation ACS (NSTEACS).html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "Adult - Clinical Practice - Non ST Elevation ACS (NSTEACS).html"; sourceTree = "<group>"; };
-		6E3336442AD713F000EAEB76 /* test.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = test.html; sourceTree = "<group>"; };
+		6E3336442AD713F000EAEB76 /* blood_consent_counselling.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = blood_consent_counselling.html; path = "Ornge/External DOCS/blood_consent_counselling.html"; sourceTree = SOURCE_ROOT; };
 		6E3336452AD713F000EAEB76 /* oxygen_duration_calculator.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = oxygen_duration_calculator.html; sourceTree = "<group>"; };
 		6E3336462AD713F000EAEB76 /* Ped - Clinical - Pain.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "Ped - Clinical - Pain.md"; sourceTree = "<group>"; };
 		6E3336472AD713F000EAEB76 /* generalHookup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = generalHookup.png; sourceTree = "<group>"; };
@@ -550,9 +549,8 @@
 		6E3AF6862A4B502F00DAA6AF /* Hamilton T1 & MR850 Disinfection.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "Hamilton T1 & MR850 Disinfection.html"; sourceTree = "<group>"; };
 		6E3AF6882A4B523E00DAA6AF /* Hamilton T1 - Circuit Guide.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "Hamilton T1 - Circuit Guide.html"; sourceTree = "<group>"; };
 		6E5BF9ED29CCC926003C39E1 /* ped_tx_of_hypoglycemia_in_the_well_newborn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ped_tx_of_hypoglycemia_in_the_well_newborn.png; sourceTree = "<group>"; };
-		6E6795D02BF3B64900D173F7 /* preamble_signature.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = preamble_signature.png; path = ../../../../../Desktop/preamble_signature.png; sourceTree = "<group>"; };
+		6E6795D02BF3B64900D173F7 /* preamble_signature.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = preamble_signature.png; path = "Ornge/External DOCS/preamble_signature.png"; sourceTree = SOURCE_ROOT; };
 		6EAD537B2A094F9800843EF2 /* Adult - Clinical Practice - Airway.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "Adult - Clinical Practice - Airway.html"; sourceTree = "<group>"; };
-		6EAD537F2A09836400843EF2 /* adult-airway-algorithm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "adult-airway-algorithm.png"; path = "../../../../../Dropbox/0_NEW SYSTEM/Projects/Medical Directives App Update/Adult Directives/adult-airway-algorithm.png"; sourceTree = "<group>"; };
 		6EAD53812A099EBB00843EF2 /* adult_trach_transport_flowchart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = adult_trach_transport_flowchart.png; sourceTree = "<group>"; };
 		6EAD53832A0ABC6D00843EF2 /* adult_non_traumatic_arrest_flowchart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = adult_non_traumatic_arrest_flowchart.png; path = "../Supporting Files/adult_non_traumatic_arrest_flowchart.png"; sourceTree = "<group>"; };
 		6EAD53852A0ABEFE00843EF2 /* Adult - Clinical Practice - Non ST Elevation ACS (NSTEACS).html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "Adult - Clinical Practice - Non ST Elevation ACS (NSTEACS).html"; sourceTree = "<group>"; };
@@ -692,7 +690,6 @@
 				6EAD53812A099EBB00843EF2 /* adult_trach_transport_flowchart.png */,
 				6E0FB90729CB6ED20069E326 /* ped_aw_positioning_trauma.jpg */,
 				6ECC145829CA59DB0039CA16 /* delivery_room_management_of_premature_neonates.png */,
-				6EAD537F2A09836400843EF2 /* adult-airway-algorithm.png */,
 				13F4A42F239F44E8004F6D38 /* preamble_sbarr.png */,
 				13F4A41D239ECED4004F6D38 /* preamble_patch_point.png */,
 				6E5BF9ED29CCC926003C39E1 /* ped_tx_of_hypoglycemia_in_the_well_newborn.png */,
@@ -982,7 +979,7 @@
 				6E3336412AD713F000EAEB76 /* Authorization.html */,
 				6E3336422AD713F000EAEB76 /* Adult - Clinical Practice - Trauma.html */,
 				6E3336432AD713F000EAEB76 /* Adult - Clinical Practice - Non ST Elevation ACS (NSTEACS).html */,
-				6E3336442AD713F000EAEB76 /* test.html */,
+				6E3336442AD713F000EAEB76 /* blood_consent_counselling.html */,
 				6E3336452AD713F000EAEB76 /* oxygen_duration_calculator.html */,
 				6E3336462AD713F000EAEB76 /* Ped - Clinical - Pain.md */,
 				6E3336472AD713F000EAEB76 /* generalHookup.png */,
@@ -1139,7 +1136,6 @@
 				138F07EE24E44A9D00410D0D /* minionproboldcndisp.png in Resources */,
 				139FF61B23C8F7BC00B57A68 /* Adult - Clinical Practice Guidelines - Mechanical Ventilation.html in Resources */,
 				6E3336B32AD713F000EAEB76 /* adult_airway_team_positioning.png in Resources */,
-				6EAD53802A09836400843EF2 /* adult-airway-algorithm.png in Resources */,
 				6E33368B2AD713F000EAEB76 /* hnc_part2.png in Resources */,
 				6E3336BB2AD713F000EAEB76 /* part_3_hnc.png in Resources */,
 				13E3C49D2396C6BD001C3F08 /* Adult - Clinical Practice - Cardiogenic Shock.html in Resources */,
@@ -1173,7 +1169,7 @@
 				138F07D424E44A9D00410D0D /* MinionPro-CnItCapt.otf in Resources */,
 				138F07CB24E44A9D00410D0D /* MinionPro-SemiboldCnSubh.otf in Resources */,
 				138F07DF24E44A9D00410D0D /* MinionPro-BoldCnItDisp.otf in Resources */,
-				6E3336992AD713F000EAEB76 /* test.html in Resources */,
+				6E3336992AD713F000EAEB76 /* blood_consent_counselling.html in Resources */,
 				13E3C4A7239964FF001C3F08 /* Adult - Clinical Practice - Trauma.html in Resources */,
 				6E3336832AD713F000EAEB76 /* adult_trach_transport_flowchart.png in Resources */,
 				138F07D524E44A9D00410D0D /* MinionPro-BoldDisp.otf in Resources */,
@@ -1500,7 +1496,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -1556,7 +1552,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;

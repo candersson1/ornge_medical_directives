@@ -1157,6 +1157,11 @@
                     "type": "menu",
                     "items": [
                         {
+                            "title": "Blood Consent Counselling",
+                            "type": "menu_document_link",
+                            "key": "blood_consent_counselling"
+                        },
+                        {
                             "title": "Mechanical Ventilation Tidal Volume Calculator",
                             "type": "menu_document_link",
                             "key": "vent_tool"

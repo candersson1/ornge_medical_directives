@@ -19891,6 +19891,11 @@
             "key": "oxygen_duration_calculator",
             "title": "Oxygen Consumption Calculator",
             "type": "webview"
+        },
+        {
+            "key": "blood_consent_counselling",
+            "title": "Blood Consent Counselling",
+            "type": "webview"
         }
     ]
 }
